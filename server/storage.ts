@@ -1,4 +1,6 @@
 import { users, inquiries, type User, type InsertUser, type Inquiry, type InsertInquiry } from "@shared/schema";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -8,52 +10,40 @@ export interface IStorage {
   getInquiries(): Promise<Inquiry[]>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<number, User>;
-  private inquiries: Map<number, Inquiry>;
-  private currentUserId: number;
-  private currentInquiryId: number;
-
-  constructor() {
-    this.users = new Map();
-    this.inquiries = new Map();
-    this.currentUserId = 1;
-    this.currentInquiryId = 1;
-  }
-
+export class DatabaseStorage implements IStorage {
   async getUser(id: number): Promise<User | undefined> {
-    return this.users.get(id);
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user || undefined;
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user || undefined;
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const id = this.currentUserId++;
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
+    const [user] = await db
+      .insert(users)
+      .values(insertUser)
+      .returning();
     return user;
   }
 
   async createInquiry(insertInquiry: InsertInquiry): Promise<Inquiry> {
-    const id = this.currentInquiryId++;
-    const inquiry: Inquiry = { 
-      ...insertInquiry, 
-      id, 
-      createdAt: new Date() 
-    };
-    this.inquiries.set(id, inquiry);
+    const [inquiry] = await db
+      .insert(inquiries)
+      .values(insertInquiry)
+      .returning();
     return inquiry;
   }
 
   async getInquiries(): Promise<Inquiry[]> {
-    return Array.from(this.inquiries.values()).sort(
-      (a, b) => b.createdAt.getTime() - a.createdAt.getTime()
-    );
+    const inquiryList = await db
+      .select()
+      .from(inquiries)
+      .orderBy(inquiries.createdAt);
+    return inquiryList;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
