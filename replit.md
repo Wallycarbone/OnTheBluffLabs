@@ -25,7 +25,7 @@ Preferred communication style: Simple, everyday language.
 - **Database Provider**: Neon Database (serverless PostgreSQL)
 - **API**: RESTful API design
 - **Session Management**: Express sessions with PostgreSQL store
-- **Development**: In-memory storage fallback for development
+- **Storage**: DatabaseStorage implementation with live PostgreSQL connection
 
 ## Key Components
 
@@ -79,7 +79,7 @@ Preferred communication style: Simple, everyday language.
 ### Development
 - **Command**: `npm run dev`
 - **Server**: Vite dev server with Express API
-- **Database**: In-memory storage for development
+- **Database**: PostgreSQL with DatabaseStorage implementation
 - **Hot Reload**: Enabled for both frontend and backend
 
 ### Production
@@ -89,6 +89,7 @@ Preferred communication style: Simple, everyday language.
 - **Start Command**: `npm start`
 - **Database**: PostgreSQL via Neon Database
 - **Environment**: Requires `DATABASE_URL` environment variable
+- **Alternative Deployment**: Use `node simple-express-server.js` for static-only deployment
 
 ### Key Configuration Files
 - `vite.config.ts`: Frontend build configuration
