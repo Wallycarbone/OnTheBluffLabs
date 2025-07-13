@@ -5,32 +5,46 @@ import { Star } from "lucide-react";
 export default function Puppies() {
   const puppies = [
     {
-      name: "Sunny",
-      gender: "Female",
+      name: "Duke",
+      gender: "Male",
       color: "Yellow",
-      age: "8 weeks",
+      age: "12 weeks",
       image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
     },
     {
-      name: "Cocoa",
+      name: "Atlas",
       gender: "Male",
       color: "Chocolate",
-      age: "8 weeks",
+      age: "10 weeks",
       image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
     },
     {
-      name: "Storm",
-      gender: "Male",
+      name: "Mikkola",
+      gender: "Female",
       color: "Black",
-      age: "8 weeks",
+      age: "11 weeks",
       image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
     },
     {
-      name: "Daisy",
+      name: "Theodore \"Teddy\"",
+      gender: "Male",
+      color: "Yellow",
+      age: "9 weeks",
+      image: "https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    },
+    {
+      name: "Cassie",
+      gender: "Female",
+      color: "Chocolate",
+      age: "8 weeks",
+      image: "https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    },
+    {
+      name: "Frankie",
       gender: "Female",
       color: "Yellow",
-      age: "8 weeks",
-      image: "https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      age: "10 weeks",
+      image: "https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
     },
   ];
 
@@ -46,7 +60,7 @@ export default function Puppies() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {puppies.map((puppy, index) => (
             <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
