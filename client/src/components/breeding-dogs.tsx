@@ -5,28 +5,28 @@ import { Trophy } from "lucide-react";
 export default function BreedingDogs() {
   const dogs = [
     {
-      name: "CH Thunder's Legacy",
+      name: "Atticus Finch",
       gender: "Male",
       color: "Yellow",
-      age: "4 years",
-      image: "https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      description: "Outstanding temperament and conformation. Multiple Best in Show winner.",
+      age: "Retired",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
+      description: "Outstanding English Labrador with exceptional temperament and conformation. Now retired from breeding.",
     },
     {
-      name: "CH Bluff's Golden Belle",
+      name: "Oliver",
+      gender: "Male",
+      color: "Yellow",
+      age: "Active Stud",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
+      description: "Proven sire with excellent bloodlines and gentle temperament.",
+    },
+    {
+      name: "Luna",
       gender: "Female",
       color: "Yellow",
-      age: "3 years",
-      image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      description: "Exceptional mother with perfect breed type and gentle nature.",
-    },
-    {
-      name: "CH Chocolate Dream",
-      gender: "Female",
-      color: "Chocolate",
-      age: "5 years",
-      image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      description: "Rare chocolate coloring with exceptional hunting instincts.",
+      age: "Breeding Female",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
+      description: "Exceptional mother with perfect breed type and loving nature.",
     },
   ];
 

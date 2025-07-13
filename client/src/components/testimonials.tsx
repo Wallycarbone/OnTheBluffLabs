@@ -4,19 +4,22 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah & Mike Johnson",
-      family: "Max's Family",
-      testimonial: "Max is everything we hoped for and more. His temperament is perfect for our family with young children, and his intelligence amazes us daily.",
+      name: "Toniann & Michael",
+      family: "Duke & Atlas's Family",
+      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children.",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/image2-1-rotated.jpeg?resize=1080%2C1440&ssl=1",
     },
     {
-      name: "Jennifer Davis",
-      family: "Luna's Family",
-      testimonial: "The professionalism and care shown by On The Bluff Labradors is exceptional. Luna came home perfectly socialized and healthy.",
+      name: "Jen",
+      family: "Mikkola's Family",
+      testimonial: "I had been wanting a pup from On The Bluff Labs for quite some time. I was lucky enough to get a pup from the magnificent Atticus before he was officially retired. He was honestly the easiest puppy that I've ever raised. The on-site trainer, Jess, is amazing.",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-37.png?resize=1080%2C1350&ssl=1",
     },
     {
-      name: "Robert & Lisa Chen",
-      family: "Charlie's Family",
-      testimonial: "Three years later, Charlie continues to be the perfect addition to our family. The ongoing support has been invaluable.",
+      name: "Tessa & Kaitlyn",
+      family: "Frankie's Family",
+      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way. The staff here is incredibly knowledgeable and was eager to share their expertise with us.",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/IMG_5015.jpeg?resize=1080%2C1440&ssl=1",
     },
   ];
 
@@ -47,7 +50,11 @@ export default function Testimonials() {
                   "{testimonial.testimonial}"
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                  <img 
+                    src={testimonial.image} 
+                    alt={`${testimonial.name} with their puppy`}
+                    className="w-12 h-12 rounded-full mr-4 object-cover"
+                  />
                   <div>
                     <h4 className="font-playfair font-bold text-navy">
                       {testimonial.name}
