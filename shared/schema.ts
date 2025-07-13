@@ -6,6 +6,8 @@ export const users = pgTable("users", {
   id: serial("id").primaryKey(),
   username: text("username").notNull().unique(),
   password: text("password").notNull(),
+  role: text("role").notNull().default("admin"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
 export const inquiries = pgTable("inquiries", {
@@ -24,6 +26,11 @@ export const insertUserSchema = createInsertSchema(users).pick({
   password: true,
 });
 
+export const loginSchema = z.object({
+  username: z.string().min(1, "Username is required"),
+  password: z.string().min(1, "Password is required"),
+});
+
 export const insertInquirySchema = createInsertSchema(inquiries).pick({
   firstName: true,
   lastName: true,
@@ -37,3 +44,4 @@ export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
 export type InsertInquiry = z.infer<typeof insertInquirySchema>;
 export type Inquiry = typeof inquiries.$inferSelect;
+export type LoginData = z.infer<typeof loginSchema>;

@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertInquirySchema } from "@shared/schema";
+import { insertInquirySchema, loginSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -35,6 +35,43 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message: "Internal server error" 
       });
     }
+  });
+
+  // Authentication routes
+  app.post("/api/auth/login", async (req, res) => {
+    try {
+      const loginData = loginSchema.parse(req.body);
+      const user = await storage.validateLogin(loginData);
+      
+      if (!user) {
+        return res.status(401).json({ 
+          message: "Invalid credentials" 
+        });
+      }
+      
+      res.json({ 
+        user: {
+          id: user.id,
+          username: user.username,
+          role: user.role
+        },
+        token: "simple-token"
+      });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ 
+          message: "Validation error",
+          errors: error.errors 
+        });
+      }
+      res.status(500).json({ 
+        message: "Login failed" 
+      });
+    }
+  });
+
+  app.post("/api/auth/logout", async (req, res) => {
+    res.json({ message: "Logged out successfully" });
   });
 
   const httpServer = createServer(app);
