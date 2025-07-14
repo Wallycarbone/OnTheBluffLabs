@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Heart, Award, GraduationCap, Shield, Target } from "lucide-react";
+import { Star, Heart, Award, GraduationCap, Shield, Puzzle } from "lucide-react";
 import { useState } from "react";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
@@ -158,7 +158,7 @@ export default function Hero() {
                       </div>
                     ) : testimonial.dog === "Frankie" ? (
                       <div className="flex items-center px-4 py-2 rounded-full" style={{backgroundColor: '#6d761d'}}>
-                        <Target className="w-4 h-4 mr-2" style={{color: '#fefefe'}} />
+                        <Puzzle className="w-4 h-4 mr-2" style={{color: '#fefefe'}} />
                         <span className="text-sm font-source-sans font-medium" style={{color: '#fefefe'}}>
                           Expert Lifestyle Match
                         </span>
