@@ -1,13 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Award } from "lucide-react";
+import { useState } from "react";
 
 export default function Hero() {
+  const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const toggleTestimonial = (index: number) => {
+    setExpandedTestimonials(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
+  const truncateText = (text: string, maxLength: number) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + "...";
   };
 
   const featuredTestimonials = [
@@ -127,9 +142,20 @@ export default function Hero() {
                       ))}
                     </div>
                   </div>
-                  <p className="mb-6 italic font-source-sans text-sm leading-relaxed" style={{color: '#4b4b4b'}}>
-                    "{testimonial.testimonial}"
-                  </p>
+                  <div className="mb-6">
+                    <p className="italic font-source-sans text-sm leading-relaxed mb-3" style={{color: '#4b4b4b'}}>
+                      "{expandedTestimonials[index] ? testimonial.testimonial : truncateText(testimonial.testimonial, 150)}"
+                    </p>
+                    {testimonial.testimonial.length > 150 && (
+                      <button
+                        onClick={() => toggleTestimonial(index)}
+                        className="text-xs font-source-sans font-medium hover:underline transition-colors"
+                        style={{color: '#6d761d'}}
+                      >
+                        {expandedTestimonials[index] ? 'Read Less' : 'Read More'}
+                      </button>
+                    )}
+                  </div>
                   <div className="border-t pt-6" style={{borderColor: '#6d761d'}}>
                     <h4 className="font-oswald font-normal text-lg mb-2 tracking-wide" style={{color: '#11100f'}}>
                       {testimonial.name}
