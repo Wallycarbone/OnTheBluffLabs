@@ -1,4 +1,5 @@
 import { Award, Heart, Shield, Home } from "lucide-react";
+import puppyImage from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
 
 export default function About() {
   const features = [
@@ -35,8 +36,8 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional breeder with champion Labrador" 
+              src={puppyImage} 
+              alt="Beautiful yellow English Labrador puppy from On The Bluff Labradors" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
           </div>
