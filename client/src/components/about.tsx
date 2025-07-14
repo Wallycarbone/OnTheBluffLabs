@@ -1,4 +1,4 @@
-import { Award, Heart, Shield, Home } from "lucide-react";
+import { Award, Heart, Shield } from "lucide-react";
 import puppyImage from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
 
 export default function About() {
@@ -9,15 +9,11 @@ export default function About() {
     },
     {
       icon: Heart,
-      title: "Health Testing",
+      title: "Raw Food Diet",
     },
     {
       icon: Award,
-      title: "Puppy Training Program",
-    },
-    {
-      icon: Home,
-      title: "Behavior Support",
+      title: "Gentle Training Methods",
     },
   ];
 
