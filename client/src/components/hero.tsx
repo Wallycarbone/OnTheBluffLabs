@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Award, GraduationCap } from "lucide-react";
 import { useState } from "react";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
+import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
@@ -37,12 +38,13 @@ export default function Hero() {
       image: dukeAtlasImage
     },
     {
-      name: "The Henderson Family",
-      testimonial: "Duke's personality is everything we hoped for. He's wonderful with our children and has that perfect Labrador spirit. The support from On The Bluff has been exceptional.",
-      dog: "Duke", 
-      degree: "Therapy Dog Certified",
-      parents: "Noble Duke x Sweet Molly",
-      location: "Montana"
+      name: "Jen",
+      testimonial: "I had been wanting a pup from On The Bluff Labs for quite some time. I was lucky enough to get a pup from the magnificent Atticus before he was officially retired. The pups from OTB have wonderful, sound temperaments and are truly beautiful as a bonus! One of my family members also has an OTB pup. I am so happy with my pup, Mikkola. Jess did a great job picking out a pup for us that matched our family's lifestyle, desires and expectations. I have a young, active son and it was very important to have a dog that was playful, yet gentle and well-balanced. He was honestly the easiest puppy that I've ever raised. The on-site trainer, Jess, is amazing. Mikkola came home with me knowing essentially all basic commands, was trained to eliminate outside and was already crate trained! Incredible. Mikkola did the training program with Jess and it was ABSOLUTELY worth spending the extra money. I would encourage anyone to make the investment initially, to help to avoid potential issues in the future. Experienced dog owners know that the time and money that will actually be saved in the long-run by purchasing a trained, well-socialized, well-adjusted, healthy pup cannot be overstated.",
+      dog: "Mikkola",
+      degree: "Master's Degree Training Grad",
+      parents: "Atticus x Awillix",
+      location: "",
+      image: mikkolaImage
     },
     {
       name: "Jennifer & Tom Davis",
