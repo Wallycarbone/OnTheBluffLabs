@@ -83,7 +83,7 @@ export default function Hero() {
               />
               <div className="absolute -bottom-4 -right-4 rounded-lg px-4 py-2 shadow-lg" style={{backgroundColor: '#6d761d'}}>
                 <p className="font-montserrat font-semibold text-sm" style={{color: '#fefefe'}}>Meet Atticus</p>
-                <p className="text-xs" style={{color: '#ebebeb'}}>English Labrador</p>
+                <p className="text-xs" style={{color: '#ebebeb'}}>Beloved Stud (1998-2010)</p>
               </div>
             </div>
           </div>
