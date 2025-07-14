@@ -183,18 +183,9 @@ export default function Hero() {
                     <p className="font-medium text-sm mb-1" style={{color: '#6d761d'}}>
                       {testimonial.dog}'s Family
                     </p>
-                    {testimonial.dog === "Duke & Atlas" ? (
-                      <div className="mb-2">
-                        <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
-                          <GraduationCap className="w-3 h-3 mr-1" />
-                          Master's Degree Training Grad
-                        </div>
-                      </div>
-                    ) : (
-                      <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
-                        <span className="font-medium">Achievement:</span> {testimonial.degree}
-                      </p>
-                    )}
+                    <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
+                      <span className="font-medium">Achievement:</span> {testimonial.degree}
+                    </p>
                     <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
                       <span className="font-medium">Parents:</span> {testimonial.parents}
                     </p>
