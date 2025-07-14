@@ -147,6 +147,13 @@ export default function Hero() {
                           2nd Generation OTB Family
                         </span>
                       </div>
+                    ) : testimonial.dog === "Mikkola" ? (
+                      <div className="flex items-center px-4 py-2 rounded-full" style={{backgroundColor: '#6d761d'}}>
+                        <Heart className="w-4 h-4 mr-2" style={{color: '#fefefe'}} />
+                        <span className="text-sm font-source-sans font-medium" style={{color: '#fefefe'}}>
+                          Perfect Family Temperament
+                        </span>
+                      </div>
                     ) : (
                       <div className="flex" style={{color: '#6d761d'}}>
                         {[...Array(5)].map((_, i) => (
