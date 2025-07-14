@@ -4,6 +4,7 @@ import { Star, Heart, Award, GraduationCap, Shield } from "lucide-react";
 import { useState } from "react";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
+import frankieImage from "@assets/Frankie_1752525510895.webp";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
@@ -47,12 +48,13 @@ export default function Hero() {
       image: mikkolaImage
     },
     {
-      name: "Jennifer & Tom Davis",
-      testimonial: "Mikkola came home perfectly socialized and ready to be part of our family. The professionalism and care shown throughout the process was outstanding.",
-      dog: "Mikkola",
-      degree: "Advanced Obedience Title",
-      parents: "Atticus Finch x Golden Grace",
-      location: "Wyoming"
+      name: "Tessa & Kaitlyn",
+      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way. The staff here is incredibly knowledgable and was eager to share their expertise with us to ensure we had a stress free experience. Jess was even kind enough to give us training tips months after we brought him home! It is easy to see how much the staff cares about the dogs here and it made us even more confident bringing home our new puppy. We could not be more grateful for the team here and our puppy who has grown into a gorgeous and loyal dog. His temperament is amazing and is a perfect mix between a snuggly boy, and an energetic pro swimmer (so he thinks). We could not be more thankful for our experience here.",
+      dog: "Frankie",
+      degree: "Bachelor's Degree Training Grad",
+      parents: "Grizzly x Vivien",
+      location: "",
+      image: frankieImage
     }
   ];
 
