@@ -44,8 +44,8 @@ export default function Hero() {
                 50+ Years of Excellence
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
-              On The Bluff Labradors
+            <h1 className="text-4xl md:text-6xl font-oswald font-semibold mb-6 tracking-wide" style={{color: '#11100f'}}>
+              ON THE BLUFF LABRADORS
             </h1>
             <p className="text-xl md:text-2xl mb-8 font-light" style={{color: '#6d761d'}}>
               Where exceptional bloodlines meet dedicated breeding practices. 

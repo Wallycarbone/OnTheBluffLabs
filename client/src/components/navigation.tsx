@@ -19,7 +19,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-playfair font-bold" style={{color: '#11100f'}}>On The Bluff Labradors</h1>
+              <h1 className="text-2xl font-oswald font-semibold tracking-wide" style={{color: '#11100f'}}>ON THE BLUFF LABRADORS</h1>
             </div>
           </div>
           

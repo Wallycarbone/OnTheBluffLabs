@@ -62,6 +62,12 @@ export default {
           ring: "var(--sidebar-ring)",
         },
       },
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'source-sans': ['Source Sans Pro', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'oswald': ['Oswald', 'sans-serif'],
+      },
       keyframes: {
         "accordion-down": {
           from: {
