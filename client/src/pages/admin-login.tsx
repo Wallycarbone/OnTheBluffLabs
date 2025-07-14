@@ -27,10 +27,19 @@ export default function AdminLogin() {
 
   const loginMutation = useMutation({
     mutationFn: async (data: LoginData) => {
-      const response = await apiRequest("POST", "/api/auth/login", data);
-      return response.json();
+      console.log("Attempting login with:", data);
+      console.log("API endpoint:", "/api/auth/login");
+      try {
+        const response = await apiRequest("POST", "/api/auth/login", data);
+        console.log("Login response received:", response.status);
+        return response.json();
+      } catch (error) {
+        console.error("Login fetch error:", error);
+        throw error;
+      }
     },
     onSuccess: (data) => {
+      console.log("Login successful:", data);
       localStorage.setItem("admin-token", data.token);
       localStorage.setItem("admin-user", JSON.stringify(data.user));
       toast({
@@ -40,9 +49,10 @@ export default function AdminLogin() {
       setLocation("/admin");
     },
     onError: (error: any) => {
+      console.error("Login mutation error:", error);
       toast({
         title: "Error",
-        description: error.message || "Login failed. Please check your credentials.",
+        description: `Login failed: ${error.message}`,
         variant: "destructive"
       });
     }
