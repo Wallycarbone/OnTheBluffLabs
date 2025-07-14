@@ -127,7 +127,7 @@ export default function Hero() {
                       ))}
                     </div>
                   </div>
-                  <p className="mb-6 italic font-source-sans text-lg leading-relaxed" style={{color: '#4b4b4b'}}>
+                  <p className="mb-6 italic font-source-sans text-sm leading-relaxed" style={{color: '#4b4b4b'}}>
                     "{testimonial.testimonial}"
                   </p>
                   <div className="border-t pt-6" style={{borderColor: '#6d761d'}}>
