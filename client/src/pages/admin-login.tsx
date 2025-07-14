@@ -30,8 +30,23 @@ export default function AdminLogin() {
       console.log("Attempting login with:", data);
       console.log("API endpoint:", "/api/auth/login");
       try {
-        const response = await apiRequest("/api/auth/login", "POST", data);
-        console.log("Login response received:", response.status);
+        // Direct fetch test
+        const response = await fetch("/api/auth/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+          credentials: "include",
+        });
+        
+        console.log("Response status:", response.status);
+        
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(`${response.status}: ${text}`);
+        }
+        
         return response.json();
       } catch (error) {
         console.error("Login fetch error:", error);
