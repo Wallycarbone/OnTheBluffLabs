@@ -19,7 +19,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-playfair font-bold text-navy">On The Bluff Labradors</h1>
+              <h1 className="text-2xl font-playfair font-bold text-slate-900">On The Bluff Labradors</h1>
             </div>
           </div>
           
@@ -27,43 +27,43 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="text-warm-gray hover:text-navy px-3 py-2 text-sm font-medium transition-colors"
+                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-warm-gray hover:text-navy px-3 py-2 text-sm font-medium transition-colors"
+                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 About Us
               </button>
               <button 
                 onClick={() => scrollToSection('puppies')}
-                className="text-warm-gray hover:text-navy px-3 py-2 text-sm font-medium transition-colors"
+                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Available Puppies
               </button>
               <button 
                 onClick={() => scrollToSection('breeding')}
-                className="text-warm-gray hover:text-navy px-3 py-2 text-sm font-medium transition-colors"
+                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Our Dogs
               </button>
               <button 
                 onClick={() => scrollToSection('health')}
-                className="text-warm-gray hover:text-navy px-3 py-2 text-sm font-medium transition-colors"
+                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Health Testing
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
-                className="text-warm-gray hover:text-navy px-3 py-2 text-sm font-medium transition-colors"
+                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Testimonials
               </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-golden text-white hover:bg-yellow-600"
+                className="bg-yellow-600 text-white hover:bg-yellow-700"
               >
                 Contact
               </Button>
@@ -88,43 +88,43 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button 
               onClick={() => scrollToSection('home')}
-              className="block px-3 py-2 text-base font-medium text-warm-gray hover:text-navy w-full text-left"
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="block px-3 py-2 text-base font-medium text-warm-gray hover:text-navy w-full text-left"
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               About Us
             </button>
             <button 
               onClick={() => scrollToSection('puppies')}
-              className="block px-3 py-2 text-base font-medium text-warm-gray hover:text-navy w-full text-left"
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               Available Puppies
             </button>
             <button 
               onClick={() => scrollToSection('breeding')}
-              className="block px-3 py-2 text-base font-medium text-warm-gray hover:text-navy w-full text-left"
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               Our Dogs
             </button>
             <button 
               onClick={() => scrollToSection('health')}
-              className="block px-3 py-2 text-base font-medium text-warm-gray hover:text-navy w-full text-left"
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               Health Testing
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
-              className="block px-3 py-2 text-base font-medium text-warm-gray hover:text-navy w-full text-left"
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               Testimonials
             </button>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-golden text-white hover:bg-yellow-600 w-full mt-2"
+              className="bg-yellow-600 text-white hover:bg-yellow-700 w-full mt-2"
             >
               Contact
             </Button>

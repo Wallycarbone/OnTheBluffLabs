@@ -26,11 +26,12 @@
   --ring: hsl(210, 40%, 16%);
   --radius: 0.5rem;
   
-  /* Custom colors for On The Bluff Labradors */
-  --navy: hsl(210, 40%, 16%);
-  --golden: hsl(43, 74%, 52%);
-  --warm-gray: hsl(215, 16%, 47%);
-  --saddle: hsl(25, 69%, 31%);
+  /* Custom colors for On The Bluff Labradors - High Contrast */
+  --navy: hsl(210, 40%, 8%);
+  --golden: hsl(43, 74%, 40%);
+  --warm-gray: hsl(215, 16%, 35%);
+  --saddle: hsl(25, 69%, 25%);
+  --warm-brown: hsl(25, 69%, 15%);
 }
 
 .dark {

@@ -32,36 +32,36 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-warm-brown to-golden">
+    <section id="home" className="min-h-screen bg-gradient-to-br from-slate-800 to-slate-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Content with Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <Award className="w-8 h-8 text-golden mr-3" />
-              <span className="text-golden font-montserrat font-semibold text-lg">
+              <Award className="w-8 h-8 text-yellow-400 mr-3" />
+              <span className="text-yellow-400 font-montserrat font-semibold text-lg">
                 50+ Years of Excellence
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">
               On The Bluff Labradors
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 font-light">
               Where exceptional bloodlines meet dedicated breeding practices. 
               Trusted by families for over five decades.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
                 onClick={() => scrollToSection('puppies')}
-                className="bg-golden text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-yellow-600 h-auto"
+                className="bg-yellow-600 text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-yellow-700 h-auto"
               >
                 View Available Puppies
               </Button>
               <Button 
                 variant="outline"
                 onClick={() => scrollToSection('contact')}
-                className="border-2 border-white text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-white hover:text-navy h-auto"
+                className="border-2 border-white text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-white hover:text-slate-800 h-auto"
               >
                 Contact Us
               </Button>
@@ -77,8 +77,8 @@ export default function Hero() {
                 className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 bg-white rounded-lg px-4 py-2 shadow-lg">
-                <p className="text-navy font-montserrat font-semibold text-sm">Meet Atticus</p>
-                <p className="text-warm-gray text-xs">English Labrador</p>
+                <p className="text-slate-800 font-montserrat font-semibold text-sm">Meet Atticus</p>
+                <p className="text-slate-600 text-xs">English Labrador</p>
               </div>
             </div>
           </div>
@@ -88,12 +88,12 @@ export default function Hero() {
         <div className="mb-16">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
-              <Heart className="w-6 h-6 text-golden mr-2" />
+              <Heart className="w-6 h-6 text-yellow-400 mr-2" />
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">
                 Stories from Our Families
               </h2>
             </div>
-            <p className="text-gray-200 max-w-2xl mx-auto">
+            <p className="text-gray-100 max-w-2xl mx-auto">
               Every puppy we place becomes part of a loving family. Here are some of their stories.
             </p>
           </div>
@@ -109,17 +109,17 @@ export default function Hero() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-warm-gray mb-4 italic font-source-sans">
+                  <p className="text-slate-700 mb-4 italic font-source-sans">
                     "{testimonial.testimonial}"
                   </p>
                   <div className="border-t pt-4">
-                    <h4 className="font-playfair font-bold text-navy mb-1">
+                    <h4 className="font-playfair font-bold text-slate-800 mb-1">
                       {testimonial.name}
                     </h4>
-                    <p className="text-golden font-medium text-sm mb-1">
+                    <p className="text-yellow-700 font-medium text-sm mb-1">
                       {testimonial.dog}'s Family
                     </p>
-                    <p className="text-warm-gray text-sm">
+                    <p className="text-slate-600 text-sm">
                       {testimonial.location}
                     </p>
                   </div>
@@ -140,7 +140,7 @@ export default function Hero() {
             </p>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-golden text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-yellow-600 h-auto"
+              className="bg-yellow-600 text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-yellow-700 h-auto"
             >
               Start Your Journey
             </Button>
