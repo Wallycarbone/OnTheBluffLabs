@@ -120,8 +120,8 @@ export default function Puppies() {
             <span className="font-medium">Available:</span> {litter.available}
           </p>
         </div>
-        <div className="flex items-center mb-4">
-          <Award className="w-4 h-4 mr-1" style={{color: '#6d761d'}} />
+        <div className="flex items-start mb-4">
+          <Award className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
           <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             {litter.name === "Moon & Foxxy Litter" 
               ? "Descended from 2019 Westminster Best in Breed Farnfield Topo Gigio"
