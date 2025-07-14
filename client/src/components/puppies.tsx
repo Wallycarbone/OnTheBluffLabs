@@ -124,7 +124,9 @@ export default function Puppies() {
           <Award className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
           <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             {litter.name === "Moon & Foxxy Litter" 
-              ? "Descended from 2019 Westminster Best in Breed Farnfield Topo Gigio"
+              ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
+              : litter.name === "Grizzly & Guinevere Litter"
+              ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
               : "Champion Bloodline"
             }
           </span>
