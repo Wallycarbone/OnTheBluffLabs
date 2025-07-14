@@ -40,7 +40,7 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <Award className="w-8 h-8 mr-3" style={{color: '#4b4b4b'}} />
-              <span className="font-montserrat font-semibold text-lg" style={{color: '#4b4b4b'}}>
+              <span className="font-source-sans font-semibold text-lg" style={{color: '#4b4b4b'}}>
                 50+ Years of Excellence
               </span>
             </div>
