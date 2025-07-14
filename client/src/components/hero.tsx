@@ -32,7 +32,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen" style={{backgroundColor: '#f7e89a'}}>
+    <section id="home" className="min-h-screen" style={{backgroundColor: '#fff3c5'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Content with Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -138,10 +138,10 @@ export default function Hero() {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-4">
+            <h3 className="text-2xl md:text-3xl font-playfair font-bold mb-4" style={{color: '#11100f'}}>
               Ready to Find Your Perfect Companion?
             </h3>
-            <p className="text-gray-200 mb-6">
+            <p className="mb-6" style={{color: '#6d761d'}}>
               Join the families who have trusted us for over 50 years to provide exceptional Labradors.
             </p>
             <Button 
