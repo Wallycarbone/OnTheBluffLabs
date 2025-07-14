@@ -29,7 +29,7 @@ export default function About() {
             ABOUT ON THE BLUFF LABRADORS
           </h2>
           <p className="text-xl max-w-3xl mx-auto font-source-sans" style={{color: '#4b4b4b'}}>
-            Dedicated to preserving the finest qualities of the Labrador Retriever through ethical breeding practices and unwavering commitment to excellence.
+            Dedicated to preserving the finest qualities of the Labrador Retriever through holistic breeding practices and unwavering commitment to excellence.
           </p>
         </div>
         
