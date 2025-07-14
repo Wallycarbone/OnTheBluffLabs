@@ -7,9 +7,11 @@ export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  createAdminUser(username: string, password: string): Promise<User>;
   validateLogin(loginData: LoginData): Promise<User | null>;
   createInquiry(inquiry: InsertInquiry): Promise<Inquiry>;
   getInquiries(): Promise<Inquiry[]>;
+  getAllUsers(): Promise<User[]>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -69,6 +71,27 @@ export class DatabaseStorage implements IStorage {
       .from(inquiries)
       .orderBy(inquiries.createdAt);
     return inquiryList;
+  }
+
+  async createAdminUser(username: string, password: string): Promise<User> {
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const [user] = await db
+      .insert(users)
+      .values({
+        username,
+        password: hashedPassword,
+        role: 'admin'
+      })
+      .returning();
+    return user;
+  }
+
+  async getAllUsers(): Promise<User[]> {
+    const allUsers = await db.select().from(users);
+    return allUsers.map(user => ({
+      ...user,
+      password: '[HIDDEN]' // Don't expose passwords
+    }));
   }
 }
 
