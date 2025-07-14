@@ -105,14 +105,14 @@ export default function Hero() {
           
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative group">
+            <div className="relative group mb-8">
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl"></div>
               <img 
                 src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1"
                 alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
                 className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl relative z-10 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute -bottom-6 -right-6 rounded-2xl px-6 py-3 shadow-xl border border-white/20" style={{backgroundColor: '#6d761d'}}>
+              <div className="absolute bottom-4 right-4 rounded-2xl px-6 py-3 shadow-xl border border-white/20 z-20" style={{backgroundColor: '#6d761d'}}>
                 <p className="font-montserrat font-semibold text-base" style={{color: '#fefefe'}}>Atticus Finch</p>
                 <p className="text-sm" style={{color: '#fff3c5'}}>Cherished Sire</p>
               </div>
