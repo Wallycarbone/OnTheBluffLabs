@@ -85,9 +85,7 @@ export default function Puppies() {
             {litter.status}
           </span>
         </div>
-        <p className="text-sm font-source-sans mb-3" style={{color: '#4b4b4b'}}>
-          {litter.description}
-        </p>
+
         <div className="space-y-2 mb-4">
           <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             <span className="font-medium">Sire:</span> {litter.sire}
