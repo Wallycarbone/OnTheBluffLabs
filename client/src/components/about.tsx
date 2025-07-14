@@ -13,7 +13,7 @@ export default function About() {
     },
     {
       icon: Award,
-      title: "Optional Training Program",
+      title: "Training Program & Behavior Support",
     },
     {
       icon: Home,
