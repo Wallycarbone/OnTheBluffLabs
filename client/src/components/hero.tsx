@@ -28,7 +28,7 @@ export default function Hero() {
 
   const featuredTestimonials = [
     {
-      name: "Duke and Atlas",
+      name: "Toniann & Michael",
       testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Atlas, (and his big bro Duke), have the best manners you could ever see in puppies and are incredibly affectionate. We chalk this up to the weeks of training they had before coming to our home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children. Having a dog with the proper foundation takes the work and stress away from worrying about if what you're doing is right. Plus, training a puppy is very demanding and as someone who already has a full-time job, the training program is a no-brainer. My husband and I got both our OTB pups with 12 weeks of training, and I'm certain we will do it over and over again in the future.",
       dog: "Duke & Atlas",
       degree: "Master's Degree Training Grad",
