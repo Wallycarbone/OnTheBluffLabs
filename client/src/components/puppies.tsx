@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award } from "lucide-react";
+import { Star } from "lucide-react";
 import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
 
 export default function Puppies() {
@@ -121,12 +121,14 @@ export default function Puppies() {
           </p>
         </div>
         <div className="flex items-start mb-4">
-          <Award className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
+          <Star className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
           <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             {litter.name === "Moon & Foxxy Litter" 
               ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
               : litter.name === "Grizzly & Guinevere Litter"
               ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
+              : litter.name === "Holden & Alola Litter"
+              ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
               : "Champion Bloodline"
             }
           </span>
