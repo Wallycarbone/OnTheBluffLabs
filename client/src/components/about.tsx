@@ -4,12 +4,12 @@ import puppyImage from "@assets/Copy of Gallery Image - Landscape (22)_175252224
 export default function About() {
   const features = [
     {
-      icon: Heart,
-      title: "Health Testing",
-    },
-    {
       icon: Shield,
       title: "Champion Bloodlines",
+    },
+    {
+      icon: Heart,
+      title: "Health Testing",
     },
     {
       icon: Award,
