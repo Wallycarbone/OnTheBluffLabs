@@ -27,10 +27,10 @@ export default function AdminLogin() {
 
   const loginMutation = useMutation({
     mutationFn: async (data: LoginData) => {
-      console.log("Attempting login with:", data);
-      console.log("API endpoint:", "/api/auth/login");
+      console.log("LOGIN ATTEMPT: Starting login for user:", data.username);
+      
       try {
-        // Direct fetch test
+        console.log("LOGIN FETCH: Making request to /api/auth/login");
         const response = await fetch("/api/auth/login", {
           method: "POST",
           headers: {
@@ -40,16 +40,20 @@ export default function AdminLogin() {
           credentials: "include",
         });
         
-        console.log("Response status:", response.status);
+        console.log("LOGIN RESPONSE: Status =", response.status);
+        console.log("LOGIN RESPONSE: Headers =", Object.fromEntries(response.headers.entries()));
         
         if (!response.ok) {
           const text = await response.text();
-          throw new Error(`${response.status}: ${text}`);
+          console.error("LOGIN ERROR: Response not OK:", text);
+          throw new Error(`Login failed: ${text}`);
         }
         
-        return response.json();
+        const result = await response.json();
+        console.log("LOGIN SUCCESS: Received data =", result);
+        return result;
       } catch (error) {
-        console.error("Login fetch error:", error);
+        console.error("LOGIN CATCH: Error occurred =", error);
         throw error;
       }
     },
