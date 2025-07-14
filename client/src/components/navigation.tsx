@@ -67,7 +67,6 @@ export default function Navigation() {
               >
                 Contact
               </Button>
-              <a href="/admin/login" className="text-xs text-warm-gray hover:text-navy px-2 py-1 opacity-75">Admin</a>
             </div>
           </div>
           
