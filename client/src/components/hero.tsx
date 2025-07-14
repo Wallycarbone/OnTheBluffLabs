@@ -118,7 +118,7 @@ export default function Hero() {
         <div className="mb-20">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
-              <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm">
+              <div className="flex items-center rounded-full px-6 py-3 shadow-sm" style={{backgroundColor: '#fefefe'}}>
                 <Heart className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
                 <h2 className="text-3xl md:text-4xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
                   STORIES FROM OUR FAMILIES
@@ -183,7 +183,7 @@ export default function Hero() {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-white/30 backdrop-blur-sm rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20">
+          <div className="rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20" style={{backgroundColor: 'rgba(254, 254, 254, 0.85)'}}>
             <h3 className="text-3xl md:text-4xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
               READY TO FIND YOUR<br />
               <span style={{color: '#6d761d'}}>PERFECT COMPANION?</span>
