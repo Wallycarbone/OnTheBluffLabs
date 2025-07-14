@@ -48,8 +48,7 @@ export default function Hero() {
               ON THE BLUFF LABRADORS
             </h1>
             <p className="text-xl md:text-2xl mb-8 font-source-sans font-light" style={{color: '#6d761d'}}>
-              Where exceptional bloodlines meet dedicated breeding practices. 
-              Trusted by families for over five decades.
+              English Labradors Bred for Beauty and Temperament
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
