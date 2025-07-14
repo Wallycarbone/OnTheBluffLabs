@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
 
 export default function Puppies() {
   const currentLitters = [
@@ -12,7 +13,7 @@ export default function Puppies() {
       puppiesCount: 7,
       available: "Strawberry Blonde Males & Females",
       readyDate: "August 2025",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/Untitled-design-87.png?resize=600%2C900&ssl=1",
+      image: moonFoxxyPuppies,
       status: "Current",
       description: "Seven puppies born June 5, 2025"
     },
