@@ -26,12 +26,21 @@
   --ring: hsl(210, 40%, 16%);
   --radius: 0.5rem;
   
-  /* Custom colors for On The Bluff Labradors - High Contrast */
-  --navy: hsl(210, 40%, 8%);
-  --golden: hsl(43, 74%, 40%);
-  --warm-gray: hsl(215, 16%, 35%);
-  --saddle: hsl(25, 69%, 25%);
-  --warm-brown: hsl(25, 69%, 15%);
+  /* Custom colors for On The Bluff Labradors - Brand Colors */
+  --brand-off-white: #fefefe;
+  --brand-light-gray: #ebebeb;
+  --brand-olive: #6d761d;
+  --brand-dark-gold: #644f06;
+  --brand-medium-gray: #4b4b4b;
+  --brand-charcoal: #11100f;
+  --brand-golden: #e3b404;
+  
+  /* Legacy color mappings to new brand colors */
+  --navy: #11100f;
+  --golden: #e3b404;
+  --warm-gray: #4b4b4b;
+  --saddle: #644f06;
+  --warm-brown: #6d761d;
 }
 
 .dark {

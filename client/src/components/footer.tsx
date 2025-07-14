@@ -9,24 +9,24 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-navy text-white py-12">
+    <footer className="py-12" style={{backgroundColor: '#11100f', color: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-playfair font-bold mb-6">
               On The Bluff Labradors
             </h3>
-            <p className="text-gray-300 mb-4">
+            <p className="mb-4" style={{color: '#ebebeb'}}>
               Breeding exceptional Labrador Retrievers with love, care, and dedication since 2003.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-golden transition-colors">
+              <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-golden transition-colors">
+              <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-golden transition-colors">
+              <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
                 <Youtube className="w-6 h-6" />
               </a>
             </div>

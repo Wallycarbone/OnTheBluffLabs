@@ -21,13 +21,13 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20" style={{backgroundColor: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
             About On The Bluff Labradors
           </h2>
-          <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
             Dedicated to preserving the finest qualities of the Labrador Retriever through ethical breeding practices and unwavering commitment to excellence.
           </p>
         </div>
@@ -41,18 +41,18 @@ export default function About() {
             />
           </div>
           <div>
-            <h3 className="text-3xl font-playfair font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
               Our Mission & Values
             </h3>
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg mb-6" style={{color: '#4b4b4b'}}>
               For over two decades, we have been committed to breeding exceptional Labrador Retrievers that embody the breed's finest qualities: intelligence, loyalty, and gentle temperament. Our approach combines traditional breeding wisdom with modern genetic health testing.
             </p>
             
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center">
-                  <feature.icon className="text-yellow-600 text-2xl mr-4 w-6 h-6" />
-                  <span className="text-lg text-slate-800">{feature.title}</span>
+                  <feature.icon className="text-2xl mr-4 w-6 h-6" style={{color: '#e3b404'}} />
+                  <span className="text-lg" style={{color: '#11100f'}}>{feature.title}</span>
                 </div>
               ))}
             </div>

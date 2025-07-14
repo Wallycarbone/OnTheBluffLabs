@@ -58,27 +58,27 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20" style={{backgroundColor: '#ebebeb'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
             Get In Touch
           </h2>
-          <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
             Ready to welcome a Labrador into your family? We'd love to hear from you.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="bg-white rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-playfair font-bold text-slate-900 mb-6">
+          <Card className="rounded-xl shadow-lg p-8" style={{backgroundColor: '#fefefe'}}>
+            <h3 className="text-2xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
               Puppy Inquiry Form
             </h3>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <Label htmlFor="firstName" className="text-sm font-medium text-slate-700">
+                  <Label htmlFor="firstName" className="text-sm font-medium" style={{color: '#4b4b4b'}}>
                     First Name
                   </Label>
                   <Input
@@ -93,7 +93,7 @@ export default function Contact() {
                   )}
                 </div>
                 <div>
-                  <Label htmlFor="lastName" className="text-sm font-medium text-slate-700">
+                  <Label htmlFor="lastName" className="text-sm font-medium" style={{color: '#4b4b4b'}}>
                     Last Name
                   </Label>
                   <Input
@@ -110,7 +110,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <Label htmlFor="email" className="text-sm font-medium text-slate-700">
+                <Label htmlFor="email" className="text-sm font-medium" style={{color: '#4b4b4b'}}>
                   Email Address
                 </Label>
                 <Input
@@ -127,7 +127,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <Label htmlFor="phone" className="text-sm font-medium text-slate-700">
+                <Label htmlFor="phone" className="text-sm font-medium" style={{color: '#4b4b4b'}}>
                   Phone Number
                 </Label>
                 <Input
@@ -144,7 +144,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <Label htmlFor="preferredColor" className="text-sm font-medium text-slate-700">
+                <Label htmlFor="preferredColor" className="text-sm font-medium" style={{color: '#4b4b4b'}}>
                   Preferred Color
                 </Label>
                 <Select
@@ -172,7 +172,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <Label htmlFor="message" className="text-sm font-medium text-slate-700">
+                <Label htmlFor="message" className="text-sm font-medium" style={{color: '#4b4b4b'}}>
                   Tell us about your family
                 </Label>
                 <Textarea
@@ -191,7 +191,10 @@ export default function Contact() {
               
               <Button 
                 type="submit" 
-                className="w-full bg-yellow-600 text-white hover:bg-yellow-700 font-montserrat font-medium"
+                className="w-full font-montserrat font-medium"
+                style={{backgroundColor: '#e3b404', color: '#fefefe'}}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#e3b404'}
                 disabled={createInquiry.isPending}
               >
                 {createInquiry.isPending ? "Submitting..." : "Submit Inquiry"}
@@ -201,33 +204,33 @@ export default function Contact() {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-playfair font-bold text-slate-900 mb-6">
+            <Card className="rounded-xl shadow-lg p-8" style={{backgroundColor: '#fefefe'}}>
+              <h3 className="text-2xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
                 Contact Information
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <MapPin className="text-yellow-600 w-5 h-5 mr-4 mt-1" />
+                  <MapPin className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
-                    <h4 className="font-montserrat font-medium text-slate-900">Address</h4>
-                    <p className="text-slate-700">
+                    <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Address</h4>
+                    <p style={{color: '#4b4b4b'}}>
                       1234 Bluff Ridge Road<br />
                       Countryside, State 12345
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Phone className="text-yellow-600 w-5 h-5 mr-4 mt-1" />
+                  <Phone className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
-                    <h4 className="font-montserrat font-medium text-slate-900">Phone</h4>
-                    <p className="text-slate-700">(555) 123-4567</p>
+                    <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Phone</h4>
+                    <p style={{color: '#4b4b4b'}}>(555) 123-4567</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Mail className="text-yellow-600 w-5 h-5 mr-4 mt-1" />
+                  <Mail className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
-                    <h4 className="font-montserrat font-medium text-slate-900">Email</h4>
-                    <p className="text-slate-700">info@ontheblufflabradors.com</p>
+                    <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Email</h4>
+                    <p style={{color: '#4b4b4b'}}>info@ontheblufflabradors.com</p>
                   </div>
                 </div>
               </div>

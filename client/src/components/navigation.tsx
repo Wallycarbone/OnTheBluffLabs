@@ -14,12 +14,12 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="shadow-lg sticky top-0 z-50" style={{backgroundColor: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-playfair font-bold text-slate-900">On The Bluff Labradors</h1>
+              <h1 className="text-2xl font-playfair font-bold" style={{color: '#11100f'}}>On The Bluff Labradors</h1>
             </div>
           </div>
           
@@ -27,43 +27,63 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
               >
                 About Us
               </button>
               <button 
                 onClick={() => scrollToSection('puppies')}
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
               >
                 Available Puppies
               </button>
               <button 
                 onClick={() => scrollToSection('breeding')}
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
               >
                 Our Dogs
               </button>
               <button 
                 onClick={() => scrollToSection('health')}
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
               >
                 Health Testing
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
-                className="text-slate-700 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
               >
                 Testimonials
               </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-yellow-600 text-white hover:bg-yellow-700"
+                style={{backgroundColor: '#e3b404', color: '#fefefe'}}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#e3b404'}
               >
                 Contact
               </Button>
@@ -84,7 +104,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden border-t" style={{backgroundColor: '#fefefe'}}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button 
               onClick={() => scrollToSection('home')}
