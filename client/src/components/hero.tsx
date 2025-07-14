@@ -32,22 +32,22 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen" style={{backgroundColor: '#e3b404'}}>
+    <section id="home" className="min-h-screen" style={{backgroundColor: '#f2d86b'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Content with Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <Award className="w-8 h-8 mr-3" style={{color: '#11100f'}} />
-              <span className="font-montserrat font-semibold text-lg" style={{color: '#11100f'}}>
+              <Award className="w-8 h-8 mr-3" style={{color: '#4b4b4b'}} />
+              <span className="font-montserrat font-semibold text-lg" style={{color: '#4b4b4b'}}>
                 50+ Years of Excellence
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6" style={{color: '#4b4b4b'}}>
               On The Bluff Labradors
             </h1>
-            <p className="text-xl md:text-2xl mb-8 font-light" style={{color: '#4b4b4b'}}>
+            <p className="text-xl md:text-2xl mb-8 font-light" style={{color: '#6d761d'}}>
               Where exceptional bloodlines meet dedicated breeding practices. 
               Trusted by families for over five decades.
             </p>
@@ -55,9 +55,9 @@ export default function Hero() {
               <Button 
                 onClick={() => scrollToSection('puppies')}
                 className="px-8 py-4 text-lg font-montserrat font-medium h-auto"
-                style={{backgroundColor: '#11100f', color: '#fefefe'}}
+                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
               >
                 View Available Puppies
               </Button>
@@ -65,9 +65,9 @@ export default function Hero() {
                 variant="outline"
                 onClick={() => scrollToSection('contact')}
                 className="border-2 px-8 py-4 text-lg font-montserrat font-medium h-auto"
-                style={{borderColor: '#11100f', color: '#11100f'}}
-                onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#11100f'; e.currentTarget.style.color = '#fefefe'}}
-                onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#11100f'}}
+                style={{borderColor: '#6d761d', color: '#6d761d'}}
+                onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
+                onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#6d761d'}}
               >
                 Contact Us
               </Button>
@@ -82,7 +82,7 @@ export default function Hero() {
                 alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
                 className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-4 -right-4 rounded-lg px-4 py-2 shadow-lg" style={{backgroundColor: '#11100f'}}>
+              <div className="absolute -bottom-4 -right-4 rounded-lg px-4 py-2 shadow-lg" style={{backgroundColor: '#6d761d'}}>
                 <p className="font-montserrat font-semibold text-sm" style={{color: '#fefefe'}}>Meet Atticus</p>
                 <p className="text-xs" style={{color: '#ebebeb'}}>English Labrador</p>
               </div>
@@ -94,19 +94,19 @@ export default function Hero() {
         <div className="mb-16">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
-              <Heart className="w-6 h-6 mr-2" style={{color: '#11100f'}} />
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold" style={{color: '#11100f'}}>
+              <Heart className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold" style={{color: '#4b4b4b'}}>
                 Stories from Our Families
               </h2>
             </div>
-            <p className="max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
+            <p className="max-w-2xl mx-auto" style={{color: '#6d761d'}}>
               Every puppy we place becomes part of a loving family. Here are some of their stories.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredTestimonials.map((testimonial, index) => (
-              <Card key={index} className="rounded-xl shadow-lg hover:shadow-xl transition-shadow" style={{backgroundColor: '#11100f'}}>
+              <Card key={index} className="rounded-xl shadow-lg hover:shadow-xl transition-shadow" style={{backgroundColor: '#6d761d'}}>
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <div className="flex text-golden">
@@ -122,7 +122,7 @@ export default function Hero() {
                     <h4 className="font-playfair font-bold mb-1" style={{color: '#fefefe'}}>
                       {testimonial.name}
                     </h4>
-                    <p className="font-medium text-sm mb-1" style={{color: '#e3b404'}}>
+                    <p className="font-medium text-sm mb-1" style={{color: '#f2d86b'}}>
                       {testimonial.dog}'s Family
                     </p>
                     <p className="text-sm" style={{color: '#ebebeb'}}>
@@ -147,9 +147,9 @@ export default function Hero() {
             <Button 
               onClick={() => scrollToSection('contact')}
               className="px-8 py-4 text-lg font-montserrat font-medium h-auto"
-              style={{backgroundColor: '#11100f', color: '#fefefe'}}
+              style={{backgroundColor: '#6d761d', color: '#fefefe'}}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#11100f'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
             >
               Start Your Journey
             </Button>
