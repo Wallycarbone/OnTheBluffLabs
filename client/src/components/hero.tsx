@@ -15,18 +15,24 @@ export default function Hero() {
       name: "Sarah & Mike Johnson",
       testimonial: "Atticus has been an incredible addition to our family. His gentle temperament and intelligence continue to amaze us every day. The training program made all the difference.",
       dog: "Atticus",
+      degree: "Canine Good Citizen",
+      parents: "Champion Jasper x Lady Bella",
       location: "Colorado"
     },
     {
       name: "The Henderson Family",
       testimonial: "Duke's personality is everything we hoped for. He's wonderful with our children and has that perfect Labrador spirit. The support from On The Bluff has been exceptional.",
       dog: "Duke", 
+      degree: "Therapy Dog Certified",
+      parents: "Noble Duke x Sweet Molly",
       location: "Montana"
     },
     {
       name: "Jennifer & Tom Davis",
       testimonial: "Mikkola came home perfectly socialized and ready to be part of our family. The professionalism and care shown throughout the process was outstanding.",
       dog: "Mikkola",
+      degree: "Advanced Obedience Title",
+      parents: "Atticus Finch x Golden Grace",
       location: "Wyoming"
     }
   ];
@@ -130,6 +136,12 @@ export default function Hero() {
                     </h4>
                     <p className="font-medium text-sm mb-1" style={{color: '#6d761d'}}>
                       {testimonial.dog}'s Family
+                    </p>
+                    <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
+                      <span className="font-medium">Achievement:</span> {testimonial.degree}
+                    </p>
+                    <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
+                      <span className="font-medium">Parents:</span> {testimonial.parents}
                     </p>
                     <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
                       {testimonial.location}
