@@ -32,7 +32,7 @@ export default function Contact() {
 
   const createInquiry = useMutation({
     mutationFn: async (data: InsertInquiry) => {
-      const response = await apiRequest("POST", "/api/inquiries", data);
+      const response = await apiRequest("/api/inquiries", "POST", data);
       return response.json();
     },
     onSuccess: () => {

@@ -30,7 +30,7 @@ export default function AdminLogin() {
       console.log("Attempting login with:", data);
       console.log("API endpoint:", "/api/auth/login");
       try {
-        const response = await apiRequest("POST", "/api/auth/login", data);
+        const response = await apiRequest("/api/auth/login", "POST", data);
         console.log("Login response received:", response.status);
         return response.json();
       } catch (error) {
