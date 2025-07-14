@@ -46,7 +46,7 @@ export default function About() {
               OUR MISSION & VALUES
             </h3>
             <p className="text-lg mb-6 font-source-sans" style={{color: '#4b4b4b'}}>
-              For decades, we have been committed to breeding exceptional Labrador Retrievers that embody the breed's finest qualities: intelligence, loyalty, and gentle temperament. Our holistic approach nurtures the whole dog - from careful bloodline selection to comprehensive health care, proper socialization, and ongoing support for families.
+              For decades, we have been committed to breeding exceptional Labrador Retrievers that embody the breed's finest qualities: intelligence, loyalty, and gentle temperament. Our holistic approach nurtures the whole dog - from careful bloodline selection to a raw meat diet that promotes optimal health, proper socialization, and ongoing support for families.
             </p>
             
             <div className="space-y-4">
