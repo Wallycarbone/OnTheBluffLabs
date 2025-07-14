@@ -16,15 +16,9 @@ export default function Puppies() {
     
     if (diffDays < 7) {
       return `${diffDays} days old`;
-    } else if (diffDays < 30) {
+    } else {
       const weeks = Math.floor(diffDays / 7);
       return `${weeks} week${weeks > 1 ? 's' : ''} old`;
-    } else if (diffDays < 365) {
-      const months = Math.floor(diffDays / 30);
-      return `${months} month${months > 1 ? 's' : ''} old`;
-    } else {
-      const years = Math.floor(diffDays / 365);
-      return `${years} year${years > 1 ? 's' : ''} old`;
     }
   };
   const currentLitters = [
