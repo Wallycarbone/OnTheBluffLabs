@@ -60,7 +60,7 @@ export default function Hero() {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-8">
-              <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm">
+              <div className="flex items-center rounded-full px-4 py-2 shadow-sm" style={{backgroundColor: '#fefefe'}}>
                 <Award className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
                 <span className="font-source-sans font-semibold text-base" style={{color: '#11100f'}}>
                   50+ Years of Excellence
