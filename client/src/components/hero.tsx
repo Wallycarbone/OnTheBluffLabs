@@ -32,45 +32,55 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-warm-brown to-golden">
-      {/* Hero Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/10/Copy-of-Gallery-Image-Landscape.png?resize=1080%2C810&ssl=1")`
-        }}
-      ></div>
-      
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-6">
-            <Award className="w-8 h-8 text-golden mr-3" />
-            <span className="text-golden font-montserrat font-semibold text-lg">
-              50+ Years of Excellence
-            </span>
+    <section id="home" className="min-h-screen bg-gradient-to-br from-warm-brown to-golden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        {/* Hero Content with Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Left Content */}
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start mb-6">
+              <Award className="w-8 h-8 text-golden mr-3" />
+              <span className="text-golden font-montserrat font-semibold text-lg">
+                50+ Years of Excellence
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">
+              On The Bluff Labradors
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light">
+              Where exceptional bloodlines meet dedicated breeding practices. 
+              Trusted by families for over five decades.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button 
+                onClick={() => scrollToSection('puppies')}
+                className="bg-golden text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-yellow-600 h-auto"
+              >
+                View Available Puppies
+              </Button>
+              <Button 
+                variant="outline"
+                onClick={() => scrollToSection('contact')}
+                className="border-2 border-white text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-white hover:text-navy h-auto"
+              >
+                Contact Us
+              </Button>
+            </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-playfair font-bold text-white mb-6">
-            On The Bluff Labradors
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 font-light">
-            Where exceptional bloodlines meet dedicated breeding practices. 
-            Trusted by families for over five decades.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={() => scrollToSection('puppies')}
-              className="bg-golden text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-yellow-600 h-auto"
-            >
-              View Available Puppies
-            </Button>
-            <Button 
-              variant="outline"
-              onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white px-8 py-4 text-lg font-montserrat font-medium hover:bg-white hover:text-navy h-auto"
-            >
-              Contact Us
-            </Button>
+          
+          {/* Right Image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <img 
+                src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1"
+                alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
+                className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl"
+              />
+              <div className="absolute -bottom-4 -right-4 bg-white rounded-lg px-4 py-2 shadow-lg">
+                <p className="text-navy font-montserrat font-semibold text-sm">Meet Atticus</p>
+                <p className="text-warm-gray text-xs">English Labrador</p>
+              </div>
+            </div>
           </div>
         </div>
 
