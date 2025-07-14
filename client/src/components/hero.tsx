@@ -32,7 +32,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen" style={{backgroundColor: '#fff3c5'}}>
+    <section id="home" className="min-h-screen" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Content with Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
