@@ -82,8 +82,8 @@ export default function Hero() {
                 className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 rounded-lg px-4 py-2 shadow-lg" style={{backgroundColor: '#6d761d'}}>
-                <p className="font-montserrat font-semibold text-sm" style={{color: '#fefefe'}}>Meet Atticus</p>
-                <p className="text-xs" style={{color: '#ebebeb'}}>Beloved Stud (1998-2010)</p>
+                <p className="font-montserrat font-semibold text-sm" style={{color: '#fefefe'}}>Atticus Finch</p>
+                <p className="text-xs" style={{color: '#ebebeb'}}>Beloved Stud</p>
               </div>
             </div>
           </div>
