@@ -100,14 +100,22 @@ export default function Admin() {
             <h1 className="text-3xl font-bold text-amber-800">Admin Dashboard</h1>
             <p className="text-amber-600">Welcome back, {user.username}</p>
           </div>
-          <Button 
-            onClick={handleLogout}
-            variant="outline"
-            className="text-amber-600 border-amber-600 hover:bg-amber-50"
-          >
-            <LogOut className="h-4 w-4 mr-2" />
-            Logout
-          </Button>
+          <div className="flex gap-3">
+            <Button 
+              onClick={() => setLocation("/admin/files")}
+              className="bg-amber-600 hover:bg-amber-700"
+            >
+              Edit Website
+            </Button>
+            <Button 
+              onClick={handleLogout}
+              variant="outline"
+              className="text-amber-600 border-amber-600 hover:bg-amber-50"
+            >
+              <LogOut className="h-4 w-4 mr-2" />
+              Logout
+            </Button>
+          </div>
         </div>
 
         {/* Stats */}

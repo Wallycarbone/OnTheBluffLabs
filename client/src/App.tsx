@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import Admin from "@/pages/admin";
 import AdminLogin from "@/pages/admin-login";
 import SimpleAdminLogin from "@/pages/simple-admin-login";
+import FileEditor from "@/pages/file-editor";
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/admin/login" component={SimpleAdminLogin} />
       <Route path="/admin" component={Admin} />
+      <Route path="/admin/files" component={FileEditor} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -127,6 +127,65 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // File editor endpoints for admin
+  app.get('/api/admin/files/:filepath(*)', (req, res) => {
+    try {
+      const filePath = req.params.filepath;
+      const fs = require('fs');
+      const path = require('path');
+      
+      const fullPath = path.join(process.cwd(), filePath);
+      
+      // Security check - only allow editing specific files
+      const allowedPaths = [
+        'client/src/components/',
+        'client/src/pages/',
+      ];
+      
+      const isAllowed = allowedPaths.some(allowed => filePath.startsWith(allowed));
+      if (!isAllowed) {
+        return res.status(403).json({ message: 'File access not allowed' });
+      }
+      
+      if (fs.existsSync(fullPath)) {
+        const content = fs.readFileSync(fullPath, 'utf8');
+        res.type('text/plain').send(content);
+      } else {
+        res.status(404).json({ message: 'File not found' });
+      }
+    } catch (error) {
+      console.error('Error reading file:', error);
+      res.status(500).json({ message: 'Failed to read file' });
+    }
+  });
+
+  app.put('/api/admin/files/:filepath(*)', (req, res) => {
+    try {
+      const filePath = req.params.filepath;
+      const fs = require('fs');
+      const path = require('path');
+      
+      const fullPath = path.join(process.cwd(), filePath);
+      
+      // Security check - only allow editing specific files
+      const allowedPaths = [
+        'client/src/components/',
+        'client/src/pages/',
+      ];
+      
+      const isAllowed = allowedPaths.some(allowed => filePath.startsWith(allowed));
+      if (!isAllowed) {
+        return res.status(403).json({ message: 'File access not allowed' });
+      }
+      
+      fs.writeFileSync(fullPath, req.body);
+      res.json({ message: 'File saved successfully' });
+    } catch (error) {
+      console.error('Error saving file:', error);
+      res.status(500).json({ message: 'Failed to save file' });
+    }
+  });
+
   // User creation endpoint (for seeding admin user)
   app.post("/api/users", async (req, res) => {
     try {
