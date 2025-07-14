@@ -138,11 +138,20 @@ export default function Hero() {
                 <CardContent className="p-8 relative">
                   <div className="absolute top-0 left-0 w-full h-1" style={{backgroundColor: '#6d761d'}}></div>
                   <div className="flex items-center mb-6">
-                    <div className="flex" style={{color: '#6d761d'}}>
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-current" />
-                      ))}
-                    </div>
+                    {testimonial.dog === "Duke & Atlas" ? (
+                      <div className="flex items-center px-4 py-2 rounded-full" style={{backgroundColor: '#6d761d'}}>
+                        <Heart className="w-4 h-4 mr-2" style={{color: '#fefefe'}} />
+                        <span className="text-sm font-source-sans font-medium" style={{color: '#fefefe'}}>
+                          2nd Generation OTB Family
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="flex" style={{color: '#6d761d'}}>
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 fill-current" />
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <div className="mb-6">
                     <p className="italic font-source-sans text-sm leading-relaxed mb-3" style={{color: '#4b4b4b'}}>
