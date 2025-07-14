@@ -3,101 +3,179 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
 export default function Puppies() {
-  const litters = [
+  const currentLitters = [
     {
-      name: "Spring 2024 Litter",
-      sire: "Champion Jasper",
-      dam: "Lady Bella",
-      birthDate: "March 15, 2024",
-      puppiesCount: 8,
-      availableCount: 3,
-      colors: ["Yellow", "Chocolate"],
-      readyDate: "May 10, 2024",
-      image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      status: "Available"
-    },
-    {
-      name: "Summer 2024 Litter",
-      sire: "Noble Duke",
-      dam: "Sweet Molly",
-      birthDate: "June 20, 2024",
-      puppiesCount: 6,
-      availableCount: 2,
-      colors: ["Yellow", "Black"],
-      readyDate: "August 15, 2024",
-      image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      status: "Available"
-    },
-    {
-      name: "Fall 2024 Litter",
-      sire: "Atticus Finch",
-      dam: "Golden Grace",
-      birthDate: "September 10, 2024",
+      name: "Moon & Foxxy Litter",
+      sire: "Moon",
+      dam: "Foxxy",
+      birthDate: "June 5, 2025",
       puppiesCount: 7,
-      availableCount: 4,
-      colors: ["Yellow", "Chocolate", "Black"],
-      readyDate: "November 5, 2024",
-      image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      status: "Available"
+      available: "Strawberry Blonde Males & Females",
+      readyDate: "August 2025",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/Untitled-design-87.png?resize=600%2C900&ssl=1",
+      status: "Current",
+      description: "Seven puppies born June 5, 2025"
+    },
+    {
+      name: "Grizzly & Guinevere Litter",
+      sire: "Grizzly",
+      dam: "Guinevere",
+      birthDate: "April 5, 2025",
+      puppiesCount: 8,
+      available: "Chocolate Males & Females",
+      readyDate: "Ready Now",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/52.png?fit=1080%2C810&ssl=1",
+      status: "Ready",
+      description: "Eight chocolate puppies - males and females available"
+    },
+    {
+      name: "Holden & Alola Litter",
+      sire: "Holden",
+      dam: "Alola",
+      birthDate: "March 21, 2025",
+      puppiesCount: 8,
+      available: "Chocolate Females",
+      readyDate: "Ready Now",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/05/40.png?fit=1080%2C810&ssl=1",
+      status: "Ready",
+      description: "Three chocolate females available"
     }
   ];
 
+  const upcomingLitters = [
+    {
+      name: "Moon & Nora Litter",
+      sire: "Moon",
+      dam: "Nora",
+      birthDate: "Due June 2025",
+      puppiesCount: "Expected",
+      available: "One Black Female & One Yellow Female",
+      readyDate: "August 2025",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/58.png?resize=1080%2C810&ssl=1",
+      status: "Upcoming",
+      description: "One black female and one yellow female available"
+    }
+  ];
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const renderLitterCard = (litter: any, index: number) => (
+    <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+      <img 
+        src={litter.image} 
+        alt={`${litter.name} Labrador litter`} 
+        className="w-full h-48 object-cover"
+      />
+      <CardContent className="p-6">
+        <div className="flex justify-between items-start mb-2">
+          <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+            {litter.name}
+          </h3>
+          <span className={`px-3 py-1 rounded-full text-xs font-montserrat font-medium ${
+            litter.status === 'Ready' ? 'bg-green-100 text-green-800' :
+            litter.status === 'Current' ? 'bg-blue-100 text-blue-800' :
+            'bg-orange-100 text-orange-800'
+          }`}>
+            {litter.status}
+          </span>
+        </div>
+        <p className="text-sm font-source-sans mb-3" style={{color: '#4b4b4b'}}>
+          {litter.description}
+        </p>
+        <div className="space-y-2 mb-4">
+          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+            <span className="font-medium">Sire:</span> {litter.sire}
+          </p>
+          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+            <span className="font-medium">Dam:</span> {litter.dam}
+          </p>
+          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+            <span className="font-medium">Born:</span> {litter.birthDate}
+          </p>
+          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+            <span className="font-medium">Available:</span> {litter.available}
+          </p>
+        </div>
+        <div className="flex items-center mb-4">
+          <Star className="w-4 h-4 fill-current mr-1" style={{color: '#6d761d'}} />
+          <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>Champion Bloodline</span>
+        </div>
+        <Button 
+          onClick={scrollToContact}
+          className="w-full font-montserrat font-medium h-auto py-3"
+          style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+        >
+          Apply for This Litter
+        </Button>
+      </CardContent>
+    </Card>
+  );
+
   return (
-    <section id="puppies" className="py-20 bg-gray-50">
+    <section id="puppies" className="py-20" style={{backgroundColor: '#fff3c5'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
             AVAILABLE LITTERS
           </h2>
           <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
-            Our current litters of exceptional Labrador puppies from champion bloodlines, ready to join loving families.
+            Our current and upcoming litters of exceptional Labrador puppies from champion bloodlines, ready to join loving families.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {litters.map((litter, index) => (
-            <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+        {/* Current Litters */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-oswald font-normal mb-8 text-center tracking-wide" style={{color: '#11100f'}}>
+            CURRENT LITTERS
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {currentLitters.map((litter, index) => renderLitterCard(litter, index))}
+          </div>
+        </div>
+
+        {/* Upcoming Litters */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-oswald font-normal mb-8 text-center tracking-wide" style={{color: '#11100f'}}>
+            UPCOMING LITTERS
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {upcomingLitters.map((litter, index) => renderLitterCard(litter, index + 100))}
+          </div>
+        </div>
+
+        {/* Mature Dogs Section */}
+        <div className="text-center">
+          <Card className="bg-white rounded-xl shadow-lg overflow-hidden max-w-2xl mx-auto">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+                MATURE DOGS AVAILABLE
+              </h3>
+              <p className="text-lg font-source-sans mb-6" style={{color: '#4b4b4b'}}>
+                Looking for an older puppy or adult dog? We occasionally have mature dogs available from our breeding program.
+              </p>
               <img 
-                src={litter.image} 
-                alt={`${litter.name} Labrador litter`} 
-                className="w-full h-48 object-cover"
+                src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/05/Y30A3237-1.jpg?resize=1080%2C864&ssl=1"
+                alt="Pippi Longstocking - Mature dog available"
+                className="w-full h-48 object-cover rounded-lg mb-6"
               />
-              <CardContent className="p-6">
-                <h3 className="text-xl font-oswald font-normal mb-2 tracking-wide" style={{color: '#11100f'}}>
-                  {litter.name}
-                </h3>
-                <div className="space-y-2 mb-4">
-                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                    <span className="font-medium">Sire:</span> {litter.sire}
-                  </p>
-                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                    <span className="font-medium">Dam:</span> {litter.dam}
-                  </p>
-                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                    <span className="font-medium">Born:</span> {litter.birthDate}
-                  </p>
-                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                    <span className="font-medium">Available:</span> {litter.availableCount} of {litter.puppiesCount} puppies
-                  </p>
-                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                    <span className="font-medium">Colors:</span> {litter.colors.join(", ")}
-                  </p>
-                </div>
-                <div className="flex items-center mb-4">
-                  <Star className="w-4 h-4 fill-current mr-1" style={{color: '#6d761d'}} />
-                  <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>Champion Bloodline</span>
-                </div>
-                <Button 
-                  className="w-full font-montserrat font-medium h-auto py-3"
-                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                >
-                  Inquire About Litter
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+              <Button 
+                onClick={scrollToContact}
+                className="font-montserrat font-medium h-auto py-3 px-8"
+                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+              >
+                Request Mature Dog Information
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
