@@ -74,6 +74,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.json({ message: "Logged out successfully" });
   });
 
+  // Quick login test endpoint - GET request to test from browser
+  app.get('/api/quick-login-test', async (req, res) => {
+    try {
+      const result = await storage.validateLogin({ username: 'admin', password: 'admin123' });
+      if (result) {
+        res.json({ success: true, message: 'Login test successful', user: { id: result.id, username: result.username, role: result.role } });
+      } else {
+        res.status(401).json({ success: false, message: 'Login test failed' });
+      }
+    } catch (error) {
+      console.error('Quick login test error:', error);
+      res.status(500).json({ success: false, message: 'Server error during login test' });
+    }
+  });
+
   // User creation endpoint (for seeding admin user)
   app.post("/api/users", async (req, res) => {
     try {
