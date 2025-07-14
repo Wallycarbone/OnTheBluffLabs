@@ -38,35 +38,38 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-6">
-              <Award className="w-8 h-8 mr-3" style={{color: '#4b4b4b'}} />
-              <span className="font-source-sans font-semibold text-lg" style={{color: '#4b4b4b'}}>
-                50+ Years of Excellence
-              </span>
+            <div className="flex items-center justify-center lg:justify-start mb-8">
+              <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm">
+                <Award className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
+                <span className="font-source-sans font-semibold text-base" style={{color: '#11100f'}}>
+                  50+ Years of Excellence
+                </span>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-              ON THE BLUFF LABRADORS
+            <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-8 tracking-wide leading-tight" style={{color: '#11100f'}}>
+              ON THE BLUFF<br />
+              <span style={{color: '#6d761d'}}>LABRADORS</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 font-source-sans font-light" style={{color: '#6d761d'}}>
+            <p className="text-xl md:text-2xl mb-10 font-source-sans font-light leading-relaxed" style={{color: '#4b4b4b'}}>
               English Labradors Bred for Beauty and Temperament
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
                 onClick={() => scrollToSection('puppies')}
-                className="px-8 py-4 text-lg font-montserrat font-medium h-auto"
+                className="px-10 py-5 text-lg font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
               >
-                View Available Puppies
+                View Available Litters
               </Button>
               <Button 
                 variant="outline"
                 onClick={() => scrollToSection('contact')}
-                className="border-2 px-8 py-4 text-lg font-montserrat font-medium h-auto"
-                style={{borderColor: '#6d761d', color: '#6d761d'}}
+                className="border-2 px-10 py-5 text-lg font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
                 onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
-                onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#6d761d'}}
+                onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
               >
                 Contact Us
               </Button>
@@ -75,56 +78,60 @@ export default function Hero() {
           
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl"></div>
               <img 
                 src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1"
                 alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
-                className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl"
+                className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl relative z-10 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute -bottom-4 -right-4 rounded-lg px-4 py-2 shadow-lg" style={{backgroundColor: '#6d761d'}}>
-                <p className="font-montserrat font-semibold text-sm" style={{color: '#fefefe'}}>Atticus Finch</p>
-                <p className="text-xs" style={{color: '#ebebeb'}}>Cherished Sire</p>
+              <div className="absolute -bottom-6 -right-6 rounded-2xl px-6 py-3 shadow-xl backdrop-blur-sm border border-white/20" style={{backgroundColor: 'rgba(109, 118, 29, 0.95)'}}>
+                <p className="font-montserrat font-semibold text-base" style={{color: '#fefefe'}}>Atticus Finch</p>
+                <p className="text-sm" style={{color: '#f2d86b'}}>Cherished Sire</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Testimonials Section */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              <Heart className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
-              <h2 className="text-3xl md:text-4xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-                STORIES FROM OUR FAMILIES
-              </h2>
+        <div className="mb-20">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm">
+                <Heart className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
+                <h2 className="text-3xl md:text-4xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+                  STORIES FROM OUR FAMILIES
+                </h2>
+              </div>
             </div>
-            <p className="max-w-2xl mx-auto font-source-sans" style={{color: '#6d761d'}}>
+            <p className="max-w-3xl mx-auto font-source-sans text-lg leading-relaxed" style={{color: '#4b4b4b'}}>
               Every puppy we place becomes part of a loving family. Here are some of their stories.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredTestimonials.map((testimonial, index) => (
-              <Card key={index} className="rounded-xl shadow-lg hover:shadow-xl transition-shadow" style={{backgroundColor: '#6d761d'}}>
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="flex text-golden">
+              <Card key={index} className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 overflow-hidden" style={{backgroundColor: 'white'}}>
+                <CardContent className="p-8 relative">
+                  <div className="absolute top-0 left-0 w-full h-1" style={{backgroundColor: '#6d761d'}}></div>
+                  <div className="flex items-center mb-6">
+                    <div className="flex" style={{color: '#6d761d'}}>
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
+                        <Star key={i} className="w-5 h-5 fill-current" />
                       ))}
                     </div>
                   </div>
-                  <p className="mb-4 italic font-source-sans" style={{color: '#ebebeb'}}>
+                  <p className="mb-6 italic font-source-sans text-lg leading-relaxed" style={{color: '#4b4b4b'}}>
                     "{testimonial.testimonial}"
                   </p>
-                  <div className="border-t pt-4">
-                    <h4 className="font-playfair font-bold mb-1" style={{color: '#fefefe'}}>
+                  <div className="border-t pt-6" style={{borderColor: '#6d761d'}}>
+                    <h4 className="font-oswald font-normal text-lg mb-2 tracking-wide" style={{color: '#11100f'}}>
                       {testimonial.name}
                     </h4>
-                    <p className="font-medium text-sm mb-1" style={{color: '#f2d86b'}}>
+                    <p className="font-medium text-sm mb-1" style={{color: '#6d761d'}}>
                       {testimonial.dog}'s Family
                     </p>
-                    <p className="text-sm" style={{color: '#ebebeb'}}>
+                    <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
                       {testimonial.location}
                     </p>
                   </div>
@@ -136,16 +143,17 @@ export default function Hero() {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-              READY TO FIND YOUR PERFECT COMPANION?
+          <div className="bg-white/30 backdrop-blur-sm rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20">
+            <h3 className="text-3xl md:text-4xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
+              READY TO FIND YOUR<br />
+              <span style={{color: '#6d761d'}}>PERFECT COMPANION?</span>
             </h3>
-            <p className="mb-6" style={{color: '#6d761d'}}>
-              Join the families who have trusted us for over 50 years to provide exceptional Labradors.
+            <p className="mb-8 text-lg font-source-sans leading-relaxed max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
+              Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and gentle training.
             </p>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-4 text-lg font-montserrat font-medium h-auto"
+              className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               style={{backgroundColor: '#6d761d', color: '#fefefe'}}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
