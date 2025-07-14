@@ -13,11 +13,11 @@ export default function About() {
     },
     {
       icon: Award,
-      title: "Training Program & Behavior Support",
+      title: "Puppy Training Program",
     },
     {
       icon: Home,
-      title: "Lifetime Breeder Support",
+      title: "Behavior Support",
     },
   ];
 
