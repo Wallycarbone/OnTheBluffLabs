@@ -112,9 +112,9 @@ export default function Hero() {
                 alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
                 className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl relative z-10 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute -bottom-6 -right-6 rounded-2xl px-6 py-3 shadow-xl backdrop-blur-sm border border-white/20" style={{backgroundColor: 'rgba(109, 118, 29, 0.95)'}}>
+              <div className="absolute -bottom-6 -right-6 rounded-2xl px-6 py-3 shadow-xl border border-white/20" style={{backgroundColor: '#6d761d'}}>
                 <p className="font-montserrat font-semibold text-base" style={{color: '#fefefe'}}>Atticus Finch</p>
-                <p className="text-sm" style={{color: '#f2d86b'}}>Cherished Sire</p>
+                <p className="text-sm" style={{color: '#fff3c5'}}>Cherished Sire</p>
               </div>
             </div>
           </div>
