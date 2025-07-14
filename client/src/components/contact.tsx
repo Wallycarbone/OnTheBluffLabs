@@ -64,7 +64,7 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
             GET IN TOUCH
           </h2>
-          <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
+          <p className="text-xl max-w-3xl mx-auto font-source-sans" style={{color: '#4b4b4b'}}>
             Ready to welcome a Labrador into your family? We'd love to hear from you.
           </p>
         </div>

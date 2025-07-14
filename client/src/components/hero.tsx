@@ -47,7 +47,7 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
               ON THE BLUFF LABRADORS
             </h1>
-            <p className="text-xl md:text-2xl mb-8 font-light" style={{color: '#6d761d'}}>
+            <p className="text-xl md:text-2xl mb-8 font-source-sans font-light" style={{color: '#6d761d'}}>
               Where exceptional bloodlines meet dedicated breeding practices. 
               Trusted by families for over five decades.
             </p>
@@ -99,7 +99,7 @@ export default function Hero() {
                 STORIES FROM OUR FAMILIES
               </h2>
             </div>
-            <p className="max-w-2xl mx-auto" style={{color: '#6d761d'}}>
+            <p className="max-w-2xl mx-auto font-source-sans" style={{color: '#6d761d'}}>
               Every puppy we place becomes part of a loving family. Here are some of their stories.
             </p>
           </div>
