@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Award } from "lucide-react";
 import { useState } from "react";
+import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
@@ -32,7 +33,8 @@ export default function Hero() {
       dog: "Duke & Atlas",
       degree: "Master's Degree Training Grad",
       parents: "Duke: Charlies x Annie, Atlas: Oliver x Luna",
-      location: ""
+      location: "",
+      image: dukeAtlasImage
     },
     {
       name: "The Henderson Family",
@@ -136,16 +138,36 @@ export default function Hero() {
                 <CardContent className="p-8 relative">
                   <div className="absolute top-0 left-0 w-full h-1" style={{backgroundColor: '#6d761d'}}></div>
                   <div className="flex items-center mb-6">
-                    <div className="flex" style={{color: '#6d761d'}}>
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-current" />
-                      ))}
-                    </div>
+                    {testimonial.dog === "Duke & Atlas" ? (
+                      <div className="flex items-center space-x-3">
+                        <div className="flex items-center px-3 py-1 rounded-full" style={{backgroundColor: '#6d761d'}}>
+                          <span className="text-sm font-source-sans font-medium" style={{color: '#fefefe'}}>Duke</span>
+                        </div>
+                        <div className="flex items-center px-3 py-1 rounded-full" style={{backgroundColor: '#6d761d'}}>
+                          <span className="text-sm font-source-sans font-medium" style={{color: '#fefefe'}}>Atlas</span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex" style={{color: '#6d761d'}}>
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 fill-current" />
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <div className="mb-6">
                     <p className="italic font-source-sans text-sm leading-relaxed mb-3" style={{color: '#4b4b4b'}}>
                       "{expandedTestimonials[index] ? testimonial.testimonial : truncateText(testimonial.testimonial, 150)}"
                     </p>
+                    {expandedTestimonials[index] && testimonial.image && (
+                      <div className="mb-4">
+                        <img 
+                          src={testimonial.image} 
+                          alt={`${testimonial.dog} - ${testimonial.name}'s beloved companions`}
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+                    )}
                     {testimonial.testimonial.length > 150 && (
                       <button
                         onClick={() => toggleTestimonial(index)}
