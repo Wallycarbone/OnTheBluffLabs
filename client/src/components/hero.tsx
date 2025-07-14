@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Heart, Award } from "lucide-react";
+import { Star, Heart, Award, GraduationCap } from "lucide-react";
 import { useState } from "react";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 
@@ -140,7 +140,7 @@ export default function Hero() {
                   <div className="flex items-center mb-6">
                     {testimonial.dog === "Duke & Atlas" ? (
                       <div className="flex items-center px-4 py-2 rounded-full" style={{backgroundColor: '#6d761d'}}>
-                        <Heart className="w-4 h-4 mr-2" style={{color: '#fefefe'}} />
+                        <GraduationCap className="w-4 h-4 mr-2" style={{color: '#fefefe'}} />
                         <span className="text-sm font-source-sans font-medium" style={{color: '#fefefe'}}>
                           2nd Generation OTB Family
                         </span>
