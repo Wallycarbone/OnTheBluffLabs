@@ -62,7 +62,13 @@ export default function Admin() {
   };
 
   if (!user) {
-    return null;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100 flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-amber-800">Redirecting to login...</p>
+        </div>
+      </div>
+    );
   }
 
   if (isLoading) {
@@ -95,29 +101,53 @@ export default function Admin() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
-          <div>
-            <h1 className="text-3xl font-bold text-amber-800">Admin Dashboard</h1>
-            <p className="text-amber-600">Welcome back, {user.username}</p>
-          </div>
-          <div className="flex gap-3">
-            <Button 
-              onClick={() => setLocation("/admin/files")}
-              className="bg-amber-600 hover:bg-amber-700 text-white"
-              size="lg"
-            >
-              🔧 Edit Website
-            </Button>
-            <Button 
-              onClick={handleLogout}
-              variant="outline"
-              className="text-amber-600 border-amber-600 hover:bg-amber-50"
-            >
-              <LogOut className="h-4 w-4 mr-2" />
-              Logout
-            </Button>
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <h1 className="text-3xl font-bold text-amber-800">Admin Dashboard</h1>
+              <p className="text-amber-600">Welcome back, {user?.username || 'Admin'}!</p>
+            </div>
+            <div className="flex gap-3 w-full sm:w-auto">
+              <Button 
+                onClick={() => setLocation("/admin/files")}
+                className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 flex-1 sm:flex-none"
+                size="lg"
+              >
+                🔧 EDIT WEBSITE
+              </Button>
+              <Button 
+                onClick={handleLogout}
+                variant="outline"
+                className="text-amber-600 border-amber-600 hover:bg-amber-50"
+                size="lg"
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Logout
+              </Button>
+            </div>
           </div>
         </div>
+
+        {/* Quick Actions */}
+        <Card className="mb-8 border-2 border-red-500">
+          <CardHeader className="bg-red-50">
+            <CardTitle className="text-red-700 text-xl">🚀 Quick Actions</CardTitle>
+          </CardHeader>
+          <CardContent className="p-6">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                onClick={() => setLocation("/admin/files")}
+                className="bg-red-600 hover:bg-red-700 text-white text-lg font-bold py-4 px-8"
+                size="lg"
+              >
+                🔧 EDIT WEBSITE FILES
+              </Button>
+              <div className="text-sm text-gray-600 flex items-center">
+                Or go directly to: <strong className="ml-1">/admin/files</strong>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
