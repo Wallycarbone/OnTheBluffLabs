@@ -4,6 +4,29 @@ import { Star } from "lucide-react";
 import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
 
 export default function Puppies() {
+  const calculateAge = (birthDate: string) => {
+    if (birthDate.includes('Due')) {
+      return 'Expected';
+    }
+    
+    const birth = new Date(birthDate);
+    const today = new Date();
+    const diffTime = today.getTime() - birth.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    if (diffDays < 7) {
+      return `${diffDays} days old`;
+    } else if (diffDays < 30) {
+      const weeks = Math.floor(diffDays / 7);
+      return `${weeks} week${weeks > 1 ? 's' : ''} old`;
+    } else if (diffDays < 365) {
+      const months = Math.floor(diffDays / 30);
+      return `${months} month${months > 1 ? 's' : ''} old`;
+    } else {
+      const years = Math.floor(diffDays / 365);
+      return `${years} year${years > 1 ? 's' : ''} old`;
+    }
+  };
   const currentLitters = [
     {
       name: "Moon & Foxxy Litter",
@@ -95,6 +118,9 @@ export default function Puppies() {
           </p>
           <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             <span className="font-medium">Born:</span> {litter.birthDate}
+          </p>
+          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+            <span className="font-medium">Age:</span> {calculateAge(litter.birthDate)}
           </p>
           <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             <span className="font-medium">Available:</span> {litter.available}
