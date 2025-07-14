@@ -95,8 +95,8 @@ export default function Hero() {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
               <Heart className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold" style={{color: '#11100f'}}>
-                Stories from Our Families
+              <h2 className="text-3xl md:text-4xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+                STORIES FROM OUR FAMILIES
               </h2>
             </div>
             <p className="max-w-2xl mx-auto" style={{color: '#6d761d'}}>
@@ -138,8 +138,8 @@ export default function Hero() {
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-playfair font-bold mb-4" style={{color: '#11100f'}}>
-              Ready to Find Your Perfect Companion?
+            <h3 className="text-2xl md:text-3xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+              READY TO FIND YOUR PERFECT COMPANION?
             </h3>
             <p className="mb-6" style={{color: '#6d761d'}}>
               Join the families who have trusted us for over 50 years to provide exceptional Labradors.

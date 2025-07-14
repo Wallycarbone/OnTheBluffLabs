@@ -61,8 +61,8 @@ export default function Contact() {
     <section id="contact" className="py-20" style={{backgroundColor: '#ebebeb'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
-            Get In Touch
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+            GET IN TOUCH
           </h2>
           <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
             Ready to welcome a Labrador into your family? We'd love to hear from you.

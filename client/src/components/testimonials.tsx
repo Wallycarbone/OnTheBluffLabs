@@ -27,8 +27,8 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 bg-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-            What Families Say
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#fefefe'}}>
+            WHAT FAMILIES SAY
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Hear from families who have welcomed our Labradors into their homes.

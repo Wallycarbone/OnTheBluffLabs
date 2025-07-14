@@ -44,8 +44,8 @@ export default function HealthTesting() {
     <section id="health" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6">
-            Health Testing & Certifications
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+            HEALTH TESTING & CERTIFICATIONS
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
             Our commitment to breeding healthy dogs through comprehensive health testing and certification.

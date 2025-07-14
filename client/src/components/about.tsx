@@ -24,8 +24,8 @@ export default function About() {
     <section id="about" className="py-20" style={{backgroundColor: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
-            About On The Bluff Labradors
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+            ABOUT ON THE BLUFF LABRADORS
           </h2>
           <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
             Dedicated to preserving the finest qualities of the Labrador Retriever through ethical breeding practices and unwavering commitment to excellence.
@@ -41,8 +41,8 @@ export default function About() {
             />
           </div>
           <div>
-            <h3 className="text-3xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
-              Our Mission & Values
+            <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+              OUR MISSION & VALUES
             </h3>
             <p className="text-lg mb-6" style={{color: '#4b4b4b'}}>
               For over two decades, we have been committed to breeding exceptional Labrador Retrievers that embody the breed's finest qualities: intelligence, loyalty, and gentle temperament. Our approach combines traditional breeding wisdom with modern genetic health testing.
