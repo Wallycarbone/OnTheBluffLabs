@@ -122,7 +122,12 @@ export default function Puppies() {
         </div>
         <div className="flex items-center mb-4">
           <Star className="w-4 h-4 fill-current mr-1" style={{color: '#6d761d'}} />
-          <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>Champion Bloodline</span>
+          <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+            {litter.name === "Moon & Foxxy Litter" 
+              ? "Descended from 2019 Westminster Best in Breed Farnfield Topo Gigio"
+              : "Champion Bloodline"
+            }
+          </span>
         </div>
         <Button 
           onClick={scrollToContact}
