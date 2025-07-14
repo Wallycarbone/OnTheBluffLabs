@@ -12,12 +12,12 @@ export default function Hero() {
 
   const featuredTestimonials = [
     {
-      name: "Sarah & Mike Johnson",
-      testimonial: "Atticus has been an incredible addition to our family. His gentle temperament and intelligence continue to amaze us every day. The training program made all the difference.",
-      dog: "Atticus",
-      degree: "Canine Good Citizen",
-      parents: "Champion Jasper x Lady Bella",
-      location: "Colorado"
+      name: "Toniann & Michael",
+      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Atlas, (and his big bro Duke), have the best manners you could ever see in puppies and are incredibly affectionate. We chalk this up to the weeks of training they had before coming to our home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children. Having a dog with the proper foundation takes the work and stress away from worrying about if what you're doing is right. Plus, training a puppy is very demanding and as someone who already has a full-time job, the training program is a no-brainer. My husband and I got both our OTB pups with 12 weeks of training, and I'm certain we will do it over and over again in the future.",
+      dog: "Duke & Atlas",
+      degree: "Master's Degree Training Grad",
+      parents: "Duke: Charlies x Annie, Atlas: Oliver x Luna",
+      location: ""
     },
     {
       name: "The Henderson Family",
@@ -143,9 +143,11 @@ export default function Hero() {
                     <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
                       <span className="font-medium">Parents:</span> {testimonial.parents}
                     </p>
-                    <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      {testimonial.location}
-                    </p>
+                    {testimonial.location && (
+                      <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                        {testimonial.location}
+                      </p>
+                    )}
                   </div>
                 </CardContent>
               </Card>
