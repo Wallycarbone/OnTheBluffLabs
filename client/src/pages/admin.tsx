@@ -103,9 +103,10 @@ export default function Admin() {
           <div className="flex gap-3">
             <Button 
               onClick={() => setLocation("/admin/files")}
-              className="bg-amber-600 hover:bg-amber-700"
+              className="bg-amber-600 hover:bg-amber-700 text-white"
+              size="lg"
             >
-              Edit Website
+              🔧 Edit Website
             </Button>
             <Button 
               onClick={handleLogout}
