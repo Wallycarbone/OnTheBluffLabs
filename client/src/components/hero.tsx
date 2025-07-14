@@ -186,9 +186,16 @@ export default function Hero() {
                     <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
                       <span className="font-medium">Program:</span> {testimonial.degree}
                     </p>
-                    <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
-                      <span className="font-medium">Parents:</span> {testimonial.parents}
-                    </p>
+                    <div className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
+                      <span className="font-medium">Parents:</span>
+                      <div className="ml-2 mt-1">
+                        {testimonial.parents.split(', ').map((parent, index) => (
+                          <div key={index} className="text-xs">
+                            {parent}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                     {testimonial.location && (
                       <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
                         {testimonial.location}
