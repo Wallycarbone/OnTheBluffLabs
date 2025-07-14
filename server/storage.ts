@@ -1,6 +1,7 @@
 import { users, inquiries, type User, type InsertUser, type Inquiry, type InsertInquiry, type LoginData } from "@shared/schema";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
+import bcrypt from "bcryptjs";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -23,9 +24,14 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
+    // Hash the password before storing
+    const hashedPassword = await bcrypt.hash(insertUser.password, 10);
     const [user] = await db
       .insert(users)
-      .values(insertUser)
+      .values({
+        ...insertUser,
+        password: hashedPassword
+      })
       .returning();
     return user;
   }
@@ -40,8 +46,9 @@ export class DatabaseStorage implements IStorage {
       return null;
     }
     
-    // Simple password comparison (in production, use hashed passwords)
-    if (user.password === loginData.password) {
+    // Compare hashed password
+    const isValidPassword = await bcrypt.compare(loginData.password, user.password);
+    if (isValidPassword) {
       return user;
     }
     
