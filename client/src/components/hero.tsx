@@ -184,7 +184,7 @@ export default function Hero() {
                       {testimonial.dog}'s Family
                     </p>
                     <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
-                      <span className="font-medium">Achievement:</span> {testimonial.degree}
+                      <span className="font-medium">Program:</span> {testimonial.degree}
                     </p>
                     <p className="text-sm font-source-sans mb-1" style={{color: '#4b4b4b'}}>
                       <span className="font-medium">Parents:</span> {testimonial.parents}
