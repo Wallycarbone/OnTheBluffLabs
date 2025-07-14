@@ -32,7 +32,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen" style={{backgroundColor: '#f2d86b'}}>
+    <section id="home" className="min-h-screen" style={{backgroundColor: '#f7e89a'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Content with Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -44,7 +44,7 @@ export default function Hero() {
                 50+ Years of Excellence
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6" style={{color: '#4b4b4b'}}>
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
               On The Bluff Labradors
             </h1>
             <p className="text-xl md:text-2xl mb-8 font-light" style={{color: '#6d761d'}}>
@@ -95,7 +95,7 @@ export default function Hero() {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
               <Heart className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold" style={{color: '#4b4b4b'}}>
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold" style={{color: '#11100f'}}>
                 Stories from Our Families
               </h2>
             </div>
