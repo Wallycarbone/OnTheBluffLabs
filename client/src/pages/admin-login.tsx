@@ -78,6 +78,8 @@ export default function AdminLogin() {
   });
 
   const onSubmit = (data: LoginData) => {
+    console.log("FORM SUBMIT: Form validation passed, data:", data);
+    console.log("FORM SUBMIT: About to call mutation...");
     loginMutation.mutate(data);
   };
 
@@ -150,6 +152,20 @@ export default function AdminLogin() {
                 disabled={loginMutation.isPending}
               >
                 {loginMutation.isPending ? "Logging in..." : "Login"}
+              </Button>
+              
+              {/* Test button for debugging */}
+              <Button 
+                type="button"
+                variant="outline"
+                className="w-full mt-2"
+                onClick={() => {
+                  console.log("TEST BUTTON: Direct login test starting...");
+                  loginMutation.mutate({ username: "admin", password: "admin123" });
+                }}
+                disabled={loginMutation.isPending}
+              >
+                Test Login (Debug)
               </Button>
             </form>
           </Form>
