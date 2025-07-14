@@ -4,16 +4,16 @@ import puppyImage from "@assets/Copy of Gallery Image - Landscape (22)_175252224
 export default function About() {
   const features = [
     {
-      icon: Award,
-      title: "AKC Breeder of Merit Recognition",
-    },
-    {
       icon: Heart,
-      title: "Health Testing on All Breeding Dogs",
+      title: "Health Testing",
     },
     {
       icon: Shield,
       title: "Champion Bloodlines",
+    },
+    {
+      icon: Award,
+      title: "Optional Training Program",
     },
     {
       icon: Home,
@@ -46,7 +46,7 @@ export default function About() {
               OUR MISSION & VALUES
             </h3>
             <p className="text-lg mb-6 font-source-sans" style={{color: '#4b4b4b'}}>
-              For over two decades, we have been committed to breeding exceptional Labrador Retrievers that embody the breed's finest qualities: intelligence, loyalty, and gentle temperament. Our approach combines traditional breeding wisdom with modern genetic health testing.
+              For decades, we have been committed to breeding exceptional Labrador Retrievers that embody the breed's finest qualities: intelligence, loyalty, and gentle temperament. Our approach combines traditional breeding wisdom with modern genetic health testing.
             </p>
             
             <div className="space-y-4">
