@@ -35,6 +35,18 @@ export default function Puppies() {
       description: "Seven puppies born June 5, 2025"
     },
     {
+      name: "Moon & Nora Litter",
+      sire: "Moon",
+      dam: "Nora",
+      birthDate: "June 21, 2025",
+      puppiesCount: 2,
+      available: "One Black Female & One Yellow Female",
+      readyDate: "August 2025",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/58.png?resize=1080%2C810&ssl=1",
+      status: "Current",
+      description: "One black female and one yellow female available"
+    },
+    {
       name: "Grizzly & Guinevere Litter",
       sire: "Grizzly",
       dam: "Guinevere",
@@ -60,20 +72,7 @@ export default function Puppies() {
     }
   ];
 
-  const upcomingLitters = [
-    {
-      name: "Moon & Nora Litter",
-      sire: "Moon",
-      dam: "Nora",
-      birthDate: "Due June 2025",
-      puppiesCount: "Expected",
-      available: "One Black Female & One Yellow Female",
-      readyDate: "August 2025",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/58.png?resize=1080%2C810&ssl=1",
-      status: "Upcoming",
-      description: "One black female and one yellow female available"
-    }
-  ];
+  const upcomingLitters = [];
 
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -124,6 +123,8 @@ export default function Puppies() {
           <Star className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
           <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             {litter.name === "Moon & Foxxy Litter" 
+              ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
+              : litter.name === "Moon & Nora Litter"
               ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
               : litter.name === "Grizzly & Guinevere Litter"
               ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
