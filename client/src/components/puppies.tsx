@@ -192,7 +192,8 @@ export default function Puppies() {
               <img 
                 src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/05/Y30A3237-1.jpg?resize=1080%2C864&ssl=1"
                 alt="Pippi Longstocking - Mature dog available"
-                className="w-full h-64 object-cover object-center rounded-lg mb-6"
+                className="w-full h-72 object-cover rounded-lg mb-6"
+                style={{objectPosition: '50% 25%'}}
               />
               <Button 
                 onClick={scrollToContact}
