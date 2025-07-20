@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { HeartHandshake } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
-import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg?url";
+import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 
 export default function BreedingDogs() {
   const sires = [
