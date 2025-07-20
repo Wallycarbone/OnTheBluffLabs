@@ -30,7 +30,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: harperLeeImage,
-      description: "Stunning yellow female with a naturally gentle temperament. Her calm, gentle nature makes her an ideal mother.",
+      description: "Stunning yellow female with a naturally gentle temperament. Her calm, loving nature makes her an ideal mother.",
     },
   ];
 
