@@ -31,16 +31,11 @@ export default function BreedingDogs() {
 
   const renderDogCard = (dog: any, index: number) => (
     <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-      <div className="relative">
-        <img 
-          src={dog.image} 
-          alt={`Champion ${dog.color} Labrador`} 
-          className="w-full h-72 object-cover"
-        />
-        <div className="absolute top-4 right-4 bg-golden/90 backdrop-blur-sm rounded-full p-2">
-          <Star className="text-white w-5 h-5 fill-current" />
-        </div>
-      </div>
+      <img 
+        src={dog.image} 
+        alt={`Champion ${dog.color} Labrador`} 
+        className="w-full h-72 object-cover"
+      />
       <CardContent className="p-8">
         <div className="text-center mb-6">
           <h3 className="text-2xl font-oswald font-normal tracking-wide mb-3" style={{color: '#11100f'}}>
