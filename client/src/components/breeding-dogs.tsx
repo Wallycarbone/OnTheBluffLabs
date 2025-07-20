@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Trophy } from "lucide-react";
+import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG";
 
 export default function BreedingDogs() {
   const sires = [
@@ -28,7 +29,7 @@ export default function BreedingDogs() {
       gender: "Female",
       color: "Chocolate",
       age: "Breeding Female",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
+      image: harperLeeImage,
       description: "Beautiful chocolate female with outstanding maternal instincts and champion bloodlines.",
     },
   ];
