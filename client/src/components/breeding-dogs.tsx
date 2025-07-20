@@ -51,7 +51,7 @@ export default function BreedingDogs() {
                 className="w-full h-48 object-cover"
               />
               <CardContent className="p-6">
-                <h3 className="text-xl font-playfair font-bold text-navy mb-2">
+                <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
                   {dog.name}
                 </h3>
                 <p className="text-warm-gray mb-2">
