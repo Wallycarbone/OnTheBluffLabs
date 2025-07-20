@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Trophy } from "lucide-react";
-import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG";
+import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 
 export default function BreedingDogs() {
   const sires = [
@@ -27,10 +27,10 @@ export default function BreedingDogs() {
     {
       name: "Harper Lee",
       gender: "Female",
-      color: "Chocolate",
+      color: "Yellow",
       age: "Breeding Female",
       image: harperLeeImage,
-      description: "Beautiful chocolate female with outstanding maternal instincts and champion bloodlines.",
+      description: "Beautiful yellow female with outstanding maternal instincts and champion bloodlines.",
     },
   ];
 
