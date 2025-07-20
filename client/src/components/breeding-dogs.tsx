@@ -7,6 +7,7 @@ export default function BreedingDogs() {
   const sires = [
     {
       name: "Atticus Finch",
+      formalName: "Ch. On The Bluff Atticus Finch",
       gender: "Male",
       color: "Yellow",
       age: "Retired",
@@ -15,6 +16,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Oliver",
+      formalName: "Ch. On The Bluff Oliver",
       gender: "Male",
       color: "Yellow",
       age: "Active Stud",
@@ -23,6 +25,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Grizzly",
+      formalName: "Endless Mt. Labrador Grizzly at On The Bluff",
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
@@ -34,6 +37,7 @@ export default function BreedingDogs() {
   const dames = [
     {
       name: "Harper Lee",
+      formalName: "On The Bluff Harper Lee",
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
@@ -54,7 +58,7 @@ export default function BreedingDogs() {
           {dog.name}
         </h3>
         <p className="text-warm-gray mb-2">
-          {dog.gender === "Female" ? `${dog.color} • ${dog.age}` : `${dog.gender} • ${dog.color} • ${dog.age}`}
+          {dog.formalName}
         </p>
         <div className="flex items-center mb-4">
           <HeartHandshake className="text-golden mr-1 w-4 h-4" />
