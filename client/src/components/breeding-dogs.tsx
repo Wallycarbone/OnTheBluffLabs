@@ -52,7 +52,7 @@ export default function BreedingDogs() {
       <img 
         src={dog.image} 
         alt={`Champion ${dog.color} Labrador`} 
-        className={`w-full h-48 object-cover ${dog.name === 'Grizzly' ? 'object-top' : ''}`}
+        className={`w-full h-64 object-cover ${dog.name === 'Grizzly' ? 'object-top' : ''}`}
       />
       <CardContent className="p-6">
         <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
