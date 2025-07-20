@@ -24,14 +24,6 @@ export default function BreedingDogs() {
 
   const dames = [
     {
-      name: "Luna",
-      gender: "Female",
-      color: "Yellow",
-      age: "Breeding Female",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
-      description: "Exceptional mother with perfect breed type and loving nature.",
-    },
-    {
       name: "Harper Lee",
       gender: "Female",
       color: "Chocolate",
