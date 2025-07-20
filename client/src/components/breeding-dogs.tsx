@@ -59,18 +59,7 @@ export default function BreedingDogs() {
           {dog.description}
         </p>
         
-        <div className="space-y-3">
-          <div className="flex justify-between text-sm">
-            <span className="text-warm-gray">Color:</span>
-            <span className="font-medium" style={{color: '#11100f'}}>{dog.color}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-warm-gray">Status:</span>
-            <span className="font-medium" style={{color: '#11100f'}}>{dog.age}</span>
-          </div>
-        </div>
-        
-        <Button className="w-full mt-6 bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors">
+        <Button className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors">
           View Pedigree
         </Button>
       </CardContent>
