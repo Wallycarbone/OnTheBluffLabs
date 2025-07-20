@@ -46,7 +46,7 @@ export default function BreedingDogs() {
           {dog.name}
         </h3>
         <p className="text-warm-gray mb-2">
-          {dog.gender} • {dog.color} • {dog.age}
+          {dog.gender === "Female" ? `${dog.color} • ${dog.age}` : `${dog.gender} • ${dog.color} • ${dog.age}`}
         </p>
         <div className="flex items-center mb-4">
           <Trophy className="text-golden mr-1 w-4 h-4" />
