@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { HeartHandshake } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
+import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg?url";
 
 export default function BreedingDogs() {
   const sires = [
@@ -29,7 +30,7 @@ export default function BreedingDogs() {
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
+      image: grizzlyImage,
       description: "Handsome chocolate male with strong build and confident personality. Produces beautiful chocolate puppies with excellent temperaments.",
     },
   ];
