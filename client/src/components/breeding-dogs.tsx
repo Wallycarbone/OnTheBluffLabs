@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { HeartHandshake } from "lucide-react";
+import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 
@@ -30,29 +30,52 @@ export default function BreedingDogs() {
   ];
 
   const renderDogCard = (dog: any, index: number) => (
-    <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-      <img 
-        src={dog.image} 
-        alt={`Champion ${dog.color} Labrador`} 
-        className="w-full h-64 object-cover"
-      />
-      <CardContent className="p-6">
-        <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
-          {dog.name}
-        </h3>
-        <p className="text-warm-gray mb-2">
-          {dog.formalName}
-        </p>
-        <div className="flex items-start mb-4">
-          <HeartHandshake className="text-golden mr-1 w-4 h-4 mt-0.5" />
-          <span className="text-sm text-warm-gray">
-            {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
-          </span>
+    <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <div className="relative">
+        <img 
+          src={dog.image} 
+          alt={`Champion ${dog.color} Labrador`} 
+          className="w-full h-72 object-cover"
+        />
+        <div className="absolute top-4 right-4 bg-golden/90 backdrop-blur-sm rounded-full p-2">
+          <Star className="text-white w-5 h-5 fill-current" />
         </div>
-        <p className="text-sm text-warm-gray mb-4">
+      </div>
+      <CardContent className="p-8">
+        <div className="text-center mb-6">
+          <h3 className="text-2xl font-oswald font-normal tracking-wide mb-3" style={{color: '#11100f'}}>
+            {dog.name}
+          </h3>
+          <p className="text-warm-gray text-lg font-medium italic">
+            {dog.formalName}
+          </p>
+        </div>
+        
+        <div className="bg-cream/30 rounded-lg p-4 mb-6">
+          <div className="flex items-start">
+            <Star className="text-golden mr-3 w-5 h-5 mt-1 fill-current flex-shrink-0" />
+            <span className="text-sm text-warm-gray leading-relaxed">
+              {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
+            </span>
+          </div>
+        </div>
+        
+        <p className="text-warm-gray mb-6 leading-relaxed">
           {dog.description}
         </p>
-        <Button className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium">
+        
+        <div className="space-y-3">
+          <div className="flex justify-between text-sm">
+            <span className="text-warm-gray">Color:</span>
+            <span className="font-medium" style={{color: '#11100f'}}>{dog.color}</span>
+          </div>
+          <div className="flex justify-between text-sm">
+            <span className="text-warm-gray">Status:</span>
+            <span className="font-medium" style={{color: '#11100f'}}>{dog.age}</span>
+          </div>
+        </div>
+        
+        <Button className="w-full mt-6 bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors">
           View Pedigree
         </Button>
       </CardContent>
