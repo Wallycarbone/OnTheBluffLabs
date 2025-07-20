@@ -43,8 +43,8 @@ export default function BreedingDogs() {
         <p className="text-warm-gray mb-2">
           {dog.formalName}
         </p>
-        <div className="flex items-center mb-4">
-          <HeartHandshake className="text-golden mr-1 w-4 h-4" />
+        <div className="flex items-start mb-4">
+          <HeartHandshake className="text-golden mr-1 w-4 h-4 mt-0.5" />
           <span className="text-sm text-warm-gray">
             {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
           </span>
