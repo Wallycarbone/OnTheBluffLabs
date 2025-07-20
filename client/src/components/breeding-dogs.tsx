@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Gem } from "lucide-react";
+import { HeartHandshake } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 
 export default function BreedingDogs() {
@@ -49,7 +49,7 @@ export default function BreedingDogs() {
           {dog.gender === "Female" ? `${dog.color} • ${dog.age}` : `${dog.gender} • ${dog.color} • ${dog.age}`}
         </p>
         <div className="flex items-center mb-4">
-          <Gem className="text-golden mr-1 w-4 h-4" />
+          <HeartHandshake className="text-golden mr-1 w-4 h-4" />
           <span className="text-sm text-warm-gray">
             {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "AKC Champion"}
           </span>
