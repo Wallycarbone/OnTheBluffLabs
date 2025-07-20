@@ -21,6 +21,14 @@ export default function BreedingDogs() {
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
       description: "Proven sire with excellent bloodlines and gentle temperament.",
     },
+    {
+      name: "Grizzly",
+      gender: "Male",
+      color: "Chocolate",
+      age: "Active Stud",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
+      description: "Handsome chocolate male with strong build and confident personality. Produces beautiful chocolate puppies with excellent temperaments.",
+    },
   ];
 
   const dames = [
