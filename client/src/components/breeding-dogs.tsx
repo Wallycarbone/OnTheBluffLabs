@@ -7,24 +7,6 @@ import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 export default function BreedingDogs() {
   const sires = [
     {
-      name: "Atticus Finch",
-      formalName: "Ch. On The Bluff Atticus Finch",
-      gender: "Male",
-      color: "Yellow",
-      age: "Retired",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
-      description: "Outstanding English Labrador with exceptional temperament and conformation. Now retired from breeding.",
-    },
-    {
-      name: "Oliver",
-      formalName: "Ch. On The Bluff Oliver",
-      gender: "Male",
-      color: "Yellow",
-      age: "Active Stud",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1",
-      description: "Proven sire with excellent bloodlines and gentle temperament.",
-    },
-    {
       name: "Grizzly",
       formalName: "Endless Mt. Labrador Grizzly at On The Bluff",
       gender: "Male",
