@@ -50,7 +50,9 @@ export default function BreedingDogs() {
         </p>
         <div className="flex items-center mb-4">
           <Trophy className="text-golden mr-1 w-4 h-4" />
-          <span className="text-sm text-warm-gray">AKC Champion</span>
+          <span className="text-sm text-warm-gray">
+            {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "AKC Champion"}
+          </span>
         </div>
         <p className="text-sm text-warm-gray mb-4">
           {dog.description}
