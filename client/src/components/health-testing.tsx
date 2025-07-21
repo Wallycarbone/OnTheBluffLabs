@@ -20,8 +20,8 @@ export default function HealthTesting() {
     },
     {
       icon: Heart,
-      title: "Heart Clearance",
-      description: "Cardiac examinations by veterinary cardiologists.",
+      title: "Reduce Vaccinations",
+      description: "We follow minimal vaccination protocols to reduce immune system stress and support natural health.",
     },
   ];
 
