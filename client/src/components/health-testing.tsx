@@ -48,7 +48,7 @@ export default function HealthTesting() {
             HEALTH TESTING & CARE
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            Our commitment to breeding healthy dogs through comprehensive health testing and certification.
+            Our holistic approach to canine wellness through natural health practices and essential testing.
           </p>
         </div>
         
