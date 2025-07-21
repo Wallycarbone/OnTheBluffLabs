@@ -58,7 +58,7 @@ export default function HealthTesting() {
               <div className="bg-golden bg-opacity-10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <test.icon className="text-golden w-8 h-8" />
               </div>
-              <h3 className="text-xl font-playfair font-bold text-navy mb-2">
+              <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
                 {test.title}
               </h3>
               <p className="text-warm-gray">
@@ -80,7 +80,7 @@ export default function HealthTesting() {
                   alt={cert.title} 
                   className="mx-auto mb-4 rounded-lg shadow-md w-full max-w-[300px] h-48 object-cover"
                 />
-                <h4 className="text-lg font-montserrat font-semibold" style={{color: '#11100f'}}>
+                <h4 className="text-lg font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
                   {cert.title}
                 </h4>
               </div>
