@@ -1,4 +1,4 @@
-import { Award, Heart, Shield, BookOpen } from "lucide-react";
+import { Award, Heart, Shield, Leaf } from "lucide-react";
 import puppyImage from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
       title: "Champion Bloodlines",
     },
     {
-      icon: BookOpen,
+      icon: Leaf,
       title: "Holistic Care Practices",
     },
     {
