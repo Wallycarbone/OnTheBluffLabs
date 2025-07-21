@@ -92,7 +92,7 @@ export default function BreedingDogs() {
               OUR DAMES
             </h2>
             <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-              Meet the exceptional female dogs that are the loving mothers of our champion litters.
+              Meet the exceptional female dogs that are the loving mothers of our outstanding puppies.
             </p>
           </div>
           
