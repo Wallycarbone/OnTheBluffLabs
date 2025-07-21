@@ -5,7 +5,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "Candice and Ken",
-      family: "Teddy (by Twain and Akadia, Bachelor's Degree Grad, Strawberry Blonde puppy on Right in Photo)",
+      family: "Teddy, by Twain and Akadia, Bachelor's Degree Grad",
       testimonial: "We can't say enough good things about our boy, Theodore, 'Teddy'— he settled right in winning his new big brother over in minutes, he's very handsome and expressive, intelligent, cuddly, friendly, was quickly housebroken, a great traveler, and a true sweetheart. His temperament and personality are exceptional. We have never had a labrador quite like this, and I am certain we will have another one from On The Bluff in the next year or two.",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/image2-1-rotated.jpeg?resize=1080%2C1440&ssl=1",
     },
