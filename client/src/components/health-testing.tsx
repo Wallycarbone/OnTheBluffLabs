@@ -6,7 +6,7 @@ export default function HealthTesting() {
     {
       icon: Eye,
       title: "DNA & OFA",
-      description: "Comprehensive genetic testing and Orthopedic Foundation for Animals certification.",
+      description: "We test for common Labrador genetic problems including EIC, CNM, PRA, and D-Locus, plus hip dysplasia screening through OFA certification.",
     },
     {
       icon: Bone,
