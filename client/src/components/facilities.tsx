@@ -12,8 +12,8 @@ export default function Team() {
     },
     {
       name: "Lyrica Crosby, LVT",
-      role: "Licensed Veterinary Technician",
-      description: "Licensed veterinary technician who oversees breeding and whelping processes, ensures our health testing protocols are followed, and provides expert medical care for our breeding dogs and puppies.",
+      role: "General Manager & Licensed Veterinary Technician",
+      description: "Lyrica is both our general manager and a licensed veterinary technician. She oversees breeding and whelping, ensures our health testing protocols are followed, and provides expert medical care for our breeding dogs and puppies.",
       image: lyricaImage,
     },
     {
