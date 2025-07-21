@@ -9,6 +9,12 @@ export default function Testimonials() {
       testimonial: "We can't say enough good things about our boy, Theodore, 'Teddy'— he settled right in winning his new big brother over in minutes, he's very handsome and expressive, intelligent, cuddly, friendly, was quickly housebroken, a great traveler, and a true sweetheart. His temperament and personality are exceptional. We have never had a labrador quite like this, and I am certain we will have another one from On The Bluff in the next year or two.",
       image: "@assets/Untitled design (91)_1753107861899.png",
     },
+    {
+      name: "Michelle and Carey",
+      family: "Cassie, by Oliver and Bea, Bachelor's Degree Grad",
+      testimonial: "Cassie has truly exceeded all our expectations. Her temperament is perfect—calm, affectionate, and eager to please. Whether she's playing with Chase or cuddling with the family, she brings endless smiles to our faces. On the Bluff Labradors is an exceptional breeder, and we highly recommend them to anyone looking for a high-quality, well-trained lab with a fantastic disposition.",
+      image: "https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    },
   ];
 
   return (
