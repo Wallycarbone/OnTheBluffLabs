@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import wallyCarlaImage from "@assets/Untitled design (92)_1753108643199.png";
+import lyricaImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (71)_1753110327800.png";
 
 export default function Team() {
   const teamMembers = [
@@ -13,7 +14,7 @@ export default function Team() {
       name: "Lyrica Crosby, LVT",
       role: "Licensed Veterinary Technician",
       description: "Licensed veterinary technician who ensures our health testing protocols are followed and provides expert medical care for our breeding dogs and puppies.",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      image: lyricaImage,
     },
     {
       name: "Mike",
