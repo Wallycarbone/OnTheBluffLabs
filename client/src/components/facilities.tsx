@@ -1,12 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
+import wallyCarlaImage from "@assets/Untitled design (92)_1753108643199.png";
 
 export default function Team() {
   const teamMembers = [
     {
-      name: "Jessica",
-      role: "Lead Trainer & Puppy Development Specialist",
-      description: "With years of experience in positive reinforcement training, Jessica develops each puppy's foundation skills and works closely with families during the transition process.",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      name: "Wally & Carla",
+      role: "Owners & Founders",
+      description: "The passionate founders behind On The Bluff Labradors, dedicated to breeding exceptional Labradors with strong temperaments and health. Their hands-on approach ensures every puppy receives personalized care from birth.",
+      image: wallyCarlaImage,
     },
     {
       name: "Dr. Sarah Mitchell",
