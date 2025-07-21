@@ -10,7 +10,7 @@ export default function HealthTesting() {
     },
     {
       icon: Bone,
-      title: "Hip & Elbow",
+      title: "Delay Neuter",
       description: "OFA certification for hip and elbow dysplasia on all breeding dogs.",
     },
     {
