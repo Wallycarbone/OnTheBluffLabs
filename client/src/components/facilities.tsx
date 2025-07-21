@@ -29,10 +29,10 @@ export default function Facilities() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-            OUR FACILITIES
+            OUR TEAM
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            State-of-the-art facilities designed for the comfort and wellbeing of our dogs.
+            Meet the dedicated professionals who make our exceptional breeding program possible.
           </p>
         </div>
         
