@@ -9,7 +9,7 @@ export default function About() {
     },
     {
       icon: BookOpen,
-      title: "Decades of Wisdom",
+      title: "Holistic Care Practices",
     },
     {
       icon: Heart,
