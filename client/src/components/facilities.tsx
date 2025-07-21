@@ -20,7 +20,7 @@ export default function Team() {
     {
       name: "Jess Kelley-Madera, CPDT-KA",
       role: "Head Trainer & Behavioral Specialist",
-      description: "Our certified professional dog trainer develops each puppy's training program and works with families to facilitate smooth transitions. Using only gentle methods, her expertise creates confident, well-adjusted puppies.",
+      description: "Our certified professional dog trainer develops each puppy's training program and works with families to facilitate smooth transitions. Using gentle methods, she reinforces good behavior in pups to help them grow into confident, easy-to-manage adult dogs.",
       image: jessImage,
     },
     {
