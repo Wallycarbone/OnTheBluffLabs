@@ -5,8 +5,8 @@ export default function HealthTesting() {
   const healthTests = [
     {
       icon: Eye,
-      title: "Eye Clearance",
-      description: "Annual CERF examinations by board-certified veterinary ophthalmologists.",
+      title: "DNA & OFA",
+      description: "Comprehensive genetic testing and Orthopedic Foundation for Animals certification.",
     },
     {
       icon: Bone,
@@ -45,7 +45,7 @@ export default function HealthTesting() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-            HEALTH TESTING & CERTIFICATIONS
+            HEALTH TESTING & CARE
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
             Our commitment to breeding healthy dogs through comprehensive health testing and certification.
@@ -69,8 +69,8 @@ export default function HealthTesting() {
         </div>
 
         <div className="mt-16 bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-3xl font-playfair font-bold text-navy text-center mb-8">
-            Our Certifications
+          <h3 className="text-3xl font-oswald font-normal text-center mb-8 tracking-wide" style={{color: '#11100f'}}>
+            OUR CERTIFICATIONS
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
@@ -80,7 +80,7 @@ export default function HealthTesting() {
                   alt={cert.title} 
                   className="mx-auto mb-4 rounded-lg shadow-md w-full max-w-[300px] h-48 object-cover"
                 />
-                <h4 className="text-lg font-playfair font-bold text-navy">
+                <h4 className="text-lg font-montserrat font-semibold" style={{color: '#11100f'}}>
                   {cert.title}
                 </h4>
               </div>
