@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import wallyCarlaImage from "@assets/Untitled design (92)_1753108643199.png";
 import lyricaImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (71)_1753110327800.png";
+import jessImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (72)_1753126495308.png";
 
 export default function Team() {
   const teamMembers = [
@@ -17,10 +18,10 @@ export default function Team() {
       image: lyricaImage,
     },
     {
-      name: "Mike",
-      role: "Facility Manager & Breeding Assistant",
-      description: "Ensures our dogs receive the best daily care, manages feeding protocols, and assists with breeding program logistics and puppy socialization.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      name: "Jess Kelley-Madera, CPDT-KA, PMCT2, FDM",
+      role: "Head Trainer & Behavioral Specialist",
+      description: "Our certified professional dog trainer who develops each puppy's foundation skills and works with families to ensure smooth transitions. Her expertise in positive reinforcement creates confident, well-adjusted puppies.",
+      image: jessImage,
     },
     {
       name: "Lisa",
