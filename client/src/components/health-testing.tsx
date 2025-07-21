@@ -54,33 +54,40 @@ export default function HealthTesting() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {healthTests.map((test, index) => (
-            <Card key={index} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-              <div className="bg-golden bg-opacity-10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <test.icon className="text-golden w-8 h-8" />
+            <Card key={index} className="bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-golden bg-opacity-15 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                <test.icon className="text-golden w-10 h-10" />
               </div>
-              <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
+              <h3 className="text-xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
                 {test.title}
               </h3>
-              <p className="text-warm-gray">
+              <p className="text-warm-gray leading-relaxed text-sm">
                 {test.description}
               </p>
             </Card>
           ))}
         </div>
 
-        <div className="mt-16 bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-3xl font-oswald font-normal text-center mb-8 tracking-wide" style={{color: '#11100f'}}>
-            OUR CERTIFICATIONS
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-20 bg-white rounded-2xl shadow-xl p-12">
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
+              OUR CERTIFICATIONS
+            </h3>
+            <p className="text-warm-gray text-lg max-w-2xl mx-auto">
+              Recognized achievements and certifications that demonstrate our commitment to excellence in breeding.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {certifications.map((cert, index) => (
-              <div key={index} className="text-center">
-                <img 
-                  src={cert.image} 
-                  alt={cert.title} 
-                  className="mx-auto mb-4 rounded-lg shadow-md w-full max-w-[300px] h-48 object-cover"
-                />
-                <h4 className="text-lg font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              <div key={index} className="text-center group">
+                <div className="bg-gray-50 rounded-2xl p-6 mb-6 group-hover:bg-cream/30 transition-colors">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title} 
+                    className="mx-auto rounded-xl shadow-lg w-full h-48 object-cover group-hover:shadow-xl transition-shadow"
+                  />
+                </div>
+                <h4 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
                   {cert.title}
                 </h4>
               </div>
