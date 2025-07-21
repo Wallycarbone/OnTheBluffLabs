@@ -10,8 +10,8 @@ export default function HealthTesting() {
     },
     {
       icon: Bone,
-      title: "Delay Neuter",
-      description: "OFA certification for hip and elbow dysplasia on all breeding dogs.",
+      title: "Delay Spay & Neuter",
+      description: "We recommend delaying spay/neuter until after 18-24 months to allow proper joint and bone development in large breed dogs.",
     },
     {
       icon: Dna,
