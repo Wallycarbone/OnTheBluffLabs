@@ -1,26 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-export default function Facilities() {
-  const facilities = [
+export default function Team() {
+  const teamMembers = [
     {
-      title: "Indoor/Outdoor Facilities",
-      description: "Climate-controlled indoor areas with access to spacious outdoor runs for exercise and play.",
-      image: "https://images.unsplash.com/photo-1581888227599-779811939961?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      name: "Jessica",
+      role: "Lead Trainer & Puppy Development Specialist",
+      description: "With years of experience in positive reinforcement training, Jessica develops each puppy's foundation skills and works closely with families during the transition process.",
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
     },
     {
-      title: "Whelping & Nursery",
-      description: "Dedicated areas for birthing and early puppy development with 24/7 monitoring and care.",
-      image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      name: "Dr. Sarah Mitchell",
+      role: "Veterinary Consultant",
+      description: "Board-certified veterinarian who oversees our health testing protocols and provides ongoing medical care for our breeding dogs and puppies.",
+      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
     },
     {
-      title: "Exercise & Training Areas",
-      description: "Large, secure areas for exercise, training, and socialization activities.",
-      image: "https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      name: "Mike",
+      role: "Facility Manager & Breeding Assistant",
+      description: "Ensures our dogs receive the best daily care, manages feeding protocols, and assists with breeding program logistics and puppy socialization.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
     },
     {
-      title: "Grooming & Health Care",
-      description: "Professional grooming stations and veterinary care facilities on-site.",
-      image: "https://images.unsplash.com/photo-1581888227599-779811939961?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      name: "Lisa",
+      role: "Puppy Socialization & Family Coordinator",
+      description: "Specializes in early puppy socialization and helps match families with the perfect puppy based on lifestyle and preferences.",
+      image: "https://images.unsplash.com/photo-1494790108755-2616c96029d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
     },
   ];
 
@@ -36,20 +40,25 @@ export default function Facilities() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {facilities.map((facility, index) => (
-            <Card key={index} className="bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src={facility.image} 
-                alt={facility.title} 
-                className="w-full h-64 object-cover"
-              />
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-playfair font-bold text-navy mb-4">
-                  {facility.title}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {teamMembers.map((member, index) => (
+            <Card key={index} className="bg-white rounded-2xl shadow-xl text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
+                  {member.name}
                 </h3>
-                <p className="text-warm-gray">
-                  {facility.description}
+                <p className="text-sm font-medium mb-4" style={{color: '#6d761d'}}>
+                  {member.role}
+                </p>
+                <p className="text-warm-gray text-sm leading-relaxed">
+                  {member.description}
                 </p>
               </CardContent>
             </Card>
