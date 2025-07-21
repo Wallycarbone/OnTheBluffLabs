@@ -11,7 +11,7 @@ export default function HealthTesting() {
     {
       icon: Bone,
       title: "Delay Spay & Neuter",
-      description: "We recommend delaying spay/neuter until after 18-24 months to allow proper joint and bone development in large breed dogs.",
+      description: "We recommend delaying spay/neuter until after 24 months to allow proper joint and bone development.",
     },
     {
       icon: Dna,
