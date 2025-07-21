@@ -15,8 +15,8 @@ export default function HealthTesting() {
     },
     {
       icon: Dna,
-      title: "DNA Testing",
-      description: "Comprehensive genetic testing for hereditary conditions.",
+      title: "Raw Dog Food",
+      description: "Raw feeding promotes healthier coats, better digestion, stronger immune systems, and cleaner teeth naturally.",
     },
     {
       icon: Heart,
