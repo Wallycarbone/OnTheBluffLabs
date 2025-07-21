@@ -21,7 +21,7 @@ export default function HealthTesting() {
     {
       icon: Heart,
       title: "Reduce Vaccinations",
-      description: "We follow minimal vaccination protocols to reduce immune system stress and support natural health.",
+      description: "We avoid unnecessary vaccinations to prevent immune system overload and maintain natural immunity.",
     },
   ];
 
