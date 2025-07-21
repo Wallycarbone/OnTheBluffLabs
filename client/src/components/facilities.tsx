@@ -13,7 +13,7 @@ export default function Team() {
     {
       name: "Lyrica Crosby, LVT",
       role: "Licensed Veterinary Technician",
-      description: "Licensed veterinary technician who ensures our health testing protocols are followed and provides expert medical care for our breeding dogs and puppies.",
+      description: "Licensed veterinary technician who oversees breeding and whelping processes, ensures our health testing protocols are followed, and provides expert medical care for our breeding dogs and puppies.",
       image: lyricaImage,
     },
     {
