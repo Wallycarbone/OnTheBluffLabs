@@ -234,7 +234,7 @@ export default function Hero() {
               <span style={{color: '#6d761d'}}>PERFECT COMPANION?</span>
             </h3>
             <p className="mb-8 text-lg font-source-sans leading-relaxed max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
-              Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and gentle training.
+              Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and a strong training foundation.
             </p>
             <Button 
               onClick={() => scrollToSection('contact')}
