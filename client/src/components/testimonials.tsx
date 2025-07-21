@@ -4,22 +4,10 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Toniann & Michael",
-      family: "Duke & Atlas's Family",
-      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children.",
+      name: "Candice and Ken",
+      family: "Teddy (by Twain and Akadia, Bachelor's Degree Grad, Strawberry Blonde puppy on Right in Photo)",
+      testimonial: "I was drawn to On The Bluff Labradors because of their philosophy, from their approach to nutrition and diet, vaccination insight, crate training, and socialization skills to their extensive experience in breeding. They were accommodating and helpful as we looked at possibly getting one of their puppies and all my questions. Having lost two dogs in the past year from the same litter to Osteosarcoma, I was still feeling anxious about whether I was ready for the next step. The research was essential to me, and like most, I wanted to do anything I could to be preventive for our future furries. Jessica was so patient with me, understanding and explaining, always available to answer any questions, and never once did I feel any pressure to move forward. They communicate often and go above and beyond to make the process of adding a new family member easy and seamless, from weekly updates, pre-pickup Zoom meetings, and a communicative pickup to review all the details. We can't say enough good things about our boy, Theodore, 'Teddy'— he settled right in winning his new big brother over in minutes, he's very handsome and expressive, intelligent, cuddly, friendly, was quickly housebroken, a great traveler, and a true sweetheart. His temperament and personality are exceptional. We have never had a labrador quite like this, and I am certain we will have another one from On The Bluff in the next year or two.",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/image2-1-rotated.jpeg?resize=1080%2C1440&ssl=1",
-    },
-    {
-      name: "Jen",
-      family: "Mikkola's Family",
-      testimonial: "I had been wanting a pup from On The Bluff Labs for quite some time. I was lucky enough to get a pup from the magnificent Atticus before he was officially retired. He was honestly the easiest puppy that I've ever raised. The on-site trainer, Jess, is amazing.",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-37.png?resize=1080%2C1350&ssl=1",
-    },
-    {
-      name: "Tessa & Kaitlyn",
-      family: "Frankie's Family",
-      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way. The staff here is incredibly knowledgeable and was eager to share their expertise with us.",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/IMG_5015.jpeg?resize=1080%2C1440&ssl=1",
     },
   ];
 
