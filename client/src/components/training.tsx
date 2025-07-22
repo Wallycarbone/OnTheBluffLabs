@@ -22,7 +22,7 @@ export default function Training() {
     {
       title: "Master's Degree",
       description: "Comprehensive training for well-mannered family companions for puppies 8-14 weeks",
-      features: ["Leash walking", "Recall training", "Continued house & crate training", "Public socialization trips"],
+      features: ["Leash walking", "Recall training", "Enhanced house & crate training", "Public socialization trips"],
       duration: "6-week program", 
       icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />
     },
