@@ -5,6 +5,7 @@ import Puppies from "@/components/puppies";
 import BreedingDogs from "@/components/breeding-dogs";
 import HealthTesting from "@/components/health-testing";
 import Training from "@/components/training";
+import Boarding from "@/components/boarding";
 import FeaturedTestimonial from "@/components/featured-testimonial";
 import Facilities from "@/components/facilities";
 import Contact from "@/components/contact";
@@ -20,6 +21,7 @@ export default function Home() {
       <BreedingDogs />
       <HealthTesting />
       <Training />
+      <Boarding />
       <FeaturedTestimonial />
       <Facilities />
       <Contact />
