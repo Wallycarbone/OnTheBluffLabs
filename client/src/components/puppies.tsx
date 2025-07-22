@@ -138,10 +138,15 @@ export default function Puppies() {
         />
         <div className="absolute top-4 right-4">
           <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold shadow-lg ${
-            getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'bg-green-500 text-white' :
-            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? 'bg-blue-500 text-white' :
-            'bg-orange-500 text-white'
-          }`}>
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'text-white' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? 'text-white' :
+            'text-white'
+          }`}
+          style={{
+            backgroundColor: getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? '#6d761d' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? '#8a8f28' :
+            '#a5aa35'
+          }}>
             {getLitterStatus(litter.birthDate, litter.status)}
           </span>
         </div>
