@@ -126,14 +126,14 @@ Preferred communication style: Simple, everyday language.
 - Database integration with PostgreSQL via Neon
 - Working authentication system confirmed functional
 
-## Recent Changes (July 14, 2025)
-- ✅ Admin login system successfully deployed and tested
-- ✅ External access confirmed working from different networks
-- ✅ PostgreSQL database with proper user authentication
-- ✅ Admin credentials: username "admin", password "admin123"
-- ✅ Simple login form with debug capabilities implemented
-- ✅ Admin dashboard accessible for viewing customer inquiries
-- ✅ Complete brand color implementation with authentic color palette
-- ✅ Hero section updated with subtle cream-yellow background (#fff3c5)
-- ✅ Professional dark charcoal titles (#11100f) and olive green accents (#6d761d)
-- ✅ Sophisticated color balance achieved for premium breeding website appearance
+## Recent Changes (July 22, 2025)
+- ✅ Premium litter card redesign with enhanced visual appeal and professional layout
+- ✅ Brand-consistent status badges using olive green color variations (#6d761d, #8a8f28, #a5aa35)
+- ✅ Dynamic litter status system (Ready/Ready Soon/Upcoming) based on puppy age calculations
+- ✅ Interactive Westminster bloodline popup featuring authentic Topo Gigio photo
+- ✅ Clickable "Topo Gigio" links for Moon bloodline litters with professional popup dialog
+- ✅ Improved litter ordering: upcoming litters first, then by puppy age
+- ✅ Clean litter card headers without redundant "Litter" text
+- ✅ Two-column information grid with professional typography and spacing
+- ✅ Enhanced shadows, rounded corners, and premium button styling
+- ✅ Complete user interface refinements for luxury breeding website appearance

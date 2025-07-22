@@ -286,29 +286,29 @@ export default function Puppies() {
         </div>
 
         {/* Mature Dogs Section */}
-        <div className="text-center">
-          <Card className="bg-white rounded-xl shadow-lg overflow-hidden max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+        <div className="text-center mt-12">
+          <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-lg mx-auto">
+            <CardContent className="p-6">
+              <h3 className="text-lg font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>
                 MATURE DOGS AVAILABLE
               </h3>
-              <p className="text-lg font-source-sans mb-6" style={{color: '#4b4b4b'}}>
-                Looking for an older puppy or adult dog? We occasionally have mature dogs available from our breeding program.
+              <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
+                We occasionally have older puppies or adult dogs available from our breeding program.
               </p>
               <img 
                 src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/05/Y30A3237-1.jpg?resize=1080%2C864&ssl=1"
                 alt="Pippi Longstocking - Mature dog available"
-                className="w-full h-96 object-cover rounded-lg mb-6"
+                className="w-full h-48 object-cover rounded-md mb-4"
                 style={{objectPosition: '50% 20%'}}
               />
               <Button 
                 onClick={scrollToContact}
-                className="font-montserrat font-medium h-auto py-3 px-8"
+                className="font-montserrat font-medium text-sm h-auto py-2 px-6"
                 style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
               >
-                Request Mature Dog Information
+                Inquire About Mature Dogs
               </Button>
             </CardContent>
           </Card>
