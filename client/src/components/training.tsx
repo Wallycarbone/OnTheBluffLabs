@@ -29,7 +29,7 @@ export default function Training() {
     {
       title: "Puppy PhD",
       description: "Comprehensive evaluation and personalized training solutions tailored to your family's specific needs and goals",
-      features: ["Pickup after the teething phase", "Sleeping through the night", "Training therapy & emotional support candidates", "Providing family coaching"],
+      features: ["Pickup after the teething phase", "Advanced house training & crate training", "Therapy & emotional support preparation", "Family coaching & support"],
       duration: "4-month program",
       icon: <Users className="w-6 h-6" style={{color: '#6d761d'}} />
     }
