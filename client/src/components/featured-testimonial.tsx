@@ -17,16 +17,16 @@ export default function FeaturedTestimonial() {
           <CardContent className="p-0">
             <div className="flex flex-col lg:flex-row">
               {/* Image Section */}
-              <div className="lg:w-1/2">
+              <div className="lg:w-1/3">
                 <img 
                   src={testimonial.image} 
                   alt={`${testimonial.name}'s family with ${testimonial.family.split(',')[0]}`} 
-                  className="w-full h-64 lg:h-full object-cover"
+                  className="w-full h-48 lg:h-full object-cover"
                 />
               </div>
               
               {/* Content Section */}
-              <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+              <div className="lg:w-2/3 p-8 lg:p-12 flex flex-col justify-center">
                 <div className="mb-6">
                   <Quote className="text-olive-green w-12 h-12 mb-4" />
                 </div>
