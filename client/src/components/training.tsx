@@ -30,7 +30,7 @@ export default function Training() {
       title: "Puppy PhD",
       description: "Professional assessment and customized training plans for specific behavioral issues",
       features: ["Behavioral assessment", "Custom training plan", "Follow-up support", "Family coaching"],
-      duration: "Initial consultation + follow-ups",
+      duration: "4-month program",
       icon: <Users className="w-6 h-6" style={{color: '#6d761d'}} />
     }
   ];
