@@ -71,6 +71,15 @@ export default function Navigation() {
                 Health Testing
               </button>
               <button 
+                onClick={() => scrollToSection('training')}
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{color: '#4b4b4b'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#11100f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
+              >
+                Training
+              </button>
+              <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="px-3 py-2 text-sm font-medium transition-colors"
                 style={{color: '#4b4b4b'}}
@@ -135,6 +144,12 @@ export default function Navigation() {
               className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
             >
               Health Testing
+            </button>
+            <button 
+              onClick={() => scrollToSection('training')}
+              className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-slate-900 w-full text-left"
+            >
+              Training
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
