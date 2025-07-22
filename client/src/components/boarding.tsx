@@ -18,8 +18,8 @@ export default function Boarding() {
     },
     {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />,
-      title: "Lab Friendly Policies",
-      description: "We welcome intact dogs and feed raw dog food, with policies specifically designed for Labrador temperaments and learning styles."
+      title: "Lab-Specific Solutions",
+      description: "We have solutions designed specifically for Labradors - we welcome intact dogs and feed raw dog food, with policies tailored to Labrador temperaments and learning styles."
     },
     {
       icon: <Shield className="w-6 h-6" style={{color: '#6d761d'}} />,
