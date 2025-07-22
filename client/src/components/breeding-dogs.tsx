@@ -67,7 +67,7 @@ export default function BreedingDogs() {
   );
 
   return (
-    <section id="breeding" className="py-24" style={{backgroundColor: '#fff8f0'}}>
+    <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Our Sires Section */}
         <div className="mb-20">
