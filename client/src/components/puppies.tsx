@@ -1,9 +1,13 @@
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Star, X } from "lucide-react";
 import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
+import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 
 export default function Puppies() {
+  const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
   const calculateAge = (birthDate: string) => {
     if (birthDate.includes('Due')) {
       return 'Expected';
@@ -166,9 +170,29 @@ export default function Puppies() {
           <Star className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
           <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
             {litter.name === "Moon & Foxxy Litter" 
-              ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
+              ? (
+                  <>
+                    Descended from{' '}
+                    <button 
+                      onClick={() => setIsTopoPopupOpen(true)}
+                      className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                    >
+                      2019 Westminster Best of Breed Farnfield Topo Gigio
+                    </button>
+                  </>
+                )
               : litter.name === "Moon & Nora Litter"
-              ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
+              ? (
+                  <>
+                    Descended from{' '}
+                    <button 
+                      onClick={() => setIsTopoPopupOpen(true)}
+                      className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                    >
+                      2019 Westminster Best of Breed Farnfield Topo Gigio
+                    </button>
+                  </>
+                )
               : litter.name === "Grizzly & Guinevere Litter"
               ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
               : litter.name === "Holden & Alola Litter"
@@ -176,7 +200,17 @@ export default function Puppies() {
               : litter.name === "Boo Radley & Queen Boudica Litter"
               ? "Champion bloodlines with exceptional temperament"
               : litter.name === "Moon & Harper Lee Litter"
-              ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
+              ? (
+                  <>
+                    Descended from{' '}
+                    <button 
+                      onClick={() => setIsTopoPopupOpen(true)}
+                      className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                    >
+                      2019 Westminster Best of Breed Farnfield Topo Gigio
+                    </button>
+                  </>
+                )
               : "Champion Bloodline"
             }
           </span>
@@ -256,6 +290,36 @@ export default function Puppies() {
           </Card>
         </div>
       </div>
+
+      {/* Topo Gigio Popup Dialog */}
+      <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              2019 Westminster Best of Breed
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <img 
+              src={topoGigioImage} 
+              alt="Farnfield Topo Gigio - 2019 Westminster Best of Breed winner"
+              className="w-full h-auto rounded-lg"
+            />
+            <div className="space-y-2">
+              <h3 className="text-xl font-oswald font-normal" style={{color: '#11100f'}}>
+                Farnfield Topo Gigio
+              </h3>
+              <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                Winner of the 2019 Westminster Dog Show Best of Breed in the Labrador Retriever category. 
+                Topo Gigio represents the pinnacle of Labrador conformation and bloodline excellence.
+              </p>
+              <p className="text-sm font-source-sans" style={{color: '#6d761d'}}>
+                Our Moon litters are directly descended from this exceptional champion, bringing world-class genetics to your family.
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
