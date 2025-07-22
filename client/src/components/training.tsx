@@ -13,7 +13,7 @@ export default function Training() {
 
   const trainingServices = [
     {
-      title: "Puppy Foundation Training",
+      title: "Bachelor's Degree",
       description: "Essential socialization, basic cues, and house training for puppies 8-10 weeks",
       features: ["Basic cues (sit, down, and come)", "House training", "Crate training", "Socialization basics"],
       duration: "2-week program",
