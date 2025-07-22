@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap } from "lucide-react";
+import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 
 export default function Training() {
   const scrollToContact = () => {
@@ -17,7 +17,7 @@ export default function Training() {
       description: "Essential socialization, basic cues, and house training for puppies 8-10 weeks",
       features: ["Basic cues (sit, down, and come)", "Foundation house training", "Foundation crate training", "Socialization basics"],
       duration: "2-week program",
-      icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />
+      icon: <Sprout className="w-6 h-6" style={{color: '#6d761d'}} />
     },
     {
       title: "Master's Degree",
