@@ -85,10 +85,10 @@ export default function Training() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/11/Y30A3321Harper-Lee.JPG?resize=1080%2C1620&ssl=1"
-                    alt="Professional dog training session"
+                    src="/attached_assets/Y30A9542_1753198033116.JPG"
+                    alt="Professional dog training session with Labrador"
                     className="w-full h-96 object-cover rounded-xl shadow-lg"
-                    style={{objectPosition: '50% 30%'}}
+                    style={{objectPosition: '50% 40%'}}
                   />
                 </div>
               </div>
