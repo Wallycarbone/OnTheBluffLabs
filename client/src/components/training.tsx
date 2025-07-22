@@ -15,14 +15,14 @@ export default function Training() {
     {
       title: "Bachelor's Degree",
       description: "Essential socialization, basic cues, and house training for puppies 8-10 weeks",
-      features: ["Basic cues (sit, down, and come)", "House training", "Crate training", "Socialization basics"],
+      features: ["Basic cues (sit, down, and come)", "Foundation house training", "Foundation crate training", "Socialization basics"],
       duration: "2-week program",
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />
     },
     {
       title: "Master's Degree",
       description: "Comprehensive training for well-mannered family companions for puppies 8-14 weeks",
-      features: ["Leash walking", "Recall training", "Stay cue", "Public socialization trips"],
+      features: ["Leash walking", "Recall training", "Continued house & crate training", "Public socialization trips"],
       duration: "6-week program", 
       icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />
     },
