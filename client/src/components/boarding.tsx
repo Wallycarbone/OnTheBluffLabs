@@ -14,7 +14,7 @@ export default function Boarding() {
     {
       icon: <Home className="w-6 h-6" style={{color: '#6d761d'}} />,
       title: "Professional Training",
-      description: "Daily training sessions with our certified professional dog trainer using positive reinforcement methods."
+      description: "Daily training sessions with our training team using positive reinforcement methods."
     },
     {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />,
@@ -56,7 +56,7 @@ export default function Boarding() {
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
                     Our board and train program combines the benefits of professional training with premium boarding care. Your dog stays 
-                    at our facility while receiving intensive, daily training sessions from our certified professional dog trainer.
+                    at our facility while receiving intensive, daily training sessions from our training team.
                   </p>
                   <p className="text-base font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
                     Using gentle, positive reinforcement methods, we address behavioral issues, reinforce obedience, and teach new skills 
@@ -115,7 +115,7 @@ export default function Boarding() {
                   <div className="flex items-start">
                     <Star className="w-4 h-4 mr-3 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
                     <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      Daily professional training sessions with certified trainer
+                      Daily professional training sessions with our training team
                     </span>
                   </div>
                   <div className="flex items-start">
