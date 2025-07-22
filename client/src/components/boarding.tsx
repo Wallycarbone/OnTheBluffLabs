@@ -59,7 +59,7 @@ export default function Boarding() {
                     at our facility while receiving intensive, daily training sessions from our training team.
                   </p>
                   <p className="text-base font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Using gentle, positive reinforcement methods, we address behavioral issues, reinforce obedience, and teach new skills 
+                    Using gentle, positive reinforcement methods, we reinforce good behavior, relearn positive habits, and teach new skills 
                     in our controlled training environment. This immersive approach accelerates learning and helps dogs generalize their training to real-world situations.
                   </p>
                   <div className="flex items-center mb-4">
