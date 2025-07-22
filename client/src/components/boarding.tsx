@@ -121,7 +121,7 @@ export default function Boarding() {
                   <div className="flex items-start">
                     <Star className="w-4 h-4 mr-3 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
                     <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      Basic obedience: sit, stay, down, come, heel
+                      Custom training plan created for every dog
                     </span>
                   </div>
                   <div className="flex items-start">
