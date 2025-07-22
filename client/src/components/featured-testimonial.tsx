@@ -13,15 +13,6 @@ export default function FeaturedTestimonial() {
   return (
     <section className="py-20 bg-cream-light">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-            WHAT FAMILIES SAY
-          </h2>
-          <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            Real experiences from families who welcomed On The Bluff puppies into their homes.
-          </p>
-        </div>
-        
         <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-4xl mx-auto">
           <CardContent className="p-0">
             <div className="flex flex-col lg:flex-row">
