@@ -37,7 +37,7 @@ export default function Puppies() {
       return 'Ready';
     }
     
-    return originalStatus;
+    return 'Ready Soon';
   };
   const currentLitters = [
     {
@@ -138,7 +138,7 @@ export default function Puppies() {
           </h3>
           <span className={`px-3 py-1 rounded-full text-xs font-montserrat font-medium ${
             getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'bg-green-100 text-green-800' :
-            getLitterStatus(litter.birthDate, litter.status) === 'Current' ? 'bg-blue-100 text-blue-800' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? 'bg-blue-100 text-blue-800' :
             'bg-orange-100 text-orange-800'
           }`}>
             {getLitterStatus(litter.birthDate, litter.status)}
