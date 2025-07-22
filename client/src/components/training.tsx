@@ -67,7 +67,7 @@ export default function Training() {
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
                       <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                        Veterinarian-recommended positive reinforcement methods that build confidence
+                        Evidence-based positive reinforcement methods that build confidence
                       </span>
                     </div>
                     <div className="flex items-start">
