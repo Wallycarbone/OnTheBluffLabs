@@ -41,7 +41,7 @@ export default function Boarding() {
             BOARD & TRAIN PROGRAM
           </h2>
           <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
-            Comprehensive board and train services combining professional training with premium boarding care in our specialized facility.
+            Comprehensive board and train services combining professional training with premium boarding care.
           </p>
         </div>
 
