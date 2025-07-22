@@ -36,7 +36,7 @@ export default function Training() {
   ];
 
   return (
-    <section id="training" className="py-20" style={{backgroundColor: '#f8f9fa'}}>
+    <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>

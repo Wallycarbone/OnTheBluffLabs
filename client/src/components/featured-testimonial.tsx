@@ -11,7 +11,7 @@ export default function FeaturedTestimonial() {
   };
 
   return (
-    <section className="py-20 bg-cream-light">
+    <section className="py-24 bg-gray-50 border-t border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-4xl mx-auto">
           <CardContent className="p-0">
