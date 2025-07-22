@@ -172,8 +172,7 @@ export default function Puppies() {
 {litter.name === "Moon & Foxxy Litter" 
               ? (
                   <>
-                    Descended from{' '}
-                    <button 
+                    Descended from <button 
                       onClick={() => setIsTopoPopupOpen(true)}
                       className="underline cursor-pointer hover:opacity-80 transition-opacity"
                       style={{color: '#6d761d'}}
@@ -185,8 +184,7 @@ export default function Puppies() {
               : litter.name === "Moon & Nora Litter"
               ? (
                   <>
-                    Descended from{' '}
-                    <button 
+                    Descended from <button 
                       onClick={() => setIsTopoPopupOpen(true)}
                       className="underline cursor-pointer hover:opacity-80 transition-opacity"
                       style={{color: '#6d761d'}}
@@ -204,8 +202,7 @@ export default function Puppies() {
               : litter.name === "Moon & Harper Lee Litter"
               ? (
                   <>
-                    Descended from{' '}
-                    <button 
+                    Descended from <button 
                       onClick={() => setIsTopoPopupOpen(true)}
                       className="underline cursor-pointer hover:opacity-80 transition-opacity"
                       style={{color: '#6d761d'}}
