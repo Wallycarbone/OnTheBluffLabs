@@ -135,12 +135,6 @@ export default function Boarding() {
                   <div className="flex items-start">
                     <Star className="w-4 h-4 mr-3 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
                     <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      Leash walking and loose leash training
-                    </span>
-                  </div>
-                  <div className="flex items-start">
-                    <Star className="w-4 h-4 mr-3 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
-                    <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
                       Behavioral modification for specific issues
                     </span>
                   </div>
@@ -148,6 +142,12 @@ export default function Boarding() {
                     <Star className="w-4 h-4 mr-3 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
                     <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
                       Owner education session upon pickup
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <Star className="w-4 h-4 mr-3 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
+                    <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                      Raw dog food meals included
                     </span>
                   </div>
                 </div>
