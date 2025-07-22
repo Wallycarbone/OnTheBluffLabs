@@ -148,51 +148,7 @@ export default function Training() {
           </div>
         </div>
 
-        {/* Trainer Credentials */}
-        <div className="text-center">
-          <Card className="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl mx-auto">
-            <CardContent className="p-8">
-              <div className="flex items-center justify-center mb-6">
-                <Award className="w-8 h-8 mr-3" style={{color: '#6d761d'}} />
-                <h3 className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-                  Professional Credentials
-                </h3>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                <div>
-                  <h4 className="text-lg font-oswald font-normal mb-3" style={{color: '#11100f'}}>
-                    Jess Kelley-Madera, CPDT-KA
-                  </h4>
-                  <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-                    Our Training Director brings years of professional experience 
-                    and certification from the Certification Council for Professional Dog Trainers.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5" style={{color: '#6d761d'}} />
-                    <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      Certified Professional Dog Trainer - Knowledge Assessed (CPDT-KA)
-                    </span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5" style={{color: '#6d761d'}} />
-                    <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      Specialized in positive reinforcement behavioral methods
-                    </span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5" style={{color: '#6d761d'}} />
-                    <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                      Extensive experience with Labrador temperament and training
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+
       </div>
     </section>
   );
