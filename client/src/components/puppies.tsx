@@ -194,24 +194,24 @@ export default function Puppies() {
               {litter.name === "Moon & Foxxy" 
                 ? (
                     <>
-                      Descended from <button 
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
                         onClick={() => setIsTopoPopupOpen(true)}
                         className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
                         style={{color: '#6d761d'}}
                       >
-                        2019 Westminster Best of Breed Farnfield Topo Gigio
+                        Topo Gigio
                       </button>
                     </>
                   )
                 : litter.name === "Moon & Nora"
                 ? (
                     <>
-                      Descended from <button 
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
                         onClick={() => setIsTopoPopupOpen(true)}
                         className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
                         style={{color: '#6d761d'}}
                       >
-                        2019 Westminster Best of Breed Farnfield Topo Gigio
+                        Topo Gigio
                       </button>
                     </>
                   )
@@ -224,12 +224,12 @@ export default function Puppies() {
                 : litter.name === "Moon & Harper Lee"
                 ? (
                     <>
-                      Descended from <button 
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
                         onClick={() => setIsTopoPopupOpen(true)}
                         className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
                         style={{color: '#6d761d'}}
                       >
-                        2019 Westminster Best of Breed Farnfield Topo Gigio
+                        Topo Gigio
                       </button>
                     </>
                   )
