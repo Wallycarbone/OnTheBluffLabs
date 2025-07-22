@@ -72,7 +72,32 @@ export default function Puppies() {
     }
   ];
 
-  const upcomingLitters = [];
+  const upcomingLitters = [
+    {
+      name: "Boo Radley & Queen Boudica Litter",
+      sire: "Boo Radley",
+      dam: "Queen Boudica",
+      birthDate: "Due August 2025",
+      puppiesCount: "TBD",
+      available: "Accepting Deposits",
+      readyDate: "October 2025",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/02/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-41.png?resize=1080%2C1350&ssl=1",
+      status: "Upcoming",
+      description: "Bred in June, due in August 2025"
+    },
+    {
+      name: "Moon & Harper Lee Litter",
+      sire: "Moon",
+      dam: "Harper Lee",
+      birthDate: "Due July 2025",
+      puppiesCount: "TBD",
+      available: "Accepting Deposits",
+      readyDate: "September 2025",
+      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/52.png?resize=1080%2C1350&ssl=1",
+      status: "Upcoming",
+      description: "Bred in May, due in July 2025"
+    }
+  ];
 
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -130,6 +155,10 @@ export default function Puppies() {
               ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
               : litter.name === "Holden & Alola Litter"
               ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
+              : litter.name === "Boo Radley & Queen Boudica Litter"
+              ? "Champion bloodlines with exceptional temperament"
+              : litter.name === "Moon & Harper Lee Litter"
+              ? "Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio"
               : "Champion Bloodline"
             }
           </span>
@@ -159,23 +188,10 @@ export default function Puppies() {
           </p>
         </div>
         
-        {/* Current Litters */}
+        {/* All Litters */}
         <div className="mb-16">
-          <h3 className="text-2xl font-oswald font-normal mb-8 text-center tracking-wide" style={{color: '#11100f'}}>
-            CURRENT LITTERS
-          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {currentLitters.map((litter, index) => renderLitterCard(litter, index))}
-          </div>
-        </div>
-
-        {/* Upcoming Litters */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-oswald font-normal mb-8 text-center tracking-wide" style={{color: '#11100f'}}>
-            UPCOMING LITTERS
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {upcomingLitters.map((litter, index) => renderLitterCard(litter, index + 100))}
+            {[...currentLitters, ...upcomingLitters].map((litter, index) => renderLitterCard(litter, index))}
           </div>
         </div>
 
