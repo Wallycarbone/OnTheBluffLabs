@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Award, Users, Clock, CheckCircle, Heart, Star } from "lucide-react";
+import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap } from "lucide-react";
 
 export default function Training() {
   const scrollToContact = () => {
@@ -31,7 +31,7 @@ export default function Training() {
       description: "Comprehensive evaluation and personalized training solutions tailored to your family's specific needs and goals",
       features: ["Pickup after the teething phase", "Advanced house training & crate training", "Therapy & emotional support preparation", "Family coaching & support"],
       duration: "4-month program",
-      icon: <Users className="w-6 h-6" style={{color: '#6d761d'}} />
+      icon: <GraduationCap className="w-6 h-6" style={{color: '#6d761d'}} />
     }
   ];
 
