@@ -59,14 +59,15 @@ export default function Training() {
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
                     We believe in building strong, positive relationships between dogs and their families through 
-                    gentle, science-based training methods. Our approach focuses on understanding your dog's 
-                    individual needs and creating customized training solutions.
+                    gentle, science-based training methods that are both highly effective and recommended by veterinarians. 
+                    Our approach focuses on understanding your dog's individual needs and creating customized training 
+                    solutions that build trust and confidence.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
                       <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                        Positive reinforcement methods that build confidence
+                        Veterinarian-recommended positive reinforcement methods that build confidence
                       </span>
                     </div>
                     <div className="flex items-start">
