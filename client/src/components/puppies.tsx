@@ -21,6 +21,24 @@ export default function Puppies() {
       return `${weeks} week${weeks > 1 ? 's' : ''} old`;
     }
   };
+
+  const getLitterStatus = (birthDate: string, originalStatus: string) => {
+    if (birthDate.includes('Due')) {
+      return 'Upcoming';
+    }
+    
+    const birth = new Date(birthDate);
+    const today = new Date();
+    const diffTime = today.getTime() - birth.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const weeks = Math.floor(diffDays / 7);
+    
+    if (weeks >= 8) {
+      return 'Ready';
+    }
+    
+    return originalStatus;
+  };
   const currentLitters = [
     {
       name: "Moon & Foxxy Litter",
@@ -119,11 +137,11 @@ export default function Puppies() {
             {litter.name}
           </h3>
           <span className={`px-3 py-1 rounded-full text-xs font-montserrat font-medium ${
-            litter.status === 'Ready' ? 'bg-green-100 text-green-800' :
-            litter.status === 'Current' ? 'bg-blue-100 text-blue-800' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'bg-green-100 text-green-800' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Current' ? 'bg-blue-100 text-blue-800' :
             'bg-orange-100 text-orange-800'
           }`}>
-            {litter.status}
+            {getLitterStatus(litter.birthDate, litter.status)}
           </span>
         </div>
 
