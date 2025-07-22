@@ -58,10 +58,10 @@ export default function Training() {
                     Our Training Philosophy
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    We believe in building strong, positive relationships between dogs and their families through 
-                    gentle, science-based training methods that are both highly effective and recommended by veterinarians. 
-                    Our approach focuses on understanding your dog's individual needs and creating customized training 
-                    solutions that build trust and confidence.
+                    Our Labradors are bred for naturally intelligent, eager-to-please temperaments that provide an 
+                    exceptional foundation for training. We build upon these inherent qualities using gentle, 
+                    veterinarian-recommended methods that strengthen the natural bond between dog and family. 
+                    By working with your dog's intelligence and personality, we create lasting training success.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start">
@@ -73,7 +73,7 @@ export default function Training() {
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
                       <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                        Customized programs for each dog's unique personality
+                        Building on natural intelligence and eager temperaments
                       </span>
                     </div>
                     <div className="flex items-start">
