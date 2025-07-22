@@ -14,7 +14,7 @@ export default function Training() {
   const trainingServices = [
     {
       title: "Puppy Foundation Training",
-      description: "Essential socialization, basic cues, and house training for puppies 8-16 weeks",
+      description: "Essential socialization, basic cues, and house training for puppies 8-10 weeks",
       features: ["Basic cues (sit, stay, come)", "House training", "Crate training", "Socialization basics"],
       duration: "2-week program",
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />
