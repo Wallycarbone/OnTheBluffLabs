@@ -19,7 +19,7 @@ export default function Boarding() {
     {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />,
       title: "Lab Friendly Policies",
-      description: "Training and boarding with policies specifically designed for Labrador temperaments and learning styles."
+      description: "We welcome intact dogs and feed raw dog food, with policies specifically designed for Labrador temperaments and learning styles."
     },
     {
       icon: <Shield className="w-6 h-6" style={{color: '#6d761d'}} />,
