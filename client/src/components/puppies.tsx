@@ -129,95 +129,114 @@ export default function Puppies() {
   };
 
   const renderLitterCard = (litter: any, index: number) => (
-    <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-      <img 
-        src={litter.image} 
-        alt={`${litter.name} Labrador litter`} 
-        className="w-full h-48 object-cover"
-      />
-      <CardContent className="p-6">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-            {litter.name}
-          </h3>
-          <span className={`px-3 py-1 rounded-full text-xs font-montserrat font-medium ${
-            getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'bg-green-100 text-green-800' :
-            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? 'bg-blue-100 text-blue-800' :
-            'bg-orange-100 text-orange-800'
+    <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
+      <div className="relative">
+        <img 
+          src={litter.image} 
+          alt={`${litter.name} Labrador litter`} 
+          className="w-full h-56 object-cover"
+        />
+        <div className="absolute top-4 right-4">
+          <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold shadow-lg ${
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'bg-green-500 text-white' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? 'bg-blue-500 text-white' :
+            'bg-orange-500 text-white'
           }`}>
             {getLitterStatus(litter.birthDate, litter.status)}
           </span>
         </div>
+      </div>
+      
+      <CardContent className="p-8">
+        <div className="mb-6">
+          <h3 className="text-2xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
+            {litter.name}
+          </h3>
+          <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mb-4"></div>
+        </div>
 
-        <div className="space-y-2 mb-4">
-          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-            <span className="font-medium">Sire:</span> {litter.sire}
-          </p>
-          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-            <span className="font-medium">Dam:</span> {litter.dam}
-          </p>
-          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-            <span className="font-medium">Born:</span> {litter.birthDate}
-          </p>
-          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-            <span className="font-medium">Age:</span> {calculateAge(litter.birthDate)}
-          </p>
-          <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-            <span className="font-medium">Available:</span> {litter.available}
-          </p>
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="space-y-3">
+            <div>
+              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
+              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.sire}</p>
+            </div>
+            <div>
+              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
+              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.dam}</p>
+            </div>
+            <div>
+              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Born</span>
+              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.birthDate}</p>
+            </div>
+          </div>
+          <div className="space-y-3">
+            <div>
+              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Age</span>
+              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
+            </div>
+            <div>
+              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Available</span>
+              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.available}</p>
+            </div>
+          </div>
         </div>
-        <div className="flex items-start mb-4">
-          <Star className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
-          <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-{litter.name === "Moon & Foxxy Litter" 
-              ? (
-                  <>
-                    Descended from <button 
-                      onClick={() => setIsTopoPopupOpen(true)}
-                      className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                      style={{color: '#6d761d'}}
-                    >
-                      2019 Westminster Best of Breed Farnfield Topo Gigio
-                    </button>
-                  </>
-                )
-              : litter.name === "Moon & Nora Litter"
-              ? (
-                  <>
-                    Descended from <button 
-                      onClick={() => setIsTopoPopupOpen(true)}
-                      className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                      style={{color: '#6d761d'}}
-                    >
-                      2019 Westminster Best of Breed Farnfield Topo Gigio
-                    </button>
-                  </>
-                )
-              : litter.name === "Grizzly & Guinevere Litter"
-              ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
-              : litter.name === "Holden & Alola Litter"
-              ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
-              : litter.name === "Boo Radley & Queen Boudica Litter"
-              ? "Champion bloodlines with exceptional temperament"
-              : litter.name === "Moon & Harper Lee Litter"
-              ? (
-                  <>
-                    Descended from <button 
-                      onClick={() => setIsTopoPopupOpen(true)}
-                      className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                      style={{color: '#6d761d'}}
-                    >
-                      2019 Westminster Best of Breed Farnfield Topo Gigio
-                    </button>
-                  </>
-                )
-              : "Champion Bloodline"
-            }
-          </span>
+
+        <div className="bg-gray-50 rounded-lg p-4 mb-6">
+          <div className="flex items-start">
+            <Star className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
+            <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+              {litter.name === "Moon & Foxxy Litter" 
+                ? (
+                    <>
+                      Descended from <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        2019 Westminster Best of Breed Farnfield Topo Gigio
+                      </button>
+                    </>
+                  )
+                : litter.name === "Moon & Nora Litter"
+                ? (
+                    <>
+                      Descended from <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        2019 Westminster Best of Breed Farnfield Topo Gigio
+                      </button>
+                    </>
+                  )
+                : litter.name === "Grizzly & Guinevere Litter"
+                ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
+                : litter.name === "Holden & Alola Litter"
+                ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
+                : litter.name === "Boo Radley & Queen Boudica Litter"
+                ? "Champion bloodlines with exceptional temperament"
+                : litter.name === "Moon & Harper Lee Litter"
+                ? (
+                    <>
+                      Descended from <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        2019 Westminster Best of Breed Farnfield Topo Gigio
+                      </button>
+                    </>
+                  )
+                : "Champion Bloodline"
+              }
+            </span>
+          </div>
         </div>
+
         <Button 
           onClick={scrollToContact}
-          className="w-full font-montserrat font-medium h-auto py-3"
+          className="w-full font-montserrat font-semibold text-base h-auto py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
           style={{backgroundColor: '#6d761d', color: '#fefefe'}}
           onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
           onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
