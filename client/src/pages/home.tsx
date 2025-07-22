@@ -20,9 +20,9 @@ export default function Home() {
       <Puppies />
       <BreedingDogs />
       <HealthTesting />
+      <FeaturedTestimonial />
       <Training />
       <Boarding />
-      <FeaturedTestimonial />
       <Facilities />
       <Contact />
       <Footer />
