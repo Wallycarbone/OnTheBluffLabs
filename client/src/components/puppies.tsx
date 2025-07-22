@@ -45,7 +45,7 @@ export default function Puppies() {
   };
   const currentLitters = [
     {
-      name: "Moon & Foxxy Litter",
+      name: "Moon & Foxxy",
       sire: "Moon",
       dam: "Foxxy",
       birthDate: "June 5, 2025",
@@ -57,7 +57,7 @@ export default function Puppies() {
       description: "Seven puppies born June 5, 2025"
     },
     {
-      name: "Moon & Nora Litter",
+      name: "Moon & Nora",
       sire: "Moon",
       dam: "Nora",
       birthDate: "June 21, 2025",
@@ -69,7 +69,7 @@ export default function Puppies() {
       description: "One black female and one yellow female available"
     },
     {
-      name: "Grizzly & Guinevere Litter",
+      name: "Grizzly & Guinevere",
       sire: "Grizzly",
       dam: "Guinevere",
       birthDate: "April 5, 2025",
@@ -81,7 +81,7 @@ export default function Puppies() {
       description: "Eight chocolate puppies - males and females available"
     },
     {
-      name: "Holden & Alola Litter",
+      name: "Holden & Alola",
       sire: "Holden",
       dam: "Alola",
       birthDate: "March 21, 2025",
@@ -96,7 +96,7 @@ export default function Puppies() {
 
   const upcomingLitters = [
     {
-      name: "Boo Radley & Queen Boudica Litter",
+      name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
       dam: "Queen Boudica",
       birthDate: "Due August 2025",
@@ -108,7 +108,7 @@ export default function Puppies() {
       description: "Bred in June, due in August 2025"
     },
     {
-      name: "Moon & Harper Lee Litter",
+      name: "Moon & Harper Lee",
       sire: "Moon",
       dam: "Harper Lee",
       birthDate: "Due July 2025",
@@ -191,7 +191,7 @@ export default function Puppies() {
           <div className="flex items-start">
             <Star className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
             <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-              {litter.name === "Moon & Foxxy Litter" 
+              {litter.name === "Moon & Foxxy" 
                 ? (
                     <>
                       Descended from <button 
@@ -203,7 +203,7 @@ export default function Puppies() {
                       </button>
                     </>
                   )
-                : litter.name === "Moon & Nora Litter"
+                : litter.name === "Moon & Nora"
                 ? (
                     <>
                       Descended from <button 
@@ -215,13 +215,13 @@ export default function Puppies() {
                       </button>
                     </>
                   )
-                : litter.name === "Grizzly & Guinevere Litter"
+                : litter.name === "Grizzly & Guinevere"
                 ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
-                : litter.name === "Holden & Alola Litter"
+                : litter.name === "Holden & Alola"
                 ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
-                : litter.name === "Boo Radley & Queen Boudica Litter"
+                : litter.name === "Boo Radley & Queen Boudica"
                 ? "Champion bloodlines with exceptional temperament"
-                : litter.name === "Moon & Harper Lee Litter"
+                : litter.name === "Moon & Harper Lee"
                 ? (
                     <>
                       Descended from <button 
