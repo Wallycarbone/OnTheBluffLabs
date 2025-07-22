@@ -209,7 +209,21 @@ export default function Puppies() {
         {/* All Litters */}
         <div className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[...currentLitters, ...upcomingLitters].map((litter, index) => renderLitterCard(litter, index))}
+            {[...upcomingLitters, ...currentLitters]
+              .sort((a, b) => {
+                // If both are upcoming (due dates), sort by due date
+                if (a.birthDate.includes('Due') && b.birthDate.includes('Due')) {
+                  const aMonth = a.birthDate.includes('July') ? 7 : 8;
+                  const bMonth = b.birthDate.includes('July') ? 7 : 8;
+                  return aMonth - bMonth;
+                }
+                // If one is upcoming and one isn't, upcoming comes first
+                if (a.birthDate.includes('Due') && !b.birthDate.includes('Due')) return -1;
+                if (!a.birthDate.includes('Due') && b.birthDate.includes('Due')) return 1;
+                // If both have birth dates, sort by birth date (newest first for youngest pups)
+                return new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
+              })
+              .map((litter, index) => renderLitterCard(litter, index))}
           </div>
         </div>
 
