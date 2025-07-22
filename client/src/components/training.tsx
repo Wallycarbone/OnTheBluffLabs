@@ -14,15 +14,15 @@ export default function Training() {
   const trainingServices = [
     {
       title: "Puppy Foundation Training",
-      description: "Essential socialization, basic commands, and house training for puppies 8-16 weeks",
-      features: ["Basic commands (sit, stay, come)", "House training", "Crate training", "Socialization basics"],
+      description: "Essential socialization, basic cues, and house training for puppies 8-16 weeks",
+      features: ["Basic cues (sit, stay, come)", "House training", "Crate training", "Socialization basics"],
       duration: "4-week program",
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />
     },
     {
       title: "Basic Obedience",
       description: "Comprehensive training for well-mannered family companions",
-      features: ["Leash walking", "Door manners", "Recall training", "Stay commands"],
+      features: ["Leash walking", "Door manners", "Recall training", "Stay cues"],
       duration: "6-week program", 
       icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />
     },
