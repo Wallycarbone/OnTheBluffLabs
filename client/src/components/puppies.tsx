@@ -287,29 +287,35 @@ export default function Puppies() {
 
         {/* Mature Dogs Section */}
         <div className="text-center mt-12">
-          <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-lg mx-auto">
+          <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-4xl mx-auto">
             <CardContent className="p-6">
-              <h3 className="text-lg font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>
-                MATURE DOGS AVAILABLE
-              </h3>
-              <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-                We occasionally have older puppies or adult dogs available from our breeding program.
-              </p>
-              <img 
-                src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/05/Y30A3237-1.jpg?resize=1080%2C864&ssl=1"
-                alt="Pippi Longstocking - Mature dog available"
-                className="w-full h-48 object-cover rounded-md mb-4"
-                style={{objectPosition: '50% 20%'}}
-              />
-              <Button 
-                onClick={scrollToContact}
-                className="font-montserrat font-medium text-sm h-auto py-2 px-6"
-                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-              >
-                Inquire About Mature Dogs
-              </Button>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div className="text-left">
+                  <h3 className="text-lg font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>
+                    MATURE DOGS AVAILABLE
+                  </h3>
+                  <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
+                    We occasionally have older puppies or adult dogs available from our breeding program.
+                  </p>
+                  <Button 
+                    onClick={scrollToContact}
+                    className="font-montserrat font-medium text-sm h-auto py-2 px-6"
+                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                  >
+                    Inquire About Mature Dogs
+                  </Button>
+                </div>
+                <div>
+                  <img 
+                    src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/05/Y30A3237-1.jpg?resize=1080%2C864&ssl=1"
+                    alt="Pippi Longstocking - Mature dog available"
+                    className="w-full h-40 object-cover rounded-md"
+                    style={{objectPosition: '50% 20%'}}
+                  />
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
