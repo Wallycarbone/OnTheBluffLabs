@@ -43,7 +43,7 @@ export default function Training() {
             PROFESSIONAL TRAINING
           </h2>
           <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
-            Led by our Head Trainer & Behavioral Specialist, Jess Kelley-Madera CPDT-KA, 
+            Led by our Training Director, Jess Kelley-Madera CPDT-KA, 
             using gentle, positive reinforcement methods to build strong bonds between dogs and families.
           </p>
         </div>
@@ -85,10 +85,10 @@ export default function Training() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="/attached_assets/Y30A9542_1753198033116.JPG"
-                    alt="Professional dog training session with Labrador"
+                    src="/attached_assets/Y30A9681 (2)_1753209299551.JPG"
+                    alt="Professional dog training session demonstrating hand signals with red Labrador"
                     className="w-full h-96 object-cover rounded-xl shadow-lg"
-                    style={{objectPosition: '50% 40%'}}
+                    style={{objectPosition: '50% 45%'}}
                   />
                 </div>
               </div>
@@ -164,7 +164,7 @@ export default function Training() {
                     Jess Kelley-Madera, CPDT-KA
                   </h4>
                   <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-                    Our Head Trainer & Behavioral Specialist brings years of professional experience 
+                    Our Training Director brings years of professional experience 
                     and certification from the Certification Council for Professional Dog Trainers.
                   </p>
                 </div>
