@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
-import teddyImage from "@assets/Untitled design (91)_1753107861899.png";
+import dogsImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (77)_1753195641041.png";
 
 export default function FeaturedTestimonial() {
   const testimonial = {
     name: "Candice and Ken",
     family: "Teddy, by Twain and Akadia, Bachelor's Degree Grad",
     testimonial: "We can't say enough good things about our boy, Theodore, 'Teddy'— he settled right in winning his new big brother over in minutes, he's very handsome and expressive, intelligent, cuddly, friendly, was quickly housebroken, a great traveler, and a true sweetheart. His temperament and personality are exceptional. We have never had a labrador quite like this, and I am certain we will have another one from On The Bluff in the next year or two.",
-    image: teddyImage,
+    image: dogsImage,
   };
 
   return (
@@ -20,7 +20,7 @@ export default function FeaturedTestimonial() {
               <div className="lg:w-1/3">
                 <img 
                   src={testimonial.image} 
-                  alt={`${testimonial.name}'s family with ${testimonial.family.split(',')[0]}`} 
+                  alt="Labrador dogs cuddling together" 
                   className="w-full h-48 lg:h-full object-cover"
                 />
               </div>
