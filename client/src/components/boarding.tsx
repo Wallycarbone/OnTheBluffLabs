@@ -19,7 +19,7 @@ export default function Boarding() {
     {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />,
       title: "Lab-Specific Solutions",
-      description: "We have solutions designed specifically for Labradors - we welcome intact dogs and feed raw dog food, with policies tailored to Labrador temperaments and learning styles."
+      description: "We have solutions designed specifically for Labradors, tailored to their unique temperaments and learning styles."
     },
     {
       icon: <Shield className="w-6 h-6" style={{color: '#6d761d'}} />,
