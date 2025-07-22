@@ -20,7 +20,7 @@ export default function Training() {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />
     },
     {
-      title: "Basic Obedience",
+      title: "Master's Degree",
       description: "Comprehensive training for well-mannered family companions",
       features: ["Leash walking", "Door manners", "Recall training", "Stay cues"],
       duration: "6-week program", 
