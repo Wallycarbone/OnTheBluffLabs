@@ -34,7 +34,7 @@ export default function Boarding() {
   ];
 
   return (
-    <section id="boarding" className="py-24 bg-gray-50">
+    <section id="boarding" className="py-24" style={{backgroundColor: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
