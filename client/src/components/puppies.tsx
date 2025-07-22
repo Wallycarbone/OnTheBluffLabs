@@ -169,13 +169,14 @@ export default function Puppies() {
         <div className="flex items-start mb-4">
           <Star className="w-4 h-4 mr-1 mt-0.5" style={{color: '#6d761d'}} />
           <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-            {litter.name === "Moon & Foxxy Litter" 
+{litter.name === "Moon & Foxxy Litter" 
               ? (
                   <>
                     Descended from{' '}
                     <button 
                       onClick={() => setIsTopoPopupOpen(true)}
-                      className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                      className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                      style={{color: '#6d761d'}}
                     >
                       2019 Westminster Best of Breed Farnfield Topo Gigio
                     </button>
@@ -187,7 +188,8 @@ export default function Puppies() {
                     Descended from{' '}
                     <button 
                       onClick={() => setIsTopoPopupOpen(true)}
-                      className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                      className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                      style={{color: '#6d761d'}}
                     >
                       2019 Westminster Best of Breed Farnfield Topo Gigio
                     </button>
@@ -205,7 +207,8 @@ export default function Puppies() {
                     Descended from{' '}
                     <button 
                       onClick={() => setIsTopoPopupOpen(true)}
-                      className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+                      className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                      style={{color: '#6d761d'}}
                     >
                       2019 Westminster Best of Breed Farnfield Topo Gigio
                     </button>
