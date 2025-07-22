@@ -18,8 +18,8 @@ export default function Boarding() {
     },
     {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />,
-      title: "Home Environment",
-      description: "Training and boarding in our family home, not a kennel facility, ensuring comfort during the learning process."
+      title: "Specialized Facility",
+      description: "Training and boarding in our dedicated professional facility designed for optimal learning and comfort."
     },
     {
       icon: <Shield className="w-6 h-6" style={{color: '#6d761d'}} />,
@@ -41,7 +41,7 @@ export default function Boarding() {
             BOARD & TRAIN PROGRAM
           </h2>
           <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
-            Comprehensive board and train services combining professional training with premium boarding care in our family home environment.
+            Comprehensive board and train services combining professional training with premium boarding care in our specialized facility.
           </p>
         </div>
 
@@ -52,15 +52,15 @@ export default function Boarding() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-                    Immersive Training Experience
+                    Professional Training Immersion
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Our board and train program combines the benefits of professional training with premium boarding care. Your dog lives 
-                    with us temporarily while receiving intensive, daily training sessions from our certified professional dog trainer.
+                    Our board and train program combines the benefits of professional training with premium boarding care. Your dog stays 
+                    at our facility while receiving intensive, daily training sessions from our certified professional dog trainer.
                   </p>
                   <p className="text-base font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
                     Using gentle, positive reinforcement methods, we address behavioral issues, reinforce obedience, and teach new skills 
-                    in a home environment. This immersive approach accelerates learning and helps dogs generalize their training to real-world situations.
+                    in our controlled training environment. This immersive approach accelerates learning and helps dogs generalize their training to real-world situations.
                   </p>
                   <div className="flex items-center mb-4">
                     <Clock className="w-5 h-5 mr-3" style={{color: '#6d761d'}} />
