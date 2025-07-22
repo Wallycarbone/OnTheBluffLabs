@@ -58,7 +58,7 @@ export default function Training() {
                     Our Training Philosophy
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Our Labradors are bred for naturally intelligent, eager-to-please temperaments that provide an 
+                    Our Labradors are bred for naturally intelligent, cooperative temperaments that provide an 
                     exceptional foundation for training. We build upon these inherent qualities using gentle, 
                     veterinarian-recommended methods that strengthen the natural bond between dog and family. 
                     By working with your dog's intelligence and personality, we create lasting training success.
