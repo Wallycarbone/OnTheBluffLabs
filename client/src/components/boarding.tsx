@@ -18,8 +18,8 @@ export default function Boarding() {
     },
     {
       icon: <Heart className="w-6 h-6" style={{color: '#6d761d'}} />,
-      title: "Specialized Facility",
-      description: "Training and boarding in our dedicated professional facility designed for optimal learning and comfort."
+      title: "Lab Friendly Policies",
+      description: "Training and boarding with policies specifically designed for Labrador temperaments and learning styles."
     },
     {
       icon: <Shield className="w-6 h-6" style={{color: '#6d761d'}} />,
