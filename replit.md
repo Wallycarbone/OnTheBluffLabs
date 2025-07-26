@@ -86,10 +86,16 @@ Preferred communication style: Simple, everyday language.
 - **Build Process**: 
   1. Vite builds React frontend to `dist/public`
   2. ESBuild bundles Express server to `dist/index.js`
-- **Start Command**: `npm start`
+  3. **Deployment Fix**: Run `node fix-deployment.js` to move files from `dist/public/` to `dist/`
+- **Start Command**: `npm start` (full-stack) or `node simple-express-server.js` (static-only)
 - **Database**: PostgreSQL via Neon Database
 - **Environment**: Requires `DATABASE_URL` environment variable
-- **Alternative Deployment**: Use `node simple-express-server.js` for static-only deployment
+- **Deployment Ready**: Use `node fix-deployment-quick.js` for complete build and deployment preparation
+
+### Deployment Scripts
+- `fix-deployment.js`: Moves built files from `dist/public/` to `dist/` for deployment compatibility
+- `fix-deployment-quick.js`: Complete deployment preparation (build + fix structure)
+- `deploy-helper.js`: Enhanced to include deployment structure fixing
 
 ### Key Configuration Files
 - `vite.config.ts`: Frontend build configuration
@@ -126,7 +132,12 @@ Preferred communication style: Simple, everyday language.
 - Database integration with PostgreSQL via Neon
 - Working authentication system confirmed functional
 
-## Recent Changes (July 22, 2025)
+## Recent Changes (July 26, 2025)
+- ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
+  - Created `fix-deployment.js` script to move files from `dist/public/` to `dist/`
+  - Updated `simple-express-server.js` to serve from correct `dist/` directory
+  - Enhanced `deploy-helper.js` to automatically fix deployment structure
+  - Added `fix-deployment-quick.js` for one-command deployment preparation
 - ✅ Premium litter card redesign with enhanced visual appeal and professional layout
 - ✅ Brand-consistent status badges using olive green color variations (#6d761d, #8a8f28, #a5aa35)
 - ✅ Dynamic litter status system (Ready/Ready Soon/Upcoming) based on puppy age calculations

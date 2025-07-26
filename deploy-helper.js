@@ -8,8 +8,13 @@ try {
   // Build the application
   execSync('npm run build', { stdio: 'inherit' });
   console.log('Build completed successfully.');
+  
+  // Fix deployment structure by moving files from dist/public to dist
+  console.log('Fixing deployment file structure...');
+  execSync('node fix-deployment.js', { stdio: 'inherit' });
+  console.log('Deployment structure fixed.');
 } catch (error) {
-  console.error('Error during build:', error);
+  console.error('Error during build or deployment fix:', error);
   process.exit(1);
 }
 
