@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Star, X } from "lucide-react";
+import { Star, X, ChevronLeft, ChevronRight } from "lucide-react";
 import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
+import moonFoxxyPuppies2 from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
+import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
   const calculateAge = (birthDate: string) => {
     if (birthDate.includes('Due')) {
       return 'Expected';
@@ -53,6 +56,7 @@ export default function Puppies() {
       available: "Strawberry Blonde Males & Females",
       readyDate: "August 2025",
       image: moonFoxxyPuppies,
+      image2: moonFoxxyPuppies2,
       status: "Current",
       description: "Seven puppies born June 5, 2025"
     },
@@ -65,6 +69,7 @@ export default function Puppies() {
       available: "One Black Female & One Yellow Female",
       readyDate: "August 2025",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/58.png?resize=1080%2C810&ssl=1",
+      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/59.png?resize=1080%2C810&ssl=1",
       status: "Current",
       description: "One black female and one yellow female available"
     },
@@ -77,6 +82,7 @@ export default function Puppies() {
       available: "Chocolate Males & Females",
       readyDate: "Ready Now",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/52.png?fit=1080%2C810&ssl=1",
+      image2: grizzlyImage,
       status: "Ready",
       description: "Eight chocolate puppies - males and females available"
     },
@@ -89,6 +95,7 @@ export default function Puppies() {
       available: "Chocolate Females",
       readyDate: "Ready Now",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/05/40.png?fit=1080%2C810&ssl=1",
+      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/05/41.png?fit=1080%2C810&ssl=1",
       status: "Ready",
       description: "Three chocolate females available"
     }
@@ -104,6 +111,7 @@ export default function Puppies() {
       available: "Accepting Deposits",
       readyDate: "October 2025",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/02/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-41.png?resize=1080%2C1350&ssl=1",
+      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/02/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-42.png?resize=1080%2C1350&ssl=1",
       status: "Upcoming",
       description: "Bred in June, due in August 2025"
     },
@@ -116,6 +124,7 @@ export default function Puppies() {
       available: "Accepting Deposits",
       readyDate: "September 2025",
       image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/52.png?resize=1080%2C1350&ssl=1",
+      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/53.png?resize=1080%2C1350&ssl=1",
       status: "Upcoming",
       description: "Bred in May, due in July 2025"
     }
@@ -128,14 +137,65 @@ export default function Puppies() {
     }
   };
 
-  const renderLitterCard = (litter: any, index: number) => (
+  const renderLitterCard = (litter: any, index: number) => {
+    const cardKey = `${litter.name}-${index}`;
+    const currentIndex = currentImageIndex[cardKey] || 0;
+    const images = [litter.image, litter.image2].filter(Boolean);
+    
+    const nextImage = () => {
+      setCurrentImageIndex(prev => ({
+        ...prev,
+        [cardKey]: (currentIndex + 1) % images.length
+      }));
+    };
+    
+    const prevImage = () => {
+      setCurrentImageIndex(prev => ({
+        ...prev,
+        [cardKey]: currentIndex === 0 ? images.length - 1 : currentIndex - 1
+      }));
+    };
+
+    return (
     <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
       <div className="relative">
         <img 
-          src={litter.image} 
-          alt={`${litter.name} Labrador litter`} 
-          className="w-full h-56 object-cover"
+          src={images[currentIndex]} 
+          alt={`${litter.name} Labrador litter - Photo ${currentIndex + 1}`} 
+          className="w-full h-56 object-cover transition-all duration-300"
         />
+        
+        {/* Image Navigation */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+            
+            {/* Image Dots Indicator */}
+            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {images.map((_, imgIndex) => (
+                <button
+                  key={imgIndex}
+                  onClick={() => setCurrentImageIndex(prev => ({ ...prev, [cardKey]: imgIndex }))}
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                    imgIndex === currentIndex ? 'bg-white' : 'bg-white bg-opacity-50'
+                  }`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+        
         <div className="absolute top-4 right-4">
           <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold shadow-lg ${
             getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? 'text-white' :
@@ -250,7 +310,8 @@ export default function Puppies() {
         </Button>
       </CardContent>
     </Card>
-  );
+    );
+  };
 
   return (
     <section id="puppies" className="py-24 bg-gray-50">
