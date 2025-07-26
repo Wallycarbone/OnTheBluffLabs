@@ -6,6 +6,8 @@ import { Star, X, ChevronLeft, ChevronRight } from "lucide-react";
 import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
 import moonFoxxyPuppies2 from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
+import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
+import moonImage from "@assets/Moon 5x4_1753563791440.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 
 export default function Puppies() {
@@ -123,8 +125,8 @@ export default function Puppies() {
       puppiesCount: "TBD",
       available: "Accepting Deposits",
       readyDate: "September 2025",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/52.png?resize=1080%2C1350&ssl=1",
-      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/01/53.png?resize=1080%2C1350&ssl=1",
+      image: moonImage,
+      image2: harperLeeImage,
       status: "Upcoming",
       description: "Bred in May, due in July 2025"
     }
