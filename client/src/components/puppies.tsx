@@ -8,6 +8,8 @@ import moonFoxxyPuppies2 from "@assets/Copy of Gallery Image - Landscape (22)_17
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
+import moonImage2 from "@assets/Moon 5x4_1753565341801.png";
+import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
@@ -72,8 +74,8 @@ export default function Puppies() {
       puppiesCount: 2,
       available: "One Black Female & One Yellow Female",
       readyDate: "August 2025",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/58.png?resize=1080%2C810&ssl=1",
-      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/59.png?resize=1080%2C810&ssl=1",
+      image: moonImage2,
+      image2: noraImage,
       status: "Current",
       description: "One black female and one yellow female available"
     },
