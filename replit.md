@@ -155,3 +155,10 @@ Preferred communication style: Simple, everyday language.
   - Clickable logo for easy return to top
   - Priority-based mobile menu with highlighted primary actions
   - Subtle backdrop blur effect and premium styling
+- ✅ **PHOTO CAROUSEL SYSTEM**: Added interactive image carousel to litter cards
+  - Second photo display with smooth navigation arrows and dots
+  - 5x4 aspect ratio for optimal parent dog photo display
+  - Professional styling with overlay controls and transitions
+  - All litters now feature authentic parent dog photos:
+    - Moon & Harper Lee: Beautiful yellow Labrador parent portraits
+    - Boo Radley & Queen Boudica: Yellow and fox red Labrador parent photos

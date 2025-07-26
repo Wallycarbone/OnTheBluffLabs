@@ -8,6 +8,8 @@ import moonFoxxyPuppies2 from "@assets/Copy of Gallery Image - Landscape (22)_17
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
+import booRadleyImage from "@assets/Boo Radley 5x4_1753565174312.png";
+import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 
 export default function Puppies() {
@@ -112,8 +114,8 @@ export default function Puppies() {
       puppiesCount: "TBD",
       available: "Accepting Deposits",
       readyDate: "October 2025",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/02/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-41.png?resize=1080%2C1350&ssl=1",
-      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/02/Black-and-White-Minimalist-New-Collection-Social-Media-Mockup-Instagram-Post-42.png?resize=1080%2C1350&ssl=1",
+      image: booRadleyImage,
+      image2: queenBoudicaImage,
       status: "Upcoming",
       description: "Bred in June, due in August 2025"
     },
