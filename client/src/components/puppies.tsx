@@ -164,7 +164,8 @@ export default function Puppies() {
         <img 
           src={images[currentIndex]} 
           alt={`${litter.name} Labrador litter - Photo ${currentIndex + 1}`} 
-          className="w-full h-56 object-cover transition-all duration-300"
+          className="w-full h-72 object-cover transition-all duration-300"
+          style={{aspectRatio: '5/4'}}
         />
         
         {/* Image Navigation */}
