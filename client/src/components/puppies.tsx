@@ -157,92 +157,145 @@ export default function Puppies() {
     };
 
     return (
-    <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
-      <div className="flex flex-col md:flex-row">
-        {/* Image Section - Narrower on desktop, full width on mobile */}
-        <div className="relative md:w-56 flex-shrink-0">
-          <img 
-            src={images[currentIndex]} 
-            alt={`${litter.name} Labrador litter - Photo ${currentIndex + 1}`} 
-            className="w-full h-48 md:h-72 object-cover transition-all duration-300"
-          />
+    <Card key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden">
+      {/* Image Section - Full width with proper aspect ratio */}
+      <div className="relative h-64">
+        <img 
+          src={images[currentIndex]} 
+          alt={`${litter.name} Labrador litter - Photo ${currentIndex + 1}`} 
+          className="w-full h-full object-cover"
+        />
         
-          {/* Image Navigation */}
-          {images.length > 1 && (
-            <>
-              <button
-                onClick={prevImage}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <button
-                onClick={nextImage}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-              
-              {/* Image Dots Indicator */}
-              <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                {images.map((_, imgIndex) => (
-                  <button
-                    key={imgIndex}
-                    onClick={() => setCurrentImageIndex(prev => ({ ...prev, [cardKey]: imgIndex }))}
-                    className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                      imgIndex === currentIndex ? 'bg-white' : 'bg-white bg-opacity-50'
-                    }`}
-                  />
-                ))}
-              </div>
-            </>
-          )}
-          
-          {/* Status Badge */}
-          <div className="absolute top-3 right-3">
-            <span className={`px-3 py-1.5 rounded-full text-sm font-montserrat font-semibold shadow-lg text-white`}
-            style={{
-              backgroundColor: getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? '#6d761d' :
-              getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? '#8a8f28' :
-              '#a5aa35'
-            }}>
-              {getLitterStatus(litter.birthDate, litter.status)}
+        {/* Image Navigation */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+            
+            {/* Image Dots Indicator */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {images.map((_, imgIndex) => (
+                <button
+                  key={imgIndex}
+                  onClick={() => setCurrentImageIndex(prev => ({ ...prev, [cardKey]: imgIndex }))}
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                    imgIndex === currentIndex ? 'bg-white' : 'bg-white bg-opacity-50'
+                  }`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+        
+        {/* Status Badge */}
+        <div className="absolute top-4 right-4">
+          <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold shadow-lg text-white`}
+          style={{
+            backgroundColor: getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? '#6d761d' :
+            getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? '#8a8f28' :
+            '#a5aa35'
+          }}>
+            {getLitterStatus(litter.birthDate, litter.status)}
+          </span>
+        </div>
+      </div>
+      
+      {/* Content Section */}
+      <div className="p-8">
+        <h3 className="text-2xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
+          {litter.name}
+        </h3>
+        
+        <div className="grid grid-cols-2 gap-6 mb-6">
+          <div>
+            <span className="text-sm font-montserrat font-semibold uppercase tracking-wider mb-1 block" style={{color: '#6d761d'}}>Sire</span>
+            <p className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>{litter.sire}</p>
+          </div>
+          <div>
+            <span className="text-sm font-montserrat font-semibold uppercase tracking-wider mb-1 block" style={{color: '#6d761d'}}>Dam</span>
+            <p className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>{litter.dam}</p>
+          </div>
+          <div>
+            <span className="text-sm font-montserrat font-semibold uppercase tracking-wider mb-1 block" style={{color: '#6d761d'}}>Age</span>
+            <p className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
+          </div>
+          <div>
+            <span className="text-sm font-montserrat font-semibold uppercase tracking-wider mb-1 block" style={{color: '#6d761d'}}>Available</span>
+            <p className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>{litter.available}</p>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-4 mb-6">
+          <div className="flex items-start">
+            <Star className="w-4 h-4 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
+            <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+              {litter.name === "Moon & Foxxy" 
+                ? (
+                    <>
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        Topo Gigio
+                      </button>
+                    </>
+                  )
+                : litter.name === "Moon & Nora"
+                ? (
+                    <>
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        Topo Gigio
+                      </button>
+                    </>
+                  )
+                : litter.name === "Grizzly & Guinevere"
+                ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
+                : litter.name === "Holden & Alola"
+                ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
+                : litter.name === "Boo Radley & Queen Boudica"
+                ? "Champion bloodlines with exceptional temperament"
+                : litter.name === "Moon & Harper Lee"
+                ? (
+                    <>
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        Topo Gigio
+                      </button>
+                    </>
+                  )
+                : "Champion Bloodline"
+              }
             </span>
           </div>
         </div>
-        
-        {/* Content Section */}
-        <div className="flex-1 p-6 min-h-72 flex flex-col justify-between">
-          <div>
-            <h3 className="text-2xl font-oswald font-normal tracking-wide mb-3" style={{color: '#11100f'}}>
-              {litter.name}
-            </h3>
-            <p className="text-base font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-              {litter.available}
-            </p>
-            
-            <div className="space-y-3 mb-6">
-              <div>
-                <span className="text-sm font-montserrat font-semibold" style={{color: '#6d761d'}}>Age</span>
-                <p className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
-              </div>
-              <div>
-                <span className="text-sm font-montserrat font-semibold" style={{color: '#6d761d'}}>Parents</span>
-                <p className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>{litter.sire} × {litter.dam}</p>
-              </div>
-            </div>
-          </div>
 
-          <Button 
-            onClick={scrollToContact}
-            className="w-full font-montserrat font-semibold text-base h-auto py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 mt-auto"
-            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-          >
-            Apply for This Litter
-          </Button>
-        </div>
+        <Button 
+          onClick={scrollToContact}
+          className="w-full font-montserrat font-semibold text-base h-auto py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+          style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+        >
+          Apply for This Litter
+        </Button>
       </div>
     </Card>
     );
