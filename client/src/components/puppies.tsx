@@ -164,7 +164,7 @@ export default function Puppies() {
           <img 
             src={images[currentIndex]} 
             alt={`${litter.name} Labrador litter - Photo ${currentIndex + 1}`} 
-            className="w-full h-48 md:h-full object-cover transition-all duration-300"
+            className="w-full h-48 md:h-72 object-cover transition-all duration-300"
           />
         
           {/* Image Navigation */}
@@ -212,30 +212,30 @@ export default function Puppies() {
         </div>
         
         {/* Content Section */}
-        <div className="flex-1 p-6">
-          <div className="mb-6">
+        <div className="flex-1 p-6 min-h-72 flex flex-col justify-between">
+          <div>
             <h3 className="text-2xl font-oswald font-normal tracking-wide mb-3" style={{color: '#11100f'}}>
               {litter.name}
             </h3>
             <p className="text-base font-source-sans mb-4" style={{color: '#4b4b4b'}}>
               {litter.available}
             </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div>
-              <span className="text-sm font-montserrat font-semibold" style={{color: '#6d761d'}}>Age</span>
-              <p className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
-            </div>
-            <div>
-              <span className="text-sm font-montserrat font-semibold" style={{color: '#6d761d'}}>Parents</span>
-              <p className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>{litter.sire} × {litter.dam}</p>
+            
+            <div className="space-y-3 mb-6">
+              <div>
+                <span className="text-sm font-montserrat font-semibold" style={{color: '#6d761d'}}>Age</span>
+                <p className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
+              </div>
+              <div>
+                <span className="text-sm font-montserrat font-semibold" style={{color: '#6d761d'}}>Parents</span>
+                <p className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>{litter.sire} × {litter.dam}</p>
+              </div>
             </div>
           </div>
 
           <Button 
             onClick={scrollToContact}
-            className="w-full font-montserrat font-semibold text-base h-auto py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+            className="w-full font-montserrat font-semibold text-base h-auto py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 mt-auto"
             style={{backgroundColor: '#6d761d', color: '#fefefe'}}
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
