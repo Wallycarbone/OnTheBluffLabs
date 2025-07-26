@@ -8,7 +8,7 @@ import moonFoxxyPuppies2 from "@assets/Copy of Gallery Image - Landscape (22)_17
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
-import booRadleyImage from "@assets/Boo Radley 5x4_1753565174312.png";
+import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 
