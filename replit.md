@@ -161,7 +161,8 @@ Preferred communication style: Simple, everyday language.
   - Professional styling with overlay controls and transitions
   - Enhanced with individual puppy photos:
     - Moon & Foxxy: 7 individual puppy photos (Mr. Peacock, Mr. Turtles, Ms. Aloha, Ms. Sunflower, Mr. Superstar, Mr. Penguin Party, Ms. Alpine Glow)
-    - Holden & Alola: 3 chocolate female puppies (Fern/Apple Pie, Summer/Butterfly, Willow/Seaglass)
+    - Holden & Alola: 3 chocolate female puppies (Summer/Butterfly, Fern/Apple Pie, Willow/Seaglass)
+    - Grizzly & Guinevere: 3 chocolate puppies (Holly/Puppy Love, Pearl/Turtles, Hazel/Peacock)
     - Moon & Harper Lee: Beautiful yellow Labrador parent portraits
     - Moon & Nora: Moon and Nora parent photos (yellow and black Labs)
     - Boo Radley & Queen Boudica: Yellow and fox red Labrador parent photos

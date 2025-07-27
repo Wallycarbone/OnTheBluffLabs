@@ -23,6 +23,9 @@ import msAlpineGlowImage from "@assets/Ms. Alpine Glow_1753621328203.png";
 import fernApplePieImage from "@assets/Fern (Apple Pie 5x4)_1753623366073.png";
 import summerButterflyImage from "@assets/Summer (Butterfly 5x4)_1753623366075.png";
 import willowSeaglassImage from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
+import hollyPuppyLoveImage from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
+import pearlTurtlesImage from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
+import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -123,8 +126,7 @@ export default function Puppies() {
       puppiesCount: 8,
       available: "Chocolate Males & Females",
       readyDate: "Ready Now",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/06/52.png?fit=1080%2C810&ssl=1",
-      image2: grizzlyImage,
+      images: [hollyPuppyLoveImage, pearlTurtlesImage, hazelPeacockImage],
       status: "Ready",
       description: "Eight chocolate puppies - males and females available"
     },
