@@ -126,7 +126,7 @@ export default function Puppies() {
       puppiesCount: 8,
       available: "Chocolate Males & Females",
       readyDate: "Ready Now",
-      images: [hollyPuppyLoveImage, pearlTurtlesImage, hazelPeacockImage],
+      images: [pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
       status: "Ready",
       description: "Eight chocolate puppies - males and females available"
     },
