@@ -96,7 +96,7 @@ export default function Puppies() {
       dam: "Foxxy",
       birthDate: "June 5, 2025",
       puppiesCount: 7,
-      available: "Strawberry Blonde Males & Females",
+      available: "Yellow Males & Females (Strawberry Blonde)",
       readyDate: "August 2025",
       images: moonFoxxyPuppyImages,
       status: "Current",
