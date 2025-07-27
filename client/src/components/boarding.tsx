@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Heart, Shield, Clock, Star, Users } from "lucide-react";
+import boardTrainImage from "@assets/Y30A9270millie_1753643484490.jpg";
 
 export default function Boarding() {
   const scrollToContact = () => {
@@ -71,8 +72,8 @@ export default function Boarding() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="/attached_assets/Cassie_1753107944446.webp"
-                    alt="Happy Labrador enjoying boarding care at On The Bluff Labradors"
+                    src={boardTrainImage}
+                    alt="Professional dog training session - trainer working with yellow Labrador"
                     className="w-full h-96 object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 30%'}}
                   />
