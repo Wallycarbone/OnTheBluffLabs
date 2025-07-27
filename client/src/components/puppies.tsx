@@ -13,6 +13,13 @@ import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
+import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
+import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
+import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
+import msSunflowerImage from "@assets/Ms. Sunflower_1753621328202.png";
+import mrSuperstarImage from "@assets/Mr. Superstar_1753621328202.png";
+import mrPenguinPartyImage from "@assets/Mr. Penguin Party_1753621328202.png";
+import msAlpineGlowImage from "@assets/Ms. Alpine Glow_1753621328203.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -36,13 +43,13 @@ export default function Puppies() {
   };
 
   const moonFoxxyPuppyImages = [
-    moonFoxxyPuppies,
-    moonFoxxyPuppies2,
-    generatePuppySVG(1, '#f4e4bc', 'medium'), // Strawberry blonde
-    generatePuppySVG(2, '#f0d7a8', 'medium'), // Light blonde
-    generatePuppySVG(3, '#e8c988', 'small'),  // Golden
-    generatePuppySVG(4, '#f2e0c2', 'large'),  // Cream
-    generatePuppySVG(5, '#ebcd9a', 'medium')  // Light golden
+    mrPeacockImage,
+    mrTurtlesImage,
+    msAlohaImage,
+    msSunflowerImage,
+    mrSuperstarImage,
+    mrPenguinPartyImage,
+    msAlpineGlowImage
   ];
   const calculateAge = (birthDate: string) => {
     if (birthDate.includes('Due')) {
