@@ -20,6 +20,9 @@ import msSunflowerImage from "@assets/Ms. Sunflower_1753621328202.png";
 import mrSuperstarImage from "@assets/Mr. Superstar_1753621328202.png";
 import mrPenguinPartyImage from "@assets/Mr. Penguin Party_1753621328202.png";
 import msAlpineGlowImage from "@assets/Ms. Alpine Glow_1753621328203.png";
+import fernApplePieImage from "@assets/Fern (Apple Pie 5x4)_1753623366073.png";
+import summerButterflyImage from "@assets/Summer (Butterfly 5x4)_1753623366075.png";
+import willowSeaglassImage from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -133,8 +136,7 @@ export default function Puppies() {
       puppiesCount: 8,
       available: "Chocolate Females",
       readyDate: "Ready Now",
-      image: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/05/40.png?fit=1080%2C810&ssl=1",
-      image2: "https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2025/05/41.png?fit=1080%2C810&ssl=1",
+      images: [fernApplePieImage, summerButterflyImage, willowSeaglassImage],
       status: "Ready",
       description: "Three chocolate females available"
     }

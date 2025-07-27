@@ -156,9 +156,12 @@ Preferred communication style: Simple, everyday language.
   - Priority-based mobile menu with highlighted primary actions
   - Subtle backdrop blur effect and premium styling
 - ✅ **PHOTO CAROUSEL SYSTEM**: Added interactive image carousel to litter cards
-  - Second photo display with smooth navigation arrows and dots
-  - 5x4 aspect ratio for optimal parent dog photo display
+  - Multiple photo display with smooth navigation arrows and dots
+  - 5x4 aspect ratio for optimal parent dog and puppy photo display
   - Professional styling with overlay controls and transitions
-  - All litters now feature authentic parent dog photos:
+  - Enhanced with individual puppy photos:
+    - Moon & Foxxy: 7 individual puppy photos (Mr. Peacock, Mr. Turtles, Ms. Aloha, Ms. Sunflower, Mr. Superstar, Mr. Penguin Party, Ms. Alpine Glow)
+    - Holden & Alola: 3 chocolate female puppies (Fern/Apple Pie, Summer/Butterfly, Willow/Seaglass)
     - Moon & Harper Lee: Beautiful yellow Labrador parent portraits
+    - Moon & Nora: Moon and Nora parent photos (yellow and black Labs)
     - Boo Radley & Queen Boudica: Yellow and fox red Labrador parent photos
