@@ -407,7 +407,7 @@ export default function Puppies() {
                     MATURE DOGS AVAILABLE
                   </h3>
                   <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-                    Sometimes we have young adult dogs or mature puppies available for families seeking a slightly older companion. These dogs come from our champion bloodlines with full health testing and exceptional temperaments.
+                    Sometimes we have young adult dogs or mature puppies available for families seeking a slightly older companion.
                   </p>
                   <Button 
                     onClick={scrollToContact}
