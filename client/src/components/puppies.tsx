@@ -32,6 +32,7 @@ import holdenImage from "@assets/Holden (5x4)_1753627164132.png";
 import alolaImage from "@assets/Alola (5x4)_1753627164133.png";
 import foxxyImage from "@assets/Foxxy (5x4)_1753627279647.png";
 import moonImage3 from "@assets/Moon 5x4_1753627311757.png";
+import matureDogsImage from "@assets/Untitled design (100)_1753642484508.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -420,8 +421,8 @@ export default function Puppies() {
                 </div>
                 <div>
                   <img 
-                    src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/05/Y30A3237-1.jpg?resize=1080%2C864&ssl=1"
-                    alt="Pippi Longstocking - Mature dog available"
+                    src={matureDogsImage}
+                    alt="Mature Labrador available from On The Bluff Labradors"
                     className="w-full h-40 object-cover rounded-md"
                     style={{objectPosition: '50% 20%'}}
                   />
