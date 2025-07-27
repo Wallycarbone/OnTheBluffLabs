@@ -32,7 +32,7 @@ import holdenImage from "@assets/Holden (5x4)_1753627164132.png";
 import alolaImage from "@assets/Alola (5x4)_1753627164133.png";
 import foxxyImage from "@assets/Foxxy (5x4)_1753627279647.png";
 import moonImage3 from "@assets/Moon 5x4_1753627311757.png";
-import matureDogsImage from "@assets/Untitled design (100)_1753642484508.png";
+import matureDogsImage from "@assets/Breeding Dogs 5x4_1753642698754.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
