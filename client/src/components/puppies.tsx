@@ -399,10 +399,10 @@ export default function Puppies() {
 
         {/* Mature Dogs Section */}
         <div className="text-center mt-12">
-          <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-4xl mx-auto">
+          <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
             <CardContent className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div className="text-left">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                <div className="md:col-span-2 text-left">
                   <h3 className="text-lg font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>
                     MATURE DOGS AVAILABLE
                   </h3>
@@ -419,11 +419,11 @@ export default function Puppies() {
                     Inquire About Mature Dogs
                   </Button>
                 </div>
-                <div>
+                <div className="flex justify-center">
                   <img 
                     src={matureDogsImage}
                     alt="Mature Labrador available from On The Bluff Labradors"
-                    className="w-full h-40 object-cover rounded-md"
+                    className="w-32 h-32 object-cover rounded-md"
                     style={{objectPosition: '50% 20%'}}
                   />
                 </div>
