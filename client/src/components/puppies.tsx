@@ -26,6 +26,7 @@ import willowSeaglassImage from "@assets/Willow (Seaglass 5x4)_1753623366078.png
 import hollyPuppyLoveImage from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
 import pearlTurtlesImage from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
 import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
+import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -126,7 +127,7 @@ export default function Puppies() {
       puppiesCount: 8,
       available: "Chocolate Males & Females",
       readyDate: "Ready Now",
-      images: [pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
+      images: [breedingDogsImage, pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
       status: "Ready",
       description: "Eight chocolate puppies - males and females available"
     },
