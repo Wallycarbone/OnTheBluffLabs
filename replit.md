@@ -160,7 +160,7 @@ Preferred communication style: Simple, everyday language.
   - 5x4 aspect ratio for optimal parent dog and puppy photo display
   - Professional styling with overlay controls and transitions
   - Enhanced with individual puppy photos:
-    - Moon & Foxxy: 7 individual puppy photos (Mr. Peacock, Mr. Turtles, Ms. Aloha, Ms. Sunflower, Mr. Superstar, Mr. Penguin Party, Ms. Alpine Glow)
+    - Moon & Foxxy: Parent photos + 7 individual puppy photos (Moon, Foxxy, Mr. Peacock, Mr. Turtles, Ms. Aloha, Ms. Sunflower, Mr. Superstar, Mr. Penguin Party, Ms. Alpine Glow)
     - Holden & Alola: Parent photos + 3 chocolate female puppies (Holden, Alola, Summer/Butterfly, Fern/Apple Pie, Willow/Seaglass)
     - Grizzly & Guinevere: Parent photos + 3 chocolate puppies (Grizzly, Guinevere, Pearl/Turtles, Holly/Puppy Love, Hazel/Peacock)
     - Moon & Harper Lee: Beautiful yellow Labrador parent portraits

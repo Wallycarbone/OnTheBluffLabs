@@ -30,6 +30,8 @@ import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
 import holdenImage from "@assets/Holden (5x4)_1753627164132.png";
 import alolaImage from "@assets/Alola (5x4)_1753627164133.png";
+import foxxyImage from "@assets/Foxxy (5x4)_1753627279647.png";
+import moonImage3 from "@assets/Moon 5x4_1753627311757.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -105,7 +107,7 @@ export default function Puppies() {
       puppiesCount: 7,
       available: "Yellow Males & Females (Strawberry Blonde)",
       readyDate: "August 2025",
-      images: moonFoxxyPuppyImages,
+      images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
       status: "Current",
       description: "Seven puppies born June 5, 2025"
     },
