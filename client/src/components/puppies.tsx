@@ -17,6 +17,33 @@ import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
+
+  // Generate SVG puppy placeholders for Moon & Foxxy litter
+  const generatePuppySVG = (puppyNumber: number, color: string, size: 'small' | 'medium' | 'large' = 'medium') => {
+    const sizeMap = { small: 150, medium: 200, large: 250 };
+    const svgSize = sizeMap[size];
+    
+    return `data:image/svg+xml,${encodeURIComponent(`
+      <svg width="${svgSize}" height="${svgSize * 0.8}" viewBox="0 0 ${svgSize} ${svgSize * 0.8}" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="#f8f9fa"/>
+        <circle cx="${svgSize * 0.5}" cy="${svgSize * 0.4}" r="${svgSize * 0.2}" fill="${color}" stroke="#6d761d" stroke-width="2"/>
+        <circle cx="${svgSize * 0.4}" cy="${svgSize * 0.35}" r="${svgSize * 0.02}" fill="#000"/>
+        <circle cx="${svgSize * 0.6}" cy="${svgSize * 0.35}" r="${svgSize * 0.02}" fill="#000"/>
+        <ellipse cx="${svgSize * 0.5}" cy="${svgSize * 0.42}" rx="${svgSize * 0.01}" ry="${svgSize * 0.005}" fill="#000"/>
+        <text x="${svgSize * 0.5}" y="${svgSize * 0.7}" text-anchor="middle" font-family="Arial, sans-serif" font-size="${svgSize * 0.08}" fill="#6d761d" font-weight="bold">Puppy ${puppyNumber}</text>
+      </svg>
+    `)}`;
+  };
+
+  const moonFoxxyPuppyImages = [
+    moonFoxxyPuppies,
+    moonFoxxyPuppies2,
+    generatePuppySVG(1, '#f4e4bc', 'medium'), // Strawberry blonde
+    generatePuppySVG(2, '#f0d7a8', 'medium'), // Light blonde
+    generatePuppySVG(3, '#e8c988', 'small'),  // Golden
+    generatePuppySVG(4, '#f2e0c2', 'large'),  // Cream
+    generatePuppySVG(5, '#ebcd9a', 'medium')  // Light golden
+  ];
   const calculateAge = (birthDate: string) => {
     if (birthDate.includes('Due')) {
       return 'Expected';
@@ -61,8 +88,7 @@ export default function Puppies() {
       puppiesCount: 7,
       available: "Strawberry Blonde Males & Females",
       readyDate: "August 2025",
-      image: moonFoxxyPuppies,
-      image2: moonFoxxyPuppies2,
+      images: moonFoxxyPuppyImages,
       status: "Current",
       description: "Seven puppies born June 5, 2025"
     },
@@ -146,7 +172,7 @@ export default function Puppies() {
   const renderLitterCard = (litter: any, index: number) => {
     const cardKey = `${litter.name}-${index}`;
     const currentIndex = currentImageIndex[cardKey] || 0;
-    const images = [litter.image, litter.image2].filter(Boolean);
+    const images = litter.images || [litter.image, litter.image2].filter(Boolean);
     
     const nextImage = () => {
       setCurrentImageIndex(prev => ({
@@ -190,7 +216,7 @@ export default function Puppies() {
             
             {/* Image Dots Indicator */}
             <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              {images.map((_, imgIndex) => (
+              {images.map((_: string, imgIndex: number) => (
                 <button
                   key={imgIndex}
                   onClick={() => setCurrentImageIndex(prev => ({ ...prev, [cardKey]: imgIndex }))}
