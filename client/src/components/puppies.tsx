@@ -28,6 +28,8 @@ import pearlTurtlesImage from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
 import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
+import holdenImage from "@assets/Holden (5x4)_1753627164132.png";
+import alolaImage from "@assets/Alola (5x4)_1753627164133.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -140,7 +142,7 @@ export default function Puppies() {
       puppiesCount: 8,
       available: "Chocolate Females",
       readyDate: "Ready Now",
-      images: [summerButterflyImage, fernApplePieImage, willowSeaglassImage],
+      images: [holdenImage, alolaImage, summerButterflyImage, fernApplePieImage, willowSeaglassImage],
       status: "Ready",
       description: "Three chocolate females available"
     }
