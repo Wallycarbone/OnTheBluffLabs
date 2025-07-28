@@ -26,7 +26,7 @@ export default function BreedingDogs() {
         titles: ["CH"],
         image: grizzlyImage,
         sire: {
-          name: "Bosco (Greenstone Chocoholic at Loretta)",
+          name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
           titles: ["CH", "LT"],
           image: boscoImage,
           sire: {
@@ -461,7 +461,7 @@ export default function BreedingDogs() {
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
                 <p className="font-source-sans" style={{color: '#11100f'}}>
                   {dog.name === "Grizzly" 
-                    ? "Bosco (Greenstone Chocoholic at Loretta)"
+                    ? "Greenstone Chocoholic at Loretta (\"Bosco\")"
                     : dog.name === "Harper Lee"
                     ? "Atticus Finch"
                     : `${dog.name}'s Sire`
