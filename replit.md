@@ -172,6 +172,10 @@ Preferred communication style: Simple, everyday language.
   - Redesigned pedigree popup display to show complete 5-generation family tree visualization
   - Created responsive grid layout scaling from prominent parent cards to compact great-great-grandparent cards
   - Removed redundant subject card from pedigree display for cleaner genealogy focus
+- ✅ **AUTHENTIC PEDIGREE DATA**: Updated Hannah's dam with authentic breeding information
+  - Changed Hannah's mother from generic placeholder to "Shalimar's The Animator (\"Cyrus\")"
+  - Applied authentic dam name across both individual and litter pedigree displays
+  - Maintained proper name formatting with formal name and quoted nickname
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
