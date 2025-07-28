@@ -10,6 +10,8 @@ import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
   const [selectedDog, setSelectedDog] = useState<any>(null);
+  const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
 
   const openPedigreePopup = (dog: any) => {
     setSelectedDog(dog);
@@ -574,16 +576,7 @@ export default function BreedingDogs() {
                       <div className="flex items-center justify-center">
                         <div className="bg-white rounded-lg p-6 border-3 shadow-lg w-full max-w-sm" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
-                            {pedigreeData.image && (
-                              <div className="mb-4">
-                                <img 
-                                  src={pedigreeData.image} 
-                                  alt={pedigreeData.name}
-                                  className="w-32 h-24 object-cover rounded-lg mx-auto border-2"
-                                  style={{borderColor: '#6d761d'}}
-                                />
-                              </div>
-                            )}
+
                             <h4 className="text-2xl font-oswald font-normal mb-3" style={{color: '#11100f'}}>
                               {pedigreeData.name}
                             </h4>
@@ -611,18 +604,19 @@ export default function BreedingDogs() {
                           </h4>
                           <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
                             <div className="text-center">
-                              {pedigreeData.sire.image && (
-                                <div className="mb-3">
-                                  <img 
-                                    src={pedigreeData.sire.image} 
-                                    alt={pedigreeData.sire.name}
-                                    className="w-24 h-16 object-cover rounded-md mx-auto border-2"
-                                    style={{borderColor: '#8a8f28'}}
-                                  />
-                                </div>
-                              )}
                               <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
-                                {pedigreeData.sire.name}
+                                {pedigreeData.sire.image ? (
+                                  <button 
+                                    onClick={() => {
+                                      setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                      setIsImagePopupOpen(true);
+                                    }}
+                                    className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{color: '#6d761d'}}
+                                  >
+                                    {pedigreeData.sire.name}
+                                  </button>
+                                ) : pedigreeData.sire.name}
                               </h5>
 
                               <div className="flex flex-wrap justify-center gap-1">
@@ -709,6 +703,26 @@ export default function BreedingDogs() {
                   highlighting the exceptional breeding quality and champion bloodlines.
                 </p>
               </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Image Popup Dialog */}
+      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedImage?.name}
+            </DialogTitle>
+          </DialogHeader>
+          {selectedImage && (
+            <div className="space-y-4">
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.name}
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           )}
         </DialogContent>

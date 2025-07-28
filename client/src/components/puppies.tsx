@@ -40,6 +40,8 @@ export default function Puppies() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
   const [selectedLitter, setSelectedLitter] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
+  const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
 
   // Generate SVG puppy placeholders for Moon & Foxxy litter
   const generatePuppySVG = (puppyNumber: number, color: string, size: 'small' | 'medium' | 'large' = 'medium') => {
@@ -1248,18 +1250,19 @@ export default function Puppies() {
                         {/* Sire */}
                         <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
                           <div className="text-center">
-                            {pedigreeData.sire.image && (
-                              <div className="mb-3">
-                                <img 
-                                  src={pedigreeData.sire.image} 
-                                  alt={pedigreeData.sire.name}
-                                  className="w-20 h-14 object-cover rounded-md mx-auto border-2"
-                                  style={{borderColor: '#8a8f28'}}
-                                />
-                              </div>
-                            )}
                             <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
-                              {pedigreeData.sire.name}
+                              {pedigreeData.sire.image ? (
+                                <button 
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{color: '#6d761d'}}
+                                >
+                                  {pedigreeData.sire.name}
+                                </button>
+                              ) : pedigreeData.sire.name}
                             </h4>
 
                             <div className="flex flex-wrap justify-center gap-1 mt-2">
@@ -1275,18 +1278,19 @@ export default function Puppies() {
                         {/* Sire's Parents */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
-                            {pedigreeData.sire.sire.image && (
-                              <div className="mb-2 text-center">
-                                <img 
-                                  src={pedigreeData.sire.sire.image} 
-                                  alt={pedigreeData.sire.sire.name}
-                                  className="w-16 h-12 object-cover rounded-md mx-auto border"
-                                  style={{borderColor: '#a5aa35'}}
-                                />
-                              </div>
-                            )}
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
-                              {pedigreeData.sire.sire.name}
+                              {pedigreeData.sire.sire.image ? (
+                                <button 
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{color: '#6d761d'}}
+                                >
+                                  {pedigreeData.sire.sire.name}
+                                </button>
+                              ) : pedigreeData.sire.sire.name}
                             </h5>
 
                             <div className="flex flex-wrap gap-1">
@@ -1378,6 +1382,26 @@ export default function Puppies() {
                   featuring champion bloodlines and exceptional breeding quality.
                 </p>
               </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Image Popup Dialog */}
+      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedImage?.name}
+            </DialogTitle>
+          </DialogHeader>
+          {selectedImage && (
+            <div className="space-y-4">
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.name}
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           )}
         </DialogContent>
