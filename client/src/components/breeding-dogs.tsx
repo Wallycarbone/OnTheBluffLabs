@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
+import boscoImage from "@assets/Bosco_1753734656860.avif?url";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -382,6 +383,67 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Greenstone Chocoholic at Loretta": {
+        name: "Greenstone Chocoholic at Loretta",
+        formalName: "Greenstone Chocoholic at Loretta",
+        titles: ["CH", "LT"],
+        sire: {
+          name: "Chocolate Thunder",
+          titles: ["CH", "FC"],
+          sire: {
+            name: "Thunder's Sire",
+            titles: ["CH"],
+            sire: {
+              name: "Thunder's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Thunder's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Thunder's Dam",
+            titles: ["CH"],
+            sire: {
+              name: "Thunder's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Thunder's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        },
+        dam: {
+          name: "Loretta's Dam",
+          titles: ["CH", "JH"],
+          sire: {
+            name: "Loretta's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Loretta's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Loretta's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Loretta's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Loretta's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Loretta's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        }
       }
     };
     
@@ -397,6 +459,15 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: grizzlyImage,
       description: "Handsome chocolate male from Endless Mt Labrador with champion and field title bloodlines. Produces beautiful chocolate puppies with excellent temperaments and natural hunting abilities.",
+    },
+    {
+      name: "Greenstone Chocoholic at Loretta",
+      formalName: "Greenstone Chocoholic at Loretta",
+      gender: "Male",
+      color: "Chocolate",
+      age: "Champion Sire",
+      image: boscoImage,
+      description: "Distinguished chocolate champion sire with exceptional bloodlines. Father to our beloved Grizzly, carrying forward prestigious chocolate Lab genetics with champion titles and field abilities.",
     },
   ];
 
@@ -433,7 +504,11 @@ export default function BreedingDogs() {
           <div className="flex items-start">
             <Star className="text-golden mr-3 w-5 h-5 mt-1 fill-current flex-shrink-0" />
             <span className="text-sm text-warm-gray leading-relaxed">
-              {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
+              {dog.name === "Harper Lee" 
+                ? "Daughter of late sire Atticus Finch" 
+                : dog.name === "Greenstone Chocoholic at Loretta"
+                ? "Champion sire and father to our Grizzly"
+                : "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
             </span>
           </div>
         </div>
@@ -455,9 +530,11 @@ export default function BreedingDogs() {
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
                 <p className="font-source-sans" style={{color: '#11100f'}}>
                   {dog.name === "Grizzly" 
-                    ? "Shalimar's The Animator"
+                    ? "Greenstone Chocoholic at Loretta"
                     : dog.name === "Harper Lee"
                     ? "Atticus Finch"
+                    : dog.name === "Greenstone Chocoholic at Loretta"
+                    ? "Chocolate Thunder"
                     : `${dog.name}'s Sire`
                   }
                 </p>
@@ -465,7 +542,10 @@ export default function BreedingDogs() {
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
                 <p className="font-source-sans" style={{color: '#11100f'}}>
-                  {`${dog.name}'s Dam`}
+                  {dog.name === "Greenstone Chocoholic at Loretta"
+                    ? "Loretta's Dam"
+                    : `${dog.name}'s Dam`
+                  }
                 </p>
               </div>
             </div>
@@ -476,6 +556,11 @@ export default function BreedingDogs() {
               {dog.name === "Grizzly" && (
                 <span className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
                   Westminster Line
+                </span>
+              )}
+              {dog.name === "Greenstone Chocoholic at Loretta" && (
+                <span className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                  Grizzly's Sire
                 </span>
               )}
             </div>
