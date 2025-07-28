@@ -146,6 +146,11 @@ Preferred communication style: Simple, everyday language.
   - Eliminated AKC registration numbers from public pedigree displays
   - Maintained data structure integrity while ensuring privacy compliance
   - Preserved authentic titles and bloodline information for breeding transparency
+- ✅ **BOSCO INTEGRATION**: Added Bosco (Grizzly's sire) with proper display hierarchy
+  - Integrated Bosco image (Bosco_1753735317643.avif) into pedigree displays
+  - Shows as "Bosco (Greenstone Chocoholic at Loretta)" in Grizzly's lineage only
+  - Removed from main breeding dogs section, appears only in pedigree information
+  - Added image support to both individual and litter pedigree popups with responsive sizing
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

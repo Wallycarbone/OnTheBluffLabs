@@ -13,6 +13,7 @@ import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
+import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
 import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
 import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
@@ -447,6 +448,7 @@ export default function Puppies() {
           sire: {
             name: "Bosco (Greenstone Chocoholic at Loretta)",
             titles: ["CH", "LT"],
+            image: boscoImage,
             sire: {
               name: "Chocolate Thunder",
               titles: ["CH", "FC"],
@@ -1246,6 +1248,16 @@ export default function Puppies() {
                         {/* Sire */}
                         <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
                           <div className="text-center">
+                            {pedigreeData.sire.image && (
+                              <div className="mb-3">
+                                <img 
+                                  src={pedigreeData.sire.image} 
+                                  alt={pedigreeData.sire.name}
+                                  className="w-16 h-16 object-cover rounded-full mx-auto border-2"
+                                  style={{borderColor: '#8a8f28'}}
+                                />
+                              </div>
+                            )}
                             <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
                               {pedigreeData.sire.name}
                             </h4>
@@ -1263,6 +1275,16 @@ export default function Puppies() {
                         {/* Sire's Parents */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
+                            {pedigreeData.sire.sire.image && (
+                              <div className="mb-2 text-center">
+                                <img 
+                                  src={pedigreeData.sire.sire.image} 
+                                  alt={pedigreeData.sire.sire.name}
+                                  className="w-12 h-12 object-cover rounded-full mx-auto border"
+                                  style={{borderColor: '#a5aa35'}}
+                                />
+                              </div>
+                            )}
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.name}
                             </h5>

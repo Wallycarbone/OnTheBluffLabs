@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
+import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -21,9 +22,11 @@ export default function BreedingDogs() {
         name: "Grizzly",
         formalName: "Endless Mt Labrador Grizzly Bear At On The Bluff",
         titles: ["CH"],
+        image: grizzlyImage,
         sire: {
           name: "Bosco (Greenstone Chocoholic at Loretta)",
           titles: ["CH", "LT"],
+          image: boscoImage,
           sire: {
             name: "Chocolate Thunder",
             titles: ["CH", "FC"],
@@ -82,6 +85,7 @@ export default function BreedingDogs() {
         name: "Harper Lee",
         formalName: "On The Bluff Harper Lee",
         titles: ["CH"],
+        image: harperLeeImage,
         sire: {
           name: "Atticus Finch",
           titles: ["CH", "Late Sire"],
@@ -570,6 +574,16 @@ export default function BreedingDogs() {
                       <div className="flex items-center justify-center">
                         <div className="bg-white rounded-lg p-6 border-3 shadow-lg w-full max-w-sm" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
+                            {pedigreeData.image && (
+                              <div className="mb-4">
+                                <img 
+                                  src={pedigreeData.image} 
+                                  alt={pedigreeData.name}
+                                  className="w-24 h-24 object-cover rounded-full mx-auto border-3"
+                                  style={{borderColor: '#6d761d'}}
+                                />
+                              </div>
+                            )}
                             <h4 className="text-2xl font-oswald font-normal mb-3" style={{color: '#11100f'}}>
                               {pedigreeData.name}
                             </h4>
@@ -597,6 +611,15 @@ export default function BreedingDogs() {
                           </h4>
                           <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
                             <div className="text-center">
+                              {pedigreeData.sire.image && (
+                                <div className="mb-3">
+                                  <img 
+                                    src={pedigreeData.sire.image} 
+                                    alt={pedigreeData.sire.name}
+                                    className="w-20 h-20 object-cover rounded-full mx-auto border-2 border-golden"
+                                  />
+                                </div>
+                              )}
                               <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
                                 {pedigreeData.sire.name}
                               </h5>
