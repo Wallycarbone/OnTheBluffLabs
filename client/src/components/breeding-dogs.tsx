@@ -20,96 +20,78 @@ export default function BreedingDogs() {
       "Grizzly": {
         name: "Grizzly",
         formalName: "Endless Mt Labrador Grizzly Bear At On The Bluff",
-        registration: "SS32814306",
         titles: ["CH"],
         sire: {
           name: "Greenstone Chocoholic at Loretta",
-          registration: "SR05670",
           titles: ["CH", "LT"]
         },
         dam: {
           name: "Endless Mt Hannah",
-          registration: "SS28201",
           titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"]
         }
       },
       "Harper Lee": {
         name: "Harper Lee",
         formalName: "On The Bluff Harper Lee",
-        registration: "SR33344455",
         titles: ["CH"],
         sire: {
           name: "Atticus Finch",
-          registration: "SR66677788",
           titles: ["CH", "Late Sire"]
         },
         dam: {
           name: "Harper Lee's Dam",
-          registration: "SR99900011",
           titles: ["CH"]
         }
       },
       "Moon": {
         name: "Moon",
         formalName: "On The Bluff Moon",
-        registration: "SR12345678",
         titles: ["CH"],
         sire: {
           name: "Farnfield Topo Gigio",
-          registration: "SR98765432",
           titles: ["2019 Westminster BOB", "CH", "GCH"]
         },
         dam: {
           name: "Moon's Dam",
-          registration: "SR11223344",
           titles: ["CH"]
         }
       },
       "Foxxy": {
         name: "Foxxy",
         formalName: "On The Bluff Foxxy",
-        registration: "SR87654321",
         titles: ["CH"],
         sire: {
           name: "Foxxy's Sire",
-          registration: "SR55667788",
           titles: ["CH"]
         },
         dam: {
           name: "Foxxy's Dam",
-          registration: "SR99887766",
           titles: ["CH"]
         }
       },
       "Nora": {
         name: "Nora",
         formalName: "On The Bluff Nora",
-        registration: "SR13579246",
         titles: ["CH"],
         sire: {
           name: "Nora's Sire",
-          registration: "SR24681357",
           titles: ["CH"]
         },
         dam: {
           name: "Nora's Dam",
-          registration: "SR97531864",
           titles: ["CH"]
         }
       },
       "Guinevere": {
         name: "Guinevere",
         formalName: "On The Bluff Guinevere",
-        registration: "SR98765123",
         titles: ["CH"],
         sire: {
           name: "Guinevere's Sire",
-          registration: "SR78901234",
           titles: ["CH"]
         },
         dam: {
           name: "Guinevere's Dam",
-          registration: "SR89012345",
           titles: ["CH"]
         }
       }
@@ -283,9 +265,7 @@ export default function BreedingDogs() {
                         <p className="text-lg font-source-sans italic mb-2 text-gray-700">
                           {pedigreeData.formalName}
                         </p>
-                        <p className="text-sm font-source-sans text-gray-600 mb-3">
-                          AKC Registration: {pedigreeData.registration}
-                        </p>
+
                         <div className="flex flex-wrap justify-center gap-2">
                           {pedigreeData.titles.map((title: string, index: number) => (
                             <span key={index} className="px-3 py-1 text-sm font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
@@ -308,9 +288,7 @@ export default function BreedingDogs() {
                             <p className="text-base font-source-sans italic mb-2 text-gray-700">
                               {pedigreeData.formalName}
                             </p>
-                            <p className="text-sm font-source-sans text-gray-600 mb-3">
-                              {pedigreeData.registration}
-                            </p>
+
                             <div className="flex flex-wrap justify-center gap-2">
                               {pedigreeData.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-3 py-1 text-sm font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
@@ -334,9 +312,7 @@ export default function BreedingDogs() {
                               <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
                                 {pedigreeData.sire.name}
                               </h5>
-                              <p className="text-sm font-source-sans text-gray-600 mb-2">
-                                {pedigreeData.sire.registration}
-                              </p>
+
                               <div className="flex flex-wrap justify-center gap-1">
                                 {pedigreeData.sire.titles.map((title: string, index: number) => (
                                   <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
@@ -358,9 +334,7 @@ export default function BreedingDogs() {
                               <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
                                 {pedigreeData.dam.name}
                               </h5>
-                              <p className="text-sm font-source-sans text-gray-600 mb-2">
-                                {pedigreeData.dam.registration}
-                              </p>
+
                               <div className="flex flex-wrap justify-center gap-1">
                                 {pedigreeData.dam.titles.map((title: string, index: number) => (
                                   <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>

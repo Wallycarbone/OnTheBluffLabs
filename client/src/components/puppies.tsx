@@ -199,31 +199,25 @@ export default function Puppies() {
       "Moon & Foxxy": {
         sire: {
           name: "Moon",
-          registration: "SR12345678",
           titles: ["CH"],
           sire: {
             name: "Farnfield Topo Gigio",
-            registration: "SR98765432",
             titles: ["2019 Westminster BOB", "CH", "GCH"]
           },
           dam: {
             name: "Moon's Dam",
-            registration: "SR11223344",
             titles: ["CH"]
           }
         },
         dam: {
           name: "Foxxy",
-          registration: "SR87654321",
           titles: ["CH"],
           sire: {
             name: "Foxxy's Sire",
-            registration: "SR55667788",
             titles: ["CH"]
           },
           dam: {
-            name: "Foxxy's Dam", 
-            registration: "SR99887766",
+            name: "Foxxy's Dam",
             titles: ["CH"]
           }
         }
@@ -231,31 +225,25 @@ export default function Puppies() {
       "Moon & Nora": {
         sire: {
           name: "Moon",
-          registration: "SR12345678",
           titles: ["CH"],
           sire: {
             name: "Farnfield Topo Gigio",
-            registration: "SR98765432",
             titles: ["2019 Westminster BOB", "CH", "GCH"]
           },
           dam: {
             name: "Moon's Dam",
-            registration: "SR11223344",
             titles: ["CH"]
           }
         },
         dam: {
           name: "Nora",
-          registration: "SR13579246",
           titles: ["CH"],
           sire: {
             name: "Nora's Sire",
-            registration: "SR24681357",
             titles: ["CH"]
           },
           dam: {
             name: "Nora's Dam",
-            registration: "SR97531864",
             titles: ["CH"]
           }
         }
@@ -263,31 +251,25 @@ export default function Puppies() {
       "Grizzly & Guinevere": {
         sire: {
           name: "Grizzly",
-          registration: "SS32814306",
           titles: ["CH"],
           sire: {
             name: "Greenstone Chocoholic at Loretta",
-            registration: "SR05670",
             titles: ["CH", "LT"]
           },
           dam: {
             name: "Endless Mt Hannah",
-            registration: "SS28201",
             titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"]
           }
         },
         dam: {
           name: "Guinevere",
-          registration: "SR98765123",
           titles: ["CH"],
           sire: {
             name: "Guinevere's Sire",
-            registration: "SR78901234",
             titles: ["CH"]
           },
           dam: {
             name: "Guinevere's Dam",
-            registration: "SR89012345",
             titles: ["CH"]
           }
         }
@@ -295,31 +277,25 @@ export default function Puppies() {
       "Holden & Alola": {
         sire: {
           name: "Holden",
-          registration: "SR45678901",
           titles: ["CH"],
           sire: {
             name: "Highcaliber Labradale Expresso",
-            registration: "SR23456789",
             titles: ["2011 AKC Grand Champion", "CH", "GCH"]
           },
           dam: {
             name: "Holden's Dam",
-            registration: "SR34567890",
             titles: ["CH"]
           }
         },
         dam: {
           name: "Alola",
-          registration: "SR56789012",
           titles: ["CH"],
           sire: {
             name: "Alola's Sire",
-            registration: "SR67890123",
             titles: ["CH"]
           },
           dam: {
             name: "Alola's Dam",
-            registration: "SR78901235",
             titles: ["CH"]
           }
         }
@@ -327,31 +303,25 @@ export default function Puppies() {
       "Boo Radley & Queen Boudica": {
         sire: {
           name: "Boo Radley",
-          registration: "SR11122233",
           titles: ["CH"],
           sire: {
             name: "Boo Radley's Sire",
-            registration: "SR44455566",
             titles: ["CH"]
           },
           dam: {
             name: "Boo Radley's Dam",
-            registration: "SR77788899",
             titles: ["CH"]
           }
         },
         dam: {
           name: "Queen Boudica",
-          registration: "SR22233344",
           titles: ["CH"],
           sire: {
             name: "Queen Boudica's Sire",
-            registration: "SR55566677",
             titles: ["CH"]
           },
           dam: {
             name: "Queen Boudica's Dam",
-            registration: "SR88899900",
             titles: ["CH"]
           }
         }
@@ -359,31 +329,25 @@ export default function Puppies() {
       "Moon & Harper Lee": {
         sire: {
           name: "Moon",
-          registration: "SR12345678",
           titles: ["CH"],
           sire: {
             name: "Farnfield Topo Gigio",
-            registration: "SR98765432",
             titles: ["2019 Westminster BOB", "CH", "GCH"]
           },
           dam: {
             name: "Moon's Dam",
-            registration: "SR11223344",
             titles: ["CH"]
           }
         },
         dam: {
           name: "Harper Lee",
-          registration: "SR33344455",
           titles: ["CH"],
           sire: {
             name: "Harper Lee's Sire",
-            registration: "SR66677788",
             titles: ["CH"]
           },
           dam: {
             name: "Harper Lee's Dam",
-            registration: "SR99900011",
             titles: ["CH"]
           }
         }
@@ -709,9 +673,7 @@ export default function Puppies() {
                             <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
                               {pedigreeData.sire.name}
                             </h4>
-                            <p className="text-sm font-source-sans text-gray-600">
-                              {pedigreeData.sire.registration}
-                            </p>
+
                             <div className="flex flex-wrap justify-center gap-1 mt-2">
                               {pedigreeData.sire.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
@@ -728,9 +690,7 @@ export default function Puppies() {
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.name}
                             </h5>
-                            <p className="text-xs font-source-sans text-gray-600 mb-1">
-                              {pedigreeData.sire.sire.registration}
-                            </p>
+
                             <div className="flex flex-wrap gap-1">
                               {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
@@ -743,9 +703,7 @@ export default function Puppies() {
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.name}
                             </h5>
-                            <p className="text-xs font-source-sans text-gray-600 mb-1">
-                              {pedigreeData.sire.dam.registration}
-                            </p>
+
                             <div className="flex flex-wrap gap-1">
                               {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
@@ -770,9 +728,7 @@ export default function Puppies() {
                             <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
                               {pedigreeData.dam.name}
                             </h4>
-                            <p className="text-sm font-source-sans text-gray-600">
-                              {pedigreeData.dam.registration}
-                            </p>
+
                             <div className="flex flex-wrap justify-center gap-1 mt-2">
                               {pedigreeData.dam.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
@@ -789,9 +745,7 @@ export default function Puppies() {
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.name}
                             </h5>
-                            <p className="text-xs font-source-sans text-gray-600 mb-1">
-                              {pedigreeData.dam.sire.registration}
-                            </p>
+
                             <div className="flex flex-wrap gap-1">
                               {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
@@ -804,9 +758,7 @@ export default function Puppies() {
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.name}
                             </h5>
-                            <p className="text-xs font-source-sans text-gray-600 mb-1">
-                              {pedigreeData.dam.dam.registration}
-                            </p>
+
                             <div className="flex flex-wrap gap-1">
                               {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
