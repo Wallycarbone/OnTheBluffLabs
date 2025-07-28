@@ -164,6 +164,11 @@ Preferred communication style: Simple, everyday language.
   - Hannah (Endless Mt Hannah) now appears as clickable name with image popup in Grizzly's lineage
   - Enhanced visual storytelling with authentic dam portrait showing field training background
   - Removed title badges for Hannah and Grizzly per user request for cleaner display
+- ✅ **PEDIGREE EXPANSION**: Extended Grizzly's pedigree to 5 generations
+  - Added great-great-grandparent information to Grizzly's complete lineage
+  - Extended both sire (Bosco) and dam (Hannah) lines to show 5th generation ancestry
+  - Enhanced genealogical depth with Thunder's lineage, Loretta's lineage, and Hannah's complete ancestry
+  - Maintained authentic bloodline structure while providing comprehensive breeding history
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

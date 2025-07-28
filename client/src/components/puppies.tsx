@@ -471,11 +471,27 @@ export default function Puppies() {
               titles: ["CH", "FC"],
               sire: {
                 name: "Thunder's Sire",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Thunder's Paternal Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Thunder's Paternal Great-Granddam",
+                  titles: ["CH"]
+                }
               },
               dam: {
                 name: "Thunder's Dam",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Thunder's Maternal Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Thunder's Maternal Great-Granddam",
+                  titles: ["CH"]
+                }
               }
             },
             dam: {
@@ -483,11 +499,27 @@ export default function Puppies() {
               titles: ["CH", "JH"],
               sire: {
                 name: "Loretta's Maternal Grandsire",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Loretta's Paternal Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Loretta's Paternal Great-Granddam",
+                  titles: ["CH"]
+                }
               },
               dam: {
                 name: "Loretta's Maternal Granddam",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Loretta's Maternal Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Loretta's Maternal Great-Granddam",
+                  titles: ["CH"]
+                }
               }
             }
           },
@@ -500,11 +532,27 @@ export default function Puppies() {
               titles: ["CH", "FC"],
               sire: {
                 name: "Hannah's Paternal Great-Grandsire",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Hannah's Paternal Great-Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Hannah's Paternal Great-Great-Granddam",
+                  titles: ["CH"]
+                }
               },
               dam: {
                 name: "Hannah's Paternal Great-Granddam",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Hannah's Paternal Maternal Great-Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Hannah's Paternal Maternal Great-Great-Granddam",
+                  titles: ["CH"]
+                }
               }
             },
             dam: {
@@ -512,11 +560,27 @@ export default function Puppies() {
               titles: ["CH", "JH"],
               sire: {
                 name: "Hannah's Maternal Great-Grandsire",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Hannah's Maternal Great-Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Hannah's Maternal Great-Great-Granddam",
+                  titles: ["CH"]
+                }
               },
               dam: {
                 name: "Hannah's Maternal Great-Granddam",
-                titles: ["CH"]
+                titles: ["CH"],
+                sire: {
+                  name: "Hannah's Maternal Maternal Great-Great-Grandsire",
+                  titles: ["CH"]
+                },
+                dam: {
+                  name: "Hannah's Maternal Maternal Great-Great-Granddam",
+                  titles: ["CH"]
+                }
               }
             }
           }
