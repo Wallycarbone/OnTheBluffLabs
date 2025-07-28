@@ -179,6 +179,7 @@ Preferred communication style: Simple, everyday language.
   - Preserved clickable image functionality for Cyrus in new position
   - Applied consistent restructuring across both individual and litter pedigree displays
   - Replaced previous "Chocolate Thunder" placeholder with authentic Cyrus lineage data
+  - Updated Cyrus image to use latest portrait (cyrusHeadL (1)_1753737220160.png)
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
