@@ -7,6 +7,7 @@ import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
+import cyrusImage from "@assets/cyrusHeadL (1)_1753736849722.png?url";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -136,6 +137,7 @@ export default function BreedingDogs() {
           dam: {
             name: "Shalimar's The Animator (\"Cyrus\")",
             titles: ["CH", "JH"],
+            image: cyrusImage,
             sire: {
               name: "Hannah's Maternal Great-Grandsire",
               titles: ["CH"],

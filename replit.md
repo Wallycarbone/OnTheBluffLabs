@@ -176,6 +176,8 @@ Preferred communication style: Simple, everyday language.
   - Changed Hannah's mother from generic placeholder to "Shalimar's The Animator (\"Cyrus\")"
   - Applied authentic dam name across both individual and litter pedigree displays
   - Maintained proper name formatting with formal name and quoted nickname
+  - Integrated Cyrus image (cyrusHeadL (1)_1753736849722.png) into pedigree system
+  - Added clickable image functionality for Cyrus in Hannah's maternal lineage
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
