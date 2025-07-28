@@ -1,10 +1,123 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 
 export default function BreedingDogs() {
+  const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
+  const [selectedDog, setSelectedDog] = useState<any>(null);
+
+  const openPedigreePopup = (dog: any) => {
+    setSelectedDog(dog);
+    setIsPedigreePopupOpen(true);
+  };
+
+  const getDogPedigreeData = (dogName: string) => {
+    const pedigrees: { [key: string]: any } = {
+      "Grizzly": {
+        name: "Grizzly",
+        formalName: "Endless Mt. Labrador Grizzly at On The Bluff",
+        registration: "SR54321987",
+        titles: ["CH"],
+        sire: {
+          name: "Shalimar's The Animator",
+          registration: "SR76543210",
+          titles: ["2016 Westminster BOB", "CH", "GCH"]
+        },
+        dam: {
+          name: "Grizzly's Dam",
+          registration: "SR65432198",
+          titles: ["CH"]
+        }
+      },
+      "Harper Lee": {
+        name: "Harper Lee",
+        formalName: "On The Bluff Harper Lee",
+        registration: "SR33344455",
+        titles: ["CH"],
+        sire: {
+          name: "Atticus Finch",
+          registration: "SR66677788",
+          titles: ["CH", "Late Sire"]
+        },
+        dam: {
+          name: "Harper Lee's Dam",
+          registration: "SR99900011",
+          titles: ["CH"]
+        }
+      },
+      "Moon": {
+        name: "Moon",
+        formalName: "On The Bluff Moon",
+        registration: "SR12345678",
+        titles: ["CH"],
+        sire: {
+          name: "Farnfield Topo Gigio",
+          registration: "SR98765432",
+          titles: ["2019 Westminster BOB", "CH", "GCH"]
+        },
+        dam: {
+          name: "Moon's Dam",
+          registration: "SR11223344",
+          titles: ["CH"]
+        }
+      },
+      "Foxxy": {
+        name: "Foxxy",
+        formalName: "On The Bluff Foxxy",
+        registration: "SR87654321",
+        titles: ["CH"],
+        sire: {
+          name: "Foxxy's Sire",
+          registration: "SR55667788",
+          titles: ["CH"]
+        },
+        dam: {
+          name: "Foxxy's Dam",
+          registration: "SR99887766",
+          titles: ["CH"]
+        }
+      },
+      "Nora": {
+        name: "Nora",
+        formalName: "On The Bluff Nora",
+        registration: "SR13579246",
+        titles: ["CH"],
+        sire: {
+          name: "Nora's Sire",
+          registration: "SR24681357",
+          titles: ["CH"]
+        },
+        dam: {
+          name: "Nora's Dam",
+          registration: "SR97531864",
+          titles: ["CH"]
+        }
+      },
+      "Guinevere": {
+        name: "Guinevere",
+        formalName: "On The Bluff Guinevere",
+        registration: "SR98765123",
+        titles: ["CH"],
+        sire: {
+          name: "Guinevere's Sire",
+          registration: "SR78901234",
+          titles: ["CH"]
+        },
+        dam: {
+          name: "Guinevere's Dam",
+          registration: "SR89012345",
+          titles: ["CH"]
+        }
+      }
+    };
+    
+    return pedigrees[dogName] || null;
+  };
+
   const sires = [
     {
       name: "Grizzly",
@@ -59,9 +172,52 @@ export default function BreedingDogs() {
           {dog.description}
         </p>
         
-        <Button className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors">
-          View Pedigree
-        </Button>
+        <div className="space-y-4">
+          {/* Pedigree Summary */}
+          <div className="bg-gray-50 rounded-lg p-4">
+            <div className="text-center mb-3">
+              <h4 className="font-oswald font-medium text-sm" style={{color: '#11100f'}}>
+                PEDIGREE OVERVIEW
+              </h4>
+            </div>
+            <div className="grid grid-cols-2 gap-4 text-xs">
+              <div>
+                <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
+                <p className="font-source-sans" style={{color: '#11100f'}}>
+                  {dog.name === "Grizzly" 
+                    ? "Shalimar's The Animator"
+                    : dog.name === "Harper Lee"
+                    ? "Atticus Finch"
+                    : `${dog.name}'s Sire`
+                  }
+                </p>
+              </div>
+              <div>
+                <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
+                <p className="font-source-sans" style={{color: '#11100f'}}>
+                  {`${dog.name}'s Dam`}
+                </p>
+              </div>
+            </div>
+            <div className="mt-3 flex flex-wrap justify-center gap-1">
+              <span className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                CH
+              </span>
+              {dog.name === "Grizzly" && (
+                <span className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                  Westminster Line
+                </span>
+              )}
+            </div>
+          </div>
+          
+          <Button 
+            onClick={() => openPedigreePopup(dog)}
+            className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors"
+          >
+            View Full Pedigree
+          </Button>
+        </div>
       </CardContent>
     </Card>
   );
@@ -101,6 +257,148 @@ export default function BreedingDogs() {
           </div>
         </div>
       </div>
+
+      {/* Individual Dog Pedigree Popup Dialog */}
+      <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedDog?.name} - Individual Pedigree
+            </DialogTitle>
+          </DialogHeader>
+          {selectedDog && (
+            <div className="space-y-6">
+              {(() => {
+                const pedigreeData = getDogPedigreeData(selectedDog.name);
+                if (!pedigreeData) return <p>Pedigree information not available</p>;
+                
+                return (
+                  <div className="space-y-6">
+                    {/* Dog Information */}
+                    <div className="bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-6">
+                      <div className="text-center">
+                        <h3 className="text-2xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                          {pedigreeData.name}
+                        </h3>
+                        <p className="text-lg font-source-sans italic mb-2 text-gray-700">
+                          {pedigreeData.formalName}
+                        </p>
+                        <p className="text-sm font-source-sans text-gray-600 mb-3">
+                          AKC Registration: {pedigreeData.registration}
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-2">
+                          {pedigreeData.titles.map((title: string, index: number) => (
+                            <span key={index} className="px-3 py-1 text-sm font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                              {title}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Parents */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {/* Sire */}
+                      <div className="bg-blue-50 rounded-lg p-6">
+                        <h4 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
+                          SIRE
+                        </h4>
+                        <div className="bg-white rounded-lg p-4 border-2 border-blue-200">
+                          <div className="text-center">
+                            <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.name}
+                            </h5>
+                            <p className="text-sm font-source-sans text-gray-600 mb-2">
+                              {pedigreeData.sire.registration}
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-1">
+                              {pedigreeData.sire.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Dam */}
+                      <div className="bg-pink-50 rounded-lg p-6">
+                        <h4 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
+                          DAM
+                        </h4>
+                        <div className="bg-white rounded-lg p-4 border-2 border-pink-200">
+                          <div className="text-center">
+                            <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.name}
+                            </h5>
+                            <p className="text-sm font-source-sans text-gray-600 mb-2">
+                              {pedigreeData.dam.registration}
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-1">
+                              {pedigreeData.dam.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Notable Bloodlines */}
+                    <div className="bg-gray-50 rounded-lg p-6">
+                      <h4 className="text-lg font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
+                        NOTABLE BLOODLINES
+                      </h4>
+                      <div className="text-center">
+                        {selectedDog.name === "Grizzly" && (
+                          <div className="space-y-2">
+                            <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
+                              Direct descendant of <strong>Shalimar's The Animator</strong>, winner of the 2016 Westminster Dog Show Best of Breed
+                            </p>
+                            <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
+                              Westminster Champion Line
+                            </span>
+                          </div>
+                        )}
+                        {selectedDog.name === "Harper Lee" && (
+                          <div className="space-y-2">
+                            <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
+                              Daughter of our late champion sire <strong>Atticus Finch</strong>, continuing his exceptional legacy
+                            </p>
+                            <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
+                              Legacy Champion Line
+                            </span>
+                          </div>
+                        )}
+                        {(selectedDog.name === "Moon" || selectedDog.name === "Foxxy" || selectedDog.name === "Nora") && (
+                          <div className="space-y-2">
+                            <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
+                              Champion bloodlines with exceptional conformation and temperament
+                            </p>
+                            <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
+                              Champion Bloodline
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+              
+              <div className="text-center pt-4 border-t">
+                <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                  This pedigree shows the lineage information for {selectedDog?.name}, 
+                  highlighting the exceptional breeding quality and champion bloodlines.
+                </p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
