@@ -36,6 +36,8 @@ import matureDogsImage from "@assets/Breeding Dogs 5x4_1753642698754.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
+  const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
+  const [selectedLitter, setSelectedLitter] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
 
   // Generate SVG puppy placeholders for Moon & Foxxy litter
@@ -185,6 +187,210 @@ export default function Puppies() {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const openPedigreePopup = (litter: any) => {
+    setSelectedLitter(litter);
+    setIsPedigreePopupOpen(true);
+  };
+
+  const getPedigreeData = (litterName: string) => {
+    const pedigrees: { [key: string]: any } = {
+      "Moon & Foxxy": {
+        sire: {
+          name: "Moon",
+          registration: "SR12345678",
+          titles: ["CH"],
+          sire: {
+            name: "Farnfield Topo Gigio",
+            registration: "SR98765432",
+            titles: ["2019 Westminster BOB", "CH", "GCH"]
+          },
+          dam: {
+            name: "Moon's Dam",
+            registration: "SR11223344",
+            titles: ["CH"]
+          }
+        },
+        dam: {
+          name: "Foxxy",
+          registration: "SR87654321",
+          titles: ["CH"],
+          sire: {
+            name: "Foxxy's Sire",
+            registration: "SR55667788",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Foxxy's Dam", 
+            registration: "SR99887766",
+            titles: ["CH"]
+          }
+        }
+      },
+      "Moon & Nora": {
+        sire: {
+          name: "Moon",
+          registration: "SR12345678",
+          titles: ["CH"],
+          sire: {
+            name: "Farnfield Topo Gigio",
+            registration: "SR98765432",
+            titles: ["2019 Westminster BOB", "CH", "GCH"]
+          },
+          dam: {
+            name: "Moon's Dam",
+            registration: "SR11223344",
+            titles: ["CH"]
+          }
+        },
+        dam: {
+          name: "Nora",
+          registration: "SR13579246",
+          titles: ["CH"],
+          sire: {
+            name: "Nora's Sire",
+            registration: "SR24681357",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Nora's Dam",
+            registration: "SR97531864",
+            titles: ["CH"]
+          }
+        }
+      },
+      "Grizzly & Guinevere": {
+        sire: {
+          name: "Grizzly",
+          registration: "SR54321987",
+          titles: ["CH"],
+          sire: {
+            name: "Shalimar's The Animator",
+            registration: "SR76543210",
+            titles: ["2016 Westminster BOB", "CH", "GCH"]
+          },
+          dam: {
+            name: "Grizzly's Dam",
+            registration: "SR65432198",
+            titles: ["CH"]
+          }
+        },
+        dam: {
+          name: "Guinevere",
+          registration: "SR98765123",
+          titles: ["CH"],
+          sire: {
+            name: "Guinevere's Sire",
+            registration: "SR78901234",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Guinevere's Dam",
+            registration: "SR89012345",
+            titles: ["CH"]
+          }
+        }
+      },
+      "Holden & Alola": {
+        sire: {
+          name: "Holden",
+          registration: "SR45678901",
+          titles: ["CH"],
+          sire: {
+            name: "Highcaliber Labradale Expresso",
+            registration: "SR23456789",
+            titles: ["2011 AKC Grand Champion", "CH", "GCH"]
+          },
+          dam: {
+            name: "Holden's Dam",
+            registration: "SR34567890",
+            titles: ["CH"]
+          }
+        },
+        dam: {
+          name: "Alola",
+          registration: "SR56789012",
+          titles: ["CH"],
+          sire: {
+            name: "Alola's Sire",
+            registration: "SR67890123",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Alola's Dam",
+            registration: "SR78901235",
+            titles: ["CH"]
+          }
+        }
+      },
+      "Boo Radley & Queen Boudica": {
+        sire: {
+          name: "Boo Radley",
+          registration: "SR11122233",
+          titles: ["CH"],
+          sire: {
+            name: "Boo Radley's Sire",
+            registration: "SR44455566",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Boo Radley's Dam",
+            registration: "SR77788899",
+            titles: ["CH"]
+          }
+        },
+        dam: {
+          name: "Queen Boudica",
+          registration: "SR22233344",
+          titles: ["CH"],
+          sire: {
+            name: "Queen Boudica's Sire",
+            registration: "SR55566677",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Queen Boudica's Dam",
+            registration: "SR88899900",
+            titles: ["CH"]
+          }
+        }
+      },
+      "Moon & Harper Lee": {
+        sire: {
+          name: "Moon",
+          registration: "SR12345678",
+          titles: ["CH"],
+          sire: {
+            name: "Farnfield Topo Gigio",
+            registration: "SR98765432",
+            titles: ["2019 Westminster BOB", "CH", "GCH"]
+          },
+          dam: {
+            name: "Moon's Dam",
+            registration: "SR11223344",
+            titles: ["CH"]
+          }
+        },
+        dam: {
+          name: "Harper Lee",
+          registration: "SR33344455",
+          titles: ["CH"],
+          sire: {
+            name: "Harper Lee's Sire",
+            registration: "SR66677788",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Harper Lee's Dam",
+            registration: "SR99900011",
+            titles: ["CH"]
+          }
+        }
+      }
+    };
+    
+    return pedigrees[litterName] || null;
   };
 
   const renderLitterCard = (litter: any, index: number) => {
@@ -350,15 +556,27 @@ export default function Puppies() {
           </div>
         </div>
 
-        <Button 
-          onClick={scrollToContact}
-          className="w-full font-montserrat font-semibold text-base h-auto py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
-          style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-        >
-          Apply for This Litter
-        </Button>
+        <div className="grid grid-cols-2 gap-3">
+          <Button 
+            onClick={() => openPedigreePopup(litter)}
+            variant="outline"
+            className="font-montserrat font-medium text-sm h-auto py-3 rounded-lg border-2 transition-all duration-200"
+            style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
+            onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
+            onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
+          >
+            View Pedigree
+          </Button>
+          <Button 
+            onClick={scrollToContact}
+            className="font-montserrat font-semibold text-sm h-auto py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+          >
+            Apply for Litter
+          </Button>
+        </div>
       </CardContent>
     </Card>
     );
@@ -460,6 +678,158 @@ export default function Puppies() {
               </p>
             </div>
           </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Pedigree Popup Dialog */}
+      <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
+        <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedLitter?.name} Pedigree
+            </DialogTitle>
+          </DialogHeader>
+          {selectedLitter && (
+            <div className="space-y-6">
+              {(() => {
+                const pedigreeData = getPedigreeData(selectedLitter.name);
+                if (!pedigreeData) return <p>Pedigree information not available</p>;
+                
+                return (
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {/* Sire Side */}
+                    <div className="bg-blue-50 rounded-lg p-6">
+                      <h3 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
+                        SIRE LINE
+                      </h3>
+                      <div className="space-y-4">
+                        {/* Sire */}
+                        <div className="bg-white rounded-lg p-4 border-2 border-blue-200">
+                          <div className="text-center">
+                            <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.name}
+                            </h4>
+                            <p className="text-sm font-source-sans text-gray-600">
+                              {pedigreeData.sire.registration}
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-1 mt-2">
+                              {pedigreeData.sire.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Sire's Parents */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          <div className="bg-white rounded-lg p-3 border border-blue-100">
+                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.sire.name}
+                            </h5>
+                            <p className="text-xs font-source-sans text-gray-600 mb-1">
+                              {pedigreeData.sire.sire.registration}
+                            </p>
+                            <div className="flex flex-wrap gap-1">
+                              {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  {title.length > 15 ? title.substring(0, 15) + '...' : title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                          <div className="bg-white rounded-lg p-3 border border-blue-100">
+                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.dam.name}
+                            </h5>
+                            <p className="text-xs font-source-sans text-gray-600 mb-1">
+                              {pedigreeData.sire.dam.registration}
+                            </p>
+                            <div className="flex flex-wrap gap-1">
+                              {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Dam Side */}
+                    <div className="bg-pink-50 rounded-lg p-6">
+                      <h3 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
+                        DAM LINE
+                      </h3>
+                      <div className="space-y-4">
+                        {/* Dam */}
+                        <div className="bg-white rounded-lg p-4 border-2 border-pink-200">
+                          <div className="text-center">
+                            <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.name}
+                            </h4>
+                            <p className="text-sm font-source-sans text-gray-600">
+                              {pedigreeData.dam.registration}
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-1 mt-2">
+                              {pedigreeData.dam.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Dam's Parents */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          <div className="bg-white rounded-lg p-3 border border-pink-100">
+                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.sire.name}
+                            </h5>
+                            <p className="text-xs font-source-sans text-gray-600 mb-1">
+                              {pedigreeData.dam.sire.registration}
+                            </p>
+                            <div className="flex flex-wrap gap-1">
+                              {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                          <div className="bg-white rounded-lg p-3 border border-pink-100">
+                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.dam.name}
+                            </h5>
+                            <p className="text-xs font-source-sans text-gray-600 mb-1">
+                              {pedigreeData.dam.dam.registration}
+                            </p>
+                            <div className="flex flex-wrap gap-1">
+                              {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  {title}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+              
+              <div className="text-center pt-4 border-t">
+                <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                  This pedigree shows the 3-generation lineage for the {selectedLitter?.name} litter, 
+                  featuring champion bloodlines and exceptional breeding quality.
+                </p>
+              </div>
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </section>
