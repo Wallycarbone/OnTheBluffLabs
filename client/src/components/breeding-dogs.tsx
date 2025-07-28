@@ -652,36 +652,7 @@ export default function BreedingDogs() {
 
                     {/* Full 5-Generation Pedigree Tree */}
                     <div className="space-y-6">
-                      {/* Generation 1 - Subject */}
-                      <div className="flex justify-center">
-                        <div className="bg-white rounded-lg p-4 border-3 shadow-lg" style={{borderColor: '#6d761d'}}>
-                          <div className="text-center">
-                            <h4 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
-                              {pedigreeData.name}
-                            </h4>
-                            <p className="text-sm font-source-sans italic text-gray-700">
-                              {pedigreeData.formalName}
-                            </p>
-                            <div className="flex flex-wrap justify-center gap-1 mt-2">
-                              {pedigreeData.titles.map((title: string, index: number) => (
-                                <button 
-                                  key={index} 
-                                  onClick={() => {
-                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                    setIsTitlePopupOpen(true);
-                                  }}
-                                  className="px-2 py-1 text-xs font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                                >
-                                  {title}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Generation 2 - Parents */}
+                      {/* Generation 1 - Parents */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {/* Sire */}
                         <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
