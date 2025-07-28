@@ -12,6 +12,20 @@ export default function BreedingDogs() {
   const [selectedDog, setSelectedDog] = useState<any>(null);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
+  const [isTitlePopupOpen, setIsTitlePopupOpen] = useState(false);
+  const [selectedTitle, setSelectedTitle] = useState<{abbreviation: string, fullName: string} | null>(null);
+
+  const getTitleFullName = (abbreviation: string): string => {
+    const titleMap: { [key: string]: string } = {
+      "CH": "Champion",
+      "LT": "Limited",
+      "MX": "Master Agility Excellent",
+      "JH": "Junior Hunter", 
+      "SHR": "Senior Hunter Retriever",
+      "LIT": "Limited"
+    };
+    return titleMap[abbreviation] || abbreviation;
+  };
 
   const openPedigreePopup = (dog: any) => {
     setSelectedDog(dog);
@@ -27,7 +41,7 @@ export default function BreedingDogs() {
         image: grizzlyImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
-          titles: ["CH", "LT"],
+          titles: ["CH", "MX"],
           image: boscoImage,
           sire: {
             name: "Chocolate Thunder",
@@ -586,9 +600,17 @@ export default function BreedingDogs() {
 
                             <div className="flex flex-wrap justify-center gap-2">
                               {pedigreeData.titles.map((title: string, index: number) => (
-                                <span key={index} className="px-3 py-1 text-sm font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                                <button 
+                                  key={index} 
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-3 py-1 text-sm font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                                >
                                   {title}
-                                </span>
+                                </button>
                               ))}
                             </div>
                           </div>
@@ -621,9 +643,17 @@ export default function BreedingDogs() {
 
                               <div className="flex flex-wrap justify-center gap-1">
                                 {pedigreeData.sire.titles.map((title: string, index: number) => (
-                                  <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  <button 
+                                    key={index} 
+                                    onClick={() => {
+                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                      setIsTitlePopupOpen(true);
+                                    }}
+                                    className="px-2 py-1 text-xs font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
+                                  >
                                     {title}
-                                  </span>
+                                  </button>
                                 ))}
                               </div>
                             </div>
@@ -643,9 +673,17 @@ export default function BreedingDogs() {
 
                               <div className="flex flex-wrap justify-center gap-1">
                                 {pedigreeData.dam.titles.map((title: string, index: number) => (
-                                  <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                  <button 
+                                    key={index} 
+                                    onClick={() => {
+                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                      setIsTitlePopupOpen(true);
+                                    }}
+                                    className="px-2 py-1 text-xs font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
+                                  >
                                     {title}
-                                  </span>
+                                  </button>
                                 ))}
                               </div>
                             </div>
@@ -723,6 +761,24 @@ export default function BreedingDogs() {
                 alt={selectedImage.name}
                 className="w-full h-auto rounded-lg"
               />
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Title Popup Dialog */}
+      <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
+        <DialogContent className="max-w-md max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedTitle?.abbreviation}
+            </DialogTitle>
+          </DialogHeader>
+          {selectedTitle && (
+            <div className="space-y-4">
+              <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
+                {selectedTitle.fullName}
+              </p>
             </div>
           )}
         </DialogContent>
