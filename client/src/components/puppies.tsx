@@ -559,7 +559,7 @@ export default function Puppies() {
             },
             dam: {
               name: "Shalimar's The Animator (\"Cyrus\")",
-              titles: ["MBISS"],
+              titles: ["CH", "MBISS"],
               image: cyrusImage,
               sire: {
                 name: "Hannah's Maternal Great-Grandsire",

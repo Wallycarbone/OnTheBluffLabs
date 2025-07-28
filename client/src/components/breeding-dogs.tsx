@@ -137,7 +137,7 @@ export default function BreedingDogs() {
           },
           dam: {
             name: "Shalimar's The Animator (\"Cyrus\")",
-            titles: ["MBISS"],
+            titles: ["CH", "MBISS"],
             image: cyrusImage,
             sire: {
               name: "Hannah's Maternal Great-Grandsire",
