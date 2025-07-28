@@ -6,6 +6,7 @@ import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 import boscoImage from "@assets/Bosco_1753735317643.avif?url";
+import hannahImage from "@assets/Hannah_1753736053468.png?url";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -71,6 +72,7 @@ export default function BreedingDogs() {
         dam: {
           name: "Endless Mt Hannah",
           titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"],
+          image: hannahImage,
           sire: {
             name: "Hannah's Sire",
             titles: ["CH", "FC"],
@@ -768,7 +770,7 @@ export default function BreedingDogs() {
 
       {/* Title Popup Dialog */}
       <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-        <DialogContent className="max-w-md max-h-[90vh] overflow-auto">
+        <DialogContent className="max-w-md max-h-[90vh] overflow-auto" aria-describedby="title-description">
           <DialogHeader>
             <DialogTitle className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
               {selectedTitle?.abbreviation}
@@ -776,7 +778,7 @@ export default function BreedingDogs() {
           </DialogHeader>
           {selectedTitle && (
             <div className="space-y-4">
-              <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
+              <p id="title-description" className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
                 {selectedTitle.fullName}
               </p>
             </div>

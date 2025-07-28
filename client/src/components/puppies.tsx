@@ -14,6 +14,7 @@ import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 import boscoImage from "@assets/Bosco_1753735317643.avif?url";
+import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
 import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
 import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
@@ -493,6 +494,7 @@ export default function Puppies() {
           dam: {
             name: "Endless Mt Hannah",
             titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"],
+            image: hannahImage,
             sire: {
               name: "Hannah's Sire",
               titles: ["CH", "FC"],
@@ -1447,7 +1449,7 @@ export default function Puppies() {
 
       {/* Title Popup Dialog */}
       <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-        <DialogContent className="max-w-md max-h-[90vh] overflow-auto">
+        <DialogContent className="max-w-md max-h-[90vh] overflow-auto" aria-describedby="title-description">
           <DialogHeader>
             <DialogTitle className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
               {selectedTitle?.abbreviation}
@@ -1455,7 +1457,7 @@ export default function Puppies() {
           </DialogHeader>
           {selectedTitle && (
             <div className="space-y-4">
-              <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
+              <p id="title-description" className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
                 {selectedTitle.fullName}
               </p>
             </div>
