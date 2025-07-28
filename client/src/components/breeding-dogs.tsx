@@ -650,21 +650,19 @@ export default function BreedingDogs() {
                       </div>
                     </div>
 
-                    {/* Pedigree Chart Layout */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                      {/* Left Side - Individual Dog */}
-                      <div className="flex items-center justify-center">
-                        <div className="bg-white rounded-lg p-6 border-3 shadow-lg w-full max-w-sm" style={{borderColor: '#6d761d'}}>
+                    {/* Full 5-Generation Pedigree Tree */}
+                    <div className="space-y-6">
+                      {/* Generation 1 - Subject */}
+                      <div className="flex justify-center">
+                        <div className="bg-white rounded-lg p-4 border-3 shadow-lg" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
-
-                            <h4 className="text-2xl font-oswald font-normal mb-3" style={{color: '#11100f'}}>
+                            <h4 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
                               {pedigreeData.name}
                             </h4>
-                            <p className="text-base font-source-sans italic mb-2 text-gray-700">
+                            <p className="text-sm font-source-sans italic text-gray-700">
                               {pedigreeData.formalName}
                             </p>
-
-                            <div className="flex flex-wrap justify-center gap-2">
+                            <div className="flex flex-wrap justify-center gap-1 mt-2">
                               {pedigreeData.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index} 
@@ -672,7 +670,7 @@ export default function BreedingDogs() {
                                     setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                     setIsTitlePopupOpen(true);
                                   }}
-                                  className="px-3 py-1 text-sm font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                  className="px-2 py-1 text-xs font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
                                   style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                                 >
                                   {title}
@@ -683,78 +681,347 @@ export default function BreedingDogs() {
                         </div>
                       </div>
 
-                      {/* Right Side - Parents Stacked */}
-                      <div className="space-y-6">
+                      {/* Generation 2 - Parents */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {/* Sire */}
-                        <div className="rounded-lg p-4" style={{backgroundColor: '#f8f9f0'}}>
-                          <h4 className="text-lg font-oswald font-normal mb-3 text-center" style={{color: '#11100f'}}>
-                            SIRE
-                          </h4>
-                          <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
-                            <div className="text-center">
-                              <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
-                                {pedigreeData.sire.image ? (
-                                  <button 
-                                    onClick={() => {
-                                      setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
-                                      setIsImagePopupOpen(true);
-                                    }}
-                                    className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                                    style={{color: '#6d761d'}}
-                                  >
-                                    {pedigreeData.sire.name}
-                                  </button>
-                                ) : pedigreeData.sire.name}
-                              </h5>
-
-                              <div className="flex flex-wrap justify-center gap-1">
-                                {pedigreeData.sire.titles.map((title: string, index: number) => (
-                                  <button 
-                                    key={index} 
-                                    onClick={() => {
-                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                      setIsTitlePopupOpen(true);
-                                    }}
-                                    className="px-2 py-1 text-xs font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                    style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
-                                  >
-                                    {title}
-                                  </button>
-                                ))}
-                              </div>
+                        <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
+                          <div className="text-center">
+                            <h5 className="font-oswald font-normal text-base mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.image ? (
+                                <button 
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{color: '#6d761d'}}
+                                >
+                                  {pedigreeData.sire.name}
+                                </button>
+                              ) : pedigreeData.sire.name}
+                            </h5>
+                            <div className="flex flex-wrap justify-center gap-1">
+                              {pedigreeData.sire.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index} 
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1.5 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
                             </div>
                           </div>
                         </div>
-
                         {/* Dam */}
-                        <div className="rounded-lg p-4" style={{backgroundColor: '#faf9f2'}}>
-                          <h4 className="text-lg font-oswald font-normal mb-3 text-center" style={{color: '#11100f'}}>
-                            DAM
-                          </h4>
-                          <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#6d761d'}}>
-                            <div className="text-center">
-                              <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
-                                {pedigreeData.dam.name}
-                              </h5>
-
-                              <div className="flex flex-wrap justify-center gap-1">
-                                {pedigreeData.dam.titles.map((title: string, index: number) => (
-                                  <button 
-                                    key={index} 
-                                    onClick={() => {
-                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                      setIsTitlePopupOpen(true);
-                                    }}
-                                    className="px-2 py-1 text-xs font-montserrat font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                    style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
-                                  >
-                                    {title}
-                                  </button>
-                                ))}
-                              </div>
+                        <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
+                          <div className="text-center">
+                            <h5 className="font-oswald font-normal text-base mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.image ? (
+                                <button 
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{color: '#6d761d'}}
+                                >
+                                  {pedigreeData.dam.name}
+                                </button>
+                              ) : pedigreeData.dam.name}
+                            </h5>
+                            <div className="flex flex-wrap justify-center gap-1">
+                              {pedigreeData.dam.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index} 
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1.5 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
                             </div>
                           </div>
                         </div>
+                      </div>
+
+                      {/* Generation 3 - Grandparents */}
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        {/* Sire's Sire */}
+                        <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.sire.sire.name}
+                          </h6>
+                          <div className="flex flex-wrap gap-1">
+                            {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        {/* Sire's Dam */}
+                        <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.sire.dam.name}
+                          </h6>
+                          <div className="flex flex-wrap gap-1">
+                            {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        {/* Dam's Sire */}
+                        <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.dam.sire.name}
+                          </h6>
+                          <div className="flex flex-wrap gap-1">
+                            {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        {/* Dam's Dam */}
+                        <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.dam.dam.name}
+                          </h6>
+                          <div className="flex flex-wrap gap-1">
+                            {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Generation 4 - Great-Grandparents */}
+                      <div className="grid grid-cols-4 md:grid-cols-8 gap-2">
+                        {/* Sire's Sire's Sire */}
+                        {pedigreeData.sire.sire.sire && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.sire.sire.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.sire.sire.sire.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {/* Sire's Sire's Dam */}
+                        {pedigreeData.sire.sire.dam && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.sire.dam.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.sire.sire.dam.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {/* Continue for all 8 great-grandparents... */}
+                        {pedigreeData.sire.dam.sire && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.dam.sire.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.sire.dam.sire.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {pedigreeData.sire.dam.dam && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.sire.dam.dam.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.sire.dam.dam.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.sire.sire && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.sire.sire.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.dam.sire.sire.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.sire.dam && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.sire.dam.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.dam.sire.dam.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.dam.sire && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.dam.sire.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.dam.dam.sire.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.dam.dam && (
+                          <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                              {pedigreeData.dam.dam.dam.name}
+                            </h6>
+                            <div className="flex flex-wrap gap-0.5">
+                              {pedigreeData.dam.dam.dam.titles.map((title: string, index: number) => (
+                                <button 
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                    setIsTitlePopupOpen(true);
+                                  }}
+                                  className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{backgroundColor: '#c5c5c5', color: '#fefefe'}}
+                                >
+                                  {title}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
 

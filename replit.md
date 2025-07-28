@@ -169,6 +169,8 @@ Preferred communication style: Simple, everyday language.
   - Extended both sire (Bosco) and dam (Hannah) lines to show 5th generation ancestry
   - Enhanced genealogical depth with Thunder's lineage, Loretta's lineage, and Hannah's complete ancestry
   - Maintained authentic bloodline structure while providing comprehensive breeding history
+  - Redesigned pedigree popup display to show complete 5-generation family tree visualization
+  - Created responsive grid layout scaling from prominent subject display to compact great-great-grandparent cards
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
