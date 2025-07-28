@@ -263,17 +263,17 @@ export default function Puppies() {
       "Grizzly & Guinevere": {
         sire: {
           name: "Grizzly",
-          registration: "SR54321987",
+          registration: "SS32814306",
           titles: ["CH"],
           sire: {
-            name: "Shalimar's The Animator",
-            registration: "SR76543210",
-            titles: ["2016 Westminster BOB", "CH", "GCH"]
+            name: "Greestone Chocolate At Shadowhna",
+            registration: "SR05670",
+            titles: ["CH", "LT"]
           },
           dam: {
-            name: "Grizzly's Dam",
-            registration: "SR65432198",
-            titles: ["CH"]
+            name: "Endless Mt Hannah",
+            registration: "SS28201",
+            titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"]
           }
         },
         dam: {
@@ -533,7 +533,7 @@ export default function Puppies() {
                     </>
                   )
                 : litter.name === "Grizzly & Guinevere"
-                ? "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
+                ? "Champion bloodlines with exceptional hunting and field titles from Greestone Chocolate At Shadowhna and Endless Mt Hannah"
                 : litter.name === "Holden & Alola"
                 ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
                 : litter.name === "Boo Radley & Queen Boudica"

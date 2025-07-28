@@ -19,18 +19,18 @@ export default function BreedingDogs() {
     const pedigrees: { [key: string]: any } = {
       "Grizzly": {
         name: "Grizzly",
-        formalName: "Endless Mt. Labrador Grizzly at On The Bluff",
-        registration: "SR54321987",
+        formalName: "Endless Mt Labrador Grizzly Bear At On The Bluff",
+        registration: "SS32814306",
         titles: ["CH"],
         sire: {
-          name: "Shalimar's The Animator",
-          registration: "SR76543210",
-          titles: ["2016 Westminster BOB", "CH", "GCH"]
+          name: "Greestone Chocolate At Shadowhna",
+          registration: "SR05670",
+          titles: ["CH", "LT"]
         },
         dam: {
-          name: "Grizzly's Dam",
-          registration: "SR65432198",
-          titles: ["CH"]
+          name: "Endless Mt Hannah",
+          registration: "SS28201",
+          titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"]
         }
       },
       "Harper Lee": {
@@ -126,7 +126,7 @@ export default function BreedingDogs() {
       color: "Chocolate",
       age: "Active Stud",
       image: grizzlyImage,
-      description: "Handsome chocolate male with strong build and confident personality. Produces beautiful chocolate puppies with excellent temperaments.",
+      description: "Handsome chocolate male from Endless Mt Labrador with champion and field title bloodlines. Produces beautiful chocolate puppies with excellent temperaments and natural hunting abilities.",
     },
   ];
 
@@ -383,10 +383,11 @@ export default function BreedingDogs() {
                         {selectedDog.name === "Grizzly" && (
                           <div className="space-y-2">
                             <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
-                              Direct descendant of <strong>Shalimar's The Animator</strong>, winner of the 2016 Westminster Dog Show Best of Breed
+                              Son of <strong>Greestone Chocolate At Shadowhna</strong> and <strong>Endless Mt Hannah</strong>, 
+                              featuring champion and hunting field titles including JH, SHR, and LIT designations
                             </p>
                             <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
-                              Westminster Champion Line
+                              Champion & Field Title Line
                             </span>
                           </div>
                         )}
