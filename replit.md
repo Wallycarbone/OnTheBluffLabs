@@ -132,7 +132,22 @@ Preferred communication style: Simple, everyday language.
 - Database integration with PostgreSQL via Neon
 - Working authentication system confirmed functional
 
-## Recent Changes (July 26, 2025)
+## Recent Changes (July 28, 2025)
+- ✅ **PEDIGREE SYSTEM EXPANSION**: Extended pedigree display from 3 to 4 generations
+  - Added great-grandparent information to all breeding dogs (Moon, Grizzly, Harper Lee, Foxxy, Nora, Guinevere)
+  - Extended all litter pedigrees to include 4th generation ancestry
+  - Maintained authentic bloodline information while providing deeper genealogical detail
+  - Updated both individual dog pedigrees (breeding-dogs.tsx) and litter pedigrees (puppies.tsx)
+- ✅ **DATA ACCURACY CORRECTIONS**: Updated Grizzly's pedigree information
+  - Corrected Grizzly's sire name to "Greenstone Chocoholic at Loretta" throughout all references
+  - Enhanced Grizzly's bloodline descriptions with authentic field and hunting titles
+  - Maintained champion and field title designations (JH, SHR, LIT) for breeding integrity
+- ✅ **PRIVACY COMPLIANCE**: Removed all pedigree registration numbers from display
+  - Eliminated AKC registration numbers from public pedigree displays
+  - Maintained data structure integrity while ensuring privacy compliance
+  - Preserved authentic titles and bloodline information for breeding transparency
+
+## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
   - Created `fix-deployment.js` script to move files from `dist/public/` to `dist/`
   - Updated `simple-express-server.js` to serve from correct `dist/` directory

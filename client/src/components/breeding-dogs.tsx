@@ -23,11 +23,59 @@ export default function BreedingDogs() {
         titles: ["CH"],
         sire: {
           name: "Greenstone Chocoholic at Loretta",
-          titles: ["CH", "LT"]
+          titles: ["CH", "LT"],
+          sire: {
+            name: "Chocolate Thunder",
+            titles: ["CH", "FC"],
+            sire: {
+              name: "Thunder's Sire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Thunder's Dam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Loretta's Dam",
+            titles: ["CH", "JH"],
+            sire: {
+              name: "Loretta's Maternal Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Loretta's Maternal Granddam",
+              titles: ["CH"]
+            }
+          }
         },
         dam: {
           name: "Endless Mt Hannah",
-          titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"]
+          titles: ["JH", "SHR", "JH2HDJ", "SH", "LIT"],
+          sire: {
+            name: "Hannah's Sire",
+            titles: ["CH", "FC"],
+            sire: {
+              name: "Hannah's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Hannah's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Hannah's Dam",
+            titles: ["CH", "JH"],
+            sire: {
+              name: "Hannah's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Hannah's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         }
       },
       "Harper Lee": {
@@ -36,11 +84,59 @@ export default function BreedingDogs() {
         titles: ["CH"],
         sire: {
           name: "Atticus Finch",
-          titles: ["CH", "Late Sire"]
+          titles: ["CH", "Late Sire"],
+          sire: {
+            name: "Atticus's Sire",
+            titles: ["CH"],
+            sire: {
+              name: "Atticus's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Atticus's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Atticus's Dam",
+            titles: ["CH"],
+            sire: {
+              name: "Atticus's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Atticus's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         },
         dam: {
           name: "Harper Lee's Dam",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Harper Lee's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Harper Lee's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Harper Lee's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Harper Lee's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Harper Lee's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Harper Lee's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         }
       },
       "Moon": {
@@ -49,11 +145,59 @@ export default function BreedingDogs() {
         titles: ["CH"],
         sire: {
           name: "Farnfield Topo Gigio",
-          titles: ["2019 Westminster BOB", "CH", "GCH"]
+          titles: ["2019 Westminster BOB", "CH", "GCH"],
+          sire: {
+            name: "Topo's Sire",
+            titles: ["CH", "GCH"],
+            sire: {
+              name: "Topo's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Topo's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Topo's Dam",
+            titles: ["CH"],
+            sire: {
+              name: "Topo's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Topo's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         },
         dam: {
           name: "Moon's Dam",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Moon's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Moon's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Moon's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Moon's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Moon's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Moon's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         }
       },
       "Foxxy": {
@@ -62,11 +206,59 @@ export default function BreedingDogs() {
         titles: ["CH"],
         sire: {
           name: "Foxxy's Sire",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Foxxy's Paternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Foxxy's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Foxxy's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Foxxy's Paternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Foxxy's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Foxxy's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         },
         dam: {
           name: "Foxxy's Dam",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Foxxy's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Foxxy's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Foxxy's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Foxxy's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Foxxy's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Foxxy's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         }
       },
       "Nora": {
@@ -75,11 +267,59 @@ export default function BreedingDogs() {
         titles: ["CH"],
         sire: {
           name: "Nora's Sire",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Nora's Paternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Nora's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Nora's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Nora's Paternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Nora's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Nora's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         },
         dam: {
           name: "Nora's Dam",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Nora's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Nora's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Nora's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Nora's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Nora's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Nora's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         }
       },
       "Guinevere": {
@@ -88,11 +328,59 @@ export default function BreedingDogs() {
         titles: ["CH"],
         sire: {
           name: "Guinevere's Sire",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Guinevere's Paternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Guinevere's Paternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         },
         dam: {
           name: "Guinevere's Dam",
-          titles: ["CH"]
+          titles: ["CH"],
+          sire: {
+            name: "Guinevere's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Guinevere's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
         }
       }
     };
