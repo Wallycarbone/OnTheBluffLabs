@@ -579,7 +579,7 @@ export default function BreedingDogs() {
                                 <img 
                                   src={pedigreeData.image} 
                                   alt={pedigreeData.name}
-                                  className="w-24 h-24 object-cover rounded-full mx-auto border-3"
+                                  className="w-32 h-24 object-cover rounded-lg mx-auto border-2"
                                   style={{borderColor: '#6d761d'}}
                                 />
                               </div>
@@ -616,7 +616,8 @@ export default function BreedingDogs() {
                                   <img 
                                     src={pedigreeData.sire.image} 
                                     alt={pedigreeData.sire.name}
-                                    className="w-20 h-20 object-cover rounded-full mx-auto border-2 border-golden"
+                                    className="w-24 h-16 object-cover rounded-md mx-auto border-2"
+                                    style={{borderColor: '#8a8f28'}}
                                   />
                                 </div>
                               )}

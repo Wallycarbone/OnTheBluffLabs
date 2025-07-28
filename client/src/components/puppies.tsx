@@ -1253,7 +1253,7 @@ export default function Puppies() {
                                 <img 
                                   src={pedigreeData.sire.image} 
                                   alt={pedigreeData.sire.name}
-                                  className="w-16 h-16 object-cover rounded-full mx-auto border-2"
+                                  className="w-20 h-14 object-cover rounded-md mx-auto border-2"
                                   style={{borderColor: '#8a8f28'}}
                                 />
                               </div>
@@ -1280,7 +1280,7 @@ export default function Puppies() {
                                 <img 
                                   src={pedigreeData.sire.sire.image} 
                                   alt={pedigreeData.sire.sire.name}
-                                  className="w-12 h-12 object-cover rounded-full mx-auto border"
+                                  className="w-16 h-12 object-cover rounded-md mx-auto border"
                                   style={{borderColor: '#a5aa35'}}
                                 />
                               </div>
