@@ -24,7 +24,8 @@ export default function BreedingDogs() {
       "MX": "Master Agility Excellent",
       "JH": "Junior Hunter", 
       "SHR": "Senior Hunter Retriever",
-      "LIT": "Limited"
+      "LIT": "Limited",
+      "MBISS": "Multiple Best in Specialty Show"
     };
     return titleMap[abbreviation] || abbreviation;
   };
@@ -136,7 +137,7 @@ export default function BreedingDogs() {
           },
           dam: {
             name: "Shalimar's The Animator (\"Cyrus\")",
-            titles: ["CH", "JH"],
+            titles: ["MBISS"],
             image: cyrusImage,
             sire: {
               name: "Hannah's Maternal Great-Grandsire",

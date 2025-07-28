@@ -178,6 +178,8 @@ Preferred communication style: Simple, everyday language.
   - Maintained proper name formatting with formal name and quoted nickname
   - Integrated Cyrus image (cyrusHeadL (1)_1753736849722.png) into pedigree system
   - Added clickable image functionality for Cyrus in Hannah's maternal lineage
+  - Updated Cyrus's titles to "MBISS" (Multiple Best in Specialty Show) badge
+  - Added MBISS to title mapping system for educational popup functionality
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
