@@ -163,7 +163,7 @@ Preferred communication style: Simple, everyday language.
   - Integrated Hannah image (Hannah_1753736053468.png) into both breeding dog and litter pedigrees
   - Hannah (Endless Mt Hannah) now appears as clickable name with image popup in Grizzly's lineage
   - Enhanced visual storytelling with authentic dam portrait showing field training background
-  - Removed title badges for Hannah per user request for cleaner display
+  - Removed title badges for Hannah and Grizzly per user request for cleaner display
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

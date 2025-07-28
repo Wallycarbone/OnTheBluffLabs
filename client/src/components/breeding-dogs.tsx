@@ -38,7 +38,7 @@ export default function BreedingDogs() {
       "Grizzly": {
         name: "Grizzly",
         formalName: "Endless Mt Labrador Grizzly Bear At On The Bluff",
-        titles: ["CH"],
+        titles: [],
         image: grizzlyImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
