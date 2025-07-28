@@ -445,7 +445,7 @@ export default function Puppies() {
           name: "Grizzly",
           titles: ["CH"],
           sire: {
-            name: "Greenstone Chocoholic at Loretta",
+            name: "Bosco (Greenstone Chocoholic at Loretta)",
             titles: ["CH", "LT"],
             sire: {
               name: "Chocolate Thunder",
