@@ -296,24 +296,24 @@ export default function BreedingDogs() {
                       </div>
                     </div>
 
-                    {/* Parents */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {/* Sire */}
-                      <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0'}}>
-                        <h4 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
-                          SIRE
-                        </h4>
-                        <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
+                    {/* Pedigree Chart Layout */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                      {/* Left Side - Individual Dog */}
+                      <div className="flex items-center justify-center">
+                        <div className="bg-white rounded-lg p-6 border-3 shadow-lg w-full max-w-sm" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
-                            <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
-                              {pedigreeData.sire.name}
-                            </h5>
-                            <p className="text-sm font-source-sans text-gray-600 mb-2">
-                              {pedigreeData.sire.registration}
+                            <h4 className="text-2xl font-oswald font-normal mb-3" style={{color: '#11100f'}}>
+                              {pedigreeData.name}
+                            </h4>
+                            <p className="text-base font-source-sans italic mb-2 text-gray-700">
+                              {pedigreeData.formalName}
                             </p>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {pedigreeData.sire.titles.map((title: string, index: number) => (
-                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                            <p className="text-sm font-source-sans text-gray-600 mb-3">
+                              {pedigreeData.registration}
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-2">
+                              {pedigreeData.titles.map((title: string, index: number) => (
+                                <span key={index} className="px-3 py-1 text-sm font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
                                   {title}
                                 </span>
                               ))}
@@ -322,25 +322,52 @@ export default function BreedingDogs() {
                         </div>
                       </div>
 
-                      {/* Dam */}
-                      <div className="rounded-lg p-6" style={{backgroundColor: '#faf9f2'}}>
-                        <h4 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
-                          DAM
-                        </h4>
-                        <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#6d761d'}}>
-                          <div className="text-center">
-                            <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
-                              {pedigreeData.dam.name}
-                            </h5>
-                            <p className="text-sm font-source-sans text-gray-600 mb-2">
-                              {pedigreeData.dam.registration}
-                            </p>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {pedigreeData.dam.titles.map((title: string, index: number) => (
-                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
-                                  {title}
-                                </span>
-                              ))}
+                      {/* Right Side - Parents Stacked */}
+                      <div className="space-y-6">
+                        {/* Sire */}
+                        <div className="rounded-lg p-4" style={{backgroundColor: '#f8f9f0'}}>
+                          <h4 className="text-lg font-oswald font-normal mb-3 text-center" style={{color: '#11100f'}}>
+                            SIRE
+                          </h4>
+                          <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
+                            <div className="text-center">
+                              <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
+                                {pedigreeData.sire.name}
+                              </h5>
+                              <p className="text-sm font-source-sans text-gray-600 mb-2">
+                                {pedigreeData.sire.registration}
+                              </p>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {pedigreeData.sire.titles.map((title: string, index: number) => (
+                                  <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                    {title}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Dam */}
+                        <div className="rounded-lg p-4" style={{backgroundColor: '#faf9f2'}}>
+                          <h4 className="text-lg font-oswald font-normal mb-3 text-center" style={{color: '#11100f'}}>
+                            DAM
+                          </h4>
+                          <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#6d761d'}}>
+                            <div className="text-center">
+                              <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
+                                {pedigreeData.dam.name}
+                              </h5>
+                              <p className="text-sm font-source-sans text-gray-600 mb-2">
+                                {pedigreeData.dam.registration}
+                              </p>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {pedigreeData.dam.titles.map((title: string, index: number) => (
+                                  <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
+                                    {title}
+                                  </span>
+                                ))}
+                              </div>
                             </div>
                           </div>
                         </div>
