@@ -462,6 +462,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Greenstone Chocoholic at Loretta",
+      nickname: "Bosco",
       formalName: "Greenstone Chocoholic at Loretta",
       gender: "Male",
       color: "Chocolate",
@@ -493,7 +494,7 @@ export default function BreedingDogs() {
       <CardContent className="p-8">
         <div className="text-center mb-6">
           <h3 className="text-2xl font-oswald font-normal tracking-wide mb-3" style={{color: '#11100f'}}>
-            {dog.name}
+            {dog.nickname ? `${dog.nickname} (${dog.name})` : dog.name}
           </h3>
           <p className="text-warm-gray text-lg font-medium italic">
             {dog.formalName}
