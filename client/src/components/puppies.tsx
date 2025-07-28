@@ -698,13 +698,13 @@ export default function Puppies() {
                 return (
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Sire Side */}
-                    <div className="bg-blue-50 rounded-lg p-6">
+                    <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0'}}>
                       <h3 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
                         SIRE LINE
                       </h3>
                       <div className="space-y-4">
                         {/* Sire */}
-                        <div className="bg-white rounded-lg p-4 border-2 border-blue-200">
+                        <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
                           <div className="text-center">
                             <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
                               {pedigreeData.sire.name}
@@ -724,7 +724,7 @@ export default function Puppies() {
                         
                         {/* Sire's Parents */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                          <div className="bg-white rounded-lg p-3 border border-blue-100">
+                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.name}
                             </h5>
@@ -739,7 +739,7 @@ export default function Puppies() {
                               ))}
                             </div>
                           </div>
-                          <div className="bg-white rounded-lg p-3 border border-blue-100">
+                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.name}
                             </h5>
@@ -759,13 +759,13 @@ export default function Puppies() {
                     </div>
 
                     {/* Dam Side */}
-                    <div className="bg-pink-50 rounded-lg p-6">
+                    <div className="rounded-lg p-6" style={{backgroundColor: '#faf9f2'}}>
                       <h3 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
                         DAM LINE
                       </h3>
                       <div className="space-y-4">
                         {/* Dam */}
-                        <div className="bg-white rounded-lg p-4 border-2 border-pink-200">
+                        <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
                             <h4 className="font-oswald font-normal text-lg" style={{color: '#11100f'}}>
                               {pedigreeData.dam.name}
@@ -785,7 +785,7 @@ export default function Puppies() {
                         
                         {/* Dam's Parents */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                          <div className="bg-white rounded-lg p-3 border border-pink-100">
+                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#8a8f28'}}>
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.name}
                             </h5>
@@ -800,7 +800,7 @@ export default function Puppies() {
                               ))}
                             </div>
                           </div>
-                          <div className="bg-white rounded-lg p-3 border border-pink-100">
+                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#8a8f28'}}>
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.name}
                             </h5>

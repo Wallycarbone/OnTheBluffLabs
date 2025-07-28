@@ -275,7 +275,7 @@ export default function BreedingDogs() {
                 return (
                   <div className="space-y-6">
                     {/* Dog Information */}
-                    <div className="bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-6">
+                    <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0'}}>
                       <div className="text-center">
                         <h3 className="text-2xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
                           {pedigreeData.name}
@@ -299,11 +299,11 @@ export default function BreedingDogs() {
                     {/* Parents */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {/* Sire */}
-                      <div className="bg-blue-50 rounded-lg p-6">
+                      <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0'}}>
                         <h4 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
                           SIRE
                         </h4>
-                        <div className="bg-white rounded-lg p-4 border-2 border-blue-200">
+                        <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#8a8f28'}}>
                           <div className="text-center">
                             <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
                               {pedigreeData.sire.name}
@@ -323,11 +323,11 @@ export default function BreedingDogs() {
                       </div>
 
                       {/* Dam */}
-                      <div className="bg-pink-50 rounded-lg p-6">
+                      <div className="rounded-lg p-6" style={{backgroundColor: '#faf9f2'}}>
                         <h4 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
                           DAM
                         </h4>
-                        <div className="bg-white rounded-lg p-4 border-2 border-pink-200">
+                        <div className="bg-white rounded-lg p-4 border-2" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
                             <h5 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
                               {pedigreeData.dam.name}
