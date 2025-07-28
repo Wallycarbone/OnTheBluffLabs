@@ -266,7 +266,7 @@ export default function Puppies() {
           registration: "SS32814306",
           titles: ["CH"],
           sire: {
-            name: "Greestone Chocolate At Shadowhna",
+            name: "Greenstone Chocoholic at Loretta",
             registration: "SR05670",
             titles: ["CH", "LT"]
           },
@@ -533,7 +533,7 @@ export default function Puppies() {
                     </>
                   )
                 : litter.name === "Grizzly & Guinevere"
-                ? "Champion bloodlines with exceptional hunting and field titles from Greestone Chocolate At Shadowhna and Endless Mt Hannah"
+                ? "Champion bloodlines with exceptional hunting and field titles from Greenstone Chocoholic at Loretta and Endless Mt Hannah"
                 : litter.name === "Holden & Alola"
                 ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
                 : litter.name === "Boo Radley & Queen Boudica"

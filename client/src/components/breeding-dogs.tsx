@@ -23,7 +23,7 @@ export default function BreedingDogs() {
         registration: "SS32814306",
         titles: ["CH"],
         sire: {
-          name: "Greestone Chocolate At Shadowhna",
+          name: "Greenstone Chocoholic at Loretta",
           registration: "SR05670",
           titles: ["CH", "LT"]
         },
@@ -383,7 +383,7 @@ export default function BreedingDogs() {
                         {selectedDog.name === "Grizzly" && (
                           <div className="space-y-2">
                             <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
-                              Son of <strong>Greestone Chocolate At Shadowhna</strong> and <strong>Endless Mt Hannah</strong>, 
+                              Son of <strong>Greenstone Chocoholic at Loretta</strong> and <strong>Endless Mt Hannah</strong>, 
                               featuring champion and hunting field titles including JH, SHR, and LIT designations
                             </p>
                             <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
