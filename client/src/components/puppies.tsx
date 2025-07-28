@@ -469,29 +469,30 @@ export default function Puppies() {
             titles: ["CH", "MX"],
             image: boscoImage,
             sire: {
-              name: "Chocolate Thunder",
-              titles: ["CH", "FC"],
+              name: "Shalimar's The Animator (\"Cyrus\")",
+              titles: ["CH", "MBISS"],
+              image: cyrusImage,
               sire: {
-                name: "Thunder's Sire",
+                name: "Cyrus's Sire",
                 titles: ["CH"],
                 sire: {
-                  name: "Thunder's Paternal Great-Grandsire",
+                  name: "Cyrus's Paternal Great-Grandsire",
                   titles: ["CH"]
                 },
                 dam: {
-                  name: "Thunder's Paternal Great-Granddam",
+                  name: "Cyrus's Paternal Great-Granddam",
                   titles: ["CH"]
                 }
               },
               dam: {
-                name: "Thunder's Dam",
+                name: "Cyrus's Dam",
                 titles: ["CH"],
                 sire: {
-                  name: "Thunder's Maternal Great-Grandsire",
+                  name: "Cyrus's Maternal Great-Grandsire",
                   titles: ["CH"]
                 },
                 dam: {
-                  name: "Thunder's Maternal Great-Granddam",
+                  name: "Cyrus's Maternal Great-Granddam",
                   titles: ["CH"]
                 }
               }
@@ -558,9 +559,8 @@ export default function Puppies() {
               }
             },
             dam: {
-              name: "Shalimar's The Animator (\"Cyrus\")",
-              titles: ["CH", "MBISS"],
-              image: cyrusImage,
+              name: "Hannah's Dam",
+              titles: ["CH", "JH"],
               sire: {
                 name: "Hannah's Maternal Great-Grandsire",
                 titles: ["CH"],

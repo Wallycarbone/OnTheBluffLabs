@@ -172,14 +172,13 @@ Preferred communication style: Simple, everyday language.
   - Redesigned pedigree popup display to show complete 5-generation family tree visualization
   - Created responsive grid layout scaling from prominent parent cards to compact great-great-grandparent cards
   - Removed redundant subject card from pedigree display for cleaner genealogy focus
-- ✅ **AUTHENTIC PEDIGREE DATA**: Updated Hannah's dam with authentic breeding information
-  - Changed Hannah's mother from generic placeholder to "Shalimar's The Animator (\"Cyrus\")"
-  - Applied authentic dam name across both individual and litter pedigree displays
-  - Maintained proper name formatting with formal name and quoted nickname
-  - Integrated Cyrus image (cyrusHeadL (1)_1753736849722.png) into pedigree system
-  - Added clickable image functionality for Cyrus in Hannah's maternal lineage
-  - Updated Cyrus's titles to include "CH" (Champion) and "MBISS" (Multiple Best in Specialty Show) badges
-  - Added MBISS to title mapping system for educational popup functionality
+- ✅ **PEDIGREE RESTRUCTURE**: Moved Cyrus from Hannah's dam to Bosco's sire position
+  - Relocated "Shalimar's The Animator (\"Cyrus\")" from Hannah's maternal lineage to Bosco's paternal lineage
+  - Updated pedigree structure so Cyrus appears as Bosco's father rather than Hannah's mother
+  - Maintained authentic breeding information with "CH" and "MBISS" titles
+  - Preserved clickable image functionality for Cyrus in new position
+  - Applied consistent restructuring across both individual and litter pedigree displays
+  - Replaced previous "Chocolate Thunder" placeholder with authentic Cyrus lineage data
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
