@@ -529,7 +529,7 @@ export default function Puppies() {
             }
           },
           dam: {
-            name: "Endless Mt Hannah",
+            name: "Endless Mountain's Hannah",
             titles: [],
             image: hannahImage,
             sire: {
