@@ -180,6 +180,10 @@ Preferred communication style: Simple, everyday language.
   - Applied consistent restructuring across both individual and litter pedigree displays
   - Replaced previous "Chocolate Thunder" placeholder with authentic Cyrus lineage data
   - Updated Cyrus image to use latest portrait (cyrusHeadL (1)_1753810280559.png)
+- ✅ **BOSCO PEDIGREE UPDATE**: Updated Bosco's dam information with authentic breeding data
+  - Changed "Loretta's Dam" to "Greenstone's Special Blend ('Simmer')" in both breeding-dogs.tsx and puppies.tsx
+  - Maintained CH and JH title designations for Simmer
+  - Enhanced Bosco's complete lineage with authentic maternal bloodline information
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

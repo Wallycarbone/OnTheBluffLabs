@@ -498,7 +498,7 @@ export default function Puppies() {
               }
             },
             dam: {
-              name: "Loretta's Dam",
+              name: "Greenstone's Special Blend (\"Simmer\")",
               titles: ["CH", "JH"],
               sire: {
                 name: "Loretta's Maternal Grandsire",
