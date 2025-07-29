@@ -867,7 +867,7 @@ export default function BreedingDogs() {
                             <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
                               Son of <strong>Greenstone Chocoholic at Loretta ("Bosco")</strong> and <strong>Endless Mountain's Hannah</strong>, 
                               featuring exceptional bloodlines with multiple Grand Champions. Notable ancestors include 
-                              <strong>Shalimar's The Animator ("Cyrus")</strong> and <strong>Bosco</strong> with outstanding breeding achievements.
+                              <strong>Shalimar's The Animator ("Cyrus")</strong> with GCH, CH, and MBISS titles, and <strong>Bosco</strong> brings Champion and Master Agility excellence.
                             </p>
                             <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
                               Grand Champion & Multi-Title Line
