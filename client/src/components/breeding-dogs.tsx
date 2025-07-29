@@ -10,6 +10,20 @@ import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";
 import brodyImage from "@assets/Brody_1753811205545.jpg?url";
+// Puppy images
+import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
+import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
+import moonAloha from "@assets/Ms. Aloha_1753621328202.png";
+import moonSunflower from "@assets/Ms. Sunflower_1753621328202.png";
+import moonSuperstar from "@assets/Mr. Superstar_1753621328202.png";
+import moonPenguin from "@assets/Mr. Penguin Party_1753621328202.png";
+import moonAlpine from "@assets/Ms. Alpine Glow_1753621328203.png";
+import holdenSummer from "@assets/Summer (Butterfly 5x4)_1753623366075.png";
+import holdenFern from "@assets/Fern (Apple Pie 5x4)_1753623366073.png";
+import holdenWillow from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
+import grizzlyPearl from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
+import grizzlyHolly from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
+import grizzlyHazel from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -18,6 +32,8 @@ export default function BreedingDogs() {
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
   const [isTitlePopupOpen, setIsTitlePopupOpen] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState<{abbreviation: string, fullName: string} | null>(null);
+  const [isPuppyGalleryOpen, setIsPuppyGalleryOpen] = useState(false);
+  const [selectedDogForPuppies, setSelectedDogForPuppies] = useState<any>(null);
 
   const getTitleFullName = (abbreviation: string): string => {
     const titleMap: { [key: string]: string } = {
@@ -36,6 +52,67 @@ export default function BreedingDogs() {
   const openPedigreePopup = (dog: any) => {
     setSelectedDog(dog);
     setIsPedigreePopupOpen(true);
+  };
+
+  const openPuppyGallery = (dog: any) => {
+    setSelectedDogForPuppies(dog);
+    setIsPuppyGalleryOpen(true);
+  };
+
+  const getPuppyGalleryData = (dogName: string) => {
+    const puppyData: { [key: string]: any } = {
+      "Grizzly": {
+        name: "Grizzly",
+        litters: [
+          {
+            name: "Grizzly & Guinevere",
+            dam: "Guinevere",
+            birthDate: "April 5, 2025",
+            puppies: [
+              { name: "Pearl (Turtles)", image: grizzlyPearl },
+              { name: "Holly (Puppy Love)", image: grizzlyHolly },
+              { name: "Hazel (Peacock)", image: grizzlyHazel }
+            ]
+          }
+        ]
+      },
+      "Moon": {
+        name: "Moon", 
+        litters: [
+          {
+            name: "Moon & Foxxy",
+            dam: "Foxxy",
+            birthDate: "June 5, 2025",
+            puppies: [
+              { name: "Mr. Peacock", image: moonPeacock },
+              { name: "Mr. Turtles", image: moonTurtles },
+              { name: "Ms. Aloha", image: moonAloha },
+              { name: "Ms. Sunflower", image: moonSunflower },
+              { name: "Mr. Superstar", image: moonSuperstar },
+              { name: "Mr. Penguin Party", image: moonPenguin },
+              { name: "Ms. Alpine Glow", image: moonAlpine }
+            ]
+          }
+        ]
+      },
+      "Holden": {
+        name: "Holden",
+        litters: [
+          {
+            name: "Holden & Alola", 
+            dam: "Alola",
+            birthDate: "March 15, 2025",
+            puppies: [
+              { name: "Summer (Butterfly)", image: holdenSummer },
+              { name: "Fern (Apple Pie)", image: holdenFern },
+              { name: "Willow (Seaglass)", image: holdenWillow }
+            ]
+          }
+        ]
+      }
+    };
+    
+    return puppyData[dogName] || null;
   };
 
   const getDogPedigreeData = (dogName: string) => {
@@ -491,7 +568,28 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: grizzlyImage,
       description: "Handsome chocolate male from Endless Mt Labrador with champion and field title bloodlines. Produces beautiful chocolate puppies with excellent temperaments and natural hunting abilities.",
+      hasPuppies: true
     },
+    {
+      name: "Moon",
+      formalName: "On The Bluff Moon",
+      gender: "Male", 
+      color: "Yellow",
+      age: "Active Stud",
+      image: grizzlyImage, // Using placeholder, would need actual Moon image
+      description: "Exceptional yellow male with outstanding temperament and conformation. Produces beautiful yellow puppies with gentle dispositions.",
+      hasPuppies: true
+    },
+    {
+      name: "Holden",
+      formalName: "On The Bluff Holden",
+      gender: "Male",
+      color: "Yellow", 
+      age: "Previous Stud",
+      image: grizzlyImage, // Using placeholder, would need actual Holden image
+      description: "Former breeding sire with excellent bloodlines. Father to beautiful chocolate females.",
+      hasPuppies: true
+    }
   ];
 
   const dames = [
@@ -575,12 +673,32 @@ export default function BreedingDogs() {
             </div>
           </div>
           
-          <Button 
-            onClick={() => openPedigreePopup(dog)}
-            className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors"
-          >
-            View Full Pedigree
-          </Button>
+          <div className="space-y-3">
+            <Button 
+              onClick={() => openPedigreePopup(dog)}
+              className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded-lg transition-colors"
+            >
+              View Full Pedigree
+            </Button>
+            
+            {dog.hasPuppies && (
+              <Button 
+                onClick={() => openPuppyGallery(dog)}
+                className="w-full font-montserrat font-medium py-3 rounded-lg transition-colors border-2"
+                style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'transparent'}}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#6d761d';
+                  e.currentTarget.style.color = '#fefefe';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.color = '#6d761d';
+                }}
+              >
+                Puppies by {dog.name}
+              </Button>
+            )}
+          </div>
         </div>
       </CardContent>
     </Card>
@@ -939,6 +1057,62 @@ export default function BreedingDogs() {
               <p id="title-description" className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
                 {selectedTitle.fullName}
               </p>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Puppy Gallery Popup */}
+      <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
+        <DialogContent className="max-w-5xl max-h-[90vh] overflow-auto" aria-describedby="puppy-gallery-description">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              Puppies by {selectedDogForPuppies?.name}
+            </DialogTitle>
+          </DialogHeader>
+          {selectedDogForPuppies && (
+            <div className="space-y-8">
+              <p id="puppy-gallery-description" className="text-sm font-source-sans text-gray-600 text-center">
+                Previous litters and puppies sired by {selectedDogForPuppies.name}
+              </p>
+              {(() => {
+                const puppyData = getPuppyGalleryData(selectedDogForPuppies.name);
+                if (!puppyData) return <p>No puppy information available</p>;
+                
+                return puppyData.litters.map((litter: any, litterIndex: number) => (
+                  <div key={litterIndex} className="space-y-6">
+                    {/* Litter Header */}
+                    <div className="text-center space-y-2">
+                      <h3 className="text-xl font-oswald font-normal" style={{color: '#11100f'}}>
+                        {litter.name}
+                      </h3>
+                      <p className="text-sm font-source-sans text-gray-600">
+                        Born: {litter.birthDate} • Dam: {litter.dam}
+                      </p>
+                    </div>
+                    
+                    {/* Puppy Grid */}
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                      {litter.puppies.map((puppy: any, puppyIndex: number) => (
+                        <div key={puppyIndex} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                          <div className="aspect-[4/5] overflow-hidden">
+                            <img 
+                              src={puppy.image} 
+                              alt={puppy.name}
+                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                          <div className="p-4 text-center">
+                            <h4 className="font-montserrat font-medium text-sm" style={{color: '#11100f'}}>
+                              {puppy.name}
+                            </h4>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ));
+              })()}
             </div>
           )}
         </DialogContent>
