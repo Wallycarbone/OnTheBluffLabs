@@ -9,6 +9,7 @@ import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/cyrusHeadL (1)_1753810280559.png?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";
+import brodyImage from "@assets/Brody_1753811205545.jpg?url";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -113,6 +114,7 @@ export default function BreedingDogs() {
           sire: {
             name: "Endless Mountain's Second Son (\"Brody\")",
             titles: ["CH", "FC"],
+            image: brodyImage,
             sire: {
               name: "Hannah's Paternal Great-Grandsire",
               titles: ["CH"],
@@ -798,7 +800,18 @@ export default function BreedingDogs() {
                         {/* Dam's Sire */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
                           <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.dam.sire.name}
+                            {pedigreeData.dam.sire.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.dam.sire.name}
+                              </button>
+                            ) : pedigreeData.dam.sire.name}
                           </h6>
                           <div className="flex flex-wrap gap-1">
                             {pedigreeData.dam.sire.titles.map((title: string, index: number) => (

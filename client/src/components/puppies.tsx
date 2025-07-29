@@ -17,6 +17,7 @@ import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/cyrusHeadL (1)_1753810280559.png?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";
+import brodyImage from "@assets/Brody_1753811205545.jpg?url";
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
 import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
 import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
@@ -535,6 +536,7 @@ export default function Puppies() {
             sire: {
               name: "Endless Mountain's Second Son (\"Brody\")",
               titles: ["CH", "FC"],
+              image: brodyImage,
               sire: {
                 name: "Hannah's Paternal Great-Grandsire",
                 titles: ["CH"],
@@ -1465,7 +1467,18 @@ export default function Puppies() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#8a8f28'}}>
                             <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
-                              {pedigreeData.dam.sire.name}
+                              {pedigreeData.dam.sire.image ? (
+                                <button 
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{color: '#6d761d'}}
+                                >
+                                  {pedigreeData.dam.sire.name}
+                                </button>
+                              ) : pedigreeData.dam.sire.name}
                             </h5>
 
                             <div className="flex flex-wrap gap-1">
