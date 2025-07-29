@@ -189,6 +189,8 @@ Preferred communication style: Simple, everyday language.
   - Simmer now appears as clickable name with image popup in Bosco's dam lineage
   - Enhanced Bosco's complete maternal bloodline with authentic portrait
   - Displays CH title for Simmer's breeding achievements (JH badge removed per user request)
+  - Enhanced Generation 3 pedigree rendering to support clickable names for dogs with images
+  - Simmer's name now appears as underlined clickable link that opens her portrait in popup dialog
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

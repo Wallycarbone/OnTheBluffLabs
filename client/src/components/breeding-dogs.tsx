@@ -766,7 +766,18 @@ export default function BreedingDogs() {
                         {/* Sire's Dam */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
                           <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.sire.dam.name}
+                            {pedigreeData.sire.dam.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.sire.dam.name}
+                              </button>
+                            ) : pedigreeData.sire.dam.name}
                           </h6>
                           <div className="flex flex-wrap gap-1">
                             {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
