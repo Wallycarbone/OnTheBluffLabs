@@ -1057,11 +1057,13 @@ export default function BreedingDogs() {
                         {selectedDog.name === "Grizzly" && (
                           <div className="space-y-2">
                             <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
-                              Son of <strong>Greenstone Chocoholic at Loretta</strong> and <strong>Endless Mt Hannah</strong>, 
-                              featuring champion and hunting field titles including JH, SHR, and LIT designations
+                              Son of <strong>Greenstone Chocoholic at Loretta ("Bosco")</strong> and <strong>Endless Mountain's Hannah</strong>, 
+                              featuring exceptional bloodlines with multiple Grand Champions. Notable ancestors include 
+                              <strong> Shalimar's The Animator ("Cyrus")</strong> with GCH, CH, and MBISS titles - the most accomplished dog in this lineage.
+                              <strong> Bosco</strong> brings Champion and Master Agility excellence with CH and MX achievements.
                             </p>
                             <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
-                              Champion & Field Title Line
+                              Grand Champion & Multi-Title Line
                             </span>
                           </div>
                         )}
