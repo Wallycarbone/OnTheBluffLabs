@@ -15,7 +15,7 @@ import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
 import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
-import cyrusImage from "@assets/cyrusHeadL (1)_1753737220160.png?url";
+import cyrusImage from "@assets/cyrusHeadL (1)_1753810280559.png?url";
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
 import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
 import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
