@@ -78,7 +78,7 @@ export default function BreedingDogs() {
           },
           dam: {
             name: "Greenstone's Special Blend (\"Simmer\")",
-            titles: ["CH", "JH"],
+            titles: ["CH"],
             image: simmerImage,
             sire: {
               name: "Loretta's Maternal Grandsire",

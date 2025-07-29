@@ -500,7 +500,7 @@ export default function Puppies() {
             },
             dam: {
               name: "Greenstone's Special Blend (\"Simmer\")",
-              titles: ["CH", "JH"],
+              titles: ["CH"],
               image: simmerImage,
               sire: {
                 name: "Loretta's Maternal Grandsire",
