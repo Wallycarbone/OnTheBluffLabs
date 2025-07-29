@@ -7,7 +7,7 @@ import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
 import boscoImage from "@assets/Bosco_1753735317643.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
-import cyrusImage from "@assets/cyrusHeadL (1)_1753737220160.png?url";
+import cyrusImage from "@assets/cyrusHeadL (1)_1753810280559.png?url";
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -732,7 +732,18 @@ export default function BreedingDogs() {
                         {/* Sire's Sire */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
                           <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.sire.sire.name}
+                            {pedigreeData.sire.sire.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.sire.sire.name}
+                              </button>
+                            ) : pedigreeData.sire.sire.name}
                           </h6>
                           <div className="flex flex-wrap gap-1">
                             {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
@@ -821,7 +832,18 @@ export default function BreedingDogs() {
                         {pedigreeData.sire.sire.sire && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
                             <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
-                              {pedigreeData.sire.sire.sire.name}
+                              {pedigreeData.sire.sire.sire.image ? (
+                                <button 
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.sire.sire.sire.image, name: pedigreeData.sire.sire.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                  style={{color: '#6d761d'}}
+                                >
+                                  {pedigreeData.sire.sire.sire.name}
+                                </button>
+                              ) : pedigreeData.sire.sire.sire.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
                               {pedigreeData.sire.sire.sire.titles.map((title: string, index: number) => (
