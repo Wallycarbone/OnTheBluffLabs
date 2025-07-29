@@ -535,7 +535,7 @@ export default function Puppies() {
             image: hannahImage,
             sire: {
               name: "Endless Mountain's Second Son (\"Brody\")",
-              titles: ["CH", "FC"],
+              titles: [],
               image: brodyImage,
               sire: {
                 name: "Hannah's Paternal Great-Grandsire",

@@ -203,6 +203,7 @@ Preferred communication style: Simple, everyday language.
   - Brody now appears as clickable name with image popup in Hannah's sire lineage
   - Enhanced Hannah's complete paternal bloodline with authentic portrait
   - Added clickable functionality for Generation 3 Dam's Sire position in pedigree display
+  - Removed CH and FC title badges from Brody per user request for cleaner display
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
