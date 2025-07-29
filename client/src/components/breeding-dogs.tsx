@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
-import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
+import grizzlyImage from "@assets/Y30A9231grizzly_1753818390893.jpg?url";
 import boscoImage from "@assets/bosco1_1753815440343.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg?url";

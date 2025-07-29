@@ -238,6 +238,16 @@ Preferred communication style: Simple, everyday language.
   - Simplified pedigree view to show 3 generations instead of 4 for cleaner presentation
   - Updated footer text to reflect "3-generation lineage" information
   - Enhanced readability and focus on most relevant ancestral information
+- ✅ **GRIZZLY IMAGE UPDATE**: Updated Grizzly's portrait to new winter photo
+  - Changed from Y30A9312grizzly_1753041221558.jpg to Y30A9231grizzly_1753818390893.jpg in both components
+  - Updated to professional winter portrait showing Grizzly in snowy field setting
+  - Enhanced clickable image functionality with authentic outdoor photograph
+- ✅ **PEDIGREE SECTION REFINEMENTS**: Enhanced pedigree display elements
+  - Changed "Notable Bloodlines" section title to "Notable Ancestors"
+  - Updated Grizzly's formal name to "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")"
+  - Simplified Notable Ancestors description for cleaner presentation
+  - Removed bottom description text from pedigree popup for streamlined appearance
+  - Removed "Individual Pedigree" text from dialog headers
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
