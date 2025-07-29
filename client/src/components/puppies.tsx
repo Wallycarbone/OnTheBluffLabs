@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Star, X, ChevronLeft, ChevronRight } from "lucide-react";
 import moonFoxxyPuppies from "@assets/Copy of Gallery Image - Landscape (23)_1752527442943.png";
 import moonFoxxyPuppies2 from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
-import grizzlyImage from "@assets/Y30A9231grizzly_1753818390893.jpg";
+import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
 import moonImage2 from "@assets/Moon 5x4_1753565341801.png";
