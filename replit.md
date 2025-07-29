@@ -221,6 +221,10 @@ Preferred communication style: Simple, everyday language.
   - Changed from Bosco_1753735317643.avif to bosco1_1753815440343.avif in both components
   - Updated image imports to use the latest Bosco portrait for pedigree displays
   - Maintained clickable image functionality for Bosco in Grizzly's lineage
+- ✅ **CYRUS IMAGE UPDATE**: Updated Cyrus's photo to new full-body portrait
+  - Changed from cyrusHeadL (1)_1753810280559.png to CyrusBodyL (1)_1753815517271.jpg in both components
+  - Updated Shalimar's The Animator image to show complete conformation view
+  - Enhanced visual presentation with professional full-body portrait in pedigree displays
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
