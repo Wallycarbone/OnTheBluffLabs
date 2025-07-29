@@ -666,16 +666,7 @@ export default function BreedingDogs() {
                 </p>
               </div>
             </div>
-            <div className="mt-3 flex flex-wrap justify-center gap-1">
-              <span className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
-                CH
-              </span>
-              {dog.name === "Grizzly" && (
-                <span className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
-                  Westminster Line
-                </span>
-              )}
-            </div>
+
           </div>
           
           <div className="space-y-3">
