@@ -900,12 +900,7 @@ export default function BreedingDogs() {
                 );
               })()}
               
-              <div className="text-center pt-4 border-t">
-                <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                  This pedigree shows the 3-generation lineage for {selectedDog?.name}, 
-                  highlighting the exceptional breeding quality and champion bloodlines.
-                </p>
-              </div>
+
             </div>
           )}
         </DialogContent>
