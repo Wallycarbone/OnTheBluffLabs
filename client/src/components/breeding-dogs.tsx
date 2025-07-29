@@ -657,7 +657,12 @@ export default function BreedingDogs() {
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
                 <p className="font-source-sans" style={{color: '#11100f'}}>
-                  {`${dog.name}'s Dam`}
+                  {dog.name === "Grizzly" 
+                    ? "Endless Mountain's Hannah"
+                    : dog.name === "Harper Lee"
+                    ? "Harper Lee's Dam"
+                    : `${dog.name}'s Dam`
+                  }
                 </p>
               </div>
             </div>
