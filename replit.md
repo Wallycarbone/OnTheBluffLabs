@@ -208,6 +208,7 @@ Preferred communication style: Simple, everyday language.
   - Changed "Hannah's Dam" to "Endless Mountain's Georgia On My Mind" in both components
   - Maintained CH and JH title designations for Georgia's achievements
   - Enhanced Hannah's complete maternal lineage with authentic bloodline information
+  - Removed CH and JH title badges from Georgia per user request for cleaner display
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
