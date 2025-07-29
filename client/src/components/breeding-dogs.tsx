@@ -779,6 +779,19 @@ export default function BreedingDogs() {
                         {/* Sire */}
                         <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
                           <div className="text-center">
+                            {pedigreeData.sire.image && (
+                              <div className="mb-3">
+                                <img 
+                                  src={pedigreeData.sire.image} 
+                                  alt={pedigreeData.sire.name}
+                                  className="w-16 h-16 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                />
+                              </div>
+                            )}
                             <h5 className="font-oswald font-normal text-base mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.sire.image ? (
                                 <button 
@@ -813,6 +826,19 @@ export default function BreedingDogs() {
                         {/* Dam */}
                         <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                           <div className="text-center">
+                            {pedigreeData.dam.image && (
+                              <div className="mb-3">
+                                <img 
+                                  src={pedigreeData.dam.image} 
+                                  alt={pedigreeData.dam.name}
+                                  className="w-16 h-16 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                  onClick={() => {
+                                    setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                />
+                              </div>
+                            )}
                             <h5 className="font-oswald font-normal text-base mb-1" style={{color: '#11100f'}}>
                               {pedigreeData.dam.image ? (
                                 <button 
@@ -850,6 +876,19 @@ export default function BreedingDogs() {
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                         {/* Sire's Sire */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          {pedigreeData.sire.sire.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.sire.sire.image} 
+                                alt={pedigreeData.sire.sire.name}
+                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
                           <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.sire.sire.image ? (
                               <button 
@@ -882,6 +921,19 @@ export default function BreedingDogs() {
                         </div>
                         {/* Sire's Dam */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          {pedigreeData.sire.dam.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.sire.dam.image} 
+                                alt={pedigreeData.sire.dam.name}
+                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
                           <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.sire.dam.image ? (
                               <button 
@@ -914,6 +966,19 @@ export default function BreedingDogs() {
                         </div>
                         {/* Dam's Sire */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          {pedigreeData.dam.sire.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.dam.sire.image} 
+                                alt={pedigreeData.dam.sire.name}
+                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
                           <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.dam.sire.image ? (
                               <button 
@@ -946,8 +1011,32 @@ export default function BreedingDogs() {
                         </div>
                         {/* Dam's Dam */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          {pedigreeData.dam.dam.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.dam.dam.image} 
+                                alt={pedigreeData.dam.dam.name}
+                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
                           <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
-                            {pedigreeData.dam.dam.name}
+                            {pedigreeData.dam.dam.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.dam.dam.name}
+                              </button>
+                            ) : pedigreeData.dam.dam.name}
                           </h6>
                           <div className="flex flex-wrap justify-center gap-1">
                             {pedigreeData.dam.dam.titles.map((title: string, index: number) => (

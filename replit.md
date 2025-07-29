@@ -244,6 +244,17 @@ Preferred communication style: Simple, everyday language.
   - Simplified Notable Ancestors description for cleaner presentation
   - Removed bottom description text from pedigree popup for streamlined appearance
   - Removed "Individual Pedigree" text from dialog headers
+- ✅ **PUPPY GALLERY SYSTEM**: Added "Puppies by [Name]" buttons to stud cards
+  - Created interactive puppy gallery with authentic photos for Grizzly, Moon, and Holden
+  - Built responsive grid layout showing individual puppies with litter information
+  - Added comprehensive puppy data with birth dates, dam names, and individual puppy portraits
+  - Applied professional styling with hover effects and brand-consistent olive green buttons
+  - Enhanced user experience with modal galleries displaying previous litters
+- ✅ **PEDIGREE VISUAL ENHANCEMENT**: Added linked photos above dogs' names in pedigree displays
+  - Integrated clickable circular profile photos (64x64px for parents, 48x48px for grandparents)
+  - Photos appear above names in all pedigree generations for dogs with available images
+  - Maintained existing clickable name functionality while adding visual photo elements
+  - Enhanced pedigree presentation with authentic dog portraits for better user engagement
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
