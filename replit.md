@@ -217,6 +217,10 @@ Preferred communication style: Simple, everyday language.
   - Added text-center class to all pedigree name headers in both components
   - Ensured consistent centering whether names have clickable links or not
   - Applied to all generation levels (2nd, 3rd, and 4th generation) for uniform presentation
+- ✅ **BOSCO IMAGE UPDATE**: Updated Bosco's photo to new portrait
+  - Changed from Bosco_1753735317643.avif to bosco1_1753815440343.avif in both components
+  - Updated image imports to use the latest Bosco portrait for pedigree displays
+  - Maintained clickable image functionality for Bosco in Grizzly's lineage
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

@@ -13,7 +13,7 @@ import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Topo Gigio_1753196469536.jpg";
-import boscoImage from "@assets/Bosco_1753735317643.avif?url";
+import boscoImage from "@assets/bosco1_1753815440343.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/cyrusHeadL (1)_1753810280559.png?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";

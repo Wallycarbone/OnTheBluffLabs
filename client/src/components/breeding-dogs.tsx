@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
 import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
-import boscoImage from "@assets/Bosco_1753735317643.avif?url";
+import boscoImage from "@assets/bosco1_1753815440343.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/cyrusHeadL (1)_1753810280559.png?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";
