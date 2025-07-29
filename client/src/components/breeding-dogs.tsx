@@ -27,7 +27,8 @@ export default function BreedingDogs() {
       "JH": "Junior Hunter", 
       "SHR": "Senior Hunter Retriever",
       "LIT": "Limited",
-      "MBISS": "Multiple Best in Specialty Show"
+      "MBISS": "Multiple Best in Specialty Show",
+      "GCH": "Grand Champion"
     };
     return titleMap[abbreviation] || abbreviation;
   };
@@ -50,7 +51,7 @@ export default function BreedingDogs() {
           image: boscoImage,
           sire: {
             name: "Shalimar's The Animator (\"Cyrus\")",
-            titles: ["CH", "MBISS"],
+            titles: ["GCH", "CH", "MBISS"],
             image: cyrusImage,
             sire: {
               name: "Cyrus's Sire",
