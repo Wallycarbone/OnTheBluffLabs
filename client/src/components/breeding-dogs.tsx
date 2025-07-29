@@ -627,7 +627,7 @@ export default function BreedingDogs() {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              {selectedDog?.name} - Individual Pedigree
+              {selectedDog?.name}
             </DialogTitle>
           </DialogHeader>
           {selectedDog && (
