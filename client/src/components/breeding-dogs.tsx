@@ -736,7 +736,7 @@ export default function BreedingDogs() {
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                         {/* Sire's Sire */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.sire.sire.image ? (
                               <button 
                                 onClick={() => {
@@ -768,7 +768,7 @@ export default function BreedingDogs() {
                         </div>
                         {/* Sire's Dam */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.sire.dam.image ? (
                               <button 
                                 onClick={() => {
@@ -800,7 +800,7 @@ export default function BreedingDogs() {
                         </div>
                         {/* Dam's Sire */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.dam.sire.image ? (
                               <button 
                                 onClick={() => {
@@ -832,7 +832,7 @@ export default function BreedingDogs() {
                         </div>
                         {/* Dam's Dam */}
                         <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                          <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                          <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.dam.dam.name}
                           </h6>
                           <div className="flex flex-wrap gap-1">
@@ -858,7 +858,7 @@ export default function BreedingDogs() {
                         {/* Sire's Sire's Sire */}
                         {pedigreeData.sire.sire.sire && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.sire.image ? (
                                 <button 
                                   onClick={() => {
@@ -892,7 +892,7 @@ export default function BreedingDogs() {
                         {/* Sire's Sire's Dam */}
                         {pedigreeData.sire.sire.dam && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.dam.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
@@ -915,7 +915,7 @@ export default function BreedingDogs() {
                         {/* Continue for all 8 great-grandparents... */}
                         {pedigreeData.sire.dam.sire && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.sire.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
@@ -937,7 +937,7 @@ export default function BreedingDogs() {
                         )}
                         {pedigreeData.sire.dam.dam && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.dam.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
@@ -959,7 +959,7 @@ export default function BreedingDogs() {
                         )}
                         {pedigreeData.dam.sire.sire && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.sire.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
@@ -981,7 +981,7 @@ export default function BreedingDogs() {
                         )}
                         {pedigreeData.dam.sire.dam && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.dam.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
@@ -1003,7 +1003,7 @@ export default function BreedingDogs() {
                         )}
                         {pedigreeData.dam.dam.sire && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.sire.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">
@@ -1025,7 +1025,7 @@ export default function BreedingDogs() {
                         )}
                         {pedigreeData.dam.dam.dam && (
                           <div className="bg-gray-50 rounded p-2 border" style={{borderColor: '#c5c5c5'}}>
-                            <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.dam.name}
                             </h6>
                             <div className="flex flex-wrap gap-0.5">

@@ -213,6 +213,10 @@ Preferred communication style: Simple, everyday language.
   - Added GCH title to Shalimar's The Animator ("Cyrus") in both components
   - Updated title mapping to include "GCH": "Grand Champion" for educational popups
   - Enhanced Cyrus's title display to show complete achievement recognition
+- ✅ **PEDIGREE TEXT ALIGNMENT**: Centered all names in pedigree displays
+  - Added text-center class to all pedigree name headers in both components
+  - Ensured consistent centering whether names have clickable links or not
+  - Applied to all generation levels (2nd, 3rd, and 4th generation) for uniform presentation
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

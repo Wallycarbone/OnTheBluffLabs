@@ -1374,7 +1374,7 @@ export default function Puppies() {
                         {/* Sire's Parents */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
-                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            <h5 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.image ? (
                                 <button 
                                   onClick={() => {
@@ -1406,7 +1406,7 @@ export default function Puppies() {
                             </div>
                           </div>
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
-                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            <h5 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.image ? (
                                 <button 
                                   onClick={() => {
@@ -1467,7 +1467,7 @@ export default function Puppies() {
                         {/* Dam's Parents */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#8a8f28'}}>
-                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            <h5 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.image ? (
                                 <button 
                                   onClick={() => {
@@ -1491,7 +1491,7 @@ export default function Puppies() {
                             </div>
                           </div>
                           <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#8a8f28'}}>
-                            <h5 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                            <h5 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.name}
                             </h5>
 
