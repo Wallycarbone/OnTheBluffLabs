@@ -1389,7 +1389,7 @@ export default function Puppies() {
                               ) : pedigreeData.sire.sire.name}
                             </h5>
 
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap justify-center gap-1">
                               {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -1421,7 +1421,7 @@ export default function Puppies() {
                               ) : pedigreeData.sire.dam.name}
                             </h5>
 
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap justify-center gap-1">
                               {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
                                   {title}
@@ -1482,7 +1482,7 @@ export default function Puppies() {
                               ) : pedigreeData.dam.sire.name}
                             </h5>
 
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap justify-center gap-1">
                               {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
                                   {title}
@@ -1495,7 +1495,7 @@ export default function Puppies() {
                               {pedigreeData.dam.dam.name}
                             </h5>
 
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap justify-center gap-1">
                               {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
                                 <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat rounded-full" style={{backgroundColor: '#8a8f28', color: '#fefefe'}}>
                                   {title}

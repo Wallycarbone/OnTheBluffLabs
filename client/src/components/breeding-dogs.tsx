@@ -750,7 +750,7 @@ export default function BreedingDogs() {
                               </button>
                             ) : pedigreeData.sire.sire.name}
                           </h6>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap justify-center gap-1">
                             {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
@@ -782,7 +782,7 @@ export default function BreedingDogs() {
                               </button>
                             ) : pedigreeData.sire.dam.name}
                           </h6>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap justify-center gap-1">
                             {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
@@ -814,7 +814,7 @@ export default function BreedingDogs() {
                               </button>
                             ) : pedigreeData.dam.sire.name}
                           </h6>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap justify-center gap-1">
                             {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
@@ -835,7 +835,7 @@ export default function BreedingDogs() {
                           <h6 className="font-oswald text-sm font-medium mb-1 text-center" style={{color: '#11100f'}}>
                             {pedigreeData.dam.dam.name}
                           </h6>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap justify-center gap-1">
                             {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
@@ -872,7 +872,7 @@ export default function BreedingDogs() {
                                 </button>
                               ) : pedigreeData.sire.sire.sire.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.sire.sire.sire.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -895,7 +895,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.sire.dam.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.sire.sire.dam.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -918,7 +918,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.sire.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.sire.dam.sire.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -940,7 +940,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.sire.dam.dam.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.sire.dam.dam.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -962,7 +962,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.sire.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.dam.sire.sire.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -984,7 +984,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.sire.dam.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.dam.sire.dam.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -1006,7 +1006,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.sire.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.dam.dam.sire.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
@@ -1028,7 +1028,7 @@ export default function BreedingDogs() {
                             <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
                               {pedigreeData.dam.dam.dam.name}
                             </h6>
-                            <div className="flex flex-wrap gap-0.5">
+                            <div className="flex flex-wrap justify-center gap-0.5">
                               {pedigreeData.dam.dam.dam.titles.map((title: string, index: number) => (
                                 <button 
                                   key={index}
