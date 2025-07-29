@@ -134,7 +134,19 @@ export default function Puppies() {
       status: "Current",
       description: "Seven puppies born June 5, 2025"
     },
-
+    {
+      name: "Moon & Nora",
+      sire: "Moon",
+      dam: "Nora",
+      birthDate: "June 21, 2025",
+      puppiesCount: 2,
+      available: "One Black Female & One Yellow Female",
+      readyDate: "August 2025",
+      image: moonImage2,
+      image2: noraImage,
+      status: "Current",
+      description: "One black female and one yellow female available"
+    },
     {
       name: "Grizzly & Guinevere",
       sire: "Grizzly",
@@ -326,7 +338,128 @@ export default function Puppies() {
           }
         }
       },
-
+      "Moon & Nora": {
+        sire: {
+          name: "Moon",
+          titles: ["CH"],
+          sire: {
+            name: "Farnfield Topo Gigio",
+            titles: ["2019 Westminster BOB", "CH", "GCH"],
+            sire: {
+              name: "Topo's Sire",
+              titles: ["CH", "GCH"],
+              sire: {
+                name: "Topo's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Topo's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Topo's Dam",
+              titles: ["CH"],
+              sire: {
+                name: "Topo's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Topo's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          },
+          dam: {
+            name: "Moon's Dam",
+            titles: ["CH"],
+            sire: {
+              name: "Moon's Maternal Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Moon's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Moon's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Moon's Maternal Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Moon's Dam's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Moon's Dam's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          }
+        },
+        dam: {
+          name: "Nora",
+          titles: ["CH"],
+          sire: {
+            name: "Nora's Sire",
+            titles: ["CH"],
+            sire: {
+              name: "Nora's Paternal Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Nora's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Nora's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Nora's Paternal Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Nora's Paternal Dam's Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Nora's Paternal Dam's Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          },
+          dam: {
+            name: "Nora's Dam",
+            titles: ["CH"],
+            sire: {
+              name: "Nora's Maternal Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Nora's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Nora's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Nora's Maternal Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Nora's Dam's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Nora's Dam's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          }
+        }
+      },
       "Grizzly & Guinevere": {
         sire: {
           name: "Grizzly",
@@ -1014,7 +1147,18 @@ export default function Puppies() {
                       </button>
                     </>
                   )
-
+                : litter.name === "Moon & Nora"
+                ? (
+                    <>
+                      Descended from 2019 Westminster Best of Breed Farnfield <button 
+                        onClick={() => setIsTopoPopupOpen(true)}
+                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+                        style={{color: '#6d761d'}}
+                      >
+                        Topo Gigio
+                      </button>
+                    </>
+                  )
                 : litter.name === "Grizzly & Guinevere"
                 ? "Champion bloodlines with exceptional hunting and field titles from Greenstone Chocoholic at Loretta and Endless Mt Hannah"
                 : litter.name === "Holden & Alola"

@@ -180,10 +180,6 @@ Preferred communication style: Simple, everyday language.
   - Applied consistent restructuring across both individual and litter pedigree displays
   - Replaced previous "Chocolate Thunder" placeholder with authentic Cyrus lineage data
   - Updated Cyrus image to use latest portrait (cyrusHeadL (1)_1753737220160.png)
-- ✅ **LITTER MANAGEMENT**: Removed Moon & Nora litter from available listings
-  - Removed Moon & Nora litter entry from currentLitters array
-  - Cleaned up pedigree data and description references for Moon & Nora
-  - Streamlined litter displays to focus on remaining available litters
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
