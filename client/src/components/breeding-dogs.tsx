@@ -42,7 +42,7 @@ export default function BreedingDogs() {
     const pedigrees: { [key: string]: any } = {
       "Grizzly": {
         name: "Grizzly",
-        formalName: "Endless Mt Labrador Grizzly Bear At On The Bluff",
+        formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
         titles: [],
         image: grizzlyImage,
         sire: {
