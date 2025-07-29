@@ -859,7 +859,7 @@ export default function BreedingDogs() {
                     {/* Notable Bloodlines */}
                     <div className="bg-gray-50 rounded-lg p-6">
                       <h4 className="text-lg font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
-                        NOTABLE BLOODLINES
+                        NOTABLE ANCESTORS
                       </h4>
                       <div className="text-center">
                         {selectedDog.name === "Grizzly" && (
