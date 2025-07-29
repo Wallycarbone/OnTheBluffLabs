@@ -234,6 +234,10 @@ Preferred communication style: Simple, everyday language.
   - Added justify-center class to all badge containers in both components
   - Applied to all generation levels (2nd, 3rd, and 4th generation) for uniform presentation
   - Enhanced visual consistency with centered badge alignment throughout pedigree displays
+- ✅ **PEDIGREE SIMPLIFICATION**: Removed Generation 4 (Great-Grandparents) from pedigree displays
+  - Simplified pedigree view to show 3 generations instead of 4 for cleaner presentation
+  - Updated footer text to reflect "3-generation lineage" information
+  - Enhanced readability and focus on most relevant ancestral information
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
