@@ -191,6 +191,10 @@ Preferred communication style: Simple, everyday language.
   - Displays CH title for Simmer's breeding achievements (JH badge removed per user request)
   - Enhanced Generation 3 pedigree rendering to support clickable names for dogs with images
   - Simmer's name now appears as underlined clickable link that opens her portrait in popup dialog
+- ✅ **HANNAH'S SIRE UPDATE**: Updated Hannah's sire with authentic breeding information
+  - Changed "Hannah's Sire" to "Endless Mountain's Second Son ('Brody')" in both components
+  - Maintained CH and FC title designations for Brody's achievements
+  - Enhanced Hannah's complete paternal lineage with authentic bloodline information
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility

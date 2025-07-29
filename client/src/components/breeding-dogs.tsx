@@ -111,7 +111,7 @@ export default function BreedingDogs() {
           titles: [],
           image: hannahImage,
           sire: {
-            name: "Hannah's Sire",
+            name: "Endless Mountain's Second Son (\"Brody\")",
             titles: ["CH", "FC"],
             sire: {
               name: "Hannah's Paternal Great-Grandsire",
