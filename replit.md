@@ -184,6 +184,11 @@ Preferred communication style: Simple, everyday language.
   - Changed "Loretta's Dam" to "Greenstone's Special Blend ('Simmer')" in both breeding-dogs.tsx and puppies.tsx
   - Maintained CH and JH title designations for Simmer
   - Enhanced Bosco's complete lineage with authentic maternal bloodline information
+- ✅ **SIMMER IMAGE INTEGRATION**: Added Simmer's photo to pedigree system
+  - Integrated Simmer image (Simmer_1753810570980.avif) into both breeding dog and litter pedigrees
+  - Simmer now appears as clickable name with image popup in Bosco's dam lineage
+  - Enhanced Bosco's complete maternal bloodline with authentic portrait
+  - Added CH and JH title display for Simmer's breeding achievements
 
 ## Previous Changes (July 26, 2025)
 - ✅ **DEPLOYMENT FIX**: Resolved file structure issue for deployment compatibility
