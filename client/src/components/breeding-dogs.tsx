@@ -141,7 +141,7 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Hannah's Dam",
+            name: "Endless Mountain's Georgia On My Mind",
             titles: ["CH", "JH"],
             sire: {
               name: "Hannah's Maternal Great-Grandsire",
