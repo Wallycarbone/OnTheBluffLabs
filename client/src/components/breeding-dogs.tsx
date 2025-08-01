@@ -784,7 +784,7 @@ export default function BreedingDogs() {
                                 <img 
                                   src={pedigreeData.sire.image} 
                                   alt={pedigreeData.sire.name}
-                                  className="w-16 h-16 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                  className="w-24 h-20 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
                                   onClick={() => {
                                     setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
                                     setIsImagePopupOpen(true);
@@ -831,7 +831,7 @@ export default function BreedingDogs() {
                                 <img 
                                   src={pedigreeData.dam.image} 
                                   alt={pedigreeData.dam.name}
-                                  className="w-16 h-16 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                  className="w-24 h-20 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
                                   onClick={() => {
                                     setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
                                     setIsImagePopupOpen(true);
@@ -881,7 +881,7 @@ export default function BreedingDogs() {
                               <img 
                                 src={pedigreeData.sire.sire.image} 
                                 alt={pedigreeData.sire.sire.name}
-                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                className="w-20 h-16 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
                                 onClick={() => {
                                   setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
                                   setIsImagePopupOpen(true);
@@ -926,7 +926,7 @@ export default function BreedingDogs() {
                               <img 
                                 src={pedigreeData.sire.dam.image} 
                                 alt={pedigreeData.sire.dam.name}
-                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                className="w-20 h-16 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
                                 onClick={() => {
                                   setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
                                   setIsImagePopupOpen(true);
@@ -971,7 +971,7 @@ export default function BreedingDogs() {
                               <img 
                                 src={pedigreeData.dam.sire.image} 
                                 alt={pedigreeData.dam.sire.name}
-                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                className="w-20 h-16 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
                                 onClick={() => {
                                   setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
                                   setIsImagePopupOpen(true);
@@ -1016,7 +1016,7 @@ export default function BreedingDogs() {
                               <img 
                                 src={pedigreeData.dam.dam.image} 
                                 alt={pedigreeData.dam.dam.name}
-                                className="w-12 h-12 rounded-full object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                className="w-20 h-16 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
                                 onClick={() => {
                                   setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
                                   setIsImagePopupOpen(true);
