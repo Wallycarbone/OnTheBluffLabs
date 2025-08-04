@@ -58,10 +58,10 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen relative bg-contain bg-center bg-no-repeat"
+      className="min-h-screen relative bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0) 100%), url(${heroImage})`,
-        backgroundSize: '85%'
+        backgroundPosition: 'center right'
       }}
     >
       {/* Content Overlay - Left Side */}
