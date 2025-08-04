@@ -1,5 +1,5 @@
 import { Award, Shield, Leaf } from "lucide-react";
-import puppyImage from "@assets/Copy of Gallery Image - Landscape (22)_1752522247837.png";
+import puppyImage from "@assets/Breeding Dogs 5x4 (2)_1754338451734.png";
 
 export default function About() {
   const features = [
@@ -33,7 +33,7 @@ export default function About() {
           <div>
             <img 
               src={puppyImage} 
-              alt="Beautiful yellow English Labrador puppy from On The Bluff Labradors" 
+              alt="Beautiful fox red Labrador with stick in snowy winter setting from On The Bluff Labradors" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
           </div>
