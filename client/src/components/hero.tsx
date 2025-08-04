@@ -108,13 +108,7 @@ export default function Hero() {
               English Labradors Bred for Beauty and Temperament
             </p>
 
-            {/* Dog Name Badge */}
-            <div className="flex justify-start mb-12">
-              <div className="rounded-2xl px-8 py-4 shadow-xl backdrop-blur-sm border border-white/20" style={{backgroundColor: 'rgba(109, 118, 29, 0.95)'}}>
-                <p className="font-montserrat font-semibold text-lg" style={{color: '#fefefe'}}>On The Bluff Labradors</p>
-                <p className="text-base" style={{color: '#fff3c5'}}>Excellence in Breeding</p>
-              </div>
-            </div>
+
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-start">
