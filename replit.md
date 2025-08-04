@@ -76,7 +76,9 @@ Preferred communication style: Simple, everyday language.
 - Added comprehensive puppy data with birth dates, dam names, and individual puppy portraits
 - Applied professional styling with hover effects and brand-consistent olive green buttons
 
-### ✅ **MISSION SECTION UPDATE**: Replaced hero image
-- Updated Our Mission & Values section with new fox red Labrador photo in winter setting
-- Enhanced visual appeal with authentic breeding dog imagery
-- Maintained responsive design and professional styling
+### ✅ **HERO SECTION ENHANCEMENT**: Updated hero background image and layout
+- Updated hero background with scenic Labrador portrait featuring mountain vista backdrop
+- Optimized image positioning (center 10%) for perfect alignment with title text
+- Added Welcome section below hero with business heritage and three value propositions
+- Enhanced brand identity with "On The Bluff" mountain setting imagery
+- Maintained professional styling and responsive design
