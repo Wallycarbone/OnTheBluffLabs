@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
 import frankieImage from "@assets/Frankie_1752525510895.webp";
+import heroImage from "@assets/Breeding Dogs 5x4 (3)_1754339434990.png";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
@@ -57,15 +58,15 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen relative bg-cover bg-right bg-no-repeat"
+      className="min-h-screen relative bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.1) 100%), url('https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1')`
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0) 100%), url(${heroImage})`
       }}
     >
       {/* Content Overlay - Left Side */}
       <div className="relative z-10 min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-          <div className="text-left max-w-2xl">
+          <div className="text-left max-w-xl lg:max-w-2xl">
             {/* Excellence Badge */}
             <div className="flex items-center justify-start mb-8">
               <div className="flex items-center rounded-full px-6 py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
@@ -90,8 +91,8 @@ export default function Hero() {
             {/* Dog Name Badge */}
             <div className="flex justify-start mb-12">
               <div className="rounded-2xl px-8 py-4 shadow-xl backdrop-blur-sm border border-white/20" style={{backgroundColor: 'rgba(109, 118, 29, 0.95)'}}>
-                <p className="font-montserrat font-semibold text-lg" style={{color: '#fefefe'}}>Atticus Finch</p>
-                <p className="text-base" style={{color: '#fff3c5'}}>Cherished Sire</p>
+                <p className="font-montserrat font-semibold text-lg" style={{color: '#fefefe'}}>On The Bluff Labradors</p>
+                <p className="text-base" style={{color: '#fff3c5'}}>Excellence in Breeding</p>
               </div>
             </div>
 
