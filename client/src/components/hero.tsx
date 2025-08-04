@@ -58,12 +58,24 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen relative bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0) 100%), url(${heroImage})`,
-        backgroundPosition: 'center right'
-      }}
+      className="min-h-screen relative overflow-hidden"
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full">
+        <img 
+          src={heroImage}
+          alt="Beautiful Labrador sitting on stone overlooking mountains"
+          className="w-full h-full object-cover object-center-right"
+        />
+        {/* Gradient Overlay */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0) 100%)'
+          }}
+        ></div>
+      </div>
+      
       {/* Content Overlay - Left Side */}
       <div className="relative z-10 min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
