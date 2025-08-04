@@ -149,9 +149,9 @@ export default function Hero() {
             <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
           </h2>
             <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-8" style={{color: '#4b4b4b'}}>
-              For over five decades, we have been dedicated to breeding exceptional English Labradors with champion bloodlines, 
-              outstanding temperaments, and comprehensive health testing. Our commitment to excellence has created a legacy of 
-              beloved family companions across the country.
+              For over five decades, we have been dedicated preservation breeders of exceptional English Labradors, committed to 
+              maintaining authentic bloodlines, classic temperaments, and the breed's original purpose. Our preservation breeding 
+              program focuses on comprehensive health testing and preserving the true Labrador heritage for future generations.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
