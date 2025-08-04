@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
 import frankieImage from "@assets/Frankie_1752525510895.webp";
-import heroImage from "@assets/Breeding Dogs 5x4 (3)_1754339434990.png";
+import heroImage from "@assets/Atticus_1754340164760.jpeg";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
