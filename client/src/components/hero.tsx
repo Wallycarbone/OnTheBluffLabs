@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Award, GraduationCap, Shield, Puzzle } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
 import frankieImage from "@assets/Frankie_1752525510895.webp";
@@ -9,12 +10,7 @@ import frankieImage from "@assets/Frankie_1752525510895.webp";
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
   
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   const toggleTestimonial = (index: number) => {
     setExpandedTestimonials(prev => ({
@@ -60,62 +56,64 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen" style={{backgroundColor: '#fffbe8'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Hero Content with Image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left Content */}
-          <div className="text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-8">
-              <div className="flex items-center rounded-full px-4 py-2 shadow-sm" style={{backgroundColor: '#fefefe'}}>
-                <Award className="w-6 h-6 mr-2" style={{color: '#6d761d'}} />
-                <span className="font-source-sans font-semibold text-base" style={{color: '#11100f'}}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Hero Content - Photo First Layout */}
+        <div className="mb-16">
+          {/* Prominent Hero Image */}
+          <div className="flex justify-center mb-12">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>
+              <img 
+                src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1"
+                alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
+                className="w-full max-w-2xl lg:max-w-4xl rounded-3xl shadow-2xl relative z-10 transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 rounded-2xl px-8 py-4 shadow-xl border border-white/20 z-20" style={{backgroundColor: '#6d761d'}}>
+                <p className="font-montserrat font-semibold text-lg text-center" style={{color: '#fefefe'}}>Atticus Finch</p>
+                <p className="text-base text-center" style={{color: '#fff3c5'}}>Cherished Sire</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Content Below Image */}
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-8">
+              <div className="flex items-center rounded-full px-6 py-3 shadow-sm" style={{backgroundColor: '#fefefe'}}>
+                <Award className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
+                <span className="font-source-sans font-semibold text-lg" style={{color: '#11100f'}}>
                   50+ Years of Excellence
                 </span>
               </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-8 tracking-wide leading-tight" style={{color: '#11100f'}}>
+            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-8 tracking-wide leading-tight" style={{color: '#11100f'}}>
               ON THE BLUFF<br />
               <span style={{color: '#6d761d'}}>LABRADORS</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-10 font-source-sans font-light leading-relaxed" style={{color: '#4b4b4b'}}>
+            <p className="text-2xl md:text-3xl mb-12 font-source-sans font-light leading-relaxed max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
               English Labradors Bred for Beauty and Temperament
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                onClick={() => scrollToSection('puppies')}
-                className="px-10 py-5 text-lg font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-              >
-                View Available Litters
-              </Button>
-              <Button 
-                variant="outline"
-                onClick={() => scrollToSection('contact')}
-                className="border-2 px-10 py-5 text-lg font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
-                onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
-                onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
-              >
-                Contact Us
-              </Button>
-            </div>
-          </div>
-          
-          {/* Right Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative group mb-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl"></div>
-              <img 
-                src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1"
-                alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
-                className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl relative z-10 transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute -bottom-4 -right-4 rounded-2xl px-6 py-3 shadow-xl border border-white/20 z-20" style={{backgroundColor: '#6d761d'}}>
-                <p className="font-montserrat font-semibold text-base" style={{color: '#fefefe'}}>Atticus Finch</p>
-                <p className="text-sm" style={{color: '#fff3c5'}}>Cherished Sire</p>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link href="/puppies">
+                <Button 
+                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                >
+                  View Available Litters
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button 
+                  variant="outline"
+                  className="border-2 px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
+                  onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
+                  onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
+                >
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -236,15 +234,16 @@ export default function Hero() {
             <p className="mb-8 text-lg font-source-sans leading-relaxed max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
               Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and a strong training foundation.
             </p>
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-              style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-            >
-              Start Your Journey
-            </Button>
+            <Link href="/contact">
+              <Button 
+                className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+              >
+                Start Your Journey
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
