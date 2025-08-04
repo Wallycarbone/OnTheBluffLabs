@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import dukeAtlasImage from "@assets/Duke and Atlas_1752524044867.webp";
 import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
 import frankieImage from "@assets/Frankie_1752525510895.webp";
-import heroImage from "@assets/Breeding Dogs 5x4 (4)_1754340245990.png";
+import heroImage from "@assets/Breeding Dogs 5x4 (5)_1754340347869.png";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
@@ -68,7 +68,7 @@ export default function Hero() {
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
           className="w-full h-full object-cover"
-          style={{ objectPosition: '85% 30%' }}
+          style={{ objectPosition: 'center center' }}
           onError={(e) => {
             console.log('Image failed to load:', heroImage);
             e.currentTarget.style.display = 'none';
