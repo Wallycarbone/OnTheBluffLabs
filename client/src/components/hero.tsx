@@ -68,7 +68,7 @@ export default function Hero() {
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
           className="w-full h-full object-cover"
-          style={{ objectPosition: '75% center' }}
+          style={{ objectPosition: '85% 30%' }}
           onError={(e) => {
             console.log('Image failed to load:', heroImage);
             e.currentTarget.style.display = 'none';
