@@ -1,59 +1,54 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 // Navigation Button Component
-function NavButton({ onClick, label }: { onClick: () => void; label: string }) {
+function NavButton({ href, label }: { href: string; label: string }) {
   return (
-    <button 
-      onClick={onClick}
-      className="px-3 py-2 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
+    <Link href={href} className="px-3 py-2 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
       style={{color: '#4b4b4b'}}
       onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
       onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
     >
       {label}
-    </button>
+    </Link>
   );
 }
 
 // Mobile Navigation Button Component
-function MobileNavButton({ onClick, label, primary = false }: { onClick: () => void; label: string; primary?: boolean }) {
+function MobileNavButton({ href, label, primary = false, onClick }: { href: string; label: string; primary?: boolean; onClick?: () => void }) {
   if (primary) {
     return (
-      <button 
+      <Link href={href} 
         onClick={onClick}
-        className="w-full px-4 py-3 text-left font-montserrat font-medium text-white rounded-lg transition-all"
+        className="block w-full px-4 py-3 text-left font-montserrat font-medium text-white rounded-lg transition-all"
         style={{backgroundColor: '#6d761d'}}
         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a5f18'}
         onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
       >
         {label}
-      </button>
+      </Link>
     );
   }
   
   return (
-    <button 
+    <Link href={href} 
       onClick={onClick}
-      className="w-full px-4 py-2 text-left font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
+      className="block w-full px-4 py-2 text-left font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
       style={{color: '#4b4b4b'}}
       onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
       onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
     >
       {label}
-    </button>
+    </Link>
   );
 }
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
@@ -64,15 +59,16 @@ export default function Navigation() {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 
-                className="text-xl lg:text-2xl font-oswald font-normal tracking-wide cursor-pointer transition-colors"
-                style={{color: '#11100f'}}
-                onClick={() => scrollToSection('home')}
-                onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
-                onMouseLeave={(e) => e.currentTarget.style.color = '#11100f'}
-              >
-                ON THE BLUFF LABRADORS
-              </h1>
+              <Link href="/">
+                <h1 
+                  className="text-xl lg:text-2xl font-oswald font-normal tracking-wide cursor-pointer transition-colors"
+                  style={{color: '#11100f'}}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#11100f'}
+                >
+                  ON THE BLUFF LABRADORS
+                </h1>
+              </Link>
             </div>
           </div>
           
@@ -81,9 +77,9 @@ export default function Navigation() {
             <div className="flex items-center space-x-1">
               {/* Primary Navigation */}
               <div className="flex items-center space-x-1">
-                <NavButton onClick={() => scrollToSection('puppies')} label="Puppies" />
-                <NavButton onClick={() => scrollToSection('breeding')} label="Our Dogs" />
-                <NavButton onClick={() => scrollToSection('health')} label="Health" />
+                <NavButton href="/puppies" label="Puppies" />
+                <NavButton href="/breeding-dogs" label="Our Dogs" />
+                <NavButton href="/health-testing" label="Health" />
               </div>
               
               {/* Divider */}
@@ -91,22 +87,23 @@ export default function Navigation() {
               
               {/* Secondary Navigation */}
               <div className="flex items-center space-x-1">
-                <NavButton onClick={() => scrollToSection('training')} label="Training" />
-                <NavButton onClick={() => scrollToSection('boarding')} label="Board & Train" />
-                <NavButton onClick={() => scrollToSection('about')} label="About" />
+                <NavButton href="/training" label="Training" />
+                <NavButton href="/boarding" label="Board & Train" />
+                <NavButton href="/about" label="About" />
               </div>
               
               {/* Contact Button */}
               <div className="ml-6">
-                <Button 
-                  onClick={() => scrollToSection('contact')}
-                  className="px-6 py-2 font-montserrat font-medium text-sm rounded-full transition-all hover:scale-105"
-                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a5f18'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                >
-                  Contact Us
-                </Button>
+                <Link href="/contact">
+                  <Button 
+                    className="px-6 py-2 font-montserrat font-medium text-sm rounded-full transition-all hover:scale-105"
+                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a5f18'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                  >
+                    Contact Us
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -114,17 +111,18 @@ export default function Navigation() {
           {/* Tablet Navigation (hidden on mobile and desktop) */}
           <div className="hidden md:block lg:hidden">
             <div className="flex items-center space-x-1">
-              <NavButton onClick={() => scrollToSection('puppies')} label="Puppies" />
-              <NavButton onClick={() => scrollToSection('breeding')} label="Dogs" />
-              <NavButton onClick={() => scrollToSection('training')} label="Training" />
-              <NavButton onClick={() => scrollToSection('about')} label="About" />
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                className="px-4 py-2 font-montserrat font-medium text-sm rounded-full ml-4"
-                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-              >
-                Contact
-              </Button>
+              <NavButton href="/puppies" label="Puppies" />
+              <NavButton href="/breeding-dogs" label="Dogs" />
+              <NavButton href="/training" label="Training" />
+              <NavButton href="/about" label="About" />
+              <Link href="/contact">
+                <Button 
+                  className="px-4 py-2 font-montserrat font-medium text-sm rounded-full ml-4"
+                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                >
+                  Contact
+                </Button>
+              </Link>
             </div>
           </div>
           
@@ -148,18 +146,18 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-2">
             {/* Primary Actions */}
             <div className="space-y-2 pb-4 border-b border-gray-200">
-              <MobileNavButton onClick={() => scrollToSection('puppies')} label="Available Puppies" primary />
-              <MobileNavButton onClick={() => scrollToSection('contact')} label="Contact Us" primary />
+              <MobileNavButton href="/puppies" label="Available Puppies" primary onClick={closeMenu} />
+              <MobileNavButton href="/contact" label="Contact Us" primary onClick={closeMenu} />
             </div>
             
             {/* Secondary Navigation */}
             <div className="space-y-1 pt-2">
-              <MobileNavButton onClick={() => scrollToSection('breeding')} label="Our Dogs" />
-              <MobileNavButton onClick={() => scrollToSection('health')} label="Health Testing" />
-              <MobileNavButton onClick={() => scrollToSection('training')} label="Training Programs" />
-              <MobileNavButton onClick={() => scrollToSection('boarding')} label="Board & Train" />
-              <MobileNavButton onClick={() => scrollToSection('about')} label="About Us" />
-              <MobileNavButton onClick={() => scrollToSection('testimonials')} label="Testimonials" />
+              <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
+              <MobileNavButton href="/health-testing" label="Health Testing" onClick={closeMenu} />
+              <MobileNavButton href="/training" label="Training Programs" onClick={closeMenu} />
+              <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
+              <MobileNavButton href="/about" label="About Us" onClick={closeMenu} />
+              <MobileNavButton href="/facilities" label="Facilities" onClick={closeMenu} />
             </div>
           </div>
         </div>

@@ -54,3 +54,29 @@ Preferred communication style: Simple, everyday language.
 - `TypeScript`: Type safety
 - `ESBuild`: Production bundling
 - `PostCSS`: CSS processing
+
+## Recent Changes (January 2025)
+
+### ✅ **SITE STRUCTURE REFACTOR**: Converted single-page site to multi-page architecture
+- Created separate page components for each major section (About, Puppies, Breeding Dogs, Health Testing, Training, Boarding, Facilities, Contact)
+- Updated routing system to use proper page navigation instead of scroll-to-section
+- Converted navigation from anchor links to wouter Link components for proper page routing
+- Maintained hero section as homepage with clean navigation to dedicated pages
+- Enhanced user experience with dedicated pages for focused content consumption
+
+### ✅ **PEDIGREE VISUAL ENHANCEMENT**: Enhanced pedigree image display
+- Updated pedigree images to larger rectangular format (96×80px for parents, 80×64px for grandparents)
+- Photos appear above names in all pedigree generations for dogs with available images
+- Maintained existing clickable name functionality while adding visual photo elements
+- Enhanced pedigree presentation with authentic dog portraits for better user engagement
+
+### ✅ **PUPPY GALLERY SYSTEM**: Added interactive puppy galleries
+- Created "Puppies by [Name]" buttons to stud cards with comprehensive puppy gallery
+- Built responsive grid layout showing individual puppies with litter information
+- Added comprehensive puppy data with birth dates, dam names, and individual puppy portraits
+- Applied professional styling with hover effects and brand-consistent olive green buttons
+
+### ✅ **MISSION SECTION UPDATE**: Replaced hero image
+- Updated Our Mission & Values section with new fox red Labrador photo in winter setting
+- Enhanced visual appeal with authentic breeding dog imagery
+- Maintained responsive design and professional styling

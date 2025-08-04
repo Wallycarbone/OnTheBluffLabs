@@ -1,12 +1,12 @@
 import Navigation from "@/components/navigation";
-import Hero from "@/components/hero";
+import Facilities from "@/components/facilities";
 import Footer from "@/components/footer";
 
-export default function Home() {
+export default function FacilitiesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
-      <Hero />
+      <Facilities />
       <Footer />
     </div>
   );
