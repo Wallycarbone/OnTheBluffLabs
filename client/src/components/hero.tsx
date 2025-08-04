@@ -138,6 +138,52 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Welcome Section */}
+      <div className="py-20" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
+              WELCOME TO<br />
+              <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
+            </h2>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-8" style={{color: '#4b4b4b'}}>
+              For over five decades, we have been dedicated to breeding exceptional English Labradors with champion bloodlines, 
+              outstanding temperaments, and comprehensive health testing. Our commitment to excellence has created a legacy of 
+              beloved family companions across the country.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#6d761d'}}>
+                  <Award className="w-8 h-8" style={{color: '#fefefe'}} />
+                </div>
+                <h3 className="text-xl font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>CHAMPION BLOODLINES</h3>
+                <p className="font-source-sans text-base leading-relaxed" style={{color: '#4b4b4b'}}>
+                  Our breeding program features dogs with proven champion genetics and exceptional conformation.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#6d761d'}}>
+                  <Heart className="w-8 h-8" style={{color: '#fefefe'}} />
+                </div>
+                <h3 className="text-xl font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>EXCEPTIONAL TEMPERAMENT</h3>
+                <p className="font-source-sans text-base leading-relaxed" style={{color: '#4b4b4b'}}>
+                  Each puppy is raised with love and socialization to ensure gentle, well-balanced family companions.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#6d761d'}}>
+                  <Shield className="w-8 h-8" style={{color: '#fefefe'}} />
+                </div>
+                <h3 className="text-xl font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>COMPREHENSIVE HEALTH</h3>
+                <p className="font-source-sans text-base leading-relaxed" style={{color: '#4b4b4b'}}>
+                  Rigorous health testing and certification ensure the healthiest puppies for your family.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Testimonials Section */}
       <div className="bg-gradient-to-b from-transparent via-white/95 to-white py-20" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
