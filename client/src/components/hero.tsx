@@ -58,17 +58,33 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen relative"
-      style={{
-        backgroundColor: '#f8f4e6',
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: '75% center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="min-h-screen relative overflow-hidden"
+      style={{ backgroundColor: '#f8f4e6' }}
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full">
+        <img 
+          src={heroImage}
+          alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: '75% center' }}
+          onError={(e) => {
+            console.log('Image failed to load:', heroImage);
+            e.currentTarget.style.display = 'none';
+          }}
+          onLoad={() => console.log('Image loaded successfully:', heroImage)}
+        />
+        {/* Gradient Overlay */}
+        <div 
+          className="absolute inset-0 z-10"
+          style={{
+            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)'
+          }}
+        ></div>
+      </div>
+      
       {/* Content Overlay - Left Side */}
-      <div className="relative z-10 min-h-screen flex items-center">
+      <div className="relative z-20 min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
           <div className="text-left max-w-xl lg:max-w-2xl">
             {/* Excellence Badge */}
