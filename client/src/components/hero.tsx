@@ -65,7 +65,7 @@ export default function Hero() {
         <img 
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains"
-          className="w-full h-full object-cover object-center-right"
+          className="w-full h-full object-contain object-center"
         />
         {/* Gradient Overlay */}
         <div 
