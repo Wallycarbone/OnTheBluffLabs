@@ -57,17 +57,17 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen relative bg-cover bg-center bg-no-repeat"
+      className="min-h-screen relative bg-cover bg-right bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1')`
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.1) 100%), url('https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1')`
       }}
     >
-      {/* Content Overlay */}
+      {/* Content Overlay - Left Side */}
       <div className="relative z-10 min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-left max-w-2xl">
             {/* Excellence Badge */}
-            <div className="flex items-center justify-center mb-8">
+            <div className="flex items-center justify-start mb-8">
               <div className="flex items-center rounded-full px-6 py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
                 <Award className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
                 <span className="font-source-sans font-semibold text-lg" style={{color: '#11100f'}}>
@@ -83,20 +83,20 @@ export default function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-2xl md:text-3xl mb-8 font-source-sans font-light leading-relaxed max-w-3xl mx-auto text-white drop-shadow-lg">
+            <p className="text-2xl md:text-3xl mb-8 font-source-sans font-light leading-relaxed text-white drop-shadow-lg">
               English Labradors Bred for Beauty and Temperament
             </p>
 
             {/* Dog Name Badge */}
-            <div className="flex justify-center mb-12">
+            <div className="flex justify-start mb-12">
               <div className="rounded-2xl px-8 py-4 shadow-xl backdrop-blur-sm border border-white/20" style={{backgroundColor: 'rgba(109, 118, 29, 0.95)'}}>
-                <p className="font-montserrat font-semibold text-lg text-center" style={{color: '#fefefe'}}>Atticus Finch</p>
-                <p className="text-base text-center" style={{color: '#fff3c5'}}>Cherished Sire</p>
+                <p className="font-montserrat font-semibold text-lg" style={{color: '#fefefe'}}>Atticus Finch</p>
+                <p className="text-base" style={{color: '#fff3c5'}}>Cherished Sire</p>
               </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-start">
               <Link href="/puppies">
                 <Button 
                   className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
