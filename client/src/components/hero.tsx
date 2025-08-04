@@ -56,11 +56,12 @@ export default function Hero() {
   ];
 
   return (
-    <section 
-      id="home" 
-      className="min-h-screen relative overflow-hidden"
-      style={{ backgroundColor: '#f8f4e6' }}
-    >
+    <>
+      <section 
+        id="home" 
+                className="min-h-screen relative overflow-hidden"
+        style={{ backgroundColor: '#f8f4e6' }}
+      >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img 
@@ -137,15 +138,16 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
+      </section>
+    
       {/* Welcome Section */}
-      <div className="py-20" style={{backgroundColor: '#fffbe8'}}>
+      <section className="py-20" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
-              WELCOME TO<br />
-              <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
-            </h2>
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
+            WELCOME TO<br />
+            <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
+          </h2>
             <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-8" style={{color: '#4b4b4b'}}>
               For over five decades, we have been dedicated to breeding exceptional English Labradors with champion bloodlines, 
               outstanding temperaments, and comprehensive health testing. Our commitment to excellence has created a legacy of 
@@ -182,11 +184,12 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Testimonials Section */}
-      <div className="bg-gradient-to-b from-transparent via-white/95 to-white py-20" style={{backgroundColor: '#fffbe8'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section>
+        <div className="bg-gradient-to-b from-transparent via-white/95 to-white py-20" style={{backgroundColor: '#fffbe8'}}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
               <div className="flex items-center rounded-full px-6 py-3 shadow-sm" style={{backgroundColor: '#fefefe'}}>
@@ -313,7 +316,8 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }
