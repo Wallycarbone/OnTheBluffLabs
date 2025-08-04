@@ -55,50 +55,54 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen" style={{backgroundColor: '#fffbe8'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Content - Photo First Layout */}
-        <div className="mb-16">
-          {/* Prominent Hero Image */}
-          <div className="flex justify-center mb-12">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>
-              <img 
-                src="https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1"
-                alt="Atticus - Beautiful white English Labrador from On The Bluff Labradors"
-                className="w-full max-w-2xl lg:max-w-4xl rounded-3xl shadow-2xl relative z-10 transition-transform duration-300 group-hover:scale-[1.02]"
-              />
-              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 rounded-2xl px-8 py-4 shadow-xl border border-white/20 z-20" style={{backgroundColor: '#6d761d'}}>
-                <p className="font-montserrat font-semibold text-lg text-center" style={{color: '#fefefe'}}>Atticus Finch</p>
-                <p className="text-base text-center" style={{color: '#fff3c5'}}>Cherished Sire</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Content Below Image */}
+    <section 
+      id="home" 
+      className="min-h-screen relative bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://i0.wp.com/ontheblufflabradors.com/wp-content/uploads/2024/12/Atticus.jpeg?resize=1080%2C721&ssl=1')`
+      }}
+    >
+      {/* Content Overlay */}
+      <div className="relative z-10 min-h-screen flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
           <div className="text-center max-w-4xl mx-auto">
+            {/* Excellence Badge */}
             <div className="flex items-center justify-center mb-8">
-              <div className="flex items-center rounded-full px-6 py-3 shadow-sm" style={{backgroundColor: '#fefefe'}}>
+              <div className="flex items-center rounded-full px-6 py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
                 <Award className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
                 <span className="font-source-sans font-semibold text-lg" style={{color: '#11100f'}}>
                   50+ Years of Excellence
                 </span>
               </div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-8 tracking-wide leading-tight" style={{color: '#11100f'}}>
+
+            {/* Main Title */}
+            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
               ON THE BLUFF<br />
-              <span style={{color: '#6d761d'}}>LABRADORS</span>
+              <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>LABRADORS</span>
             </h1>
-            <p className="text-2xl md:text-3xl mb-12 font-source-sans font-light leading-relaxed max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
+
+            {/* Subtitle */}
+            <p className="text-2xl md:text-3xl mb-8 font-source-sans font-light leading-relaxed max-w-3xl mx-auto text-white drop-shadow-lg">
               English Labradors Bred for Beauty and Temperament
             </p>
+
+            {/* Dog Name Badge */}
+            <div className="flex justify-center mb-12">
+              <div className="rounded-2xl px-8 py-4 shadow-xl backdrop-blur-sm border border-white/20" style={{backgroundColor: 'rgba(109, 118, 29, 0.95)'}}>
+                <p className="font-montserrat font-semibold text-lg text-center" style={{color: '#fefefe'}}>Atticus Finch</p>
+                <p className="text-base text-center" style={{color: '#fff3c5'}}>Cherished Sire</p>
+              </div>
+            </div>
+
+            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link href="/puppies">
                 <Button 
-                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                  style={{backgroundColor: 'rgba(109, 118, 29, 0.95)', color: '#fefefe'}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(100, 79, 6, 0.95)'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(109, 118, 29, 0.95)'}
                 >
                   View Available Litters
                 </Button>
@@ -106,10 +110,10 @@ export default function Hero() {
               <Link href="/contact">
                 <Button 
                   variant="outline"
-                  className="border-2 px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                  style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
-                  onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
-                  onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
+                  className="border-2 px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                  style={{borderColor: '#fefefe', color: '#fefefe', backgroundColor: 'rgba(255, 255, 255, 0.1)'}}
+                  onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'; e.currentTarget.style.color = '#6d761d'}}
+                  onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.color = '#fefefe'}}
                 >
                   Contact Us
                 </Button>
@@ -117,9 +121,11 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Testimonials Section */}
-        <div className="mb-20">
+      {/* Testimonials Section */}
+      <div className="bg-gradient-to-b from-transparent via-white/95 to-white py-20" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
               <div className="flex items-center rounded-full px-6 py-3 shadow-sm" style={{backgroundColor: '#fefefe'}}>
