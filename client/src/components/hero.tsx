@@ -148,120 +148,79 @@ export default function Hero() {
             WELCOME TO<br />
             <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
           </h2>
-            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-8" style={{color: '#4b4b4b'}}>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
               For more than fifty years, we've been devoted preservation breeders of exceptional English Labradors—committed to 
               safeguarding what makes this breed truly special: their social intelligence, natural beauty, and steady temperament. 
               Our breeding program combines time-honored practices with holistic health protocols and early training, all carefully 
               chosen to preserve and enhance the finest qualities of the English Labrador.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#6d761d'}}>
-                  <Award className="w-8 h-8" style={{color: '#fefefe'}} />
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Our Dogs Section */}
+              <Link href="/breeding-dogs">
+                <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                  <div className="relative h-80 overflow-hidden">
+                    <img 
+                      src={heroImage}
+                      alt="Our exceptional breeding dogs with champion bloodlines"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">OUR DOGS</h3>
+                      <p className="text-sm font-source-sans opacity-90">
+                        Meet our exceptional breeding dogs with champion bloodlines and proven temperaments
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>CHAMPION BLOODLINES</h3>
-                <p className="font-source-sans text-base leading-relaxed" style={{color: '#4b4b4b'}}>
-                  Our breeding program features dogs with proven champion genetics and exceptional conformation.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#6d761d'}}>
-                  <Heart className="w-8 h-8" style={{color: '#fefefe'}} />
+              </Link>
+
+              {/* Training Section */}
+              <Link href="/training">
+                <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                  <div className="relative h-80 overflow-hidden">
+                    <img 
+                      src={dukeAtlasImage}
+                      alt="Professional training programs for Labrador puppies"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">TRAINING</h3>
+                      <p className="text-sm font-source-sans opacity-90">
+                        Comprehensive training programs that build confident, well-mannered companions
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>EXCEPTIONAL TEMPERAMENT</h3>
-                <p className="font-source-sans text-base leading-relaxed" style={{color: '#4b4b4b'}}>
-                  Each puppy is raised with love and socialization to ensure gentle, well-balanced family companions.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#6d761d'}}>
-                  <Shield className="w-8 h-8" style={{color: '#fefefe'}} />
+              </Link>
+
+              {/* Raw Dog Food Section */}
+              <Link href="/raw-dog-food">
+                <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                  <div className="relative h-80 overflow-hidden">
+                    <img 
+                      src={mikkolaImage}
+                      alt="Premium raw dog food nutrition programs"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">RAW DOG FOOD</h3>
+                      <p className="text-sm font-source-sans opacity-90">
+                        Premium nutrition programs supporting optimal health and development
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>COMPREHENSIVE HEALTH</h3>
-                <p className="font-source-sans text-base leading-relaxed" style={{color: '#4b4b4b'}}>
-                  Rigorous health testing and certification ensure the healthiest puppies for your family.
-                </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Sections Links */}
-      <section className="py-16" style={{backgroundColor: '#f8f4e6'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-              EXPLORE OUR WORLD
-            </h2>
-            <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
-              Discover the heart of our breeding program through these key areas
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Our Dogs Section */}
-            <Link href="/breeding-dogs">
-              <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-80 overflow-hidden">
-                  <img 
-                    src={heroImage}
-                    alt="Our exceptional breeding dogs with champion bloodlines"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">OUR DOGS</h3>
-                    <p className="text-sm font-source-sans opacity-90">
-                      Meet our exceptional breeding dogs with champion bloodlines and proven temperaments
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Link>
 
-            {/* Training Section */}
-            <Link href="/training">
-              <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-80 overflow-hidden">
-                  <img 
-                    src={dukeAtlasImage}
-                    alt="Professional training programs for Labrador puppies"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">TRAINING</h3>
-                    <p className="text-sm font-source-sans opacity-90">
-                      Comprehensive training programs that build confident, well-mannered companions
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Raw Dog Food Section */}
-            <Link href="/raw-dog-food">
-              <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-80 overflow-hidden">
-                  <img 
-                    src={mikkolaImage}
-                    alt="Premium raw dog food nutrition programs"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">RAW DOG FOOD</h3>
-                    <p className="text-sm font-source-sans opacity-90">
-                      Premium nutrition programs supporting optimal health and development
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <section>
