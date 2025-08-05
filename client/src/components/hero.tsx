@@ -187,6 +187,82 @@ export default function Hero() {
         </div>
       </section>
 
+      {/* Main Sections Links */}
+      <section className="py-16" style={{backgroundColor: '#f8f4e6'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+              EXPLORE OUR WORLD
+            </h2>
+            <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
+              Discover the heart of our breeding program through these key areas
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Our Dogs Section */}
+            <Link href="/breeding-dogs">
+              <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-80 overflow-hidden">
+                  <img 
+                    src={heroImage}
+                    alt="Our exceptional breeding dogs with champion bloodlines"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">OUR DOGS</h3>
+                    <p className="text-sm font-source-sans opacity-90">
+                      Meet our exceptional breeding dogs with champion bloodlines and proven temperaments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Training Section */}
+            <Link href="/training">
+              <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-80 overflow-hidden">
+                  <img 
+                    src={dukeAtlasImage}
+                    alt="Professional training programs for Labrador puppies"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">TRAINING</h3>
+                    <p className="text-sm font-source-sans opacity-90">
+                      Comprehensive training programs that build confident, well-mannered companions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Raw Dog Food Section */}
+            <Link href="/raw-dog-food">
+              <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-80 overflow-hidden">
+                  <img 
+                    src={mikkolaImage}
+                    alt="Premium raw dog food nutrition programs"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">RAW DOG FOOD</h3>
+                    <p className="text-sm font-source-sans opacity-90">
+                      Premium nutrition programs supporting optimal health and development
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section>
         <div className="bg-gradient-to-b from-transparent via-white/95 to-white py-20" style={{backgroundColor: '#fffbe8'}}>
