@@ -25,7 +25,7 @@ import holdenFern from "@assets/Fern (Apple Pie 5x4)_1753623366073.png";
 import holdenWillow from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
 import grizzlyPearl from "@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png";
 import grizzlyHolly from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754683799995.jpg";
-import grizzlyHazel from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
+
 
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
@@ -73,8 +73,7 @@ export default function BreedingDogs() {
             status: "available",
             puppies: [
               { name: "Pearl (Turtles)", image: grizzlyPearl, available: true },
-              { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true },
-              { name: "Hazel (Peacock)", image: grizzlyHazel, available: true }
+              { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true }
             ]
           }
         ]
