@@ -30,6 +30,7 @@ import moonPedigreePdf from "@assets/moon_pedigree_processed_1754684932098.pdf";
 import moonImage from "@assets/Moon_1754685152680.png";
 import topoGigioImage from "@assets/Gino_1754685352006.webp";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
+import candyImage from "@assets/Candy_1754687171237.webp";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -361,8 +362,9 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Belquest Nostalgic Candy",
+            name: "Belquest Nostalgic Candy (\"Candy\")",
             titles: ["BOBBBE", "GCH", "CH"],
+            image: candyImage,
             sire: {
               name: "Moon's Dam's Maternal Great-Grandsire",
               titles: ["CH"]
