@@ -323,6 +323,7 @@ export default function BreedingDogs() {
         sire: {
           name: "Farnfield Topo Gigio",
           titles: ["2019 Westminster BOB", "CH", "GCH"],
+          image: topoGigioImage,
           sire: {
             name: "Topo's Sire",
             titles: ["CH", "GCH"],
