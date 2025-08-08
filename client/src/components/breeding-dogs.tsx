@@ -29,7 +29,7 @@ import grizzlyPedigreePdf from "@assets/grizzly_single_page_1754684286991.pdf";
 import moonPedigreePdf from "@assets/moon_pedigree_processed_1754684932098.pdf";
 import moonImage from "@assets/Moon_1754685152680.png";
 import topoGigioImage from "@assets/Gino_1754685352006.webp";
-// import mrDarcyImage from "@assets/mr_darcy_water_action.png";
+// import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
 export default function BreedingDogs() {
