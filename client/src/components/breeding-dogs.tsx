@@ -70,10 +70,11 @@ export default function BreedingDogs() {
             name: "Grizzly & Guinevere",
             dam: "Guinevere",
             birthDate: "April 5, 2025",
+            status: "available",
             puppies: [
-              { name: "Pearl (Turtles)", image: grizzlyPearl },
-              { name: "Holly (Puppy Love)", image: grizzlyHolly },
-              { name: "Hazel (Peacock)", image: grizzlyHazel }
+              { name: "Pearl (Turtles)", image: grizzlyPearl, available: true },
+              { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true },
+              { name: "Hazel (Peacock)", image: grizzlyHazel, available: true }
             ]
           }
         ]
@@ -1197,45 +1198,115 @@ export default function BreedingDogs() {
           {selectedDogForPuppies && (
             <div className="space-y-8">
               <p id="puppy-gallery-description" className="text-sm font-source-sans text-gray-600 text-center">
-                Previous litters and puppies sired by {selectedDogForPuppies.name}
+                Litters and puppies sired by {selectedDogForPuppies.name}
               </p>
               {(() => {
                 const puppyData = getPuppyGalleryData(selectedDogForPuppies.name);
                 if (!puppyData) return <p>No puppy information available</p>;
                 
-                return puppyData.litters.map((litter: any, litterIndex: number) => (
-                  <div key={litterIndex} className="space-y-6">
-                    {/* Litter Header */}
-                    <div className="text-center space-y-2">
-                      <h3 className="text-xl font-oswald font-normal" style={{color: '#11100f'}}>
-                        {litter.name}
-                      </h3>
-                      <p className="text-sm font-source-sans text-gray-600">
-                        Born: {litter.birthDate} • Dam: {litter.dam}
-                      </p>
-                    </div>
-                    
-                    {/* Puppy Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                      {litter.puppies.map((puppy: any, puppyIndex: number) => (
-                        <div key={puppyIndex} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                          <div className="aspect-[4/5] overflow-hidden">
-                            <img 
-                              src={puppy.image} 
-                              alt={puppy.name}
-                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            />
-                          </div>
-                          <div className="p-4 text-center">
-                            <h4 className="font-montserrat font-medium text-sm" style={{color: '#11100f'}}>
-                              {puppy.name}
-                            </h4>
-                          </div>
+                const availableLitters = puppyData.litters.filter((litter: any) => litter.status === "available");
+                const previousLitters = puppyData.litters.filter((litter: any) => litter.status === "previous");
+                
+                return (
+                  <div className="space-y-12">
+                    {/* Available Puppies Section */}
+                    {availableLitters.length > 0 && (
+                      <div className="space-y-6">
+                        <div className="text-center">
+                          <h3 className="text-2xl font-oswald font-normal mb-2" style={{color: '#6d761d'}}>
+                            Available Puppies
+                          </h3>
+                          <div className="w-24 h-0.5 mx-auto" style={{backgroundColor: '#6d761d'}}></div>
                         </div>
-                      ))}
-                    </div>
+                        
+                        {availableLitters.map((litter: any, litterIndex: number) => (
+                          <div key={`available-${litterIndex}`} className="space-y-6">
+                            {/* Litter Header */}
+                            <div className="text-center space-y-2">
+                              <h4 className="text-xl font-oswald font-normal" style={{color: '#11100f'}}>
+                                {litter.name}
+                              </h4>
+                              <p className="text-sm font-source-sans text-gray-600">
+                                Born: {litter.birthDate} • Dam: {litter.dam}
+                              </p>
+                            </div>
+                            
+                            {/* Puppy Grid */}
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                              {litter.puppies.map((puppy: any, puppyIndex: number) => (
+                                <div key={puppyIndex} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                  <div className="aspect-[4/5] overflow-hidden">
+                                    <img 
+                                      src={puppy.image} 
+                                      alt={puppy.name}
+                                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                    />
+                                  </div>
+                                  <div className="p-4 text-center">
+                                    <h5 className="font-montserrat font-medium text-sm" style={{color: '#11100f'}}>
+                                      {puppy.name}
+                                    </h5>
+                                    {puppy.available && (
+                                      <span className="inline-block mt-2 px-2 py-1 text-xs font-montserrat font-medium rounded-full text-white" style={{backgroundColor: '#6d761d'}}>
+                                        Available
+                                      </span>
+                                    )}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    
+                    {/* Previous Puppies Section */}
+                    {previousLitters.length > 0 && (
+                      <div className="space-y-6">
+                        <div className="text-center">
+                          <h3 className="text-2xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                            Previous Puppies
+                          </h3>
+                          <div className="w-24 h-0.5 mx-auto bg-gray-400"></div>
+                        </div>
+                        
+                        {previousLitters.map((litter: any, litterIndex: number) => (
+                          <div key={`previous-${litterIndex}`} className="space-y-6">
+                            {/* Litter Header */}
+                            <div className="text-center space-y-2">
+                              <h4 className="text-xl font-oswald font-normal" style={{color: '#11100f'}}>
+                                {litter.name}
+                              </h4>
+                              <p className="text-sm font-source-sans text-gray-600">
+                                Born: {litter.birthDate} • Dam: {litter.dam}
+                              </p>
+                            </div>
+                            
+                            {/* Puppy Grid */}
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                              {litter.puppies.map((puppy: any, puppyIndex: number) => (
+                                <div key={puppyIndex} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow opacity-75">
+                                  <div className="aspect-[4/5] overflow-hidden">
+                                    <img 
+                                      src={puppy.image} 
+                                      alt={puppy.name}
+                                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                    />
+                                  </div>
+                                  <div className="p-4 text-center">
+                                    <h5 className="font-montserrat font-medium text-sm" style={{color: '#11100f'}}>
+                                      {puppy.name}
+                                    </h5>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                ));
+                );
               })()}
             </div>
           )}
