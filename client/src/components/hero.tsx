@@ -290,9 +290,7 @@ export default function Hero() {
                   </div>
                   <div className="mb-6">
                     <div className="italic font-source-sans text-sm leading-relaxed" style={{color: '#4b4b4b'}}>
-                      <span>"</span>
                       {renderTestimonialText(testimonial.testimonial, expandedTestimonials[index], 150)}
-                      <span>"</span>
                     </div>
                     {expandedTestimonials[index] && testimonial.image && (
                       <div className="mb-4">
