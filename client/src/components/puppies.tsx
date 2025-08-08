@@ -156,11 +156,11 @@ export default function Puppies() {
       dam: "Guinevere",
       birthDate: "April 5, 2025",
       puppiesCount: 8,
-      available: "Chocolate Males & Females",
+      available: "Chocolate Females",
       readyDate: "Ready Now",
       images: [breedingDogsImage, breedingDogs2Image, pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
       status: "Ready",
-      description: "Eight chocolate puppies - males and females available"
+      description: "Chocolate female puppies available"
     },
     {
       name: "Holden & Alola",
