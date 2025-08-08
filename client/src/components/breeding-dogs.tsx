@@ -640,18 +640,7 @@ export default function BreedingDogs() {
                   Atticus Finch
                 </button></>
               ) : dog.name === "Grizzly" ? (
-                <>Sire: <button 
-                  className="text-golden underline hover:text-golden/80 font-medium"
-                  onClick={() => {
-                    setSelectedImage({
-                      src: boscoImage,
-                      name: "Greenstone Chocoholic at Loretta (\"Bosco\")"
-                    });
-                    setIsImagePopupOpen(true);
-                  }}
-                >
-                  Greenstone Chocoholic at Loretta ("Bosco")
-                </button></>
+                "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
               ) : (
                 "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
               )}
