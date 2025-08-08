@@ -347,7 +347,7 @@ export default function BreedingDogs() {
           name: "Belquest Conclusion Frozen Margarita",
           titles: ["CH"],
           sire: {
-            name: "Moon's Maternal Grandsire",
+            name: "CH Wiscoy's Rocco",
             titles: ["CH"],
             sire: {
               name: "Moon's Maternal Great-Grandsire",
