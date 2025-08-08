@@ -28,10 +28,21 @@ export default function Hero() {
     return text.substring(0, maxLength) + "...";
   };
 
+  const renderTestimonialText = (text: string, isExpanded: boolean, maxLength: number) => {
+    const displayText = isExpanded ? text : truncateText(text, maxLength);
+    const paragraphs = displayText.split('\n\n');
+    
+    return paragraphs.map((paragraph, index) => (
+      <p key={index} className="mb-3 last:mb-0">
+        {paragraph}
+      </p>
+    ));
+  };
+
   const featuredTestimonials = [
     {
       name: "Tessa & Kaitlyn",
-      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way. The staff here is incredibly knowledgable and was eager to share their expertise with us to ensure we had a stress free experience. Jess was even kind enough to give us training tips months after we brought him home! It is easy to see how much the staff cares about the dogs here and it made us even more confident bringing home our new puppy. We could not be more grateful for the team here and our puppy who has grown into a gorgeous and loyal dog. His temperament is amazing and is a perfect mix between a snuggly boy, and an energetic pro swimmer (so he thinks). We could not be more thankful for our experience here.",
+      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way.\n\nThe staff here is incredibly knowledgable and was eager to share their expertise with us to ensure we had a stress free experience. Jess was even kind enough to give us training tips months after we brought him home!\n\nIt is easy to see how much the staff cares about the dogs here and it made us even more confident bringing home our new puppy. We could not be more grateful for the team here and our puppy who has grown into a gorgeous and loyal dog.\n\nHis temperament is amazing and is a perfect mix between a snuggly boy, and an energetic pro swimmer (so he thinks). We could not be more thankful for our experience here.",
       dog: "Frankie",
       degree: "Bachelor's Degree Training Grad",
       parents: "Grizzly x Vivien",
@@ -40,7 +51,7 @@ export default function Hero() {
     },
     {
       name: "Jen",
-      testimonial: "I had been wanting a pup from On The Bluff Labs for quite some time. I was lucky enough to get a pup from the magnificent Atticus before he was officially retired. The pups from OTB have wonderful, sound temperaments and are truly beautiful as a bonus! One of my family members also has an OTB pup. I am so happy with my pup, Mikkola. Jess did a great job picking out a pup for us that matched our family's lifestyle, desires and expectations. I have a young, active son and it was very important to have a dog that was playful, yet gentle and well-balanced. He was honestly the easiest puppy that I've ever raised. The on-site trainer, Jess, is amazing. Mikkola came home with me knowing essentially all basic commands, was trained to eliminate outside and was already crate trained! Incredible. Mikkola did the training program with Jess and it was ABSOLUTELY worth spending the extra money. I would encourage anyone to make the investment initially, to help to avoid potential issues in the future. Experienced dog owners know that the time and money that will actually be saved in the long-run by purchasing a trained, well-socialized, well-adjusted, healthy pup cannot be overstated.",
+      testimonial: "I had been wanting a pup from On The Bluff Labs for quite some time. I was lucky enough to get a pup from the magnificent Atticus before he was officially retired. The pups from OTB have wonderful, sound temperaments and are truly beautiful as a bonus!\n\nOne of my family members also has an OTB pup. I am so happy with my pup, Mikkola. Jess did a great job picking out a pup for us that matched our family's lifestyle, desires and expectations. I have a young, active son and it was very important to have a dog that was playful, yet gentle and well-balanced.\n\nHe was honestly the easiest puppy that I've ever raised. The on-site trainer, Jess, is amazing. Mikkola came home with me knowing essentially all basic commands, was trained to eliminate outside and was already crate trained! Incredible.\n\nMikkola did the training program with Jess and it was ABSOLUTELY worth spending the extra money. I would encourage anyone to make the investment initially, to help to avoid potential issues in the future. Experienced dog owners know that the time and money that will actually be saved in the long-run by purchasing a trained, well-socialized, well-adjusted, healthy pup cannot be overstated.",
       dog: "Mikkola",
       degree: "Master's Degree Training Grad",
       parents: "Atticus x Awillix",
@@ -49,7 +60,7 @@ export default function Hero() {
     },
     {
       name: "Toniann & Michael",
-      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Atlas, (and his big bro Duke), have the best manners you could ever see in puppies and are incredibly affectionate. We chalk this up to the weeks of training they had before coming to our home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children. Having a dog with the proper foundation takes the work and stress away from worrying about if what you're doing is right. Plus, training a puppy is very demanding and as someone who already has a full-time job, the training program is a no-brainer. My husband and I got both our OTB pups with 12 weeks of training, and I'm certain we will do it over and over again in the future.",
+      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home.\n\nAtlas, (and his big bro Duke), have the best manners you could ever see in puppies and are incredibly affectionate. We chalk this up to the weeks of training they had before coming to our home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children.\n\nHaving a dog with the proper foundation takes the work and stress away from worrying about if what you're doing is right. Plus, training a puppy is very demanding and as someone who already has a full-time job, the training program is a no-brainer.\n\nMy husband and I got both our OTB pups with 12 weeks of training, and I'm certain we will do it over and over again in the future.",
       dog: "Duke & Atlas",
       degree: "Master's Degree Training Grad",
       parents: "Duke: Charlies x Annie, Atlas: Oliver x Luna",
@@ -278,9 +289,11 @@ export default function Hero() {
                     )}
                   </div>
                   <div className="mb-6">
-                    <p className="italic font-source-sans text-sm leading-relaxed mb-3" style={{color: '#4b4b4b'}}>
-                      "{expandedTestimonials[index] ? testimonial.testimonial : truncateText(testimonial.testimonial, 150)}"
-                    </p>
+                    <div className="italic font-source-sans text-sm leading-relaxed" style={{color: '#4b4b4b'}}>
+                      <span>"</span>
+                      {renderTestimonialText(testimonial.testimonial, expandedTestimonials[index], 150)}
+                      <span>"</span>
+                    </div>
                     {expandedTestimonials[index] && testimonial.image && (
                       <div className="mb-4">
                         <img 
