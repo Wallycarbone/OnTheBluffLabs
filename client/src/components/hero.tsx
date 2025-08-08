@@ -9,6 +9,7 @@ import frankieImage from "@assets/Frankie_1752525510895.webp";
 import heroImage from "@assets/Breeding Dogs 5x4 (5)_1754340347869.png";
 import moonImage from "@assets/Moon_1754669243572.png";
 import trainingImage from "@assets/Y30A9681 (3)_1754673832851.jpg";
+import rawFoodImage from "@assets/Breeding Dogs 5x4 (6)_1754674032280.png";
 
 export default function Hero() {
   const [expandedTestimonials, setExpandedTestimonials] = useState<{[key: number]: boolean}>({});
@@ -203,7 +204,7 @@ export default function Hero() {
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-80 overflow-hidden">
                     <img 
-                      src={mikkolaImage}
+                      src={rawFoodImage}
                       alt="Premium raw dog food nutrition programs"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
