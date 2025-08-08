@@ -652,6 +652,12 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
+            ) : dog.name === "Moon" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio
+                </p>
+              </div>
             ) : dog.name === "Harper Lee" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
