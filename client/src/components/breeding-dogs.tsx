@@ -316,7 +316,7 @@ export default function BreedingDogs() {
       },
       "Moon": {
         name: "Moon",
-        formalName: "On The Bluff Moon",
+        formalName: "Belquest Conclusion Super Moon Rising",
         titles: ["CH"],
         sire: {
           name: "Farnfield Topo Gigio",
@@ -576,7 +576,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Moon",
-      formalName: "On The Bluff Moon",
+      formalName: "Belquest Conclusion Super Moon Rising",
       gender: "Male", 
       color: "Yellow",
       age: "Active Stud",
