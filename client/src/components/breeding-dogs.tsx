@@ -27,6 +27,7 @@ import grizzlyPearl from "@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png";
 import grizzlyHolly from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754683799995.jpg";
 import grizzlyPedigreePdf from "@assets/grizzly_single_page_1754684286991.pdf";
 import moonPedigreePdf from "@assets/moon_pedigree_processed_1754684932098.pdf";
+import moonImage from "@assets/Moon_1754685152680.png";
 
 
 export default function BreedingDogs() {
@@ -580,7 +581,7 @@ export default function BreedingDogs() {
       gender: "Male", 
       color: "Yellow",
       age: "Active Stud",
-      image: grizzlyImage, // Using placeholder, would need actual Moon image
+      image: moonImage,
       description: "Exceptional yellow male with outstanding temperament and conformation. Produces beautiful yellow puppies with gentle dispositions.",
       hasPuppies: true
     },
