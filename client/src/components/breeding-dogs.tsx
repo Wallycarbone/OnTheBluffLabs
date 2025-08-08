@@ -327,6 +327,7 @@ export default function BreedingDogs() {
           name: "Farnfield Topo Gigio (\"Gino\")",
           titles: ["GCH", "CH"],
           image: topoGigioImage,
+          achievements: "2019 Westminster Best of Breed",
           dam: {
             name: "Kim Valley Star Attraction of Farnfield",
             titles: [],
@@ -881,6 +882,13 @@ export default function BreedingDogs() {
                                 </button>
                               ))}
                             </div>
+                            {pedigreeData.sire.achievements && (
+                              <div className="mt-2 text-center">
+                                <p className="text-xs font-source-sans text-gray-700 italic">
+                                  {pedigreeData.sire.achievements}
+                                </p>
+                              </div>
+                            )}
                           </div>
                         </div>
                         {/* Dam */}
