@@ -350,7 +350,7 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Moon's Dam",
+          name: "Belquest Conclusion Frozen Margarita",
           titles: ["CH"],
           sire: {
             name: "Moon's Maternal Grandsire",
