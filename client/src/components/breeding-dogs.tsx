@@ -361,7 +361,7 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Moon's Maternal Granddam",
+            name: "Belquest Nostalgic Candy",
             titles: ["CH"],
             sire: {
               name: "Moon's Dam's Maternal Great-Grandsire",
