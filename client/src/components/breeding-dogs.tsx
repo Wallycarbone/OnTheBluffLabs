@@ -785,7 +785,18 @@ export default function BreedingDogs() {
                           </div>
                         )}
                         <h3 className="text-2xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
-                          {pedigreeData.name}
+                          {pedigreeData.image ? (
+                            <button 
+                              onClick={() => {
+                                setSelectedImage({src: pedigreeData.image, name: pedigreeData.name});
+                                setIsImagePopupOpen(true);
+                              }}
+                              className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                              style={{color: '#6d761d'}}
+                            >
+                              {pedigreeData.name}
+                            </button>
+                          ) : pedigreeData.name}
                         </h3>
                         <p className="text-lg font-source-sans italic mb-2 text-gray-700">
                           {pedigreeData.formalName}
