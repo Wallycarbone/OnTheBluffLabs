@@ -321,8 +321,8 @@ export default function BreedingDogs() {
         formalName: "Belquest Conclusion Super Moon Rising",
         titles: ["CH"],
         sire: {
-          name: "Farnfield Topo Gigio",
-          titles: ["2019 Westminster BOB", "CH", "GCH"],
+          name: "Farnfield Topo Gigio (\"Gino\")",
+          titles: ["GCH", "CH"],
           image: topoGigioImage,
           sire: {
             name: "Topo's Sire",
