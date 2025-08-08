@@ -569,7 +569,7 @@ export default function BreedingDogs() {
       color: "Chocolate",
       age: "Active Stud",
       image: grizzlyImage,
-      description: "Handsome chocolate male from Endless Mt Labrador with champion and field title bloodlines. Produces beautiful chocolate puppies with excellent temperaments and natural hunting abilities.",
+      description: "Distinguished chocolate male with exceptional emotional intelligence and substantial heavy bone structure. Grizzly's intuitive understanding of human emotions and his powerful, well-built frame exemplify the finest qualities of English Labradors. His champion bloodlines from Endless Mt Labrador produce puppies with both remarkable social intelligence and the robust physical presence that defines quality breeding.",
       hasPuppies: true
     },
     {
