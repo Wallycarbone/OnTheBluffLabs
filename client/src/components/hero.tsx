@@ -225,9 +225,8 @@ export default function Hero() {
 
 
 
-      {/* Testimonials Section */}
-      <section>
-        <div className="bg-gradient-to-b from-transparent via-white/95 to-white py-20" style={{backgroundColor: '#fffbe8'}}>
+      {/* Family Stories Section */}
+      <section className="py-20" style={{backgroundColor: '#f0f4f1'}}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
@@ -354,7 +353,6 @@ export default function Hero() {
               </Button>
             </Link>
           </div>
-        </div>
         </div>
       </section>
     </>
