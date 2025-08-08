@@ -194,7 +194,7 @@ export default function Puppies() {
       name: "Moon & Harper Lee",
       sire: "Moon",
       dam: "Harper Lee",
-      birthDate: "Due July 2025",
+      birthDate: "7/27/2025",
       puppiesCount: "TBD",
       available: "Accepting Deposits",
       readyDate: "September 2025",
