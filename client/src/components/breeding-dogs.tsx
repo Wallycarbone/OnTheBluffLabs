@@ -26,6 +26,7 @@ import holdenWillow from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
 import grizzlyPearl from "@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png";
 import grizzlyHolly from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754683799995.jpg";
 import grizzlyPedigreePdf from "@assets/grizzly_single_page_1754684286991.pdf";
+import moonPedigreePdf from "@assets/moon_pedigree_processed_1754684932098.pdf";
 
 
 export default function BreedingDogs() {
@@ -1107,6 +1108,26 @@ export default function BreedingDogs() {
                         </h4>
                         <a 
                           href={grizzlyPedigreePdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-6 py-3 rounded-lg font-montserrat font-medium text-white transition-all hover:opacity-90"
+                          style={{backgroundColor: '#6d761d'}}
+                        >
+                          View Official Pedigree Document
+                        </a>
+                        <p className="text-xs font-source-sans text-gray-600 mt-2">
+                          Opens in new tab • PDF format
+                        </p>
+                      </div>
+                    )}
+                    
+                    {selectedDog.name === "Moon" && (
+                      <div className="bg-gray-50 rounded-lg p-6 text-center">
+                        <h4 className="text-lg font-oswald font-normal mb-4" style={{color: '#11100f'}}>
+                          OFFICIAL PEDIGREE
+                        </h4>
+                        <a 
+                          href={moonPedigreePdf}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center px-6 py-3 rounded-lg font-montserrat font-medium text-white transition-all hover:opacity-90"
