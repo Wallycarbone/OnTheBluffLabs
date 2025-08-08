@@ -348,7 +348,7 @@ export default function BreedingDogs() {
           name: "Belquest Conclusion Frozen Margarita",
           titles: ["CH"],
           sire: {
-            name: "CH Wiscoy's Rocco",
+            name: "Wiscoy's Rocco",
             titles: ["CH"],
             image: roccoImage,
             sire: {
