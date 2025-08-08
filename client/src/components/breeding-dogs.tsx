@@ -325,8 +325,8 @@ export default function BreedingDogs() {
           titles: ["GCH", "CH"],
           image: topoGigioImage,
           sire: {
-            name: "Topo's Sire",
-            titles: ["CH", "GCH"],
+            name: "Carhm Bluveil Mr. Darcy",
+            titles: ["CH", "GCH", "MBISS"],
             sire: {
               name: "Topo's Paternal Great-Grandsire",
               titles: ["CH"]
