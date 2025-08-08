@@ -4,7 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Star } from "lucide-react";
 import harperLeeImage from "@assets/Y30A3321Harper Lee_1753040309126.JPG?url";
-import grizzlyImage from "@assets/Y30A9815 (7)_1754682245597.JPG?url";
+import grizzlyImage from "@assets/Untitled design (90)_1753041702842.png?url";
+import grizzlyPedigreeImage from "@assets/Y30A9815 (7)_1754682245597.JPG?url";
 import boscoImage from "@assets/bosco1_1753815440343.avif?url";
 import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg?url";
@@ -660,6 +661,15 @@ export default function BreedingDogs() {
                 PEDIGREE OVERVIEW
               </h4>
             </div>
+            {dog.name === "Grizzly" && (
+              <div className="text-center mb-3">
+                <img 
+                  src={grizzlyPedigreeImage}
+                  alt="Grizzly"
+                  className="w-20 h-20 rounded-lg object-cover border-2 border-golden/20 mx-auto"
+                />
+              </div>
+            )}
             <div className="grid grid-cols-2 gap-4 text-xs">
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
