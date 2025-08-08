@@ -623,71 +623,59 @@ export default function BreedingDogs() {
           </p>
         </div>
         
-        <div className="bg-cream/30 rounded-lg p-4 mb-6">
-          <div className="flex items-start">
-            <Star className="text-golden mr-3 w-5 h-5 mt-1 fill-current flex-shrink-0" />
-            <span className="text-sm text-warm-gray leading-relaxed">
-              {dog.name === "Harper Lee" ? (
-                <>Daughter of late sire <button 
-                  className="text-golden underline hover:text-golden/80 font-medium"
-                  onClick={() => {
-                    setSelectedImage({
-                      src: atticusImage,
-                      name: "Atticus Finch"
-                    });
-                    setIsImagePopupOpen(true);
-                  }}
-                >
-                  Atticus Finch
-                </button></>
-              ) : dog.name === "Grizzly" ? (
-                "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
-              ) : (
-                "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"
-              )}
-            </span>
+        <div className="space-y-4">
+          {/* Pedigree Highlight */}
+          <div className="bg-gray-50 rounded-lg p-4">
+            <div className="text-center mb-3">
+              <h4 className="font-oswald font-medium text-sm" style={{color: '#11100f'}}>
+                PEDIGREE HIGHLIGHT
+              </h4>
+            </div>
+            
+            {dog.name === "Grizzly" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2016 Westminster Best of Breed Shalimar's The Animator
+                </p>
+              </div>
+            ) : dog.name === "Harper Lee" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of late sire <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: atticusImage,
+                        name: "Atticus Finch"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Atticus Finch
+                  </button>
+                </p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 gap-4 text-xs">
+                <div>
+                  <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
+                  <p className="font-source-sans" style={{color: '#11100f'}}>
+                    {`${dog.name}'s Sire`}
+                  </p>
+                </div>
+                <div>
+                  <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
+                  <p className="font-source-sans" style={{color: '#11100f'}}>
+                    {`${dog.name}'s Dam`}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
-        </div>
         
         <p className="text-warm-gray mb-6 leading-relaxed">
           {dog.description}
         </p>
-        
-        <div className="space-y-4">
-          {/* Pedigree Summary */}
-          <div className="bg-gray-50 rounded-lg p-4">
-            <div className="text-center mb-3">
-              <h4 className="font-oswald font-medium text-sm" style={{color: '#11100f'}}>
-                PEDIGREE OVERVIEW
-              </h4>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 text-xs">
-              <div>
-                <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
-                <p className="font-source-sans" style={{color: '#11100f'}}>
-                  {dog.name === "Grizzly" 
-                    ? "Greenstone Chocoholic at Loretta (\"Bosco\")"
-                    : dog.name === "Harper Lee"
-                    ? "Atticus Finch"
-                    : `${dog.name}'s Sire`
-                  }
-                </p>
-              </div>
-              <div>
-                <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
-                <p className="font-source-sans" style={{color: '#11100f'}}>
-                  {dog.name === "Grizzly" 
-                    ? "Endless Mountain's Hannah"
-                    : dog.name === "Harper Lee"
-                    ? "Harper Lee's Dam"
-                    : `${dog.name}'s Dam`
-                  }
-                </p>
-              </div>
-            </div>
-
-          </div>
           
           <div className="space-y-3">
             <Button 
