@@ -331,27 +331,31 @@ export default function Hero() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20" style={{backgroundColor: 'rgba(254, 254, 254, 0.85)'}}>
-            <h3 className="text-3xl md:text-4xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
-              READY TO FIND YOUR<br />
-              <span style={{color: '#6d761d'}}>PERFECT COMPANION?</span>
-            </h3>
-            <p className="mb-8 text-lg font-source-sans leading-relaxed max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
-              Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and a strong training foundation.
-            </p>
-            <Link href="/contact">
-              <Button 
-                className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-              >
-                Start Your Journey
-              </Button>
-            </Link>
+      {/* Call to Action Section */}
+      <section className="py-20" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
+              <h3 className="text-3xl md:text-4xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
+                READY TO FIND YOUR<br />
+                <span style={{color: '#6d761d'}}>PERFECT COMPANION?</span>
+              </h3>
+              <p className="mb-8 text-lg font-source-sans leading-relaxed max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
+                Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and a strong training foundation.
+              </p>
+              <Link href="/contact">
+                <Button 
+                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                >
+                  Start Your Journey
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
