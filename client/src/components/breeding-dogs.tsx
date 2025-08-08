@@ -331,7 +331,7 @@ export default function BreedingDogs() {
           },
           sire: {
             name: "Charm Bluveil's Mr. Darcy",
-            titles: ["CH", "GCH", "MBISS"],
+            titles: ["CH"],
             // image: mrDarcyImage,
             sire: {
               name: "Topo's Paternal Great-Grandsire",
