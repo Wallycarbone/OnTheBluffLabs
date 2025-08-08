@@ -1232,10 +1232,10 @@ export default function BreedingDogs() {
                             </div>
                             
                             {/* Puppy Grid */}
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                               {litter.puppies.map((puppy: any, puppyIndex: number) => (
                                 <div key={puppyIndex} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                                  <div className="aspect-[4/5] overflow-hidden">
+                                  <div className="aspect-[5/4] overflow-hidden">
                                     <img 
                                       src={puppy.image} 
                                       alt={puppy.name}
@@ -1283,10 +1283,10 @@ export default function BreedingDogs() {
                             </div>
                             
                             {/* Puppy Grid */}
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                               {litter.puppies.map((puppy: any, puppyIndex: number) => (
                                 <div key={puppyIndex} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow opacity-75">
-                                  <div className="aspect-[4/5] overflow-hidden">
+                                  <div className="aspect-[5/4] overflow-hidden">
                                     <img 
                                       src={puppy.image} 
                                       alt={puppy.name}
