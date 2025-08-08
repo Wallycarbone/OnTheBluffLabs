@@ -30,13 +30,13 @@ export default function Hero() {
 
   const featuredTestimonials = [
     {
-      name: "Toniann & Michael",
-      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Atlas, (and his big bro Duke), have the best manners you could ever see in puppies and are incredibly affectionate. We chalk this up to the weeks of training they had before coming to our home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children. Having a dog with the proper foundation takes the work and stress away from worrying about if what you're doing is right. Plus, training a puppy is very demanding and as someone who already has a full-time job, the training program is a no-brainer. My husband and I got both our OTB pups with 12 weeks of training, and I'm certain we will do it over and over again in the future.",
-      dog: "Duke & Atlas",
-      degree: "Master's Degree Training Grad",
-      parents: "Duke: Charlies x Annie, Atlas: Oliver x Luna",
+      name: "Tessa & Kaitlyn",
+      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way. The staff here is incredibly knowledgable and was eager to share their expertise with us to ensure we had a stress free experience. Jess was even kind enough to give us training tips months after we brought him home! It is easy to see how much the staff cares about the dogs here and it made us even more confident bringing home our new puppy. We could not be more grateful for the team here and our puppy who has grown into a gorgeous and loyal dog. His temperament is amazing and is a perfect mix between a snuggly boy, and an energetic pro swimmer (so he thinks). We could not be more thankful for our experience here.",
+      dog: "Frankie",
+      degree: "Bachelor's Degree Training Grad",
+      parents: "Grizzly x Vivien",
       location: "",
-      image: dukeAtlasImage
+      image: frankieImage
     },
     {
       name: "Jen",
@@ -48,13 +48,13 @@ export default function Hero() {
       image: mikkolaImage
     },
     {
-      name: "Tessa & Kaitlyn",
-      testimonial: "Our experience with On the Bluff Labradors has been exceptional from getting matched with the right pup that would fit our lifestyle, to settling in with training, we were guided every step of the way. The staff here is incredibly knowledgable and was eager to share their expertise with us to ensure we had a stress free experience. Jess was even kind enough to give us training tips months after we brought him home! It is easy to see how much the staff cares about the dogs here and it made us even more confident bringing home our new puppy. We could not be more grateful for the team here and our puppy who has grown into a gorgeous and loyal dog. His temperament is amazing and is a perfect mix between a snuggly boy, and an energetic pro swimmer (so he thinks). We could not be more thankful for our experience here.",
-      dog: "Frankie",
-      degree: "Bachelor's Degree Training Grad",
-      parents: "Grizzly x Vivien",
+      name: "Toniann & Michael",
+      testimonial: "Atlas here, is not our first, but actually is our second trained OTB pup. The choice to get a trained pup is incredibly clear, especially once you bring your furbaby home. Atlas, (and his big bro Duke), have the best manners you could ever see in puppies and are incredibly affectionate. We chalk this up to the weeks of training they had before coming to our home. Both of them were wonderfully crate trained, rarely had accidents, knew basic commands, and are great with other dogs and people, including children. Having a dog with the proper foundation takes the work and stress away from worrying about if what you're doing is right. Plus, training a puppy is very demanding and as someone who already has a full-time job, the training program is a no-brainer. My husband and I got both our OTB pups with 12 weeks of training, and I'm certain we will do it over and over again in the future.",
+      dog: "Duke & Atlas",
+      degree: "Master's Degree Training Grad",
+      parents: "Duke: Charlies x Annie, Atlas: Oliver x Luna",
       location: "",
-      image: frankieImage
+      image: dukeAtlasImage
     }
   ];
 
