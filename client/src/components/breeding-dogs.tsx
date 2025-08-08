@@ -10,6 +10,7 @@ import hannahImage from "@assets/Hannah_1753736053468.png?url";
 import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";
 import brodyImage from "@assets/Brody_1753811205545.jpg?url";
+import atticusImage from "@assets/Atticus_1754340164760.jpeg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -624,9 +625,28 @@ export default function BreedingDogs() {
         <div className="bg-cream/30 rounded-lg p-4 mb-6">
           <div className="flex items-start">
             <Star className="text-golden mr-3 w-5 h-5 mt-1 fill-current flex-shrink-0" />
-            <span className="text-sm text-warm-gray leading-relaxed">
-              {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
-            </span>
+            <div className="flex-1">
+              <span className="text-sm text-warm-gray leading-relaxed block mb-2">
+                {dog.name === "Harper Lee" ? "Daughter of late sire Atticus Finch" : 
+                 dog.name === "Grizzly" ? "Sire: Greenstone Chocoholic at Loretta (\"Bosco\")" :
+                 "Descended from 2016 Westminster Best of Breed Shalimar's The Animator"}
+              </span>
+              {(dog.name === "Harper Lee" || dog.name === "Grizzly") && (
+                <img 
+                  src={dog.name === "Harper Lee" ? atticusImage : boscoImage}
+                  alt={dog.name === "Harper Lee" ? "Atticus Finch" : "Bosco"}
+                  className="w-16 h-16 rounded-lg object-cover border-2 border-golden/20"
+                  onClick={() => {
+                    setSelectedImage({
+                      src: dog.name === "Harper Lee" ? atticusImage : boscoImage,
+                      name: dog.name === "Harper Lee" ? "Atticus Finch" : "Greenstone Chocoholic at Loretta (\"Bosco\")"
+                    });
+                    setIsImagePopupOpen(true);
+                  }}
+                  style={{cursor: 'pointer'}}
+                />
+              )}
+            </div>
           </div>
         </div>
         
@@ -645,7 +665,7 @@ export default function BreedingDogs() {
             <div className="grid grid-cols-2 gap-4 text-xs">
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
-                <p className="font-source-sans" style={{color: '#11100f'}}>
+                <p className="font-source-sans mb-2" style={{color: '#11100f'}}>
                   {dog.name === "Grizzly" 
                     ? "Greenstone Chocoholic at Loretta (\"Bosco\")"
                     : dog.name === "Harper Lee"
@@ -653,10 +673,25 @@ export default function BreedingDogs() {
                     : `${dog.name}'s Sire`
                   }
                 </p>
+                {(dog.name === "Grizzly" || dog.name === "Harper Lee") && (
+                  <img 
+                    src={dog.name === "Grizzly" ? boscoImage : atticusImage}
+                    alt={dog.name === "Grizzly" ? "Bosco" : "Atticus Finch"}
+                    className="w-12 h-12 rounded object-cover border border-golden/20"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: dog.name === "Grizzly" ? boscoImage : atticusImage,
+                        name: dog.name === "Grizzly" ? "Greenstone Chocoholic at Loretta (\"Bosco\")" : "Atticus Finch"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                    style={{cursor: 'pointer'}}
+                  />
+                )}
               </div>
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
-                <p className="font-source-sans" style={{color: '#11100f'}}>
+                <p className="font-source-sans mb-2" style={{color: '#11100f'}}>
                   {dog.name === "Grizzly" 
                     ? "Endless Mountain's Hannah"
                     : dog.name === "Harper Lee"
@@ -664,6 +699,21 @@ export default function BreedingDogs() {
                     : `${dog.name}'s Dam`
                   }
                 </p>
+                {dog.name === "Grizzly" && (
+                  <img 
+                    src={hannahImage}
+                    alt="Endless Mountain's Hannah"
+                    className="w-12 h-12 rounded object-cover border border-golden/20"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: hannahImage,
+                        name: "Endless Mountain's Hannah"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                    style={{cursor: 'pointer'}}
+                  />
+                )}
               </div>
             </div>
 
