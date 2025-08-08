@@ -775,6 +775,15 @@ export default function BreedingDogs() {
                     {/* Dog Information */}
                     <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0'}}>
                       <div className="text-center">
+                        {pedigreeData.image && (
+                          <div className="mb-4">
+                            <img 
+                              src={pedigreeData.image}
+                              alt={pedigreeData.name}
+                              className="w-32 h-24 rounded-lg object-cover mx-auto border-2 border-golden/20"
+                            />
+                          </div>
+                        )}
                         <h3 className="text-2xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
                           {pedigreeData.name}
                         </h3>
