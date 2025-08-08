@@ -24,7 +24,7 @@ import holdenSummer from "@assets/Summer (Butterfly 5x4)_1753623366075.png";
 import holdenFern from "@assets/Fern (Apple Pie 5x4)_1753623366073.png";
 import holdenWillow from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
 import grizzlyPearl from "@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png";
-import grizzlyHolly from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
+import grizzlyHolly from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754683799995.jpg";
 import grizzlyHazel from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
 export default function BreedingDogs() {
