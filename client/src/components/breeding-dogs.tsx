@@ -365,6 +365,7 @@ export default function BreedingDogs() {
             name: "Belquest Nostalgic Candy (\"Candy\")",
             titles: ["BOBBBE", "GCH", "CH"],
             image: candyImage,
+            achievements: "2013 AKC/Eukanuba National Championship Best of Breed Bred-by-Exhibitor",
             sire: {
               name: "Moon's Dam's Maternal Great-Grandsire",
               titles: ["CH"]
@@ -1112,6 +1113,13 @@ export default function BreedingDogs() {
                               </button>
                             ))}
                           </div>
+                          {pedigreeData.dam.dam.achievements && (
+                            <div className="mt-2 text-center">
+                              <p className="text-xs font-source-sans text-gray-700 italic">
+                                {pedigreeData.dam.dam.achievements}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
 
