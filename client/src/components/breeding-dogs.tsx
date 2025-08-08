@@ -883,10 +883,12 @@ export default function BreedingDogs() {
                               ))}
                             </div>
                             {pedigreeData.sire.achievements && (
-                              <div className="mt-2 text-center">
-                                <p className="text-xs font-source-sans text-gray-700 italic">
-                                  {pedigreeData.sire.achievements}
-                                </p>
+                              <div className="mt-3 text-center">
+                                <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg px-3 py-2">
+                                  <p className="text-sm font-montserrat font-semibold text-yellow-800">
+                                    🏆 {pedigreeData.sire.achievements}
+                                  </p>
+                                </div>
                               </div>
                             )}
                           </div>
@@ -1123,9 +1125,11 @@ export default function BreedingDogs() {
                           </div>
                           {pedigreeData.dam.dam.achievements && (
                             <div className="mt-2 text-center">
-                              <p className="text-xs font-source-sans text-gray-700 italic">
-                                {pedigreeData.dam.dam.achievements}
-                              </p>
+                              <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg px-2 py-1">
+                                <p className="text-xs font-montserrat font-semibold text-yellow-800">
+                                  🏆 {pedigreeData.dam.dam.achievements}
+                                </p>
+                              </div>
                             </div>
                           )}
                         </div>
