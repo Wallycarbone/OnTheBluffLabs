@@ -1098,46 +1098,7 @@ export default function BreedingDogs() {
 
                     </div>
 
-                    {/* Notable Bloodlines */}
-                    <div className="bg-gray-50 rounded-lg p-6">
-                      <h4 className="text-lg font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
-                        NOTABLE ANCESTORS
-                      </h4>
-                      <div className="text-center">
-                        {selectedDog.name === "Grizzly" && (
-                          <div className="space-y-2">
-                            <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
-                              Son of <strong>Greenstone Chocoholic at Loretta ("Bosco")</strong> and <strong>Endless Mountain's Hannah</strong>, 
-                              featuring exceptional bloodlines with multiple Grand Champions. Notable ancestors include 
-                              <strong>Shalimar's The Animator ("Cyrus")</strong> with GCH, CH, and MBISS titles, and <strong>Bosco</strong> brings Champion and Master Agility excellence.
-                            </p>
-                            <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
-                              Grand Champion & Multi-Title Line
-                            </span>
-                          </div>
-                        )}
-                        {selectedDog.name === "Harper Lee" && (
-                          <div className="space-y-2">
-                            <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
-                              Daughter of our late champion sire <strong>Atticus Finch</strong>, continuing his exceptional legacy
-                            </p>
-                            <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
-                              Legacy Champion Line
-                            </span>
-                          </div>
-                        )}
-                        {(selectedDog.name === "Moon" || selectedDog.name === "Foxxy" || selectedDog.name === "Nora") && (
-                          <div className="space-y-2">
-                            <p className="font-source-sans text-sm" style={{color: '#4b4b4b'}}>
-                              Champion bloodlines with exceptional conformation and temperament
-                            </p>
-                            <span className="inline-block px-3 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#a5aa35', color: '#fefefe'}}>
-                              Champion Bloodline
-                            </span>
-                          </div>
-                        )}
-                      </div>
-                    </div>
+
                   </div>
                 );
               })()}
