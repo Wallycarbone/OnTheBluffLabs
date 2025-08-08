@@ -326,7 +326,7 @@ export default function BreedingDogs() {
           titles: ["GCH", "CH"],
           image: topoGigioImage,
           sire: {
-            name: "Carhm Bluveil Mr. Darcy",
+            name: "Charm Bluveil's Mr. Darcy",
             titles: ["CH", "GCH", "MBISS"],
             // image: mrDarcyImage,
             sire: {
