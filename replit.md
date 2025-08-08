@@ -89,3 +89,12 @@ Preferred communication style: Simple, everyday language.
 - Added logical paragraph breaks to all testimonials for improved readability
 - Removed quotation marks for cleaner, more professional presentation
 - Enhanced testimonial text rendering with proper paragraph spacing while maintaining expand/collapse functionality
+
+### ✅ **INTERACTIVE PEDIGREE ENHANCEMENTS** (January 2025)
+- Updated pedigree displays to show photos only when dog names are clicked
+- Removed automatic photo display from pedigree overview sections (converted to plain text)
+- Added new Grizzly outdoor photo to "View Full Pedigree" popup dialog
+- Made main dog names clickable in pedigree popups for larger image viewing
+- Enhanced breeding dog cards with reorganized layout: removed star sections, moved pedigree content to "Pedigree Highlight"
+- Added clickable Westminster lineage reference for Grizzly showing Shalimar's The Animator photo
+- Maintained consistent golden color styling and hover effects for all interactive elements
