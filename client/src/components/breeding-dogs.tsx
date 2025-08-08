@@ -664,58 +664,23 @@ export default function BreedingDogs() {
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
                 <p className="font-source-sans" style={{color: '#11100f'}}>
-                  {dog.name === "Grizzly" ? (
-                    <button 
-                      className="text-golden underline hover:text-golden/80 font-medium"
-                      onClick={() => {
-                        setSelectedImage({
-                          src: boscoImage,
-                          name: "Greenstone Chocoholic at Loretta (\"Bosco\")"
-                        });
-                        setIsImagePopupOpen(true);
-                      }}
-                    >
-                      Greenstone Chocoholic at Loretta ("Bosco")
-                    </button>
-                  ) : dog.name === "Harper Lee" ? (
-                    <button 
-                      className="text-golden underline hover:text-golden/80 font-medium"
-                      onClick={() => {
-                        setSelectedImage({
-                          src: atticusImage,
-                          name: "Atticus Finch"
-                        });
-                        setIsImagePopupOpen(true);
-                      }}
-                    >
-                      Atticus Finch
-                    </button>
-                  ) : (
-                    `${dog.name}'s Sire`
-                  )}
+                  {dog.name === "Grizzly" 
+                    ? "Greenstone Chocoholic at Loretta (\"Bosco\")"
+                    : dog.name === "Harper Lee"
+                    ? "Atticus Finch"
+                    : `${dog.name}'s Sire`
+                  }
                 </p>
               </div>
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
                 <p className="font-source-sans" style={{color: '#11100f'}}>
-                  {dog.name === "Grizzly" ? (
-                    <button 
-                      className="text-golden underline hover:text-golden/80 font-medium"
-                      onClick={() => {
-                        setSelectedImage({
-                          src: hannahImage,
-                          name: "Endless Mountain's Hannah"
-                        });
-                        setIsImagePopupOpen(true);
-                      }}
-                    >
-                      Endless Mountain's Hannah
-                    </button>
-                  ) : dog.name === "Harper Lee" ? (
-                    "Harper Lee's Dam"
-                  ) : (
-                    `${dog.name}'s Dam`
-                  )}
+                  {dog.name === "Grizzly" 
+                    ? "Endless Mountain's Hannah"
+                    : dog.name === "Harper Lee"
+                    ? "Harper Lee's Dam"
+                    : `${dog.name}'s Dam`
+                  }
                 </p>
               </div>
             </div>
