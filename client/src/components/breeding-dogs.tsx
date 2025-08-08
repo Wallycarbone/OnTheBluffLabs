@@ -325,6 +325,10 @@ export default function BreedingDogs() {
           name: "Farnfield Topo Gigio (\"Gino\")",
           titles: ["GCH", "CH"],
           image: topoGigioImage,
+          dam: {
+            name: "Kim Valley Star Attraction of Farnfield",
+            titles: [],
+          },
           sire: {
             name: "Charm Bluveil's Mr. Darcy",
             titles: ["CH", "GCH", "MBISS"],
@@ -335,18 +339,6 @@ export default function BreedingDogs() {
             },
             dam: {
               name: "Topo's Paternal Great-Granddam",
-              titles: ["CH"]
-            }
-          },
-          dam: {
-            name: "Topo's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Topo's Maternal Great-Grandsire",
-              titles: ["CH"]
-            },
-            dam: {
-              name: "Topo's Maternal Great-Granddam",
               titles: ["CH"]
             }
           }
