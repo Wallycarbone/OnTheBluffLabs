@@ -23,7 +23,7 @@ import moonAlpine from "@assets/Ms. Alpine Glow_1753621328203.png";
 import holdenSummer from "@assets/Summer (Butterfly 5x4)_1753623366075.png";
 import holdenFern from "@assets/Fern (Apple Pie 5x4)_1753623366073.png";
 import holdenWillow from "@assets/Willow (Seaglass 5x4)_1753623366078.png";
-import grizzlyPearl from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
+import grizzlyPearl from "@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png";
 import grizzlyHolly from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
 import grizzlyHazel from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
