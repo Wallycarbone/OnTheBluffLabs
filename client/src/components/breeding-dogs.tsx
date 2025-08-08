@@ -123,7 +123,7 @@ export default function BreedingDogs() {
         name: "Grizzly",
         formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
         titles: [],
-        image: grizzlyImage,
+        image: grizzlyPedigreeImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
           titles: ["CH", "MX"],
@@ -661,15 +661,7 @@ export default function BreedingDogs() {
                 PEDIGREE OVERVIEW
               </h4>
             </div>
-            {dog.name === "Grizzly" && (
-              <div className="text-center mb-3">
-                <img 
-                  src={grizzlyPedigreeImage}
-                  alt="Grizzly"
-                  className="w-20 h-20 rounded-lg object-cover border-2 border-golden/20 mx-auto"
-                />
-              </div>
-            )}
+
             <div className="grid grid-cols-2 gap-4 text-xs">
               <div>
                 <span className="font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
