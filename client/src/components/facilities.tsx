@@ -39,7 +39,7 @@ export default function Team() {
       name: "David Rifenburgh",
       role: "Team Member",
       description: "David started as a puppy parent and developed an interest in training, so he joined our team. His experience as a Labrador owner brings valuable perspective to our training and puppy development programs.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (7)_1754774561852.png",
     },
     {
       name: "Poppy Tampasis",
