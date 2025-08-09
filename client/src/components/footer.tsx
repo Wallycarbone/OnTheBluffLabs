@@ -99,8 +99,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide">CONTACT INFO</h4>
             <ul className="space-y-2">
-              <li className="font-source-sans text-gray-300">1234 Bluff Ridge Road</li>
-              <li className="font-source-sans text-gray-300">Countryside, State 12345</li>
+              <li className="font-source-sans text-gray-300">165 Northern Boulevard</li>
+              <li className="font-source-sans text-gray-300">Germantown, NY</li>
               <li className="font-source-sans text-gray-300">(555) 123-4567</li>
               <li className="font-source-sans text-gray-300">info@ontheblufflabradors.com</li>
             </ul>
