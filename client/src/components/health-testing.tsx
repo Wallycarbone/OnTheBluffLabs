@@ -16,7 +16,7 @@ export default function HealthTesting() {
     {
       image: "/attached_assets/Y30A1167GuinevereGrizzlymsturtles (4)_1754769419715.JPG",
       title: "Raw Dog Food",
-      description: "Fresh raw food with proteins, greens, fruits, and oils. We source from local butchers and add favorites like whole fish - our dogs' preferred meal.",
+      description: "We feed fresh raw food with proteins, greens, fruits, and oils. We source from local butchers and add favorites like whole fish - our dogs' preferred meal.",
       essay: `We feed our dogs fresh raw food that is made up of some kind of protein such as meat, fish poultry, etc., and fresh vegetables, mainly greens, a variety of fruit, oils, garlic, probiotics, and different forms of supplements. If you feed your dog a variety of food, supplements are optional. Our treats consist of dehydrated animal organs. You can now buy this kind of food pre-made from raw food companies or you can easily make it yourself or you can do a combination of both.
 
 If you live in the country or near it, you can always approach a butcher in your area that is butchering off the hoof, (meaning he is starting with the whole animal) and see if he'd like to grind up parts of the animal he is discarding such as all the organs and off cuts that people do not eat. Most butchers would be happy to do this as they would be able to profit from what they are now discarding. If you can get the butcher to add tripe, (the lining of a cow's stomach), it is extremely nutritious for dogs. But we warn you, it is stinky. Smells like manure.
