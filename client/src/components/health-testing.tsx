@@ -33,42 +33,15 @@ After nearly 50 years of breeding we pride ourselves in picking the best puppy f
       image: "/attached_assets/Breeding Dogs 5x4 (6)_1754674032280.png",
       title: "Raw Dog Food",
       description: "Raw feeding promotes healthier coats, better digestion, stronger immune systems, and naturally cleaner teeth.",
-      essay: `Raw feeding represents a return to the natural diet that dogs evolved to thrive on. Our approach to raw nutrition is based on decades of research and practical experience with hundreds of dogs across multiple generations.
+      essay: `We feed our dogs fresh raw food that is made up of some kind of protein such as meat, fish poultry, etc., and fresh vegetables, mainly greens, a variety of fruit, oils, garlic, probiotics, and different forms of supplements. If you feed your dog a variety of food, supplements are optional. Our treats consist of dehydrated animal organs. You can now buy this kind of food pre-made from raw food companies or you can easily make it yourself or you can do a combination of both.
 
-**The Foundation of Raw Feeding**
-Dogs are biologically designed to process raw meat, bones, and organs. Their digestive systems, from their teeth to their stomach acid pH, are optimized for this type of nutrition. Commercial kibble, while convenient, often contains processed ingredients that can stress the digestive system over time.
+If you live in the country or near it, you can always approach a butcher in your area that is butchering off the hoof, (meaning he is starting with the whole animal) and see if he'd like to grind up parts of the animal he is discarding such as all the organs and off cuts that people do not eat. Most butchers would be happy to do this as they would be able to profit from what they are now discarding. If you can get the butcher to add tripe, (the lining of a cow's stomach), it is extremely nutritious for dogs. But we warn you, it is stinky. Smells like manure.
 
-**Digestive Health Benefits**
-Raw feeding promotes:
-- Better nutrient absorption
-- Smaller, firmer stools indicating efficient digestion
-- Reduced bloat and gas
-- Balanced gut bacteria
-- Improved food allergies and sensitivities
+The vegetables we add are mostly greens such as kale, collard greens, dandelion greens, broccoli, and green beans and we also add sweet potato sometimes. We use olive oil, cod liver oil, and salmon oil and we also feed whole fish cut up with the bone in, head, tail, and innards. They love it! If our dogs could talk I think they would say that fish is their favorite meal. You can also feed canned fish such as sardines and salmon.
 
-**Immune System Strengthening**
-The natural enzymes and nutrients in raw food support immune function in ways that processed foods cannot. Dogs on raw diets typically show:
-- Increased resistance to infections
-- Faster recovery from illness
-- Better response to vaccinations
-- Enhanced overall vitality
+We add garlic for flavor because it is known, not scientifically proven as yet, to help fend off fleas and ticks. Whole chicken backs are great because they are so inexpensive. Nobody eats them. Raw bone is good for their teeth and bones, and a chicken back will occupy your pup for a while as their teeth are not fully formed so they will mouth it into mush. NO cooked bones. These can splinter. But raw bones are very nutritious.
 
-**Dental and Oral Health**
-Raw meaty bones provide natural dental care by:
-- Mechanically cleaning teeth through chewing
-- Massaging gums and strengthening jaw muscles
-- Providing natural enzymes that combat bacteria
-- Eliminating the sugars and starches that feed harmful bacteria
-
-**Coat and Skin Benefits**
-The high-quality fats and proteins in raw diets contribute to:
-- Shinier, softer coats
-- Reduced shedding
-- Healthier skin with less irritation
-- Better healing of minor cuts and scrapes
-
-**Our Raw Feeding Program**
-We transition our puppies to age-appropriate raw foods starting at 4-5 weeks, working closely with families to ensure successful continuation of this nutritional foundation. We provide detailed feeding guides, supplier recommendations, and ongoing support to make raw feeding practical and safe for every family.`
+All kinds of fruit are fine. Your dog will have his favorites. Most like pears and apples. Some like oranges. You will have to try them out. Berries are especially nutritious. We add these to our dogs' food. If, for the most part, you are a healthy eater, cooked food is fine for your dog. It is why they joined humans in the first place. They smelled the food around the camp fire and came around, offering up their services in exchange for food. So feed them your leftovers in their dish. They smelled it cooking. Now they get to share in the bounty.`
     },
     {
       image: "/attached_assets/Breeding Dogs 5x4 (5)_1754340347869.png",
