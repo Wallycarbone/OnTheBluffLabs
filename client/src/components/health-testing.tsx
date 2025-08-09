@@ -30,35 +30,6 @@ Labradors are highly social creatures who thrive in small quarters with humans. 
 After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.`
     },
     {
-      image: "/attached_assets/Breeding Dogs 5x4 (5)_1754340347869.png",
-      title: "Delay Spay & Neuter",
-      description: "We recommend delaying spay and neuter procedures until after 24 months to allow proper joint and bone development.",
-      essay: `The timing of spay and neuter procedures has a profound impact on your Labrador's long-term health and development. Our recommendation to delay these procedures until after 24 months is based on extensive research and decades of breeding experience.
-
-**The Science Behind Delayed Procedures**
-Recent veterinary research has demonstrated that early spay/neuter can significantly impact joint development, particularly in large breeds like Labradors. The growth plates in a dog's bones don't fully close until 18-24 months of age. Sex hormones play a crucial role in signaling when these growth plates should close.
-
-**Joint Health and Mobility**
-When spay/neuter procedures are performed too early, growth plates may remain open longer than intended, leading to uneven bone development. This can result in increased risk of:
-- Hip dysplasia
-- Elbow dysplasia  
-- Cruciate ligament injuries
-- Other orthopedic problems
-
-**Cancer Risk Considerations**
-While early spay/neuter was once thought to prevent all cancers, research now shows a more nuanced picture. Delaying these procedures can actually reduce the risk of certain cancers, including osteosarcoma (bone cancer) and hemangiosarcoma, while the risk of mammary cancer remains low when procedures are performed before the second heat cycle.
-
-**Behavioral and Developmental Benefits**
-Allowing natural hormonal development through adolescence contributes to:
-- Proper muscle development
-- Appropriate bone density
-- Natural behavioral maturation
-- Better stress resilience
-
-**Our Guidance and Support**
-We work closely with families to help them manage intact dogs responsibly during this extended period. This includes guidance on preventing unwanted breeding, managing heat cycles, and maintaining proper socialization during adolescence.`
-    },
-    {
       image: "/attached_assets/Breeding Dogs 5x4 (6)_1754674032280.png",
       title: "Raw Dog Food",
       description: "Raw feeding promotes healthier coats, better digestion, stronger immune systems, and naturally cleaner teeth.",
@@ -98,6 +69,35 @@ The high-quality fats and proteins in raw diets contribute to:
 
 **Our Raw Feeding Program**
 We transition our puppies to age-appropriate raw foods starting at 4-5 weeks, working closely with families to ensure successful continuation of this nutritional foundation. We provide detailed feeding guides, supplier recommendations, and ongoing support to make raw feeding practical and safe for every family.`
+    },
+    {
+      image: "/attached_assets/Breeding Dogs 5x4 (5)_1754340347869.png",
+      title: "Delay Spay & Neuter",
+      description: "We recommend delaying spay and neuter procedures until after 24 months to allow proper joint and bone development.",
+      essay: `The timing of spay and neuter procedures has a profound impact on your Labrador's long-term health and development. Our recommendation to delay these procedures until after 24 months is based on extensive research and decades of breeding experience.
+
+**The Science Behind Delayed Procedures**
+Recent veterinary research has demonstrated that early spay/neuter can significantly impact joint development, particularly in large breeds like Labradors. The growth plates in a dog's bones don't fully close until 18-24 months of age. Sex hormones play a crucial role in signaling when these growth plates should close.
+
+**Joint Health and Mobility**
+When spay/neuter procedures are performed too early, growth plates may remain open longer than intended, leading to uneven bone development. This can result in increased risk of:
+- Hip dysplasia
+- Elbow dysplasia  
+- Cruciate ligament injuries
+- Other orthopedic problems
+
+**Cancer Risk Considerations**
+While early spay/neuter was once thought to prevent all cancers, research now shows a more nuanced picture. Delaying these procedures can actually reduce the risk of certain cancers, including osteosarcoma (bone cancer) and hemangiosarcoma, while the risk of mammary cancer remains low when procedures are performed before the second heat cycle.
+
+**Behavioral and Developmental Benefits**
+Allowing natural hormonal development through adolescence contributes to:
+- Proper muscle development
+- Appropriate bone density
+- Natural behavioral maturation
+- Better stress resilience
+
+**Our Guidance and Support**
+We work closely with families to help them manage intact dogs responsibly during this extended period. This includes guidance on preventing unwanted breeding, managing heat cycles, and maintaining proper socialization during adolescence.`
     },
     {
       image: "/attached_assets/Y30A9681 (3)_1754673832851.jpg",
