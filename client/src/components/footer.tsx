@@ -101,7 +101,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="font-source-sans text-gray-300">165 Northern Boulevard</li>
               <li className="font-source-sans text-gray-300">Germantown, NY</li>
-              <li className="font-source-sans text-gray-300">(518) 855-6705</li>
+              <li className="font-source-sans text-gray-300 text-sm mt-2 italic">
+                Visits to our grounds are by appointment ONLY.<br />
+                Unannounced visitors will be turned away, without exception.
+              </li>
+              <li className="font-source-sans text-gray-300 mt-3">(518) 855-6705</li>
               <li className="font-source-sans text-gray-300">info@ontheblufflabradors.com</li>
             </ul>
           </div>
