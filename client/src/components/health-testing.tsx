@@ -201,7 +201,7 @@ We maintain relationships with puppy families to track long-term health outcomes
                   letterSpacing: '0.02em'
                 }}
               >
-                For nearly fifty years we have worked hard to create Labradors that are the best possible companion. Our dogs are raised in our house, sleep in our bed, ride in our car, swim in our pond, and are involved in everything we do. They are not housed in a kennel.
+For nearly fifty years we have worked hard to create Labradors that are the best possible companion. Our dogs are raised in our house, sleep in our bed, ride in our car, swim in our pond, and are involved in everything we do. They are not housed in a kennel.
 
 We have bred from the finest lines available. Our bloodlines trace back to some of the most famous names in Labrador history. Our dogs consistently pass the various health tests and we have never had a dog fail a health test. We pride ourselves on raising dogs with impeccable temperaments that are a joy to live with.
 
