@@ -16,7 +16,7 @@ export default function HealthTesting() {
     {
       image: healthyStartImage,
       title: "Healthy Start",
-      description: "From birth through early weeks, we provide optimal nutrition, veterinary care, and environmental enrichment for the strongest foundation.",
+      description: "Nearly fifty years of breeding excellence focused on creating the best possible companion dogs through family environment, advanced early handling, and expert puppy placement.",
       essay: `For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.
 
 We strive for excellence in temperament, personality, with a physical structure that adheres to breed standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.
