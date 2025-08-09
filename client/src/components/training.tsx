@@ -86,8 +86,8 @@ export default function Training() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="/attached_assets/Y30A9681 (2)_1753209299551.JPG"
-                    alt="Professional dog training session demonstrating hand signals with red Labrador"
+                    src="/attached_assets/Breeding Dogs 5x4 (7)_1754767557970.png"
+                    alt="Beautiful golden Labrador retrieving a stick in snow, demonstrating natural training instincts"
                     className="w-full h-96 object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 45%'}}
                   />

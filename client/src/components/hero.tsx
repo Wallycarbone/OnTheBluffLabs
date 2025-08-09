@@ -8,7 +8,7 @@ import mikkolaImage from "@assets/Mikkola_1752525173263.webp";
 import frankieImage from "@assets/Frankie_1752525510895.webp";
 import heroImage from "@assets/Breeding Dogs 5x4 (5)_1754340347869.png";
 import moonImage from "@assets/Moon_1754669243572.png";
-import trainingImage from "@assets/Y30A9681 (3)_1754673832851.jpg";
+import trainingImage from "@assets/Breeding Dogs 5x4 (7)_1754767557970.png";
 import rawFoodImage from "@assets/Breeding Dogs 5x4 (6)_1754674032280.png";
 
 export default function Hero() {
