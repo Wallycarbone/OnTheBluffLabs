@@ -30,7 +30,7 @@ Labradors are highly social creatures who thrive in small quarters with humans. 
 After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.`
     },
     {
-      image: "/attached_assets/Breeding Dogs 5x4 (6)_1754674032280.png",
+      image: "/attached_assets/Y30A1167GuinevereGrizzlymsturtles (4)_1754769419715.JPG",
       title: "Raw Dog Food",
       description: "Raw feeding promotes healthier coats, better digestion, stronger immune systems, and naturally cleaner teeth.",
       essay: `We feed our dogs fresh raw food that is made up of some kind of protein such as meat, fish poultry, etc., and fresh vegetables, mainly greens, a variety of fruit, oils, garlic, probiotics, and different forms of supplements. If you feed your dog a variety of food, supplements are optional. Our treats consist of dehydrated animal organs. You can now buy this kind of food pre-made from raw food companies or you can easily make it yourself or you can do a combination of both.
