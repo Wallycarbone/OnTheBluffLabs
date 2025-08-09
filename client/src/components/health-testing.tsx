@@ -219,32 +219,28 @@ We maintain relationships with puppy families to track long-term health outcomes
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {healthTests.map((test, index) => (
             <Card 
               key={index} 
-              className="bg-white rounded-2xl shadow-xl p-4 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+              className="bg-white rounded-2xl shadow-xl p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
               onClick={() => openEssay(test)}
             >
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-xl overflow-hidden mb-4 flex-shrink-0">
-                  <img 
-                    src={test.image} 
-                    alt={`${test.title} - Health and wellness pillar`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-oswald font-normal tracking-wide mb-3" style={{color: '#11100f'}}>
-                    {test.title}
-                  </h3>
-                  <p className="leading-relaxed text-xs font-source-sans mb-3" style={{color: '#4b4b4b', lineHeight: '1.5'}}>
-                    {test.description}
-                  </p>
-                  <div className="text-xs font-montserrat font-medium" style={{color: '#6d761d'}}>
-                    Click to learn more
-                  </div>
-                </div>
+              <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6">
+                <img 
+                  src={test.image} 
+                  alt={`${test.title} - Health and wellness pillar`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
+                {test.title}
+              </h3>
+              <p className="leading-relaxed text-sm font-source-sans mb-4" style={{color: '#4b4b4b', lineHeight: '1.6'}}>
+                {test.description}
+              </p>
+              <div className="text-xs font-montserrat font-medium" style={{color: '#6d761d'}}>
+                Click to learn more
               </div>
             </Card>
           ))}
