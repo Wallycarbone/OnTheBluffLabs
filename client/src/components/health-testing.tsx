@@ -60,45 +60,15 @@ We work closely with families to help them manage intact dogs responsibly during
       image: "/attached_assets/Y30A9681 (3)_1754673832851.jpg",
       title: "Reduce Vaccinations",
       description: "We carefully avoid unnecessary vaccinations to prevent immune system overload and maintain natural immunity.",
-      essay: `Our approach to vaccination prioritizes building strong natural immunity while providing essential protection against serious diseases. We believe in strategic, minimal vaccination protocols based on current veterinary science and individual risk assessment.
+      essay: `Studies have shown that dogs are often fully immunized with one vaccination if administered at 16 weeks or older. We believe that not all vaccinations are necessary. The only one required by law is rabies. The others are up to you. Just remember, you are the customer. This is your dog and you must advocate for them.
 
-**The Science of Immunity**
-A dog's immune system is designed to provide lifelong protection after encountering pathogens or receiving appropriate vaccination. Over-vaccination can actually weaken this natural response by overwhelming the system and creating chronic inflammation.
+The first immunization is usually the DA2LPP. We recommend that you do not give this shot at all. It is never good to immunize a dog with more than one vaccination at a time. The wombo combo shots, which is what they are often called, contain multiple modified live viruses mixed with various bacteria. Some are long-term vaccinations and can last over 3 years or a lifetime while others are not and may not last a year or are unnecessary, to begin with. If your dog has an adverse reaction, how would you know which vaccine caused it?
 
-**Core vs. Non-Core Vaccines**
-We focus on truly essential vaccines while avoiding unnecessary ones:
+After puppyhood, giving vaccines too often—especially when they aren't needed—can put your dog at unnecessary risk without offering any real benefit. One of the best ways to avoid over-vaccinating is through antibody titer testing. This is a simple blood test that checks whether your dog is already protected against certain diseases.
 
-**Core Vaccines (Essential):**
-- Distemper, Hepatitis, Parvovirus, Parainfluenza (DHPP)
-- Rabies (as required by law)
+A titer test measures the level of specific antibodies in the bloodstream. Antibodies are the immune system's "memory" cells—they're what your dog's body produces after a vaccination or natural exposure to an illness. If the antibody level is high enough, it means your dog is still protected and doesn't need another shot at that time.
 
-**Non-Core Vaccines (Risk-Based):**
-- Lyme disease (only in high-risk geographic areas)
-- Kennel cough (only for dogs in high-exposure situations)
-- Canine influenza (rarely necessary for family pets)
-
-**Titer Testing Instead of Automatic Boosters**
-Rather than automatically giving annual boosters, we recommend titer testing to measure existing antibody levels. Many dogs maintain protective immunity for years or even decades after their initial vaccination series.
-
-**Puppy Vaccination Protocol**
-Our conservative puppy protocol includes:
-- Initial series at 8, 12, and 16 weeks
-- One-year booster
-- Titer testing thereafter to determine actual need
-
-**Health Benefits of Reduced Vaccination**
-Dogs on minimal vaccination protocols often show:
-- Fewer autoimmune conditions
-- Reduced allergies and skin problems
-- Better overall immune function
-- Less chronic inflammation
-- Improved longevity
-
-**Risk Assessment and Geographic Considerations**
-We work with families to assess their individual risk factors, including geographic location, lifestyle, and exposure levels, to create customized vaccination protocols that provide protection without over-stimulating the immune system.
-
-**Supporting Natural Immunity**
-We support strong natural immunity through proper nutrition, minimal stress, appropriate exercise, and avoiding unnecessary medications and chemicals that can compromise immune function.`
+The beauty of titer testing is that it takes the guesswork out of the equation. Instead of automatically re-vaccinating every year or two because "that's the schedule," you're basing your decision on your dog's actual immunity. This helps you avoid unnecessary vaccines, reduce the chance of side effects, and make vaccination choices that are tailored to your dog—not to a generic chart on the wall.`
     },
     {
       image: "/attached_assets/Y30A9815 (7)_1754682245597.JPG",
