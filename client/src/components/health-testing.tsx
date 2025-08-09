@@ -61,7 +61,9 @@ The beauty of titer testing is that it takes the guesswork out of the equation. 
 
 Our breeding dogs are tested for the genetic conditions most often found in Labradors, including Progressive Retinal Atrophy (PRA) and Exercise Induced Collapse (EIC). Their hips are evaluated through the Orthopedic Foundation for Animals (OFA) to ensure they are sound and healthy for breeding.
 
-We only breed dogs that have passed all of their health testing. If a dog is found to be a carrier of a recessive condition, we make breeding decisions carefully—pairing them only with dogs that are clear—so no puppies are ever affected. This approach protects the health of our litters while keeping valuable genetic diversity in our lines.`
+We only breed dogs with passing hip grades. If a dog is found to be a carrier of a recessive condition, we make breeding decisions carefully—pairing them only with dogs that are clear—so no puppies are ever affected. This approach protects the health of our litters while keeping valuable genetic diversity in our lines.
+
+Of course, these considerations go hand in hand with selecting dogs that uphold the original wisdom of the breed: emotional intelligence, cognitive flexibility, and physical beauty.`
     },
   ];
 
