@@ -89,7 +89,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/training" label="Training" />
                 <NavButton href="/boarding" label="Board & Train" />
-                <NavButton href="/facilities" label="Facilities" />
+                <NavButton href="/facilities" label="Our Team" />
               </div>
               
               {/* Contact Button */}
@@ -114,7 +114,7 @@ export default function Navigation() {
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/training" label="Training" />
-              <NavButton href="/facilities" label="Facilities" />
+              <NavButton href="/facilities" label="Our Team" />
               <Link href="/contact">
                 <Button 
                   className="px-4 py-2 font-montserrat font-medium text-sm rounded-full ml-4"
@@ -156,7 +156,7 @@ export default function Navigation() {
               <MobileNavButton href="/health-testing" label="Health Testing" onClick={closeMenu} />
               <MobileNavButton href="/training" label="Training Programs" onClick={closeMenu} />
               <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
-              <MobileNavButton href="/facilities" label="Facilities" onClick={closeMenu} />
+              <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
             </div>
           </div>
         </div>
