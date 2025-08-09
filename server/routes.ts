@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertInquirySchema, loginSchema } from "@shared/schema";
+import { insertInquirySchema, insertDogFoodOrderSchema, insertUserSchema, loginSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -72,6 +72,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post("/api/auth/logout", async (req, res) => {
     res.json({ message: "Logged out successfully" });
+  });
+
+  // Dog food order routes
+  app.post("/api/dog-food-orders", async (req, res) => {
+    try {
+      const orderData = insertDogFoodOrderSchema.parse(req.body);
+      const createdOrder = await storage.createDogFoodOrder(orderData);
+      res.json(createdOrder);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        res.status(400).json({ 
+          message: "Validation error",
+          errors: error.errors 
+        });
+      } else {
+        res.status(500).json({ 
+          message: "Internal server error" 
+        });
+      }
+    }
+  });
+
+  // Get all dog food orders (for admin)
+  app.get("/api/dog-food-orders", async (req, res) => {
+    try {
+      const orders = await storage.getDogFoodOrders();
+      res.json(orders);
+    } catch (error) {
+      res.status(500).json({ 
+        message: "Internal server error" 
+      });
+    }
   });
 
   // Quick login test endpoint - GET request to test from browser
@@ -206,7 +238,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
       res.status(500).json({ 
         message: "Failed to create user",
-        error: error.message 
+        error: error instanceof Error ? error.message : 'Unknown error'
       });
     }
   });

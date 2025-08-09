@@ -21,6 +21,22 @@ export const inquiries = pgTable("inquiries", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+export const dogFoodOrders = pgTable("dog_food_orders", {
+  id: serial("id").primaryKey(),
+  customerName: text("customer_name").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone").notNull(),
+  address: text("address").notNull(),
+  productId: text("product_id").notNull(),
+  productName: text("product_name").notNull(),
+  productPrice: integer("product_price").notNull(),
+  quantity: integer("quantity").notNull(),
+  totalAmount: integer("total_amount").notNull(),
+  notes: text("notes"),
+  status: text("status").notNull().default("pending"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
@@ -40,8 +56,23 @@ export const insertInquirySchema = createInsertSchema(inquiries).pick({
   message: true,
 });
 
+export const insertDogFoodOrderSchema = createInsertSchema(dogFoodOrders).pick({
+  customerName: true,
+  email: true,
+  phone: true,
+  address: true,
+  productId: true,
+  productName: true,
+  productPrice: true,
+  quantity: true,
+  totalAmount: true,
+  notes: true,
+});
+
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
 export type InsertInquiry = z.infer<typeof insertInquirySchema>;
 export type Inquiry = typeof inquiries.$inferSelect;
+export type InsertDogFoodOrder = z.infer<typeof insertDogFoodOrderSchema>;
+export type DogFoodOrder = typeof dogFoodOrders.$inferSelect;
 export type LoginData = z.infer<typeof loginSchema>;

@@ -12,6 +12,7 @@ import HealthTesting from "@/pages/health-testing";
 import Training from "@/pages/training";
 import Boarding from "@/pages/boarding";
 import Facilities from "@/pages/facilities";
+import DogFood from "@/pages/dog-food";
 import Contact from "@/pages/contact";
 import Admin from "@/pages/admin";
 import AdminLogin from "@/pages/admin-login";
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/training" component={Training} />
       <Route path="/boarding" component={Boarding} />
       <Route path="/facilities" component={Facilities} />
+      <Route path="/dog-food" component={DogFood} />
       <Route path="/contact" component={Contact} />
       <Route path="/admin/login" component={SimpleAdminLogin} />
       <Route path="/admin" component={Admin} />

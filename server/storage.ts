@@ -1,4 +1,4 @@
-import { users, inquiries, type User, type InsertUser, type Inquiry, type InsertInquiry, type LoginData } from "@shared/schema";
+import { users, inquiries, dogFoodOrders, type User, type InsertUser, type Inquiry, type InsertInquiry, type DogFoodOrder, type InsertDogFoodOrder, type LoginData } from "@shared/schema";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
@@ -12,6 +12,8 @@ export interface IStorage {
   createInquiry(inquiry: InsertInquiry): Promise<Inquiry>;
   getInquiries(): Promise<Inquiry[]>;
   getAllUsers(): Promise<User[]>;
+  createDogFoodOrder(order: InsertDogFoodOrder): Promise<DogFoodOrder>;
+  getDogFoodOrders(): Promise<DogFoodOrder[]>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -71,6 +73,22 @@ export class DatabaseStorage implements IStorage {
       .from(inquiries)
       .orderBy(inquiries.createdAt);
     return inquiryList;
+  }
+
+  async createDogFoodOrder(insertOrder: InsertDogFoodOrder): Promise<DogFoodOrder> {
+    const [order] = await db
+      .insert(dogFoodOrders)
+      .values(insertOrder)
+      .returning();
+    return order;
+  }
+
+  async getDogFoodOrders(): Promise<DogFoodOrder[]> {
+    const orderList = await db
+      .select()
+      .from(dogFoodOrders)
+      .orderBy(dogFoodOrders.createdAt);
+    return orderList;
   }
 
   async createAdminUser(username: string, password: string): Promise<User> {

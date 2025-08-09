@@ -89,6 +89,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/training" label="Training" />
                 <NavButton href="/boarding" label="Board & Train" />
+                <NavButton href="/dog-food" label="Dog Food" />
                 <NavButton href="/facilities" label="Our Team" />
               </div>
               
@@ -114,6 +115,7 @@ export default function Navigation() {
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/training" label="Training" />
+              <NavButton href="/dog-food" label="Food" />
               <NavButton href="/facilities" label="Our Team" />
               <Link href="/contact">
                 <Button 
@@ -156,6 +158,7 @@ export default function Navigation() {
               <MobileNavButton href="/health-testing" label="Health Testing" onClick={closeMenu} />
               <MobileNavButton href="/training" label="Training Programs" onClick={closeMenu} />
               <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
+              <MobileNavButton href="/dog-food" label="Dog Food" onClick={closeMenu} />
               <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
             </div>
           </div>
