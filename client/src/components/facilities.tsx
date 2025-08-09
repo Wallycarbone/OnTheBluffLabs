@@ -26,7 +26,7 @@ export default function Team() {
     {
       name: "Thomas Gambino",
       role: "Puppy Socialization & Family Coordinator",
-      description: "Specializes in early puppy socialization and helps match families with the perfect puppy based on lifestyle and preferences.",
+      description: "Thomas trains puppies, manages sales, and is a valued member of one of our co-owner families. His hands-on experience and personal connection to our breeding program brings authentic insight to puppy development and family matching.",
       image: "/attached_assets/24_1754773881053.png",
     },
   ];
