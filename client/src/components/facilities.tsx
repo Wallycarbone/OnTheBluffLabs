@@ -35,6 +35,24 @@ export default function Team() {
       description: "Michaela trains our puppies and provides dedicated care throughout their early development. Her nurturing approach ensures each puppy receives individual attention and develops the confident, well-adjusted temperament our families expect.",
       image: "/attached_assets/25_1754773927239.png",
     },
+    {
+      name: "David Rifenburgh",
+      role: "Team Member",
+      description: "David contributes to our breeding program operations and puppy care activities.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    },
+    {
+      name: "Poppy Tampasis",
+      role: "Team Member", 
+      description: "Poppy supports our facility operations and assists with puppy care and development.",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    },
+    {
+      name: "Julie Rifenburgh",
+      role: "Team Member",
+      description: "Julie assists with our breeding program and helps maintain the high standards of care for our dogs and puppies.",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    },
   ];
 
   return (
