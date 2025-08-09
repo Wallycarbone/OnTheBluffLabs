@@ -110,7 +110,7 @@ export default function DogFoodPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-playfair font-bold text-stone-900 mb-6">
+          <h1 className="text-5xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
             Premium Raw Dog Food
           </h1>
           <p className="text-xl text-stone-700 max-w-3xl mx-auto font-source-sans leading-relaxed">
@@ -124,7 +124,7 @@ export default function DogFoodPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Selection */}
           <div>
-            <h2 className="text-3xl font-playfair font-semibold text-stone-900 mb-6">
+            <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
               Fresh Raw Food Products
             </h2>
             
@@ -145,7 +145,7 @@ export default function DogFoodPage() {
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <div>
-                        <CardTitle className="text-xl font-playfair text-stone-900">
+                        <CardTitle className="text-xl font-oswald text-stone-900 tracking-wide">
                           {product.name}
                         </CardTitle>
                         <CardDescription className="text-stone-600 mt-2 font-source-sans">
@@ -182,10 +182,10 @@ export default function DogFoodPage() {
             {selectedProductDetails && (
               <Card className="mt-6 bg-olive-50 border-olive-200">
                 <CardHeader>
-                  <CardTitle className="text-olive-800 font-playfair">Selected Product</CardTitle>
+                  <CardTitle className="text-olive-800 font-oswald tracking-wide">Selected Product</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <h3 className="font-playfair font-semibold text-olive-900">{selectedProductDetails.name}</h3>
+                  <h3 className="font-oswald font-normal text-olive-900 tracking-wide">{selectedProductDetails.name}</h3>
                   <p className="text-olive-700 text-sm mt-1 font-source-sans">{selectedProductDetails.description}</p>
                   <div className="flex justify-between items-center mt-3">
                     <span className="text-olive-600 font-source-sans">Price: ${selectedProductDetails.price} per {selectedProductDetails.unit}</span>
@@ -197,13 +197,13 @@ export default function DogFoodPage() {
 
           {/* Order Form */}
           <div>
-            <h2 className="text-3xl font-playfair font-semibold text-stone-900 mb-6">
+            <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
               Place Your Order
             </h2>
 
             <Card>
               <CardHeader>
-                <CardTitle className="font-playfair">Order Information</CardTitle>
+                <CardTitle className="font-oswald tracking-wide">Order Information</CardTitle>
                 <CardDescription className="font-source-sans">
                   Fill out the form below to place your dog food order. We'll contact you to confirm details and arrange delivery.
                 </CardDescription>
@@ -213,7 +213,7 @@ export default function DogFoodPage() {
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     {/* Customer Information */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-playfair font-semibold text-stone-800">Customer Information</h3>
+                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Customer Information</h3>
                       
                       <FormField
                         control={form.control}
@@ -264,7 +264,7 @@ export default function DogFoodPage() {
 
                     {/* Dog Information */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-playfair font-semibold text-stone-800">Dog Information</h3>
+                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Dog Information</h3>
                       
                       <FormField
                         control={form.control}
@@ -315,7 +315,7 @@ export default function DogFoodPage() {
 
                     {/* Order Details */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-playfair font-semibold text-stone-800">Order Details</h3>
+                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Order Details</h3>
                       
                       <FormField
                         control={form.control}
@@ -413,7 +413,7 @@ export default function DogFoodPage() {
             {/* Order Information */}
             <Card className="mt-6 bg-blue-50 border-blue-200">
               <CardHeader>
-                <CardTitle className="text-blue-800 font-playfair">Raw Food Order Process</CardTitle>
+                <CardTitle className="text-blue-800 font-oswald tracking-wide">Raw Food Order Process</CardTitle>
               </CardHeader>
               <CardContent className="text-blue-700 space-y-2 font-source-sans">
                 <p>• We'll contact you within 24 hours to confirm your raw food order</p>
