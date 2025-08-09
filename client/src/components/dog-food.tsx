@@ -30,35 +30,35 @@ type DogFoodOrderForm = z.infer<typeof dogFoodOrderSchema>;
 const foodProducts = [
   {
     id: "raw-blend-adult",
-    name: "Premium Raw Blend - Adult",
-    description: "Complete raw food blend with high-quality proteins, vegetables, and supplements for adult Labradors",
-    price: 85,
-    unit: "20 lb bag",
-    benefits: ["High protein content", "Natural ingredients", "Supports joint health", "Promotes coat shine"]
+    name: "Fresh Raw Adult Formula",
+    description: "Complete raw food blend with farm-fresh proteins, organic vegetables, and natural supplements specifically formulated for adult Labradors",
+    price: 95,
+    unit: "20 lb portion",
+    benefits: ["100% raw ingredients", "Farm-fresh proteins", "No preservatives", "Supports natural digestion", "Promotes healthy coat"]
   },
   {
     id: "raw-blend-puppy",
-    name: "Premium Raw Blend - Puppy",
-    description: "Specially formulated raw food blend for growing puppies with essential nutrients for development",
-    price: 92,
-    unit: "20 lb bag",
-    benefits: ["Optimal growth support", "Brain development", "Strong bone formation", "Digestive health"]
+    name: "Fresh Raw Puppy Formula", 
+    description: "Nutrient-dense raw food blend designed for growing puppies with optimal protein ratios and essential fatty acids for proper development",
+    price: 105,
+    unit: "20 lb portion",
+    benefits: ["Growth-optimized nutrition", "Raw bone content for teeth", "Brain development support", "Natural enzyme preservation", "Easy transition from mother's milk"]
   },
   {
     id: "senior-formula",
-    name: "Senior Support Formula",
-    description: "Gentle raw blend designed for senior Labradors with joint support and easy digestion",
-    price: 88,
-    unit: "20 lb bag",
-    benefits: ["Joint mobility support", "Easy to digest", "Maintains muscle mass", "Heart health"]
+    name: "Fresh Raw Senior Formula",
+    description: "Gentle raw blend with softer textures and joint-supporting ingredients, specially crafted for senior Labradors with aging nutritional needs",
+    price: 98,
+    unit: "20 lb portion", 
+    benefits: ["Softer raw textures", "Anti-inflammatory ingredients", "Digestive enzyme support", "Glucosamine for joints", "Heart-healthy omega oils"]
   },
   {
-    id: "training-treats",
-    name: "Natural Training Treats",
-    description: "High-value freeze-dried treats perfect for training sessions and rewards",
-    price: 35,
-    unit: "2 lb bag",
-    benefits: ["High value rewards", "Natural ingredients", "Easy to break apart", "Long shelf life"]
+    id: "raw-treats",
+    name: "Premium Raw Training Treats",
+    description: "Single-ingredient freeze-dried raw treats made from premium organ meats and muscle meat for high-value training rewards",
+    price: 45,
+    unit: "1 lb bag",
+    benefits: ["Single-ingredient raw", "High protein content", "Perfect training size", "No artificial additives", "Long-lasting freshness"]
   }
 ];
 
@@ -111,11 +111,13 @@ export default function DogFoodPage() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-playfair font-bold text-stone-900 mb-6">
-            Premium Dog Food
+            Premium Raw Dog Food
           </h1>
           <p className="text-xl text-stone-700 max-w-3xl mx-auto font-source-sans leading-relaxed">
             We feed our dogs fresh raw food made up of high-quality proteins, fresh vegetables, 
-            and essential supplements. Now you can provide the same exceptional nutrition for your Labrador.
+            and essential supplements. Raw feeding preserves natural enzymes, provides optimal nutrition, 
+            and supports the digestive health that has kept our Labradors thriving for over 50 years. 
+            Experience the difference that species-appropriate raw nutrition can make for your Labrador.
           </p>
         </div>
 
@@ -123,7 +125,7 @@ export default function DogFoodPage() {
           {/* Product Selection */}
           <div>
             <h2 className="text-3xl font-playfair font-semibold text-stone-900 mb-6">
-              Available Products
+              Fresh Raw Food Products
             </h2>
             
             <div className="space-y-6">
@@ -411,14 +413,16 @@ export default function DogFoodPage() {
             {/* Order Information */}
             <Card className="mt-6 bg-blue-50 border-blue-200">
               <CardHeader>
-                <CardTitle className="text-blue-800">Order Process</CardTitle>
+                <CardTitle className="text-blue-800">Raw Food Order Process</CardTitle>
               </CardHeader>
               <CardContent className="text-blue-700 space-y-2">
-                <p>• We'll contact you within 24 hours to confirm your order</p>
+                <p>• We'll contact you within 24 hours to confirm your raw food order</p>
                 <p>• Payment is collected upon delivery or pickup</p>
                 <p>• Local delivery available within 50 miles of Germantown, NY</p>
-                <p>• Pickup available at our facility by appointment</p>
-                <p>• Fresh food prepared weekly - orders require 3-5 days notice</p>
+                <p>• Pickup available at our facility by appointment only</p>
+                <p>• Fresh raw food prepared weekly - orders require 5-7 days notice</p>
+                <p>• All raw food is flash-frozen for freshness and safety</p>
+                <p>• Detailed feeding guidelines included with every order</p>
               </CardContent>
             </Card>
           </div>
