@@ -17,22 +17,22 @@ export default function HealthTesting() {
       image: healthyStartImage,
       title: "Healthy Start",
       description: "From birth through early weeks, we provide optimal nutrition, veterinary care, and environmental enrichment for the strongest foundation.",
-      essay: `Our Healthy Start program begins the moment our puppies are born and continues through their first eight weeks of life. We believe that the foundation of a lifetime of health and happiness is established during these critical early weeks.
+      essay: `For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.
 
-**Nutritional Excellence from Day One**
-Our breeding mothers receive premium nutrition throughout pregnancy and nursing, ensuring puppies get the best possible start through rich, nutrient-dense milk. We supplement as needed with high-quality puppy formula and begin introducing carefully selected solid foods at the appropriate developmental stages.
+**Our Breeding Philosophy**
+We strive for excellence in temperament, personality, with a physical structure that adheres to breed standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.
 
-**Veterinary Care and Health Monitoring**
-Each puppy receives comprehensive veterinary examinations at strategic intervals. Our veterinarian partners provide expert guidance on vaccination schedules, health screening, and early intervention when needed. We maintain detailed health records for every puppy from birth.
+**Family Environment and Natural Living**
+Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive raw food diet made on our premises. Most importantly - they are handled and loved.
 
-**Environmental Enrichment and Early Socialization**
-From their first weeks, our puppies experience carefully controlled exposure to various sounds, textures, and gentle handling. This early neurological stimulation program, based on the Super Dog program developed by the military, helps develop stronger cardiovascular systems, greater tolerance to stress, and enhanced problem-solving abilities.
+**Early Handling and Development**
+Our pups are handled constantly from birth. Using advanced training methods, we challenge them to become independent as we expand their cognitive skills. At 5 or 6 weeks, they leave their inside whelping den and are placed outside in a large enclosure consisting of many different areas. Their world now has expanded exponentially. We train them in the use of a doggie door - an entrance to their own house (which is heated and air-conditioned). The early use of their own doggie door teaches independence and confidence.
 
-**Temperature and Comfort Management**
-We maintain optimal temperature and humidity levels in our nursery areas, ensuring puppies never experience stress from environmental factors. Clean, comfortable bedding and appropriate spacing allow for natural movement and development.
+**Individual Temperament Recognition**
+Labradors are highly social creatures who thrive in small quarters with humans. They are all different from one another and have attributes that show themselves at an early age. Some will be good hunters, others attentive service dogs, and others built for the show ring. Some can happily lie in the sun all day and still others want nothing more than to fetch a stick. For that reason our approach to puppy placement has focused on compatible behavior. Pups change dramatically from week to week.
 
-**Early Behavioral Foundation**
-Even before their eyes open, our puppies begin learning through gentle touch, sound exposure, and positioning exercises. This early foundation contributes to confident, well-adjusted adult dogs who adapt easily to family life.`
+**Expert Puppy Placement**
+After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.`
     },
     {
       image: "/attached_assets/Breeding Dogs 5x4 (5)_1754340347869.png",
