@@ -28,7 +28,7 @@ We add garlic for flavor because it is known, not scientifically proven as yet, 
 All kinds of fruit are fine. Your dog will have his favorites. Most like pears and apples. Some like oranges. You will have to try them out. Berries are especially nutritious. We add these to our dogs' food. If, for the most part, you are a healthy eater, cooked food is fine for your dog. It is why they joined humans in the first place. They smelled the food around the camp fire and came around, offering up their services in exchange for food. So feed them your leftovers in their dish. They smelled it cooking. Now they get to share in the bounty.`
     },
     {
-      image: "/attached_assets/Breeding Dogs 5x4 (5)_1754340347869.png",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (3)_1754771887076.png",
       title: "Delay Spay & Neuter",
       description: "We recommend delaying spay and neuter procedures until after 24 months to allow proper joint and bone development.",
       essay: `When it comes to spaying or neutering a large breed dog, timing matters—a lot. We strongly recommend that you wait until your dog is fully grown before making that decision. For most large breed Labradors, that means 24+ months old.
