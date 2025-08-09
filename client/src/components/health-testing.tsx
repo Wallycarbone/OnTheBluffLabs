@@ -1,8 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Eye, Bone, Dna, Heart } from "lucide-react";
+import { Eye, Bone, Dna, Heart, Baby } from "lucide-react";
 
 export default function HealthTesting() {
   const healthTests = [
+    {
+      icon: Baby,
+      title: "Healthy Start",
+      description: "From birth through early weeks, we provide optimal nutrition, veterinary care, and environmental enrichment for the strongest foundation.",
+    },
     {
       icon: Bone,
       title: "Delay Spay & Neuter",
@@ -39,7 +44,7 @@ export default function HealthTesting() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {healthTests.map((test, index) => (
             <Card key={index} className="bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-golden bg-opacity-15 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
