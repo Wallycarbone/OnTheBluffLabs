@@ -54,7 +54,7 @@ A titer test measures the level of specific antibodies in the bloodstream. Antib
 The beauty of titer testing is that it takes the guesswork out of the equation. Instead of automatically re-vaccinating every year or two because "that's the schedule," you're basing your decision on your dog's actual immunity. This helps you avoid unnecessary vaccines, reduce the chance of side effects, and make vaccination choices that are tailored to your dog—not to a generic chart on the wall.`
     },
     {
-      image: "/attached_assets/Y30A9815 (7)_1754682245597.JPG",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (6)_1754772143268.png",
       title: "DNA & OFA Testing",
       description: "We conduct comprehensive testing for common Labrador genetic conditions, plus hip dysplasia screening through OFA certification.",
       essay: `Comprehensive health testing is the cornerstone of responsible breeding. Our extensive testing protocols ensure that we produce the healthiest possible puppies while continuously improving our breeding lines.
