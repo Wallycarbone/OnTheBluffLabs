@@ -221,35 +221,53 @@ We maintain relationships with puppy families to track long-term health outcomes
 
         {/* Essay Popup Dialog */}
         <Dialog open={isEssayOpen} onOpenChange={setIsEssayOpen}>
-          <DialogContent className="max-w-5xl max-h-[85vh] overflow-y-auto bg-white">
+          <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto bg-white">
             <DialogHeader className="border-b pb-4 mb-6" style={{borderColor: '#e5e7eb'}}>
               <DialogTitle className="text-3xl font-oswald font-normal tracking-wide text-center" style={{color: '#11100f'}}>
                 {selectedTest?.title}
               </DialogTitle>
             </DialogHeader>
-            <div className="px-2">
-              {selectedTest?.image && (
-                <div className="w-64 h-64 rounded-2xl overflow-hidden mx-auto mb-8 shadow-lg">
-                  <img 
-                    src={selectedTest.image} 
-                    alt={`${selectedTest.title} - Detailed view`}
-                    className="w-full h-full object-cover"
-                  />
+            <div className="px-4">
+              {selectedTest?.image ? (
+                <div className="flex flex-col lg:flex-row gap-8 items-start">
+                  <div className="lg:w-1/3 flex-shrink-0">
+                    <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 sticky top-0">
+                      <img 
+                        src={selectedTest.image} 
+                        alt={`${selectedTest.title} - Detailed view`}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="lg:w-2/3 flex-1">
+                    <div 
+                      className="font-source-sans leading-relaxed whitespace-pre-line text-justify" 
+                      style={{
+                        color: '#2d3748', 
+                        lineHeight: '1.8',
+                        fontSize: '16px',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      {selectedTest?.essay}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="max-w-4xl mx-auto">
+                  <div 
+                    className="font-source-sans leading-relaxed whitespace-pre-line text-justify" 
+                    style={{
+                      color: '#2d3748', 
+                      lineHeight: '1.8',
+                      fontSize: '16px',
+                      letterSpacing: '0.02em'
+                    }}
+                  >
+                    {selectedTest?.essay}
+                  </div>
                 </div>
               )}
-              <div className="max-w-4xl mx-auto">
-                <div 
-                  className="font-source-sans leading-relaxed whitespace-pre-line text-justify" 
-                  style={{
-                    color: '#2d3748', 
-                    lineHeight: '1.8',
-                    fontSize: '16px',
-                    letterSpacing: '0.02em'
-                  }}
-                >
-                  {selectedTest?.essay}
-                </div>
-              </div>
             </div>
           </DialogContent>
         </Dialog>
