@@ -44,7 +44,7 @@ export default function Team() {
     {
       name: "Poppy Tampasis",
       role: "Team Member", 
-      description: "Poppy supports our facility operations and assists with puppy care and development.",
+      description: "Poppy's family has co-owned for years, so Labradors are a family affair for him. This deep, multi-generational connection to our breeding program brings invaluable insight to facility operations and puppy development.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
     },
     {
