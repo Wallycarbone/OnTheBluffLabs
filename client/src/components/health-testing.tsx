@@ -14,22 +14,6 @@ export default function HealthTesting() {
 
   const healthTests = [
     {
-      image: healthyStartImage,
-      title: "Healthy Start",
-      description: "Nearly fifty years of breeding excellence focused on creating the best possible companion dogs through family environment, advanced early handling, and expert puppy placement.",
-      essay: `For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.
-
-We strive for excellence in temperament, personality, with a physical structure that adheres to breed standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.
-
-Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive raw food diet made on our premises. Most importantly - they are handled and loved.
-
-Our pups are handled constantly from birth. Using advanced training methods, we challenge them to become independent as we expand their cognitive skills. At 5 or 6 weeks, they leave their inside whelping den and are placed outside in a large enclosure consisting of many different areas. Their world now has expanded exponentially. We train them in the use of a doggie door - an entrance to their own house (which is heated and air-conditioned). The early use of their own doggie door teaches independence and confidence.
-
-Labradors are highly social creatures who thrive in small quarters with humans. They are all different from one another and have attributes that show themselves at an early age. Some will be good hunters, others attentive service dogs, and others built for the show ring. Some can happily lie in the sun all day and still others want nothing more than to fetch a stick. For that reason our approach to puppy placement has focused on compatible behavior. Pups change dramatically from week to week.
-
-After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.`
-    },
-    {
       image: "/attached_assets/Y30A1167GuinevereGrizzlymsturtles (4)_1754769419715.JPG",
       title: "Raw Dog Food",
       description: "Fresh raw food with proteins, greens, fruits, and oils. We source from local butchers and add favorites like whole fish - our dogs' preferred meal.",
@@ -191,8 +175,45 @@ We maintain relationships with puppy families to track long-term health outcomes
             Our holistic approach to canine wellness through natural health practices and essential testing.
           </p>
         </div>
+
+        {/* Healthy Start Essay Section */}
+        <div className="max-w-5xl mx-auto mb-20 bg-white rounded-3xl shadow-lg p-8 md:p-12">
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            <div className="lg:w-1/3 flex-shrink-0">
+              <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0">
+                <img 
+                  src="/attached_assets/Puppies 5x4 (4 x 4 in) (2)_1754768185491.png"
+                  alt="Healthy Start - Our breeding philosophy"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="lg:w-2/3 flex-1">
+              <h3 className="text-3xl font-oswald font-normal tracking-wide mb-6" style={{color: '#11100f'}}>
+                Healthy Start
+              </h3>
+              <div 
+                className="font-source-sans leading-relaxed whitespace-pre-line text-justify" 
+                style={{
+                  color: '#2d3748', 
+                  lineHeight: '1.8',
+                  fontSize: '16px',
+                  letterSpacing: '0.02em'
+                }}
+              >
+                For nearly fifty years we have worked hard to create Labradors that are the best possible companion. Our dogs are raised in our house, sleep in our bed, ride in our car, swim in our pond, and are involved in everything we do. They are not housed in a kennel.
+
+We have bred from the finest lines available. Our bloodlines trace back to some of the most famous names in Labrador history. Our dogs consistently pass the various health tests and we have never had a dog fail a health test. We pride ourselves on raising dogs with impeccable temperaments that are a joy to live with.
+
+Labradors are highly social creatures who thrive in small quarters with humans. They are all different from one another and have attributes that show themselves at an early age. Some will be good hunters, others attentive service dogs, and others built for the show ring. Some can happily lie in the sun all day and still others want nothing more than to fetch a stick. For that reason our approach to puppy placement has focused on compatible behavior. Pups change dramatically from week to week.
+
+After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {healthTests.map((test, index) => (
             <Card 
               key={index} 
