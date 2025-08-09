@@ -248,15 +248,15 @@ We maintain relationships with puppy families to track long-term health outcomes
 
         {/* Essay Popup Dialog */}
         <Dialog open={isEssayOpen} onOpenChange={setIsEssayOpen}>
-          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-            <DialogHeader>
-              <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+          <DialogContent className="max-w-5xl max-h-[85vh] overflow-y-auto bg-white">
+            <DialogHeader className="border-b pb-4 mb-6" style={{borderColor: '#e5e7eb'}}>
+              <DialogTitle className="text-3xl font-oswald font-normal tracking-wide text-center" style={{color: '#11100f'}}>
                 {selectedTest?.title}
               </DialogTitle>
             </DialogHeader>
-            <div className="mt-6">
+            <div className="px-2">
               {selectedTest?.image && (
-                <div className="w-48 h-48 rounded-xl overflow-hidden mx-auto mb-6">
+                <div className="w-64 h-64 rounded-2xl overflow-hidden mx-auto mb-8 shadow-lg">
                   <img 
                     src={selectedTest.image} 
                     alt={`${selectedTest.title} - Detailed view`}
@@ -264,10 +264,15 @@ We maintain relationships with puppy families to track long-term health outcomes
                   />
                 </div>
               )}
-              <div className="prose prose-lg max-w-none">
+              <div className="max-w-4xl mx-auto">
                 <div 
-                  className="font-source-sans leading-relaxed whitespace-pre-line" 
-                  style={{color: '#4b4b4b', lineHeight: '1.7'}}
+                  className="font-source-sans leading-relaxed whitespace-pre-line text-justify" 
+                  style={{
+                    color: '#2d3748', 
+                    lineHeight: '1.8',
+                    fontSize: '16px',
+                    letterSpacing: '0.02em'
+                  }}
                 >
                   {selectedTest?.essay}
                 </div>
