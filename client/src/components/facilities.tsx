@@ -50,7 +50,7 @@ export default function Team() {
     {
       name: "Julie Rifenburgh",
       role: "Team Member",
-      description: "Julie assists with our breeding program and helps maintain the high standards of care for our dogs and puppies.",
+      description: "Julie is a bachelor's candidate in SUNY Cobleskill's Canine Training and Management program, and she helps train our puppies. Her formal education in canine behavior and training methods enhances our puppy development programs.",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
     },
   ];
