@@ -14,7 +14,7 @@ export default function HealthTesting() {
 
   const healthTests = [
     {
-      image: "/attached_assets/Y30A1167GuinevereGrizzlymsturtles (4)_1754769419715.JPG",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (5)_1754772005588.png",
       title: "Raw Dog Food",
       description: "We feed fresh raw food with proteins, greens, fruits, and oils. We source from local butchers and add favorites like whole fish - our dogs' preferred meal.",
       essay: `We feed our dogs fresh raw food that is made up of some kind of protein such as meat, fish poultry, etc., and fresh vegetables, mainly greens, a variety of fruit, oils, garlic, probiotics, and different forms of supplements. If you feed your dog a variety of food, supplements are optional. Our treats consist of dehydrated animal organs. You can now buy this kind of food pre-made from raw food companies or you can easily make it yourself or you can do a combination of both.
