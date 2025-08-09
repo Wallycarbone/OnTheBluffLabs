@@ -4,11 +4,6 @@ import { Eye, Bone, Dna, Heart } from "lucide-react";
 export default function HealthTesting() {
   const healthTests = [
     {
-      icon: Eye,
-      title: "DNA & OFA",
-      description: "We test for common Labrador genetic problems, plus hip dysplasia screening through OFA certification.",
-    },
-    {
       icon: Bone,
       title: "Delay Spay & Neuter",
       description: "We recommend delaying spay/neuter until after 24 months to allow proper joint and bone development.",
@@ -22,6 +17,11 @@ export default function HealthTesting() {
       icon: Heart,
       title: "Reduce Vaccinations",
       description: "We avoid unnecessary vaccinations to prevent immune system overload and maintain natural immunity.",
+    },
+    {
+      icon: Eye,
+      title: "DNA & OFA",
+      description: "We test for common Labrador genetic problems, plus hip dysplasia screening through OFA certification.",
     },
   ];
 
