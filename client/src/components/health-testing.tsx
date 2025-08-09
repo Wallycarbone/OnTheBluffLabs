@@ -226,7 +226,7 @@ We maintain relationships with puppy families to track long-term health outcomes
               className="bg-white rounded-2xl shadow-xl p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
               onClick={() => openEssay(test)}
             >
-              <div className="w-full h-48 rounded-xl overflow-hidden mx-auto mb-6">
+              <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6">
                 <img 
                   src={test.image} 
                   alt={`${test.title} - Health and wellness pillar`}
@@ -256,7 +256,7 @@ We maintain relationships with puppy families to track long-term health outcomes
             </DialogHeader>
             <div className="mt-6">
               {selectedTest?.image && (
-                <div className="w-full h-64 rounded-xl overflow-hidden mx-auto mb-6">
+                <div className="w-48 h-48 rounded-xl overflow-hidden mx-auto mb-6">
                   <img 
                     src={selectedTest.image} 
                     alt={`${selectedTest.title} - Detailed view`}
