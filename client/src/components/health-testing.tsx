@@ -192,8 +192,7 @@ We maintain relationships with puppy families to track long-term health outcomes
               <h3 className="text-3xl font-oswald font-normal tracking-wide mb-6" style={{color: '#11100f'}}>
                 Healthy Start
               </h3>
-              <div 
-                className="font-source-sans leading-relaxed whitespace-pre-line text-justify" 
+              <div className="font-source-sans leading-relaxed text-justify space-y-4" 
                 style={{
                   color: '#2d3748', 
                   lineHeight: '1.8',
@@ -201,22 +200,17 @@ We maintain relationships with puppy families to track long-term health outcomes
                   letterSpacing: '0.02em'
                 }}
               >
-For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.
+                <p>For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.</p>
 
+                <p>We strive for excellence in temperament, personality, with a physical structure that adheres to bred standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.</p>
 
-We strive for excellence in temperament, personality, with a physical structure that adheres to bred standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.
+                <p>Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive raw food diet made on our premises. Most importantly- they are handled and loved.</p>
 
+                <p>Our pups are handled constantly from birth. Using advanced training methods, we challenge them to become independent as we expand their cognitive skills. At 5 or 6 weeks, they leave their inside whelping den and are placed outside in a large enclosure consisting of many different areas. Their world now has expanded exponentially. We train them in the use of a doggie door-an entrance to their own house (which is heated and air-conditioned). The early use of their own doggie door teaches them house training as well as independence. We use a puppy call to start feeding time- thus early on they learn how to come when called. We crate train each pup individually until they can stay in a crate comfortably for a minimum of 4 hours. The pups are periodically exposed to adult dogs to increase their socialization skills. And we continually train them to chew on appropriate objects, rather than our hands.</p>
 
-Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive raw food diet made on our premises. Most importantly- they are handled and loved.
+                <p>Labradors are highly social creatures who thrive in small quarters with humans. They are all different from one another and have attributes that show themselves at an early age. Some will be good hunters, others attentive service dogs, and others built for the show ring. Some can happily lie in the sun all day and still others want nothing more than to fetch a stick. For that reason our approach to puppy placement has focused on compatible behavior. Pups change dramatically from week to week.</p>
 
-
-Our pups are handled constantly from birth. Using advanced training methods, we challenge them to become independent as we expand their cognitive skills. At 5 or 6 weeks, they leave their inside whelping den and are placed outside in a large enclosure consisting of many different areas. Their world now has expanded exponentially. We train them in the use of a doggie door-an entrance to their own house (which is heated and air-conditioned). The early use of their own doggie door teaches them house training as well as independence. We use a puppy call to start feeding time- thus early on they learn how to come when called. We crate train each pup individually until they can stay in a crate comfortably for a minimum of 4 hours. The pups are periodically exposed to adult dogs to increase their socialization skills. And we continually train them to chew on appropriate objects, rather than our hands.
-
-
-Labradors are highly social creatures who thrive in small quarters with humans. They are all different from one another and have attributes that show themselves at an early age. Some will be good hunters, others attentive service dogs, and others built for the show ring. Some can happily lie in the sun all day and still others want nothing more than to fetch a stick. For that reason our approach to puppy placement has focused on compatible behavior. Pups change dramatically from week to week.
-
-
-After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.
+                <p>After nearly 50 years of breeding we pride ourselves in picking the best puppy for you. Finally, we spend at least an hour and a half with you when you pick up your pup. We go over everything you will need to know to keep your pup healthy and well trained.</p>
               </div>
             </div>
           </div>
