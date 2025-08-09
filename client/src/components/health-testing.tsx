@@ -57,61 +57,11 @@ The beauty of titer testing is that it takes the guesswork out of the equation. 
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (6)_1754772143268.png",
       title: "DNA & OFA Testing",
       description: "We conduct comprehensive testing for common Labrador genetic conditions, plus hip dysplasia screening through OFA certification.",
-      essay: `Comprehensive health testing is the cornerstone of responsible breeding. Our extensive testing protocols ensure that we produce the healthiest possible puppies while continuously improving our breeding lines.
+      essay: `We believe that producing strong, healthy Labradors starts with choosing breeding dogs that meet the highest health standards.
 
-**DNA Testing for Genetic Conditions**
-We test all breeding dogs for the genetic conditions most commonly found in Labradors:
+Our breeding dogs are tested for the genetic conditions most often found in Labradors, including Progressive Retinal Atrophy (PRA) and Exercise Induced Collapse (EIC). Their hips are evaluated through the Orthopedic Foundation for Animals (OFA) to ensure they are sound and healthy for breeding.
 
-**Eye Conditions:**
-- Progressive Retinal Atrophy (PRA)
-- Centronuclear Myopathy (CNM)
-- Exercise Induced Collapse (EIC)
-- Curly Coat/Coat Length variants
-
-**Metabolic Conditions:**
-- Degenerative Myelopathy (DM)
-- Hereditary Nasal Parakeratosis (HNPK)
-- Skeletal Dysplasia 2 (SD2)
-
-**Color and Coat Genetics:**
-- Complete color panel testing
-- Coat texture and length variants
-- Dilution factors
-
-**Orthopedic Evaluations Through OFA**
-The Orthopedic Foundation for Animals (OFA) provides gold-standard evaluation for:
-
-**Hip Dysplasia Evaluation:**
-- X-rays taken at 24+ months of age
-- Evaluated by board-certified radiologists
-- Graded as Excellent, Good, Fair, or Dysplastic
-- Only dogs with Good or Excellent ratings are bred
-
-**Elbow Dysplasia Screening:**
-- Concurrent evaluation with hip screening
-- Critical for large breed joint health
-- Normal elbows required for breeding approval
-
-**Additional OFA Certifications:**
-- Heart clearances by board-certified cardiologists
-- Eye clearances by veterinary ophthalmologists
-- Thyroid function evaluation
-
-**Breeding Decisions Based on Testing**
-We only breed dogs that have passed all relevant health testing. When carriers of recessive conditions are identified, breeding decisions are made carefully to avoid producing affected offspring while maintaining genetic diversity.
-
-**Transparency and Record Keeping**
-All health testing results are:
-- Publicly available through OFA databases
-- Provided to puppy families
-- Used to guide breeding decisions
-- Continuously monitored for trends
-
-**The Investment in Health**
-Comprehensive health testing represents a significant investment in each breeding dog, often costing thousands of dollars per dog. This investment reflects our commitment to producing the healthiest possible puppies and contributing to the long-term health of the Labrador breed.
-
-**Ongoing Monitoring**
-We maintain relationships with puppy families to track long-term health outcomes, using this information to continually refine our breeding program and health protocols.`
+We only breed dogs that have passed all of their health testing. If a dog is found to be a carrier of a recessive condition, we make breeding decisions carefully—pairing them only with dogs that are clear—so no puppies are ever affected. This approach protects the health of our litters while keeping valuable genetic diversity in our lines.`
     },
   ];
 
