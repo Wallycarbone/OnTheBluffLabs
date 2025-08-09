@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="font-source-sans text-gray-300">165 Northern Boulevard</li>
               <li className="font-source-sans text-gray-300">Germantown, NY</li>
-              <li className="font-source-sans text-gray-300">(555) 123-4567</li>
+              <li className="font-source-sans text-gray-300">(518) 855-6705</li>
               <li className="font-source-sans text-gray-300">info@ontheblufflabradors.com</li>
             </ul>
           </div>
