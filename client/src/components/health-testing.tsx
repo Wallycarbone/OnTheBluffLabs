@@ -40,7 +40,7 @@ Labradors are a large, slow-maturing breed. Their growth plates—the soft carti
 Regardless of whether you have a male or female, we invite you to keep the dog intact for their whole life (although we prohibit breeding of the dogs without our permission). The goal is to give your Lab the full benefit of their natural hormones during those critical growth stages so they develop into the strong, sound, and well-balanced dog they're meant to be.`
     },
     {
-      image: "/attached_assets/Y30A9681 (3)_1754673832851.jpg",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (4)_1754772138020.png",
       title: "Reduce Vaccinations",
       description: "We carefully avoid unnecessary vaccinations to prevent immune system overload and maintain natural immunity.",
       essay: `Studies have shown that dogs are often fully immunized with one vaccination if administered at 16 weeks or older. We believe that not all vaccinations are necessary. The only one required by law is rabies. The others are up to you. Just remember, you are the customer. This is your dog and you must advocate for them.
