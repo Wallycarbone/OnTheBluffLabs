@@ -11,22 +11,22 @@ export default function HealthTesting() {
     {
       image: "/attached_assets/Breeding Dogs 5x4 (5)_1754340347869.png",
       title: "Delay Spay & Neuter",
-      description: "We recommend delaying spay/neuter until after 24 months to allow proper joint and bone development.",
+      description: "We recommend delaying spay and neuter procedures until after 24 months to allow proper joint and bone development.",
     },
     {
       image: "/attached_assets/Breeding Dogs 5x4 (6)_1754674032280.png",
       title: "Raw Dog Food",
-      description: "Raw feeding promotes healthier coats, better digestion, stronger immune systems, and cleaner teeth naturally.",
+      description: "Raw feeding promotes healthier coats, better digestion, stronger immune systems, and naturally cleaner teeth.",
     },
     {
       image: "/attached_assets/Y30A9681 (3)_1754673832851.jpg",
       title: "Reduce Vaccinations",
-      description: "We avoid unnecessary vaccinations to prevent immune system overload and maintain natural immunity.",
+      description: "We carefully avoid unnecessary vaccinations to prevent immune system overload and maintain natural immunity.",
     },
     {
       image: "/attached_assets/Y30A9815 (7)_1754682245597.JPG",
-      title: "DNA & OFA",
-      description: "We test for common Labrador genetic problems, plus hip dysplasia screening through OFA certification.",
+      title: "DNA & OFA Testing",
+      description: "We conduct comprehensive testing for common Labrador genetic conditions, plus hip dysplasia screening through OFA certification.",
     },
   ];
 
@@ -57,7 +57,7 @@ export default function HealthTesting() {
               <h3 className="text-xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
                 {test.title}
               </h3>
-              <p className="text-warm-gray leading-relaxed text-sm">
+              <p className="leading-relaxed text-sm font-source-sans" style={{color: '#4b4b4b', lineHeight: '1.6'}}>
                 {test.description}
               </p>
             </Card>
