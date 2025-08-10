@@ -76,17 +76,51 @@ export default function DogFoodPage() {
 
   const onSubmit = async (data: DogFoodOrderForm) => {
     try {
-      // TODO: Implement actual order submission to backend
-      console.log("Dog food order submitted:", data);
-      
+      // Find the selected product details
+      const product = foodProducts.find(p => p.id === data.foodType);
+      if (!product) {
+        throw new Error("Product not found");
+      }
+
+      // Prepare the order data for the backend
+      const orderData = {
+        customerName: data.customerName,
+        email: data.email,
+        phone: data.phone,
+        address: data.deliveryAddress,
+        productId: product.id,
+        productName: product.name,
+        productPrice: product.price,
+        quantity: parseInt(data.quantity),
+        totalAmount: product.price * parseInt(data.quantity),
+        notes: data.specialInstructions || "",
+        dogName: data.dogName,
+        dogAge: data.dogAge,
+        dogWeight: data.dogWeight,
+      };
+
+      // Submit to backend API
+      const response = await fetch("/api/dog-food-orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(orderData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit order");
+      }
+
       toast({
         title: "Order Submitted",
-        description: "We've received your dog food order and will contact you within 24 hours to confirm details and arrange delivery.",
+        description: "We've received your dog food order and will contact you within 24 hours to confirm details and arrange pickup.",
       });
       
       form.reset();
       setSelectedProduct("");
     } catch (error) {
+      console.error("Order submission error:", error);
       toast({
         title: "Order Failed",
         description: "There was an error submitting your order. Please try again or call us directly.",
