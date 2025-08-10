@@ -51,14 +51,6 @@ const foodProducts = [
     price: 30,
     unit: "15 lb portion", 
     benefits: ["Softer raw textures", "Anti-inflammatory ingredients", "Digestive enzyme support", "Glucosamine for joints", "Heart-healthy omega oils"]
-  },
-  {
-    id: "raw-treats",
-    name: "Premium Raw Training Treats",
-    description: "Single-ingredient freeze-dried raw treats made from premium organ meats and muscle meat for high-value training rewards",
-    price: 45,
-    unit: "1 lb bag",
-    benefits: ["Single-ingredient raw", "High protein content", "Perfect training size", "No artificial additives", "Long-lasting freshness"]
   }
 ];
 
