@@ -32,8 +32,8 @@ const foodProducts = [
     id: "raw-blend-adult",
     name: "On The Bluff Breakfast Blend",
     description: "Complete raw food blend with farm-fresh proteins, organic vegetables, and natural supplements specifically formulated for adult Labradors",
-    price: 95,
-    unit: "20 lb portion",
+    price: 28,
+    unit: "5 lb block",
     benefits: ["100% raw ingredients", "Farm-fresh proteins", "No preservatives", "Supports natural digestion", "Promotes healthy coat"]
   },
   {
