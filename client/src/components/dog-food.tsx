@@ -46,10 +46,10 @@ const foodProducts = [
   },
   {
     id: "senior-formula",
-    name: "Fresh Raw Senior Formula",
+    name: "On The Bluff Butcher Bags",
     description: "Gentle raw blend with softer textures and joint-supporting ingredients, specially crafted for senior Labradors with aging nutritional needs",
-    price: 98,
-    unit: "20 lb portion", 
+    price: 30,
+    unit: "15 lb portion", 
     benefits: ["Softer raw textures", "Anti-inflammatory ingredients", "Digestive enzyme support", "Glucosamine for joints", "Heart-healthy omega oils"]
   },
   {
