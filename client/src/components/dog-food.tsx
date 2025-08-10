@@ -30,7 +30,7 @@ type DogFoodOrderForm = z.infer<typeof dogFoodOrderSchema>;
 const foodProducts = [
   {
     id: "raw-blend-adult",
-    name: "Fresh Raw Adult Formula",
+    name: "On The Bluff Breakfast Blend",
     description: "Complete raw food blend with farm-fresh proteins, organic vegetables, and natural supplements specifically formulated for adult Labradors",
     price: 95,
     unit: "20 lb portion",
