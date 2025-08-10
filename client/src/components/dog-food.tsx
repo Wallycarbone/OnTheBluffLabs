@@ -405,7 +405,7 @@ export default function DogFoodPage() {
                       <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Pickup Schedule</h3>
                       <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
                         <p className="text-amber-800 font-source-sans text-sm">
-                          <strong>Pickup Only:</strong> All raw food orders must be picked up at our facility in Germantown, NY. Please select your preferred pickup date and time.
+                          <strong>Pickup Only:</strong> All raw food orders must be picked up at our facility in Germantown, NY. Orders require 14 days advance notice. Please select your preferred pickup date and time.
                         </p>
                       </div>
                       
@@ -440,9 +440,12 @@ export default function DogFoodPage() {
                                     mode="single"
                                     selected={field.value}
                                     onSelect={field.onChange}
-                                    disabled={(date) =>
-                                      date < new Date() || date < new Date("1900-01-01")
-                                    }
+                                    disabled={(date) => {
+                                      const today = new Date();
+                                      const minDate = new Date();
+                                      minDate.setDate(today.getDate() + 14);
+                                      return date < minDate || date < new Date("1900-01-01");
+                                    }}
                                     initialFocus
                                   />
                                 </PopoverContent>
@@ -505,7 +508,7 @@ export default function DogFoodPage() {
                 <p>• <strong>Pickup Only:</strong> All orders must be picked up at our Germantown, NY facility</p>
                 <p>• We'll contact you within 24 hours to confirm your order and pickup appointment</p>
                 <p>• Payment is collected at pickup (cash or check preferred)</p>
-                <p>• Fresh raw food prepared weekly - orders require 5-7 days advance notice</p>
+                <p>• Fresh raw food prepared weekly - orders require 14 days advance notice</p>
                 <p>• All raw food is flash-frozen for freshness and safety</p>
                 <p>• Detailed feeding guidelines included with every order</p>
                 <p>• Please bring a cooler for transport to maintain food quality</p>
