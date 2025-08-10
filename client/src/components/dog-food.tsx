@@ -38,7 +38,7 @@ const foodProducts = [
   },
   {
     id: "raw-blend-puppy",
-    name: "Fresh Raw Puppy Formula", 
+    name: "On The Bluff Dinner Blend", 
     description: "Nutrient-dense raw food blend designed for growing puppies with optimal protein ratios and essential fatty acids for proper development",
     price: 105,
     unit: "20 lb portion",
