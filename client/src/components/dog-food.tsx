@@ -145,7 +145,7 @@ export default function DogFoodPage() {
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <div>
-                        <CardTitle className="text-xl font-oswald text-stone-900 tracking-wide">
+                        <CardTitle className="text-xl font-oswald font-normal text-stone-900 tracking-wide">
                           {product.name}
                         </CardTitle>
                         <CardDescription className="text-stone-600 mt-2 font-source-sans">
