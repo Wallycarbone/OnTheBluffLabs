@@ -124,9 +124,10 @@ export default function DogFoodPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Selection */}
           <div>
-            <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
+            <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-2 tracking-wide">
               Fresh Raw Food Products
             </h2>
+            <p className="text-lg font-source-sans text-stone-600 mb-6 italic">Pickup Only</p>
             
             <div className="space-y-6">
               {foodProducts.map((product) => (
