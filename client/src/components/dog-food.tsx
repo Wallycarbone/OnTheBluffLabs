@@ -10,7 +10,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useToast } from "@/hooks/use-toast";
+import { format } from "date-fns";
+import { CalendarIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const dogFoodOrderSchema = z.object({
   customerName: z.string().min(2, "Name must be at least 2 characters"),
@@ -22,6 +27,10 @@ const dogFoodOrderSchema = z.object({
   foodType: z.string().min(1, "Please select a food type"),
   quantity: z.string().min(1, "Please specify quantity"),
   deliveryAddress: z.string().min(10, "Please provide complete delivery address"),
+  pickupDate: z.date({
+    required_error: "Please select a pickup date",
+  }),
+  pickupTime: z.string().min(1, "Please select a pickup time"),
   specialInstructions: z.string().optional(),
 });
 
@@ -68,8 +77,9 @@ export default function DogFoodPage() {
       dogAge: "",
       dogWeight: "",
       foodType: "",
-      quantity: "",
+      quantity: "1",
       deliveryAddress: "",
+      pickupTime: "",
       specialInstructions: "",
     },
   });
@@ -97,6 +107,8 @@ export default function DogFoodPage() {
         dogName: data.dogName,
         dogAge: data.dogAge,
         dogWeight: data.dogWeight,
+        pickupDate: format(data.pickupDate, "yyyy-MM-dd"),
+        pickupTime: data.pickupTime,
       };
 
       // Submit to backend API
@@ -406,7 +418,99 @@ export default function DogFoodPage() {
                           </FormItem>
                         )}
                       />
+                    </div>
 
+                    <Separator />
+
+                    {/* Pickup Scheduling */}
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Pickup Schedule</h3>
+                      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
+                        <p className="text-amber-800 font-source-sans text-sm">
+                          <strong>Pickup Only:</strong> All raw food orders must be picked up at our facility in Germantown, NY. Please select your preferred pickup date and time.
+                        </p>
+                      </div>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <FormField
+                          control={form.control}
+                          name="pickupDate"
+                          render={({ field }) => (
+                            <FormItem className="flex flex-col">
+                              <FormLabel>Pickup Date</FormLabel>
+                              <Popover>
+                                <PopoverTrigger asChild>
+                                  <FormControl>
+                                    <Button
+                                      variant={"outline"}
+                                      className={cn(
+                                        "w-full pl-3 text-left font-normal",
+                                        !field.value && "text-muted-foreground"
+                                      )}
+                                    >
+                                      {field.value ? (
+                                        format(field.value, "PPP")
+                                      ) : (
+                                        <span>Pick a date</span>
+                                      )}
+                                      <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                                    </Button>
+                                  </FormControl>
+                                </PopoverTrigger>
+                                <PopoverContent className="w-auto p-0" align="start">
+                                  <Calendar
+                                    mode="single"
+                                    selected={field.value}
+                                    onSelect={field.onChange}
+                                    disabled={(date) =>
+                                      date < new Date() || date < new Date("1900-01-01")
+                                    }
+                                    initialFocus
+                                  />
+                                </PopoverContent>
+                              </Popover>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+
+                        <FormField
+                          control={form.control}
+                          name="pickupTime"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Pickup Time</FormLabel>
+                              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                <FormControl>
+                                  <SelectTrigger>
+                                    <SelectValue placeholder="Select pickup time" />
+                                  </SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  <SelectItem value="9:00 AM">9:00 AM</SelectItem>
+                                  <SelectItem value="10:00 AM">10:00 AM</SelectItem>
+                                  <SelectItem value="11:00 AM">11:00 AM</SelectItem>
+                                  <SelectItem value="12:00 PM">12:00 PM</SelectItem>
+                                  <SelectItem value="1:00 PM">1:00 PM</SelectItem>
+                                  <SelectItem value="2:00 PM">2:00 PM</SelectItem>
+                                  <SelectItem value="3:00 PM">3:00 PM</SelectItem>
+                                  <SelectItem value="4:00 PM">4:00 PM</SelectItem>
+                                  <SelectItem value="5:00 PM">5:00 PM</SelectItem>
+                                </SelectContent>
+                              </Select>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+                    </div>
+
+                    <Separator />
+
+                    {/* Special Instructions */}
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Additional Information</h3>
+                      
                       <FormField
                         control={form.control}
                         name="specialInstructions"
@@ -443,13 +547,13 @@ export default function DogFoodPage() {
                 <CardTitle className="text-blue-800 font-oswald tracking-wide">Raw Food Order Process</CardTitle>
               </CardHeader>
               <CardContent className="text-blue-700 space-y-2 font-source-sans">
-                <p>• We'll contact you within 24 hours to confirm your raw food order</p>
-                <p>• Payment is collected upon delivery or pickup</p>
-                <p>• Local delivery available within 50 miles of Germantown, NY</p>
-                <p>• Pickup available at our facility by appointment only</p>
-                <p>• Fresh raw food prepared weekly - orders require 5-7 days notice</p>
+                <p>• <strong>Pickup Only:</strong> All orders must be picked up at our Germantown, NY facility</p>
+                <p>• We'll contact you within 24 hours to confirm your order and pickup appointment</p>
+                <p>• Payment is collected at pickup (cash or check preferred)</p>
+                <p>• Fresh raw food prepared weekly - orders require 5-7 days advance notice</p>
                 <p>• All raw food is flash-frozen for freshness and safety</p>
                 <p>• Detailed feeding guidelines included with every order</p>
+                <p>• Please bring a cooler for transport to maintain food quality</p>
               </CardContent>
             </Card>
           </div>

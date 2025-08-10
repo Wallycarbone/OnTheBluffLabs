@@ -35,6 +35,8 @@ export const dogFoodOrders = pgTable("dog_food_orders", {
   dogName: text("dog_name").notNull(),
   dogAge: text("dog_age").notNull(),
   dogWeight: text("dog_weight").notNull(),
+  pickupDate: text("pickup_date").notNull(),
+  pickupTime: text("pickup_time").notNull(),
   notes: text("notes"),
   status: text("status").notNull().default("pending"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
@@ -72,6 +74,8 @@ export const insertDogFoodOrderSchema = createInsertSchema(dogFoodOrders).pick({
   dogName: true,
   dogAge: true,
   dogWeight: true,
+  pickupDate: true,
+  pickupTime: true,
   notes: true,
 });
 
