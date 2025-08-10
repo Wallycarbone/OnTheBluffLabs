@@ -509,8 +509,6 @@ export default function DogFoodPage() {
                 <p>• We'll contact you within 24 hours to confirm your order and pickup appointment</p>
                 <p>• Payment is collected at pickup (cash or check preferred)</p>
                 <p>• Fresh raw food prepared weekly - orders require 14 days advance notice</p>
-                <p>• All raw food is flash-frozen for freshness and safety</p>
-                <p>• Detailed feeding guidelines included with every order</p>
                 <p>• Please bring a cooler for transport to maintain food quality</p>
               </CardContent>
             </Card>
