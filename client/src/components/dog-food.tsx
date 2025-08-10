@@ -26,12 +26,10 @@ const dogFoodOrderSchema = z.object({
   dogWeight: z.string().min(1, "Dog weight is required"),
   foodType: z.string().min(1, "Please select a food type"),
   quantity: z.string().min(1, "Please specify quantity"),
-  deliveryAddress: z.string().min(10, "Please provide complete delivery address"),
   pickupDate: z.date({
     required_error: "Please select a pickup date",
   }),
   pickupTime: z.string().min(1, "Please select a pickup time"),
-  specialInstructions: z.string().optional(),
 });
 
 type DogFoodOrderForm = z.infer<typeof dogFoodOrderSchema>;
@@ -78,9 +76,7 @@ export default function DogFoodPage() {
       dogWeight: "",
       foodType: "",
       quantity: "1",
-      deliveryAddress: "",
       pickupTime: "",
-      specialInstructions: "",
     },
   });
 
@@ -97,13 +93,13 @@ export default function DogFoodPage() {
         customerName: data.customerName,
         email: data.email,
         phone: data.phone,
-        address: data.deliveryAddress,
+        address: "165 Northern Boulevard, Germantown NY (Pickup Only)",
         productId: product.id,
         productName: product.name,
         productPrice: product.price,
         quantity: parseInt(data.quantity),
         totalAmount: product.price * parseInt(data.quantity),
-        notes: data.specialInstructions || "",
+        notes: `Pickup scheduled for ${format(data.pickupDate, "PPP")} at ${data.pickupTime}`,
         dogName: data.dogName,
         dogAge: data.dogAge,
         dogWeight: data.dogWeight,
@@ -400,24 +396,6 @@ export default function DogFoodPage() {
                           </FormItem>
                         )}
                       />
-
-                      <FormField
-                        control={form.control}
-                        name="deliveryAddress"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Delivery Address</FormLabel>
-                            <FormControl>
-                              <Textarea 
-                                placeholder="Enter complete delivery address including city, state, and zip code"
-                                {...field}
-                                rows={3}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
                     </div>
 
                     <Separator />
@@ -505,30 +483,7 @@ export default function DogFoodPage() {
                       </div>
                     </div>
 
-                    <Separator />
 
-                    {/* Special Instructions */}
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Additional Information</h3>
-                      
-                      <FormField
-                        control={form.control}
-                        name="specialInstructions"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Special Instructions (Optional)</FormLabel>
-                            <FormControl>
-                              <Textarea 
-                                placeholder="Any special dietary needs, delivery instructions, or other notes"
-                                {...field}
-                                rows={3}
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
 
                     <Button 
                       type="submit" 
