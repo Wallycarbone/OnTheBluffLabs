@@ -1226,7 +1226,7 @@ export default function BreedingDogs() {
           {selectedDog && (
             <div className="space-y-6">
               {(() => {
-                const puppyData = getPuppyData(selectedDog.name);
+                const puppyData = getPuppyGalleryData(selectedDog.name);
                 if (!puppyData || puppyData.length === 0) {
                   return (
                     <div className="text-center py-8">
