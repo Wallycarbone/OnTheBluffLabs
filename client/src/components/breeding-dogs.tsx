@@ -79,8 +79,8 @@ export default function BreedingDogs() {
             birthDate: "April 5, 2025",
             status: "available",
             puppies: [
-              { name: "Pearl (Turtles)", image: grizzlyPearl, available: true },
-              { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true }
+              { name: "Pearl (Turtles)", image: grizzlyPearl, available: true, gender: "Female", color: "Yellow" },
+              { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true, gender: "Female", color: "Yellow" }
             ]
           }
         ]
@@ -93,13 +93,13 @@ export default function BreedingDogs() {
             dam: "Foxxy",
             birthDate: "June 5, 2025",
             puppies: [
-              { name: "Mr. Peacock", image: moonPeacock },
-              { name: "Mr. Turtles", image: moonTurtles },
-              { name: "Ms. Aloha", image: moonAloha },
-              { name: "Ms. Sunflower", image: moonSunflower },
-              { name: "Mr. Superstar", image: moonSuperstar },
-              { name: "Mr. Penguin Party", image: moonPenguin },
-              { name: "Ms. Alpine Glow", image: moonAlpine }
+              { name: "Mr. Peacock", image: moonPeacock, gender: "Male", color: "Yellow" },
+              { name: "Mr. Turtles", image: moonTurtles, gender: "Male", color: "Yellow" },
+              { name: "Ms. Aloha", image: moonAloha, gender: "Female", color: "Yellow" },
+              { name: "Ms. Sunflower", image: moonSunflower, gender: "Female", color: "Yellow" },
+              { name: "Mr. Superstar", image: moonSuperstar, gender: "Male", color: "Yellow" },
+              { name: "Mr. Penguin Party", image: moonPenguin, gender: "Male", color: "Yellow" },
+              { name: "Ms. Alpine Glow", image: moonAlpine, gender: "Female", color: "Yellow" }
             ]
           }
         ]
@@ -112,9 +112,9 @@ export default function BreedingDogs() {
             dam: "Alola",
             birthDate: "March 15, 2025",
             puppies: [
-              { name: "Summer (Butterfly)", image: holdenSummer },
-              { name: "Fern (Apple Pie)", image: holdenFern },
-              { name: "Willow (Seaglass)", image: holdenWillow }
+              { name: "Summer (Butterfly)", image: holdenSummer, gender: "Female", color: "Yellow" },
+              { name: "Fern (Apple Pie)", image: holdenFern, gender: "Female", color: "Yellow" },
+              { name: "Willow (Seaglass)", image: holdenWillow, gender: "Female", color: "Yellow" }
             ]
           }
         ]
@@ -1227,7 +1227,7 @@ export default function BreedingDogs() {
             <div className="space-y-6">
               {(() => {
                 const puppyData = getPuppyGalleryData(selectedDog.name);
-                if (!puppyData || puppyData.length === 0) {
+                if (!puppyData || !puppyData.litters || puppyData.litters.length === 0) {
                   return (
                     <div className="text-center py-8">
                       <p className="text-lg font-source-sans text-gray-600">
@@ -1239,14 +1239,14 @@ export default function BreedingDogs() {
 
                 return (
                   <div className="space-y-8">
-                    {puppyData.map((litter, litterIndex) => (
+                    {puppyData.litters.map((litter, litterIndex) => (
                       <div key={litterIndex} className="space-y-4">
                         <div className="text-center">
                           <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
-                            {litter.litterName}
+                            {litter.name}
                           </h3>
                           <p className="text-sm font-source-sans text-gray-600 mb-4">
-                            Born: {litter.birthDate} • Dam: {litter.damName}
+                            Born: {litter.birthDate} • Dam: {litter.dam}
                           </p>
                         </div>
 
