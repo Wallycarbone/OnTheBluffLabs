@@ -271,8 +271,12 @@ export default function Contact() {
                   <div>
                     <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Address</h4>
                     <p style={{color: '#4b4b4b'}}>
-                      1234 Bluff Ridge Road<br />
-                      Countryside, State 12345
+                      165 Northern Boulevard<br />
+                      Germantown, NY
+                    </p>
+                    <p className="text-sm mt-2 italic" style={{color: '#4b4b4b'}}>
+                      Visits to our grounds are by appointment ONLY.<br />
+                      Unannounced visitors will be turned away, without exception.
                     </p>
                   </div>
                 </div>
@@ -280,7 +284,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
                     <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Phone</h4>
-                    <p style={{color: '#4b4b4b'}}>(555) 123-4567</p>
+                    <p style={{color: '#4b4b4b'}}>(518) 855-6705</p>
                   </div>
                 </div>
                 <div className="flex items-start">
