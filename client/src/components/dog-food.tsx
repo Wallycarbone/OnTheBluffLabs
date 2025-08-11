@@ -155,6 +155,48 @@ export default function DogFoodPage() {
           </p>
         </div>
 
+        {/* Fresh Feeding Essay Section */}
+        <div className="max-w-5xl mx-auto mb-20">
+          <h2 className="text-3xl font-oswald font-normal tracking-wide mb-8 text-center text-stone-900">
+            Our Philosophy on Fresh Feeding
+          </h2>
+          
+          <div className="flex flex-col lg:flex-row gap-8 items-start mb-8">
+            <div className="lg:w-1/3 flex-shrink-0">
+              <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0">
+                <img 
+                  src="/attached_assets/Puppies 5x4 (4 x 4 in) (5)_1754772005588.png"
+                  alt="Fresh feeding nutrition - Healthy puppy representing optimal nutrition"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            
+            <div className="lg:w-2/3 flex-1">
+              <div className="font-source-sans leading-relaxed text-justify space-y-6" 
+                style={{
+                  color: '#2d3748', 
+                  lineHeight: '1.8',
+                  fontSize: '16px',
+                  letterSpacing: '0.02em'
+                }}
+              >
+                <p>For over fifty years, we have fed our Labradors fresh, species-appropriate nutrition that mirrors what dogs would consume in their natural environment. Fresh feeding isn't just a trend—it's a return to the fundamental nutrition that has sustained healthy dogs for thousands of years.</p>
+
+                <p>We feed our dogs fresh food made up of high-quality proteins such as meat, fish, and poultry, combined with fresh vegetables—mainly nutrient-dense greens, a variety of seasonal fruits, beneficial oils, and carefully selected supplements. When you provide your dog with varied, fresh nutrition, synthetic supplements become largely unnecessary.</p>
+
+                <p>Our fresh food diet includes proteins from local butchers, whole fish with bones, heads, tails, and organs (their absolute favorite!), fresh vegetables like kale, collard greens, dandelion greens, broccoli, and green beans, plus sweet potatoes. We incorporate olive oil, cod liver oil, and salmon oil for essential fatty acids.</p>
+
+                <p>Fresh bones are exceptional for dental health and provide natural nutrition—chicken backs are particularly beneficial and economical. Fresh bones remain soft enough for developing teeth while providing mental stimulation and natural teeth cleaning. Never feed cooked bones, which can splinter dangerously.</p>
+
+                <p>We add fresh garlic for flavor and its traditional benefits in helping ward off fleas and ticks. Seasonal fruits like pears, apples, and berries provide antioxidants and natural variety. Each dog develops individual preferences, making mealtime both nutritious and enjoyable.</p>
+
+                <p>Fresh feeding preserves natural enzymes that are destroyed in commercial processing, supports optimal digestion, maintains healthy weight, promotes lustrous coats, and provides the sustained energy that keeps our Labradors thriving well into their senior years. The difference in vitality, coat quality, and overall health is unmistakable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Selection */}
           <div>
