@@ -38,26 +38,26 @@ const foodProducts = [
   {
     id: "raw-blend-adult",
     name: "On The Bluff Breakfast Blend",
-    description: "Complete raw food blend featuring chicken, turkey, fish, and vegetables with natural supplements specifically formulated for adult Labradors",
+    description: "Complete fresh food blend featuring chicken, turkey, fish, and vegetables with natural supplements specifically formulated for adult Labradors",
     price: 28,
     unit: "5 lb block",
-    benefits: ["100% raw ingredients", "Farm-fresh proteins", "No preservatives", "Supports natural digestion", "Promotes healthy coat"]
+    benefits: ["100% fresh ingredients", "Farm-fresh proteins", "No preservatives", "Supports natural digestion", "Promotes healthy coat"]
   },
   {
     id: "raw-blend-puppy",
     name: "On The Bluff Dinner Blend", 
-    description: "Nutrient-dense raw food blend featuring beef and vegetables with optimal protein ratios and essential fatty acids for proper development",
+    description: "Nutrient-dense fresh food blend featuring beef and vegetables with optimal protein ratios and essential fatty acids for proper development",
     price: 28,
     unit: "5 lb block",
-    benefits: ["Growth-optimized nutrition", "Raw bone content for teeth", "Brain development support", "Natural enzyme preservation", "Easy transition from mother's milk"]
+    benefits: ["Growth-optimized nutrition", "Fresh bone content for teeth", "Brain development support", "Natural enzyme preservation", "Easy transition from mother's milk"]
   },
   {
     id: "senior-formula",
     name: "On The Bluff Butcher Bags",
-    description: "Raw beef with tripe blend featuring softer textures and joint-supporting ingredients, specially crafted for senior Labradors with aging nutritional needs",
+    description: "Fresh beef with tripe blend featuring softer textures and joint-supporting ingredients, specially crafted for senior Labradors with aging nutritional needs",
     price: 30,
     unit: "15 lb portion", 
-    benefits: ["Softer raw textures", "Anti-inflammatory ingredients", "Digestive enzyme support", "Glucosamine for joints", "Heart-healthy omega oils"]
+    benefits: ["Softer fresh textures", "Anti-inflammatory ingredients", "Digestive enzyme support", "Glucosamine for joints", "Heart-healthy omega oils"]
   }
 ];
 
@@ -145,13 +145,13 @@ export default function DogFoodPage() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
-            Premium Raw Dog Food
+            Premium Fresh Dog Food
           </h1>
           <p className="text-xl text-stone-700 max-w-3xl mx-auto font-source-sans leading-relaxed">
-            We feed our dogs fresh raw food made up of high-quality proteins, fresh vegetables, 
-            and essential supplements. Raw feeding preserves natural enzymes, provides optimal nutrition, 
+            We feed our dogs fresh food made up of high-quality proteins, fresh vegetables, 
+            and essential supplements. Fresh feeding preserves natural enzymes, provides optimal nutrition, 
             and supports the digestive health that has kept our Labradors thriving for over 50 years. 
-            Experience the difference that species-appropriate raw nutrition can make for your Labrador.
+            Experience the difference that species-appropriate fresh nutrition can make for your Labrador.
           </p>
         </div>
 
@@ -159,7 +159,7 @@ export default function DogFoodPage() {
           {/* Product Selection */}
           <div>
             <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-2 tracking-wide">
-              Fresh Raw Food Products
+              Fresh Food Products
             </h2>
             <p className="text-lg font-source-sans text-stone-600 mb-6 italic">Pickup Only</p>
             
@@ -405,7 +405,7 @@ export default function DogFoodPage() {
                       <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Pickup Schedule</h3>
                       <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
                         <p className="text-amber-800 font-source-sans text-sm">
-                          <strong>Pickup Only:</strong> All raw food orders must be picked up at our facility in Germantown, NY. Orders require 14 days advance notice. Please select your preferred pickup date and time.
+                          <strong>Pickup Only:</strong> All fresh food orders must be picked up at our facility in Germantown, NY. Orders require 14 days advance notice. Please select your preferred pickup date and time.
                         </p>
                       </div>
                       
@@ -502,13 +502,13 @@ export default function DogFoodPage() {
             {/* Order Information */}
             <Card className="mt-6 bg-blue-50 border-blue-200">
               <CardHeader>
-                <CardTitle className="text-blue-800 font-oswald tracking-wide">Raw Food Order Process</CardTitle>
+                <CardTitle className="text-blue-800 font-oswald tracking-wide">Fresh Food Order Process</CardTitle>
               </CardHeader>
               <CardContent className="text-blue-700 space-y-2 font-source-sans">
                 <p>• <strong>Pickup Only:</strong> All orders must be picked up at our Germantown, NY facility</p>
                 <p>• We'll contact you within 24 hours to confirm your order and pickup appointment</p>
                 <p>• Payment is collected at pickup (cash or check preferred)</p>
-                <p>• Fresh raw food prepared weekly - orders require 14 days advance notice</p>
+                <p>• Fresh food prepared weekly - orders require 14 days advance notice</p>
                 <p>• Please bring a cooler for transport to maintain food quality</p>
               </CardContent>
             </Card>
