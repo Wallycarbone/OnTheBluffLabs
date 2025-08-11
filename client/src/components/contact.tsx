@@ -171,17 +171,7 @@ export default function Contact() {
               </div>
             </Card>
 
-            <Card className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-                VISIT US
-              </h3>
-              <p className="font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-                We welcome visits by appointment. Come meet our dogs and see our facilities in person.
-              </p>
-              <button className="bg-slate-800 text-white hover:bg-slate-900 font-montserrat font-medium px-6 py-3 rounded-lg transition-colors">
-                Schedule a Visit
-              </button>
-            </Card>
+
           </div>
         </div>
       </div>
