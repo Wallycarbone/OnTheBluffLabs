@@ -129,8 +129,8 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <Card className="rounded-xl shadow-lg p-8" style={{backgroundColor: '#fefefe'}}>
-            <h3 className="text-2xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
-              Puppy Inquiry Form
+            <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+              PUPPY INQUIRY FORM
             </h3>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -262,19 +262,19 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <Card className="rounded-xl shadow-lg p-8" style={{backgroundColor: '#fefefe'}}>
-              <h3 className="text-2xl font-playfair font-bold mb-6" style={{color: '#11100f'}}>
-                Contact Information
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                CONTACT INFORMATION
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <MapPin className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
-                    <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Address</h4>
-                    <p style={{color: '#4b4b4b'}}>
+                    <h4 className="font-oswald font-normal" style={{color: '#11100f'}}>Address</h4>
+                    <p className="font-source-sans" style={{color: '#4b4b4b'}}>
                       165 Northern Boulevard<br />
                       Germantown, NY
                     </p>
-                    <p className="text-sm mt-2 italic" style={{color: '#4b4b4b'}}>
+                    <p className="font-source-sans text-sm mt-2 italic" style={{color: '#4b4b4b'}}>
                       Visits to our grounds are by appointment ONLY.<br />
                       Unannounced visitors will be turned away, without exception.
                     </p>
@@ -283,25 +283,25 @@ export default function Contact() {
                 <div className="flex items-start">
                   <Phone className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
-                    <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Phone</h4>
-                    <p style={{color: '#4b4b4b'}}>(518) 855-6705</p>
+                    <h4 className="font-oswald font-normal" style={{color: '#11100f'}}>Phone</h4>
+                    <p className="font-source-sans" style={{color: '#4b4b4b'}}>(518) 855-6705</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
-                    <h4 className="font-montserrat font-medium" style={{color: '#11100f'}}>Email</h4>
-                    <p style={{color: '#4b4b4b'}}>info@ontheblufflabradors.com</p>
+                    <h4 className="font-oswald font-normal" style={{color: '#11100f'}}>Email</h4>
+                    <p className="font-source-sans" style={{color: '#4b4b4b'}}>info@ontheblufflabradors.com</p>
                   </div>
                 </div>
               </div>
             </Card>
 
             <Card className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-playfair font-bold text-slate-900 mb-6">
-                Visit Us
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                VISIT US
               </h3>
-              <p className="text-slate-700 mb-4">
+              <p className="font-source-sans mb-4" style={{color: '#4b4b4b'}}>
                 We welcome visits by appointment. Come meet our dogs and see our facilities in person.
               </p>
               <Button className="bg-slate-800 text-white hover:bg-slate-900 font-montserrat font-medium">

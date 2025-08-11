@@ -88,6 +88,10 @@
     font-family: 'Montserrat', sans-serif;
   }
   
+  .font-oswald {
+    font-family: 'Oswald', sans-serif;
+  }
+  
   .text-navy {
     color: var(--navy);
   }
