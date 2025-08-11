@@ -98,3 +98,10 @@ Preferred communication style: Simple, everyday language.
 - Enhanced breeding dog cards with reorganized layout: removed star sections, moved pedigree content to "Pedigree Highlight"
 - Added clickable Westminster lineage reference for Grizzly showing Shalimar's The Animator photo
 - Maintained consistent golden color styling and hover effects for all interactive elements
+
+### ✅ **HUBSPOT FORM INTEGRATION** (January 2025)
+- Replaced custom React inquiry form with embedded HubSpot form integration
+- Added TypeScript declarations for HubSpot window object for proper type safety
+- Configured form with portal ID "44843117" and form ID "d548d593-9ea1-46d6-99d5-6ab48bf9f956"
+- Added custom CSS styling to match site design with brand colors and fonts
+- Maintained consistent styling with existing contact page layout and professional appearance
