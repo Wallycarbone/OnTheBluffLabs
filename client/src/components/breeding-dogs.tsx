@@ -635,6 +635,68 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Chekhov": {
+        name: "Chekhov",
+        formalName: "On The Bluff Chekhov",
+        titles: [],
+        image: chekhovImage,
+        sire: {
+          name: "Chekhov's Sire",
+          titles: [],
+          sire: {
+            name: "Chekhov's Paternal Grandsire",
+            titles: [],
+            sire: {
+              name: "Chekhov's Paternal Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Chekhov's Paternal Great-Granddam",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Chekhov's Paternal Granddam",
+            titles: [],
+            sire: {
+              name: "Chekhov's Paternal Dam's Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Chekhov's Paternal Dam's Great-Granddam",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "Chekhov's Dam",
+          titles: [],
+          sire: {
+            name: "Chekhov's Maternal Grandsire",
+            titles: [],
+            sire: {
+              name: "Chekhov's Maternal Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Chekhov's Maternal Great-Granddam",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Chekhov's Maternal Granddam",
+            titles: [],
+            sire: {
+              name: "Chekhov's Dam's Maternal Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Chekhov's Dam's Maternal Great-Granddam",
+              titles: []
+            }
+          }
+        }
       }
     };
     
