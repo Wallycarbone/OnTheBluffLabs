@@ -953,7 +953,7 @@ export default function BreedingDogs() {
                         
                         {/* Dam to grandparents T-junction */}
                         <div className="absolute bg-gray-400" style={{ left: '560px', top: '340px', width: '80px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '420px', width: '2px', height: '180px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '340px', width: '2px', height: '260px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '420px', width: '50px', height: '2px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '600px', width: '50px', height: '2px' }}></div>
 
