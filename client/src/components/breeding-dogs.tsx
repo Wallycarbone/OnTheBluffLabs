@@ -610,7 +610,7 @@ export default function BreedingDogs() {
           titles: [],
           image: frannyGlassImage,
           sire: {
-            name: "CH Endless Mt Shines Like Sterling",
+            name: "CH Endless Mt Shines Like Sterling (\"Sterling\")",
             titles: ["CH"],
             image: sterlingImage,
             sire: {
