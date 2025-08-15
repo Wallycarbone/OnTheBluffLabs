@@ -638,61 +638,61 @@ export default function BreedingDogs() {
       },
       "Chekhov": {
         name: "Chekhov",
-        formalName: "On The Bluff Chekhov",
+        formalName: "Belquest Conclusion's Anton Chekhov",
         titles: [],
         image: chekhovImage,
         sire: {
-          name: "Chekhov's Sire",
+          name: "Belquest Conclusion Stolichnaya",
           titles: [],
           sire: {
-            name: "Chekhov's Paternal Grandsire",
+            name: "Aster Liberti Labro Hamburg",
             titles: [],
             sire: {
-              name: "Chekhov's Paternal Great-Grandsire",
+              name: "Night Single Great Genus Winners",
               titles: []
             },
             dam: {
-              name: "Chekhov's Paternal Great-Granddam",
+              name: "Aster Liberti Labro Gollandiya",
               titles: []
             }
           },
           dam: {
-            name: "Chekhov's Paternal Granddam",
-            titles: [],
+            name: "Belquest Prequel To The Sequel",
+            titles: ["CGC"],
             sire: {
-              name: "Chekhov's Paternal Dam's Great-Grandsire",
-              titles: []
+              name: "GCH Highcaliber Labradale Expresso",
+              titles: ["GCH"]
             },
             dam: {
-              name: "Chekhov's Paternal Dam's Great-Granddam",
+              name: "Trinity's Ultimate Sequel",
               titles: []
             }
           }
         },
         dam: {
-          name: "Chekhov's Dam",
+          name: "Belquest Conclusion Double Layer Cake",
           titles: [],
           sire: {
-            name: "Chekhov's Maternal Grandsire",
+            name: "Atlantic's Ace Of Cakes At Big Sky",
             titles: [],
             sire: {
-              name: "Chekhov's Maternal Great-Grandsire",
-              titles: []
+              name: "GCH Big Sky's Stone Kutter",
+              titles: ["GCH"]
             },
             dam: {
-              name: "Chekhov's Maternal Great-Granddam",
+              name: "Atlantic's Hidden Gem",
               titles: []
             }
           },
           dam: {
-            name: "Chekhov's Maternal Granddam",
+            name: "Belquest Double Shot Expresso Of Waterberry",
             titles: [],
             sire: {
-              name: "Chekhov's Dam's Maternal Great-Grandsire",
-              titles: []
+              name: "GCH Highcaliber Labradale Expresso",
+              titles: ["GCH"]
             },
             dam: {
-              name: "Chekhov's Dam's Maternal Great-Granddam",
+              name: "Waterberry Expresso Belquest",
               titles: []
             }
           }
