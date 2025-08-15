@@ -825,7 +825,7 @@ export default function BreedingDogs() {
                               </h3>
                               <div className="flex flex-wrap justify-center gap-1">
                                 {pedigreeData.titles.map((title: string, index: number) => (
-                                  <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat font-medium rounded-sm" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                                  <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat font-medium rounded-lg" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
                                     {title}
                                   </span>
                                 ))}
@@ -836,13 +836,13 @@ export default function BreedingDogs() {
 
                         {/* Main connection system from current dog to parents */}
                         {/* Horizontal line from current dog to T-junction */}
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '230px', top: '329px', width: '100px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '230px', top: '329px', width: '100px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
                         {/* Vertical line creating T-junction for sire and dam */}
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '329px', top: '150px', width: '2px', height: '360px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '329px', top: '150px', width: '2px', height: '360px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
                         {/* Horizontal line from T-junction to sire */}
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '330px', top: '149px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '330px', top: '149px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
                         {/* Horizontal line from T-junction to dam */}
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '330px', top: '509px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '330px', top: '509px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
                         
                         {/* Sire - Generation 1 - Centered between grandparents */}
                         <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
@@ -883,7 +883,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1 py-0.5 text-xs font-montserrat rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
                                   >
                                     {title}
@@ -933,7 +933,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1 py-0.5 text-xs font-montserrat rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                                   >
                                     {title}
@@ -946,16 +946,16 @@ export default function BreedingDogs() {
 
                         {/* Parent to grandparent connection system */}
                         {/* Sire to grandparents T-junction */}
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '560px', top: '149px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '639px', top: '60px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '640px', top: '59px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '640px', top: '239px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '560px', top: '149px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '639px', top: '60px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '640px', top: '59px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '640px', top: '239px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
                         
                         {/* Dam to grandparents T-junction */}
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '560px', top: '509px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '639px', top: '420px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '640px', top: '419px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
-                        <div className="absolute rounded-sm opacity-75 shadow-sm" style={{ left: '640px', top: '599px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '560px', top: '509px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '639px', top: '420px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '640px', top: '419px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
+                        <div className="absolute rounded-lg opacity-75 shadow-sm" style={{ left: '640px', top: '599px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '1px' }}></div>
 
                         {/* Grandparents - Generation 2 */}
                         {/* Sire's Sire */}
@@ -997,7 +997,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1 py-0.5 text-xs font-montserrat rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
                                   >
                                     {title}
@@ -1047,7 +1047,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1 py-0.5 text-xs font-montserrat rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
                                   >
                                     {title}
@@ -1097,7 +1097,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1 py-0.5 text-xs font-montserrat rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                                   >
                                     {title}
@@ -1147,7 +1147,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1 py-0.5 text-xs font-montserrat rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                                   >
                                     {title}
