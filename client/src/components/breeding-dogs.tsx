@@ -742,7 +742,8 @@ export default function BreedingDogs() {
   );
 
   return (
-    <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
+    <>
+      <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Our Sires Section */}
         <div className="mb-20">
@@ -1088,40 +1089,84 @@ export default function BreedingDogs() {
                 </div>
               );
             })()}
+        </DialogContent>
+      </Dialog>
 
-            {/* Image Popup Dialog */}
-            <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
-              <DialogContent className="max-w-lg">
-                <div className="text-center">
-                  <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
-                    {selectedImage?.name}
-                  </h4>
-                  <img 
-                    src={selectedImage?.src} 
-                    alt={selectedImage?.name}
-                    className="w-full max-h-96 object-cover rounded-lg"
-                  />
-                </div>
-              </DialogContent>
-            </Dialog>
+      {/* Title Popup Dialog */}
+      <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
+        <DialogContent className="max-w-md">
+          <div className="text-center">
+            <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
+              {selectedTitle?.abbreviation}
+            </h4>
+            <p className="font-source-sans text-sm text-gray-700">
+              {selectedTitle?.fullName}
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
 
-            {/* Title Popup Dialog */}
-            <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-              <DialogContent className="max-w-md">
-                <div className="text-center">
-                  <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
-                    {selectedTitle?.abbreviation}
-                  </h4>
-                  <p className="font-source-sans text-sm text-gray-700">
-                    {selectedTitle?.fullName}
+      {/* Puppy Gallery Dialog */}
+      <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
+        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+          <div className="space-y-6">
+            <h3 className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
+              Puppies by {selectedDog?.name}
+            </h3>
+            {(() => {
+              const puppyData = getPuppyGalleryData(selectedDog?.name);
+              if (!puppyData || puppyData.length === 0) {
+                return (
+                  <p className="text-center text-gray-600 font-source-sans">
+                    No puppy information available for {selectedDog?.name}
                   </p>
+                );
+              }
+              return (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {puppyData.map((puppy, index) => (
+                    <div key={index} className="text-center">
+                      <div className="mb-2">
+                        <img 
+                          src={puppy.image} 
+                          alt={puppy.name}
+                          className="w-full h-48 object-cover rounded-lg mx-auto"
+                        />
+                      </div>
+                      <h4 className="font-oswald text-lg font-normal mb-1" style={{color: '#11100f'}}>
+                        {puppy.name}
+                      </h4>
+                      <p className="font-source-sans text-sm text-gray-600">
+                        {puppy.description}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              </DialogContent>
-            </Dialog>
+              );
+            })()}
+          </div>
+        </DialogContent>
+      </Dialog>
 
-            {/* Puppy Gallery Dialog */}
-            <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
-              <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+      {/* Image Popup Dialog */}
+      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+        <DialogContent className="max-w-2xl">
+          <div className="text-center">
+            <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
+              {selectedImage?.name}
+            </h4>
+            {selectedImage && (
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.name}
+                className="max-w-full max-h-96 rounded-lg object-contain mx-auto"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
+      <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
+        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
                 <div className="space-y-6">
                   <h3 className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
                     Puppies by {selectedDog?.name}
@@ -1168,39 +1213,38 @@ export default function BreedingDogs() {
               </DialogContent>
             </Dialog>
 
-            {/* Image Popup Dialog */}
-            <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
-              <DialogContent className="max-w-2xl">
-                <div className="text-center">
-                  <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
-                    {selectedImage?.name}
-                  </h4>
-                  {selectedImage && (
-                    <img 
-                      src={selectedImage.src} 
-                      alt={selectedImage.name}
-                      className="max-w-full max-h-96 rounded-lg object-contain mx-auto"
-                    />
-                  )}
-                </div>
-              </DialogContent>
-            </Dialog>
+      {/* Image Popup Dialog */}
+      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+        <DialogContent className="max-w-2xl">
+          <div className="text-center">
+            <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
+              {selectedImage?.name}
+            </h4>
+            {selectedImage && (
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.name}
+                className="max-w-full max-h-96 rounded-lg object-contain mx-auto"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
 
-            {/* Title Popup Dialog */}
-            <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-              <DialogContent className="max-w-md">
-                <div className="text-center">
-                  <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
-                    {selectedTitle?.abbreviation}
-                  </h4>
-                  <p className="font-source-sans text-sm text-gray-700">
-                    {selectedTitle?.fullName}
-                  </p>
-                </div>
-              </DialogContent>
-            </Dialog>
-        </div>
+      {/* Title Popup Dialog */}
+      <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
+        <DialogContent className="max-w-md">
+          <div className="text-center">
+            <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
+              {selectedTitle?.abbreviation}
+            </h4>
+            <p className="font-source-sans text-sm text-gray-700">
+              {selectedTitle?.fullName}
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
       </section>
-    </div>
+    </>
   );
 };
