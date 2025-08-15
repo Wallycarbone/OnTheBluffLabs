@@ -26,6 +26,7 @@ import stoliImage from "@assets/Stoli_1755288962958.jpg";
 import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
 import sequelImage from "@assets/Sequel_1755289144473.webp";
 import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
+import duffyImage from "@assets/duffy-04_1755289259124.jpeg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -684,8 +685,9 @@ export default function BreedingDogs() {
           titles: [],
           image: layLayImage,
           sire: {
-            name: "Atlantic's Ace Of Cakes At Big Sky",
+            name: "Atlantic's Ace Of Cakes At Big Sky (\"Duffy\")",
             titles: [],
+            image: duffyImage,
             sire: {
               name: "GCH Big Sky's Stone Kutter",
               titles: ["GCH"]
