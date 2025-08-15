@@ -14,6 +14,7 @@ import brodyImage from "@assets/Brody_1753811205545.jpg?url";
 import atticusImage from "@assets/Atticus_1754340164760.jpeg";
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (8)_1755286717960.png";
 import newMoonImage from "@assets/Breeding Dogs 5x4 (9)_1755286823265.png";
+import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -593,9 +594,9 @@ export default function BreedingDogs() {
       name: "Holden",
       formalName: "On The Bluff Holden",
       gender: "Male",
-      color: "Yellow", 
+      color: "Chocolate", 
       age: "Previous Stud",
-      image: grizzlyImage, // Using placeholder, would need actual Holden image
+      image: newHoldenImage,
       description: "Former breeding sire with excellent bloodlines. Father to beautiful chocolate females.",
       hasPuppies: true
     }
