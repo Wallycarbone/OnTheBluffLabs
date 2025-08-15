@@ -780,13 +780,14 @@ export default function BreedingDogs() {
 
       {/* Individual Dog Pedigree Popup Dialog */}
       <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto" aria-describedby="pedigree-popup-description">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
               {selectedDog?.name}
             </DialogTitle>
           </DialogHeader>
-          {selectedDog && (() => {
+          <div id="pedigree-popup-description">
+            {selectedDog && (() => {
             const pedigreeData = getDogPedigreeData(selectedDog.name);
             if (!pedigreeData) return <p>Pedigree information not available</p>;
             
@@ -1089,16 +1090,19 @@ export default function BreedingDogs() {
                 </div>
               );
             })()}
+          </div>
         </DialogContent>
       </Dialog>
 
       {/* Title Popup Dialog */}
       <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-        <DialogContent className="max-w-md">
-          <div className="text-center">
-            <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
+        <DialogContent className="max-w-md" aria-describedby="title-popup-description">
+          <DialogHeader>
+            <DialogTitle className="font-oswald text-lg font-normal" style={{color: '#11100f'}}>
               {selectedTitle?.abbreviation}
-            </h4>
+            </DialogTitle>
+          </DialogHeader>
+          <div id="title-popup-description" className="text-center">
             <p className="font-source-sans text-sm text-gray-700">
               {selectedTitle?.fullName}
             </p>
@@ -1108,41 +1112,49 @@ export default function BreedingDogs() {
 
       {/* Puppy Gallery Dialog */}
       <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
-        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-          <div className="space-y-6">
-            <h3 className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
+        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto" aria-describedby="puppy-gallery-description">
+          <DialogHeader>
+            <DialogTitle className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
               Puppies by {selectedDog?.name}
-            </h3>
+            </DialogTitle>
+          </DialogHeader>
+          <div id="puppy-gallery-description" className="space-y-6">
             {(() => {
               const puppyData = getPuppyGalleryData(selectedDog?.name);
-              if (!puppyData || puppyData.length === 0) {
+              if (!puppyData || !puppyData.litters || puppyData.litters.length === 0) {
                 return (
                   <p className="text-center text-gray-600 font-source-sans">
                     No puppy information available for {selectedDog?.name}
                   </p>
                 );
               }
-              return (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {puppyData.map((puppy, index) => (
-                    <div key={index} className="text-center">
-                      <div className="mb-2">
+
+              return puppyData.litters.map((litter: any, litterIndex: number) => (
+                <div key={litterIndex} className="space-y-4">
+                  <div className="text-center pb-2 border-b border-gray-200">
+                    <h4 className="font-oswald text-lg font-normal" style={{color: '#11100f'}}>
+                      Born: {litter.birthDate} | Dam: {litter.dam}
+                    </h4>
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {litter.puppies.map((puppy: any, puppyIndex: number) => (
+                      <div key={puppyIndex} className="text-center">
                         <img 
                           src={puppy.image} 
                           alt={puppy.name}
-                          className="w-full h-48 object-cover rounded-lg mx-auto"
+                          className="w-full h-32 object-cover rounded-lg mb-2"
                         />
+                        <p className="font-oswald text-sm font-medium" style={{color: '#11100f'}}>
+                          {puppy.name}
+                        </p>
+                        <p className="font-source-sans text-xs text-gray-600">
+                          {puppy.gender} • {puppy.color}
+                        </p>
                       </div>
-                      <h4 className="font-oswald text-lg font-normal mb-1" style={{color: '#11100f'}}>
-                        {puppy.name}
-                      </h4>
-                      <p className="font-source-sans text-sm text-gray-600">
-                        {puppy.description}
-                      </p>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              );
+              ));
             })()}
           </div>
         </DialogContent>
@@ -1150,76 +1162,13 @@ export default function BreedingDogs() {
 
       {/* Image Popup Dialog */}
       <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
-        <DialogContent className="max-w-2xl">
-          <div className="text-center">
-            <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
+        <DialogContent className="max-w-2xl" aria-describedby="image-popup-description">
+          <DialogHeader>
+            <DialogTitle className="font-oswald text-lg font-normal" style={{color: '#11100f'}}>
               {selectedImage?.name}
-            </h4>
-            {selectedImage && (
-              <img 
-                src={selectedImage.src} 
-                alt={selectedImage.name}
-                className="max-w-full max-h-96 rounded-lg object-contain mx-auto"
-              />
-            )}
-          </div>
-        </DialogContent>
-      </Dialog>
-      <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
-        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-                <div className="space-y-6">
-                  <h3 className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
-                    Puppies by {selectedDog?.name}
-                  </h3>
-                  
-                  {(() => {
-                    const puppyData = getPuppyGalleryData(selectedDog?.name);
-                    if (!puppyData || puppyData.length === 0) {
-                      return (
-                        <p className="text-center text-gray-600 font-source-sans">
-                          No puppy information available for {selectedDog?.name}
-                        </p>
-                      );
-                    }
-
-                    return puppyData.map((litter: any, litterIndex: number) => (
-                      <div key={litterIndex} className="space-y-4">
-                        <div className="text-center pb-2 border-b border-gray-200">
-                          <h4 className="font-oswald text-lg font-normal" style={{color: '#11100f'}}>
-                            Born: {litter.birthDate} | Dam: {litter.dam}
-                          </h4>
-                        </div>
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                          {litter.puppies.map((puppy: any, puppyIndex: number) => (
-                            <div key={puppyIndex} className="text-center">
-                              <img 
-                                src={puppy.image} 
-                                alt={puppy.name}
-                                className="w-full h-32 object-cover rounded-lg mb-2"
-                              />
-                              <p className="font-oswald text-sm font-medium" style={{color: '#11100f'}}>
-                                {puppy.name}
-                              </p>
-                              <p className="font-source-sans text-xs text-gray-600">
-                                {puppy.gender} • {puppy.color}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ));
-                  })()}
-                </div>
-              </DialogContent>
-            </Dialog>
-
-      {/* Image Popup Dialog */}
-      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
-        <DialogContent className="max-w-2xl">
-          <div className="text-center">
-            <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
-              {selectedImage?.name}
-            </h4>
+            </DialogTitle>
+          </DialogHeader>
+          <div id="image-popup-description" className="text-center">
             {selectedImage && (
               <img 
                 src={selectedImage.src} 
@@ -1231,19 +1180,6 @@ export default function BreedingDogs() {
         </DialogContent>
       </Dialog>
 
-      {/* Title Popup Dialog */}
-      <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-        <DialogContent className="max-w-md">
-          <div className="text-center">
-            <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
-              {selectedTitle?.abbreviation}
-            </h4>
-            <p className="font-source-sans text-sm text-gray-700">
-              {selectedTitle?.fullName}
-            </p>
-          </div>
-        </DialogContent>
-      </Dialog>
       </section>
     </>
   );
