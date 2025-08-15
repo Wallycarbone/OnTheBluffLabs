@@ -798,7 +798,7 @@ export default function BreedingDogs() {
                       <div className="relative" style={{ width: '1200px', height: '900px' }}>
                         {/* Current Dog - Generation 0 - Centered between parents */}
                         <div className="absolute" style={{ left: '50px', top: '290px', width: '180px' }}>
-                          <div className="rounded-lg p-4" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
+                          <div className="rounded-lg p-4 border-2" style={{backgroundColor: '#f8f9f0', borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.image && (
                                 <div className="mb-3">
@@ -846,7 +846,7 @@ export default function BreedingDogs() {
                         
                         {/* Sire - Generation 1 - Centered between grandparents */}
                         <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
-                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.sire.image && (
                                 <div className="mb-2">
@@ -960,7 +960,7 @@ export default function BreedingDogs() {
                         {/* Grandparents - Generation 2 */}
                         {/* Sire's Sire */}
                         <div className="absolute" style={{ left: '690px', top: '20px', width: '180px' }}>
-                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.sire.sire.image && (
                                 <div className="mb-2">
@@ -1010,7 +1010,7 @@ export default function BreedingDogs() {
 
                         {/* Sire's Dam */}
                         <div className="absolute" style={{ left: '690px', top: '200px', width: '180px' }}>
-                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#a5aa35'}}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.sire.dam.image && (
                                 <div className="mb-2">
@@ -1060,7 +1060,7 @@ export default function BreedingDogs() {
 
                         {/* Dam's Sire */}
                         <div className="absolute" style={{ left: '690px', top: '380px', width: '180px' }}>
-                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#6d761d'}}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.dam.sire.image && (
                                 <div className="mb-2">
@@ -1110,7 +1110,7 @@ export default function BreedingDogs() {
 
                         {/* Dam's Dam */}
                         <div className="absolute" style={{ left: '690px', top: '560px', width: '180px' }}>
-                          <div className="bg-white rounded-lg p-3 border" style={{borderColor: '#6d761d'}}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.dam.dam.image && (
                                 <div className="mb-2">
