@@ -276,62 +276,62 @@ export default function BreedingDogs() {
       },
       "Harper Lee": {
         name: "Harper Lee",
-        formalName: "On The Bluff Harper Lee",
-        titles: ["CH"],
-        image: harperLeeImage,
+        formalName: "On The Bluff's Harper Lee",
+        titles: [],
+        image: newHarperLeeImage,
         sire: {
-          name: "Atticus Finch",
-          titles: ["CH", "Late Sire"],
+          name: "On The Bluff's Atticus Finch",
+          titles: [],
           sire: {
-            name: "Atticus's Sire",
-            titles: ["CH"],
+            name: "Heartlands Polar Bear Chase",
+            titles: [],
             sire: {
-              name: "Atticus's Paternal Great-Grandsire",
-              titles: ["CH"]
+              name: "Walker's \"Chance\" Of A Lifetime",
+              titles: []
             },
             dam: {
-              name: "Atticus's Paternal Great-Granddam",
-              titles: ["CH"]
+              name: "Starqueststruttontoktakafarms",
+              titles: []
             }
           },
           dam: {
-            name: "Atticus's Dam",
-            titles: ["CH"],
+            name: "Heartlands Lily Of The Valley",
+            titles: [],
             sire: {
-              name: "Atticus's Maternal Great-Grandsire",
-              titles: ["CH"]
+              name: "Centrecourt Black Jake At Ceasarscreek",
+              titles: []
             },
             dam: {
-              name: "Atticus's Maternal Great-Granddam",
-              titles: ["CH"]
+              name: "Heartlands Vanilla Frosty",
+              titles: []
             }
           }
         },
         dam: {
-          name: "Harper Lee's Dam",
-          titles: ["CH"],
+          name: "On The Bluff's Arabella Tallant",
+          titles: [],
           sire: {
-            name: "Harper Lee's Maternal Grandsire",
-            titles: ["CH"],
+            name: "Scarfone's Mark Twain",
+            titles: [],
             sire: {
-              name: "Harper Lee's Maternal Great-Grandsire",
-              titles: ["CH"]
+              name: "Valhalla's One Little Victory JH",
+              titles: ["JH"]
             },
             dam: {
-              name: "Harper Lee's Maternal Great-Granddam",
-              titles: ["CH"]
+              name: "Bateshaus Stop To Smell The Roses",
+              titles: []
             }
           },
           dam: {
-            name: "Harper Lee's Maternal Granddam",
-            titles: ["CH"],
+            name: "Whispering Oaks Pattycake",
+            titles: [],
             sire: {
-              name: "Harper Lee's Dam's Maternal Great-Grandsire",
-              titles: ["CH"]
+              name: "GCH Bho's Major League RN",
+              titles: ["GCH", "RN"]
             },
             dam: {
-              name: "Harper Lee's Dam's Maternal Great-Granddam",
-              titles: ["CH"]
+              name: "Summer Of Vantassel Manor Labradors",
+              titles: []
             }
           }
         }
