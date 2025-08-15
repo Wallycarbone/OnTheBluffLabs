@@ -792,10 +792,10 @@ export default function BreedingDogs() {
             return (
               <div className="space-y-6">
                     {/* Traditional Pedigree Layout with Proper Centering */}
-                    <div className="flex items-center gap-0 overflow-x-auto p-8 relative min-h-[600px]">
+                    <div className="flex items-center gap-4 overflow-x-auto p-8 relative min-h-[600px]">
                       {/* Generation 0 - Current Dog */}
-                      <div className="flex-shrink-0 w-64 flex items-center relative">
-                        <div className="w-full">
+                      <div className="flex-shrink-0 w-64 flex items-center justify-center">
+                        <div className="w-full relative">
                           <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.image && (
@@ -833,27 +833,28 @@ export default function BreedingDogs() {
                               </div>
                             </div>
                           </div>
+                          {/* Line extending right from current dog */}
+                          <div className="absolute top-1/2 -right-4 w-4 h-0.5 bg-gray-600"></div>
                         </div>
-                        
-                        {/* Main horizontal line extending to parents */}
-                        <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-600"></div>
                       </div>
 
-                      {/* Generation 1 - Parents Connector */}
-                      <div className="flex-shrink-0 w-16 flex items-center justify-center relative">
-                        {/* Vertical line connecting both parents */}
-                        <div className="w-0.5 h-64 bg-gray-600"></div>
-                        {/* Horizontal lines to each parent */}
-                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform -translate-y-16"></div>
-                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform translate-y-16"></div>
+                      {/* Connector Junction */}
+                      <div className="flex-shrink-0 w-16 relative flex items-center justify-center">
+                        {/* Main vertical line */}
+                        <div className="w-0.5 h-32 bg-gray-600"></div>
+                        {/* Top horizontal line to sire */}
+                        <div className="absolute top-1/4 right-0 w-4 h-0.5 bg-gray-600"></div>
+                        {/* Bottom horizontal line to dam */}
+                        <div className="absolute bottom-1/4 right-0 w-4 h-0.5 bg-gray-600"></div>
                       </div>
                       
-                      <div className="flex-shrink-0 w-56 flex flex-col justify-center relative">
-                        <div className="space-y-16">
+                      {/* Generation 1 - Parents */}
+                      <div className="flex-shrink-0 w-56 flex flex-col justify-center">
+                        <div className="space-y-8">
                           {/* Sire */}
                           <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#8a8f28'}}>
-                            {/* Line to grandparents */}
-                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-600"></div>
+                            {/* Line extending right to grandparents */}
+                            <div className="absolute -right-4 top-1/2 w-4 h-0.5 bg-gray-600"></div>
                             
                             <div className="text-center">
                               {pedigreeData.sire.image && (
@@ -902,8 +903,8 @@ export default function BreedingDogs() {
                           </div>
                           {/* Dam */}
                           <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#6d761d'}}>
-                            {/* Line to grandparents */}
-                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-600"></div>
+                            {/* Line extending right to grandparents */}
+                            <div className="absolute -right-4 top-1/2 w-4 h-0.5 bg-gray-600"></div>
                             
                             <div className="text-center">
                               {pedigreeData.dam.image && (
@@ -954,17 +955,15 @@ export default function BreedingDogs() {
                       </div>
 
                       {/* Grandparents Connector */}
-                      <div className="flex-shrink-0 w-16 flex items-center justify-center relative">
-                        {/* Two vertical lines for grandparent connections */}
-                        <div className="absolute left-1/2 top-1/2 transform -translate-x-0.5">
-                          <div className="w-0.5 h-32 bg-gray-600 transform -translate-y-32"></div>
-                          <div className="w-0.5 h-32 bg-gray-600 transform translate-y-0"></div>
-                        </div>
-                        {/* Horizontal lines to grandparent boxes */}
-                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform -translate-y-24"></div>
-                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform -translate-y-8"></div>
-                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform translate-y-8"></div>
-                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform translate-y-24"></div>
+                      <div className="flex-shrink-0 w-16 relative flex items-center justify-center">
+                        {/* Two vertical sections for grandparent connections */}
+                        <div className="absolute top-1/4 left-0 w-0.5 h-8 bg-gray-600"></div>
+                        <div className="absolute bottom-1/4 left-0 w-0.5 h-8 bg-gray-600"></div>
+                        {/* Horizontal lines to grandparents (4 lines) */}
+                        <div className="absolute top-1/4 right-0 w-4 h-0.5 bg-gray-600 transform -translate-y-2"></div>
+                        <div className="absolute top-1/4 right-0 w-4 h-0.5 bg-gray-600 transform translate-y-2"></div>
+                        <div className="absolute bottom-1/4 right-0 w-4 h-0.5 bg-gray-600 transform -translate-y-2"></div>
+                        <div className="absolute bottom-1/4 right-0 w-4 h-0.5 bg-gray-600 transform translate-y-2"></div>
                       </div>
                       
                       {/* Generation 2 - Grandparents */}
