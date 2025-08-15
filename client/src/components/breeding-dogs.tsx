@@ -791,10 +791,10 @@ export default function BreedingDogs() {
             
             return (
               <div className="space-y-6">
-                    {/* Current Dog Information - Left Side */}
-                    <div className="flex gap-8 overflow-x-auto p-4">
+                    {/* Current Dog Information - Left Side with Traditional Pedigree Lines */}
+                    <div className="flex gap-8 overflow-x-auto p-4 relative">
                       {/* Generation 0 - Current Dog */}
-                      <div className="flex-shrink-0 w-64">
+                      <div className="flex-shrink-0 w-64 relative">
                         <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
                           <div className="text-center">
                             {pedigreeData.image && (
@@ -832,13 +832,22 @@ export default function BreedingDogs() {
                             </div>
                           </div>
                         </div>
+                        
+                        {/* Horizontal line extending to parents */}
+                        <div className="absolute top-1/2 -right-8 w-8 h-0.5 bg-gray-400 transform -translate-y-0.5"></div>
                       </div>
 
                       {/* Generation 1 - Parents */}
-                      <div className="flex-shrink-0 w-56">
+                      <div className="flex-shrink-0 w-56 relative">
+                        {/* Vertical line connecting parents */}
+                        <div className="absolute -left-0 top-1/4 w-0.5 h-1/2 bg-gray-400"></div>
+                        
                         <div className="space-y-4">
                           {/* Sire */}
-                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
+                          <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#8a8f28'}}>
+                            {/* Horizontal line to grandparents */}
+                            <div className="absolute top-1/2 -right-8 w-8 h-0.5 bg-gray-400 transform -translate-y-0.5"></div>
+                            
                             <div className="text-center">
                               {pedigreeData.sire.image && (
                                 <div className="mb-3">
@@ -885,7 +894,10 @@ export default function BreedingDogs() {
                             </div>
                           </div>
                           {/* Dam */}
-                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
+                          <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#6d761d'}}>
+                            {/* Horizontal line to grandparents */}
+                            <div className="absolute top-1/2 -right-8 w-8 h-0.5 bg-gray-400 transform -translate-y-0.5"></div>
+                            
                             <div className="text-center">
                               {pedigreeData.dam.image && (
                                 <div className="mb-3">
@@ -935,7 +947,11 @@ export default function BreedingDogs() {
                       </div>
 
                       {/* Generation 2 - Grandparents */}
-                      <div className="flex-shrink-0 w-48">
+                      <div className="flex-shrink-0 w-48 relative">
+                        {/* Vertical lines connecting grandparents groups */}
+                        <div className="absolute -left-0 top-1/6 w-0.5 h-1/3 bg-gray-400"></div>
+                        <div className="absolute -left-0 top-2/3 w-0.5 h-1/4 bg-gray-400"></div>
+                        
                         <div className="space-y-2">
                           {/* Sire's Sire */}
                           <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
