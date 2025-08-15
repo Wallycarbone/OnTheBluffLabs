@@ -686,7 +686,7 @@ export default function BreedingDogs() {
           image: layLayImage,
           sire: {
             name: "Atlantic's Ace Of Cakes At Big Sky (\"Duffy\")",
-            titles: [],
+            titles: ["CH"],
             image: duffyImage,
             sire: {
               name: "GCH Big Sky's Stone Kutter",
