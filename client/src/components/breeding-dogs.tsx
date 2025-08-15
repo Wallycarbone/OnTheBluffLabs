@@ -785,14 +785,12 @@ export default function BreedingDogs() {
               {selectedDog?.name}
             </DialogTitle>
           </DialogHeader>
-          {selectedDog && (
-            <div className="space-y-6">
-              {(() => {
-                const pedigreeData = getDogPedigreeData(selectedDog.name);
-                if (!pedigreeData) return <p>Pedigree information not available</p>;
-                
-                return (
-                  <div className="space-y-6">
+          {selectedDog && (() => {
+            const pedigreeData = getDogPedigreeData(selectedDog.name);
+            if (!pedigreeData) return <p>Pedigree information not available</p>;
+            
+            return (
+              <div className="space-y-6">
                     {/* Current Dog Information - Left Side */}
                     <div className="flex gap-8 overflow-x-auto p-4">
                       {/* Generation 0 - Current Dog */}
@@ -1166,9 +1164,7 @@ export default function BreedingDogs() {
 
                   </div>
                 );
-              })}
-            </div>
-          )}
+              })()}
         </DialogContent>
       </Dialog>
 
