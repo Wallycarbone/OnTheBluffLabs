@@ -836,13 +836,13 @@ export default function BreedingDogs() {
 
                         {/* Main connection system from current dog to parents */}
                         {/* Horizontal line from current dog to T-junction */}
-                        <div className="absolute bg-gray-400" style={{ left: '230px', top: '330px', width: '100px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '230px', top: '330px', width: '100px', height: '2px' }}></div>
                         {/* Vertical line creating T-junction for sire and dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '150px', width: '2px', height: '360px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '330px', top: '150px', width: '2px', height: '360px' }}></div>
                         {/* Horizontal line from T-junction to sire */}
-                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '150px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '330px', top: '150px', width: '50px', height: '2px' }}></div>
                         {/* Horizontal line from T-junction to dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '510px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '330px', top: '510px', width: '50px', height: '2px' }}></div>
                         
                         {/* Sire - Generation 1 - Centered between grandparents */}
                         <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
@@ -946,16 +946,16 @@ export default function BreedingDogs() {
 
                         {/* Parent to grandparent connection system */}
                         {/* Sire to grandparents T-junction */}
-                        <div className="absolute bg-gray-400" style={{ left: '560px', top: '150px', width: '80px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '60px', width: '2px', height: '180px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '60px', width: '50px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '240px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '560px', top: '150px', width: '80px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '640px', top: '60px', width: '2px', height: '180px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '640px', top: '60px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '640px', top: '240px', width: '50px', height: '2px' }}></div>
                         
                         {/* Dam to grandparents T-junction */}
-                        <div className="absolute bg-gray-400" style={{ left: '560px', top: '510px', width: '80px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '420px', width: '2px', height: '180px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '420px', width: '50px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '600px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '560px', top: '510px', width: '80px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '640px', top: '420px', width: '2px', height: '180px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '640px', top: '420px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-300 rounded-full" style={{ left: '640px', top: '600px', width: '50px', height: '2px' }}></div>
 
                         {/* Grandparents - Generation 2 */}
                         {/* Sire's Sire */}
