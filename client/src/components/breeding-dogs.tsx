@@ -578,7 +578,7 @@ export default function BreedingDogs() {
         titles: ["CH"],
         image: newHoldenImage,
         sire: {
-          name: "Belquest Conclusion On The Bluff's Tristan",
+          name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
           titles: ["CH"],
           sire: {
             name: "Belquest Conclusion Stolichnaya",
@@ -606,7 +606,7 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Endless Mt On The Bluff's Franny Glass",
+          name: "Endless Mt On The Bluff's Franny Glass (\"Franny\")",
           titles: ["CH"],
           image: frannyGlassImage,
           sire: {
