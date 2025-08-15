@@ -834,17 +834,15 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Gentle curved connections from current dog to parents */}
-                        <svg className="absolute" style={{ left: '230px', top: '140px', width: '200px', height: '380px' }}>
-                          {/* Straight line with gentle curve to sire */}
-                          <path d="M 0 190 L 120 190 Q 140 190 150 10" 
-                                stroke="#6d761d" strokeWidth="2" fill="none" 
-                                opacity="0.75" strokeLinecap="round"/>
-                          {/* Straight line with gentle curve to dam */}
-                          <path d="M 0 190 L 120 190 Q 140 190 150 370" 
-                                stroke="#6d761d" strokeWidth="2" fill="none" 
-                                opacity="0.75" strokeLinecap="round"/>
-                        </svg>
+                        {/* Main connection system from current dog to parents */}
+                        {/* Horizontal line from current dog to T-junction */}
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '230px', top: '329px', width: '100px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        {/* Vertical line creating T-junction for sire and dam */}
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '329px', top: '150px', width: '2px', height: '360px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        {/* Horizontal line from T-junction to sire */}
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '330px', top: '149px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        {/* Horizontal line from T-junction to dam */}
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '330px', top: '509px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
                         
                         {/* Sire - Generation 1 - Centered between grandparents */}
                         <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
@@ -946,30 +944,18 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Gentle curved connections from parents to grandparents */}
-                        {/* Sire to grandparents with subtle curves */}
-                        <svg className="absolute" style={{ left: '560px', top: '50px', width: '150px', height: '200px' }}>
-                          {/* Straight line with gentle curve to sire's sire */}
-                          <path d="M 0 100 L 70 100 Q 90 100 100 10" 
-                                stroke="#6d761d" strokeWidth="2" fill="none" 
-                                opacity="0.75" strokeLinecap="round"/>
-                          {/* Straight line with gentle curve to sire's dam */}
-                          <path d="M 0 100 L 70 100 Q 90 100 100 190" 
-                                stroke="#6d761d" strokeWidth="2" fill="none" 
-                                opacity="0.75" strokeLinecap="round"/>
-                        </svg>
+                        {/* Parent to grandparent connection system */}
+                        {/* Sire to grandparents T-junction */}
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '560px', top: '149px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '639px', top: '60px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '59px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '239px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
                         
-                        {/* Dam to grandparents with subtle curves */}
-                        <svg className="absolute" style={{ left: '560px', top: '410px', width: '150px', height: '200px' }}>
-                          {/* Straight line with gentle curve to dam's sire */}
-                          <path d="M 0 100 L 70 100 Q 90 100 100 10" 
-                                stroke="#6d761d" strokeWidth="2" fill="none" 
-                                opacity="0.75" strokeLinecap="round"/>
-                          {/* Straight line with gentle curve to dam's dam */}
-                          <path d="M 0 100 L 70 100 Q 90 100 100 190" 
-                                stroke="#6d761d" strokeWidth="2" fill="none" 
-                                opacity="0.75" strokeLinecap="round"/>
-                        </svg>
+                        {/* Dam to grandparents T-junction */}
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '560px', top: '509px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '639px', top: '420px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '419px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
+                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '599px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '2px' }}></div>
 
                         {/* Grandparents - Generation 2 */}
                         {/* Sire's Sire */}
