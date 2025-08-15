@@ -12,6 +12,7 @@ import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg?url";
 import simmerImage from "@assets/Simmer_1753810570980.avif?url";
 import brodyImage from "@assets/Brody_1753811205545.jpg?url";
 import atticusImage from "@assets/Atticus_1754340164760.jpeg";
+import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (8)_1755286717960.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -130,7 +131,7 @@ export default function BreedingDogs() {
         name: "Grizzly",
         formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
         titles: [],
-        image: grizzlyImage,
+        image: newGrizzlyImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
           titles: ["CH", "MX"],
@@ -573,7 +574,7 @@ export default function BreedingDogs() {
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
-      image: grizzlyImage,
+      image: newGrizzlyImage,
       description: "Distinguished chocolate male with exceptional emotional intelligence and substantial heavy bone structure. His intuitive nature and powerful build exemplify quality English Labradors, producing puppies with remarkable social intelligence and robust physical presence.",
       hasPuppies: true
     },
