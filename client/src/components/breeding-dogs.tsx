@@ -317,6 +317,7 @@ export default function BreedingDogs() {
           sire: {
             name: "Scarfone's Mark Twain",
             titles: [],
+            image: markTwainImage,
             sire: {
               name: "Valhalla's One Little Victory JH",
               titles: ["JH"]
