@@ -21,6 +21,7 @@ import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import arabellaImage from "@assets/Breeding Dogs 5x4 (15)_1755287225736.png";
 import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
+import sterlingImage from "@assets/NIK_0272_Sterling_1755288200815.jpeg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -611,6 +612,7 @@ export default function BreedingDogs() {
           sire: {
             name: "CH Endless Mt Shines Like Sterling",
             titles: ["CH"],
+            image: sterlingImage,
             sire: {
               name: "GCHB CH Willcare To Fly Under The Radar RN",
               titles: ["GCHB", "CH", "RN"]
