@@ -331,6 +331,7 @@ export default function BreedingDogs() {
         name: "Moon",
         formalName: "Belquest Conclusion Super Moon Rising",
         titles: ["CH"],
+        image: moonImage,
         sire: {
           name: "Farnfield Topo Gigio (\"Gino\")",
           titles: ["GCH", "CH"],
