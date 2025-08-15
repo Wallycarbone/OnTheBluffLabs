@@ -49,6 +49,7 @@ import topoGigioImage from "@assets/Gino_1754685352006.webp";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
 import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png";
+import markTwainImage from "@assets/Breeding Dogs 5x4 (20)_1755291027755.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -834,6 +835,16 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: chekhovImage,
       description: "Distinguished chocolate male with penetrating amber eyes and profound intelligence. His contemplative nature and noble bearing reflect generations of quality breeding, producing offspring with both striking appearance and thoughtful temperament.",
+      hasPuppies: false
+    },
+    {
+      name: "Mark Twain",
+      formalName: "Scarfone's Mark Twain",
+      gender: "Male",
+      color: "Yellow",
+      age: "Active Stud",
+      image: markTwainImage,
+      description: "Exceptional yellow male with distinguished lineage and gentle temperament. His wise expression and calm demeanor reflect the thoughtful nature of his literary namesake, making him an ideal sire for producing intelligent and well-balanced offspring.",
       hasPuppies: false
     }
   ];
