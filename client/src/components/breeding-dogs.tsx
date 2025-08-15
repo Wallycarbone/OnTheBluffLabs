@@ -837,12 +837,8 @@ export default function BreedingDogs() {
                         {/* Connection lines from current dog to parents */}
                         {/* Horizontal line from current dog to junction */}
                         <div className="absolute bg-gray-400" style={{ left: '250px', top: '239px', width: '80px', height: '2px' }}></div>
-                        {/* Vertical junction line */}
+                        {/* Vertical junction line connecting to both parents */}
                         <div className="absolute bg-gray-400" style={{ left: '329px', top: '164px', width: '2px', height: '150px' }}></div>
-                        {/* Line to sire */}
-                        <div className="absolute bg-gray-400" style={{ left: '329px', top: '164px', width: '51px', height: '2px' }}></div>
-                        {/* Line to dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '329px', top: '314px', width: '51px', height: '2px' }}></div>
                         
                         {/* Sire - Generation 1 Top */}
                         <div className="absolute" style={{ left: '380px', top: '125px', width: '180px' }}>
@@ -951,22 +947,14 @@ export default function BreedingDogs() {
                         {/* Sire's grandparent connections */}
                         {/* Horizontal line from sire to junction */}
                         <div className="absolute bg-gray-400" style={{ left: '560px', top: '164px', width: '80px', height: '2px' }}></div>
-                        {/* Vertical junction for sire's parents */}
+                        {/* Vertical junction connecting to sire's parents */}
                         <div className="absolute bg-gray-400" style={{ left: '639px', top: '139px', width: '2px', height: '50px' }}></div>
-                        {/* Line to sire's sire */}
-                        <div className="absolute bg-gray-400" style={{ left: '639px', top: '139px', width: '51px', height: '2px' }}></div>
-                        {/* Line to sire's dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '639px', top: '189px', width: '51px', height: '2px' }}></div>
                         
                         {/* Dam's grandparent connections */}
                         {/* Horizontal line from dam to junction */}
                         <div className="absolute bg-gray-400" style={{ left: '560px', top: '314px', width: '80px', height: '2px' }}></div>
-                        {/* Vertical junction for dam's parents */}
+                        {/* Vertical junction connecting to dam's parents */}
                         <div className="absolute bg-gray-400" style={{ left: '639px', top: '289px', width: '2px', height: '50px' }}></div>
-                        {/* Line to dam's sire */}
-                        <div className="absolute bg-gray-400" style={{ left: '639px', top: '289px', width: '51px', height: '2px' }}></div>
-                        {/* Line to dam's dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '639px', top: '339px', width: '51px', height: '2px' }}></div>
 
                         {/* Grandparents - Generation 2 */}
                         {/* Sire's Sire */}
