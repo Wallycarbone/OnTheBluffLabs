@@ -569,6 +569,68 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Holden": {
+        name: "Holden",
+        formalName: "On The Bluff Holden",
+        titles: ["CH"],
+        image: newHoldenImage,
+        sire: {
+          name: "Holden's Sire",
+          titles: ["CH"],
+          sire: {
+            name: "Holden's Paternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Holden's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Holden's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Holden's Paternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Holden's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Holden's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        },
+        dam: {
+          name: "Holden's Dam",
+          titles: ["CH"],
+          sire: {
+            name: "Holden's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Holden's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Holden's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Holden's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Holden's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Holden's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        }
       }
     };
     
