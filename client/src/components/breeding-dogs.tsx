@@ -593,7 +593,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Active Stud",
       image: newMoonImage,
-      description: "Exceptional yellow male with outstanding pigmentation, deeply affectionate personality, and strong body structure. His rich golden coat color and loving temperament combine with powerful conformation to produce beautiful puppies with both striking appearance and gentle dispositions.",
+      description: "Exceptional yellow male with outstanding pigmentation, deeply affectionate personality, and strong body structure. His rich cream coat color and loving temperament combine with powerful conformation to produce beautiful puppies with both striking appearance and gentle dispositions.",
       hasPuppies: true
     },
     {
