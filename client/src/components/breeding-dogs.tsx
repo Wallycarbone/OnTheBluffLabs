@@ -836,23 +836,24 @@ export default function BreedingDogs() {
                         </div>
                         
                         {/* Main horizontal line extending to parents */}
-                        <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-400 transform translate-x-full -translate-y-0.5"></div>
+                        <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-600"></div>
                       </div>
 
-                      {/* Generation 1 - Parents */}
-                      <div className="flex-shrink-0 w-16 flex items-center relative">
+                      {/* Generation 1 - Parents Connector */}
+                      <div className="flex-shrink-0 w-16 flex items-center justify-center relative">
                         {/* Vertical line connecting both parents */}
-                        <div className="absolute left-1/2 top-1/2 w-0.5 h-64 bg-gray-400 transform -translate-x-0.5 -translate-y-1/2"></div>
+                        <div className="w-0.5 h-64 bg-gray-600"></div>
+                        {/* Horizontal lines to each parent */}
+                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform -translate-y-16"></div>
+                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform translate-y-16"></div>
                       </div>
                       
                       <div className="flex-shrink-0 w-56 flex flex-col justify-center relative">
                         <div className="space-y-16">
                           {/* Sire */}
                           <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#8a8f28'}}>
-                            {/* Horizontal line from vertical line to sire box */}
-                            <div className="absolute left-0 top-1/2 w-16 h-0.5 bg-gray-400 transform -translate-x-full -translate-y-0.5"></div>
-                            {/* Horizontal line from sire to grandparents */}
-                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-400 transform translate-x-full -translate-y-0.5"></div>
+                            {/* Line to grandparents */}
+                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-600"></div>
                             
                             <div className="text-center">
                               {pedigreeData.sire.image && (
@@ -901,10 +902,8 @@ export default function BreedingDogs() {
                           </div>
                           {/* Dam */}
                           <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#6d761d'}}>
-                            {/* Horizontal line from vertical line to dam box */}
-                            <div className="absolute left-0 top-1/2 w-16 h-0.5 bg-gray-400 transform -translate-x-full -translate-y-0.5"></div>
-                            {/* Horizontal line from dam to grandparents */}
-                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-400 transform translate-x-full -translate-y-0.5"></div>
+                            {/* Line to grandparents */}
+                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-600"></div>
                             
                             <div className="text-center">
                               {pedigreeData.dam.image && (
@@ -954,22 +953,25 @@ export default function BreedingDogs() {
                         </div>
                       </div>
 
-                      {/* Grandparents vertical line section */}
-                      <div className="flex-shrink-0 w-16 flex items-center relative">
-                        {/* Vertical lines for grandparents - two separate ones */}
-                        <div className="absolute left-1/2 transform -translate-x-0.5">
-                          <div className="w-0.5 h-32 bg-gray-400 -translate-y-16"></div>
-                          <div className="w-0.5 h-32 bg-gray-400 translate-y-16"></div>
+                      {/* Grandparents Connector */}
+                      <div className="flex-shrink-0 w-16 flex items-center justify-center relative">
+                        {/* Two vertical lines for grandparent connections */}
+                        <div className="absolute left-1/2 top-1/2 transform -translate-x-0.5">
+                          <div className="w-0.5 h-32 bg-gray-600 transform -translate-y-32"></div>
+                          <div className="w-0.5 h-32 bg-gray-600 transform translate-y-0"></div>
                         </div>
+                        {/* Horizontal lines to grandparent boxes */}
+                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform -translate-y-24"></div>
+                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform -translate-y-8"></div>
+                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform translate-y-8"></div>
+                        <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gray-600 transform translate-y-24"></div>
                       </div>
                       
                       {/* Generation 2 - Grandparents */}
                       <div className="flex-shrink-0 w-48 flex flex-col justify-center relative">
                         <div className="space-y-8">
                           {/* Sire's Sire */}
-                          <div className="bg-white rounded-lg p-2 border relative" style={{borderColor: '#a5aa35'}}>
-                            {/* Horizontal line connecting to vertical line */}
-                            <div className="absolute left-0 top-1/2 w-16 h-0.5 bg-gray-400 transform -translate-x-full -translate-y-0.5"></div>
+                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
                             {pedigreeData.sire.sire.image && (
                               <div className="mb-2">
                                 <img 
