@@ -760,7 +760,16 @@ export default function BreedingDogs() {
           <div className="space-y-3">
             <Button 
               onClick={() => openPedigreePopup(dog)}
-              className="w-full bg-navy text-white hover:bg-blue-800 font-montserrat font-medium py-3 rounded transition-colors"
+              className="w-full bg-navy text-white font-montserrat font-medium py-3 rounded transition-colors"
+              style={{
+                backgroundColor: '#1e293b'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#6d761d';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#1e293b';
+              }}
             >
               View Full Pedigree
             </Button>
