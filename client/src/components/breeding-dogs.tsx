@@ -48,6 +48,7 @@ import moonImage from "@assets/Moon_1754685152680.png";
 import topoGigioImage from "@assets/Gino_1754685352006.webp";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
+import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -282,6 +283,7 @@ export default function BreedingDogs() {
         sire: {
           name: "On The Bluff's Atticus Finch",
           titles: [],
+          image: atticusFinchImage,
           sire: {
             name: "Heartlands Polar Bear Chase",
             titles: [],
