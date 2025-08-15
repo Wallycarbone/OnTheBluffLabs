@@ -834,14 +834,14 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Curly brace style connections from current dog to parents */}
+                        {/* Gentle curved connections from current dog to parents */}
                         <svg className="absolute" style={{ left: '230px', top: '140px', width: '200px', height: '380px' }}>
-                          {/* Curved connection to sire */}
-                          <path d="M 0 190 Q 50 190 80 100 Q 100 10 150 10" 
+                          {/* Straight line with gentle curve to sire */}
+                          <path d="M 0 190 L 120 190 Q 140 190 150 10" 
                                 stroke="#6d761d" strokeWidth="2" fill="none" 
                                 opacity="0.75" strokeLinecap="round"/>
-                          {/* Curved connection to dam */}
-                          <path d="M 0 190 Q 50 190 80 280 Q 100 370 150 370" 
+                          {/* Straight line with gentle curve to dam */}
+                          <path d="M 0 190 L 120 190 Q 140 190 150 370" 
                                 stroke="#6d761d" strokeWidth="2" fill="none" 
                                 opacity="0.75" strokeLinecap="round"/>
                         </svg>
@@ -946,27 +946,27 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Curly brace style connections from parents to grandparents */}
-                        {/* Sire to grandparents curved connections */}
+                        {/* Gentle curved connections from parents to grandparents */}
+                        {/* Sire to grandparents with subtle curves */}
                         <svg className="absolute" style={{ left: '560px', top: '50px', width: '150px', height: '200px' }}>
-                          {/* Curved connection to sire's sire */}
-                          <path d="M 0 100 Q 30 100 50 50 Q 70 10 100 10" 
+                          {/* Straight line with gentle curve to sire's sire */}
+                          <path d="M 0 100 L 70 100 Q 90 100 100 10" 
                                 stroke="#6d761d" strokeWidth="2" fill="none" 
                                 opacity="0.75" strokeLinecap="round"/>
-                          {/* Curved connection to sire's dam */}
-                          <path d="M 0 100 Q 30 100 50 150 Q 70 190 100 190" 
+                          {/* Straight line with gentle curve to sire's dam */}
+                          <path d="M 0 100 L 70 100 Q 90 100 100 190" 
                                 stroke="#6d761d" strokeWidth="2" fill="none" 
                                 opacity="0.75" strokeLinecap="round"/>
                         </svg>
                         
-                        {/* Dam to grandparents curved connections */}
+                        {/* Dam to grandparents with subtle curves */}
                         <svg className="absolute" style={{ left: '560px', top: '410px', width: '150px', height: '200px' }}>
-                          {/* Curved connection to dam's sire */}
-                          <path d="M 0 100 Q 30 100 50 50 Q 70 10 100 10" 
+                          {/* Straight line with gentle curve to dam's sire */}
+                          <path d="M 0 100 L 70 100 Q 90 100 100 10" 
                                 stroke="#6d761d" strokeWidth="2" fill="none" 
                                 opacity="0.75" strokeLinecap="round"/>
-                          {/* Curved connection to dam's dam */}
-                          <path d="M 0 100 Q 30 100 50 150 Q 70 190 100 190" 
+                          {/* Straight line with gentle curve to dam's dam */}
+                          <path d="M 0 100 L 70 100 Q 90 100 100 190" 
                                 stroke="#6d761d" strokeWidth="2" fill="none" 
                                 opacity="0.75" strokeLinecap="round"/>
                         </svg>
