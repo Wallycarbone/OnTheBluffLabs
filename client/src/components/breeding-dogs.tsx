@@ -834,15 +834,17 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Main connection system from current dog to parents */}
-                        {/* Horizontal line from current dog to T-junction */}
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '230px', top: '329px', width: '100px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        {/* Vertical line creating T-junction for sire and dam */}
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '329px', top: '150px', width: '2px', height: '360px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        {/* Horizontal line from T-junction to sire */}
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '330px', top: '149px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        {/* Horizontal line from T-junction to dam */}
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '330px', top: '509px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
+                        {/* Curly brace style connections from current dog to parents */}
+                        <svg className="absolute" style={{ left: '230px', top: '140px', width: '200px', height: '380px' }}>
+                          {/* Curved connection to sire */}
+                          <path d="M 0 190 Q 50 190 80 100 Q 100 10 150 10" 
+                                stroke="#6d761d" strokeWidth="2" fill="none" 
+                                opacity="0.75" strokeLinecap="round"/>
+                          {/* Curved connection to dam */}
+                          <path d="M 0 190 Q 50 190 80 280 Q 100 370 150 370" 
+                                stroke="#6d761d" strokeWidth="2" fill="none" 
+                                opacity="0.75" strokeLinecap="round"/>
+                        </svg>
                         
                         {/* Sire - Generation 1 - Centered between grandparents */}
                         <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
@@ -944,18 +946,30 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Parent to grandparent connection system */}
-                        {/* Sire to grandparents T-junction */}
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '560px', top: '149px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '639px', top: '60px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '59px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '239px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
+                        {/* Curly brace style connections from parents to grandparents */}
+                        {/* Sire to grandparents curved connections */}
+                        <svg className="absolute" style={{ left: '560px', top: '50px', width: '150px', height: '200px' }}>
+                          {/* Curved connection to sire's sire */}
+                          <path d="M 0 100 Q 30 100 50 50 Q 70 10 100 10" 
+                                stroke="#6d761d" strokeWidth="2" fill="none" 
+                                opacity="0.75" strokeLinecap="round"/>
+                          {/* Curved connection to sire's dam */}
+                          <path d="M 0 100 Q 30 100 50 150 Q 70 190 100 190" 
+                                stroke="#6d761d" strokeWidth="2" fill="none" 
+                                opacity="0.75" strokeLinecap="round"/>
+                        </svg>
                         
-                        {/* Dam to grandparents T-junction */}
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '560px', top: '509px', width: '80px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '639px', top: '420px', width: '2px', height: '180px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '419px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
-                        <div className="absolute rounded-full opacity-75 shadow-sm" style={{ left: '640px', top: '599px', width: '50px', height: '2px', backgroundColor: '#6d761d', borderRadius: '8px' }}></div>
+                        {/* Dam to grandparents curved connections */}
+                        <svg className="absolute" style={{ left: '560px', top: '410px', width: '150px', height: '200px' }}>
+                          {/* Curved connection to dam's sire */}
+                          <path d="M 0 100 Q 30 100 50 50 Q 70 10 100 10" 
+                                stroke="#6d761d" strokeWidth="2" fill="none" 
+                                opacity="0.75" strokeLinecap="round"/>
+                          {/* Curved connection to dam's dam */}
+                          <path d="M 0 100 Q 30 100 50 150 Q 70 190 100 190" 
+                                stroke="#6d761d" strokeWidth="2" fill="none" 
+                                opacity="0.75" strokeLinecap="round"/>
+                        </svg>
 
                         {/* Grandparents - Generation 2 */}
                         {/* Sire's Sire */}
