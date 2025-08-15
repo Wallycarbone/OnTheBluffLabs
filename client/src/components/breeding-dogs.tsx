@@ -16,6 +16,7 @@ import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (8)_1755286717960.png";
 import newMoonImage from "@assets/Breeding Dogs 5x4 (9)_1755286823265.png";
 import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
 import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png";
+import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -600,6 +601,16 @@ export default function BreedingDogs() {
       image: newHoldenImage,
       description: "Former breeding sire with excellent bloodlines. Father to beautiful chocolate females.",
       hasPuppies: true
+    },
+    {
+      name: "Boo Radley",
+      formalName: "On The Bluff Boo Radley",
+      gender: "Male",
+      color: "Yellow",
+      age: "Active Stud",
+      image: booRadleyImage,
+      description: "Gentle and reserved yellow male with a heart of gold. Despite his quiet demeanor, Boo possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and protective instincts to his offspring.",
+      hasPuppies: false
     }
   ];
 
