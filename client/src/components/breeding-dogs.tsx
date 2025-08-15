@@ -825,7 +825,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Chekhov",
-      formalName: "On The Bluff Chekhov",
+      formalName: "Belquest Conclusion's Anton Chekhov",
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
