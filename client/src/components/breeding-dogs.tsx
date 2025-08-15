@@ -572,61 +572,61 @@ export default function BreedingDogs() {
       },
       "Holden": {
         name: "Holden",
-        formalName: "On The Bluff Holden",
+        formalName: "On The Bluff's Holden Morrisey Caulfield",
         titles: ["CH"],
         image: newHoldenImage,
         sire: {
-          name: "Holden's Sire",
+          name: "Belquest Conclusion On The Bluff's Tristan",
           titles: ["CH"],
           sire: {
-            name: "Holden's Paternal Grandsire",
+            name: "Belquest Conclusion Stolichnaya",
             titles: ["CH"],
             sire: {
-              name: "Holden's Paternal Great-Grandsire",
+              name: "CH Aster Liberti Labro Hamburg",
               titles: ["CH"]
             },
             dam: {
-              name: "Holden's Paternal Great-Granddam",
+              name: "Belquest Prequel To The Sequel",
               titles: ["CH"]
             }
           },
           dam: {
-            name: "Holden's Paternal Granddam",
+            name: "Belquest Conclusion Seminary Old Time Rock & Roll",
             titles: ["CH"],
             sire: {
-              name: "Holden's Paternal Dam's Great-Grandsire",
-              titles: ["CH"]
+              name: "GCH CH Harlequin Like A Rock",
+              titles: ["GCH", "CH"]
             },
             dam: {
-              name: "Holden's Paternal Dam's Great-Granddam",
-              titles: ["CH"]
+              name: "Seminary Ridge's Reveille At Belquest CD BN RN JH CGC",
+              titles: ["CD", "BN", "RN", "JH", "CGC"]
             }
           }
         },
         dam: {
-          name: "Holden's Dam",
+          name: "Endless Mt On The Bluff's Franny Glass",
           titles: ["CH"],
           sire: {
-            name: "Holden's Maternal Grandsire",
+            name: "CH Endless Mt Shines Like Sterling",
             titles: ["CH"],
             sire: {
-              name: "Holden's Maternal Great-Grandsire",
-              titles: ["CH"]
+              name: "GCHB CH Willcare To Fly Under The Radar RN",
+              titles: ["GCHB", "CH", "RN"]
             },
             dam: {
-              name: "Holden's Maternal Great-Granddam",
+              name: "Endless Mt Jl Black Sphinx",
               titles: ["CH"]
             }
           },
           dam: {
-            name: "Holden's Maternal Granddam",
+            name: "Endless Mt's Gertrude Hawk",
             titles: ["CH"],
             sire: {
-              name: "Holden's Dam's Maternal Great-Grandsire",
+              name: "CH Erinhill's You Had Me From Hello",
               titles: ["CH"]
             },
             dam: {
-              name: "Holden's Dam's Maternal Great-Granddam",
+              name: "Endless Mt. Cuddle Bug",
               titles: ["CH"]
             }
           }
