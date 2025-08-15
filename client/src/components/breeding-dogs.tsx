@@ -28,6 +28,7 @@ import sequelImage from "@assets/Sequel_1755289144473.webp";
 import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 import duffyImage from "@assets/duffy-04_1755289259124.jpeg";
 import stormTrooperImage from "@assets/Storm Trooper_1755290311684.avif";
+import stormChargerImage from "@assets/Charger_1755290357983.avif";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -724,6 +725,7 @@ export default function BreedingDogs() {
           sire: {
             name: "Heartlands Storm Charger",
             titles: [],
+            image: stormChargerImage,
             sire: {
               name: "Centrecourt Black Jake At Ceasarscreek",
               titles: []
