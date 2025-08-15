@@ -796,8 +796,8 @@ export default function BreedingDogs() {
                     {/* Traditional Pedigree Layout - Clean and Organized */}
                     <div className="overflow-x-auto p-8">
                       <div className="relative" style={{ width: '1200px', height: '900px' }}>
-                        {/* Current Dog - Generation 0 */}
-                        <div className="absolute" style={{ left: '50px', top: '200px', width: '180px' }}>
+                        {/* Current Dog - Generation 0 - Centered between parents */}
+                        <div className="absolute" style={{ left: '50px', top: '290px', width: '180px' }}>
                           <div className="rounded-lg p-4" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.image && (
@@ -836,16 +836,16 @@ export default function BreedingDogs() {
 
                         {/* Main connection system from current dog to parents */}
                         {/* Horizontal line from current dog to T-junction */}
-                        <div className="absolute bg-gray-400" style={{ left: '230px', top: '240px', width: '100px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '230px', top: '330px', width: '100px', height: '2px' }}></div>
                         {/* Vertical line creating T-junction for sire and dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '140px', width: '2px', height: '200px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '150px', width: '2px', height: '360px' }}></div>
                         {/* Horizontal line from T-junction to sire */}
-                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '140px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '150px', width: '50px', height: '2px' }}></div>
                         {/* Horizontal line from T-junction to dam */}
-                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '340px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '330px', top: '510px', width: '50px', height: '2px' }}></div>
                         
-                        {/* Sire - Generation 1 Top */}
-                        <div className="absolute" style={{ left: '380px', top: '100px', width: '180px' }}>
+                        {/* Sire - Generation 1 - Centered between grandparents */}
+                        <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
                           <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
                             <div className="text-center">
                               {pedigreeData.sire.image && (
@@ -894,8 +894,8 @@ export default function BreedingDogs() {
                           </div>
                         </div>
                         
-                        {/* Dam - Generation 1 Bottom */}
-                        <div className="absolute" style={{ left: '380px', top: '300px', width: '180px' }}>
+                        {/* Dam - Generation 1 - Centered between grandparents */}
+                        <div className="absolute" style={{ left: '380px', top: '470px', width: '180px' }}>
                           <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.dam.image && (
@@ -946,14 +946,14 @@ export default function BreedingDogs() {
 
                         {/* Parent to grandparent connection system */}
                         {/* Sire to grandparents T-junction */}
-                        <div className="absolute bg-gray-400" style={{ left: '560px', top: '140px', width: '80px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '560px', top: '150px', width: '80px', height: '2px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '60px', width: '2px', height: '180px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '60px', width: '50px', height: '2px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '240px', width: '50px', height: '2px' }}></div>
                         
                         {/* Dam to grandparents T-junction */}
-                        <div className="absolute bg-gray-400" style={{ left: '560px', top: '340px', width: '80px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '340px', width: '2px', height: '260px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '560px', top: '510px', width: '80px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '640px', top: '420px', width: '2px', height: '180px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '420px', width: '50px', height: '2px' }}></div>
                         <div className="absolute bg-gray-400" style={{ left: '640px', top: '600px', width: '50px', height: '2px' }}></div>
 
