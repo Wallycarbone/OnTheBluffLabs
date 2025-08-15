@@ -130,7 +130,7 @@ export default function BreedingDogs() {
         name: "Grizzly",
         formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
         titles: [],
-        image: grizzlyImage,
+        image: grizzlyPedigreeImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
           titles: ["CH", "MX"],
@@ -573,7 +573,7 @@ export default function BreedingDogs() {
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
-      image: grizzlyImage,
+      image: grizzlyPedigreeImage,
       description: "Distinguished chocolate male with exceptional emotional intelligence and substantial heavy bone structure. His intuitive nature and powerful build exemplify quality English Labradors, producing puppies with remarkable social intelligence and robust physical presence.",
       hasPuppies: true
     },
