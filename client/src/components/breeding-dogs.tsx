@@ -15,6 +15,7 @@ import atticusImage from "@assets/Atticus_1754340164760.jpeg";
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (8)_1755286717960.png";
 import newMoonImage from "@assets/Breeding Dogs 5x4 (9)_1755286823265.png";
 import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
+import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -609,7 +610,7 @@ export default function BreedingDogs() {
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
-      image: harperLeeImage,
+      image: newHarperLeeImage,
       description: "Stunning yellow female with a naturally gentle temperament. Her calm, loving nature makes her an ideal mother.",
     },
   ];
