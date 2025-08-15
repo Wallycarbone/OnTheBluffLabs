@@ -17,6 +17,7 @@ import newMoonImage from "@assets/Breeding Dogs 5x4 (9)_1755286823265.png";
 import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
 import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
+import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -623,6 +624,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: newHarperLeeImage,
       description: "Stunning yellow female with a naturally gentle temperament. Her calm, loving nature makes her an ideal mother.",
+    },
+    {
+      name: "Piper",
+      formalName: "On The Bluff Piper",
+      gender: "Female",
+      color: "Fox Red",
+      age: "Breeding Female",
+      image: piperImage,
+      description: "Energetic and playful fox red female with a zest for life. Her adventurous spirit and loving disposition make her both an excellent companion and devoted mother, passing on her vibrant personality to her puppies.",
     },
   ];
 
