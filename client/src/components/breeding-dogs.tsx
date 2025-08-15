@@ -18,7 +18,7 @@ import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
 import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
-import arabellaImage from "@assets/Breeding Dogs 5x4 (15)_1755287225736.png";
+import arabellaImage from "@assets/Breeding Dogs 5x4 (19)_1755290951573.png";
 import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
 import sterlingImage from "@assets/Sterling-name-2-515x412_1755289517437.jpg";
@@ -312,6 +312,7 @@ export default function BreedingDogs() {
         dam: {
           name: "On The Bluff's Arabella Tallant",
           titles: [],
+          image: arabellaImage,
           sire: {
             name: "Scarfone's Mark Twain",
             titles: [],
