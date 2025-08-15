@@ -25,6 +25,7 @@ import sterlingImage from "@assets/NIK_0272_Sterling_1755288200815.jpeg";
 import stoliImage from "@assets/Stoli_1755288962958.jpg";
 import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
 import sequelImage from "@assets/Sequel_1755289144473.webp";
+import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -589,7 +590,8 @@ export default function BreedingDogs() {
             image: stoliImage,
             sire: {
               name: "Aster Liberti Labro Hamburg",
-              titles: []
+              titles: ["CH"],
+              image: hamburgImage
             },
             dam: {
               name: "Belquest Prequel To The Sequel (\"Sequel\")",
@@ -652,7 +654,8 @@ export default function BreedingDogs() {
           image: stoliImage,
           sire: {
             name: "Aster Liberti Labro Hamburg",
-            titles: [],
+            titles: ["CH"],
+            image: hamburgImage,
             sire: {
               name: "Night Single Great Genus Winners",
               titles: []
