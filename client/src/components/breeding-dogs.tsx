@@ -130,7 +130,7 @@ export default function BreedingDogs() {
         name: "Grizzly",
         formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
         titles: [],
-        image: grizzlyPedigreeImage,
+        image: grizzlyImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
           titles: ["CH", "MX"],
@@ -573,7 +573,7 @@ export default function BreedingDogs() {
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
-      image: grizzlyPedigreeImage,
+      image: grizzlyImage,
       description: "Distinguished chocolate male with exceptional emotional intelligence and substantial heavy bone structure. His intuitive nature and powerful build exemplify quality English Labradors, producing puppies with remarkable social intelligence and robust physical presence.",
       hasPuppies: true
     },
@@ -806,6 +806,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.image}
                                     alt={pedigreeData.name}
                                     className="w-24 h-18 rounded object-cover mx-auto"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                   />
                                 </div>
                               )}
@@ -854,6 +855,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.sire.image} 
                                     alt={pedigreeData.sire.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
                                       setIsImagePopupOpen(true);
@@ -904,6 +906,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.dam.image} 
                                     alt={pedigreeData.dam.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
                                       setIsImagePopupOpen(true);
@@ -968,6 +971,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.sire.sire.image} 
                                     alt={pedigreeData.sire.sire.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
                                       setIsImagePopupOpen(true);
@@ -1018,6 +1022,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.sire.dam.image} 
                                     alt={pedigreeData.sire.dam.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
                                       setIsImagePopupOpen(true);
@@ -1068,6 +1073,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.dam.sire.image} 
                                     alt={pedigreeData.dam.sire.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
                                       setIsImagePopupOpen(true);
@@ -1118,6 +1124,7 @@ export default function BreedingDogs() {
                                     src={pedigreeData.dam.dam.image} 
                                     alt={pedigreeData.dam.dam.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                    style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
                                       setIsImagePopupOpen(true);
