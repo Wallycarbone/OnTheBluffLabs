@@ -791,23 +791,23 @@ export default function BreedingDogs() {
             
             return (
               <div className="space-y-6">
-                    {/* Traditional Pedigree Layout with Proper Centering */}
-                    <div className="flex items-center gap-4 overflow-x-auto p-8 relative min-h-[600px]">
-                      {/* Generation 0 - Current Dog */}
-                      <div className="flex-shrink-0 w-64 flex items-center justify-center">
-                        <div className="w-full relative">
-                          <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
+                    {/* Traditional Pedigree Layout - Simple and Clean */}
+                    <div className="overflow-x-auto p-8">
+                      <div className="relative" style={{ width: '1200px', height: '500px' }}>
+                        {/* Current Dog - Positioned on the left */}
+                        <div className="absolute" style={{ left: '50px', top: '200px', width: '200px' }}>
+                          <div className="rounded-lg p-4" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.image && (
-                                <div className="mb-4">
+                                <div className="mb-3">
                                   <img 
                                     src={pedigreeData.image}
                                     alt={pedigreeData.name}
-                                    className="w-32 h-24 rounded-lg object-cover mx-auto border-2 border-golden/20"
+                                    className="w-24 h-18 rounded-lg object-cover mx-auto"
                                   />
                                 </div>
                               )}
-                              <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                              <h3 className="text-lg font-oswald font-normal mb-2" style={{color: '#11100f'}}>
                                 {pedigreeData.image ? (
                                   <button 
                                     onClick={() => {
@@ -821,48 +821,37 @@ export default function BreedingDogs() {
                                   </button>
                                 ) : pedigreeData.name}
                               </h3>
-                              <p className="text-sm font-source-sans italic mb-2 text-gray-700">
-                                {pedigreeData.formalName}
-                              </p>
-                              <div className="flex flex-wrap justify-center gap-2">
+                              <div className="flex flex-wrap justify-center gap-1">
                                 {pedigreeData.titles.map((title: string, index: number) => (
-                                  <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                                  <span key={index} className="px-1.5 py-0.5 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
                                     {title}
                                   </span>
                                 ))}
                               </div>
                             </div>
                           </div>
-                          {/* Line extending right from current dog */}
-                          <div className="absolute top-1/2 -right-4 w-4 h-0.5 bg-gray-600"></div>
                         </div>
-                      </div>
 
-                      {/* Connector Junction */}
-                      <div className="flex-shrink-0 w-16 relative flex items-center justify-center">
-                        {/* Main vertical line */}
-                        <div className="w-0.5 h-32 bg-gray-600"></div>
-                        {/* Top horizontal line to sire */}
-                        <div className="absolute top-1/4 right-0 w-4 h-0.5 bg-gray-600"></div>
-                        {/* Bottom horizontal line to dam */}
-                        <div className="absolute bottom-1/4 right-0 w-4 h-0.5 bg-gray-600"></div>
-                      </div>
-                      
-                      {/* Generation 1 - Parents */}
-                      <div className="flex-shrink-0 w-56 flex flex-col justify-center">
-                        <div className="space-y-8">
-                          {/* Sire */}
-                          <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#8a8f28'}}>
-                            {/* Line extending right to grandparents */}
-                            <div className="absolute -right-4 top-1/2 w-4 h-0.5 bg-gray-600"></div>
-                            
+                        {/* Line from current dog to junction */}
+                        <div className="absolute bg-gray-600" style={{ left: '250px', top: '225px', width: '50px', height: '2px' }}></div>
+                        
+                        {/* Junction - vertical line */}
+                        <div className="absolute bg-gray-600" style={{ left: '300px', top: '150px', width: '2px', height: '150px' }}></div>
+                        
+                        {/* Lines from junction to parents */}
+                        <div className="absolute bg-gray-600" style={{ left: '300px', top: '175px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-600" style={{ left: '300px', top: '275px', width: '50px', height: '2px' }}></div>
+                        
+                        {/* Sire - Top parent */}
+                        <div className="absolute" style={{ left: '350px', top: '125px', width: '180px' }}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
                             <div className="text-center">
                               {pedigreeData.sire.image && (
-                                <div className="mb-3">
+                                <div className="mb-2">
                                   <img 
                                     src={pedigreeData.sire.image} 
                                     alt={pedigreeData.sire.name}
-                                    className="w-20 h-16 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="w-16 h-12 rounded-lg object-cover mx-auto cursor-pointer"
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
                                       setIsImagePopupOpen(true);
@@ -870,7 +859,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h5 className="font-oswald font-normal text-sm mb-1" style={{color: '#11100f'}}>
+                              <h5 className="font-oswald text-sm mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.sire.image ? (
                                   <button 
                                     onClick={() => {
@@ -892,7 +881,7 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1.5 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
                                   >
                                     {title}
@@ -901,18 +890,18 @@ export default function BreedingDogs() {
                               </div>
                             </div>
                           </div>
-                          {/* Dam */}
-                          <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#6d761d'}}>
-                            {/* Line extending right to grandparents */}
-                            <div className="absolute -right-4 top-1/2 w-4 h-0.5 bg-gray-600"></div>
-                            
+                        </div>
+                        
+                        {/* Dam - Bottom parent */}
+                        <div className="absolute" style={{ left: '350px', top: '250px', width: '180px' }}>
+                          <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.dam.image && (
-                                <div className="mb-3">
+                                <div className="mb-2">
                                   <img 
                                     src={pedigreeData.dam.image} 
                                     alt={pedigreeData.dam.name}
-                                    className="w-20 h-16 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="w-16 h-12 rounded-lg object-cover mx-auto cursor-pointer"
                                     onClick={() => {
                                       setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
                                       setIsImagePopupOpen(true);
@@ -920,7 +909,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h5 className="font-oswald font-normal text-sm mb-1" style={{color: '#11100f'}}>
+                              <h5 className="font-oswald text-sm mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.dam.image ? (
                                   <button 
                                     onClick={() => {
@@ -942,7 +931,149 @@ export default function BreedingDogs() {
                                       setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
                                       setIsTitlePopupOpen(true);
                                     }}
-                                    className="px-1.5 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                                  >
+                                    {title}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Lines from parents to grandparents */}
+                        <div className="absolute bg-gray-600" style={{ left: '530px', top: '175px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-600" style={{ left: '530px', top: '300px', width: '50px', height: '2px' }}></div>
+                        
+                        {/* Grandparent junction lines */}
+                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '100px', width: '2px', height: '100px' }}></div>
+                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '275px', width: '2px', height: '100px' }}></div>
+                        
+                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '125px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '175px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '300px', width: '50px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '350px', width: '50px', height: '2px' }}></div>
+
+                        {/* Grandparents */}
+                        {/* Sire's Sire */}
+                        <div className="absolute" style={{ left: '630px', top: '100px', width: '150px' }}>
+                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                            <div className="text-center">
+                              {pedigreeData.sire.sire.image && (
+                                <div className="mb-1">
+                                  <img 
+                                    src={pedigreeData.sire.sire.image} 
+                                    alt={pedigreeData.sire.sire.name}
+                                    className="w-12 h-9 rounded object-cover mx-auto cursor-pointer"
+                                    onClick={() => {
+                                      setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                      setIsImagePopupOpen(true);
+                                    }}
+                                  />
+                                </div>
+                              )}
+                              <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                                {pedigreeData.sire.sire.image ? (
+                                  <button 
+                                    onClick={() => {
+                                      setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                      setIsImagePopupOpen(true);
+                                    }}
+                                    className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{color: '#6d761d'}}
+                                  >
+                                    {pedigreeData.sire.sire.name}
+                                  </button>
+                                ) : pedigreeData.sire.sire.name}
+                              </h6>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
+                                  <button 
+                                    key={index}
+                                    onClick={() => {
+                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                      setIsTitlePopupOpen(true);
+                                    }}
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
+                                  >
+                                    {title}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Sire's Dam */}
+                        <div className="absolute" style={{ left: '630px', top: '150px', width: '150px' }}>
+                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                            <div className="text-center">
+                              <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                                {pedigreeData.sire.dam.name}
+                              </h6>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
+                                  <button 
+                                    key={index}
+                                    onClick={() => {
+                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                      setIsTitlePopupOpen(true);
+                                    }}
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
+                                  >
+                                    {title}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Dam's Sire */}
+                        <div className="absolute" style={{ left: '630px', top: '275px', width: '150px' }}>
+                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#6d761d'}}>
+                            <div className="text-center">
+                              <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                                {pedigreeData.dam.sire.name}
+                              </h6>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
+                                  <button 
+                                    key={index}
+                                    onClick={() => {
+                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                      setIsTitlePopupOpen(true);
+                                    }}
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                                  >
+                                    {title}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Dam's Dam */}
+                        <div className="absolute" style={{ left: '630px', top: '325px', width: '150px' }}>
+                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#6d761d'}}>
+                            <div className="text-center">
+                              <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
+                                {pedigreeData.dam.dam.name}
+                              </h6>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
+                                  <button 
+                                    key={index}
+                                    onClick={() => {
+                                      setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                      setIsTitlePopupOpen(true);
+                                    }}
+                                    className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
                                     style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                                   >
                                     {title}
@@ -953,371 +1084,123 @@ export default function BreedingDogs() {
                           </div>
                         </div>
                       </div>
-
-                      {/* Grandparents Connector */}
-                      <div className="flex-shrink-0 w-16 relative flex items-center justify-center">
-                        {/* Two vertical sections for grandparent connections */}
-                        <div className="absolute top-1/4 left-0 w-0.5 h-8 bg-gray-600"></div>
-                        <div className="absolute bottom-1/4 left-0 w-0.5 h-8 bg-gray-600"></div>
-                        {/* Horizontal lines to grandparents (4 lines) */}
-                        <div className="absolute top-1/4 right-0 w-4 h-0.5 bg-gray-600 transform -translate-y-2"></div>
-                        <div className="absolute top-1/4 right-0 w-4 h-0.5 bg-gray-600 transform translate-y-2"></div>
-                        <div className="absolute bottom-1/4 right-0 w-4 h-0.5 bg-gray-600 transform -translate-y-2"></div>
-                        <div className="absolute bottom-1/4 right-0 w-4 h-0.5 bg-gray-600 transform translate-y-2"></div>
-                      </div>
-                      
-                      {/* Generation 2 - Grandparents */}
-                      <div className="flex-shrink-0 w-48 flex flex-col justify-center relative">
-                        <div className="space-y-8">
-                          {/* Sire's Sire */}
-                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                            {pedigreeData.sire.sire.image && (
-                              <div className="mb-2">
-                                <img 
-                                  src={pedigreeData.sire.sire.image} 
-                                  alt={pedigreeData.sire.sire.name}
-                                  className="w-16 h-12 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                />
-                              </div>
-                            )}
-                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
-                              {pedigreeData.sire.sire.image ? (
-                                <button 
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{color: '#6d761d'}}
-                                >
-                                  {pedigreeData.sire.sire.name}
-                                </button>
-                              ) : pedigreeData.sire.sire.name}
-                            </h6>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
-                                <button 
-                                  key={index}
-                                  onClick={() => {
-                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                    setIsTitlePopupOpen(true);
-                                  }}
-                                  className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
-                                >
-                                  {title}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-                          {/* Sire's Dam */}
-                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                            {pedigreeData.sire.dam.image && (
-                              <div className="mb-2">
-                                <img 
-                                  src={pedigreeData.sire.dam.image} 
-                                  alt={pedigreeData.sire.dam.name}
-                                  className="w-16 h-12 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                />
-                              </div>
-                            )}
-                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
-                              {pedigreeData.sire.dam.image ? (
-                                <button 
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{color: '#6d761d'}}
-                                >
-                                  {pedigreeData.sire.dam.name}
-                                </button>
-                              ) : pedigreeData.sire.dam.name}
-                            </h6>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
-                                <button 
-                                  key={index}
-                                  onClick={() => {
-                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                    setIsTitlePopupOpen(true);
-                                  }}
-                                  className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
-                                >
-                                  {title}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-                          {/* Dam's Sire */}
-                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                            {pedigreeData.dam.sire.image && (
-                              <div className="mb-2">
-                                <img 
-                                  src={pedigreeData.dam.sire.image} 
-                                  alt={pedigreeData.dam.sire.name}
-                                  className="w-16 h-12 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                />
-                              </div>
-                            )}
-                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
-                              {pedigreeData.dam.sire.image ? (
-                                <button 
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{color: '#6d761d'}}
-                                >
-                                  {pedigreeData.dam.sire.name}
-                                </button>
-                              ) : pedigreeData.dam.sire.name}
-                            </h6>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
-                                <button 
-                                  key={index}
-                                  onClick={() => {
-                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                    setIsTitlePopupOpen(true);
-                                  }}
-                                  className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
-                                >
-                                  {title}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-                          {/* Dam's Dam */}
-                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
-                            {pedigreeData.dam.dam.image && (
-                              <div className="mb-2">
-                                <img 
-                                  src={pedigreeData.dam.dam.image} 
-                                  alt={pedigreeData.dam.dam.name}
-                                  className="w-16 h-12 rounded-lg object-cover mx-auto cursor-pointer hover:opacity-80 transition-opacity"
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                />
-                              </div>
-                            )}
-                            <h6 className="font-oswald text-xs font-medium mb-1 text-center" style={{color: '#11100f'}}>
-                              {pedigreeData.dam.dam.image ? (
-                                <button 
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{color: '#6d761d'}}
-                                >
-                                  {pedigreeData.dam.dam.name}
-                                </button>
-                              ) : pedigreeData.dam.dam.name}
-                            </h6>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
-                                <button 
-                                  key={index}
-                                  onClick={() => {
-                                    setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
-                                    setIsTitlePopupOpen(true);
-                                  }}
-                                  className="px-1 py-0.5 text-xs font-montserrat rounded-full cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{backgroundColor: '#a5aa35', color: '#fefefe'}}
-                                >
-                                  {title}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-
-                    {/* Official Pedigree Document */}
-                    {selectedDog.name === "Grizzly" && (
-                      <div className="bg-gray-50 rounded-lg p-6 text-center">
-                        <h4 className="text-lg font-oswald font-normal mb-4" style={{color: '#11100f'}}>
-                          OFFICIAL PEDIGREE
-                        </h4>
-                        <a 
-                          href={grizzlyPedigreePdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-6 py-3 rounded-lg font-montserrat font-medium text-white transition-all hover:opacity-90"
-                          style={{backgroundColor: '#6d761d'}}
-                        >
-                          View Official Pedigree Document
-                        </a>
-                        <p className="text-xs font-source-sans text-gray-600 mt-2">
-                          Opens in new tab • PDF format
-                        </p>
-                      </div>
-                    )}
-                    
-                    {selectedDog.name === "Moon" && (
-                      <div className="bg-gray-50 rounded-lg p-6 text-center">
-                        <h4 className="text-lg font-oswald font-normal mb-4" style={{color: '#11100f'}}>
-                          OFFICIAL PEDIGREE
-                        </h4>
-                        <a 
-                          href={moonPedigreePdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-6 py-3 rounded-lg font-montserrat font-medium text-white transition-all hover:opacity-90"
-                          style={{backgroundColor: '#6d761d'}}
-                        >
-                          View Official Pedigree Document
-                        </a>
-                        <p className="text-xs font-source-sans text-gray-600 mt-2">
-                          Opens in new tab • PDF format
-                        </p>
-                      </div>
-                    )}
-
-                  </div>
-                );
-              })()}
-        </DialogContent>
-      </Dialog>
-
-      {/* Image Popup Dialog */}
-      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader>
-            <DialogTitle className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              {selectedImage?.name}
-            </DialogTitle>
-          </DialogHeader>
-          {selectedImage && (
-            <div className="flex justify-center">
-              <img 
-                src={selectedImage.src} 
-                alt={selectedImage.name}
-                className="max-w-full max-h-96 rounded-lg object-contain"
-              />
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
-
-      {/* Title Popup Dialog */}
-      <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
-        <DialogContent className="max-w-md">
-          <DialogHeader>
-            <DialogTitle className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              Title Information
-            </DialogTitle>
-          </DialogHeader>
-          {selectedTitle && (
-            <div className="space-y-4">
-              <div className="text-center">
-                <div className="px-4 py-2 rounded-full inline-block mb-3" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
-                  <span className="font-montserrat font-medium">{selectedTitle.abbreviation}</span>
                 </div>
-                <p className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>
-                  {selectedTitle.fullName}
-                </p>
-              </div>
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
+              );
+            })()}
 
-      {/* Puppy Gallery Popup Dialog */}
-      <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
-        <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
-          <DialogHeader>
-            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              Puppies by {selectedDog?.name}
-            </DialogTitle>
-          </DialogHeader>
-          {selectedDog && (
-            <div className="space-y-6">
-              {(() => {
-                const puppyData = getPuppyGalleryData(selectedDog.name);
-                if (!puppyData || !puppyData.litters || puppyData.litters.length === 0) {
-                  return (
-                    <div className="text-center py-8">
-                      <p className="text-lg font-source-sans text-gray-600">
-                        No current litter information available for {selectedDog.name}.
-                      </p>
-                    </div>
-                  );
-                }
+            {/* Image Popup Dialog */}
+            <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+              <DialogContent className="max-w-lg">
+                <div className="text-center">
+                  <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
+                    {selectedImage?.name}
+                  </h4>
+                  <img 
+                    src={selectedImage?.src} 
+                    alt={selectedImage?.name}
+                    className="w-full max-h-96 object-cover rounded-lg"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
 
-                return (
-                  <div className="space-y-8">
-                    {puppyData.litters.map((litter, litterIndex) => (
+            {/* Title Popup Dialog */}
+            <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
+              <DialogContent className="max-w-md">
+                <div className="text-center">
+                  <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
+                    {selectedTitle?.abbreviation}
+                  </h4>
+                  <p className="font-source-sans text-sm text-gray-700">
+                    {selectedTitle?.fullName}
+                  </p>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            {/* Puppy Gallery Dialog */}
+            <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
+              <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+                <div className="space-y-6">
+                  <h3 className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
+                    Puppies by {selectedDog?.name}
+                  </h3>
+                  
+                  {(() => {
+                    const puppyData = getPuppyGalleryData(selectedDog?.name);
+                    if (!puppyData || puppyData.length === 0) {
+                      return (
+                        <p className="text-center text-gray-600 font-source-sans">
+                          No puppy information available for {selectedDog?.name}
+                        </p>
+                      );
+                    }
+
+                    return puppyData.map((litter: any, litterIndex: number) => (
                       <div key={litterIndex} className="space-y-4">
-                        <div className="text-center">
-                          <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
-                            {litter.name}
-                          </h3>
-                          <p className="text-sm font-source-sans text-gray-600 mb-4">
-                            Born: {litter.birthDate} • Dam: {litter.dam}
-                          </p>
+                        <div className="text-center pb-2 border-b border-gray-200">
+                          <h4 className="font-oswald text-lg font-normal" style={{color: '#11100f'}}>
+                            Born: {litter.birthDate} | Dam: {litter.dam}
+                          </h4>
                         </div>
-
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                          {litter.puppies.map((puppy, puppyIndex) => (
-                            <div key={puppyIndex} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                          {litter.puppies.map((puppy: any, puppyIndex: number) => (
+                            <div key={puppyIndex} className="text-center">
                               <img 
                                 src={puppy.image} 
                                 alt={puppy.name}
-                                className="w-full h-48 object-cover"
+                                className="w-full h-32 object-cover rounded-lg mb-2"
                               />
-                              <div className="p-4 text-center">
-                                <h4 className="font-oswald font-normal text-lg mb-2" style={{color: '#11100f'}}>
-                                  {puppy.name}
-                                </h4>
-                                <div className="space-y-1">
-                                  <p className="text-sm font-source-sans text-gray-600">
-                                    <span className="font-medium">Gender:</span> {puppy.gender}
-                                  </p>
-                                  <p className="text-sm font-source-sans text-gray-600">
-                                    <span className="font-medium">Color:</span> {puppy.color}
-                                  </p>
-                                  {puppy.specialNotes && (
-                                    <p className="text-xs font-source-sans italic text-gray-500 mt-2">
-                                      {puppy.specialNotes}
-                                    </p>
-                                  )}
-                                </div>
-                              </div>
+                              <p className="font-oswald text-sm font-medium" style={{color: '#11100f'}}>
+                                {puppy.name}
+                              </p>
+                              <p className="font-source-sans text-xs text-gray-600">
+                                {puppy.gender} • {puppy.color}
+                              </p>
                             </div>
                           ))}
                         </div>
                       </div>
-                    ))}
-                  </div>
-                );
-              })()}
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
-    </section>
+                    ));
+                  })()}
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            {/* Image Popup Dialog */}
+            <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+              <DialogContent className="max-w-2xl">
+                <div className="text-center">
+                  <h4 className="font-oswald text-lg font-normal mb-4" style={{color: '#11100f'}}>
+                    {selectedImage?.name}
+                  </h4>
+                  {selectedImage && (
+                    <img 
+                      src={selectedImage.src} 
+                      alt={selectedImage.name}
+                      className="max-w-full max-h-96 rounded-lg object-contain mx-auto"
+                    />
+                  )}
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            {/* Title Popup Dialog */}
+            <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
+              <DialogContent className="max-w-md">
+                <div className="text-center">
+                  <h4 className="font-oswald text-lg font-normal mb-2" style={{color: '#11100f'}}>
+                    {selectedTitle?.abbreviation}
+                  </h4>
+                  <p className="font-source-sans text-sm text-gray-700">
+                    {selectedTitle?.fullName}
+                  </p>
+                </div>
+              </DialogContent>
+            </Dialog>
+        </div>
+      </section>
+    </div>
   );
 };
-
-
