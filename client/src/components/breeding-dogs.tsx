@@ -575,29 +575,29 @@ export default function BreedingDogs() {
       "Holden": {
         name: "Holden",
         formalName: "On The Bluff's Holden Morrisey Caulfield",
-        titles: ["CH"],
+        titles: [],
         image: newHoldenImage,
         sire: {
           name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
-          titles: ["CH"],
+          titles: [],
           sire: {
             name: "Belquest Conclusion Stolichnaya",
-            titles: ["CH"],
+            titles: [],
             sire: {
-              name: "CH Aster Liberti Labro Hamburg",
-              titles: ["CH"]
+              name: "Aster Liberti Labro Hamburg",
+              titles: []
             },
             dam: {
               name: "Belquest Prequel To The Sequel",
-              titles: ["CH"]
+              titles: []
             }
           },
           dam: {
             name: "Belquest Conclusion Seminary Old Time Rock & Roll",
-            titles: ["CH"],
+            titles: [],
             sire: {
-              name: "GCH CH Harlequin Like A Rock",
-              titles: ["GCH", "CH"]
+              name: "GCH Harlequin Like A Rock",
+              titles: ["GCH"]
             },
             dam: {
               name: "Seminary Ridge's Reveille At Belquest CD BN RN JH CGC",
@@ -607,31 +607,31 @@ export default function BreedingDogs() {
         },
         dam: {
           name: "Endless Mt On The Bluff's Franny Glass (\"Franny\")",
-          titles: ["CH"],
+          titles: [],
           image: frannyGlassImage,
           sire: {
             name: "CH Endless Mt Shines Like Sterling",
             titles: ["CH"],
             image: sterlingImage,
             sire: {
-              name: "GCHB CH Willcare To Fly Under The Radar RN",
-              titles: ["GCHB", "CH", "RN"]
+              name: "GCHB Willcare To Fly Under The Radar RN",
+              titles: ["GCHB", "RN"]
             },
             dam: {
               name: "Endless Mt Jl Black Sphinx",
-              titles: ["CH"]
+              titles: []
             }
           },
           dam: {
             name: "Endless Mt's Gertrude Hawk",
-            titles: ["CH"],
+            titles: [],
             sire: {
-              name: "CH Erinhill's You Had Me From Hello",
-              titles: ["CH"]
+              name: "Erinhill's You Had Me From Hello",
+              titles: []
             },
             dam: {
               name: "Endless Mt. Cuddle Bug",
-              titles: ["CH"]
+              titles: []
             }
           }
         }
