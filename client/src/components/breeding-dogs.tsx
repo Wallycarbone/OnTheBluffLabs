@@ -815,7 +815,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Boo Radley",
-      formalName: "On The Bluff Boo Radley",
+      formalName: "On The Bluff's Mr. Boo Radley",
       gender: "Male",
       color: "Yellow",
       age: "Active Stud",
