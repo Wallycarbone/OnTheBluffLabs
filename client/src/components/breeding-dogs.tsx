@@ -23,6 +23,7 @@ import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
 import sterlingImage from "@assets/NIK_0272_Sterling_1755288200815.jpeg";
 import stoliImage from "@assets/Stoli_1755288962958.jpg";
+import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -673,8 +674,9 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Belquest Conclusion Double Layer Cake",
+          name: "Belquest Conclusion Double Layer Cake (\"Lay Lay\")",
           titles: [],
+          image: layLayImage,
           sire: {
             name: "Atlantic's Ace Of Cakes At Big Sky",
             titles: [],
