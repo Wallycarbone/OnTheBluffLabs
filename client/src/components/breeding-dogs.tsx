@@ -21,7 +21,7 @@ import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import arabellaImage from "@assets/Breeding Dogs 5x4 (15)_1755287225736.png";
 import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
-import sterlingImage from "@assets/NIK_0272_Sterling_1755288200815.jpeg";
+import sterlingImage from "@assets/Sterling-name-2-515x412_1755289517437.jpg";
 import stoliImage from "@assets/Stoli_1755288962958.jpg";
 import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
 import sequelImage from "@assets/Sequel_1755289144473.webp";
