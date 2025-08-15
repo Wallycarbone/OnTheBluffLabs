@@ -791,63 +791,68 @@ export default function BreedingDogs() {
             
             return (
               <div className="space-y-6">
-                    {/* Current Dog Information - Left Side with Traditional Pedigree Lines */}
-                    <div className="flex gap-8 overflow-x-auto p-4 relative">
+                    {/* Traditional Pedigree Layout with Proper Centering */}
+                    <div className="flex items-center gap-0 overflow-x-auto p-8 relative min-h-[600px]">
                       {/* Generation 0 - Current Dog */}
-                      <div className="flex-shrink-0 w-64 relative">
-                        <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
-                          <div className="text-center">
-                            {pedigreeData.image && (
-                              <div className="mb-4">
-                                <img 
-                                  src={pedigreeData.image}
-                                  alt={pedigreeData.name}
-                                  className="w-32 h-24 rounded-lg object-cover mx-auto border-2 border-golden/20"
-                                />
+                      <div className="flex-shrink-0 w-64 flex items-center relative">
+                        <div className="w-full">
+                          <div className="rounded-lg p-6" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
+                            <div className="text-center">
+                              {pedigreeData.image && (
+                                <div className="mb-4">
+                                  <img 
+                                    src={pedigreeData.image}
+                                    alt={pedigreeData.name}
+                                    className="w-32 h-24 rounded-lg object-cover mx-auto border-2 border-golden/20"
+                                  />
+                                </div>
+                              )}
+                              <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                                {pedigreeData.image ? (
+                                  <button 
+                                    onClick={() => {
+                                      setSelectedImage({src: pedigreeData.image, name: pedigreeData.name});
+                                      setIsImagePopupOpen(true);
+                                    }}
+                                    className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                    style={{color: '#6d761d'}}
+                                  >
+                                    {pedigreeData.name}
+                                  </button>
+                                ) : pedigreeData.name}
+                              </h3>
+                              <p className="text-sm font-source-sans italic mb-2 text-gray-700">
+                                {pedigreeData.formalName}
+                              </p>
+                              <div className="flex flex-wrap justify-center gap-2">
+                                {pedigreeData.titles.map((title: string, index: number) => (
+                                  <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                                    {title}
+                                  </span>
+                                ))}
                               </div>
-                            )}
-                            <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
-                              {pedigreeData.image ? (
-                                <button 
-                                  onClick={() => {
-                                    setSelectedImage({src: pedigreeData.image, name: pedigreeData.name});
-                                    setIsImagePopupOpen(true);
-                                  }}
-                                  className="underline cursor-pointer hover:opacity-80 transition-opacity"
-                                  style={{color: '#6d761d'}}
-                                >
-                                  {pedigreeData.name}
-                                </button>
-                              ) : pedigreeData.name}
-                            </h3>
-                            <p className="text-sm font-source-sans italic mb-2 text-gray-700">
-                              {pedigreeData.formalName}
-                            </p>
-                            <div className="flex flex-wrap justify-center gap-2">
-                              {pedigreeData.titles.map((title: string, index: number) => (
-                                <span key={index} className="px-2 py-1 text-xs font-montserrat font-medium rounded-full" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
-                                  {title}
-                                </span>
-                              ))}
                             </div>
                           </div>
                         </div>
                         
-                        {/* Horizontal line extending to parents */}
-                        <div className="absolute top-1/2 -right-8 w-8 h-0.5 bg-gray-400"></div>
+                        {/* Main horizontal line extending to parents */}
+                        <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-400 transform translate-x-full -translate-y-0.5"></div>
                       </div>
 
                       {/* Generation 1 - Parents */}
-                      <div className="flex-shrink-0 w-56 relative">
-                        {/* Vertical line connecting parents - centered between the two parent boxes */}
-                        <div className="absolute -left-0 top-1/2 w-0.5 h-0 bg-gray-400 transform -translate-y-1/2" 
-                             style={{height: 'calc(100% - 2rem)', top: '1rem'}}></div>
-                        
-                        <div className="space-y-4">
+                      <div className="flex-shrink-0 w-16 flex items-center relative">
+                        {/* Vertical line connecting both parents */}
+                        <div className="absolute left-1/2 top-1/2 w-0.5 h-64 bg-gray-400 transform -translate-x-0.5 -translate-y-1/2"></div>
+                      </div>
+                      
+                      <div className="flex-shrink-0 w-56 flex flex-col justify-center relative">
+                        <div className="space-y-16">
                           {/* Sire */}
                           <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#8a8f28'}}>
-                            {/* Horizontal line to grandparents - centered on the box */}
-                            <div className="absolute top-1/2 -right-8 w-8 h-0.5 bg-gray-400"></div>
+                            {/* Horizontal line from vertical line to sire box */}
+                            <div className="absolute left-0 top-1/2 w-16 h-0.5 bg-gray-400 transform -translate-x-full -translate-y-0.5"></div>
+                            {/* Horizontal line from sire to grandparents */}
+                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-400 transform translate-x-full -translate-y-0.5"></div>
                             
                             <div className="text-center">
                               {pedigreeData.sire.image && (
@@ -896,8 +901,10 @@ export default function BreedingDogs() {
                           </div>
                           {/* Dam */}
                           <div className="bg-white rounded-lg p-3 border-2 relative" style={{borderColor: '#6d761d'}}>
-                            {/* Horizontal line to grandparents - centered on the box */}
-                            <div className="absolute top-1/2 -right-8 w-8 h-0.5 bg-gray-400"></div>
+                            {/* Horizontal line from vertical line to dam box */}
+                            <div className="absolute left-0 top-1/2 w-16 h-0.5 bg-gray-400 transform -translate-x-full -translate-y-0.5"></div>
+                            {/* Horizontal line from dam to grandparents */}
+                            <div className="absolute right-0 top-1/2 w-16 h-0.5 bg-gray-400 transform translate-x-full -translate-y-0.5"></div>
                             
                             <div className="text-center">
                               {pedigreeData.dam.image && (
@@ -947,17 +954,22 @@ export default function BreedingDogs() {
                         </div>
                       </div>
 
+                      {/* Grandparents vertical line section */}
+                      <div className="flex-shrink-0 w-16 flex items-center relative">
+                        {/* Vertical lines for grandparents - two separate ones */}
+                        <div className="absolute left-1/2 transform -translate-x-0.5">
+                          <div className="w-0.5 h-32 bg-gray-400 -translate-y-16"></div>
+                          <div className="w-0.5 h-32 bg-gray-400 translate-y-16"></div>
+                        </div>
+                      </div>
+                      
                       {/* Generation 2 - Grandparents */}
-                      <div className="flex-shrink-0 w-48 relative">
-                        {/* Vertical lines connecting grandparents to their respective parents */}
-                        <div className="absolute -left-0 top-0 w-0.5 bg-gray-400" style={{height: '25%'}}></div>
-                        <div className="absolute -left-0 top-1/4 w-0.5 bg-gray-400" style={{height: '25%'}}></div>
-                        <div className="absolute -left-0 top-1/2 w-0.5 bg-gray-400" style={{height: '25%'}}></div>
-                        <div className="absolute -left-0 top-3/4 w-0.5 bg-gray-400" style={{height: '25%'}}></div>
-                        
-                        <div className="grid grid-rows-4 gap-2 h-full">
+                      <div className="flex-shrink-0 w-48 flex flex-col justify-center relative">
+                        <div className="space-y-8">
                           {/* Sire's Sire */}
-                          <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
+                          <div className="bg-white rounded-lg p-2 border relative" style={{borderColor: '#a5aa35'}}>
+                            {/* Horizontal line connecting to vertical line */}
+                            <div className="absolute left-0 top-1/2 w-16 h-0.5 bg-gray-400 transform -translate-x-full -translate-y-0.5"></div>
                             {pedigreeData.sire.sire.image && (
                               <div className="mb-2">
                                 <img 
