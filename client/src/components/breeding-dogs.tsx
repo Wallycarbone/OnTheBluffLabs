@@ -838,7 +838,7 @@ export default function BreedingDogs() {
   const dames = [
     {
       name: "Harper Lee",
-      formalName: "On The Bluff Harper Lee",
+      formalName: "On The Bluff's Harper Lee",
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
