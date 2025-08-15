@@ -793,11 +793,11 @@ export default function BreedingDogs() {
             
             return (
               <div className="space-y-6">
-                    {/* Traditional Pedigree Layout - Simple and Clean */}
+                    {/* Traditional Pedigree Layout - Clean and Aligned */}
                     <div className="overflow-x-auto p-8">
-                      <div className="relative" style={{ width: '1200px', height: '500px' }}>
+                      <div className="relative" style={{ width: '1000px', height: '400px' }}>
                         {/* Current Dog - Positioned on the left */}
-                        <div className="absolute" style={{ left: '50px', top: '200px', width: '200px' }}>
+                        <div className="absolute" style={{ left: '40px', top: '175px', width: '180px' }}>
                           <div className="rounded-lg p-4" style={{backgroundColor: '#f8f9f0', border: '3px solid #6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.image && (
@@ -834,18 +834,18 @@ export default function BreedingDogs() {
                           </div>
                         </div>
 
-                        {/* Line from current dog to junction */}
-                        <div className="absolute bg-gray-600" style={{ left: '250px', top: '225px', width: '50px', height: '2px' }}></div>
+                        {/* Main horizontal line from current dog */}
+                        <div className="absolute bg-gray-400" style={{ left: '220px', top: '199px', width: '60px', height: '2px' }}></div>
                         
-                        {/* Junction - vertical line */}
-                        <div className="absolute bg-gray-600" style={{ left: '300px', top: '150px', width: '2px', height: '150px' }}></div>
+                        {/* Main junction - vertical line */}
+                        <div className="absolute bg-gray-400" style={{ left: '279px', top: '124px', width: '2px', height: '150px' }}></div>
                         
-                        {/* Lines from junction to parents */}
-                        <div className="absolute bg-gray-600" style={{ left: '300px', top: '175px', width: '50px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-600" style={{ left: '300px', top: '275px', width: '50px', height: '2px' }}></div>
+                        {/* Lines from main junction to parents */}
+                        <div className="absolute bg-gray-400" style={{ left: '279px', top: '149px', width: '41px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '279px', top: '249px', width: '41px', height: '2px' }}></div>
                         
                         {/* Sire - Top parent */}
-                        <div className="absolute" style={{ left: '350px', top: '125px', width: '180px' }}>
+                        <div className="absolute" style={{ left: '320px', top: '125px', width: '160px' }}>
                           <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#8a8f28'}}>
                             <div className="text-center">
                               {pedigreeData.sire.image && (
@@ -895,7 +895,7 @@ export default function BreedingDogs() {
                         </div>
                         
                         {/* Dam - Bottom parent */}
-                        <div className="absolute" style={{ left: '350px', top: '250px', width: '180px' }}>
+                        <div className="absolute" style={{ left: '320px', top: '225px', width: '160px' }}>
                           <div className="bg-white rounded-lg p-3 border-2" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               {pedigreeData.dam.image && (
@@ -948,18 +948,21 @@ export default function BreedingDogs() {
                         <div className="absolute bg-gray-600" style={{ left: '530px', top: '175px', width: '50px', height: '2px' }}></div>
                         <div className="absolute bg-gray-600" style={{ left: '530px', top: '300px', width: '50px', height: '2px' }}></div>
                         
-                        {/* Grandparent junction lines */}
-                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '100px', width: '2px', height: '100px' }}></div>
-                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '275px', width: '2px', height: '100px' }}></div>
+                        {/* Sire's parent junction lines */}
+                        <div className="absolute bg-gray-400" style={{ left: '480px', top: '149px', width: '40px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '519px', top: '99px', width: '2px', height: '100px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '519px', top: '124px', width: '41px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '519px', top: '174px', width: '41px', height: '2px' }}></div>
                         
-                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '125px', width: '50px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '175px', width: '50px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '300px', width: '50px', height: '2px' }}></div>
-                        <div className="absolute bg-gray-600" style={{ left: '580px', top: '350px', width: '50px', height: '2px' }}></div>
+                        {/* Dam's parent junction lines */}
+                        <div className="absolute bg-gray-400" style={{ left: '480px', top: '249px', width: '40px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '519px', top: '199px', width: '2px', height: '100px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '519px', top: '224px', width: '41px', height: '2px' }}></div>
+                        <div className="absolute bg-gray-400" style={{ left: '519px', top: '274px', width: '41px', height: '2px' }}></div>
 
                         {/* Grandparents */}
                         {/* Sire's Sire */}
-                        <div className="absolute" style={{ left: '630px', top: '100px', width: '150px' }}>
+                        <div className="absolute" style={{ left: '560px', top: '100px', width: '140px' }}>
                           <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
                             <div className="text-center">
                               {pedigreeData.sire.sire.image && (
@@ -1009,7 +1012,7 @@ export default function BreedingDogs() {
                         </div>
 
                         {/* Sire's Dam */}
-                        <div className="absolute" style={{ left: '630px', top: '150px', width: '150px' }}>
+                        <div className="absolute" style={{ left: '560px', top: '150px', width: '140px' }}>
                           <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#a5aa35'}}>
                             <div className="text-center">
                               <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
@@ -1035,7 +1038,7 @@ export default function BreedingDogs() {
                         </div>
 
                         {/* Dam's Sire */}
-                        <div className="absolute" style={{ left: '630px', top: '275px', width: '150px' }}>
+                        <div className="absolute" style={{ left: '560px', top: '200px', width: '140px' }}>
                           <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
@@ -1061,7 +1064,7 @@ export default function BreedingDogs() {
                         </div>
 
                         {/* Dam's Dam */}
-                        <div className="absolute" style={{ left: '630px', top: '325px', width: '150px' }}>
+                        <div className="absolute" style={{ left: '560px', top: '250px', width: '140px' }}>
                           <div className="bg-white rounded-lg p-2 border" style={{borderColor: '#6d761d'}}>
                             <div className="text-center">
                               <h6 className="font-oswald text-xs font-medium mb-1" style={{color: '#11100f'}}>
