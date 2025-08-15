@@ -22,6 +22,7 @@ import arabellaImage from "@assets/Breeding Dogs 5x4 (15)_1755287225736.png";
 import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
 import sterlingImage from "@assets/NIK_0272_Sterling_1755288200815.jpeg";
+import stoliImage from "@assets/Stoli_1755288962958.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -581,8 +582,9 @@ export default function BreedingDogs() {
           name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
           titles: [],
           sire: {
-            name: "Belquest Conclusion Stolichnaya",
+            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
             titles: [],
+            image: stoliImage,
             sire: {
               name: "Aster Liberti Labro Hamburg",
               titles: []
@@ -642,8 +644,9 @@ export default function BreedingDogs() {
         titles: [],
         image: chekhovImage,
         sire: {
-          name: "Belquest Conclusion Stolichnaya",
+          name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
           titles: [],
+          image: stoliImage,
           sire: {
             name: "Aster Liberti Labro Hamburg",
             titles: [],
