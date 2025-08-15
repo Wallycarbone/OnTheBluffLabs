@@ -664,7 +664,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Holden",
-      formalName: "On The Bluff Holden",
+      formalName: "On The Bluff's Holden Morrisey Caulfield",
       gender: "Male",
       color: "Chocolate", 
       age: "Previous Stud",
