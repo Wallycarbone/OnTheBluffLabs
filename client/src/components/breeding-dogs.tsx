@@ -24,6 +24,7 @@ import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
 import sterlingImage from "@assets/NIK_0272_Sterling_1755288200815.jpeg";
 import stoliImage from "@assets/Stoli_1755288962958.jpg";
 import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
+import sequelImage from "@assets/Sequel_1755289144473.webp";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -591,8 +592,9 @@ export default function BreedingDogs() {
               titles: []
             },
             dam: {
-              name: "Belquest Prequel To The Sequel",
-              titles: []
+              name: "Belquest Prequel To The Sequel (\"Sequel\")",
+              titles: [],
+              image: sequelImage
             }
           },
           dam: {
@@ -661,8 +663,9 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Belquest Prequel To The Sequel",
+            name: "Belquest Prequel To The Sequel (\"Sequel\")",
             titles: ["CGC"],
+            image: sequelImage,
             sire: {
               name: "GCH Highcaliber Labradale Expresso",
               titles: ["GCH"]
