@@ -710,6 +710,68 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Boo Radley": {
+        name: "Boo Radley",
+        formalName: "On The Bluff's Mr. Boo Radley",
+        titles: [],
+        image: booRadleyImage,
+        sire: {
+          name: "Heartlands Storm Trooper",
+          titles: [],
+          sire: {
+            name: "Heartlands Storm Charger",
+            titles: [],
+            sire: {
+              name: "Centrecourt Black Jake At Ceasarscreek",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Arctic Princess",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Heartlands Sienna",
+            titles: [],
+            sire: {
+              name: "Heartlands Polar Bear Chase",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Sierra Mist",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "Heartlands Lunar Eclipse",
+          titles: [],
+          sire: {
+            name: "Heartlands Cash",
+            titles: [],
+            sire: {
+              name: "Heartlands Polar Bear Chase",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Some Like It Sweet",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Heartlands Haley's Comet",
+            titles: [],
+            sire: {
+              name: "Heartlands Mighty Sampson",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Frosty",
+              titles: []
+            }
+          }
+        }
       }
     };
     
