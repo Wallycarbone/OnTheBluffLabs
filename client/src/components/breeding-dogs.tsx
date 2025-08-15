@@ -809,7 +809,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h3 className="text-lg font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                              <h3 className="text-sm font-oswald font-normal mb-2" style={{color: '#11100f'}}>
                                 {pedigreeData.image ? (
                                   <button 
                                     onClick={() => {
@@ -861,7 +861,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h5 className="font-oswald text-sm mb-1" style={{color: '#11100f'}}>
+                              <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.sire.image ? (
                                   <button 
                                     onClick={() => {
@@ -911,7 +911,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h5 className="font-oswald text-sm mb-1" style={{color: '#11100f'}}>
+                              <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.dam.image ? (
                                   <button 
                                     onClick={() => {
@@ -975,7 +975,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.sire.sire.image ? (
                                   <button 
                                     onClick={() => {
@@ -1025,7 +1025,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.sire.dam.image ? (
                                   <button 
                                     onClick={() => {
@@ -1075,7 +1075,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.dam.sire.image ? (
                                   <button 
                                     onClick={() => {
@@ -1125,7 +1125,7 @@ export default function BreedingDogs() {
                                   />
                                 </div>
                               )}
-                              <h6 className="font-oswald text-sm font-medium mb-1" style={{color: '#11100f'}}>
+                              <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
                                 {pedigreeData.dam.dam.image ? (
                                   <button 
                                     onClick={() => {
