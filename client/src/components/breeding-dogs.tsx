@@ -130,7 +130,7 @@ export default function BreedingDogs() {
         name: "Grizzly",
         formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
         titles: [],
-        image: grizzlyPedigreeImage,
+        image: grizzlyImage,
         sire: {
           name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
           titles: ["CH", "MX"],
