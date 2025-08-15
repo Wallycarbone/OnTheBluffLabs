@@ -18,6 +18,7 @@ import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
 import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
+import arabellaImage from "@assets/Breeding Dogs 5x4 (15)_1755287225736.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -633,6 +634,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: piperImage,
       description: "Energetic and playful fox red female with a zest for life. Her adventurous spirit and loving disposition make her both an excellent companion and devoted mother, passing on her vibrant personality to her puppies.",
+    },
+    {
+      name: "Arabella",
+      formalName: "On The Bluff Arabella",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: arabellaImage,
+      description: "Elegant and serene yellow female with a regal presence. Her calm confidence and nurturing instincts make her an exceptional mother, producing puppies with both beauty and temperament that reflect her graceful nature.",
     },
   ];
 
