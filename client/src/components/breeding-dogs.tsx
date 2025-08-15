@@ -13,6 +13,7 @@ import simmerImage from "@assets/Simmer_1753810570980.avif?url";
 import brodyImage from "@assets/Brody_1753811205545.jpg?url";
 import atticusImage from "@assets/Atticus_1754340164760.jpeg";
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (8)_1755286717960.png";
+import newMoonImage from "@assets/Breeding Dogs 5x4 (9)_1755286823265.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -584,7 +585,7 @@ export default function BreedingDogs() {
       gender: "Male", 
       color: "Yellow",
       age: "Active Stud",
-      image: moonImage,
+      image: newMoonImage,
       description: "Exceptional yellow male with outstanding temperament and conformation. Produces beautiful yellow puppies with gentle dispositions.",
       hasPuppies: true
     },
