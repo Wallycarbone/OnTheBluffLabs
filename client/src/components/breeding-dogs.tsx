@@ -19,6 +19,7 @@ import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png"
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import arabellaImage from "@assets/Breeding Dogs 5x4 (15)_1755287225736.png";
+import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -612,6 +613,16 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: booRadleyImage,
       description: "Gentle and reserved yellow male with a heart of gold. Despite his quiet demeanor, Boo possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and protective instincts to his offspring.",
+      hasPuppies: false
+    },
+    {
+      name: "Chekhov",
+      formalName: "On The Bluff Chekhov",
+      gender: "Male",
+      color: "Chocolate",
+      age: "Active Stud",
+      image: chekhovImage,
+      description: "Distinguished chocolate male with penetrating amber eyes and profound intelligence. His contemplative nature and noble bearing reflect generations of quality breeding, producing offspring with both striking appearance and thoughtful temperament.",
       hasPuppies: false
     }
   ];
