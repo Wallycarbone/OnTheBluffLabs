@@ -1027,6 +1027,23 @@ export default function BreedingDogs() {
                   </button>, the same line as our beloved late sire Atticus
                 </p>
               </div>
+            ) : dog.name === "Piper" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2004 Westminster Best of Breed <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: martingaleImage,
+                        name: "Lubberline's Martingale"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Lubberline's Martingale
+                  </button> through her sire, Twain
+                </p>
+              </div>
             ) : dog.name === "Holden" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
