@@ -932,7 +932,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Piper",
-      formalName: "On The Bluff Piper",
+      formalName: "On The Bluff's Pied Piper",
       gender: "Female",
       color: "Fox Red",
       age: "Breeding Female",
