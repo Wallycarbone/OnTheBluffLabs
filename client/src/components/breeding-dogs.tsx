@@ -788,6 +788,71 @@ export default function BreedingDogs() {
           }
         }
       },
+      "Piper": {
+        name: "Piper",
+        formalName: "On The Bluff's Pied Piper",
+        titles: [],
+        image: piperImage,
+        sire: {
+          name: "Scarfone's Mark Twain",
+          titles: [],
+          image: markTwainImage,
+          sire: {
+            name: "Valhalla's One Little Victory JH",
+            titles: ["JH"],
+            sire: {
+              name: "CH Lubberline Martingale",
+              titles: ["CH"],
+              image: martingaleImage
+            },
+            dam: {
+              name: "Brimars N-Vogue JH",
+              titles: ["JH"]
+            }
+          },
+          dam: {
+            name: "Bateshaus Stop To Smell The Roses",
+            titles: [],
+            sire: {
+              name: "CH Stormy C's Superbad",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "CH Batescreek Emma",
+              titles: ["CH"],
+              image: emmaImage
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Foxxy",
+          titles: [],
+          sire: {
+            name: "Keepsake Thorn On The Bluff",
+            titles: [],
+            sire: {
+              name: "Keepsake Puttin On The Ritz",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Random Red",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Keepsake's Pippi Longstocking On The Bluff",
+            titles: [],
+            sire: {
+              name: "Keepsake It Isn't Easy Being Red",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Help Me Rhonda",
+              titles: []
+            }
+          }
+        }
+      },
       "Twain": {
         name: "Twain",
         formalName: "Scarfone's Mark Twain",
