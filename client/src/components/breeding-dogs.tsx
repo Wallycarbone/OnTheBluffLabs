@@ -1243,6 +1243,23 @@ export default function BreedingDogs() {
     <>
       <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Introduction Essay */}
+        <div className="text-center mb-20">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+              At On the Bluff Labradors, we have built our kennel on the shoulders of champions. We've studied the great dogs, traced the influential bloodlines, and learned from the masters who came before us. We know the names that matter: Banchory Bolo, the Sandylands legends, the Buccleuch foundation stock.
+            </p>
+            
+            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+              Their legacy extends far beyond the pedigrees and kennel records they left behind. They created dogs whose minds were so sophisticated, so finely tuned to human partnership, that they would prove capable of roles no one could have imagined: guiding the blind through city streets, comforting traumatized veterans, alerting diabetics to dangerous blood sugar levels, and serving as emotional anchors for families dealing with autism, anxiety, and countless other challenges.
+            </p>
+            
+            <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
+              Every dog in our kennel has been selected to carry out this legacy of social flexibility and emotional intuition. Our dogs' lineages extend from these great kennels through to today's Grand Champions. We welcome you to meet our dogs:
+            </p>
+          </div>
+        </div>
+
         {/* Our Sires Section */}
         <div className="mb-20">
           <div className="text-center mb-16">
