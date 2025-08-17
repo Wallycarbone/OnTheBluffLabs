@@ -858,7 +858,7 @@ export default function BreedingDogs() {
       color: "Chocolate",
       age: "Active Stud",
       image: newGrizzlyImage,
-      description: "Distinguished chocolate male with exceptional emotional intelligence and substantial heavy bone structure. His intuitive nature and powerful build exemplify quality English Labradors, producing puppies with remarkable social intelligence and robust physical presence.",
+      description: "Grizzly is a distinguished chocolate male with exceptional emotional intelligence and substantial heavy bone structure. His intuitive nature and powerful build exemplify quality English Labradors, producing puppies with remarkable social intelligence and robust physical presence.",
       hasPuppies: true
     },
     {
