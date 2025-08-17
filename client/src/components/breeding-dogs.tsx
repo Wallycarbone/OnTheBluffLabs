@@ -1273,7 +1273,7 @@ export default function BreedingDogs() {
             </p>
             
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              Their legacy extends far beyond the pedigrees and kennel records they left behind. They created dogs whose minds were so sophisticated, so finely tuned to human partnership, that they would prove capable of roles no one could have imagined: guiding the blind through city streets, comforting traumatized veterans, alerting diabetics to dangerous blood sugar levels, and serving as emotional anchors for families dealing with autism, anxiety, and countless other challenges.
+              Their legacy extends far beyond the pedigrees and kennel records they left behind. <strong>They created dogs whose minds were so sophisticated, so finely tuned to human partnership, that they would prove capable of roles no one could have imagined</strong>: guiding the blind through city streets, comforting traumatized veterans, alerting diabetics to dangerous blood sugar levels, and serving as emotional anchors for families dealing with autism, anxiety, and countless other challenges.
             </p>
             
             <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
