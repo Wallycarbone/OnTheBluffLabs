@@ -1609,16 +1609,16 @@ export default function BreedingDogs() {
         <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto" aria-describedby="puppy-gallery-description">
           <DialogHeader>
             <DialogTitle className="text-xl font-oswald font-normal text-center" style={{color: '#11100f'}}>
-              Puppies by {selectedDog?.name}
+              Puppies by {selectedDogForPuppies?.name}
             </DialogTitle>
           </DialogHeader>
           <div id="puppy-gallery-description" className="space-y-6">
             {(() => {
-              const puppyData = getPuppyGalleryData(selectedDog?.name);
+              const puppyData = getPuppyGalleryData(selectedDogForPuppies?.name);
               if (!puppyData || !puppyData.litters || puppyData.litters.length === 0) {
                 return (
                   <p className="text-center text-gray-600 font-source-sans">
-                    No puppy information available for {selectedDog?.name}
+                    No puppy information available for {selectedDogForPuppies?.name}
                   </p>
                 );
               }
