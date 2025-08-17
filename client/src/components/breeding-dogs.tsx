@@ -782,8 +782,8 @@ export default function BreedingDogs() {
           }
         }
       },
-      "Mark Twain": {
-        name: "Mark Twain",
+      "Twain": {
+        name: "Twain",
         formalName: "Scarfone's Mark Twain",
         titles: [],
         image: markTwainImage,
@@ -901,7 +901,7 @@ export default function BreedingDogs() {
       hasPuppies: false
     },
     {
-      name: "Mark Twain",
+      name: "Twain",
       formalName: "Scarfone's Mark Twain",
       gender: "Male",
       color: "Yellow",
