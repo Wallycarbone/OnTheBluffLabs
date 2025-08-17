@@ -52,6 +52,7 @@ import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png"
 import markTwainImage from "@assets/Breeding Dogs 5x4 (20)_1755291027755.png";
 import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png";
 import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
+import emmaImage from "@assets/Breeding Dogs 5x4 (23)_1755446219053.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -836,6 +837,7 @@ export default function BreedingDogs() {
           dam: {
             name: "CH Batescreek Emma",
             titles: ["CH"],
+            image: emmaImage,
             sire: {
               name: "CH Zinfindel Brigham",
               titles: ["CH"]
