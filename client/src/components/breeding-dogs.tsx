@@ -1013,18 +1013,18 @@ export default function BreedingDogs() {
             ) : dog.name === "Harper Lee" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of late sire <button 
+                  Descended from <button 
                     className="text-golden underline hover:text-golden/80 font-medium"
                     onClick={() => {
                       setSelectedImage({
-                        src: atticusImage,
-                        name: "Atticus Finch"
+                        src: chaseImage,
+                        name: "Heartland's Polar Bear Chase"
                       });
                       setIsImagePopupOpen(true);
                     }}
                   >
-                    Atticus Finch
-                  </button>
+                    Heartland's Polar Bear Chase
+                  </button>, the same line as our beloved late sire Atticus
                 </p>
               </div>
             ) : dog.name === "Holden" ? (
@@ -1093,23 +1093,6 @@ export default function BreedingDogs() {
                   >
                     Highcaliber Labradale Expresso
                   </button>
-                </p>
-              </div>
-            ) : dog.name === "Harper Lee" ? (
-              <div className="text-center">
-                <p className="text-sm text-warm-gray leading-relaxed">
-                  Descended from <button 
-                    className="text-golden underline hover:text-golden/80 font-medium"
-                    onClick={() => {
-                      setSelectedImage({
-                        src: chaseImage,
-                        name: "Heartland's Polar Bear Chase"
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    Heartland's Polar Bear Chase
-                  </button>, the same line as our beloved late sire Atticus
                 </p>
               </div>
             ) : (
