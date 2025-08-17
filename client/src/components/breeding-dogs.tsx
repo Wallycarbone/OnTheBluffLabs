@@ -49,7 +49,7 @@ import topoGigioImage from "@assets/Gino_1754685352006.webp";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
 import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png";
-import markTwainImage from "@assets/Breeding Dogs 5x4 (20)_1755291027755.png";
+import markTwainImage from "@assets/Breeding Dogs 5x4 (24)_1755460931319.png";
 import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png";
 import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
 import emmaImage from "@assets/Breeding Dogs 5x4 (23)_1755446219053.png";
