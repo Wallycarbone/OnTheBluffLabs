@@ -97,10 +97,12 @@ export default function Hero() {
       <section className="py-20" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
-            WELCOME TO<br />
-            <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-3 tracking-wide leading-tight" style={{color: '#11100f'}}>
+            PRESERVATION BREEDING
           </h2>
+          <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-8 tracking-wide" style={{color: '#6d761d'}}>
+            Safeguarding the Legacy of the Perfect Companion
+          </h3>
             <div className="max-w-5xl mx-auto mb-16 prose prose-xl prose-gray">
               <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
                 My wife and I have been breeding Labrador Retrievers for fifty years. Half a century of watching puppies take their first wobbly steps, of studying bloodlines that stretch back through generations, of making the careful choices that determine not just what a dog will look like, but who they will become. <strong>Fifty years of trying to understand what makes this breed so extraordinary, so perfectly suited to human partnership, so utterly irreplaceable in the hearts of those who know them.</strong>
