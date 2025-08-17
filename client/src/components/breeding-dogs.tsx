@@ -1247,8 +1247,8 @@ export default function BreedingDogs() {
         className="relative h-[70vh] min-h-[600px] flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroLabradorImage})`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center bottom',
           backgroundRepeat: 'no-repeat'
         }}
       >
