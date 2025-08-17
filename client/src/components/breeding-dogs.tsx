@@ -1277,7 +1277,7 @@ export default function BreedingDogs() {
             </p>
             
             <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
-              Every dog in our kennel has been selected to carry out this legacy of social flexibility and emotional intuition. Our dogs' lineages extend from these great kennels through to today's Grand Champions. We welcome you to meet our dogs:
+              <strong>Every dog in our kennel has been selected to carry out this legacy of social flexibility and emotional intuition. Our dogs' lineages extend from these great kennels through to today's Grand Champions.</strong> We welcome you to meet our dogs:
             </p>
           </div>
         </div>
