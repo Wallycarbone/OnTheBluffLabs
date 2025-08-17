@@ -878,7 +878,7 @@ export default function BreedingDogs() {
       color: "Chocolate", 
       age: "Previous Stud",
       image: newHoldenImage,
-      description: "Holden is a gentle-natured chocolate male with a distinctive blocky head that exemplifies classic English Labrador conformation. His calm, patient temperament and substantial bone structure make him an ideal sire, consistently producing offspring with his trademark gentle disposition and impressive head type.",
+      description: "Holden is a gentle-natured chocolate male with a distinctive blocky head that exemplifies classic English Labrador conformation. His calm, patient temperament and substantial bone structure make him an ideal sire, consistently producing offspring with his trademark gentle disposition and impressive blocky head.",
       hasPuppies: true
     },
     {
