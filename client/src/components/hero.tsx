@@ -103,9 +103,21 @@ export default function Hero() {
           <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-8 tracking-wide" style={{color: '#6d761d'}}>
             Safeguarding the Legacy of the Perfect Companion
           </h3>
-            <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-source-sans text-xl leading-relaxed text-center" style={{color: '#4b4b4b'}}>
-                We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.
+            <div className="max-w-5xl mx-auto mb-16 prose prose-lg prose-gray">
+              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+                For fifty years, we've dedicated ourselves to Labrador Retrievers — raising puppies, studying bloodlines, and preserving what makes this breed extraordinary: loyalty, intelligence, and an unmatched ability to connect with humans.
+              </p>
+              
+              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+                The Westminster and Crufts champions — magnificent as they are — represent just the latest chapter in a much longer story. Their true relevance, their deepest value, wasn't created in a show ring or a professional handler's setup. It was forged in a tiny shed on the coldest of winter nights, with a dog curled up at the feet of some lonely artisan learning what it really meant to be essential to human survival.
+              </p>
+              
+              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+                That's the dog we've spent decades trying to preserve and honor. In our small way, we've tried to be worthy custodians of something that began long before us and will continue long after we're gone. Every time one of our dogs bonds instantly with a new family, shows that famous Labrador intuition, demonstrates that uncanny ability to read human emotions — they're drawing on centuries of genetic memory, expressing traits that were literally carved into their DNA by survival itself.
+              </p>
+              
+              <p className="font-source-sans text-lg leading-[1.6] mb-0 text-left" style={{color: '#4b4b4b'}}>
+                <strong>We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.</strong>
               </p>
             </div>
             
