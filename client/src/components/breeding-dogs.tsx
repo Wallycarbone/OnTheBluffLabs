@@ -937,7 +937,7 @@ export default function BreedingDogs() {
       color: "Fox Red",
       age: "Breeding Female",
       image: piperImage,
-      description: "Energetic and playful fox red female with a zest for life. Her adventurous spirit and loving disposition make her both an excellent companion and devoted mother, passing on her vibrant personality to her puppies.",
+      description: "Piper is an affectionate and calm fox red female with a gentle disposition. Her loving nature and serene temperament make her both an excellent companion and devoted mother, passing on her peaceful personality to her puppies.",
     },
     {
       name: "Arabella",
