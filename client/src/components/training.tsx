@@ -45,10 +45,6 @@ export default function Training() {
           <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-8 tracking-wide" style={{color: '#6d761d'}}>
             Training Tomorrow's Labradors
           </h3>
-          <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
-            Led by our Training Director, Jess Kelley-Madera CPDT-KA, 
-            using gentle, positive reinforcement methods to build strong bonds between dogs and families.
-          </p>
         </div>
 
         {/* Training Philosophy Essay */}
