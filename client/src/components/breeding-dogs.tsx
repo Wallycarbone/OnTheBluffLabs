@@ -29,6 +29,7 @@ import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 import duffyImage from "@assets/duffy-04_1755289259124.jpeg";
 import stormTrooperImage from "@assets/Storm Trooper_1755290311684.avif";
 import stormChargerImage from "@assets/Charger_1755290357983.avif";
+import heroLabradorImage from "@assets/Y30A3049_1755468632615.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -1241,17 +1242,28 @@ export default function BreedingDogs() {
 
   return (
     <>
-      <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Title */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+      {/* Hero Section with Labrador Background */}
+      <section 
+        className="relative h-[60vh] min-h-[500px] flex items-center justify-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroLabradorImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="text-center z-10">
+          <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
             HEIRS OF EXCELLENCE
           </h1>
-          <h2 className="text-2xl md:text-3xl font-source-sans font-light mb-12 tracking-wide" style={{color: '#6d761d'}}>
+          <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg" style={{color: '#fefefe'}}>
             Meet Our Labradors
           </h2>
         </div>
+      </section>
+
+      <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Introduction Essay */}
         <div className="text-center mb-20">
