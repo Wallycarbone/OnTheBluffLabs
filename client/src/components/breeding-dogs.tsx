@@ -795,6 +795,7 @@ export default function BreedingDogs() {
           sire: {
             name: "CH Lubberline Martingale",
             titles: ["CH"],
+            image: martingaleImage,
             sire: {
               name: "CH Hunt Club Clayview Funny Bear",
               titles: ["CH"]
