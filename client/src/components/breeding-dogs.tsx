@@ -51,6 +51,7 @@ import candyImage from "@assets/Candy_1754687171237.webp";
 import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png";
 import markTwainImage from "@assets/Breeding Dogs 5x4 (20)_1755291027755.png";
 import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png";
+import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1034,6 +1035,23 @@ export default function BreedingDogs() {
                     }}
                   >
                     Willcare To Fly Under The Radar
+                  </button>
+                </p>
+              </div>
+            ) : dog.name === "Twain" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2004 Westminster Best of Breed <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: martingaleImage,
+                        name: "Lubberline's Martingale"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Lubberline's Martingale
                   </button>
                 </p>
               </div>
