@@ -79,7 +79,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppies" />
-                <NavButton href="/health-testing" label="Health" />
+                <NavButton href="/health-testing" label="Holistic Health" />
                 <NavButton href="/dog-food" label="Dog Food" />
               </div>
               
@@ -114,7 +114,7 @@ export default function Navigation() {
             <div className="flex items-center space-x-1">
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/puppies" label="Puppies" />
-              <NavButton href="/health-testing" label="Health" />
+              <NavButton href="/health-testing" label="Holistic Health" />
               <NavButton href="/dog-food" label="Food" />
               <NavButton href="/training" label="Training" />
               <NavButton href="/facilities" label="Our Team" />
