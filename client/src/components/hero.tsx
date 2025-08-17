@@ -116,8 +116,13 @@ export default function Hero() {
                 That's the dog we've spent decades trying to preserve and honor. In our small way, we've tried to be worthy custodians of something that began long before us and will continue long after we're gone. Every time one of our dogs bonds instantly with a new family, shows that famous Labrador intuition, demonstrates that uncanny ability to read human emotions — they're drawing on centuries of genetic memory, expressing traits that were literally carved into their DNA by survival itself.
               </p>
               
-              <p className="font-source-sans text-lg leading-[1.6] mb-0 text-left" style={{color: '#4b4b4b'}}>
+              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
                 <strong>We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.</strong>
+              </p>
+              
+              <p className="font-source-sans text-base leading-relaxed mb-0 text-left italic" style={{color: '#6d761d'}}>
+                Sincerely,<br />
+                The Team at On The Bluff Labradors
               </p>
             </div>
             
