@@ -40,8 +40,11 @@ export default function Training() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-            PROFESSIONAL TRAINING
+            THE LEGACY LIVES ON
           </h2>
+          <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-8 tracking-wide" style={{color: '#6d761d'}}>
+            Training Tomorrow's Labradors
+          </h3>
           <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
             Led by our Training Director, Jess Kelley-Madera CPDT-KA, 
             using gentle, positive reinforcement methods to build strong bonds between dogs and families.
