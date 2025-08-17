@@ -120,7 +120,7 @@ export default function Hero() {
                 <strong>We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.</strong>
               </p>
               
-              <p className="font-source-sans text-base leading-relaxed mb-0 text-left italic" style={{color: '#6d761d'}}>
+              <p className="font-source-sans text-base leading-relaxed mb-0 text-left italic" style={{color: '#4b4b4b'}}>
                 Sincerely,<br />
                 The Team at On The Bluff Labradors
               </p>
