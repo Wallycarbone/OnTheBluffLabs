@@ -54,6 +54,7 @@ import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png
 import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
 import emmaImage from "@assets/Breeding Dogs 5x4 (23)_1755446219053.png";
 import chaseImage from "@assets/Chase_1755458617995.avif";
+import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1074,6 +1075,23 @@ export default function BreedingDogs() {
                   >
                     Heartland's Polar Bear Chase
                   </button>, the same line as our beloved late sire Atticus
+                </p>
+              </div>
+            ) : dog.name === "Chekhov" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from American & Canadian Grand Champion <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: expressoImage,
+                        name: "Highcaliber Labradale Expresso"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Highcaliber Labradale Expresso
+                  </button>
                 </p>
               </div>
             ) : (
