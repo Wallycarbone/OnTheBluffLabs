@@ -103,38 +103,9 @@ export default function Hero() {
           <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-8 tracking-wide" style={{color: '#6d761d'}}>
             Safeguarding the Legacy of the Perfect Companion
           </h3>
-            <div className="max-w-5xl mx-auto mb-16 prose prose-lg prose-gray">
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                My wife and I have been breeding Labrador Retrievers for fifty years. Half a century of watching puppies take their first wobbly steps, of studying bloodlines that stretch back through generations, of making the careful choices that determine not just what a dog will look like, but who they will become. <strong>Fifty years of trying to understand what makes this breed so extraordinary, so perfectly suited to human partnership, so utterly irreplaceable in the hearts of those who know them.</strong>
-              </p>
-              
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                For the last fifty years, we have built our kennel on the shoulders of champions. We've studied the great dogs, traced the influential bloodlines, and learned from the masters who came before us. Before there was a ring to compete in, or ribbons to win or judges to impress, there was the breed itself. The Westminster and Crufts champions — magnificent as they are — represent just the latest chapter in a much longer story.
-              </p>
-              
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                Their true relevance, their deepest value, wasn't created in show rings. It was forged in the marshes and fields of Newfoundland, where survival itself selected for the traits that matter most: intelligence, adaptability, and an almost mystical ability to work in partnership with humans.
-              </p>
-              
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                That's the dog we've spent fifty years trying to preserve and honor. <strong>We have dedicated our lives to breeding the dog that embodies what the Labrador has always been at its core: the perfect partner, the complete companion, the animal who doesn't just live with humans but truly understands them.</strong>
-              </p>
-              
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                Every puppy born at On the Bluff Labradors carries that heritage in their genes. Every time one of our dogs bonds instantly with a new family, shows that famous Labrador intuition, demonstrates that uncanny ability to read human emotions — they're drawing on centuries of genetic memory, expressing traits that were literally carved into their DNA by survival itself.
-              </p>
-              
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                In our small way, we've tried to be worthy custodians of something that began long before us and will continue long after we're gone. We've never forgotten that we're not creating these remarkable qualities — we're simply trying to preserve them, to pass them on undiluted to the next generation, to ensure that the essential character of the breed remains intact even as the world around it changes.
-              </p>
-              
-              <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-                <strong>We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.</strong>
-              </p>
-              
-              <p className="font-source-sans text-base leading-relaxed mb-0 text-left italic" style={{color: '#6d761d'}}>
-                Sincerely,<br />
-                Wally & Carla and the Team at On The Bluff Labradors
+            <div className="max-w-4xl mx-auto mb-12">
+              <p className="font-source-sans text-xl leading-relaxed text-center" style={{color: '#4b4b4b'}}>
+                We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.
               </p>
             </div>
             
