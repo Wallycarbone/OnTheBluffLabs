@@ -126,8 +126,13 @@ export default function Hero() {
                 In our small way, we've tried to be worthy custodians of something that began long before us and will continue long after we're gone. We've never forgotten that we're not creating these remarkable qualities — we're simply trying to preserve them, to pass them on undiluted to the next generation, to ensure that the essential character of the breed remains intact even as the world around it changes.
               </p>
               
-              <p className="font-source-sans text-xl leading-[1.8] mb-0 text-left" style={{color: '#4b4b4b'}}>
+              <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
                 <strong>We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.</strong>
+              </p>
+              
+              <p className="font-source-sans text-lg leading-relaxed mb-0 text-left italic" style={{color: '#6d761d'}}>
+                Sincerely,<br />
+                Wally & Carla and the Team at On The Bluff Labradors
               </p>
             </div>
             
