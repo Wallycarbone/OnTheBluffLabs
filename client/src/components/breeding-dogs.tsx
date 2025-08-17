@@ -1579,7 +1579,7 @@ export default function BreedingDogs() {
                         <img 
                           src={puppy.image} 
                           alt={puppy.name}
-                          className="w-full h-32 object-cover rounded mb-2"
+                          className="w-full h-48 object-cover rounded mb-2"
                         />
                         <p className="font-oswald text-sm font-medium" style={{color: '#11100f'}}>
                           {puppy.name}
