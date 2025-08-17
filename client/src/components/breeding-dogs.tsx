@@ -902,7 +902,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Active Stud",
       image: booRadleyImage,
-      description: "Gentle and reserved yellow male with a heart of gold. Despite his quiet demeanor, Boo possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and protective instincts to his offspring.",
+      description: "Boo Radley is a gentle and affectionate white male with a heart of gold. He possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and protective instincts to his offspring.",
       hasPuppies: false
     },
     {
