@@ -1243,6 +1243,16 @@ export default function BreedingDogs() {
     <>
       <section id="breeding" className="py-24" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Page Title */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-6xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+            HEIRS OF EXCELLENCE
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-source-sans font-light mb-12 tracking-wide" style={{color: '#6d761d'}}>
+            Meet Our Labradors
+          </h2>
+        </div>
+
         {/* Introduction Essay */}
         <div className="text-center mb-20">
           <div className="max-w-5xl mx-auto">
