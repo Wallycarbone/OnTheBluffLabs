@@ -112,9 +112,11 @@ export default function Hero() {
                 For the last fifty years, we have built our kennel on the shoulders of champions. We've studied the great dogs, traced the influential bloodlines, and learned from the masters who came before us. Before there was a ring to compete in, or ribbons to win or judges to impress, there was the breed itself. The Westminster and Crufts champions — magnificent as they are — represent just the latest chapter in a much longer story.
               </p>
               
-              <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
-                Their true relevance, their deepest value, wasn't created in show rings. It was forged in the marshes and fields of Newfoundland, where survival itself selected for the traits that matter most: intelligence, adaptability, and an almost mystical ability to work in partnership with humans.
-              </p>
+              <blockquote className="my-12 mx-auto max-w-4xl px-8 py-6 border-l-4 bg-white/50 rounded-r-lg shadow-lg" style={{borderLeftColor: '#6d761d'}}>
+                <p className="font-source-sans text-2xl leading-[1.6] text-center italic mb-0" style={{color: '#11100f'}}>
+                  "Their true relevance, their deepest value, wasn't created in show rings. It was forged in the marshes and fields of Newfoundland, where survival itself selected for the traits that matter most: intelligence, adaptability, and an almost mystical ability to work in partnership with humans."
+                </p>
+              </blockquote>
               
               <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
                 That's the dog we've spent fifty years trying to preserve and honor. <strong>We have dedicated our lives to breeding the dog that embodies what the Labrador has always been at its core: the perfect partner, the complete companion, the animal who doesn't just live with humans but truly understands them.</strong>
