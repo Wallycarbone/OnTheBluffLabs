@@ -913,7 +913,7 @@ export default function BreedingDogs() {
       color: "Chocolate",
       age: "Active Stud",
       image: chekhovImage,
-      description: "Distinguished chocolate male with penetrating amber eyes and profound intelligence. His contemplative nature and noble bearing reflect generations of quality breeding, producing offspring with both striking appearance and thoughtful temperament.",
+      description: "Chekhov is a stately chocolate male with penetrating amber eyes and profound intelligence. His contemplative nature and noble bearing reflect generations of quality breeding, producing offspring with both striking appearance and thoughtful temperament.",
       hasPuppies: false
     }
   ];
