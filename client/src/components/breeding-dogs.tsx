@@ -852,6 +852,16 @@ export default function BreedingDogs() {
 
   const sires = [
     {
+      name: "Twain",
+      formalName: "Scarfone's Mark Twain",
+      gender: "Male",
+      color: "Yellow",
+      age: "Active Stud",
+      image: markTwainImage,
+      description: "Exceptional yellow male with distinguished lineage and gentle temperament. His wise expression and calm demeanor reflect the thoughtful nature of his literary namesake, making him an ideal sire for producing intelligent and well-balanced offspring.",
+      hasPuppies: false
+    },
+    {
       name: "Grizzly",
       formalName: "Endless Mt. Labrador Grizzly at On The Bluff",
       gender: "Male",
@@ -899,16 +909,6 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: chekhovImage,
       description: "Distinguished chocolate male with penetrating amber eyes and profound intelligence. His contemplative nature and noble bearing reflect generations of quality breeding, producing offspring with both striking appearance and thoughtful temperament.",
-      hasPuppies: false
-    },
-    {
-      name: "Twain",
-      formalName: "Scarfone's Mark Twain",
-      gender: "Male",
-      color: "Yellow",
-      age: "Active Stud",
-      image: markTwainImage,
-      description: "Exceptional yellow male with distinguished lineage and gentle temperament. His wise expression and calm demeanor reflect the thoughtful nature of his literary namesake, making him an ideal sire for producing intelligent and well-balanced offspring.",
       hasPuppies: false
     }
   ];
