@@ -1244,11 +1244,11 @@ export default function BreedingDogs() {
     <>
       {/* Hero Section with Labrador Background */}
       <section 
-        className="relative h-[70vh] min-h-[600px] flex items-center justify-center"
+        className="relative h-[90vh] min-h-[800px] flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroLabradorImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center bottom',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
