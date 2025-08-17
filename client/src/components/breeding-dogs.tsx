@@ -58,6 +58,7 @@ import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
+// Harper Lee pedigree highlight updated
 export default function BreedingDogs() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
   const [selectedDog, setSelectedDog] = useState<any>(null);
