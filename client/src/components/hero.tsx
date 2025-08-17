@@ -115,7 +115,7 @@ export default function Hero() {
               </p>
               
               <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
-                That's the dog we've spent fifty years trying to preserve and honor. We have dedicated our lives to breeding the dog that embodies what the Labrador has always been at its core: the perfect partner, the complete companion, the animal who doesn't just live with humans but truly understands them.
+                That's the dog we've spent fifty years trying to preserve and honor. <strong>We have dedicated our lives to breeding the dog that embodies what the Labrador has always been at its core: the perfect partner, the complete companion, the animal who doesn't just live with humans but truly understands them.</strong>
               </p>
               
               <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
