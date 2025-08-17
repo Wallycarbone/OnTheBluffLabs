@@ -862,7 +862,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Active Stud",
       image: markTwainImage,
-      description: "Twain is an exceptional yellow male with distinguished lineage and gentle temperament. His wise expression and calm demeanor reflect the thoughtful nature of his literary namesake, making him an ideal sire for producing intelligent and well-balanced offspring.",
+      description: "Twain is an exceptional yellow male with distinguished lineage and gentle temperament. Coming from Lubberline, a kennel renowned for breeding dogs with exceptional temperaments and cognitive flexibility, his wise expression and calm demeanor reflect both the thoughtful nature of his literary namesake and his superior bloodlines, making him an ideal sire for producing intelligent and well-balanced offspring.",
       hasPuppies: false
     },
     {
