@@ -102,10 +102,22 @@ export default function Hero() {
             <span style={{color: '#6d761d'}}>ON THE BLUFF LABRADORS</span>
           </h2>
             <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
-              For more than fifty years, we've been devoted preservation breeders of exceptional English Labradors—committed to 
-              safeguarding what makes this breed truly special: their social intelligence, natural beauty, and steady temperament. 
-              Our breeding program combines time-honored practices with holistic health protocols and early training, all carefully 
-              chosen to preserve and enhance the finest qualities of the English Labrador.
+              My wife and I have been breeding Labrador Retrievers for fifty years. Half a century of watching puppies take their first wobbly steps, of studying bloodlines that stretch back through generations, of making the careful choices that determine not just what a dog will look like, but who they will become. Fifty years of trying to understand what makes this breed so extraordinary, so perfectly suited to human partnership, so utterly irreplaceable in the hearts of those who know them.
+            </p>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
+              For the last fifty years, we have built our kennel on the shoulders of champions. We've studied the great dogs, traced the influential bloodlines, and learned from the masters who came before us. Before there was a ring to compete in, or ribbons to win or judges to impress, there was the breed itself. The Westminster and Crufts champions — magnificent as they are — represent just the latest chapter in a much longer story. Their true relevance, their deepest value, wasn't created in show rings. It was forged in the marshes and fields of Newfoundland, where survival itself selected for the traits that matter most: intelligence, adaptability, and an almost mystical ability to work in partnership with humans.
+            </p>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
+              That's the dog we've spent fifty years trying to preserve and honor. We have dedicated our lives to breeding the dog that embodies what the Labrador has always been at its core: the perfect partner, the complete companion, the animal who doesn't just live with humans but truly understands them.
+            </p>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
+              Every puppy born at On the Bluff Labradors carries that heritage in their genes. Every time one of our dogs bonds instantly with a new family, shows that famous Labrador intuition, demonstrates that uncanny ability to read human emotions — they're drawing on centuries of genetic memory, expressing traits that were literally carved into their DNA by survival itself.
+            </p>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
+              In our small way, we've tried to be worthy custodians of something that began long before us and will continue long after we're gone. We've never forgotten that we're not creating these remarkable qualities — we're simply trying to preserve them, to pass them on undiluted to the next generation, to ensure that the essential character of the breed remains intact even as the world around it changes.
+            </p>
+            <p className="max-w-4xl mx-auto font-source-sans text-xl leading-relaxed mb-12" style={{color: '#4b4b4b'}}>
+              We invite you to join us on this path: by welcoming an On The Bluff Labrador into your home, you become part of this legacy, ensuring that what makes the Labrador so extraordinary endures into the future.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
