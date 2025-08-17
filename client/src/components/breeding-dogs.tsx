@@ -50,6 +50,7 @@ import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
 import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png";
 import markTwainImage from "@assets/Breeding Dogs 5x4 (20)_1755291027755.png";
+import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1016,6 +1017,23 @@ export default function BreedingDogs() {
                     }}
                   >
                     Atticus Finch
+                  </button>
+                </p>
+              </div>
+            ) : dog.name === "Holden" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from Grand Champion and Canine Good Citizen <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: flyUnderRadarImage,
+                        name: "Willcare To Fly Under The Radar"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Willcare To Fly Under The Radar
                   </button>
                 </p>
               </div>
