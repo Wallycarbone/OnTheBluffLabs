@@ -103,7 +103,7 @@ export default function Hero() {
           </h2>
             <div className="max-w-5xl mx-auto mb-16 prose prose-xl prose-gray">
               <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
-                My wife and I have been breeding Labrador Retrievers for fifty years. Half a century of watching puppies take their first wobbly steps, of studying bloodlines that stretch back through generations, of making the careful choices that determine not just what a dog will look like, but who they will become. Fifty years of trying to understand what makes this breed so extraordinary, so perfectly suited to human partnership, so utterly irreplaceable in the hearts of those who know them.
+                My wife and I have been breeding Labrador Retrievers for fifty years. Half a century of watching puppies take their first wobbly steps, of studying bloodlines that stretch back through generations, of making the careful choices that determine not just what a dog will look like, but who they will become. <strong>Fifty years of trying to understand what makes this breed so extraordinary, so perfectly suited to human partnership, so utterly irreplaceable in the hearts of those who know them.</strong>
               </p>
               
               <p className="font-source-sans text-xl leading-[1.8] mb-10 text-left" style={{color: '#4b4b4b'}}>
