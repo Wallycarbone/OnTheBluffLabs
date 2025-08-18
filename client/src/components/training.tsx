@@ -211,7 +211,7 @@ export default function Training() {
               <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white">
                 Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex justify-center">
                 <Button 
                   onClick={scrollToContact}
                   className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
@@ -219,9 +219,6 @@ export default function Training() {
                 >
                   Begin Your Journey
                 </Button>
-                <span className="font-source-sans text-sm text-white font-medium">
-                  Free initial assessment included
-                </span>
               </div>
             </CardContent>
           </Card>
