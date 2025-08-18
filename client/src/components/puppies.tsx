@@ -68,19 +68,6 @@ export default function Puppies() {
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
-    align: 'start',
-    slidesToScroll: 'auto',
-    containScroll: 'trimSnaps'
-  });
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev()
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext()
-  }, [emblaApi]);
   const [isTitlePopupOpen, setIsTitlePopupOpen] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState<{abbreviation: string, fullName: string} | null>(null);
 
@@ -1258,66 +1245,46 @@ export default function Puppies() {
           </h2>
         </div>
 
-        {/* Puppy Photo Gallery Carousel */}
-        <div className="mb-20 relative">
-          {/* Navigation Buttons */}
-          <div className="flex justify-between items-center mb-6">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={scrollPrev}
-              className="rounded-full bg-white/80 hover:bg-white border-gray-300 shadow-lg"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={scrollNext}
-              className="rounded-full bg-white/80 hover:bg-white border-gray-300 shadow-lg"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-          </div>
+        {/* Puppy Photo Gallery */}
+        <div className="mb-20">
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {[
+              { src: newBlackOnRocks, alt: "Previous puppy - Black Lab puppy on rocks with polka dot toy", name: "Black" },
+              { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
+              { src: newYellowSitting, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
+              { src: previousChocolateStanding, alt: "Previous puppy - Chocolate Lab puppy standing in grass", name: "Chocolate" },
+              { src: previousFoxRedPuppy, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
+              { src: newGoldenWithToys, alt: "Previous puppy - Golden Lab standing with colorful toys", name: "Golden" },
+              { src: previousChocolateToys, alt: "Previous puppy - Chocolate Lab with colorful toys", name: "Chocolate" },
+              { src: newBlackWithBanana, alt: "Previous puppy - Black Lab with yellow banana toy", name: "Black" },
+              { src: newWhiteStanding, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
+              { src: newYellowWithToys, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
+              { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
+              { src: newSaddleMarked, alt: "Previous puppy - Lab with unique saddle markings and toys", name: "Saddled" },
+              { src: previousChocolateRainbow, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
+              { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Black" },
+              { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
 
-          {/* Carousel Container */}
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
-              {[
-                { src: newBlackOnRocks, alt: "Previous puppy - Black Lab puppy on rocks with polka dot toy", name: "Black" },
-                { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
-                { src: newYellowSitting, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
-                { src: previousChocolateStanding, alt: "Previous puppy - Chocolate Lab puppy standing in grass", name: "Chocolate" },
-                { src: previousFoxRedPuppy, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
-                { src: newGoldenWithToys, alt: "Previous puppy - Golden Lab standing with colorful toys", name: "Golden" },
-                { src: previousChocolateToys, alt: "Previous puppy - Chocolate Lab with colorful toys", name: "Chocolate" },
-                { src: newBlackWithBanana, alt: "Previous puppy - Black Lab with yellow banana toy", name: "Black" },
-                { src: newWhiteStanding, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
-                { src: newYellowWithToys, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
-                { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
-                { src: newSaddleMarked, alt: "Previous puppy - Lab with unique saddle markings and toys", name: "Saddled" },
-                { src: previousChocolateRainbow, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
-                { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Black" },
-                { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
-              ].map((puppy, index) => (
-                <div 
-                  key={index} 
-                  className="flex-none w-64 h-64 mr-4 group cursor-pointer"
-                  onClick={() => {
-                    setSelectedImage({src: puppy.src, name: puppy.name});
-                    setIsImagePopupOpen(true);
-                  }}
-                >
-                  <div className="w-full h-full overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                    <img 
-                      src={puppy.src}
-                      alt={puppy.alt}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
+            ].map((puppy, index) => (
+              <div 
+                key={index} 
+                className="group cursor-pointer"
+                onClick={() => {
+                  setSelectedImage({src: puppy.src, name: puppy.name});
+                  setIsImagePopupOpen(true);
+                }}
+              >
+                <div className="aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                  <img 
+                    src={puppy.src}
+                    alt={puppy.alt}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
                 </div>
-              ))}
-            </div>
+
+              </div>
+            ))}
           </div>
         </div>
         
