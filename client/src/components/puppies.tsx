@@ -52,6 +52,10 @@ import previousWhitePuppy from "@assets/35_1755546892077.png";
 import previousWhiteWithToys from "@assets/36_1755547953541.png";
 import previousChocolateStanding from "@assets/37_1755547953551.png";
 import previousFoxRedPuppy from "@assets/38_1755547953551.png";
+import newYellowSitting from "@assets/39_1755549645613.png";
+import newWhiteStanding from "@assets/40_1755549645619.png";
+import newYellowWithToys from "@assets/41_1755549645617.png";
+import newBlackWithBanana from "@assets/Puppies 5x4 (4 x 4 in) (15)_1755549884489.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -1242,6 +1246,10 @@ export default function Puppies() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
+              { src: newYellowSitting, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
+              { src: newYellowWithToys, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
+              { src: newWhiteStanding, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
+              { src: newBlackWithBanana, alt: "Previous puppy - Black Lab with yellow banana toy", name: "Black" },
               { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
               { src: previousFoxRedPuppy, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
               { src: previousChocolateStanding, alt: "Previous puppy - Chocolate Lab puppy standing in grass", name: "Chocolate" },
