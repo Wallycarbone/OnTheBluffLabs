@@ -203,7 +203,7 @@ export default function Training() {
 
         {/* Call to Action Section */}
         <div className="mt-20">
-          <Card className="border-2 rounded-2xl shadow-xl overflow-hidden" style={{background: 'linear-gradient(135deg, #6d761d 0%, #7a8020 50%, #5a5f18 100%)', borderColor: '#7a8020'}}>
+          <Card className="border-2 rounded-2xl shadow-xl overflow-hidden" style={{background: 'linear-gradient(135deg, #8b9023 0%, #6d761d 30%, #4a4f12 70%, #3a3f0f 100%)', borderColor: '#7a8020'}}>
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
                 Start Your Puppy's Training Journey
