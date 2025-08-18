@@ -1225,18 +1225,12 @@ export default function Puppies() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-            AVAILABLE LITTERS
+            GENERATIONS OF EXCELLENCE
           </h2>
         </div>
 
         {/* Puppy Photo Gallery */}
         <div className="mb-20">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-              Generations of Excellence
-            </h3>
-            <div className="w-16 h-1 mx-auto rounded-full" style={{backgroundColor: '#6d761d'}}></div>
-          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
