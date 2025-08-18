@@ -151,14 +151,6 @@ export default function Training() {
 
         {/* Training Services */}
         <div className="mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-              Our Training Programs
-            </h3>
-            <p className="text-lg font-source-sans max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
-              Choose the program that best fits your family's needs and your puppy's development stage.
-            </p>
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainingServices.map((service, index) => (
               <Card key={index} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
