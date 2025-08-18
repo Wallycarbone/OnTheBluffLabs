@@ -46,6 +46,9 @@ import previousChocolate1 from "@assets/Puppies 5x4 (5)_1755546201192.png";
 import previousChocolate2 from "@assets/Puppies 5x4 (5)_1755544596778.png";
 import previousYellowRope from "@assets/Puppies 5x4 (4 x 4 in) (12)_1755546531132.png";
 import previousBlackToy from "@assets/Puppies 5x4 (4 x 4 in) (11)_1755546531140.png";
+import previousChocolateToys from "@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png";
+import previousChocolateRainbow from "@assets/34_1755546892072.png";
+import previousWhitePuppy from "@assets/35_1755546892077.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -1236,16 +1239,19 @@ export default function Puppies() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
-              { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Daisy" },
-              { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Scout" },
-              { src: previousCooper, alt: "Previous puppy - Happy yellow Lab on leash", name: "Cooper" },
-              { src: previousShadow, alt: "Previous puppy - Black Lab with colorful toys", name: "Shadow" },
-              { src: previousSunny, alt: "Previous puppy - Yellow Lab puppy in grass", name: "Sunny" },
-              { src: previousChocolate1, alt: "Previous puppy - Chocolate Lab with orange ball", name: "Cocoa" },
-              { src: fernApplePieImage, alt: "Fern (Apple Pie) - Chocolate Labrador puppy", name: "Fern" },
-              { src: hollyPuppyLoveImage, alt: "Holly - Puppy Love themed portrait", name: "Holly" },
-              { src: hazelPeacockImage, alt: "Hazel - Peacock themed puppy photo", name: "Hazel" },
-              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Summer" }
+              { src: previousChocolateToys, alt: "Previous puppy - Chocolate Lab with colorful toys", name: "Chocolate" },
+              { src: previousChocolateRainbow, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
+              { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
+              { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
+              { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Black" },
+              { src: previousCooper, alt: "Previous puppy - Happy yellow Lab on leash", name: "Yellow" },
+              { src: previousShadow, alt: "Previous puppy - Black Lab with colorful toys", name: "Black" },
+              { src: previousSunny, alt: "Previous puppy - Yellow Lab puppy in grass", name: "Yellow" },
+              { src: previousChocolate1, alt: "Previous puppy - Chocolate Lab with orange ball", name: "Chocolate" },
+              { src: fernApplePieImage, alt: "Fern (Apple Pie) - Chocolate Labrador puppy", name: "Chocolate" },
+              { src: hollyPuppyLoveImage, alt: "Holly - Puppy Love themed portrait", name: "Themed" },
+              { src: hazelPeacockImage, alt: "Hazel - Peacock themed puppy photo", name: "Themed" },
+              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Themed" }
             ].map((puppy, index) => (
               <div 
                 key={index} 
