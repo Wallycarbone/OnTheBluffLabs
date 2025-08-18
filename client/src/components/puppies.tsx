@@ -44,6 +44,8 @@ import previousShadow from "@assets/Puppies 5x4 (3)_1755534520644.png";
 import previousSunny from "@assets/Puppies 5x4 (4)_1755535459095.png";
 import previousChocolate1 from "@assets/Puppies 5x4 (5)_1755546201192.png";
 import previousChocolate2 from "@assets/Puppies 5x4 (5)_1755544596778.png";
+import previousYellowRope from "@assets/Puppies 5x4 (4 x 4 in) (12)_1755546531132.png";
+import previousBlackToy from "@assets/Puppies 5x4 (4 x 4 in) (11)_1755546531140.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -1234,16 +1236,16 @@ export default function Puppies() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
+              { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Daisy" },
+              { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Scout" },
               { src: previousCooper, alt: "Previous puppy - Happy yellow Lab on leash", name: "Cooper" },
               { src: previousShadow, alt: "Previous puppy - Black Lab with colorful toys", name: "Shadow" },
               { src: previousSunny, alt: "Previous puppy - Yellow Lab puppy in grass", name: "Sunny" },
               { src: previousChocolate1, alt: "Previous puppy - Chocolate Lab with orange ball", name: "Cocoa" },
-              { src: previousChocolate2, alt: "Previous puppy - Multiple chocolate Lab puppies", name: "The Chocolate Pack" },
               { src: fernApplePieImage, alt: "Fern (Apple Pie) - Chocolate Labrador puppy", name: "Fern" },
               { src: hollyPuppyLoveImage, alt: "Holly - Puppy Love themed portrait", name: "Holly" },
               { src: hazelPeacockImage, alt: "Hazel - Peacock themed puppy photo", name: "Hazel" },
-              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Summer" },
-              { src: willowSeaglassImage, alt: "Willow - Seaglass themed puppy photo", name: "Willow" }
+              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Summer" }
             ].map((puppy, index) => (
               <div 
                 key={index} 
