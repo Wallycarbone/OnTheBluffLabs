@@ -1262,9 +1262,7 @@ export default function Puppies() {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
-                <p className="text-center mt-2 text-sm font-source-sans" style={{color: '#6d761d'}}>
-                  {puppy.name}
-                </p>
+
               </div>
             ))}
           </div>
