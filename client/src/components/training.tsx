@@ -56,16 +56,29 @@ export default function Training() {
           </h3>
         </div>
 
-        {/* Training Philosophy Essay - Part 1 */}
+        {/* Training Philosophy Essay - Part 1 with Image */}
         <div className="mb-16">
-          <div className="max-w-5xl mx-auto">
-            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              In 2019, Swedish researchers found that dogs mirror their owners' stress levels with remarkable accuracy, highlighting the profound impact stress can have on both canine welfare and family life. <strong>Puppies exposed to stress during their critical developmental period can become trapped in a cycle where anxiety feeds their owner's frustration, which in turn heightens the dog's stress. Professionally trained puppies break this cycle, allowing families to start their relationship with calm, cooperative bonds.</strong>
-            </p>
-            
-            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              The training process that unfolds at On the Bluff represents a systematic approach to canine development that addresses the full spectrum of skills necessary for modern family life. From the earliest stages, where puppies master fundamental cues like sit, down, and recall, through advanced protocols that include sustained stays, public socialization, and complex behavioral chains, each dog progresses through carefully structured phases designed to build both competence and confidence.
-            </p>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+                  In 2019, Swedish researchers found that dogs mirror their owners' stress levels with remarkable accuracy, highlighting the profound impact stress can have on both canine welfare and family life. <strong>Puppies exposed to stress during their critical developmental period can become trapped in a cycle where anxiety feeds their owner's frustration, which in turn heightens the dog's stress. Professionally trained puppies break this cycle, allowing families to start their relationship with calm, cooperative bonds.</strong>
+                </p>
+                
+                <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+                  The training process that unfolds at On the Bluff represents a systematic approach to canine development that addresses the full spectrum of skills necessary for modern family life. From the earliest stages, where puppies master fundamental cues like sit, down, and recall, through advanced protocols that include sustained stays, public socialization, and complex behavioral chains, each dog progresses through carefully structured phases designed to build both competence and confidence.
+                </p>
+              </div>
+              
+              <div className="lg:order-last">
+                <img 
+                  src="/attached_assets/Y30A4254EstraMoonMspeacock (1)_1755544387278.JPG"
+                  alt="Young yellow Labrador puppy with training toy, demonstrating early developmental play and learning engagement"
+                  className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                  style={{objectPosition: '50% 40%'}}
+                />
+              </div>
+            </div>
           </div>
         </div>
 
