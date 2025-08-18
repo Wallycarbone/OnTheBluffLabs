@@ -17,21 +17,30 @@ export default function Training() {
       description: "Essential socialization, basic cues, and house training for puppies 8-10 weeks",
       features: ["Basic cues (sit, down, and come)", "Foundation house training", "Foundation crate training", "Socialization basics"],
       duration: "2-week program",
-      icon: <Sprout className="w-6 h-6" style={{color: '#6d761d'}} />
+      icon: <Sprout className="w-6 h-6" style={{color: '#6d761d'}} />,
+      image: "/attached_assets/Y30A3361chehkovaspinglow (1)_1754773436225.JPG",
+      imageAlt: "Young Labrador puppy learning basic training foundations",
+      imagePosition: "50% 40%"
     },
     {
       title: "Master's Degree",
       description: "Comprehensive training for well-mannered family companions for puppies 8-14 weeks",
       features: ["Leash walking", "Recall training", "Enhanced house & crate training", "Public socialization trips"],
       duration: "6-week program", 
-      icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />
+      icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />,
+      image: "/attached_assets/Y30A3049_1755468632615.jpg",
+      imageAlt: "Well-trained Labrador demonstrating advanced obedience and socialization skills",
+      imagePosition: "50% 30%"
     },
     {
       title: "Puppy PhD",
       description: "Comprehensive evaluation and personalized training solutions tailored to your family's specific needs and goals",
       features: ["Pickup after the teething phase", "Advanced house training & crate training", "Therapy & emotional support preparation", "Family coaching & support"],
       duration: "4-month program",
-      icon: <GraduationCap className="w-6 h-6" style={{color: '#6d761d'}} />
+      icon: <GraduationCap className="w-6 h-6" style={{color: '#6d761d'}} />,
+      image: "/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (78)_1755526844923.png",
+      imageAlt: "Chocolate Labrador showcasing advanced training and confident temperament in outdoor setting",
+      imagePosition: "50% 60%"
     }
   ];
 
@@ -124,6 +133,16 @@ export default function Training() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainingServices.map((service, index) => (
               <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                {/* Image Section */}
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={service.image}
+                    alt={service.imageAlt}
+                    className="w-full h-full object-cover"
+                    style={{objectPosition: service.imagePosition || '50% 50%'}}
+                  />
+                </div>
+                
                 <CardContent className="p-6">
                   <div className="flex items-start mb-4">
                     {service.icon}
