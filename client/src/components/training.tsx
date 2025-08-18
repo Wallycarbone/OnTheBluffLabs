@@ -15,7 +15,7 @@ export default function Training() {
     {
       title: "Bachelor's Degree",
       description: "Essential Socialization, Foundational Training & House Manners for Puppies 8–10 Weeks",
-      features: ["Get home after the pup's initial fear period, reducing stress for puppy", "Establishes healthy routines for potty training, crate comfort, and polite behavior in the home", "Helps you and your puppy start building clear communication and trust right away", "Includes virtual training support and a free day of board and train with the purchase of a board & train week in the future"],
+      features: ["Bring the puppy home after their initial fear period, reducing stress from day one", "Establishes healthy routines for potty training, crate comfort, and polite behavior in the home", "Helps you and your puppy start building clear communication and trust right away", "Includes virtual training support and a free day of board and train with the purchase of a board & train week in the future"],
       duration: "2-week program",
       icon: <Sprout className="w-6 h-6" style={{color: '#6d761d'}} />,
       image: "/attached_assets/Puppies 5x4 (3)_1755534520644.png",
