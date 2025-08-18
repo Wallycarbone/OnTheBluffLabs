@@ -1250,14 +1250,7 @@ export default function Puppies() {
               { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
               { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
               { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Black" },
-              { src: previousCooper, alt: "Previous puppy - Happy yellow Lab on leash", name: "Yellow" },
-              { src: previousShadow, alt: "Previous puppy - Black Lab with colorful toys", name: "Black" },
-              { src: previousSunny, alt: "Previous puppy - Yellow Lab puppy in grass", name: "Yellow" },
-              { src: previousChocolate1, alt: "Previous puppy - Chocolate Lab with orange ball", name: "Chocolate" },
-              { src: fernApplePieImage, alt: "Fern (Apple Pie) - Chocolate Labrador puppy", name: "Chocolate" },
-              { src: hollyPuppyLoveImage, alt: "Holly - Puppy Love themed portrait", name: "Themed" },
-              { src: hazelPeacockImage, alt: "Hazel - Peacock themed puppy photo", name: "Themed" },
-              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Themed" }
+
             ].map((puppy, index) => (
               <div 
                 key={index} 
