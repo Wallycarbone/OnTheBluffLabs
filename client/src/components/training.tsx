@@ -70,10 +70,7 @@ export default function Training() {
                     Our Training Philosophy
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Our Labradors are bred for naturally intelligent, cooperative temperaments that provide an 
-                    exceptional foundation for training. Our training center builds upon these inherent qualities using gentle, 
-                    veterinarian-recommended methods that strengthen the natural bond between dog and family. 
-                    We begin training puppies at 8 weeks of age and working in concert with your dog's intelligence and personality, we create lasting training success.
+                    Our Labradors are bred for naturally intelligent, cooperative temperaments that provide an exceptional foundation for training. Our training center builds upon these inherent qualities using gentle methods that strengthen the natural bond between dog and family.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start">
