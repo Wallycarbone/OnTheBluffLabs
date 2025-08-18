@@ -18,9 +18,9 @@ export default function Training() {
       features: ["Basic cues (sit, down, and come)", "Foundation house training", "Foundation crate training", "Socialization basics"],
       duration: "2-week program",
       icon: <Sprout className="w-6 h-6" style={{color: '#6d761d'}} />,
-      image: "/attached_assets/Puppies 5x4 (2)_1755530661173.png",
-      imageAlt: "Golden Labrador puppy demonstrating perfect sit position with attentive expression",
-      imagePosition: "50% 45%"
+      image: "/attached_assets/Puppies 5x4 (3)_1755534520644.png",
+      imageAlt: "Young black Labrador puppy with colorful training toys, representing early socialization and play-based learning",
+      imagePosition: "50% 40%"
     },
     {
       title: "Master's Degree",
