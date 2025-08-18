@@ -47,19 +47,20 @@ export default function Training() {
   return (
     <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
             THE LEGACY LIVES ON
           </h2>
-          <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-8 tracking-wide" style={{color: '#6d761d'}}>
+          <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-6 tracking-wide" style={{color: '#6d761d'}}>
             Training Tomorrow's Labradors
           </h3>
+          <div className="w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#6d761d'}}></div>
         </div>
 
         {/* Training Philosophy Essay - Part 1 with Image */}
-        <div className="mb-16">
+        <div className="mb-20">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <img 
                   src="/attached_assets/Y30A1549black pink diamond (1)_1755544718521.JPG"
@@ -83,12 +84,12 @@ export default function Training() {
         </div>
 
         {/* Training Philosophy */}
-        <div className="mb-16">
-          <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="mb-20">
+          <Card className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <CardContent className="p-10">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+                  <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
                     Our Training Philosophy
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
@@ -149,52 +150,60 @@ export default function Training() {
         </div>
 
         {/* Training Services */}
-        <div className="mb-16">
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+              Our Training Programs
+            </h3>
+            <p className="text-lg font-source-sans max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
+              Choose the program that best fits your family's needs and your puppy's development stage.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainingServices.map((service, index) => (
-              <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <Card key={index} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 {/* Image Section */}
-                <div className="h-80 overflow-hidden">
+                <div className="h-80 overflow-hidden relative">
                   <img 
                     src={service.image}
                     alt={service.imageAlt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     style={{objectPosition: service.imagePosition || '50% 50%'}}
                   />
+                  <div className="absolute top-4 right-4">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-md">
+                      {service.icon}
+                    </div>
+                  </div>
                 </div>
                 
-                <CardContent className="p-6">
-                  <div className="flex items-start mb-4">
-                    {service.icon}
-                    <div className="ml-3">
-                      <h3 className="text-lg font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-                        {service.title}
-                      </h3>
-                      <div className="flex items-center mt-1">
-                        <Clock className="w-4 h-4 mr-1" style={{color: '#6d761d'}} />
-                        <span className="text-xs font-montserrat font-medium" style={{color: '#6d761d'}}>
-                          {service.duration}
-                        </span>
-                      </div>
+                <CardContent className="p-7">
+                  <div className="mb-5">
+                    <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
+                      {service.title}
+                    </h3>
+                    <div className="flex items-center">
+                      <Clock className="w-4 h-4 mr-2" style={{color: '#6d761d'}} />
+                      <span className="text-sm font-montserrat font-medium" style={{color: '#6d761d'}}>
+                        {service.duration}
+                      </span>
                     </div>
                   </div>
                   
-                  <p className="text-sm font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                  <p className="text-sm font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
                     {service.description}
                   </p>
                   
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start">
-                        <Star className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{color: '#6d761d'}} />
-                        <span className="text-xs font-source-sans" style={{color: '#4b4b4b'}}>
+                        <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></div>
+                        <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
                           {feature}
                         </span>
                       </div>
                     ))}
                   </div>
-                  
-
                 </CardContent>
               </Card>
             ))}
