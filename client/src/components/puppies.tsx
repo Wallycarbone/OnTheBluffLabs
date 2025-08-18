@@ -49,6 +49,9 @@ import previousBlackToy from "@assets/Puppies 5x4 (4 x 4 in) (11)_1755546531140.
 import previousChocolateToys from "@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png";
 import previousChocolateRainbow from "@assets/34_1755546892072.png";
 import previousWhitePuppy from "@assets/35_1755546892077.png";
+import previousWhiteWithToys from "@assets/36_1755547953541.png";
+import previousChocolateStanding from "@assets/37_1755547953551.png";
+import previousFoxRedPuppy from "@assets/38_1755547953551.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -1239,6 +1242,9 @@ export default function Puppies() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
+              { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
+              { src: previousFoxRedPuppy, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
+              { src: previousChocolateStanding, alt: "Previous puppy - Chocolate Lab puppy standing in grass", name: "Chocolate" },
               { src: previousChocolateToys, alt: "Previous puppy - Chocolate Lab with colorful toys", name: "Chocolate" },
               { src: previousChocolateRainbow, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
               { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
