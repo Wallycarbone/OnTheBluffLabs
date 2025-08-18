@@ -56,6 +56,8 @@ import newYellowSitting from "@assets/39_1755549645613.png";
 import newWhiteStanding from "@assets/40_1755549645619.png";
 import newYellowWithToys from "@assets/41_1755549645617.png";
 import newBlackWithBanana from "@assets/Puppies 5x4 (4 x 4 in) (15)_1755549884489.png";
+import newGoldenWithToys from "@assets/Puppies 5x4 (4 x 4 in) (16)_1755550036481.png";
+import newSaddleMarked from "@assets/Puppies 5x4 (4 x 4 in) (17)_1755550198365.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -1246,6 +1248,8 @@ export default function Puppies() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
+              { src: newGoldenWithToys, alt: "Previous puppy - Golden Lab standing with colorful toys", name: "Golden" },
+              { src: newSaddleMarked, alt: "Previous puppy - Lab with unique saddle markings and toys", name: "Saddled" },
               { src: newYellowSitting, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
               { src: newYellowWithToys, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
               { src: newWhiteStanding, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
