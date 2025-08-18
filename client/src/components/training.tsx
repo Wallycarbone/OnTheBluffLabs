@@ -35,7 +35,7 @@ export default function Training() {
     {
       title: "Puppy PhD",
       description: "Elite Puppy Program: Comprehensive Evaluation & One-on-One Training Built Just for Your Home and Family",
-      features: ["Get home after the pup's initial fear period, reducing stress for puppy", "Establishes healthy routines for potty training, crate comfort, and polite behavior in the home", "Helps you and your puppy start building clear communication and trust right away", "Includes virtual training support and a free day of board and train with the purchase of a board & train week in the future"],
+      features: ["Receive a comprehensive evaluation to design a training plan tailored to your puppy and family's unique goals", "Address specific needs with fully customized lessons beyond standard obedience", "Develop advanced focus, impulse control, and calm behaviors essential for therapy or service prospects", "Strengthen confidence and adaptability through guided socialization in diverse environments", "Foster deep connection and communication, preparing your puppy for meaningful partnership work", "Benefit from ongoing trainer support and flexible program adjustments as your puppy progresses"],
       duration: "4-month program",
       icon: <GraduationCap className="w-6 h-6" style={{color: '#6d761d'}} />,
       image: "/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (78)_1755526844923.png",
