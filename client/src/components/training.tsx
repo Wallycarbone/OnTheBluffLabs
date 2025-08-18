@@ -28,9 +28,9 @@ export default function Training() {
       features: ["Leash walking", "Recall training", "Enhanced house & crate training", "Public socialization trips"],
       duration: "6-week program", 
       icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />,
-      image: "/attached_assets/Y30A3049_1755468632615.jpg",
-      imageAlt: "Well-trained Labrador demonstrating advanced obedience and socialization skills",
-      imagePosition: "50% 30%"
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (10)_1755528477213.png",
+      imageAlt: "Happy Labrador puppy with leash demonstrating comprehensive training progress",
+      imagePosition: "50% 40%"
     },
     {
       title: "Puppy PhD",
