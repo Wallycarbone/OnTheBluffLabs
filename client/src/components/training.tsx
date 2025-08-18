@@ -135,9 +135,16 @@ export default function Training() {
               Perhaps the most valuable aspect of our integrated program is how it allows each puppy to reach their individual potential while maintaining the behavioral foundation necessary for family life. We don't train every dog identically—we develop their unique abilities while ensuring they all possess the core skills necessary for success. <strong>This approach creates what researchers call "confident versatility"—dogs who are both reliably well-behaved and adaptable to new situations.</strong>
             </p>
             
-            <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
-              By observing patterns across genetic lines, we refine both our breeding and training programs, continuously improving temperament, trainability, and emotional intelligence. <strong>The result: puppies who enter their families as confident, emotionally stable companions, ready to form deep, lasting bonds and bring the intelligence, joy, and loyalty that make Labradors so beloved.</strong>
+            <p className="font-source-sans text-lg leading-[1.6] mb-8 text-left" style={{color: '#4b4b4b'}}>
+              By observing patterns across genetic lines, we refine both our breeding and training programs, continuously improving temperament, trainability, and emotional intelligence.
             </p>
+            
+            {/* Emphasized Result Statement */}
+            <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-l-4 border-amber-400 p-6 rounded-lg shadow-sm mb-12">
+              <p className="font-source-sans text-xl font-semibold leading-[1.6] text-left" style={{color: '#2d3748'}}>
+                <span className="text-amber-600 font-bold">The result:</span> puppies who enter their families as confident, emotionally stable companions, ready to form deep, lasting bonds and bring the intelligence, joy, and loyalty that make Labradors so beloved.
+              </p>
+            </div>
           </div>
         </div>
 
