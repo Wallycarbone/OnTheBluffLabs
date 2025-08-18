@@ -1243,11 +1243,13 @@ export default function Puppies() {
 
         {/* Puppy Photo Gallery */}
         <div className="mb-20 relative">
-          {/* Integrated Title Overlay */}
-          <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg">
-            <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              GENERATIONS OF EXCELLENCE
-            </h3>
+          {/* Centered Title Overlay */}
+          <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+            <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-oswald font-normal tracking-wide text-center" style={{color: '#11100f'}}>
+                GENERATIONS OF EXCELLENCE
+              </h3>
+            </div>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
