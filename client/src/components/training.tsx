@@ -203,7 +203,7 @@ export default function Training() {
 
         {/* Call to Action Section */}
         <div className="mt-20">
-          <Card className="bg-gradient-to-br from-amber-600 via-orange-600 to-red-600 border-2 border-amber-400 rounded-2xl shadow-xl overflow-hidden">
+          <Card className="border-2 rounded-2xl shadow-xl overflow-hidden" style={{background: 'linear-gradient(135deg, #6d761d 0%, #5a5f18 100%)', borderColor: '#7a8020'}}>
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
                 Start Your Puppy's Training Journey
@@ -215,7 +215,7 @@ export default function Training() {
                 <Button 
                   onClick={scrollToContact}
                   className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
-                  style={{color: '#b45309'}}
+                  style={{color: '#6d761d'}}
                 >
                   Begin Your Journey
                 </Button>
