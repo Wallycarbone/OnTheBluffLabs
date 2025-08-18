@@ -64,7 +64,7 @@ export default function Training() {
                 <img 
                   src="/attached_assets/Y30A1549black pink diamond (1)_1755544718521.JPG"
                   alt="Young yellow Labrador puppy in natural outdoor setting, showcasing confident stance and training readiness"
-                  className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                  className="w-full h-[28rem] object-cover rounded-2xl shadow-lg"
                   style={{objectPosition: '50% 45%'}}
                 />
               </div>
