@@ -41,11 +41,9 @@ import matureDogsImage from "@assets/Breeding Dogs 5x4_1753642698754.png";
 // Previous puppy images for "Generations of Excellence" gallery
 import previousCooper from "@assets/Puppies 5x4 (2)_1755530661173.png";
 import previousShadow from "@assets/Puppies 5x4 (3)_1755534520644.png";
-import previousDiamond from "@assets/Y30A1549black pink diamond (1)_1755544718521.JPG";
 import previousSunny from "@assets/Puppies 5x4 (4)_1755535459095.png";
-import previousLucy from "@assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG";
-import previousMocha from "@assets/Y30A4254EstraMoonMspeacock (1)_1755544387278.JPG";
-import previousPack from "@assets/Puppies 5x4 (5)_1755544596778.png";
+import previousChocolate1 from "@assets/Puppies 5x4 (5)_1755546201192.png";
+import previousChocolate2 from "@assets/Puppies 5x4 (5)_1755544596778.png";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -1244,14 +1242,14 @@ export default function Puppies() {
             {[
               { src: previousCooper, alt: "Previous puppy - Happy yellow Lab on leash", name: "Cooper" },
               { src: previousShadow, alt: "Previous puppy - Black Lab with colorful toys", name: "Shadow" },
-              { src: previousDiamond, alt: "Previous puppy - White/yellow Lab puppy standing", name: "Diamond" },
               { src: previousSunny, alt: "Previous puppy - Yellow Lab puppy in grass", name: "Sunny" },
-              { src: previousLucy, alt: "Previous puppy - Beautiful yellow Lab portrait", name: "Lucy" },
-              { src: previousMocha, alt: "Previous puppy - Chocolate Lab with family", name: "Mocha" },
-              { src: previousPack, alt: "Previous puppy - Multiple Lab puppies together", name: "The Pack" },
+              { src: previousChocolate1, alt: "Previous puppy - Chocolate Lab with orange ball", name: "Cocoa" },
+              { src: previousChocolate2, alt: "Previous puppy - Multiple chocolate Lab puppies", name: "The Chocolate Pack" },
               { src: fernApplePieImage, alt: "Fern (Apple Pie) - Chocolate Labrador puppy", name: "Fern" },
               { src: hollyPuppyLoveImage, alt: "Holly - Puppy Love themed portrait", name: "Holly" },
-              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Summer" }
+              { src: hazelPeacockImage, alt: "Hazel - Peacock themed puppy photo", name: "Hazel" },
+              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Summer" },
+              { src: willowSeaglassImage, alt: "Willow - Seaglass themed puppy photo", name: "Willow" }
             ].map((puppy, index) => (
               <div 
                 key={index} 
