@@ -1239,14 +1239,16 @@ export default function Puppies() {
   return (
     <section id="puppies" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-            GENERATIONS OF EXCELLENCE
-          </h2>
-        </div>
+
 
         {/* Puppy Photo Gallery */}
-        <div className="mb-20">
+        <div className="mb-20 relative">
+          {/* Integrated Title Overlay */}
+          <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg">
+            <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              GENERATIONS OF EXCELLENCE
+            </h3>
+          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {[
