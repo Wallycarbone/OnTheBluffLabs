@@ -119,7 +119,7 @@ export default function Training() {
         <div className="mb-20">
           <div className="max-w-5xl mx-auto">
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              Perhaps the most valuable aspect of our integrated program is how it allows each puppy to reach their individual potential while maintaining the behavioral foundation necessary for family life. We don't train every dog identically—we develop their unique abilities while ensuring they all possess the core skills necessary for success. This approach creates what researchers call "confident versatility"—dogs who are both reliably well-behaved and adaptable to new situations.
+              Perhaps the most valuable aspect of our integrated program is how it allows each puppy to reach their individual potential while maintaining the behavioral foundation necessary for family life. We don't train every dog identically—we develop their unique abilities while ensuring they all possess the core skills necessary for success. <strong>This approach creates what researchers call "confident versatility"—dogs who are both reliably well-behaved and adaptable to new situations.</strong>
             </p>
             
             <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
