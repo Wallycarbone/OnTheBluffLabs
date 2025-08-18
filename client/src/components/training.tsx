@@ -55,7 +55,7 @@ export default function Training() {
             </p>
             
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              The training process that unfolds at On the Bluff represents a systematic approach to canine development that addresses the full spectrum of skills necessary for modern family life. From the earliest stages, where puppies master fundamental commands like sit, down, and recall, through advanced protocols that include sustained stays, public socialization, and complex behavioral chains, each dog progresses through carefully structured phases designed to build both competence and confidence.
+              The training process that unfolds at On the Bluff represents a systematic approach to canine development that addresses the full spectrum of skills necessary for modern family life. From the earliest stages, where puppies master fundamental cues like sit, down, and recall, through advanced protocols that include sustained stays, public socialization, and complex behavioral chains, each dog progresses through carefully structured phases designed to build both competence and confidence.
             </p>
           </div>
         </div>
