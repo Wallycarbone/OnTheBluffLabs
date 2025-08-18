@@ -14,7 +14,7 @@ export default function Training() {
   const trainingServices = [
     {
       title: "Bachelor's Degree",
-      description: "Essential socialization, basic cues, and house training for puppies 8-10 weeks",
+      description: "Essential Socialization, Foundational Training & House Manners for Puppies 8–10 Weeks",
       features: ["Basic cues (sit, down, and come)", "Foundation house training", "Foundation crate training", "Socialization basics"],
       duration: "2-week program",
       icon: <Sprout className="w-6 h-6" style={{color: '#6d761d'}} />,
