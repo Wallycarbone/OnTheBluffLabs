@@ -62,10 +62,10 @@ export default function Training() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544486604.JPG"
-                  alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
+                  src="/attached_assets/Puppies 5x4 (5)_1755544596778.png"
+                  alt="Chocolate Labrador puppy with training ball, demonstrating focused engagement and early developmental learning"
                   className="w-full h-96 object-cover rounded-2xl shadow-lg"
-                  style={{objectPosition: '50% 35%'}}
+                  style={{objectPosition: '50% 40%'}}
                 />
               </div>
               
