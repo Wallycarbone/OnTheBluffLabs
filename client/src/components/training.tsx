@@ -117,10 +117,10 @@ export default function Training() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="/attached_assets/Y30A3361chehkovaspinglow (1)_1754773436225.JPG"
-                    alt="Adorable chocolate Lab puppy with training toys, showcasing early development and learning readiness"
+                    src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
+                    alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
                     className="w-full h-96 object-cover rounded-xl shadow-lg"
-                    style={{objectPosition: '50% 40%'}}
+                    style={{objectPosition: '50% 35%'}}
                   />
                 </div>
               </div>
