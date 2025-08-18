@@ -1230,7 +1230,7 @@ export default function Puppies() {
         <div className="mb-20">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-              Our Beautiful Puppies
+              Generations of Excellence
             </h3>
             <div className="w-16 h-1 mx-auto rounded-full" style={{backgroundColor: '#6d761d'}}></div>
           </div>
