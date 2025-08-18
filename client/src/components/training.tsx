@@ -47,8 +47,8 @@ export default function Training() {
           </h3>
         </div>
 
-        {/* Training Philosophy Essay */}
-        <div className="mb-20">
+        {/* Training Philosophy Essay - Part 1 */}
+        <div className="mb-16">
           <div className="max-w-5xl mx-auto">
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
               In 2019, Swedish researchers found that dogs mirror their owners' stress levels with remarkable accuracy, highlighting the profound impact stress can have on both canine welfare and family life. Puppies exposed to stress during their critical developmental period can become trapped in a cycle where anxiety feeds their owner's frustration, which in turn heightens the dog's stress. Professionally trained puppies break this cycle, allowing families to start their relationship with calm, cooperative bonds.
@@ -56,14 +56,6 @@ export default function Training() {
             
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
               The training process that unfolds at On the Bluff represents a systematic approach to canine development that addresses the full spectrum of skills necessary for modern family life. From the earliest stages, where puppies master fundamental commands like sit, down, and recall, through advanced protocols that include sustained stays, public socialization, and complex behavioral chains, each dog progresses through carefully structured phases designed to build both competence and confidence.
-            </p>
-            
-            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              Perhaps the most valuable aspect of our integrated program is how it allows each puppy to reach their individual potential while maintaining the behavioral foundation necessary for family life. We don't train every dog identically—we develop their unique abilities while ensuring they all possess the core skills necessary for success. This approach creates what researchers call "confident versatility"—dogs who are both reliably well-behaved and adaptable to new situations.
-            </p>
-            
-            <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
-              By observing patterns across genetic lines, we refine both our breeding and training programs, continuously improving temperament, trainability, and emotional intelligence. The result: puppies who enter their families as confident, emotionally stable companions, ready to form deep, lasting bonds and bring the intelligence, joy, and loyalty that make Labradors so beloved.
             </p>
           </div>
         </div>
@@ -115,6 +107,19 @@ export default function Training() {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Training Philosophy Essay - Part 2 */}
+        <div className="mb-20">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
+              Perhaps the most valuable aspect of our integrated program is how it allows each puppy to reach their individual potential while maintaining the behavioral foundation necessary for family life. We don't train every dog identically—we develop their unique abilities while ensuring they all possess the core skills necessary for success. This approach creates what researchers call "confident versatility"—dogs who are both reliably well-behaved and adaptable to new situations.
+            </p>
+            
+            <p className="font-source-sans text-lg leading-[1.6] mb-12 text-left" style={{color: '#4b4b4b'}}>
+              By observing patterns across genetic lines, we refine both our breeding and training programs, continuously improving temperament, trainability, and emotional intelligence. The result: puppies who enter their families as confident, emotionally stable companions, ready to form deep, lasting bonds and bring the intelligence, joy, and loyalty that make Labradors so beloved.
+            </p>
+          </div>
         </div>
 
         {/* Training Services */}
