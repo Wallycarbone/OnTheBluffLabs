@@ -51,7 +51,7 @@ export default function Training() {
         <div className="mb-16">
           <div className="max-w-5xl mx-auto">
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              In 2019, Swedish researchers found that dogs mirror their owners' stress levels with remarkable accuracy, highlighting the profound impact stress can have on both canine welfare and family life. Puppies exposed to stress during their critical developmental period can become trapped in a cycle where anxiety feeds their owner's frustration, which in turn heightens the dog's stress. Professionally trained puppies break this cycle, allowing families to start their relationship with calm, cooperative bonds.
+              In 2019, Swedish researchers found that dogs mirror their owners' stress levels with remarkable accuracy, highlighting the profound impact stress can have on both canine welfare and family life. <strong>Puppies exposed to stress during their critical developmental period can become trapped in a cycle where anxiety feeds their owner's frustration, which in turn heightens the dog's stress. Professionally trained puppies break this cycle, allowing families to start their relationship with calm, cooperative bonds.</strong>
             </p>
             
             <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
