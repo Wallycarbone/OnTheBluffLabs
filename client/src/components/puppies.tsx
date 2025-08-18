@@ -1251,19 +1251,19 @@ export default function Puppies() {
             {[
               { src: newBlackOnRocks, alt: "Previous puppy - Black Lab puppy on rocks with polka dot toy", name: "Black" },
               { src: newGoldenWithToys, alt: "Previous puppy - Golden Lab standing with colorful toys", name: "Golden" },
-              { src: newSaddleMarked, alt: "Previous puppy - Lab with unique saddle markings and toys", name: "Saddled" },
-              { src: newYellowSitting, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
-              { src: newYellowWithToys, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
-              { src: newWhiteStanding, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
-              { src: newBlackWithBanana, alt: "Previous puppy - Black Lab with yellow banana toy", name: "Black" },
               { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
-              { src: previousFoxRedPuppy, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
               { src: previousChocolateStanding, alt: "Previous puppy - Chocolate Lab puppy standing in grass", name: "Chocolate" },
+              { src: previousFoxRedPuppy, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
+              { src: newBlackWithBanana, alt: "Previous puppy - Black Lab with yellow banana toy", name: "Black" },
+              { src: newYellowSitting, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
+              { src: newWhiteStanding, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
               { src: previousChocolateToys, alt: "Previous puppy - Chocolate Lab with colorful toys", name: "Chocolate" },
-              { src: previousChocolateRainbow, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
-              { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
-              { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
+              { src: newSaddleMarked, alt: "Previous puppy - Lab with unique saddle markings and toys", name: "Saddled" },
               { src: previousBlackToy, alt: "Previous puppy - Black Lab with yellow toy", name: "Black" },
+              { src: newYellowWithToys, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
+              { src: previousWhitePuppy, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
+              { src: previousChocolateRainbow, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
+              { src: previousYellowRope, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
 
             ].map((puppy, index) => (
               <div 
