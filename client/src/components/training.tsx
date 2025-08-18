@@ -25,7 +25,7 @@ export default function Training() {
     {
       title: "Master's Degree",
       description: "Next-Level Puppy Foundations: Socialization & Training for Polite, Well-Mannered Family Companions 8–14 Weeks",
-      features: ["Leash walking", "Recall training", "Enhanced house & crate training", "Public socialization trips"],
+      features: ["Everyone in the Bachelor's program, plus:", "Essential cues like stay, which to promotes patience and self-control", "Establishes healthy leash walking habits for enjoyable, stress-free outings", "Introduces public socialization to build confidence in new environments and around people", "Includes virtual training support and a free day of board & train with the purchase of a future week-long program"],
       duration: "6-week program", 
       icon: <Award className="w-6 h-6" style={{color: '#6d761d'}} />,
       image: "/attached_assets/Puppies 5x4 (4)_1755535459095.png",
