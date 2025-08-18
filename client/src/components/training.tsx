@@ -203,29 +203,25 @@ export default function Training() {
 
         {/* Call to Action Section */}
         <div className="mt-20">
-          <Card className="bg-gradient-to-br from-amber-400 via-yellow-400 to-orange-400 border-2 border-amber-300 rounded-2xl shadow-xl overflow-hidden">
-            <CardContent className="p-12 text-center relative">
-              {/* Subtle overlay for better text readability */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400/90 via-yellow-400/90 to-orange-400/90 rounded-2xl"></div>
-              
-              <div className="relative z-10">
-                <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-lg">
-                  Start Your Puppy's Training Journey
-                </h2>
-                <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
-                  Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Button 
-                    onClick={scrollToContact}
-                    className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white text-amber-700 hover:bg-gray-50 border-2 border-white"
-                  >
-                    Begin Your Journey
-                  </Button>
-                  <span className="font-source-sans text-sm text-white font-medium drop-shadow-sm">
-                    Free initial assessment included
-                  </span>
-                </div>
+          <Card className="bg-gradient-to-br from-amber-600 via-orange-600 to-red-600 border-2 border-amber-400 rounded-2xl shadow-xl overflow-hidden">
+            <CardContent className="p-12 text-center">
+              <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
+                Start Your Puppy's Training Journey
+              </h2>
+              <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white">
+                Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button 
+                  onClick={scrollToContact}
+                  className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
+                  style={{color: '#b45309'}}
+                >
+                  Begin Your Journey
+                </Button>
+                <span className="font-source-sans text-sm text-white font-medium">
+                  Free initial assessment included
+                </span>
               </div>
             </CardContent>
           </Card>
