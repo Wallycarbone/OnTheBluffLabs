@@ -1221,9 +1221,6 @@ export default function Puppies() {
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
             AVAILABLE LITTERS
           </h2>
-          <p className="text-xl font-source-sans max-w-3xl mx-auto mb-8" style={{color: '#4b4b4b'}}>
-            Our current and upcoming litters of exceptional Labrador puppies from champion bloodlines, ready to join loving families.
-          </p>
         </div>
 
         {/* Puppy Photo Gallery */}
