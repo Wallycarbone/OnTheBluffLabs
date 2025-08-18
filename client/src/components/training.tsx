@@ -134,7 +134,7 @@ export default function Training() {
             {trainingServices.map((service, index) => (
               <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 {/* Image Section */}
-                <div className="h-48 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
                     src={service.image}
                     alt={service.imageAlt}
