@@ -1221,9 +1221,54 @@ export default function Puppies() {
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
             AVAILABLE LITTERS
           </h2>
-          <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
+          <p className="text-xl font-source-sans max-w-3xl mx-auto mb-8" style={{color: '#4b4b4b'}}>
             Our current and upcoming litters of exceptional Labrador puppies from champion bloodlines, ready to join loving families.
           </p>
+        </div>
+
+        {/* Puppy Photo Gallery */}
+        <div className="mb-20">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+              Our Beautiful Puppies
+            </h3>
+            <div className="w-16 h-1 mx-auto rounded-full" style={{backgroundColor: '#6d761d'}}></div>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            {[
+              { src: mrPeacockImage, alt: "Mr. Peacock - Adorable Labrador puppy", name: "Mr. Peacock" },
+              { src: msSunflowerImage, alt: "Ms. Sunflower - Yellow Labrador puppy", name: "Ms. Sunflower" },
+              { src: msAlohaImage, alt: "Ms. Aloha - Beautiful puppy portrait", name: "Ms. Aloha" },
+              { src: mrSuperstarImage, alt: "Mr. Superstar - Charming Labrador puppy", name: "Mr. Superstar" },
+              { src: msAlpineGlowImage, alt: "Ms. Alpine Glow - Sweet puppy moment", name: "Ms. Alpine Glow" },
+              { src: fernApplePieImage, alt: "Fern (Apple Pie) - Chocolate Labrador puppy", name: "Fern" },
+              { src: hollyPuppyLoveImage, alt: "Holly - Puppy Love themed portrait", name: "Holly" },
+              { src: hazelPeacockImage, alt: "Hazel - Peacock themed puppy photo", name: "Hazel" },
+              { src: summerButterflyImage, alt: "Summer - Butterfly themed puppy portrait", name: "Summer" },
+              { src: willowSeaglassImage, alt: "Willow - Seaglass themed puppy photo", name: "Willow" }
+            ].map((puppy, index) => (
+              <div 
+                key={index} 
+                className="group cursor-pointer"
+                onClick={() => {
+                  setSelectedImage({src: puppy.src, name: puppy.name});
+                  setIsImagePopupOpen(true);
+                }}
+              >
+                <div className="aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                  <img 
+                    src={puppy.src}
+                    alt={puppy.alt}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+                <p className="text-center mt-2 text-sm font-source-sans" style={{color: '#6d761d'}}>
+                  {puppy.name}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
         
         {/* All Litters */}
