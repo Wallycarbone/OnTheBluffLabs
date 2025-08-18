@@ -219,7 +219,7 @@ export default function Training() {
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
                 >
-                  Schedule a Consultation
+                  Begin Your Journey
                 </Button>
                 <span className="font-source-sans text-sm" style={{color: '#6d761d'}}>
                   Free initial assessment included
