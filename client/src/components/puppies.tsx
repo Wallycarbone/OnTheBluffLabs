@@ -1242,17 +1242,8 @@ export default function Puppies() {
 
 
         {/* Puppy Photo Gallery */}
-        <div className="mb-20 relative">
-          {/* Centered Title Overlay */}
-          <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-            <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-oswald font-normal tracking-wide text-center" style={{color: '#11100f'}}>
-                GENERATIONS OF EXCELLENCE
-              </h3>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <div className="mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-8">
             {[
               { src: newBlackOnRocks, alt: "Previous puppy - Black Lab puppy on rocks with polka dot toy", name: "Black" },
               { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
@@ -1289,6 +1280,13 @@ export default function Puppies() {
 
               </div>
             ))}
+          </div>
+          
+          {/* Title Below Gallery */}
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              GENERATIONS OF EXCELLENCE
+            </h2>
           </div>
         </div>
         
