@@ -194,21 +194,40 @@ export default function Training() {
                     ))}
                   </div>
                   
-                  <Button 
-                    onClick={scrollToContact}
-                    className="w-full font-montserrat font-medium text-sm h-auto py-3 rounded-lg"
-                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                  >
-                    Learn More
-                  </Button>
+
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
 
+        {/* Call to Action Section */}
+        <div className="mt-20">
+          <Card className="bg-gradient-to-r from-slate-50 to-gray-50 border-2 border-gray-200 rounded-2xl shadow-lg overflow-hidden">
+            <CardContent className="p-12 text-center">
+              <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Start Your Puppy's Training Journey
+              </h2>
+              <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
+                Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button 
+                  onClick={scrollToContact}
+                  className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-md hover:shadow-lg transition-all"
+                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                >
+                  Schedule a Consultation
+                </Button>
+                <span className="font-source-sans text-sm" style={{color: '#6d761d'}}>
+                  Free initial assessment included
+                </span>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
 
       </div>
     </section>
