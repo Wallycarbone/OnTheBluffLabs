@@ -115,8 +115,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppies" />
-                <AboutDropdown />
-                <NavButton href="/dog-food" label="Dog Food" />
+                <NavButton href="/training" label="Training" />
               </div>
               
               {/* Divider */}
@@ -124,8 +123,9 @@ export default function Navigation() {
               
               {/* Secondary Navigation */}
               <div className="flex items-center space-x-1">
-                <NavButton href="/training" label="Training" />
+                <NavButton href="/dog-food" label="Dog Food" />
                 <NavButton href="/boarding" label="Board & Train" />
+                <AboutDropdown />
               </div>
               
               {/* Contact Button */}
@@ -149,10 +149,10 @@ export default function Navigation() {
             <div className="flex items-center space-x-1">
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/puppies" label="Puppies" />
-              <AboutDropdown />
-              <NavButton href="/dog-food" label="Food" />
               <NavButton href="/training" label="Training" />
+              <NavButton href="/dog-food" label="Food" />
               <NavButton href="/boarding" label="Board & Train" />
+              <AboutDropdown />
               <Link href="/contact">
                 <Button 
                   className="px-4 py-2 font-montserrat font-medium text-sm rounded-full ml-4"
