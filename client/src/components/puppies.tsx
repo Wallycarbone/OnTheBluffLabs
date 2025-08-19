@@ -84,12 +84,13 @@ import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 // Additional imports for complete pedigree data (avoiding duplicates from above)
 import newHarperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import atticusFinchImage from "@assets/Atticus_1754340164760.jpeg";
-import arabellaImage from "@assets/Arabella_1755287697962.jpg";
-import markTwainImage from "@assets/Mark Twain_1755287752095.avif";
-import piperImage from "@assets/Piper_1755287967893.avif";
+// arabellaImage and markTwainImage temporarily commented out due to missing files
+// import arabellaImage from "@assets/Arabella_1755287697962.jpg";
+// import markTwainImage from "@assets/Mark Twain_1755287752095.avif";
+// import piperImage from "@assets/Piper_1755287967893.avif"; // File not found
 import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
-import duffyImage from "@assets/Duffy_1755289259139.avif";
-import emmaImage from "@assets/Emma_1755291275425.webp";
+import duffyImage from "@assets/duffy-04_1755289259124.jpeg";
+// import emmaImage from "@assets/Emma_1755291275425.webp"; // File not found
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -871,8 +872,78 @@ export default function Puppies() {
             }
           }
         }
+      },
+      "Harper Lee": {
+        name: "Harper Lee",
+        formalName: "On The Bluff's Harper Lee",
+        titles: [],
+        image: newHarperLeeImage,
+        sire: {
+          name: "On The Bluff's Atticus Finch",
+          titles: [],
+          image: atticusFinchImage,
+          sire: {
+            name: "Heartlands Polar Bear Chase",
+            titles: [],
+            image: chaseImage,
+            sire: {
+              name: "Walker's \"Chance\" Of A Lifetime",
+              titles: []
+            },
+            dam: {
+              name: "Starqueststruttontoktakafarms",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Heartlands Lily Of The Valley",
+            titles: [],
+            sire: {
+              name: "Centrecourt Black Jake At Ceasarscreek",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Vanilla Frosty",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Arabella Tallant",
+          titles: [],
+          // image: arabellaImage, // Temporarily commented out due to missing file
+          sire: {
+            name: "Scarfone's Mark Twain",
+            titles: [],
+            // image: markTwainImage, // Temporarily commented out due to missing file
+            sire: {
+              name: "Valhalla's One Little Victory JH",
+              titles: ["JH"]
+            },
+            dam: {
+              name: "Bateshaus Stop To Smell The Roses",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Whispering Oaks Pattycake",
+            titles: [],
+            sire: {
+              name: "GCH Bho's Major League RN",
+              titles: ["GCH", "RN"]
+            },
+            dam: {
+              name: "Summer Of Vantassel Manor Labradors",
+              titles: []
+            }
+          }
+        }
       }
     };
+
+    console.log("Looking for dog:", dogName);
+    console.log("Available dogs:", Object.keys(pedigrees));
+    console.log("Pedigree data found:", !!pedigrees[dogName]);
     
     return pedigrees[dogName] || null;
   };
