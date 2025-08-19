@@ -1132,29 +1132,13 @@ export default function Puppies() {
         </div>
 
         <div className="grid grid-cols-2 gap-4 mb-6">
-          <div className="space-y-3">
-            <div>
-              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Sire</span>
-              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.sire}</p>
-            </div>
-            <div>
-              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Dam</span>
-              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.dam}</p>
-            </div>
-            <div>
-              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Born</span>
-              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.birthDate}</p>
-            </div>
+          <div>
+            <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Born</span>
+            <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.birthDate}</p>
           </div>
-          <div className="space-y-3">
-            <div>
-              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Age</span>
-              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
-            </div>
-            <div>
-              <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Available</span>
-              <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.available}</p>
-            </div>
+          <div>
+            <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Age</span>
+            <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
           </div>
         </div>
 
