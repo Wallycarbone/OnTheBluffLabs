@@ -172,7 +172,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Shalimar's The Animator
-            </button> through sire Grizzly's champion bloodline
+            </button>
           </>
         )
       },
@@ -191,7 +191,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Highcaliber Labradale Expresso
-            </button> through sire Holden's champion lineage
+            </button>
           </>
         )
       },
@@ -210,7 +210,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Heartland's Polar Bear Chase
-            </button> through sire Boo Radley's champion bloodline
+            </button>
           </>
         )
       },
@@ -229,7 +229,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Lubberline's Martingale
-            </button> through sire Twain's champion hunting lineage
+            </button>
           </>
         )
       },
@@ -248,7 +248,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Highcaliber Labradale Expresso
-            </button> through sire Chekhov's champion lineage
+            </button>
           </>
         )
       }
