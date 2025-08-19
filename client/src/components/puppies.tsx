@@ -1280,10 +1280,52 @@ export default function Puppies() {
           </div>
           
         {/* Title Below Gallery */}
-        <div className="text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+        <div className="text-center px-4 sm:px-6 lg:px-8 mb-16">
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide mb-8" style={{color: '#11100f'}}>
             GENERATIONS OF EXCELLENCE
           </h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg font-source-sans mb-8" style={{color: '#4b4b4b'}}>
+              Every Labrador we raise carries forward a legacy of love, loyalty, and lifelong companionship.
+            </p>
+            <p className="text-lg font-source-sans mb-8" style={{color: '#4b4b4b'}}>
+              Here's how we guide you in bringing one home:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+              <div className="space-y-3">
+                <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#6d761d'}}>
+                  Apply
+                </h3>
+                <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                  Share your story with us so we can understand your hopes for a new companion.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#6d761d'}}>
+                  Match
+                </h3>
+                <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                  We thoughtfully pair you with the puppy whose temperament best fits your family and lifestyle.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#6d761d'}}>
+                  Choose Training
+                </h3>
+                <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                  Select a training package that gives your pup the foundation they need to thrive.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#6d761d'}}>
+                  Welcome Home
+                </h3>
+                <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                  Finally, bring your puppy home—prepared, confident, and ready to begin a lifetime of love.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
