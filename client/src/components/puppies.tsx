@@ -11,7 +11,7 @@ import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
 import moonImage2 from "@assets/Moon 5x4_1753565341801.png";
 import noraImage from "@assets/Nora 5x4_1753565326175.png";
-import booRadleyImage from "@assets/Breeding Dogs 5x4 (1)_1753565280972.png";
+
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Gino_1754685352006.webp";
 import boscoImage from "@assets/bosco1_1753815440343.avif?url";
