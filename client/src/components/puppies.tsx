@@ -65,6 +65,18 @@ import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png
 import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
 import chaseImage from "@assets/Chase_1755458617995.avif";
 import expressoImage from "@assets/expresso_new3_1755458950324.webp";
+// Additional breeding dog images for pedigree data
+import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (8)_1755286717960.png";
+import newMoonImage from "@assets/Breeding Dogs 5x4 (9)_1755286823265.png";
+import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
+import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
+import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
+import twainBreedingImage from "@assets/Breeding Dogs 5x4 (25)_1755461082022.png";
+import stoliImage from "@assets/Stoli_1755288962958.jpg";
+import sequelImage from "@assets/Sequel_1755289144473.webp";
+import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
+import sterlingImage from "@assets/Sterling-name-2-515x412_1755289517437.jpg";
+import stormTrooperImage from "@assets/Storm Trooper_1755290311684.avif";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -116,9 +128,153 @@ export default function Puppies() {
     mrPenguinPartyImage,
     msAlpineGlowImage
   ];
+  // Import pedigree data structure from breeding dogs component
+  const getDogPedigreeData = (dogName: string) => {
+    const pedigrees: { [key: string]: any } = {
+      "Moon": {
+        name: "Moon",
+        formalName: "Belquest Conclusion Super Moon Rising",
+        titles: ["CH"],
+        image: moonImage,
+        sire: {
+          name: "Farnfield Topo Gigio (\"Gino\")",
+          titles: ["GCH", "CH"],
+          image: topoGigioImage,
+          achievements: "2019 Westminster Best of Breed"
+        }
+      },
+      "Grizzly": {
+        name: "Grizzly", 
+        formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
+        titles: [],
+        image: newGrizzlyImage,
+        sire: {
+          name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
+          titles: ["CH", "MX"],
+          image: boscoImage,
+          sire: {
+            name: "Shalimar's The Animator (\"Cyrus\")",
+            titles: ["GCH", "CH", "MBISS"],
+            image: cyrusImage,
+            achievements: "2016 Westminster Best of Breed"
+          }
+        }
+      },
+      "Holden": {
+        name: "Holden",
+        formalName: "On The Bluff's Holden Morrisey Caulfield", 
+        titles: [],
+        image: newHoldenImage,
+        sire: {
+          name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
+          titles: [],
+          sire: {
+            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
+            titles: [],
+            image: stoliImage,
+            dam: {
+              name: "Belquest Prequel To The Sequel (\"Sequel\")",
+              titles: [],
+              image: sequelImage,
+              sire: {
+                name: "GCH Highcaliber Labradale Expresso",
+                titles: ["GCH"],
+                image: expressoImage,
+                achievements: "2011 AKC Grand Champion"
+              }
+            }
+          }
+        },
+        dam: {
+          name: "Endless Mt On The Bluff's Franny Glass (\"Franny\")",
+          titles: [],
+          image: frannyGlassImage,
+          sire: {
+            name: "Endless Mt Shines Like Sterling (\"Sterling\")",
+            titles: ["CH"],
+            image: sterlingImage,
+            sire: {
+              name: "GCHB Willcare To Fly Under The Radar RN",
+              titles: ["GCHB", "RN"],
+              image: flyUnderRadarImage
+            }
+          }
+        }
+      },
+      "Boo Radley": {
+        name: "Boo Radley",
+        formalName: "On The Bluff's Mr. Boo Radley",
+        titles: [],
+        image: booRadleyImage,
+        sire: {
+          name: "Heartlands Storm Trooper", 
+          titles: [],
+          image: stormTrooperImage,
+          dam: {
+            name: "Heartlands Sienna",
+            titles: [],
+            sire: {
+              name: "Heartlands Polar Bear Chase",
+              titles: [],
+              image: chaseImage
+            }
+          }
+        }
+      },
+      "Twain": {
+        name: "Twain",
+        formalName: "Scarfone's Mark Twain",
+        titles: [],
+        image: twainBreedingImage,
+        sire: {
+          name: "Valhalla's One Little Victory JH",
+          titles: ["JH"],
+          sire: {
+            name: "CH Lubberline Martingale",
+            titles: ["CH"],
+            image: martingaleImage,
+            achievements: "2004 Westminster Best of Breed"
+          }
+        }
+      },
+      "Chekhov": {
+        name: "Chekhov",
+        formalName: "Belquest Conclusion's Anton Chekhov",
+        titles: [],
+        image: chekhovImage,
+        sire: {
+          name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
+          titles: [],
+          image: stoliImage,
+          dam: {
+            name: "Belquest Prequel To The Sequel (\"Sequel\")",
+            titles: ["CGC"],
+            image: sequelImage,
+            sire: {
+              name: "GCH Highcaliber Labradale Expresso",
+              titles: ["GCH"],
+              image: expressoImage,
+              achievements: "2011 AKC Grand Champion"
+            }
+          }
+        }
+      }
+    };
+    
+    return pedigrees[dogName] || null;
+  };
+
   const getSirePedigreeHighlight = (litterName: string) => {
-    const highlights: { [key: string]: any } = {
-      "Moon & Foxxy": {
+    const sireName = litterName.split(' & ')[0];
+    const pedigreeData = getDogPedigreeData(sireName);
+    
+    if (!pedigreeData) {
+      return { text: "Champion Bloodline with exceptional lineage" };
+    }
+
+    // Generate highlight based on the sire's pedigree structure
+    if (sireName === "Moon" && pedigreeData.sire) {
+      return {
         text: (
           <>
             Descended from 2019 Westminster Best of Breed Farnfield <button 
@@ -130,34 +286,11 @@ export default function Puppies() {
             </button>
           </>
         )
-      },
-      "Moon & Nora": {
-        text: (
-          <>
-            Descended from 2019 Westminster Best of Breed Farnfield <button 
-              onClick={() => setIsTopoPopupOpen(true)}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Topo Gigio
-            </button>
-          </>
-        )
-      },
-      "Moon & Harper Lee": {
-        text: (
-          <>
-            Descended from 2019 Westminster Best of Breed Farnfield <button 
-              onClick={() => setIsTopoPopupOpen(true)}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Topo Gigio
-            </button>
-          </>
-        )
-      },
-      "Grizzly & Guinevere": {
+      };
+    }
+    
+    if (sireName === "Grizzly" && pedigreeData.sire?.sire) {
+      return {
         text: (
           <>
             Descended from 2016 Westminster Best of Breed <button
@@ -175,8 +308,11 @@ export default function Puppies() {
             </button>
           </>
         )
-      },
-      "Holden & Alola": {
+      };
+    }
+    
+    if (sireName === "Holden" && pedigreeData.sire?.sire?.dam?.sire) {
+      return {
         text: (
           <>
             Descended from Grand Champion <button
@@ -194,8 +330,11 @@ export default function Puppies() {
             </button>
           </>
         )
-      },
-      "Boo Radley & Queen Boudica": {
+      };
+    }
+    
+    if (sireName === "Boo Radley" && pedigreeData.sire?.dam?.sire) {
+      return {
         text: (
           <>
             Descended from <button
@@ -213,8 +352,11 @@ export default function Puppies() {
             </button>
           </>
         )
-      },
-      "Twain & Piper": {
+      };
+    }
+    
+    if (sireName === "Twain" && pedigreeData.sire?.sire) {
+      return {
         text: (
           <>
             Descended from 2004 Westminster Best of Breed <button
@@ -232,8 +374,11 @@ export default function Puppies() {
             </button>
           </>
         )
-      },
-      "Chekhov & Lay Lay": {
+      };
+    }
+    
+    if (sireName === "Chekhov" && pedigreeData.sire?.dam?.sire) {
+      return {
         text: (
           <>
             Descended from Grand Champion <button
@@ -251,10 +396,10 @@ export default function Puppies() {
             </button>
           </>
         )
-      }
-    };
+      };
+    }
     
-    return highlights[litterName] || { text: "Champion Bloodline with exceptional lineage" };
+    return { text: "Champion Bloodline with exceptional lineage" };
   };
 
   const calculateAge = (birthDate: string) => {
