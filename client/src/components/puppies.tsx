@@ -60,6 +60,11 @@ import newBlackWithBanana from "@assets/Puppies 5x4 (4 x 4 in) (15)_175554988448
 import newGoldenWithToys from "@assets/Puppies 5x4 (4 x 4 in) (16)_1755550036481.png";
 import newSaddleMarked from "@assets/Puppies 5x4 (4 x 4 in) (17)_1755550198365.png";
 import newBlackOnRocks from "@assets/Puppies 5x4 (4 x 4 in) (19)_1755550844479.png";
+// Champion bloodline images for clickable highlights
+import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png";
+import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
+import chaseImage from "@assets/Chase_1755458617995.avif";
+import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -153,19 +158,111 @@ export default function Puppies() {
         )
       },
       "Grizzly & Guinevere": {
-        text: "Descended from 2016 Westminster Best of Breed Shalimar's The Animator through champion bloodlines with exceptional hunting and field titles"
+        text: (
+          <>
+            Descended from 2016 Westminster Best of Breed <button
+              onClick={() => {
+                setSelectedImage({
+                  src: cyrusImage,
+                  name: "Shalimar's The Animator (\"Cyrus\")"
+                });
+                setIsImagePopupOpen(true);
+              }}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Shalimar's The Animator
+            </button> through champion bloodlines with exceptional hunting and field titles
+          </>
+        )
       },
       "Holden & Alola": {
-        text: "Descended from Grand Champion and Canine Good Citizen Willcare To Fly Under The Radar through 2011 AKC Grand Champion Highcaliber Labradale Expresso"
+        text: (
+          <>
+            Descended from Grand Champion and Canine Good Citizen <button
+              onClick={() => {
+                setSelectedImage({
+                  src: flyUnderRadarImage,
+                  name: "Willcare To Fly Under The Radar"
+                });
+                setIsImagePopupOpen(true);
+              }}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Willcare To Fly Under The Radar
+            </button> through 2011 AKC Grand Champion <button
+              onClick={() => {
+                setSelectedImage({
+                  src: expressoImage,
+                  name: "Highcaliber Labradale Expresso"
+                });
+                setIsImagePopupOpen(true);
+              }}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Highcaliber Labradale Expresso
+            </button>
+          </>
+        )
       },
       "Boo Radley & Queen Boudica": {
-        text: "Descended from Heartland's Polar Bear Chase through champion bloodlines with exceptional temperament and gentle nature"
+        text: (
+          <>
+            Descended from <button
+              onClick={() => {
+                setSelectedImage({
+                  src: chaseImage,
+                  name: "Heartland's Polar Bear Chase"
+                });
+                setIsImagePopupOpen(true);
+              }}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Heartland's Polar Bear Chase
+            </button> through champion bloodlines with exceptional temperament and gentle nature
+          </>
+        )
       },
       "Twain & Piper": {
-        text: "Descended from 2004 Westminster Best of Breed Lubberline's Martingale through champion hunting and field bloodlines"
+        text: (
+          <>
+            Descended from 2004 Westminster Best of Breed <button
+              onClick={() => {
+                setSelectedImage({
+                  src: martingaleImage,
+                  name: "Lubberline's Martingale"
+                });
+                setIsImagePopupOpen(true);
+              }}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Lubberline's Martingale
+            </button> through champion hunting and field bloodlines
+          </>
+        )
       },
       "Chekhov & Lay Lay": {
-        text: "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso through champion bloodlines with noble temperament"
+        text: (
+          <>
+            Descended from 2011 AKC Grand Champion <button
+              onClick={() => {
+                setSelectedImage({
+                  src: expressoImage,
+                  name: "Highcaliber Labradale Expresso"
+                });
+                setIsImagePopupOpen(true);
+              }}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Highcaliber Labradale Expresso
+            </button> through champion bloodlines with noble temperament
+          </>
+        )
       }
     };
     
