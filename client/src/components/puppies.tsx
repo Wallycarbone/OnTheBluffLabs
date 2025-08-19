@@ -111,6 +111,67 @@ export default function Puppies() {
     mrPenguinPartyImage,
     msAlpineGlowImage
   ];
+  const getSirePedigreeHighlight = (litterName: string) => {
+    const highlights: { [key: string]: any } = {
+      "Moon & Foxxy": {
+        text: (
+          <>
+            Descended from 2019 Westminster Best of Breed Farnfield <button 
+              onClick={() => setIsTopoPopupOpen(true)}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Topo Gigio
+            </button>
+          </>
+        )
+      },
+      "Moon & Nora": {
+        text: (
+          <>
+            Descended from 2019 Westminster Best of Breed Farnfield <button 
+              onClick={() => setIsTopoPopupOpen(true)}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Topo Gigio
+            </button>
+          </>
+        )
+      },
+      "Moon & Harper Lee": {
+        text: (
+          <>
+            Descended from 2019 Westminster Best of Breed Farnfield <button 
+              onClick={() => setIsTopoPopupOpen(true)}
+              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
+              style={{color: '#6d761d'}}
+            >
+              Topo Gigio
+            </button>
+          </>
+        )
+      },
+      "Grizzly & Guinevere": {
+        text: "Descended from 2016 Westminster Best of Breed Shalimar's The Animator through champion bloodlines with exceptional hunting and field titles"
+      },
+      "Holden & Alola": {
+        text: "Descended from Grand Champion and Canine Good Citizen Willcare To Fly Under The Radar through 2011 AKC Grand Champion Highcaliber Labradale Expresso"
+      },
+      "Boo Radley & Queen Boudica": {
+        text: "Descended from Heartland's Polar Bear Chase through champion bloodlines with exceptional temperament and gentle nature"
+      },
+      "Twain & Piper": {
+        text: "Descended from 2004 Westminster Best of Breed Lubberline's Martingale through champion hunting and field bloodlines"
+      },
+      "Chekhov & Lay Lay": {
+        text: "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso through champion bloodlines with noble temperament"
+      }
+    };
+    
+    return highlights[litterName] || { text: "Champion Bloodline with exceptional lineage" };
+  };
+
   const calculateAge = (birthDate: string) => {
     if (birthDate.includes('Due')) {
       return 'Expected';
@@ -1146,50 +1207,7 @@ export default function Puppies() {
           <div className="flex items-start">
             <Star className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
             <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-              {litter.name === "Moon & Foxxy" 
-                ? (
-                    <>
-                      Descended from 2019 Westminster Best of Breed Farnfield <button 
-                        onClick={() => setIsTopoPopupOpen(true)}
-                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-                        style={{color: '#6d761d'}}
-                      >
-                        Topo Gigio
-                      </button>
-                    </>
-                  )
-                : litter.name === "Moon & Nora"
-                ? (
-                    <>
-                      Descended from 2019 Westminster Best of Breed Farnfield <button 
-                        onClick={() => setIsTopoPopupOpen(true)}
-                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-                        style={{color: '#6d761d'}}
-                      >
-                        Topo Gigio
-                      </button>
-                    </>
-                  )
-                : litter.name === "Grizzly & Guinevere"
-                ? "Champion bloodlines with exceptional hunting and field titles from Greenstone Chocoholic at Loretta and Endless Mt Hannah"
-                : litter.name === "Holden & Alola"
-                ? "Descended from 2011 AKC Grand Champion Highcaliber Labradale Expresso"
-                : litter.name === "Boo Radley & Queen Boudica"
-                ? "Champion bloodlines with exceptional temperament"
-                : litter.name === "Moon & Harper Lee"
-                ? (
-                    <>
-                      Descended from 2019 Westminster Best of Breed Farnfield <button 
-                        onClick={() => setIsTopoPopupOpen(true)}
-                        className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-                        style={{color: '#6d761d'}}
-                      >
-                        Topo Gigio
-                      </button>
-                    </>
-                  )
-                : "Champion Bloodline"
-              }
+              {getSirePedigreeHighlight(litter.name).text}
             </span>
           </div>
         </div>
