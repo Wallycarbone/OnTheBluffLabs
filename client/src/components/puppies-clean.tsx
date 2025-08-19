@@ -439,8 +439,8 @@ export default function Puppies() {
             </Button>
             <Button
               onClick={scrollToContact}
-              className="w-full font-montserrat text-white"
-              style={{ backgroundColor: '#6d761d' }}
+              className="w-full font-montserrat text-white hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#8b9632' }}
             >
               Inquire About This Litter
             </Button>
@@ -452,7 +452,7 @@ export default function Puppies() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-stone-50 to-white">
-      <div className="text-center">
+      <div className="text-center py-16 px-8">
         <h1 className="text-4xl md:text-5xl font-playfair text-stone-800 mb-6">
           Current & Upcoming Litters
         </h1>
@@ -494,171 +494,151 @@ export default function Puppies() {
                   </h3>
                 </div>
 
-                {/* Traditional Pedigree Tree Layout */}
-                <div className="relative w-full overflow-x-auto">
-                  <div className="min-w-[900px] h-[500px] relative bg-stone-50 rounded-lg p-6">
-                    
-                    {/* Litter in Center */}
-                    <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
-                      <div className="bg-green-100 border-2 border-green-400 rounded-lg p-4 text-center min-w-[140px]">
-                        <div className="font-bold text-green-800 text-lg">Litter</div>
-                        <div className="text-sm text-green-700">{selectedLitter.name}</div>
-                      </div>
+                {/* Pedigree Table Layout */}
+                <div className="bg-white rounded-lg shadow-lg p-6 overflow-x-auto">
+                  <div className="min-w-[800px]">
+                    {/* Generation Headers */}
+                    <div className="grid grid-cols-4 gap-4 mb-4 text-center">
+                      <div className="text-lg font-semibold text-stone-700">Litter</div>
+                      <div className="text-lg font-semibold text-stone-700">Parents</div>
+                      <div className="text-lg font-semibold text-stone-700">Grandparents</div>
+                      <div className="text-lg font-semibold text-stone-700">Great-Grandparents</div>
                     </div>
 
-                    {/* Sire (Top Right) */}
-                    <div className="absolute top-16 left-64">
-                      <div className="bg-blue-100 border-2 border-blue-400 rounded-lg p-3 text-center min-w-[160px]">
-                        <div className="font-semibold text-blue-800">{pedigreeData.sire.name}</div>
-                        <div className="text-xs text-blue-600 mt-1">{pedigreeData.sire.formalName}</div>
-                        {pedigreeData.sire.titles?.length > 0 && (
-                          <div className="text-xs font-medium text-blue-700 mt-1">
-                            {pedigreeData.sire.titles.join(', ')}
+                    {/* Pedigree Grid */}
+                    <div className="grid grid-cols-4 gap-4">
+                      {/* Litter (Column 1) */}
+                      <div className="flex items-center justify-center">
+                        <div className="bg-green-100 border-2 border-green-400 rounded-lg p-4 text-center w-full">
+                          <div className="font-bold text-green-800 text-lg">{selectedLitter.name}</div>
+                          <div className="text-sm text-green-700 mt-1">Litter</div>
+                        </div>
+                      </div>
+
+                      {/* Parents (Column 2) */}
+                      <div className="space-y-4">
+                        {/* Sire */}
+                        <div className="bg-blue-100 border-2 border-blue-400 rounded-lg p-3 text-center">
+                          <div className="font-semibold text-blue-800">{pedigreeData.sire.name}</div>
+                          <div className="text-xs text-blue-600 mt-1">{pedigreeData.sire.formalName}</div>
+                          {pedigreeData.sire.titles?.length > 0 && (
+                            <div className="text-xs font-medium text-blue-700 mt-1">
+                              {pedigreeData.sire.titles.join(', ')}
+                            </div>
+                          )}
+                          <div className="text-xs text-blue-500 mt-1">(Sire)</div>
+                        </div>
+                        
+                        {/* Dam */}
+                        <div className="bg-pink-100 border-2 border-pink-400 rounded-lg p-3 text-center">
+                          <div className="font-semibold text-pink-800">{pedigreeData.dam.name}</div>
+                          <div className="text-xs text-pink-600 mt-1">{pedigreeData.dam.formalName}</div>
+                          {pedigreeData.dam.titles?.length > 0 && (
+                            <div className="text-xs font-medium text-pink-700 mt-1">
+                              {pedigreeData.dam.titles.join(', ')}
+                            </div>
+                          )}
+                          <div className="text-xs text-pink-500 mt-1">(Dam)</div>
+                        </div>
+                      </div>
+
+                      {/* Grandparents (Column 3) */}
+                      <div className="space-y-2">
+                        {/* Sire's Sire */}
+                        {pedigreeData.sire.sire && (
+                          <div className="bg-blue-50 border border-blue-300 rounded p-2 text-center">
+                            <div className="text-sm font-medium text-blue-800">{pedigreeData.sire.sire.name}</div>
+                            {pedigreeData.sire.sire.titles?.length > 0 && (
+                              <div className="text-xs text-blue-600 mt-1">{pedigreeData.sire.sire.titles.join(', ')}</div>
+                            )}
+                            {pedigreeData.sire.sire.achievements && (
+                              <div className="text-xs text-blue-500 mt-1 italic">{pedigreeData.sire.sire.achievements}</div>
+                            )}
+                            <div className="text-xs text-blue-400">(Sire's Sire)</div>
+                          </div>
+                        )}
+                        
+                        {/* Sire's Dam */}
+                        {pedigreeData.sire.dam && (
+                          <div className="bg-blue-50 border border-blue-300 rounded p-2 text-center">
+                            <div className="text-sm font-medium text-blue-800">{pedigreeData.sire.dam.name}</div>
+                            {pedigreeData.sire.dam.titles?.length > 0 && (
+                              <div className="text-xs text-blue-600 mt-1">{pedigreeData.sire.dam.titles.join(', ')}</div>
+                            )}
+                            <div className="text-xs text-blue-400">(Sire's Dam)</div>
+                          </div>
+                        )}
+                        
+                        {/* Dam's Sire */}
+                        {pedigreeData.dam.sire && (
+                          <div className="bg-pink-50 border border-pink-300 rounded p-2 text-center">
+                            <div className="text-sm font-medium text-pink-800">{pedigreeData.dam.sire.name}</div>
+                            {pedigreeData.dam.sire.titles?.length > 0 && (
+                              <div className="text-xs text-pink-600 mt-1">{pedigreeData.dam.sire.titles.join(', ')}</div>
+                            )}
+                            <div className="text-xs text-pink-400">(Dam's Sire)</div>
+                          </div>
+                        )}
+                        
+                        {/* Dam's Dam */}
+                        {pedigreeData.dam.dam && (
+                          <div className="bg-pink-50 border border-pink-300 rounded p-2 text-center">
+                            <div className="text-sm font-medium text-pink-800">{pedigreeData.dam.dam.name}</div>
+                            {pedigreeData.dam.dam.titles?.length > 0 && (
+                              <div className="text-xs text-pink-600 mt-1">{pedigreeData.dam.dam.titles.join(', ')}</div>
+                            )}
+                            {pedigreeData.dam.dam.achievements && (
+                              <div className="text-xs text-pink-500 mt-1 italic">{pedigreeData.dam.dam.achievements}</div>
+                            )}
+                            <div className="text-xs text-pink-400">(Dam's Dam)</div>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Great-Grandparents (Column 4) */}
+                      <div className="space-y-1">
+                        {pedigreeData.sire.sire?.sire && (
+                          <div className="bg-blue-25 border border-blue-200 rounded p-1 text-center">
+                            <div className="text-xs text-blue-700">{pedigreeData.sire.sire.sire.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.sire.sire?.dam && (
+                          <div className="bg-blue-25 border border-blue-200 rounded p-1 text-center">
+                            <div className="text-xs text-blue-700">{pedigreeData.sire.sire.dam.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.sire.dam?.sire && (
+                          <div className="bg-blue-25 border border-blue-200 rounded p-1 text-center">
+                            <div className="text-xs text-blue-700">{pedigreeData.sire.dam.sire.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.sire.dam?.dam && (
+                          <div className="bg-blue-25 border border-blue-200 rounded p-1 text-center">
+                            <div className="text-xs text-blue-700">{pedigreeData.sire.dam.dam.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.sire?.sire && (
+                          <div className="bg-pink-25 border border-pink-200 rounded p-1 text-center">
+                            <div className="text-xs text-pink-700">{pedigreeData.dam.sire.sire.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.sire?.dam && (
+                          <div className="bg-pink-25 border border-pink-200 rounded p-1 text-center">
+                            <div className="text-xs text-pink-700">{pedigreeData.dam.sire.dam.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.dam?.sire && (
+                          <div className="bg-pink-25 border border-pink-200 rounded p-1 text-center">
+                            <div className="text-xs text-pink-700">{pedigreeData.dam.dam.sire.name}</div>
+                          </div>
+                        )}
+                        {pedigreeData.dam.dam?.dam && (
+                          <div className="bg-pink-25 border border-pink-200 rounded p-1 text-center">
+                            <div className="text-xs text-pink-700">{pedigreeData.dam.dam.dam.name}</div>
                           </div>
                         )}
                       </div>
                     </div>
-
-                    {/* Dam (Bottom Right) */}
-                    <div className="absolute bottom-16 left-64">
-                      <div className="bg-pink-100 border-2 border-pink-400 rounded-lg p-3 text-center min-w-[160px]">
-                        <div className="font-semibold text-pink-800">{pedigreeData.dam.name}</div>
-                        <div className="text-xs text-pink-600 mt-1">{pedigreeData.dam.formalName}</div>
-                        {pedigreeData.dam.titles?.length > 0 && (
-                          <div className="text-xs font-medium text-pink-700 mt-1">
-                            {pedigreeData.dam.titles.join(', ')}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Sire's Sire (Paternal Grandfather) */}
-                    {pedigreeData.sire.sire && (
-                      <div className="absolute top-8 left-[480px]">
-                        <div className="bg-blue-50 border border-blue-300 rounded p-2 text-center min-w-[140px]">
-                          <div className="text-sm font-medium text-blue-800">{pedigreeData.sire.sire.name}</div>
-                          {pedigreeData.sire.sire.titles?.length > 0 && (
-                            <div className="text-xs text-blue-600 mt-1">{pedigreeData.sire.sire.titles.join(', ')}</div>
-                          )}
-                          {pedigreeData.sire.sire.achievements && (
-                            <div className="text-xs text-blue-500 mt-1 italic">{pedigreeData.sire.sire.achievements}</div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Sire's Dam (Paternal Grandmother) */}
-                    {pedigreeData.sire.dam && (
-                      <div className="absolute top-24 left-[480px]">
-                        <div className="bg-blue-50 border border-blue-300 rounded p-2 text-center min-w-[140px]">
-                          <div className="text-sm font-medium text-blue-800">{pedigreeData.sire.dam.name}</div>
-                          {pedigreeData.sire.dam.titles?.length > 0 && (
-                            <div className="text-xs text-blue-600 mt-1">{pedigreeData.sire.dam.titles.join(', ')}</div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Dam's Sire (Maternal Grandfather) */}
-                    {pedigreeData.dam.sire && (
-                      <div className="absolute bottom-24 left-[480px]">
-                        <div className="bg-pink-50 border border-pink-300 rounded p-2 text-center min-w-[140px]">
-                          <div className="text-sm font-medium text-pink-800">{pedigreeData.dam.sire.name}</div>
-                          {pedigreeData.dam.sire.titles?.length > 0 && (
-                            <div className="text-xs text-pink-600 mt-1">{pedigreeData.dam.sire.titles.join(', ')}</div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Dam's Dam (Maternal Grandmother) */}
-                    {pedigreeData.dam.dam && (
-                      <div className="absolute bottom-8 left-[480px]">
-                        <div className="bg-pink-50 border border-pink-300 rounded p-2 text-center min-w-[140px]">
-                          <div className="text-sm font-medium text-pink-800">{pedigreeData.dam.dam.name}</div>
-                          {pedigreeData.dam.dam.titles?.length > 0 && (
-                            <div className="text-xs text-pink-600 mt-1">{pedigreeData.dam.dam.titles.join(', ')}</div>
-                          )}
-                          {pedigreeData.dam.dam.achievements && (
-                            <div className="text-xs text-pink-500 mt-1 italic">{pedigreeData.dam.dam.achievements}</div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Great-Grandparents (if available) */}
-                    {pedigreeData.sire.sire?.sire && (
-                      <div className="absolute top-4 left-[680px]">
-                        <div className="bg-blue-25 border border-blue-200 rounded p-1 text-center min-w-[100px]">
-                          <div className="text-xs text-blue-700">{pedigreeData.sire.sire.sire.name}</div>
-                        </div>
-                      </div>
-                    )}
-
-                    {pedigreeData.sire.sire?.dam && (
-                      <div className="absolute top-12 left-[680px]">
-                        <div className="bg-blue-25 border border-blue-200 rounded p-1 text-center min-w-[100px]">
-                          <div className="text-xs text-blue-700">{pedigreeData.sire.sire.dam.name}</div>
-                        </div>
-                      </div>
-                    )}
-
-                    {pedigreeData.dam.dam?.sire && (
-                      <div className="absolute bottom-12 left-[680px]">
-                        <div className="bg-pink-25 border border-pink-200 rounded p-1 text-center min-w-[100px]">
-                          <div className="text-xs text-pink-700">{pedigreeData.dam.dam.sire.name}</div>
-                        </div>
-                      </div>
-                    )}
-
-                    {pedigreeData.dam.dam?.dam && (
-                      <div className="absolute bottom-4 left-[680px]">
-                        <div className="bg-pink-25 border border-pink-200 rounded p-1 text-center min-w-[100px]">
-                          <div className="text-xs text-pink-700">{pedigreeData.dam.dam.dam.name}</div>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Connecting Lines */}
-                    <svg className="absolute inset-0 w-full h-full pointer-events-none">
-                      {/* Main horizontal line from litter */}
-                      <line x1="148" y1="50%" x2="256" y2="50%" stroke="#666" strokeWidth="2"/>
-                      
-                      {/* Vertical line splitting to parents */}
-                      <line x1="256" y1="50%" x2="256" y2="30%" stroke="#666" strokeWidth="2"/>
-                      <line x1="256" y1="50%" x2="256" y2="70%" stroke="#666" strokeWidth="2"/>
-                      
-                      {/* Lines to sire and dam */}
-                      <line x1="256" y1="30%" x2="344" y2="30%" stroke="#666" strokeWidth="2"/>
-                      <line x1="256" y1="70%" x2="344" y2="70%" stroke="#666" strokeWidth="2"/>
-                      
-                      {/* Lines from sire to grandparents */}
-                      <line x1="424" y1="30%" x2="480" y2="30%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="30%" x2="480" y2="20%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="30%" x2="480" y2="40%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="20%" x2="550" y2="20%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="40%" x2="550" y2="40%" stroke="#666" strokeWidth="1"/>
-                      
-                      {/* Lines from dam to grandparents */}
-                      <line x1="424" y1="70%" x2="480" y2="70%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="70%" x2="480" y2="60%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="70%" x2="480" y2="80%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="60%" x2="550" y2="60%" stroke="#666" strokeWidth="1"/>
-                      <line x1="480" y1="80%" x2="550" y2="80%" stroke="#666" strokeWidth="1"/>
-                      
-                      {/* Lines to great-grandparents (if they exist) */}
-                      <line x1="620" y1="20%" x2="680" y2="20%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="20%" x2="680" y2="15%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="20%" x2="680" y2="25%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="15%" x2="730" y2="15%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="25%" x2="730" y2="25%" stroke="#666" strokeWidth="0.5"/>
-                      
-                      <line x1="620" y1="80%" x2="680" y2="80%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="80%" x2="680" y2="75%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="80%" x2="680" y2="85%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="75%" x2="730" y2="75%" stroke="#666" strokeWidth="0.5"/>
-                      <line x1="680" y1="85%" x2="730" y2="85%" stroke="#666" strokeWidth="0.5"/>
-                    </svg>
                   </div>
                 </div>
 
@@ -670,6 +650,47 @@ export default function Puppies() {
           })()}
         </DialogContent>
       </Dialog>
+
+      {/* Contact Section */}
+      <div id="contact" className="bg-stone-100 py-16 px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-playfair text-stone-800 mb-6">Contact Us About Our Litters</h2>
+          <p className="text-lg text-stone-600 font-montserrat mb-8">
+            Ready to welcome a new puppy into your family? We'd love to hear from you.
+          </p>
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-playfair text-stone-800 mb-4">Get in Touch</h3>
+                <div className="space-y-3 text-left">
+                  <p className="font-montserrat text-stone-600">
+                    <strong>Phone:</strong> (555) 123-4567
+                  </p>
+                  <p className="font-montserrat text-stone-600">
+                    <strong>Email:</strong> info@ontheblufflabs.com
+                  </p>
+                  <p className="font-montserrat text-stone-600">
+                    <strong>Location:</strong> Montana, USA
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-playfair text-stone-800 mb-4">Visit Our Main Contact Page</h3>
+                <p className="font-montserrat text-stone-600 mb-4">
+                  For detailed information and our contact form, visit our main contact page.
+                </p>
+                <Button
+                  onClick={() => window.location.href = '/contact'}
+                  className="w-full font-montserrat text-white hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#8b9632' }}
+                >
+                  Go to Contact Page
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
