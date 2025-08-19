@@ -1237,13 +1237,10 @@ export default function Puppies() {
   };
 
   return (
-    <section id="puppies" className="pb-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-
-        {/* Puppy Photo Gallery */}
-        <div className="mb-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
+    <section id="puppies" className="bg-gray-50">
+      {/* Full Width Puppy Photo Gallery */}
+      <div className="mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
             {[
               { src: previousWhiteWithToys, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
               { src: newBlackOnRocks, alt: "Previous puppy - Black Lab puppy on rocks with polka dot toy", name: "Black" },
@@ -1282,13 +1279,16 @@ export default function Puppies() {
             ))}
           </div>
           
-          {/* Title Below Gallery */}
-          <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              GENERATIONS OF EXCELLENCE
-            </h2>
-          </div>
+        {/* Title Below Gallery */}
+        <div className="text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+            GENERATIONS OF EXCELLENCE
+          </h2>
         </div>
+      </div>
+
+      {/* Content Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         
         {/* All Litters */}
         <div className="mb-16">
