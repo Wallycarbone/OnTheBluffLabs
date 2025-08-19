@@ -1,7 +1,13 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 // Navigation Button Component
 function NavButton({ href, label }: { href: string; label: string }) {
@@ -13,6 +19,36 @@ function NavButton({ href, label }: { href: string; label: string }) {
     >
       {label}
     </Link>
+  );
+}
+
+// About Dropdown Component
+function AboutDropdown() {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button className="flex items-center px-3 py-2 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
+          style={{color: '#4b4b4b'}}
+          onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
+          onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
+        >
+          About
+          <ChevronDown className="ml-1 h-4 w-4" />
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="center" className="w-48">
+        <DropdownMenuItem asChild>
+          <Link href="/health-testing" className="w-full cursor-pointer">
+            Holistic Health
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link href="/facilities" className="w-full cursor-pointer">
+            Our Team
+          </Link>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
 
@@ -79,7 +115,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppies" />
-                <NavButton href="/health-testing" label="Holistic Health" />
+                <AboutDropdown />
                 <NavButton href="/dog-food" label="Dog Food" />
               </div>
               
@@ -90,7 +126,6 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/training" label="Training" />
                 <NavButton href="/boarding" label="Board & Train" />
-                <NavButton href="/facilities" label="Our Team" />
               </div>
               
               {/* Contact Button */}
@@ -114,10 +149,10 @@ export default function Navigation() {
             <div className="flex items-center space-x-1">
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/puppies" label="Puppies" />
-              <NavButton href="/health-testing" label="Holistic Health" />
+              <AboutDropdown />
               <NavButton href="/dog-food" label="Food" />
               <NavButton href="/training" label="Training" />
-              <NavButton href="/facilities" label="Our Team" />
+              <NavButton href="/boarding" label="Board & Train" />
               <Link href="/contact">
                 <Button 
                   className="px-4 py-2 font-montserrat font-medium text-sm rounded-full ml-4"
@@ -156,11 +191,16 @@ export default function Navigation() {
             {/* Secondary Navigation */}
             <div className="space-y-1 pt-2">
               <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
-              <MobileNavButton href="/health-testing" label="Health Testing" onClick={closeMenu} />
               <MobileNavButton href="/dog-food" label="Dog Food" onClick={closeMenu} />
               <MobileNavButton href="/training" label="Training Programs" onClick={closeMenu} />
               <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
-              <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
+              
+              {/* About Section Items */}
+              <div className="pl-4 pt-2 border-l-2 border-gray-200 ml-2">
+                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">About</div>
+                <MobileNavButton href="/health-testing" label="Holistic Health" onClick={closeMenu} />
+                <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
+              </div>
             </div>
           </div>
         </div>
