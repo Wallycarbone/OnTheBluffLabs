@@ -77,6 +77,10 @@ import sequelImage from "@assets/Sequel_1755289144473.webp";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
 import sterlingImage from "@assets/Sterling-name-2-515x412_1755289517437.jpg";
 import stormTrooperImage from "@assets/Storm Trooper_1755290311684.avif";
+import roccoImage from "@assets/Rocco_1754686890866.avif";
+import candyImage from "@assets/Candy_1754687171237.webp";
+import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
+import doubleCakeImage from "@assets/Double Layer Cake_1755289022650.webp";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -128,141 +132,6 @@ export default function Puppies() {
     mrPenguinPartyImage,
     msAlpineGlowImage
   ];
-  // Import pedigree data structure from breeding dogs component
-  const getDogPedigreeData = (dogName: string) => {
-    const pedigrees: { [key: string]: any } = {
-      "Moon": {
-        name: "Moon",
-        formalName: "Belquest Conclusion Super Moon Rising",
-        titles: ["CH"],
-        image: moonImage,
-        sire: {
-          name: "Farnfield Topo Gigio (\"Gino\")",
-          titles: ["GCH", "CH"],
-          image: topoGigioImage,
-          achievements: "2019 Westminster Best of Breed"
-        }
-      },
-      "Grizzly": {
-        name: "Grizzly", 
-        formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
-        titles: [],
-        image: newGrizzlyImage,
-        sire: {
-          name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
-          titles: ["CH", "MX"],
-          image: boscoImage,
-          sire: {
-            name: "Shalimar's The Animator (\"Cyrus\")",
-            titles: ["GCH", "CH", "MBISS"],
-            image: cyrusImage,
-            achievements: "2016 Westminster Best of Breed"
-          }
-        }
-      },
-      "Holden": {
-        name: "Holden",
-        formalName: "On The Bluff's Holden Morrisey Caulfield", 
-        titles: [],
-        image: newHoldenImage,
-        sire: {
-          name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
-          titles: [],
-          sire: {
-            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
-            titles: [],
-            image: stoliImage,
-            dam: {
-              name: "Belquest Prequel To The Sequel (\"Sequel\")",
-              titles: [],
-              image: sequelImage,
-              sire: {
-                name: "GCH Highcaliber Labradale Expresso",
-                titles: ["GCH"],
-                image: expressoImage,
-                achievements: "2011 AKC Grand Champion"
-              }
-            }
-          }
-        },
-        dam: {
-          name: "Endless Mt On The Bluff's Franny Glass (\"Franny\")",
-          titles: [],
-          image: frannyGlassImage,
-          sire: {
-            name: "Endless Mt Shines Like Sterling (\"Sterling\")",
-            titles: ["CH"],
-            image: sterlingImage,
-            sire: {
-              name: "GCHB Willcare To Fly Under The Radar RN",
-              titles: ["GCHB", "RN"],
-              image: flyUnderRadarImage
-            }
-          }
-        }
-      },
-      "Boo Radley": {
-        name: "Boo Radley",
-        formalName: "On The Bluff's Mr. Boo Radley",
-        titles: [],
-        image: booRadleyImage,
-        sire: {
-          name: "Heartlands Storm Trooper", 
-          titles: [],
-          image: stormTrooperImage,
-          dam: {
-            name: "Heartlands Sienna",
-            titles: [],
-            sire: {
-              name: "Heartlands Polar Bear Chase",
-              titles: [],
-              image: chaseImage
-            }
-          }
-        }
-      },
-      "Twain": {
-        name: "Twain",
-        formalName: "Scarfone's Mark Twain",
-        titles: [],
-        image: twainBreedingImage,
-        sire: {
-          name: "Valhalla's One Little Victory JH",
-          titles: ["JH"],
-          sire: {
-            name: "CH Lubberline Martingale",
-            titles: ["CH"],
-            image: martingaleImage,
-            achievements: "2004 Westminster Best of Breed"
-          }
-        }
-      },
-      "Chekhov": {
-        name: "Chekhov",
-        formalName: "Belquest Conclusion's Anton Chekhov",
-        titles: [],
-        image: chekhovImage,
-        sire: {
-          name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
-          titles: [],
-          image: stoliImage,
-          dam: {
-            name: "Belquest Prequel To The Sequel (\"Sequel\")",
-            titles: ["CGC"],
-            image: sequelImage,
-            sire: {
-              name: "GCH Highcaliber Labradale Expresso",
-              titles: ["GCH"],
-              image: expressoImage,
-              achievements: "2011 AKC Grand Champion"
-            }
-          }
-        }
-      }
-    };
-    
-    return pedigrees[dogName] || null;
-  };
 
   const getSirePedigreeHighlight = (litterName: string) => {
     const sireName = litterName.split(' & ')[0];
@@ -304,102 +173,26 @@ export default function Puppies() {
               className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
               style={{color: '#6d761d'}}
             >
-              Shalimar's The Animator
+              Cyrus
             </button>
           </>
         )
       };
     }
-    
-    if (sireName === "Holden" && pedigreeData.sire?.sire?.dam?.sire) {
+
+    if (sireName === "Holden") {
       return {
-        text: (
-          <>
-            Descended from Grand Champion <button
-              onClick={() => {
-                setSelectedImage({
-                  src: expressoImage,
-                  name: "Highcaliber Labradale Expresso"
-                });
-                setIsImagePopupOpen(true);
-              }}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Highcaliber Labradale Expresso
-            </button>
-          </>
-        )
+        text: "Descended from GCH Highcaliber Labradale Expresso - 2011 AKC Grand Champion"
       };
     }
-    
+
     if (sireName === "Boo Radley" && pedigreeData.sire?.dam?.sire) {
       return {
-        text: (
-          <>
-            Descended from <button
-              onClick={() => {
-                setSelectedImage({
-                  src: chaseImage,
-                  name: "Heartland's Polar Bear Chase"
-                });
-                setIsImagePopupOpen(true);
-              }}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Heartland's Polar Bear Chase
-            </button>
-          </>
-        )
+        text: "Descended from 1983 Westminster Best of Breed St. Hubert's Higgins"
       };
     }
     
-    if (sireName === "Twain" && pedigreeData.sire?.sire) {
-      return {
-        text: (
-          <>
-            Descended from 2004 Westminster Best of Breed <button
-              onClick={() => {
-                setSelectedImage({
-                  src: martingaleImage,
-                  name: "Lubberline's Martingale"
-                });
-                setIsImagePopupOpen(true);
-              }}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Lubberline's Martingale
-            </button>
-          </>
-        )
-      };
-    }
-    
-    if (sireName === "Chekhov" && pedigreeData.sire?.dam?.sire) {
-      return {
-        text: (
-          <>
-            Descended from Grand Champion <button
-              onClick={() => {
-                setSelectedImage({
-                  src: expressoImage,
-                  name: "Highcaliber Labradale Expresso"
-                });
-                setIsImagePopupOpen(true);
-              }}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Highcaliber Labradale Expresso
-            </button>
-          </>
-        )
-      };
-    }
-    
-    return { text: "Champion Bloodline with exceptional lineage" };
+    return { text: "Champion bloodline with exceptional lineage" };
   };
 
   const calculateAge = (birthDate: string) => {
@@ -530,453 +323,246 @@ export default function Puppies() {
     setIsPedigreePopupOpen(true);
   };
 
-  const getPedigreeData = (litterName: string) => {
+  // Import the real pedigree data from breeding dogs
+  const getDogPedigreeData = (dogName: string) => {
     const pedigrees: { [key: string]: any } = {
-      "Moon & Foxxy": {
+      "Moon": {
+        name: "Moon",
+        formalName: "Belquest Conclusion Super Moon Rising",
+        titles: ["CH"],
+        image: moonImage,
         sire: {
-          name: "Moon",
-          titles: ["CH"],
-          sire: {
-            name: "Farnfield Topo Gigio",
-            titles: ["2019 Westminster BOB", "CH", "GCH"],
-            sire: {
-              name: "Topo's Sire",
-              titles: ["CH", "GCH"],
-              sire: {
-                name: "Topo's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Topo's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Topo's Dam",
-              titles: ["CH"],
-              sire: {
-                name: "Topo's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Topo's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          },
+          name: "Farnfield Topo Gigio (\"Gino\")",
+          titles: ["GCH", "CH"],
+          image: topoGigioImage,
+          achievements: "2019 Westminster Best of Breed",
           dam: {
-            name: "Moon's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Moon's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Moon's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Moon's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Moon's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Moon's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Moon's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          }
-        },
-        dam: {
-          name: "Foxxy",
-          titles: ["CH"],
-          sire: {
-            name: "Foxxy's Sire",
-            titles: ["CH"],
-            sire: {
-              name: "Foxxy's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Foxxy's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Foxxy's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Foxxy's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Foxxy's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Foxxy's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          },
-          dam: {
-            name: "Foxxy's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Foxxy's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Foxxy's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Foxxy's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Foxxy's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Foxxy's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Foxxy's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          }
-        }
-      },
-      "Moon & Nora": {
-        sire: {
-          name: "Moon",
-          titles: ["CH"],
-          sire: {
-            name: "Farnfield Topo Gigio",
-            titles: ["2019 Westminster BOB", "CH", "GCH"],
-            sire: {
-              name: "Topo's Sire",
-              titles: ["CH", "GCH"],
-              sire: {
-                name: "Topo's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Topo's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Topo's Dam",
-              titles: ["CH"],
-              sire: {
-                name: "Topo's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Topo's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          },
-          dam: {
-            name: "Moon's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Moon's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Moon's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Moon's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Moon's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Moon's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Moon's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          }
-        },
-        dam: {
-          name: "Nora",
-          titles: ["CH"],
-          sire: {
-            name: "Nora's Sire",
-            titles: ["CH"],
-            sire: {
-              name: "Nora's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Nora's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Nora's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Nora's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Nora's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Nora's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          },
-          dam: {
-            name: "Nora's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Nora's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Nora's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Nora's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Nora's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Nora's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Nora's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          }
-        }
-      },
-      "Grizzly & Guinevere": {
-        sire: {
-          name: "Grizzly",
-          titles: [],
-          sire: {
-            name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
-            titles: ["CH", "MX"],
-            image: boscoImage,
-            sire: {
-              name: "Shalimar's The Animator (\"Cyrus\")",
-              titles: ["GCH", "CH", "MBISS"],
-              image: cyrusImage,
-              sire: {
-                name: "Cyrus's Sire",
-                titles: ["CH"],
-                sire: {
-                  name: "Cyrus's Paternal Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Cyrus's Paternal Great-Granddam",
-                  titles: ["CH"]
-                }
-              },
-              dam: {
-                name: "Cyrus's Dam",
-                titles: ["CH"],
-                sire: {
-                  name: "Cyrus's Maternal Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Cyrus's Maternal Great-Granddam",
-                  titles: ["CH"]
-                }
-              }
-            },
-            dam: {
-              name: "Greenstone's Special Blend (\"Simmer\")",
-              titles: ["CH"],
-              image: simmerImage,
-              sire: {
-                name: "Loretta's Maternal Grandsire",
-                titles: ["CH"],
-                sire: {
-                  name: "Loretta's Paternal Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Loretta's Paternal Great-Granddam",
-                  titles: ["CH"]
-                }
-              },
-              dam: {
-                name: "Loretta's Maternal Granddam",
-                titles: ["CH"],
-                sire: {
-                  name: "Loretta's Maternal Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Loretta's Maternal Great-Granddam",
-                  titles: ["CH"]
-                }
-              }
-            }
-          },
-          dam: {
-            name: "Endless Mountain's Hannah",
+            name: "Kim Valley Star Attraction of Farnfield",
             titles: [],
-            image: hannahImage,
+          },
+          sire: {
+            name: "Charm Bluveil's Mr. Darcy",
+            titles: ["CH"],
             sire: {
-              name: "Endless Mountain's Second Son (\"Brody\")",
-              titles: [],
-              image: brodyImage,
+              name: "Topo's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Topo's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        },
+        dam: {
+          name: "Belquest Conclusion Frozen Margarita",
+          titles: ["CH"],
+          sire: {
+            name: "Wiscoy's Rocco",
+            titles: ["CH"],
+            image: roccoImage,
+            sire: {
+              name: "Moon's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Moon's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Belquest Nostalgic Candy (\"Candy\")",
+            titles: ["BOBBBE", "GCH", "CH"],
+            image: candyImage,
+            achievements: "2013 AKC/Eukanuba National Championship Best of Breed Bred-by-Exhibitor",
+            sire: {
+              name: "Moon's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Moon's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        }
+      },
+      "Grizzly": {
+        name: "Grizzly",
+        formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
+        titles: [],
+        image: newGrizzlyImage,
+        sire: {
+          name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
+          titles: ["CH", "MX"],
+          image: boscoImage,
+          sire: {
+            name: "Shalimar's The Animator (\"Cyrus\")",
+            titles: ["GCH", "CH", "MBISS"],
+            image: cyrusImage,
+            sire: {
+              name: "Cyrus's Sire",
+              titles: ["CH"],
+              sire: {
+                name: "Cyrus's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Cyrus's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Cyrus's Dam",
+              titles: ["CH"],
+              sire: {
+                name: "Cyrus's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Cyrus's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          },
+          dam: {
+            name: "Greenstone's Special Blend (\"Simmer\")",
+            titles: ["CH"],
+            image: simmerImage,
+            sire: {
+              name: "Loretta's Maternal Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Loretta's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Loretta's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Loretta's Maternal Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Loretta's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Loretta's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          }
+        },
+        dam: {
+          name: "Endless Mountain's Hannah",
+          titles: [],
+          image: hannahImage,
+          sire: {
+            name: "Endless Mountain's Second Son (\"Brody\")",
+            titles: [],
+            image: brodyImage,
+            sire: {
+              name: "Brody's Sire",
+              titles: ["CH"],
+              sire: {
+                name: "Brody's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Brody's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Brody's Dam",
+              titles: ["CH"],
+              sire: {
+                name: "Brody's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Brody's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          },
+          dam: {
+            name: "Hannah's Dam",
+            titles: ["CH"],
+            sire: {
+              name: "Hannah's Maternal Grandsire",
+              titles: ["CH"],
               sire: {
                 name: "Hannah's Paternal Great-Grandsire",
-                titles: ["CH"],
-                sire: {
-                  name: "Hannah's Paternal Great-Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Hannah's Paternal Great-Great-Granddam",
-                  titles: ["CH"]
-                }
+                titles: ["CH"]
               },
               dam: {
                 name: "Hannah's Paternal Great-Granddam",
-                titles: ["CH"],
-                sire: {
-                  name: "Hannah's Paternal Maternal Great-Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Hannah's Paternal Maternal Great-Great-Granddam",
-                  titles: ["CH"]
-                }
+                titles: ["CH"]
               }
             },
             dam: {
-              name: "Endless Mountain's Georgia On My Mind",
-              titles: [],
+              name: "Hannah's Maternal Granddam",
+              titles: ["CH"],
               sire: {
                 name: "Hannah's Maternal Great-Grandsire",
-                titles: ["CH"],
-                sire: {
-                  name: "Hannah's Maternal Great-Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Hannah's Maternal Great-Great-Granddam",
-                  titles: ["CH"]
-                }
+                titles: ["CH"]
               },
               dam: {
                 name: "Hannah's Maternal Great-Granddam",
-                titles: ["CH"],
-                sire: {
-                  name: "Hannah's Maternal Maternal Great-Great-Grandsire",
-                  titles: ["CH"]
-                },
-                dam: {
-                  name: "Hannah's Maternal Maternal Great-Great-Granddam",
-                  titles: ["CH"]
-                }
-              }
-            }
-          }
-        },
-        dam: {
-          name: "Guinevere",
-          titles: ["CH"],
-          sire: {
-            name: "Guinevere's Sire",
-            titles: ["CH"],
-            sire: {
-              name: "Guinevere's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Guinevere's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Guinevere's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Guinevere's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Guinevere's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Guinevere's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          },
-          dam: {
-            name: "Guinevere's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Guinevere's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Guinevere's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Guinevere's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Guinevere's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Guinevere's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Guinevere's Dam's Maternal Great-Granddam",
                 titles: ["CH"]
               }
             }
           }
         }
       },
-      "Holden & Alola": {
+      "Holden": {
+        name: "Holden",
+        formalName: "On The Bluff's Holden Morrisey Caulfield",
+        titles: [],
+        image: newHoldenImage,
         sire: {
-          name: "Holden",
-          titles: ["CH"],
+          name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
+          titles: [],
           sire: {
-            name: "Highcaliber Labradale Expresso",
-            titles: ["2011 AKC Grand Champion", "CH", "GCH"],
+            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
+            titles: [],
+            image: stoliImage,
+            sire: {
+              name: "Aster Liberti Labro Hamburg",
+              titles: ["CH"],
+              image: hamburgImage
+            },
+            dam: {
+              name: "Belquest Prequel To The Sequel (\"Sequel\")",
+              titles: [],
+              image: sequelImage
+            }
+          },
+          dam: {
+            name: "Belquest Conclusion Seminary Old Time Rock & Roll",
+            titles: [],
+            sire: {
+              name: "GCH Harlequin Like A Rock",
+              titles: ["GCH"]
+            },
+            dam: {
+              name: "Seminary Ridge's Reveille At Belquest CD BN RN JH CGC",
+              titles: ["CD", "BN", "RN", "JH", "CGC"]
+            }
+          }
+        },
+        dam: {
+          name: "Belquest Conclusion Double Layer Cake (\"Cake\")",
+          titles: [],
+          image: doubleCakeImage,
+          sire: {
+            name: "Expresso",
+            titles: ["GCH", "CH"],
+            image: expressoImage,
             sire: {
               name: "Expresso's Sire",
-              titles: ["CH", "GCH"],
+              titles: ["CH"],
               sire: {
                 name: "Expresso's Paternal Great-Grandsire",
                 titles: ["CH"]
@@ -1000,342 +586,304 @@ export default function Puppies() {
             }
           },
           dam: {
-            name: "Holden's Dam",
-            titles: ["CH"],
+            name: "Belquest Conclusion Sterlin' Silver Serenade (\"Sterling\")",
+            titles: [],
+            image: sterlingImage,
             sire: {
-              name: "Holden's Maternal Grandsire",
+              name: "Sterling's Sire",
               titles: ["CH"],
               sire: {
-                name: "Holden's Maternal Great-Grandsire",
+                name: "Sterling's Paternal Great-Grandsire",
                 titles: ["CH"]
               },
               dam: {
-                name: "Holden's Maternal Great-Granddam",
+                name: "Sterling's Paternal Great-Granddam",
                 titles: ["CH"]
               }
             },
             dam: {
-              name: "Holden's Maternal Granddam",
+              name: "Sterling's Dam",
               titles: ["CH"],
               sire: {
-                name: "Holden's Dam's Maternal Great-Grandsire",
+                name: "Sterling's Maternal Great-Grandsire",
                 titles: ["CH"]
               },
               dam: {
-                name: "Holden's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          }
-        },
-        dam: {
-          name: "Alola",
-          titles: ["CH"],
-          sire: {
-            name: "Alola's Sire",
-            titles: ["CH"],
-            sire: {
-              name: "Alola's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Alola's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Alola's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Alola's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Alola's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Alola's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
-            }
-          },
-          dam: {
-            name: "Alola's Dam",
-            titles: ["CH"],
-            sire: {
-              name: "Alola's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Alola's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Alola's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
-            },
-            dam: {
-              name: "Alola's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Alola's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Alola's Dam's Maternal Great-Granddam",
+                name: "Sterling's Maternal Great-Granddam",
                 titles: ["CH"]
               }
             }
           }
         }
       },
-      "Boo Radley & Queen Boudica": {
+      "Foxxy": {
+        name: "Foxxy",
+        formalName: "On The Bluff's Foxxy Lady",
+        titles: [],
+        image: foxxyImage,
         sire: {
-          name: "Boo Radley",
+          name: "Foxxy's Sire",
           titles: ["CH"],
           sire: {
-            name: "Boo Radley's Sire",
+            name: "Foxxy's Paternal Grandsire",
             titles: ["CH"],
             sire: {
-              name: "Boo Radley's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Boo Radley's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Boo Radley's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Paternal Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Boo Radley's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Boo Radley's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Boo Radley's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Paternal Great-Granddam",
+              titles: ["CH"]
             }
           },
           dam: {
-            name: "Boo Radley's Dam",
+            name: "Foxxy's Paternal Granddam",
             titles: ["CH"],
             sire: {
-              name: "Boo Radley's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Boo Radley's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Boo Radley's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Boo Radley's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Boo Radley's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Boo Radley's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
             }
           }
         },
         dam: {
-          name: "Queen Boudica",
+          name: "Foxxy's Dam",
           titles: ["CH"],
           sire: {
-            name: "Queen Boudica's Sire",
+            name: "Foxxy's Maternal Grandsire",
             titles: ["CH"],
             sire: {
-              name: "Queen Boudica's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Queen Boudica's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Queen Boudica's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Maternal Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Queen Boudica's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Queen Boudica's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Queen Boudica's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Maternal Great-Granddam",
+              titles: ["CH"]
             }
           },
           dam: {
-            name: "Queen Boudica's Dam",
+            name: "Foxxy's Maternal Granddam",
             titles: ["CH"],
             sire: {
-              name: "Queen Boudica's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Queen Boudica's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Queen Boudica's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Queen Boudica's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Queen Boudica's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Queen Boudica's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Foxxy's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
             }
           }
         }
       },
-      "Moon & Harper Lee": {
+      "Nora": {
+        name: "Nora",
+        formalName: "On The Bluff's Nora",
+        titles: ["CH"],
+        image: noraImage,
         sire: {
-          name: "Moon",
+          name: "Nora's Sire",
           titles: ["CH"],
           sire: {
-            name: "Farnfield Topo Gigio",
-            titles: ["2019 Westminster BOB", "CH", "GCH"],
+            name: "Nora's Paternal Grandsire",
+            titles: ["CH"],
             sire: {
-              name: "Topo's Sire",
-              titles: ["CH", "GCH"],
-              sire: {
-                name: "Topo's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Topo's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Paternal Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Topo's Dam",
-              titles: ["CH"],
-              sire: {
-                name: "Topo's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Topo's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Paternal Great-Granddam",
+              titles: ["CH"]
             }
           },
           dam: {
-            name: "Moon's Dam",
+            name: "Nora's Paternal Granddam",
             titles: ["CH"],
             sire: {
-              name: "Moon's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Moon's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Moon's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Moon's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Moon's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Moon's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
             }
           }
         },
         dam: {
-          name: "Harper Lee",
+          name: "Nora's Dam",
           titles: ["CH"],
           sire: {
-            name: "Harper Lee's Sire",
+            name: "Nora's Maternal Grandsire",
             titles: ["CH"],
             sire: {
-              name: "Harper Lee's Paternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Harper Lee's Paternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Harper Lee's Paternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Maternal Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Harper Lee's Paternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Harper Lee's Paternal Dam's Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Harper Lee's Paternal Dam's Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Maternal Great-Granddam",
+              titles: ["CH"]
             }
           },
           dam: {
-            name: "Harper Lee's Dam",
+            name: "Nora's Maternal Granddam",
             titles: ["CH"],
             sire: {
-              name: "Harper Lee's Maternal Grandsire",
-              titles: ["CH"],
-              sire: {
-                name: "Harper Lee's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Harper Lee's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
             },
             dam: {
-              name: "Harper Lee's Maternal Granddam",
-              titles: ["CH"],
-              sire: {
-                name: "Harper Lee's Dam's Maternal Great-Grandsire",
-                titles: ["CH"]
-              },
-              dam: {
-                name: "Harper Lee's Dam's Maternal Great-Granddam",
-                titles: ["CH"]
-              }
+              name: "Nora's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        }
+      },
+      "Guinevere": {
+        name: "Guinevere",
+        formalName: "On The Bluff Guinevere",
+        titles: ["CH"],
+        sire: {
+          name: "Guinevere's Sire",
+          titles: ["CH"],
+          sire: {
+            name: "Guinevere's Paternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Guinevere's Paternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        },
+        dam: {
+          name: "Guinevere's Dam",
+          titles: ["CH"],
+          sire: {
+            name: "Guinevere's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Guinevere's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Guinevere's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Guinevere's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        }
+      },
+      "Alola": {
+        name: "Alola",
+        formalName: "On The Bluff's Alola",
+        titles: [],
+        image: alolaImage,
+        sire: {
+          name: "Alola's Sire",
+          titles: ["CH"],
+          sire: {
+            name: "Alola's Paternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Alola's Paternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Alola's Paternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Alola's Paternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Alola's Paternal Dam's Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Alola's Paternal Dam's Great-Granddam",
+              titles: ["CH"]
+            }
+          }
+        },
+        dam: {
+          name: "Alola's Dam",
+          titles: ["CH"],
+          sire: {
+            name: "Alola's Maternal Grandsire",
+            titles: ["CH"],
+            sire: {
+              name: "Alola's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Alola's Maternal Great-Granddam",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Alola's Maternal Granddam",
+            titles: ["CH"],
+            sire: {
+              name: "Alola's Dam's Maternal Great-Grandsire",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Alola's Dam's Maternal Great-Granddam",
+              titles: ["CH"]
             }
           }
         }
       }
     };
     
-    return pedigrees[litterName] || null;
+    return pedigrees[dogName] || null;
+  };
+
+  const getPedigreeData = (litterName: string) => {
+    // Extract sire and dam names from litter name
+    const [sireName, damName] = litterName.split(' & ');
+    
+    // Get the actual pedigree data for both parents
+    const sireData = getDogPedigreeData(sireName);
+    const damData = getDogPedigreeData(damName);
+    
+    if (!sireData || !damData) {
+      return null;
+    }
+
+    return {
+      sire: sireData,
+      dam: damData
+    };
   };
 
   const renderLitterCard = (litter: any, index: number) => {
