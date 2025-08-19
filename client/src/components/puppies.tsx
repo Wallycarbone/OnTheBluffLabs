@@ -1270,7 +1270,7 @@ export default function Puppies() {
                   setIsImagePopupOpen(true);
                 }}
               >
-                <div className="aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                <div className="aspect-square overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
                   <img 
                     src={puppy.src}
                     alt={puppy.alt}
