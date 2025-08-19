@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Award } from "lucide-react";
 import { Link } from "wouter";
-import heroImage from "@assets/Breeding Dogs 5x4 (5)_1754340347869.png";
+import heroImage from "@assets/Breeding Dogs 5x4 (26)_1755633529235.png";
 import moonImage from "@assets/Moon_1754669243572.png";
 import trainingImage from "@assets/Breeding Dogs 5x4 (7)_1754767557970.png";
 import rawFoodImage from "@assets/Breeding Dogs 5x4 (6)_1754674032280.png";
