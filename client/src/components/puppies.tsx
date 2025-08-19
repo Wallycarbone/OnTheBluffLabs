@@ -172,26 +172,14 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Shalimar's The Animator
-            </button> through champion bloodlines with exceptional hunting and field titles
+            </button> through sire Grizzly's champion bloodline
           </>
         )
       },
       "Holden & Alola": {
         text: (
           <>
-            Descended from Grand Champion and Canine Good Citizen <button
-              onClick={() => {
-                setSelectedImage({
-                  src: flyUnderRadarImage,
-                  name: "Willcare To Fly Under The Radar"
-                });
-                setIsImagePopupOpen(true);
-              }}
-              className="underline cursor-pointer hover:opacity-80 transition-opacity font-medium"
-              style={{color: '#6d761d'}}
-            >
-              Willcare To Fly Under The Radar
-            </button> through 2011 AKC Grand Champion <button
+            Descended from Grand Champion <button
               onClick={() => {
                 setSelectedImage({
                   src: expressoImage,
@@ -203,7 +191,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Highcaliber Labradale Expresso
-            </button>
+            </button> through sire Holden's champion lineage
           </>
         )
       },
@@ -222,7 +210,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Heartland's Polar Bear Chase
-            </button> through champion bloodlines with exceptional temperament and gentle nature
+            </button> through sire Boo Radley's champion bloodline
           </>
         )
       },
@@ -241,14 +229,14 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Lubberline's Martingale
-            </button> through champion hunting and field bloodlines
+            </button> through sire Twain's champion hunting lineage
           </>
         )
       },
       "Chekhov & Lay Lay": {
         text: (
           <>
-            Descended from 2011 AKC Grand Champion <button
+            Descended from Grand Champion <button
               onClick={() => {
                 setSelectedImage({
                   src: expressoImage,
@@ -260,7 +248,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Highcaliber Labradale Expresso
-            </button> through champion bloodlines with noble temperament
+            </button> through sire Chekhov's champion lineage
           </>
         )
       }
