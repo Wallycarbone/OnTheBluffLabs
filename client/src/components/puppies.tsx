@@ -12,13 +12,14 @@ import moonImage from "@assets/Moon 5x4_1753563791440.png";
 import moonImage2 from "@assets/Moon 5x4_1753565341801.png";
 import noraImage from "@assets/Nora 5x4_1753565326175.png";
 
+// Core dog images (avoiding duplicates below)  
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Gino_1754685352006.webp";
-import boscoImage from "@assets/bosco1_1753815440343.avif?url";
-import hannahImage from "@assets/Hannah_1753736053468.png?url";
-import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg?url";
-import simmerImage from "@assets/Simmer_1753810570980.avif?url";
-import brodyImage from "@assets/Brody_1753811205545.jpg?url";
+import boscoImage from "@assets/Bosco_1753734656860.avif";
+import hannahImage from "@assets/Hannah_1753736053468.png";
+import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg";
+import simmerImage from "@assets/Simmer_1753810570980.avif";
+import brodyImage from "@assets/Brody_1753811205545.jpg";
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
 import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
 import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
@@ -80,7 +81,15 @@ import stormTrooperImage from "@assets/Storm Trooper_1755290311684.avif";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
 import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
-import doubleCakeImage from "@assets/Double Layer Cake_1755289022650.webp";
+// Additional imports for complete pedigree data (avoiding duplicates from above)
+import newHarperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
+import atticusFinchImage from "@assets/Atticus_1754340164760.jpeg";
+import arabellaImage from "@assets/Arabella_1755287697962.jpg";
+import markTwainImage from "@assets/Mark Twain_1755287752095.avif";
+import piperImage from "@assets/Piper_1755287967893.avif";
+import layLayImage from "@assets/Double Layer Cake_1755289022650.webp";
+import duffyImage from "@assets/Duffy_1755289259139.avif";
+import emmaImage from "@assets/Emma_1755291275425.webp";
 
 export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
@@ -555,7 +564,7 @@ export default function Puppies() {
         dam: {
           name: "Belquest Conclusion Double Layer Cake (\"Cake\")",
           titles: [],
-          image: doubleCakeImage,
+          image: layLayImage,
           sire: {
             name: "Expresso",
             titles: ["GCH", "CH"],
