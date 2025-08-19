@@ -881,11 +881,19 @@ export default function Puppies() {
     // Extract sire and dam names from litter name
     const [sireName, damName] = litterName.split(' & ');
     
+    console.log("Getting pedigree for litter:", litterName);
+    console.log("Sire name:", sireName);
+    console.log("Dam name:", damName);
+    
     // Get the actual pedigree data for both parents
     const sireData = getDogPedigreeData(sireName);
     const damData = getDogPedigreeData(damName);
     
+    console.log("Sire data found:", !!sireData);
+    console.log("Dam data found:", !!damData);
+    
     if (!sireData || !damData) {
+      console.log("Missing pedigree data - sire:", !!sireData, "dam:", !!damData);
       return null;
     }
 
