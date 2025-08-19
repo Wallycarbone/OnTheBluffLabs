@@ -1,5 +1,5 @@
 import Navigation from "@/components/navigation";
-import Puppies from "@/components/puppies-clean";
+import Puppies from "@/components/puppies";
 import Footer from "@/components/footer";
 
 export default function PuppiesPage() {
