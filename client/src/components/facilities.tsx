@@ -24,6 +24,12 @@ export default function Team() {
       image: jessImage,
     },
     {
+      name: "Andrea Reuben-Carbone",
+      role: "Administrative Team Member",
+      description: "Andrea handles the administrative aspects of our breeding program, managing communications with families and coordinating the many details that ensure smooth operations. Her organizational skills help keep our breeding program running efficiently.",
+      image: "/attached_assets/placeholder.png",
+    },
+    {
       name: "Thomas Gambino",
       role: "Puppy Training & Family Coordinator",
       description: "Thomas trains puppies, helps with puppy placement, and is a valued member of one of our co-owner families. His hands-on experience and personal connection to our breeding program brings authentic insight to puppy development and family matching.",
