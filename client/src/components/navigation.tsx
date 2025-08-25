@@ -147,7 +147,7 @@ export default function Navigation() {
           {/* Tablet Navigation (hidden on mobile and desktop) */}
           <div className="hidden md:block lg:hidden">
             <div className="flex items-center space-x-1">
-              <NavButton href="/breeding-dogs" label="Dogs" />
+              <NavButton href="/breeding-dogs" label="Our Dogs" />
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
               <NavButton href="/dog-food" label="Food" />
