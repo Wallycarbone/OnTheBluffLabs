@@ -143,6 +143,40 @@ export default function Boarding() {
           </Card>
         </div>
 
+        {/* Meet Lilly Section */}
+        <div className="mb-16">
+          <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <CardContent className="p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="text-center order-2 lg:order-1">
+                  <img 
+                    src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (82)_1756151491098.png"
+                    alt="Lilly, the gentle host dog - chocolate Labrador in green field"
+                    className="w-full h-auto object-contain rounded-xl shadow-lg max-h-96"
+                  />
+                </div>
+                <div className="order-1 lg:order-2">
+                  <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
+                    Meet Lilly, Your Dog's Gentle Host
+                  </h3>
+                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Every dog who stays at the Bluff is welcomed by Lilly, our calm and experienced host dog. With her gentle temperament and natural ability to put other dogs at ease, Lilly creates a stress-free environment where learning can flourish.
+                  </p>
+                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Lilly's presence helps visiting dogs feel at home from day one. She models calm behavior, provides companionship during downtime, and serves as a reassuring friend throughout their stay. Her steady, supportive nature is especially valuable for dogs who may feel anxious about being away from home.
+                  </p>
+                  <div className="flex items-center">
+                    <Heart className="w-5 h-5 mr-3" style={{color: '#6d761d'}} />
+                    <span className="text-sm font-montserrat font-medium" style={{color: '#4b4b4b'}}>
+                      Lilly: Creating comfort and confidence for every guest
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Boarding Features */}
         <div className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
