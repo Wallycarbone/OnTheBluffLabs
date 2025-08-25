@@ -247,7 +247,7 @@ export default function Boarding() {
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
               >
-                Inquire About Board & Train
+                Request a Retreat
               </Button>
             </CardContent>
           </Card>
