@@ -27,7 +27,7 @@ export default function Team() {
       name: "Andrea Reuben-Carbone",
       role: "Administrative Team Member",
       description: "Andrea manages all of our paperwork and ensures we maintain compliance with the AKC and Department of Agriculture regulations. Her meticulous attention to detail and regulatory expertise keeps our breeding program operating within all professional standards and legal requirements.",
-      image: "/attached_assets/placeholder.png",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png",
     },
     {
       name: "Thomas Gambino",
