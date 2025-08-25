@@ -238,7 +238,7 @@ export default function Boarding() {
                 Transform Your Dog's Behavior
               </h3>
               <p className="text-base font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
-                Give your companion the gift of transformation at our serene mountain retreat. We welcome only a select few dogs at a time, ensuring personalized attention and meaningful progress for every guest.
+                Give your companion the gift of transformation with us. We welcome only a few dogs at a time, ensuring personalized attention and meaningful progress for every guest.
               </p>
               <Button 
                 onClick={scrollToContact}
