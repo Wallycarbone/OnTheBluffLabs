@@ -48,8 +48,9 @@ export default function Boarding() {
 
         {/* Essay Section */}
         <div className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6 font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+          <Card className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-4xl mx-auto">
+            <CardContent className="p-8">
+              <div className="space-y-6 font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
               <p className="text-lg">
                 At On The Bluff Labradors, every dog carries forward a legacy — decades of careful breeding, intelligence, and gentle strength that define the English Labrador. Retreat to the Bluff is more than a training program; it's a dedicated time away where your adult dog can grow, learn, and thrive.
               </p>
@@ -83,15 +84,14 @@ export default function Boarding() {
               <p className="text-lg">
                 Retreat to the Bluff isn't just training — it's a transformational experience, honoring the heritage of the Labrador while shaping your companion for a lifetime of joy, confidence, and companionship.
               </p>
-            </div>
-          </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Main Boarding Information */}
         <div className="mb-16">
-          <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
                     Focused Training on Everyday Behaviors
@@ -139,9 +139,7 @@ export default function Boarding() {
                     style={{objectPosition: '50% 40%'}}
                   />
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+          </div>
         </div>
 
         {/* Meet Lilly Section */}
