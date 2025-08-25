@@ -51,7 +51,7 @@ export default function Boarding() {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6 font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
               <p className="text-lg">
-                At On The Bluff Labradors, every dog carries forward a legacy — decades of careful breeding, intelligence, and gentle strength that define the English Labrador. Retreat to the Bluff is more than a training program; it's a dedicated time away where your dog grows, learns, and thrives.
+                At On The Bluff Labradors, every dog carries forward a legacy — decades of careful breeding, intelligence, and gentle strength that define the English Labrador. Retreat to the Bluff is more than a training program; it's a dedicated time away where your adult dog can grow, learn, and thrive.
               </p>
               
               <p className="text-lg">
