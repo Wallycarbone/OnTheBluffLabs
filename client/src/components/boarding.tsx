@@ -104,12 +104,6 @@ export default function Boarding() {
                     Using gentle, positive reinforcement methods, we reinforce good behavior, relearn positive habits, and teach new skills 
                     in our controlled training environment. This immersive approach accelerates learning and helps dogs generalize their training to real-world situations.
                   </p>
-                  <div className="flex items-center mb-4">
-                    <Clock className="w-5 h-5 mr-3" style={{color: '#6d761d'}} />
-                    <span className="text-sm font-montserrat font-medium" style={{color: '#4b4b4b'}}>
-                      2-week, 4-week, and 6-week programs available
-                    </span>
-                  </div>
                 </div>
                 <div className="text-center">
                   <img 
