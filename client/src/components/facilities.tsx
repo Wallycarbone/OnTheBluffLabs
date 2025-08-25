@@ -53,6 +53,12 @@ export default function Team() {
       description: "Julie is a bachelor's candidate in SUNY Cobleskill's Canine Training and Management program, and she helps train our puppies. Her formal education in canine behavior and training methods enhances our puppy development programs.",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png",
     },
+    {
+      name: "Drew Richards",
+      role: "Weekend Puppy Caretaker",
+      description: "Drew brings extensive doggie daycare experience to our weekend puppy care team. His understanding of group dynamics and individual puppy needs ensures our young Labradors receive quality attention and socialization during their crucial early development phase.",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (20)_1756152199562.png",
+    },
   ];
 
   return (
