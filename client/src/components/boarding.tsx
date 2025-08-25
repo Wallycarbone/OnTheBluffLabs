@@ -75,10 +75,6 @@ export default function Boarding() {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
-                    <span><strong style={{color: '#11100f'}}>Lifelong Impact:</strong> Your dog returns home balanced, confident, and ready to shine.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
                     <span><strong style={{color: '#11100f'}}>Stress-Free Environment:</strong> With our gentle host dog, Lilly, your dog feels calm, safe, and supported throughout their stay.</span>
                   </li>
                 </ul>
