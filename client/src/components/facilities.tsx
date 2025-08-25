@@ -43,7 +43,7 @@ export default function Team() {
     },
     {
       name: "Poppy Tampasis",
-      role: "Team Member", 
+      role: "Adult Dog Specialist", 
       description: "Poppy's family has co-owned for years, so Labradors are a family affair for him. This deep, multi-generational connection to our breeding program brings invaluable insight to facility operations and puppy development.",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
     },
