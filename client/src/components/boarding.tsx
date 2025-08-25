@@ -94,15 +94,41 @@ export default function Boarding() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-                    Professional Training Immersion
+                    Focused Training on Everyday Behaviors
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Our board and train program combines the benefits of professional training with premium boarding care. Your dog stays 
-                    at our facility while receiving intensive, daily training sessions from our training team.
+                    At On The Bluff, we know that every adult dog has the potential to grow and thrive with the right guidance. Our goal is not just manners — it's helping you and your dog establish a foundation of positive habits that make everyday life more harmonious. Some of the behaviors we are most often asked to work on include:
                   </p>
-                  <p className="text-base font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Using gentle, positive reinforcement methods, we reinforce good behavior, relearn positive habits, and teach new skills 
-                    in our controlled training environment. This immersive approach accelerates learning and helps dogs generalize their training to real-world situations.
+                  
+                  <ul className="space-y-3 mb-6">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                      <span className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong style={{color: '#11100f'}}>Leash Walking:</strong> Teaching calm, focused walking so you and your dog enjoy strolls safely.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                      <span className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong style={{color: '#11100f'}}>No Jumping:</strong> Reinforcing polite greetings and respectful interactions with family, friends, and visitors.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                      <span className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong style={{color: '#11100f'}}>No Counter Surfing:</strong> Helping your dog resist temptation and develop self-control around food and household items.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                      <span className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong style={{color: '#11100f'}}>Reliable Recall:</strong> Ensuring your dog responds consistently to your call, giving you freedom and confidence during outings.
+                      </span>
+                    </li>
+                  </ul>
+                  
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Each behavior is approached with consistency, patience, and positive reinforcement, giving your dog the tools to succeed both at the Bluff and at home. With our guidance and your custom go-home plan, these lessons become lasting habits, shaping a companion who is confident, well-mannered, and a joy to be around.
                   </p>
                 </div>
                 <div className="text-center">
