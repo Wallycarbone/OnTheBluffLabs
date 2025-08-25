@@ -15,7 +15,7 @@ export default function Team() {
       name: "Lyrica Crosby, LVT",
       role: "General Manager & Licensed Veterinary Technician",
       description: "Lyrica is both our general manager and a licensed veterinary technician. She oversees breeding and whelping, ensures our health testing protocols are followed, and provides expert medical care for our breeding dogs and puppies.",
-      highlight: "Guardian to On The Bluff's Becky Thatcher",
+      highlight: "Guardian to On The Bluff's Becky Thatcher, Mayella Violet, and Felicity",
       image: lyricaImage,
     },
     {
