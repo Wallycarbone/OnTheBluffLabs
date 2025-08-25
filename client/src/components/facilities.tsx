@@ -35,6 +35,7 @@ export default function Team() {
       name: "Thomas Gambino",
       role: "Puppy Training & Family Coordinator",
       description: "Thomas trains puppies, helps with puppy placement, and is a valued member of one of our co-owner families. His hands-on experience and personal connection to our breeding program brings authentic insight to puppy development and family matching.",
+      highlight: "Member of Tampasis Family, Our Breeding Partners",
       image: "/attached_assets/24_1754773881053.png",
     },
     {
@@ -55,6 +56,7 @@ export default function Team() {
       name: "Poppy Tampasis",
       role: "Adult Dog Specialist", 
       description: "Poppy's family has co-owned for years, so Labradors are a family affair for him. This deep, multi-generational connection to our breeding program brings invaluable insight to facility operations and puppy development.",
+      highlight: "Member of Tampasis Family, Our Breeding Partners",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
     },
     {
