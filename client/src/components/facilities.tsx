@@ -15,6 +15,7 @@ export default function Team() {
       name: "Lyrica Crosby, LVT",
       role: "General Manager & Licensed Veterinary Technician",
       description: "Lyrica is both our general manager and a licensed veterinary technician. She oversees breeding and whelping, ensures our health testing protocols are followed, and provides expert medical care for our breeding dogs and puppies.",
+      highlight: "Guardian to On The Bluff's Becky Thatcher",
       image: lyricaImage,
     },
     {
@@ -105,6 +106,13 @@ export default function Team() {
                 <p className="text-warm-gray text-sm leading-relaxed">
                   {member.description}
                 </p>
+                {member.highlight && (
+                  <div className="mt-3 pt-3 border-t border-gray-200">
+                    <p className="text-xs font-medium italic" style={{color: '#6d761d'}}>
+                      {member.highlight}
+                    </p>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
