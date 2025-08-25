@@ -40,7 +40,7 @@ import alolaImage from "@assets/Alola (5x4)_1753627164133.png";
 import foxxyImage from "@assets/Foxxy (5x4)_1753627279647.png";
 import moonImage3 from "@assets/Moon 5x4_1753627311757.png";
 import matureDogsImage from "@assets/Breeding Dogs 5x4_1753642698754.png";
-// Previous puppy images for "Generations of Excellence" gallery
+// Previous puppy images for "Generations of Distinction" gallery
 import previousCooper from "@assets/Puppies 5x4 (2)_1755530661173.png";
 import previousShadow from "@assets/Puppies 5x4 (3)_1755534520644.png";
 import previousSunny from "@assets/Puppies 5x4 (4)_1755535459095.png";
@@ -1139,7 +1139,7 @@ export default function Puppies() {
         <div className="bg-white py-20 px-4 sm:px-6 lg:px-8 mb-20">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-5xl md:text-6xl font-oswald font-normal tracking-wide mb-12" style={{color: '#11100f'}}>
-              GENERATIONS OF EXCELLENCE
+              GENERATIONS OF DISTINCTION
             </h2>
             
             {/* Legacy Statement */}
