@@ -26,7 +26,7 @@ export default function Team() {
     {
       name: "Andrea Reuben-Carbone",
       role: "Administrative Team Member",
-      description: "Andrea handles the administrative aspects of our breeding program, managing communications with families and coordinating the many details that ensure smooth operations. Her organizational skills help keep our breeding program running efficiently.",
+      description: "Andrea manages all of our paperwork and ensures we maintain compliance with the AKC and Department of Agriculture regulations. Her meticulous attention to detail and regulatory expertise keeps our breeding program operating within all professional standards and legal requirements.",
       image: "/attached_assets/placeholder.png",
     },
     {
