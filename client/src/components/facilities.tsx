@@ -73,6 +73,7 @@ export default function Team() {
       name: "The Tampasis Family",
       role: "Breeding Partner",
       description: "The Tampasis Family is a highly trusted family who hosts some of our beloved dames in their home and helps raise their puppies. Their dedicated care and nurturing environment provides our breeding dogs and litters with the individual attention and family atmosphere that contributes to well-socialized, confident puppies.",
+      highlight: "Family of Guardians to On The Bluff's Akadia, Alola, Amity, Aspen, Aubrey, and Aurelia",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
     },
   ];
