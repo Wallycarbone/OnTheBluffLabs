@@ -40,6 +40,7 @@ export default function Boarding() {
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
             RETREAT TO THE BLUFF
           </h2>
+          <div className="w-24 h-1 mx-auto mb-6 rounded-full" style={{backgroundColor: '#6d761d'}}></div>
           <p className="text-xl font-source-sans max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
             Shaping Lifelong Companions Through Focused Board and Train
           </p>
