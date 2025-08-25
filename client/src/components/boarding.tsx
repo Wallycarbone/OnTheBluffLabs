@@ -72,8 +72,8 @@ export default function Boarding() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="/attached_assets/Y30A9681 (4)_1754773587359.jpg"
-                    alt="Professional dog training session - trainer working with fox red Labrador in outdoor setting"
+                    src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (81)_1756150186684.png"
+                    alt="Professional dog training session - trainer working with golden Labrador in backyard setting"
                     className="w-full h-96 object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 30%'}}
                   />
