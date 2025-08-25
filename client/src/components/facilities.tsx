@@ -65,6 +65,12 @@ export default function Team() {
       description: "Drew brings extensive doggie daycare experience to our weekend puppy care team. His understanding of group dynamics and individual puppy needs ensures our young Labradors receive quality attention and socialization during their crucial early development phase.",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (20)_1756152199562.png",
     },
+    {
+      name: "The Tampasis Family",
+      role: "Breeding Partner",
+      description: "The Tampasis Family brings years of co-ownership experience and deep connections to our breeding program. Their multi-generational involvement and commitment to our breeding standards makes them invaluable partners in continuing our legacy of exceptional Labrador bloodlines.",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
+    },
   ];
 
   return (
