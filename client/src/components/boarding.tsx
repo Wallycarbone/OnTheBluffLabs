@@ -72,7 +72,7 @@ export default function Boarding() {
                 </div>
                 <div className="text-center">
                   <img 
-                    src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (81)_1756150186684.png"
+                    src="/attached_assets/Y30A5046_1756150280192.JPG"
                     alt="Professional dog training session - trainer working with golden Labrador in backyard setting"
                     className="w-full h-auto object-contain rounded-xl shadow-lg max-h-96"
                   />
