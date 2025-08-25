@@ -48,6 +48,7 @@ export default function Team() {
       name: "David Rifenburgh",
       role: "Puppy Trainer",
       description: "David started as a puppy parent and developed an interest in training, so he joined our team. His experience as a Labrador owner brings valuable perspective to our training and puppy development programs.",
+      highlight: "Guardian to On The Bluff's Penny",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (21)_1756152469239.png",
     },
     {
