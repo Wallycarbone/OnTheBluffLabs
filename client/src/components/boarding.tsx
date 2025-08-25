@@ -46,6 +46,51 @@ export default function Boarding() {
           </p>
         </div>
 
+        {/* Essay Section */}
+        <div className="mb-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6 font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+              <p className="text-lg">
+                At On The Bluff Labradors, every dog carries forward a legacy — decades of careful breeding, intelligence, and gentle strength that define the English Labrador. Retreat to the Bluff is more than a training program; it's a dedicated time away where your dog grows, learns, and thrives.
+              </p>
+              
+              <p className="text-lg">
+                Set in a quiet corner of our serene grounds, your dog receives personalized instruction and structured socialization, guided by trainers who understand the Labrador temperament inside and out. This focused environment accelerates learning, builds confidence, and shapes lasting, positive habits.
+              </p>
+              
+              <div className="text-lg">
+                <p className="mb-4 font-medium" style={{color: '#11100f'}}>What makes Retreat to the Bluff special:</p>
+                <ul className="space-y-3 pl-0">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                    <span><strong style={{color: '#11100f'}}>Heritage in Action:</strong> Cultivating the traits that make Labradors extraordinary — loyalty, intelligence, and companionship.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                    <span><strong style={{color: '#11100f'}}>Tailored Training:</strong> Every plan is customized to your dog's temperament and needs.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                    <span><strong style={{color: '#11100f'}}>Focused Transformation:</strong> Away from everyday distractions, growth happens quickly and with care.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                    <span><strong style={{color: '#11100f'}}>Lifelong Impact:</strong> Your dog returns home balanced, confident, and ready to shine.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
+                    <span><strong style={{color: '#11100f'}}>Stress-Free Environment:</strong> With our gentle host dog, Lilly, your dog feels calm, safe, and supported throughout their stay.</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <p className="text-lg">
+                Retreat to the Bluff isn't just training — it's a transformational experience, honoring the heritage of the Labrador while shaping your companion for a lifetime of joy, confidence, and companionship.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Main Boarding Information */}
         <div className="mb-16">
           <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
