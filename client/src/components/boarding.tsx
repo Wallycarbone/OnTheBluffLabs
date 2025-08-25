@@ -179,27 +179,6 @@ export default function Boarding() {
           </Card>
         </div>
 
-        {/* Boarding Features */}
-        <div className="mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {boardingFeatures.map((feature, index) => (
-              <Card key={index} className="bg-white rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex justify-center mb-4">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-lg font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
         {/* What's Included */}
         <div className="mb-16">
           <Card className="bg-white rounded-xl shadow-lg">
