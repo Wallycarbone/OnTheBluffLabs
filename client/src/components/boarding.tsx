@@ -135,7 +135,8 @@ export default function Boarding() {
                   <img 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (81)_1756151379866.png"
                     alt="Professional dog training session - trainer working with golden Labrador in backyard setting"
-                    className="w-full h-auto object-contain rounded-xl shadow-lg max-h-96"
+                    className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+                    style={{objectPosition: '50% 40%'}}
                   />
                 </div>
               </div>
@@ -152,7 +153,8 @@ export default function Boarding() {
                   <img 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (82)_1756151491098.png"
                     alt="Lilly, the gentle host dog - chocolate Labrador in green field"
-                    className="w-full h-auto object-contain rounded-xl shadow-lg max-h-96"
+                    className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+                    style={{objectPosition: '50% 30%'}}
                   />
                 </div>
                 <div className="order-1 lg:order-2">
