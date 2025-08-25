@@ -63,7 +63,7 @@ export default function Boarding() {
                 <ul className="space-y-3 pl-0">
                   <li className="flex items-start">
                     <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
-                    <span><strong style={{color: '#11100f'}}>Heritage in Action:</strong> Cultivating the traits that make Labradors extraordinary — loyalty, intelligence, and companionship.</span>
+                    <span><strong style={{color: '#11100f'}}>Labrador-Specific Methodology:</strong> Cultivating the traits that make Labradors extraordinary — loyalty, intelligence, and companionship.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
