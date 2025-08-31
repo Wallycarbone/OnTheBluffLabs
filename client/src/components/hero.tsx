@@ -130,7 +130,7 @@ export default function Hero() {
               {/* Our Dogs Section */}
               <Link href="/breeding-dogs">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className="relative h-80 overflow-hidden">
+                  <div className="relative h-96 overflow-hidden">
                     <img 
                       src={moonImage}
                       alt="Our exceptional breeding dogs with champion bloodlines"
@@ -150,7 +150,7 @@ export default function Hero() {
               {/* Training Section */}
               <Link href="/training">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className="relative h-80 overflow-hidden">
+                  <div className="relative h-96 overflow-hidden">
                     <img 
                       src={trainingImage}
                       alt="Beautiful golden Labrador demonstrating natural retrieving instincts in snow"
@@ -170,7 +170,7 @@ export default function Hero() {
               {/* Raw Dog Food Section */}
               <Link href="/raw-dog-food">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className="relative h-80 overflow-hidden">
+                  <div className="relative h-96 overflow-hidden">
                     <img 
                       src={rawFoodImage}
                       alt="Premium raw dog food nutrition programs"
