@@ -1046,25 +1046,16 @@ export default function Puppies() {
         </div>
 
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="flex justify-center">
           <Button 
             onClick={() => openPedigreePopup(litter)}
             variant="outline"
-            className="font-montserrat font-medium text-sm h-auto py-3 rounded-lg border-2 transition-all duration-200"
+            className="font-montserrat font-medium text-sm h-auto py-3 px-8 rounded-lg border-2 transition-all duration-200"
             style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
             onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
             onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
           >
             View Pedigree
-          </Button>
-          <Button 
-            onClick={scrollToContact}
-            className="font-montserrat font-semibold text-sm h-auto py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-          >
-            Apply for Litter
           </Button>
         </div>
       </CardContent>
