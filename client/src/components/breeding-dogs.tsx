@@ -945,14 +945,14 @@ export default function BreedingDogs() {
       hasPuppies: true
     },
     {
-      name: "Moon",
-      formalName: "Belquest Conclusion Super Moon Rising",
-      gender: "Male", 
+      name: "Boo Radley",
+      formalName: "On The Bluff's Mr. Boo Radley",
+      gender: "Male",
       color: "Yellow",
       age: "Active Stud",
-      image: newMoonImage,
-      description: "Moon is an exceptional yellow male with outstanding pigmentation, deeply affectionate personality, and strong body structure. His rich cream coat color and loving temperament combine with powerful conformation to produce beautiful puppies with both striking appearance and gentle dispositions.",
-      hasPuppies: true
+      image: booRadleyImage,
+      description: "Boo Radley is a gentle and affectionate white male with a heart of gold. He possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and emotional intuition to his offspring.",
+      hasPuppies: false
     },
     {
       name: "Holden",
@@ -965,14 +965,14 @@ export default function BreedingDogs() {
       hasPuppies: true
     },
     {
-      name: "Boo Radley",
-      formalName: "On The Bluff's Mr. Boo Radley",
-      gender: "Male",
+      name: "Moon",
+      formalName: "Belquest Conclusion Super Moon Rising",
+      gender: "Male", 
       color: "Yellow",
       age: "Active Stud",
-      image: booRadleyImage,
-      description: "Boo Radley is a gentle and affectionate white male with a heart of gold. He possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and emotional intuition to his offspring.",
-      hasPuppies: false
+      image: newMoonImage,
+      description: "Moon is an exceptional yellow male with outstanding pigmentation, deeply affectionate personality, and strong body structure. His rich cream coat color and loving temperament combine with powerful conformation to produce beautiful puppies with both striking appearance and gentle dispositions.",
+      hasPuppies: true
     },
     {
       name: "Chekhov",
