@@ -122,11 +122,18 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
             <div className="flex items-center space-x-2">
-              {/* Navigation */}
+              {/* Primary Navigation */}
               <div className="flex items-center space-x-4">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
+              </div>
+              
+              {/* Divider */}
+              <div className="h-6 w-px bg-gray-300 mx-4"></div>
+              
+              {/* Secondary Navigation */}
+              <div className="flex items-center">
                 <CareLifestyleDropdown />
               </div>
               
