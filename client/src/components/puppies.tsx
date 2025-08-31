@@ -14,7 +14,7 @@ import noraImage from "@assets/Nora 5x4_1753565326175.png";
 
 // Core dog images (avoiding duplicates below)  
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
-import topoGigioImage from "@assets/Gino_1754685352006.webp";
+import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756671954087.png";
 import boscoImage from "@assets/Bosco_1753734656860.avif";
 import hannahImage from "@assets/Hannah_1753736053468.png";
 import cyrusImage from "@assets/CyrusBodyL (1)_1753815517271.jpg";
