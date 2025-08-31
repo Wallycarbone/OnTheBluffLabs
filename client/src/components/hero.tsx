@@ -160,7 +160,7 @@ export default function Hero() {
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">PUPPY PLACEMENT</h3>
                       <p className="text-sm font-source-sans opacity-90">
-                        View our available litters and reserve your perfect companion
+                        Learn about our expert puppy matchmaking process
                       </p>
                     </div>
                   </div>
