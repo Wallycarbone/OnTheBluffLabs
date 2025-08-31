@@ -1,20 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
-
-// TypeScript declaration for HubSpot
-declare global {
-  interface Window {
-    hbspt: {
-      forms: {
-        create: (options: {
-          portalId: string;
-          formId: string;
-          region: string;
-          target?: string;
-        }) => void;
-      };
-    };
-  }
-}
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -325,11 +310,10 @@ export default function Puppies() {
     }
   ];
 
+  const [, setLocation] = useLocation();
+
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    setLocation('/contact');
   };
 
   const openPedigreePopup = (litter: any) => {
