@@ -3,7 +3,7 @@ import { Award } from "lucide-react";
 import { Link } from "wouter";
 import heroImage from "@assets/Breeding Dogs 5x4 (27)_1755633649595.png";
 import moonImage from "@assets/Moon_1754669243572.png";
-import trainingImage from "@assets/Breeding Dogs 5x4 (7)_1754767557970.png";
+import trainingImage from "@assets/Breeding Dogs 5x4 (31)_1756659482678.png";
 import rawFoodImage from "@assets/Breeding Dogs 5x4 (6)_1754674032280.png";
 
 export default function Hero() {
