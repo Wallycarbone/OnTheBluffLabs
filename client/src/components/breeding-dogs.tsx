@@ -130,21 +130,6 @@ export default function BreedingDogs() {
           }
         ]
       },
-      "Holden": {
-        name: "Holden",
-        litters: [
-          {
-            name: "Holden & Alola", 
-            dam: "Alola",
-            birthDate: "March 15, 2025",
-            puppies: [
-              { name: "Summer (Butterfly)", image: holdenSummer, gender: "Female", color: "Yellow" },
-              { name: "Fern (Apple Pie)", image: holdenFern, gender: "Female", color: "Yellow" },
-              { name: "Willow (Seaglass)", image: holdenWillow, gender: "Female", color: "Yellow" }
-            ]
-          }
-        ]
-      },
       "Boo Radley": {
         name: "Boo Radley",
         litters: [
@@ -973,7 +958,7 @@ export default function BreedingDogs() {
       age: "Previous Stud",
       image: newHoldenImage,
       description: "Holden is a gentle-natured chocolate male with a distinctive blocky head that exemplifies classic English Labrador conformation. His calm, patient temperament and substantial bone structure make him an ideal sire, consistently producing offspring with his trademark gentle disposition and impressive blocky head.",
-      hasPuppies: true
+      hasPuppies: false
     },
     {
       name: "Moon",

@@ -277,18 +277,6 @@ export default function Puppies() {
       images: [breedingDogsImage, breedingDogs2Image, pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
       status: "Ready",
       description: "Chocolate female puppies available"
-    },
-    {
-      name: "Holden & Alola",
-      sire: "Holden",
-      dam: "Alola",
-      birthDate: "March 21, 2025",
-      puppiesCount: 8,
-      available: "Chocolate Females",
-      readyDate: "Ready Now",
-      images: [holdenImage, alolaImage, summerButterflyImage, fernApplePieImage, willowSeaglassImage],
-      status: "Ready",
-      description: "Three chocolate females available"
     }
   ];
 
