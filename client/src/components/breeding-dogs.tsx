@@ -1178,6 +1178,23 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
+            ) : dog.name === "Arabella" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2004 Westminster Best of Breed <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: martingaleImage,
+                        name: "Lubberline's Martingale"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Lubberline's Martingale
+                  </button> through her sire, Twain
+                </p>
+              </div>
             ) : (
               <div className="grid grid-cols-2 gap-4 text-xs">
                 <div>
