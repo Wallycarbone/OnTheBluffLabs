@@ -1255,13 +1255,15 @@ export default function BreedingDogs() {
           onLoad={() => console.log('Our Dogs hero image loaded successfully:', heroLabradorImage)}
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="text-center z-10 relative">
-          <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
-            HEIRS OF EXCELLENCE
-          </h1>
-          <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg" style={{color: '#fefefe'}}>
-            Meet Our Labradors
-          </h2>
+        <div className="text-left z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-xl">
+            <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
+              HEIRS OF EXCELLENCE
+            </h1>
+            <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg" style={{color: '#fefefe'}}>
+              Meet Our Labradors
+            </h2>
+          </div>
         </div>
       </section>
 
