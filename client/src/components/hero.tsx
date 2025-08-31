@@ -3,7 +3,7 @@ import { Award } from "lucide-react";
 import { Link } from "wouter";
 import heroImage from "@assets/Breeding Dogs 5x4 (27)_1755633649595.png";
 import moonImage from "@assets/Puppies 5x4 (4 x 4 in) (22)_1756660119552.png";
-import trainingImage from "@assets/Breeding Dogs 5x4 (31)_1756659482678.png";
+import puppiesImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.png";
 import rawFoodImage from "@assets/Breeding Dogs 5x4 (6)_1754674032280.png";
 
 export default function Hero() {
@@ -147,20 +147,20 @@ export default function Hero() {
                 </div>
               </Link>
 
-              {/* Training Section */}
-              <Link href="/training">
+              {/* Puppies Section */}
+              <Link href="/puppies">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-96 overflow-hidden">
                     <img 
-                      src={trainingImage}
-                      alt="Beautiful golden Labrador demonstrating natural retrieving instincts in snow"
+                      src={puppiesImage}
+                      alt="Adorable black Labrador puppy playing outdoors with toys"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">TRAINING</h3>
+                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">PUPPIES</h3>
                       <p className="text-sm font-source-sans opacity-90">
-                        Comprehensive training programs that build confident, well-mannered companions
+                        View our available litters and reserve your perfect companion
                       </p>
                     </div>
                   </div>
