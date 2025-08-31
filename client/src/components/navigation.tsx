@@ -136,7 +136,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-2">
                 <NavButton href="/raw-dog-food" label="Raw Dog Food" />
                 <NavButton href="/boarding" label="Board & Train" />
-                <AboutDropdown />
+                <CareLifestyleDropdown />
               </div>
               
               {/* Contact Button */}
