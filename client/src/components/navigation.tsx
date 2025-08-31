@@ -22,35 +22,6 @@ function NavButton({ href, label }: { href: string; label: string }) {
   );
 }
 
-// Your Puppy's Foundation Dropdown Component
-function PuppyFoundationDropdown() {
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <button className="flex items-center px-3 py-2 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
-          style={{color: '#4b4b4b'}}
-          onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
-          onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
-        >
-          Behavior Academy Options
-          <ChevronDown className="ml-1 h-4 w-4" />
-        </button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="center" className="w-48">
-        <DropdownMenuItem asChild>
-          <Link href="/training" className="w-full cursor-pointer">
-            Training
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/raw-dog-food" className="w-full cursor-pointer">
-            Raw Dog Food
-          </Link>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
-  );
-}
 
 // About Dropdown Component
 function AboutDropdown() {
@@ -145,7 +116,7 @@ export default function Navigation() {
               <div className="flex items-center space-x-1">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppies" />
-                <PuppyFoundationDropdown />
+                <NavButton href="/training" label="Behavior Academy Options" />
               </div>
               
               {/* Divider */}
@@ -153,6 +124,7 @@ export default function Navigation() {
               
               {/* Secondary Navigation */}
               <div className="flex items-center space-x-1">
+                <NavButton href="/raw-dog-food" label="Raw Dog Food" />
                 <NavButton href="/boarding" label="Board & Train" />
                 <AboutDropdown />
               </div>
@@ -178,7 +150,8 @@ export default function Navigation() {
             <div className="flex items-center space-x-1">
               <NavButton href="/breeding-dogs" label="Our Dogs" />
               <NavButton href="/puppies" label="Puppies" />
-              <PuppyFoundationDropdown />
+              <NavButton href="/training" label="Behavior Academy" />
+              <NavButton href="/raw-dog-food" label="Food" />
               <NavButton href="/boarding" label="Board & Train" />
               <AboutDropdown />
               <Link href="/contact">
@@ -219,14 +192,9 @@ export default function Navigation() {
             {/* Secondary Navigation */}
             <div className="space-y-1 pt-2">
               <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
+              <MobileNavButton href="/training" label="Behavior Academy Options" onClick={closeMenu} />
+              <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
               <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
-              
-              {/* Your Puppy's Foundation Section Items */}
-              <div className="pl-4 pt-2 border-l-2 border-gray-200 ml-2">
-                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">Behavior Academy Options</div>
-                <MobileNavButton href="/training" label="Training" onClick={closeMenu} />
-                <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
-              </div>
               
               {/* About Section Items */}
               <div className="pl-4 pt-2 border-l-2 border-gray-200 ml-2">
