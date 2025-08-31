@@ -162,7 +162,7 @@ export default function Puppies() {
               style={{color: '#6d761d'}}
             >
               Topo Gigio
-            </button>
+            </button> and our beloved late sire, Atticus Finch
           </>
         )
       };
