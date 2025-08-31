@@ -144,6 +144,17 @@ export default function BreedingDogs() {
             ]
           }
         ]
+      },
+      "Boo Radley": {
+        name: "Boo Radley",
+        litters: [
+          {
+            name: "Boo Radley & Boudica",
+            dam: "Boudica",
+            birthDate: "July 27, 2025",
+            puppies: []
+          }
+        ]
       }
     };
     
@@ -952,7 +963,7 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: booRadleyImage,
       description: "Boo Radley is a gentle and affectionate white male with a heart of gold. He possesses exceptional loyalty and courage, making him an ideal father figure who passes on both gentle temperament and emotional intuition to his offspring.",
-      hasPuppies: false
+      hasPuppies: true
     },
     {
       name: "Holden",
