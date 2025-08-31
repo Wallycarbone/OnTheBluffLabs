@@ -297,14 +297,14 @@ export default function Puppies() {
       name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
       dam: "Queen Boudica",
-      birthDate: "Due August 2025",
+      birthDate: "8/7/2025",
       puppiesCount: "TBD",
       available: "Accepting Deposits",
       readyDate: "October 2025",
       image: booRadleyImage,
       image2: queenBoudicaImage,
       status: "Upcoming",
-      description: "Bred in June, due in August 2025"
+      description: "Born August 7, 2025"
     },
     {
       name: "Moon & Harper Lee",
