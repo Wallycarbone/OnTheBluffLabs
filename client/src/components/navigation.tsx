@@ -122,25 +122,16 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
             <div className="flex items-center space-x-2">
-              {/* Primary Navigation */}
-              <div className="flex items-center space-x-2">
+              {/* Navigation */}
+              <div className="flex items-center space-x-4">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
-              </div>
-              
-              {/* Divider */}
-              <div className="h-6 w-px bg-gray-300 mx-4"></div>
-              
-              {/* Secondary Navigation */}
-              <div className="flex items-center space-x-2">
-                <NavButton href="/raw-dog-food" label="Raw Dog Food" />
-                <NavButton href="/boarding" label="Board & Train" />
                 <CareLifestyleDropdown />
               </div>
               
               {/* Contact Button */}
-              <div className="ml-4">
+              <div className="ml-6">
                 <Link href="/contact">
                   <Button 
                     className="px-4 py-2 font-montserrat font-medium text-xs lg:text-sm rounded-full transition-all hover:scale-105"
@@ -161,7 +152,6 @@ export default function Navigation() {
               <NavButton href="/breeding-dogs" label="Our Dogs" />
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
-              <NavButton href="/raw-dog-food" label="Food" />
               <CareLifestyleDropdown />
               <Link href="/contact">
                 <Button 
