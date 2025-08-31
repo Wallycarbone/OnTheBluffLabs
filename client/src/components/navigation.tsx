@@ -12,7 +12,7 @@ import {
 // Navigation Button Component
 function NavButton({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="px-4 py-3 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
+    <Link href={href} className="px-3 py-3 text-xs lg:text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
       style={{color: '#4b4b4b'}}
       onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
       onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
@@ -98,7 +98,7 @@ export default function Navigation() {
             <div className="flex-shrink-0">
               <Link href="/">
                 <h1 
-                  className="text-lg lg:text-xl font-oswald font-normal tracking-wide cursor-pointer transition-colors"
+                  className="text-base lg:text-lg font-oswald font-normal tracking-wide cursor-pointer transition-colors"
                   style={{color: '#11100f'}}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
                   onMouseLeave={(e) => e.currentTarget.style.color = '#11100f'}
@@ -113,27 +113,27 @@ export default function Navigation() {
           <div className="hidden lg:block">
             <div className="flex items-center space-x-2">
               {/* Primary Navigation */}
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-2">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
               </div>
               
               {/* Divider */}
-              <div className="h-6 w-px bg-gray-300 mx-6"></div>
+              <div className="h-6 w-px bg-gray-300 mx-4"></div>
               
               {/* Secondary Navigation */}
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-2">
                 <NavButton href="/raw-dog-food" label="Raw Dog Food" />
                 <NavButton href="/boarding" label="Board & Train" />
                 <AboutDropdown />
               </div>
               
               {/* Contact Button */}
-              <div className="ml-6">
+              <div className="ml-4">
                 <Link href="/contact">
                   <Button 
-                    className="px-6 py-2 font-montserrat font-medium text-sm rounded-full transition-all hover:scale-105"
+                    className="px-4 py-2 font-montserrat font-medium text-xs lg:text-sm rounded-full transition-all hover:scale-105"
                     style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                     onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a5f18'}
                     onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
