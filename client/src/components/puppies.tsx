@@ -103,34 +103,24 @@ export default function Puppies() {
   const [selectedTitle, setSelectedTitle] = useState<{abbreviation: string, fullName: string} | null>(null);
   const [isJourneyFormOpen, setIsJourneyFormOpen] = useState(false);
 
-  // Load HubSpot script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '//js.hsforms.net/forms/embed/v2.js';
-    script.charset = 'utf-8';
-    script.type = 'text/javascript';
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   // Create HubSpot form when dialog opens
   useEffect(() => {
-    if (isJourneyFormOpen && (window as any).hbspt) {
-      setTimeout(() => {
-        const target = document.getElementById('hubspot-journey-form');
-        if (target) {
-          target.innerHTML = '';
+    if (isJourneyFormOpen) {
+      const script = document.createElement('script');
+      script.src = '//js.hsforms.net/forms/embed/v2.js';
+      script.charset = 'utf-8';
+      script.type = 'text/javascript';
+      script.onload = () => {
+        if ((window as any).hbspt) {
           (window as any).hbspt.forms.create({
             portalId: "44843117",
             formId: "f5c4c18d-5722-43bd-8e6b-94fcb10c4343",
             region: "na1",
-            target: '#hubspot-journey-form'
+            target: "#hubspot-journey-form"
           });
         }
-      }, 100);
+      };
+      document.head.appendChild(script);
     }
   }, [isJourneyFormOpen]);
 
