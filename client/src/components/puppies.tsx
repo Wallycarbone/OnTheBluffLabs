@@ -1045,14 +1045,6 @@ export default function Puppies() {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-4 mb-6">
-          <div className="flex items-start">
-            <Star className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
-            <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-              {getSirePedigreeHighlight(litter.name).text}
-            </span>
-          </div>
-        </div>
 
         <div className="grid grid-cols-2 gap-3">
           <Button 
