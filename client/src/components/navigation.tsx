@@ -12,7 +12,7 @@ import {
 // Navigation Button Component
 function NavButton({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="px-3 py-2 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
+    <Link href={href} className="px-4 py-3 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
       style={{color: '#4b4b4b'}}
       onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
       onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
@@ -92,13 +92,13 @@ export default function Navigation() {
   return (
     <nav className="shadow-md sticky top-0 z-50 backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo/Brand */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
                 <h1 
-                  className="text-xl lg:text-2xl font-oswald font-normal tracking-wide cursor-pointer transition-colors"
+                  className="text-lg lg:text-xl font-oswald font-normal tracking-wide cursor-pointer transition-colors"
                   style={{color: '#11100f'}}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
                   onMouseLeave={(e) => e.currentTarget.style.color = '#11100f'}
@@ -111,19 +111,19 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center space-x-2">
               {/* Primary Navigation */}
-              <div className="flex items-center space-x-1">
+              <div className="flex items-center space-x-3">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
               </div>
               
               {/* Divider */}
-              <div className="h-6 w-px bg-gray-300 mx-4"></div>
+              <div className="h-6 w-px bg-gray-300 mx-6"></div>
               
               {/* Secondary Navigation */}
-              <div className="flex items-center space-x-1">
+              <div className="flex items-center space-x-3">
                 <NavButton href="/raw-dog-food" label="Raw Dog Food" />
                 <NavButton href="/boarding" label="Board & Train" />
                 <AboutDropdown />
@@ -149,14 +149,14 @@ export default function Navigation() {
           <div className="hidden md:block lg:hidden">
             <div className="flex items-center space-x-1">
               <NavButton href="/breeding-dogs" label="Our Dogs" />
-              <NavButton href="/puppies" label="Puppy Placement" />
-              <NavButton href="/training" label="Behavior Academy" />
+              <NavButton href="/puppies" label="Puppies" />
+              <NavButton href="/training" label="Training" />
               <NavButton href="/raw-dog-food" label="Food" />
               <NavButton href="/boarding" label="Board & Train" />
               <AboutDropdown />
               <Link href="/contact">
                 <Button 
-                  className="px-4 py-2 font-montserrat font-medium text-sm rounded-full ml-4"
+                  className="px-3 py-2 font-montserrat font-medium text-xs rounded-full ml-3"
                   style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                 >
                   Contact
