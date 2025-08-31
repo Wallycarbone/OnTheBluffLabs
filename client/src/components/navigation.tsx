@@ -115,7 +115,7 @@ export default function Navigation() {
               {/* Primary Navigation */}
               <div className="flex items-center space-x-1">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
-                <NavButton href="/puppies" label="Puppies" />
+                <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
               </div>
               
@@ -149,7 +149,7 @@ export default function Navigation() {
           <div className="hidden md:block lg:hidden">
             <div className="flex items-center space-x-1">
               <NavButton href="/breeding-dogs" label="Our Dogs" />
-              <NavButton href="/puppies" label="Puppies" />
+              <NavButton href="/puppies" label="Puppy Placement" />
               <NavButton href="/training" label="Behavior Academy" />
               <NavButton href="/raw-dog-food" label="Food" />
               <NavButton href="/boarding" label="Board & Train" />
@@ -185,7 +185,7 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-2">
             {/* Primary Actions */}
             <div className="space-y-2 pb-4 border-b border-gray-200">
-              <MobileNavButton href="/puppies" label="Available Puppies" primary onClick={closeMenu} />
+              <MobileNavButton href="/puppies" label="Puppy Placement" primary onClick={closeMenu} />
               <MobileNavButton href="/contact" label="Contact Us" primary onClick={closeMenu} />
             </div>
             
