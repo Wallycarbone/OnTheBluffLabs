@@ -151,7 +151,7 @@ export default function BreedingDogs() {
           {
             name: "Boo Radley & Boudica",
             dam: "Boudica",
-            birthDate: "July 27, 2025",
+            birthDate: "August 7, 2025",
             puppies: []
           }
         ]
