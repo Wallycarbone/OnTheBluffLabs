@@ -46,7 +46,7 @@ import grizzlyHolly from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754
 import grizzlyPedigreePdf from "@assets/grizzly_single_page_1754684286991.pdf";
 import moonPedigreePdf from "@assets/moon_pedigree_processed_1754684932098.pdf";
 import moonImage from "@assets/Moon_1754685152680.png";
-import topoGigioImage from "@assets/Gino_1754685352006.webp";
+import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756670819994.png";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
 import atticusFinchImage from "@assets/Breeding Dogs 5x4 (18)_1755290812629.png";
