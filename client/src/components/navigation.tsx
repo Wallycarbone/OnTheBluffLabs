@@ -23,21 +23,31 @@ function NavButton({ href, label }: { href: string; label: string }) {
 }
 
 
-// About Dropdown Component
-function AboutDropdown() {
+// Care & Lifestyle Dropdown Component
+function CareLifestyleDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="flex items-center px-3 py-2 text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100"
+        <button className="flex items-center px-3 py-3 text-xs lg:text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
           style={{color: '#4b4b4b'}}
           onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
           onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
         >
-          About
+          Care & Lifestyle
           <ChevronDown className="ml-1 h-4 w-4" />
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="center" className="w-48">
+        <DropdownMenuItem asChild>
+          <Link href="/raw-dog-food" className="w-full cursor-pointer">
+            Raw Dog Food
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link href="/boarding" className="w-full cursor-pointer">
+            Board & Train
+          </Link>
+        </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/health-testing" className="w-full cursor-pointer">
             Holistic Health
@@ -152,8 +162,7 @@ export default function Navigation() {
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
               <NavButton href="/raw-dog-food" label="Food" />
-              <NavButton href="/boarding" label="Board & Train" />
-              <AboutDropdown />
+              <CareLifestyleDropdown />
               <Link href="/contact">
                 <Button 
                   className="px-3 py-2 font-montserrat font-medium text-xs rounded-full ml-3"
@@ -193,12 +202,12 @@ export default function Navigation() {
             <div className="space-y-1 pt-2">
               <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
               <MobileNavButton href="/training" label="Behavior Academy Options" onClick={closeMenu} />
-              <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
-              <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
               
-              {/* About Section Items */}
+              {/* Care & Lifestyle Section Items */}
               <div className="pl-4 pt-2 border-l-2 border-gray-200 ml-2">
-                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">About</div>
+                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">Care & Lifestyle</div>
+                <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
+                <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
                 <MobileNavButton href="/health-testing" label="Holistic Health" onClick={closeMenu} />
                 <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
               </div>
