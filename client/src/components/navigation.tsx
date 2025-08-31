@@ -32,7 +32,7 @@ function PuppyFoundationDropdown() {
           onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
           onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
         >
-          Your Puppy's Foundation
+          Behavior Academy Options
           <ChevronDown className="ml-1 h-4 w-4" />
         </button>
       </DropdownMenuTrigger>
@@ -223,7 +223,7 @@ export default function Navigation() {
               
               {/* Your Puppy's Foundation Section Items */}
               <div className="pl-4 pt-2 border-l-2 border-gray-200 ml-2">
-                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">Your Puppy's Foundation</div>
+                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">Behavior Academy Options</div>
                 <MobileNavButton href="/training" label="Training" onClick={closeMenu} />
                 <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
               </div>
