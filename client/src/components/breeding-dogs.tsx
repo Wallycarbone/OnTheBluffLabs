@@ -1012,7 +1012,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: arabellaImage,
-      description: "Elegant and serene yellow female with a regal presence. Her calm confidence and nurturing instincts make her an exceptional mother, producing puppies with both beauty and temperament that reflect her graceful nature.",
+      description: "Arabella is an elegant and serene yellow female with a regal presence. Her calm confidence and nurturing instincts make her an exceptional mother, producing puppies with both beauty and temperament that reflect her graceful nature.",
     },
   ];
 
