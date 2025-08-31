@@ -1243,16 +1243,19 @@ export default function BreedingDogs() {
   return (
     <>
       {/* Hero Section with Labrador Background */}
-      <section 
-        className="relative h-[90vh] min-h-[800px] flex items-center justify-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroLabradorImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="text-center z-10">
+      <section className="relative h-[90vh] min-h-[800px] flex items-center justify-center overflow-hidden">
+        <img 
+          src={heroLabradorImage}
+          alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
+          className="absolute inset-0 w-full h-full object-cover"
+          onError={(e) => {
+            console.log('Our Dogs hero image failed to load:', heroLabradorImage);
+            e.currentTarget.style.display = 'none';
+          }}
+          onLoad={() => console.log('Our Dogs hero image loaded successfully:', heroLabradorImage)}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="text-center z-10 relative">
           <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
             HEIRS OF EXCELLENCE
           </h1>
