@@ -1257,6 +1257,19 @@ export default function Puppies() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Start Your Journey Today Button */}
+        <div className="text-center mt-16">
+          <Button 
+            onClick={scrollToContact}
+            className="font-montserrat font-semibold text-lg h-auto py-4 px-12 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+          >
+            Start Your Journey Today
+          </Button>
+        </div>
       </div>
 
       {/* Topo Gigio Popup Dialog */}
