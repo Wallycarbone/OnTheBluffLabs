@@ -167,20 +167,20 @@ export default function Hero() {
                 </div>
               </Link>
 
-              {/* Raw Dog Food Section */}
-              <Link href="/raw-dog-food">
+              {/* Behavior Academy Options Section */}
+              <Link href="/training">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-96 overflow-hidden">
                     <img 
                       src={rawFoodImage}
-                      alt="Premium raw dog food nutrition programs"
+                      alt="Professional dog training and behavior development programs"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">RAW DOG FOOD</h3>
+                      <h3 className="text-2xl font-oswald font-normal mb-2 tracking-wide">BEHAVIOR ACADEMY OPTIONS</h3>
                       <p className="text-sm font-source-sans opacity-90">
-                        Premium nutrition programs supporting optimal health and development
+                        Comprehensive training programs that build confident, well-mannered companions
                       </p>
                     </div>
                   </div>
