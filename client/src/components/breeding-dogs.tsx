@@ -49,7 +49,7 @@ import moonImage from "@assets/Moon_1754685152680.png";
 import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756670819994.png";
 import roccoImage from "@assets/Rocco_1754686890866.avif";
 import candyImage from "@assets/Candy_1754687171237.webp";
-import atticusFinchImage from "@assets/Breeding Dogs 5x4 (27)_1756670895624.png";
+import atticusFinchImage from "@assets/Breeding Dogs 5x4 (27)_1756671974666.png";
 import markTwainImage from "@assets/Breeding Dogs 5x4 (25)_1755461082022.png";
 import flyUnderRadarImage from "@assets/Breeding Dogs 5x4 (21)_1755444196054.png";
 import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";

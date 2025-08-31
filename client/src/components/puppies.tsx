@@ -83,7 +83,7 @@ import candyImage from "@assets/Candy_1754687171237.webp";
 import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 // Additional imports for complete pedigree data (avoiding duplicates from above)
 import newHarperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
-import atticusFinchImage from "@assets/Atticus_1754340164760.jpeg";
+import atticusFinchImage from "@assets/Breeding Dogs 5x4 (27)_1756671974666.png";
 // arabellaImage and markTwainImage temporarily commented out due to missing files
 // import arabellaImage from "@assets/Arabella_1755287697962.jpg";
 // import markTwainImage from "@assets/Mark Twain_1755287752095.avif";
