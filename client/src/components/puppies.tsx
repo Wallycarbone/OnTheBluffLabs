@@ -1,4 +1,20 @@
 import React, { useState, useCallback, useEffect } from "react";
+
+// TypeScript declaration for HubSpot
+declare global {
+  interface Window {
+    hbspt: {
+      forms: {
+        create: (options: {
+          portalId: string;
+          formId: string;
+          region: string;
+          target?: string;
+        }) => void;
+      };
+    };
+  }
+}
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -101,28 +117,6 @@ export default function Puppies() {
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
   const [isTitlePopupOpen, setIsTitlePopupOpen] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState<{abbreviation: string, fullName: string} | null>(null);
-  const [isJourneyFormOpen, setIsJourneyFormOpen] = useState(false);
-
-  // Create HubSpot form when dialog opens
-  useEffect(() => {
-    if (isJourneyFormOpen) {
-      const script = document.createElement('script');
-      script.src = '//js.hsforms.net/forms/embed/v2.js';
-      script.charset = 'utf-8';
-      script.type = 'text/javascript';
-      script.onload = () => {
-        if ((window as any).hbspt) {
-          (window as any).hbspt.forms.create({
-            portalId: "44843117",
-            formId: "f5c4c18d-5722-43bd-8e6b-94fcb10c4343",
-            region: "na1",
-            target: "#hubspot-journey-form"
-          });
-        }
-      };
-      document.head.appendChild(script);
-    }
-  }, [isJourneyFormOpen]);
 
   const getTitleFullName = (abbreviation: string): string => {
     const titleMap: { [key: string]: string } = {
@@ -1283,7 +1277,7 @@ export default function Puppies() {
         {/* Start Your Journey Today Button */}
         <div className="text-center mt-16">
           <Button 
-            onClick={() => setIsJourneyFormOpen(true)}
+            onClick={scrollToContact}
             className="font-montserrat font-semibold text-lg h-auto py-4 px-12 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             style={{backgroundColor: '#6d761d', color: '#fefefe'}}
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
@@ -1737,19 +1731,6 @@ export default function Puppies() {
         </DialogContent>
       </Dialog>
 
-      {/* Start Your Journey Form Dialog */}
-      <Dialog open={isJourneyFormOpen} onOpenChange={setIsJourneyFormOpen}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
-          <DialogHeader>
-            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide text-center mb-6" style={{color: '#11100f'}}>
-              Start Your Journey Today
-            </DialogTitle>
-          </DialogHeader>
-          <div id="hubspot-journey-form" className="min-h-[400px]">
-            {/* HubSpot form will be injected here */}
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 }
