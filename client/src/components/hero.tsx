@@ -66,14 +66,14 @@ export default function Hero() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-start">
-              <Link href="/puppies">
+              <Link href="/breeding-dogs">
                 <Button 
                   className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
                   style={{backgroundColor: 'rgba(109, 118, 29, 0.95)', color: '#fefefe'}}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(100, 79, 6, 0.95)'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(109, 118, 29, 0.95)'}
                 >
-                  View Available Litters
+                  Meet Our Dogs
                 </Button>
               </Link>
               <Link href="/contact">
