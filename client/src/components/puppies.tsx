@@ -1176,15 +1176,26 @@ export default function Puppies() {
             </div>
 
             {/* Call to Action */}
-            <div className="mt-16">
+            <div className="mt-16 text-center">
               <Button 
                 onClick={scrollToContact}
-                className="font-montserrat font-medium text-lg h-auto py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                className="font-montserrat font-bold text-xl h-auto py-6 px-16 rounded-2xl shadow-2xl hover:shadow-[0_25px_50px_rgba(109,118,29,0.5)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-3 ring-4 ring-opacity-40 ring-amber-300 animate-pulse border-2 border-amber-400"
+                style={{
+                  background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)',
+                  color: '#fefefe',
+                  textShadow: '0 3px 6px rgba(0,0,0,0.4)',
+                  boxShadow: '0 0 20px rgba(165, 176, 40, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 30%, #c4d12a 70%, #a5b028 100%)';
+                  e.currentTarget.classList.remove('animate-pulse');
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)';
+                  e.currentTarget.classList.add('animate-pulse');
+                }}
               >
-                Start Your Journey Today
+                ✨ Start Your Journey Today ✨
               </Button>
             </div>
           </div>
@@ -1259,16 +1270,34 @@ export default function Puppies() {
         </div>
 
         {/* Start Your Journey Today Button */}
-        <div className="text-center mt-16">
-          <Button 
-            onClick={scrollToContact}
-            className="font-montserrat font-semibold text-lg h-auto py-4 px-12 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
-            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-          >
-            Start Your Journey Today
-          </Button>
+        <div className="text-center mt-20 mb-16">
+          <div className="relative inline-block">
+            {/* Glow effect background */}
+            <div className="absolute inset-0 rounded-2xl blur-lg opacity-70 animate-pulse" style={{background: 'linear-gradient(135deg, #a5b028, #8b9123, #6d761d)'}}></div>
+            <Button 
+              onClick={scrollToContact}
+              className="relative font-montserrat font-bold text-2xl h-auto py-8 px-20 rounded-2xl shadow-2xl hover:shadow-[0_30px_60px_rgba(109,118,29,0.6)] transition-all duration-700 transform hover:scale-110 hover:-translate-y-4 ring-4 ring-opacity-50 ring-yellow-300 border-3 border-yellow-400"
+              style={{
+                background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 20%, #a5b028 50%, #c4d12a 80%, #a5b028 100%)',
+                color: '#fefefe',
+                textShadow: '0 4px 8px rgba(0,0,0,0.5)',
+                boxShadow: '0 0 30px rgba(196, 209, 42, 0.5), inset 0 3px 6px rgba(255,255,255,0.3), 0 15px 35px rgba(109,118,29,0.4)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 20%, #c4d12a 50%, #d4e831 80%, #c4d12a 100%)';
+                e.currentTarget.style.boxShadow = '0 0 40px rgba(212, 232, 49, 0.7), inset 0 3px 6px rgba(255,255,255,0.4), 0 20px 50px rgba(109,118,29,0.6)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 20%, #a5b028 50%, #c4d12a 80%, #a5b028 100%)';
+                e.currentTarget.style.boxShadow = '0 0 30px rgba(196, 209, 42, 0.5), inset 0 3px 6px rgba(255,255,255,0.3), 0 15px 35px rgba(109,118,29,0.4)';
+              }}
+            >
+              🌟 Start Your Journey Today 🌟
+            </Button>
+          </div>
+          <p className="text-base font-source-sans mt-4 opacity-80" style={{color: '#4b4b4b'}}>
+            Take the first step toward welcoming your perfect companion
+          </p>
         </div>
       </div>
 
