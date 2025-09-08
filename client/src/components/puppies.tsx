@@ -1413,6 +1413,365 @@ export default function Puppies() {
             </DialogTitle>
           </DialogHeader>
           {selectedLitter && renderPedigreeContent(selectedLitter)}
+              <div className="space-y-6">
+                {/* Traditional Pedigree Layout - Clean and Organized */}
+                <div className="overflow-x-auto p-8">
+                  <div className="relative" style={{ width: '1200px', height: '900px' }}>
+                    {/* Current Litter - Generation 0 - Centered between parents */}
+                    <div className="absolute" style={{ left: '50px', top: '290px', width: '180px' }}>
+                      <div className="rounded p-4 border-2" style={{backgroundColor: '#f8f9f0', borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          <h3 className="text-sm font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                            {selectedLitter?.name}
+                          </h3>
+                          <div className="text-xs text-gray-600">
+                            Litter
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Main connection system from current litter to parents */}
+                    {/* Horizontal line from current litter to T-junction */}
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '230px', top: '329px', width: '100px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    {/* Vertical line creating T-junction for sire and dam */}
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '329px', top: '150px', width: '2px', height: '360px', backgroundColor: '#6d761d' }}></div>
+                    {/* Horizontal line from T-junction to sire */}
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '330px', top: '149px', width: '50px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    {/* Horizontal line from T-junction to dam */}
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '330px', top: '509px', width: '50px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    
+                    {/* Sire - Generation 1 - Centered between grandparents */}
+                    <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
+                      <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          {pedigreeData.sire.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.sire.image} 
+                                alt={pedigreeData.sire.name}
+                                className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
+                          <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.sire.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.sire.name}
+                              </button>
+                            ) : pedigreeData.sire.name}
+                          </h5>
+                          <div className="flex flex-wrap justify-center gap-1">
+                            {pedigreeData.sire.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index} 
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#8a8f28', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Dam - Generation 1 - Centered between grandparents */}
+                    <div className="absolute" style={{ left: '380px', top: '470px', width: '180px' }}>
+                      <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          {pedigreeData.dam.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.dam.image} 
+                                alt={pedigreeData.dam.name}
+                                className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
+                          <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.dam.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.dam.name}
+                              </button>
+                            ) : pedigreeData.dam.name}
+                          </h5>
+                          <div className="flex flex-wrap justify-center gap-1">
+                            {pedigreeData.dam.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Parent to grandparent connection system */}
+                    {/* Sire to grandparents T-junction */}
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '560px', top: '149px', width: '80px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '639px', top: '60px', width: '2px', height: '180px', backgroundColor: '#6d761d' }}></div>
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '640px', top: '59px', width: '50px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '640px', top: '239px', width: '50px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    
+                    {/* Dam to grandparents T-junction */}
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '560px', top: '509px', width: '80px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '639px', top: '420px', width: '2px', height: '180px', backgroundColor: '#6d761d' }}></div>
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '640px', top: '419px', width: '50px', height: '2px', backgroundColor: '#6d761d' }}></div>
+                    <div className="absolute rounded opacity-75 shadow-sm" style={{ left: '640px', top: '599px', width: '50px', height: '2px', backgroundColor: '#6d761d' }}></div>
+
+                    {/* Grandparents - Generation 2 */}
+                    {/* Sire's Sire */}
+                    <div className="absolute" style={{ left: '690px', top: '20px', width: '180px' }}>
+                      <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          {pedigreeData.sire.sire.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.sire.sire.image} 
+                                alt={pedigreeData.sire.sire.name}
+                                className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
+                          <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.sire.sire.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.sire.sire.name}
+                              </button>
+                            ) : pedigreeData.sire.sire.name}
+                          </h6>
+                          <div className="flex flex-wrap justify-center gap-1">
+                            {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Sire's Dam */}
+                    <div className="absolute" style={{ left: '690px', top: '200px', width: '180px' }}>
+                      <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          {pedigreeData.sire.dam.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.sire.dam.image} 
+                                alt={pedigreeData.sire.dam.name}
+                                className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
+                          <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.sire.dam.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.sire.dam.name}
+                              </button>
+                            ) : pedigreeData.sire.dam.name}
+                          </h6>
+                          <div className="flex flex-wrap justify-center gap-1">
+                            {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Dam's Sire */}
+                    <div className="absolute" style={{ left: '690px', top: '380px', width: '180px' }}>
+                      <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          {pedigreeData.dam.sire.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.dam.sire.image} 
+                                alt={pedigreeData.dam.sire.name}
+                                className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
+                          <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.dam.sire.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.dam.sire.name}
+                              </button>
+                            ) : pedigreeData.dam.sire.name}
+                          </h6>
+                          <div className="flex flex-wrap justify-center gap-1">
+                            {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Dam's Dam */}
+                    <div className="absolute" style={{ left: '690px', top: '560px', width: '180px' }}>
+                      <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
+                        <div className="text-center">
+                          {pedigreeData.dam.dam.image && (
+                            <div className="mb-2">
+                              <img 
+                                src={pedigreeData.dam.dam.image} 
+                                alt={pedigreeData.dam.dam.name}
+                                className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
+                                style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                            </div>
+                          )}
+                          <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
+                            {pedigreeData.dam.dam.image ? (
+                              <button 
+                                onClick={() => {
+                                  setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                                className="underline cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{color: '#6d761d'}}
+                              >
+                                {pedigreeData.dam.dam.name}
+                              </button>
+                            ) : pedigreeData.dam.dam.name}
+                          </h6>
+                          <div className="flex flex-wrap justify-center gap-1">
+                            {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
+                              <button 
+                                key={index}
+                                onClick={() => {
+                                  setSelectedTitle({abbreviation: title, fullName: getTitleFullName(title)});
+                                  setIsTitlePopupOpen(true);
+                                }}
+                                className="px-1 py-0.5 text-xs font-montserrat rounded cursor-pointer hover:opacity-80 transition-opacity"
+                                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                              >
+                                {title}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="text-center pt-4 border-t">
+                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                    This pedigree shows the 3-generation lineage for the {selectedLitter?.name} litter, 
+                    featuring champion bloodlines and exceptional breeding quality.
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
         </DialogContent>
       </Dialog>
 
