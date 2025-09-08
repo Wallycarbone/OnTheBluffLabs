@@ -1179,7 +1179,7 @@ export default function Puppies() {
             <div className="mt-16 text-center">
               <Button 
                 onClick={scrollToContact}
-                className="font-montserrat font-bold text-xl h-auto py-6 px-16 rounded-2xl shadow-2xl hover:shadow-[0_25px_50px_rgba(109,118,29,0.5)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-3 ring-4 ring-opacity-40 ring-amber-300 animate-pulse border-2 border-amber-400"
+                className="font-montserrat font-bold text-xl h-auto py-6 px-16 rounded-2xl shadow-2xl hover:shadow-[0_25px_50px_rgba(109,118,29,0.5)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-3 ring-4 ring-opacity-40 ring-amber-300 border-2 border-amber-400"
                 style={{
                   background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)',
                   color: '#fefefe',
@@ -1188,14 +1188,12 @@ export default function Puppies() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 30%, #c4d12a 70%, #a5b028 100%)';
-                  e.currentTarget.classList.remove('animate-pulse');
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)';
-                  e.currentTarget.classList.add('animate-pulse');
                 }}
               >
-                ✨ Start Your Journey Today ✨
+                Start Your Journey Today
               </Button>
             </div>
           </div>
@@ -1273,7 +1271,7 @@ export default function Puppies() {
         <div className="text-center mt-20 mb-16">
           <div className="relative inline-block">
             {/* Glow effect background */}
-            <div className="absolute inset-0 rounded-2xl blur-lg opacity-70 animate-pulse" style={{background: 'linear-gradient(135deg, #a5b028, #8b9123, #6d761d)'}}></div>
+            <div className="absolute inset-0 rounded-2xl blur-lg opacity-70" style={{background: 'linear-gradient(135deg, #a5b028, #8b9123, #6d761d)'}}></div>
             <Button 
               onClick={scrollToContact}
               className="relative font-montserrat font-bold text-2xl h-auto py-8 px-20 rounded-2xl shadow-2xl hover:shadow-[0_30px_60px_rgba(109,118,29,0.6)] transition-all duration-700 transform hover:scale-110 hover:-translate-y-4 ring-4 ring-opacity-50 ring-yellow-300 border-3 border-yellow-400"
@@ -1292,7 +1290,7 @@ export default function Puppies() {
                 e.currentTarget.style.boxShadow = '0 0 30px rgba(196, 209, 42, 0.5), inset 0 3px 6px rgba(255,255,255,0.3), 0 15px 35px rgba(109,118,29,0.4)';
               }}
             >
-              🌟 Start Your Journey Today 🌟
+              Start Your Journey Today
             </Button>
           </div>
           <p className="text-base font-source-sans mt-4 opacity-80" style={{color: '#4b4b4b'}}>
