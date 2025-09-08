@@ -1232,7 +1232,32 @@ export default function Puppies() {
           </div>
         </div>
 
-        {/* Mature Dogs Section */}
+        {/* Start Your Journey Today Button */}
+        <div className="text-center mt-16 mb-12">
+          <Button 
+            onClick={scrollToContact}
+            className="font-montserrat font-bold text-2xl h-auto py-8 px-20 rounded-2xl shadow-2xl hover:shadow-[0_30px_60px_rgba(109,118,29,0.6)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-4 ring-4 ring-opacity-40 ring-amber-300 border-2 border-amber-400"
+            style={{
+              background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)',
+              color: '#fefefe',
+              textShadow: '0 3px 6px rgba(0,0,0,0.4)',
+              boxShadow: '0 0 20px rgba(165, 176, 40, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 30%, #c4d12a 70%, #a5b028 100%)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)';
+            }}
+          >
+            Start Your Journey Today
+          </Button>
+          <p className="text-base font-source-sans mt-4 opacity-80" style={{color: '#4b4b4b'}}>
+            Take the first step toward welcoming your perfect companion
+          </p>
+        </div>
+
+        {/* Mature Dogs Section */
         <div className="text-center mt-12">
           <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
             <CardContent className="p-6">
@@ -1265,31 +1290,6 @@ export default function Puppies() {
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Start Your Journey Today Button */}
-        <div className="text-center mt-20 mb-16">
-          <Button 
-            onClick={scrollToContact}
-            className="font-montserrat font-bold text-2xl h-auto py-8 px-20 rounded-2xl shadow-2xl hover:shadow-[0_30px_60px_rgba(109,118,29,0.6)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-4 ring-4 ring-opacity-40 ring-amber-300 border-2 border-amber-400"
-            style={{
-              background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)',
-              color: '#fefefe',
-              textShadow: '0 3px 6px rgba(0,0,0,0.4)',
-              boxShadow: '0 0 20px rgba(165, 176, 40, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 30%, #c4d12a 70%, #a5b028 100%)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)';
-            }}
-          >
-            Start Your Journey Today
-          </Button>
-          <p className="text-base font-source-sans mt-4 opacity-80" style={{color: '#4b4b4b'}}>
-            Take the first step toward welcoming your perfect companion
-          </p>
         </div>
       </div>
 
