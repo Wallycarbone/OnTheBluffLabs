@@ -1152,7 +1152,6 @@ export default function Puppies() {
 
   return (
     <section id="puppies" className="bg-gray-50">
-      <React.Fragment>
       {/* Full Width Puppy Photo Gallery */}
       <div className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
@@ -1821,7 +1820,6 @@ export default function Puppies() {
           )}
         </DialogContent>
       </Dialog>
-      </React.Fragment>
     </section>
   );
 }
