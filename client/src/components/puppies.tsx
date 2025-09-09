@@ -969,7 +969,7 @@ export default function Puppies() {
             <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
               <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                 <div className="text-center">
-                  {pedigreeData.sire.image && (
+                  {getPedigreeData(selectedLitter).sire.image && (
                     <div className="mb-2">
                       <img 
                         src={getPedigreeData(selectedLitter).sire.image} 
@@ -984,7 +984,7 @@ export default function Puppies() {
                     </div>
                   )}
                   <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                    {pedigreeData.sire.image ? (
+                    {getPedigreeData(selectedLitter).sire.image ? (
                       <button 
                         onClick={() => {
                           setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
@@ -1280,6 +1280,7 @@ export default function Puppies() {
           </div>
         </div>
       </div>
+      </div>
 
       {/* Content Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
@@ -1462,7 +1463,7 @@ export default function Puppies() {
                             </div>
                           )}
                           <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.sire.image ? (
+                            {getPedigreeData(selectedLitter).sire.image ? (
                               <button 
                                 onClick={() => {
                                   setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
