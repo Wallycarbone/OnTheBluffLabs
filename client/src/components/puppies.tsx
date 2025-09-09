@@ -972,12 +972,12 @@ export default function Puppies() {
                   {pedigreeData.sire.image && (
                     <div className="mb-2">
                       <img 
-                        src={pedigreeData.sire.image} 
-                        alt={pedigreeData.sire.name}
+                        src={getPedigreeData(selectedLitter).sire.image} 
+                        alt={getPedigreeData(selectedLitter).sire.name}
                         className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                         style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                         onClick={() => {
-                          setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                          setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
                           setIsImagePopupOpen(true);
                         }}
                       />
@@ -987,15 +987,15 @@ export default function Puppies() {
                     {pedigreeData.sire.image ? (
                       <button 
                         onClick={() => {
-                          setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                          setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
                           setIsImagePopupOpen(true);
                         }}
                         className="underline cursor-pointer hover:opacity-80 transition-opacity"
                         style={{color: '#6d761d'}}
                       >
-                        {pedigreeData.sire.name}
+                        {getPedigreeData(selectedLitter).sire.name}
                       </button>
-                    ) : pedigreeData.sire.name}
+                    ) : getPedigreeData(selectedLitter).sire.name}
                   </h5>
                 </div>
               </div>
@@ -1412,7 +1412,9 @@ export default function Puppies() {
               {selectedLitter?.name} Pedigree
             </DialogTitle>
           </DialogHeader>
-          {selectedLitter && renderPedigreeContent(selectedLitter)}
+          {selectedLitter && (
+            <>
+              {renderPedigreeContent(selectedLitter)}
               <div className="space-y-6">
                 {/* Traditional Pedigree Layout - Clean and Organized */}
                 <div className="overflow-x-auto p-8">
@@ -1445,15 +1447,15 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {pedigreeData.sire.image && (
+                          {getPedigreeData(selectedLitter).sire.image && (
                             <div className="mb-2">
                               <img 
-                                src={pedigreeData.sire.image} 
-                                alt={pedigreeData.sire.name}
+                                src={getPedigreeData(selectedLitter).sire.image} 
+                                alt={getPedigreeData(selectedLitter).sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
                                   setIsImagePopupOpen(true);
                                 }}
                               />
@@ -1463,18 +1465,18 @@ export default function Puppies() {
                             {pedigreeData.sire.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
                                   setIsImagePopupOpen(true);
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {pedigreeData.sire.name}
+                                {getPedigreeData(selectedLitter).sire.name}
                               </button>
-                            ) : pedigreeData.sire.name}
+                            ) : getPedigreeData(selectedLitter).sire.name}
                           </h5>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {pedigreeData.sire.titles.map((title: string, index: number) => (
+                            {getPedigreeData(selectedLitter).sire.titles.map((title: string, index: number) => (
                               <button 
                                 key={index} 
                                 onClick={() => {
@@ -1496,36 +1498,36 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '380px', top: '470px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {pedigreeData.dam.image && (
+                          {getPedigreeData(selectedLitter).dam.image && (
                             <div className="mb-2">
                               <img 
-                                src={pedigreeData.dam.image} 
-                                alt={pedigreeData.dam.name}
+                                src={getPedigreeData(selectedLitter).dam.image} 
+                                alt={getPedigreeData(selectedLitter).dam.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).dam.image, name: getPedigreeData(selectedLitter).dam.name});
                                   setIsImagePopupOpen(true);
                                 }}
                               />
                             </div>
                           )}
                           <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.dam.image ? (
+                            {getPedigreeData(selectedLitter).dam.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.dam.image, name: pedigreeData.dam.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).dam.image, name: getPedigreeData(selectedLitter).dam.name});
                                   setIsImagePopupOpen(true);
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {pedigreeData.dam.name}
+                                {getPedigreeData(selectedLitter).dam.name}
                               </button>
-                            ) : pedigreeData.dam.name}
+                            ) : getPedigreeData(selectedLitter).dam.name}
                           </h5>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {pedigreeData.dam.titles.map((title: string, index: number) => (
+                            {getPedigreeData(selectedLitter).dam.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
                                 onClick={() => {
@@ -1561,36 +1563,36 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '690px', top: '20px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {pedigreeData.sire.sire.image && (
+                          {getPedigreeData(selectedLitter).sire.sire.image && (
                             <div className="mb-2">
                               <img 
-                                src={pedigreeData.sire.sire.image} 
-                                alt={pedigreeData.sire.sire.name}
+                                src={getPedigreeData(selectedLitter).sire.sire.image} 
+                                alt={getPedigreeData(selectedLitter).sire.sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.sire.image, name: getPedigreeData(selectedLitter).sire.sire.name});
                                   setIsImagePopupOpen(true);
                                 }}
                               />
                             </div>
                           )}
                           <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.sire.sire.image ? (
+                            {getPedigreeData(selectedLitter).sire.sire.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.sire.sire.image, name: pedigreeData.sire.sire.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.sire.image, name: getPedigreeData(selectedLitter).sire.sire.name});
                                   setIsImagePopupOpen(true);
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {pedigreeData.sire.sire.name}
+                                {getPedigreeData(selectedLitter).sire.sire.name}
                               </button>
-                            ) : pedigreeData.sire.sire.name}
+                            ) : getPedigreeData(selectedLitter).sire.sire.name}
                           </h6>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {pedigreeData.sire.sire.titles.map((title: string, index: number) => (
+                            {getPedigreeData(selectedLitter).sire.sire.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
                                 onClick={() => {
@@ -1612,36 +1614,36 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '690px', top: '200px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {pedigreeData.sire.dam.image && (
+                          {getPedigreeData(selectedLitter).sire.dam.image && (
                             <div className="mb-2">
                               <img 
-                                src={pedigreeData.sire.dam.image} 
-                                alt={pedigreeData.sire.dam.name}
+                                src={getPedigreeData(selectedLitter).sire.dam.image} 
+                                alt={getPedigreeData(selectedLitter).sire.dam.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.dam.image, name: getPedigreeData(selectedLitter).sire.dam.name});
                                   setIsImagePopupOpen(true);
                                 }}
                               />
                             </div>
                           )}
                           <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.sire.dam.image ? (
+                            {getPedigreeData(selectedLitter).sire.dam.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.sire.dam.image, name: pedigreeData.sire.dam.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.dam.image, name: getPedigreeData(selectedLitter).sire.dam.name});
                                   setIsImagePopupOpen(true);
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {pedigreeData.sire.dam.name}
+                                {getPedigreeData(selectedLitter).sire.dam.name}
                               </button>
-                            ) : pedigreeData.sire.dam.name}
+                            ) : getPedigreeData(selectedLitter).sire.dam.name}
                           </h6>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {pedigreeData.sire.dam.titles.map((title: string, index: number) => (
+                            {getPedigreeData(selectedLitter).sire.dam.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
                                 onClick={() => {
@@ -1663,36 +1665,36 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '690px', top: '380px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {pedigreeData.dam.sire.image && (
+                          {getPedigreeData(selectedLitter).dam.sire.image && (
                             <div className="mb-2">
                               <img 
-                                src={pedigreeData.dam.sire.image} 
-                                alt={pedigreeData.dam.sire.name}
+                                src={getPedigreeData(selectedLitter).dam.sire.image} 
+                                alt={getPedigreeData(selectedLitter).dam.sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).dam.sire.image, name: getPedigreeData(selectedLitter).dam.sire.name});
                                   setIsImagePopupOpen(true);
                                 }}
                               />
                             </div>
                           )}
                           <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.dam.sire.image ? (
+                            {getPedigreeData(selectedLitter).dam.sire.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.dam.sire.image, name: pedigreeData.dam.sire.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).dam.sire.image, name: getPedigreeData(selectedLitter).dam.sire.name});
                                   setIsImagePopupOpen(true);
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {pedigreeData.dam.sire.name}
+                                {getPedigreeData(selectedLitter).dam.sire.name}
                               </button>
-                            ) : pedigreeData.dam.sire.name}
+                            ) : getPedigreeData(selectedLitter).dam.sire.name}
                           </h6>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {pedigreeData.dam.sire.titles.map((title: string, index: number) => (
+                            {getPedigreeData(selectedLitter).dam.sire.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
                                 onClick={() => {
@@ -1714,36 +1716,36 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '690px', top: '560px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {pedigreeData.dam.dam.image && (
+                          {getPedigreeData(selectedLitter).dam.dam.image && (
                             <div className="mb-2">
                               <img 
-                                src={pedigreeData.dam.dam.image} 
-                                alt={pedigreeData.dam.dam.name}
+                                src={getPedigreeData(selectedLitter).dam.dam.image} 
+                                alt={getPedigreeData(selectedLitter).dam.dam.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).dam.dam.image, name: getPedigreeData(selectedLitter).dam.dam.name});
                                   setIsImagePopupOpen(true);
                                 }}
                               />
                             </div>
                           )}
                           <h6 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {pedigreeData.dam.dam.image ? (
+                            {getPedigreeData(selectedLitter).dam.dam.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: pedigreeData.dam.dam.image, name: pedigreeData.dam.dam.name});
+                                  setSelectedImage({src: getPedigreeData(selectedLitter).dam.dam.image, name: getPedigreeData(selectedLitter).dam.dam.name});
                                   setIsImagePopupOpen(true);
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {pedigreeData.dam.dam.name}
+                                {getPedigreeData(selectedLitter).dam.dam.name}
                               </button>
-                            ) : pedigreeData.dam.dam.name}
+                            ) : getPedigreeData(selectedLitter).dam.dam.name}
                           </h6>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {pedigreeData.dam.dam.titles.map((title: string, index: number) => (
+                            {getPedigreeData(selectedLitter).dam.dam.titles.map((title: string, index: number) => (
                               <button 
                                 key={index}
                                 onClick={() => {
@@ -1770,8 +1772,8 @@ export default function Puppies() {
                   </p>
                 </div>
               </div>
-            );
-          })()}
+            </>
+          )}
         </DialogContent>
       </Dialog>
 
