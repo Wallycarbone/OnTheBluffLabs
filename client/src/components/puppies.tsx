@@ -1377,7 +1377,7 @@ export default function Puppies() {
       </div>
 
       {/* Topo Gigio Popup Dialog */}
-      <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
+      {/* <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
@@ -1404,10 +1404,10 @@ export default function Puppies() {
             </div>
           </div>
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
 
       {/* Pedigree Popup Dialog */}
-      <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
+      {/* <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
         <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
@@ -1777,10 +1777,10 @@ export default function Puppies() {
             </>
           )}
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
 
       {/* Image Popup Dialog */}
-      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+      {/* <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
@@ -1797,10 +1797,10 @@ export default function Puppies() {
             </div>
           )}
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
 
       {/* Title Popup Dialog */}
-      <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
+      {/* <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
         <DialogContent className="max-w-md max-h-[90vh] overflow-auto" aria-describedby="title-description">
           <DialogHeader>
             <DialogTitle className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
@@ -1815,7 +1815,7 @@ export default function Puppies() {
             </div>
           )}
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
       </div>
     </section>
   );
