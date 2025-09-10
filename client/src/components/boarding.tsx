@@ -91,7 +91,7 @@ export default function Boarding() {
 
         {/* Main Boarding Information */}
         <div className="mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
                     Focused Training on Everyday Behaviors
