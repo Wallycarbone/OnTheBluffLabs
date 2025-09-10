@@ -229,16 +229,6 @@ export default function Puppies() {
             ))}
           </div>
           
-          {/* Title positioned below gallery */}
-          <div className="text-center py-8">
-            <h1 className="text-4xl lg:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              Generations of Excellence
-            </h1>
-            <p className="text-lg font-source-sans mt-4 max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
-              Discover the authentic bloodlines and exceptional puppies from On The Bluff Labradors, 
-              showcasing our commitment to breeding excellence across generations.
-            </p>
-          </div>
         </div>
 
         {/* Four Steps Process Section */}
