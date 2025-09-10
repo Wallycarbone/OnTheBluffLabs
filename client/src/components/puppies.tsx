@@ -1151,6 +1151,7 @@ export default function Puppies() {
   };
 
   return (
+    <>
     <section id="puppies" className="bg-gray-50">
       {/* Full Width Puppy Photo Gallery */}
       <div className="mb-12">
@@ -1821,5 +1822,6 @@ export default function Puppies() {
         </DialogContent>
       </Dialog>
     </section>
+    </>
   );
 }
