@@ -121,6 +121,10 @@ export default function Puppies() {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     const weeks = Math.floor(diffDays / 7);
     
+    if (weeks > 10) {
+      return 'Trained';
+    }
+    
     if (weeks >= 8) {
       return 'Ready';
     }
@@ -368,7 +372,12 @@ export default function Puppies() {
                         <span 
                           className="px-3 py-1 rounded-full text-xs font-medium"
                           style={{
-                            backgroundColor: litter.status === 'Ready' ? '#6d761d' : '#f59e0b',
+                            backgroundColor: (() => {
+                              const status = getLitterStatus(litter.birthDate, litter.status);
+                              if (status === 'Trained') return '#4a5c0a'; // Darker olive green for trained
+                              if (status === 'Ready') return '#6d761d'; // Regular olive green for ready
+                              return '#f59e0b'; // Orange for other statuses
+                            })(),
                             color: '#fefefe'
                           }}
                         >
