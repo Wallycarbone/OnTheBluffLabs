@@ -39,6 +39,11 @@ function CareLifestyleDropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="center" className="w-48">
         <DropdownMenuItem asChild>
+          <Link href="/health-testing" className="w-full cursor-pointer">
+            Holistic Health
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link href="/raw-dog-food" className="w-full cursor-pointer">
             Raw Dog Food
           </Link>
@@ -46,11 +51,6 @@ function CareLifestyleDropdown() {
         <DropdownMenuItem asChild>
           <Link href="/boarding" className="w-full cursor-pointer">
             Board & Train
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/health-testing" className="w-full cursor-pointer">
-            Holistic Health
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
