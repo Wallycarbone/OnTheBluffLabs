@@ -54,7 +54,7 @@ export default function PuppyApplication() {
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-4">
-            Puppy Application
+            Puppy Matching Questionnaire
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-source-sans">
             Begin your journey with On The Bluff Labradors. Please complete this comprehensive application 

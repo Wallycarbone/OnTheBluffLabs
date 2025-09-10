@@ -6,7 +6,7 @@ import applicationImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.
 
 export default function PuppyApplicationPage() {
   useEffect(() => {
-    document.title = "Puppy Application - On The Bluff Labradors | Apply for Your Perfect Companion";
+    document.title = "Puppy Matching Questionnaire - On The Bluff Labradors | Apply for Your Perfect Companion";
     
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -21,7 +21,7 @@ export default function PuppyApplicationPage() {
 
     // Set Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'Puppy Application - On The Bluff Labradors | Apply for Your Perfect Companion' },
+      { property: 'og:title', content: 'Puppy Matching Questionnaire - On The Bluff Labradors | Apply for Your Perfect Companion' },
       { property: 'og:description', content: 'Apply for your perfect Labrador companion from On The Bluff Labradors. Complete application for champion bloodline puppies with 50+ years breeding expertise.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: window.location.href },
@@ -32,7 +32,7 @@ export default function PuppyApplicationPage() {
     // Set Twitter Card tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Puppy Application - On The Bluff Labradors' },
+      { name: 'twitter:title', content: 'Puppy Matching Questionnaire - On The Bluff Labradors' },
       { name: 'twitter:description', content: 'Apply for your perfect Labrador companion from On The Bluff Labradors. Complete application for champion bloodline puppies.' },
       { name: 'twitter:image', content: `${window.location.origin}${applicationImage}` }
     ];
