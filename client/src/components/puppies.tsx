@@ -241,6 +241,99 @@ export default function Puppies() {
           </div>
         </div>
 
+        {/* Four Steps Process Section */}
+        <div className="bg-white py-20 px-4 sm:px-6 lg:px-8 mb-20">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-5xl md:text-6xl font-oswald font-normal tracking-wide mb-12" style={{color: '#11100f'}}>
+              GENERATIONS OF DISTINCTION
+            </h2>
+            
+            {/* Legacy Statement */}
+            <div className="max-w-4xl mx-auto mb-16">
+              <p className="text-2xl md:text-3xl font-source-sans leading-relaxed mb-8" style={{color: '#6d761d'}}>
+                Every Labrador we raise carries forward a legacy of love, loyalty, and lifelong companionship.
+              </p>
+              <div className="w-24 h-1 mx-auto mb-12" style={{backgroundColor: '#6d761d'}}></div>
+              <p className="text-xl md:text-2xl font-source-sans" style={{color: '#4b4b4b'}}>
+                Here's how we guide you in bringing one home:
+              </p>
+            </div>
+
+            {/* Process Steps */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+              <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-2xl font-oswald font-bold" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                  1
+                </div>
+                <h3 className="text-2xl font-oswald font-normal tracking-wide mb-4" style={{color: '#6d761d'}}>
+                  Inquire & Apply
+                </h3>
+                <p className="text-lg font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                  Share your story with us so we can understand your hopes for a new companion.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-2xl font-oswald font-bold" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                  2
+                </div>
+                <h3 className="text-2xl font-oswald font-normal tracking-wide mb-4" style={{color: '#6d761d'}}>
+                  Match
+                </h3>
+                <p className="text-lg font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                  We thoughtfully pair you with the puppy whose temperament best fits your family and lifestyle.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-2xl font-oswald font-bold" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                  3
+                </div>
+                <h3 className="text-2xl font-oswald font-normal tracking-wide mb-4" style={{color: '#6d761d'}}>
+                  Choose Training
+                </h3>
+                <p className="text-lg font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                  Select a training package that gives your pup the foundation they need to thrive.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-2xl font-oswald font-bold" style={{backgroundColor: '#6d761d', color: '#fefefe'}}>
+                  4
+                </div>
+                <h3 className="text-2xl font-oswald font-normal tracking-wide mb-4" style={{color: '#6d761d'}}>
+                  Welcome Home
+                </h3>
+                <p className="text-lg font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                  Finally, bring your puppy home—prepared, confident, and ready to begin a lifetime of love.
+                </p>
+              </div>
+            </div>
+
+            {/* Call to Action */}
+            <div className="mt-16 text-center">
+              <Button 
+                onClick={scrollToContact}
+                className="font-montserrat font-bold text-xl h-auto py-6 px-16 rounded-2xl shadow-2xl hover:shadow-[0_25px_50px_rgba(109,118,29,0.5)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-3 ring-4 ring-opacity-40 ring-amber-300 border-2 border-amber-400"
+                style={{
+                  background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)',
+                  color: '#fefefe',
+                  textShadow: '0 3px 6px rgba(0,0,0,0.4)',
+                  boxShadow: '0 0 20px rgba(165, 176, 40, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 30%, #c4d12a 70%, #a5b028 100%)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)';
+                }}
+              >
+                Start Your Journey Today
+              </Button>
+            </div>
+          </div>
+        </div>
+
         {/* Current Litters Section */}
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
