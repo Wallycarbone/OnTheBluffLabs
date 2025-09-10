@@ -85,6 +85,7 @@ import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 // Additional imports for complete pedigree data (avoiding duplicates from above)
 import newHarperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import atticusFinchImage from "@assets/Breeding Dogs 5x4 (27)_1756672406925.png";
+import grizzlyPearl from "@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png";
 // arabellaImage and markTwainImage temporarily commented out due to missing files
 // import arabellaImage from "@assets/Arabella_1755287697962.jpg";
 // import markTwainImage from "@assets/Mark Twain_1755287752095.avif";
@@ -1146,7 +1147,7 @@ export default function Puppies() {
 
   return (
     <section id="puppies" className="bg-gray-50">
-      <>
+      <div>
       {/* Full Width Puppy Photo Gallery */}
       <div className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
@@ -1815,7 +1816,7 @@ export default function Puppies() {
           )}
         </DialogContent>
       </Dialog>
-      </>
+      </div>
     </section>
   );
 }
