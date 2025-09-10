@@ -131,11 +131,11 @@ export default function Boarding() {
                     Each behavior is approached with consistency, patience, and positive reinforcement, giving your dog the tools to succeed both at the Bluff and at home. With our guidance and your custom go-home plan, these lessons become lasting habits, shaping a companion who is confident, well-mannered, and a joy to be around.
                   </p>
                 </div>
-                <div className="text-center">
+                <div className="flex justify-center">
                   <img 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (81)_1756151379866.png"
                     alt="Professional dog training session - trainer working with golden Labrador in backyard setting"
-                    className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+                    className="max-w-xs h-[600px] object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 40%'}}
                   />
                 </div>
