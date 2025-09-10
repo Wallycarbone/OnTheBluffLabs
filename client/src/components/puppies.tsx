@@ -315,12 +315,12 @@ export default function Puppies() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3">
-                      {litter.images ? litter.images.slice(0, 4).map((img: string, imgIndex: number) => (
+                      {litter.images ? litter.images.slice(0, 2).map((img: string, imgIndex: number) => (
                         <img 
                           key={imgIndex}
                           src={img}
                           alt={`${litter.name} litter photo ${imgIndex + 1}`}
-                          className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                          className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                           onClick={() => openImagePopup({src: img, name: `${litter.name} litter`})}
                         />
                       )) : (
@@ -328,13 +328,13 @@ export default function Puppies() {
                           <img 
                             src={litter.image}
                             alt={`${litter.sire} - sire`}
-                            className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                            className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                             onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
                           />
                           <img 
                             src={litter.image2}
                             alt={`${litter.dam} - dam`}
-                            className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                            className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                             onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
                           />
                         </>
