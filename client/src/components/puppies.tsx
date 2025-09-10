@@ -225,39 +225,41 @@ export default function Puppies() {
                       <p className="text-sm font-source-sans text-gray-600">{litter.description}</p>
                     </div>
 
-                    {/* Individual Puppies */}
+                    {/* Individual Puppies Carousel */}
                     {litter.puppies.length > 0 && (
                       <div className="mb-8">
                         <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide" style={{color: '#6d761d'}}>
                           MEET THE PUPPIES
                         </h4>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                          {litter.puppies.map((puppy, puppyIndex) => (
-                            <div key={puppyIndex} className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                              <img 
-                                src={puppy.image} 
-                                alt={puppy.name}
-                                className="w-full h-32 object-cover rounded mb-3 cursor-pointer hover:opacity-90 transition-opacity"
-                                onClick={() => {
-                                  setSelectedImage({src: puppy.image, name: puppy.name});
-                                  setIsImagePopupOpen(true);
-                                }}
-                              />
-                              <div className="text-center">
-                                <p className="font-montserrat text-sm font-semibold mb-1" style={{color: '#11100f'}}>
-                                  {puppy.name}
-                                </p>
-                                <div className="text-xs font-source-sans text-gray-600 space-y-1">
-                                  <p>{puppy.gender} • {puppy.color}</p>
-                                  {puppy.available !== undefined && (
-                                    <span className={`px-2 py-1 rounded text-xs ${puppy.available ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-600'}`}>
-                                      {puppy.available ? 'Available' : 'Reserved'}
-                                    </span>
-                                  )}
+                        <div className="relative">
+                          <div className="flex space-x-4 overflow-x-auto pb-4" style={{scrollbarWidth: 'thin'}}>
+                            {litter.puppies.map((puppy, puppyIndex) => (
+                              <div key={puppyIndex} className="flex-none w-48 bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                                <img 
+                                  src={puppy.image} 
+                                  alt={puppy.name}
+                                  className="w-full h-32 object-cover rounded mb-3 cursor-pointer hover:opacity-90 transition-opacity"
+                                  onClick={() => {
+                                    setSelectedImage({src: puppy.image, name: puppy.name});
+                                    setIsImagePopupOpen(true);
+                                  }}
+                                />
+                                <div className="text-center">
+                                  <p className="font-montserrat text-sm font-semibold mb-1" style={{color: '#11100f'}}>
+                                    {puppy.name}
+                                  </p>
+                                  <div className="text-xs font-source-sans text-gray-600 space-y-1">
+                                    <p>{puppy.gender} • {puppy.color}</p>
+                                    {puppy.available !== undefined && (
+                                      <span className={`px-2 py-1 rounded text-xs ${puppy.available ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-600'}`}>
+                                        {puppy.available ? 'Available' : 'Reserved'}
+                                      </span>
+                                    )}
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </div>
                       </div>
                     )}
