@@ -1818,4 +1818,3 @@ export default function BreedingDogs() {
     </>
   );
 };
-
