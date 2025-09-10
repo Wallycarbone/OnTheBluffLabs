@@ -1193,6 +1193,7 @@ export default function Puppies() {
               </div>
             ))}
           </div>
+        </div>
           
         {/* Title Below Gallery */}
         <div className="bg-white py-20 px-4 sm:px-6 lg:px-8 mb-20">
@@ -1286,7 +1287,6 @@ export default function Puppies() {
             </div>
           </div>
         </div>
-      </div>
 
       {/* Content Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
@@ -1316,7 +1316,7 @@ export default function Puppies() {
                 // If both have birth dates, sort by birth date (newest first for youngest pups)
                 return new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
               })
-              .map((litter, index) => renderLitterCard(litter, index))}
+              .map((litter, index) => null)}
           </div>
         </div>
 
@@ -1455,36 +1455,42 @@ export default function Puppies() {
                     <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
                       <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                         <div className="text-center">
-                          {getPedigreeData(selectedLitter).sire.image && (
+                          {selectedLitter && getPedigreeData(selectedLitter)?.sire?.image && (
                             <div className="mb-2">
                               <img 
-                                src={getPedigreeData(selectedLitter).sire.image} 
-                                alt={getPedigreeData(selectedLitter).sire.name}
+                                src={getPedigreeData(selectedLitter)!.sire.image!} 
+                                alt={getPedigreeData(selectedLitter)!.sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                                 style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                                 onClick={() => {
-                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
-                                  setIsImagePopupOpen(true);
+                                  const pedigreeData = getPedigreeData(selectedLitter);
+                                  if (pedigreeData?.sire?.image) {
+                                    setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }
                                 }}
                               />
                             </div>
                           )}
                           <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                            {getPedigreeData(selectedLitter).sire.image ? (
+                            {selectedLitter && getPedigreeData(selectedLitter)?.sire?.image ? (
                               <button 
                                 onClick={() => {
-                                  setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
-                                  setIsImagePopupOpen(true);
+                                  const pedigreeData = getPedigreeData(selectedLitter);
+                                  if (pedigreeData?.sire?.image) {
+                                    setSelectedImage({src: pedigreeData.sire.image, name: pedigreeData.sire.name});
+                                    setIsImagePopupOpen(true);
+                                  }
                                 }}
                                 className="underline cursor-pointer hover:opacity-80 transition-opacity"
                                 style={{color: '#6d761d'}}
                               >
-                                {getPedigreeData(selectedLitter).sire.name}
+                                {getPedigreeData(selectedLitter)?.sire?.name}
                               </button>
-                            ) : getPedigreeData(selectedLitter).sire.name}
+                            ) : getPedigreeData(selectedLitter)?.sire?.name}
                           </h5>
                           <div className="flex flex-wrap justify-center gap-1">
-                            {getPedigreeData(selectedLitter).sire.titles.map((title: string, index: number) => (
+                            {selectedLitter && getPedigreeData(selectedLitter)?.sire?.titles?.map((title: string, index: number) => (
                               <button 
                                 key={index} 
                                 onClick={() => {
