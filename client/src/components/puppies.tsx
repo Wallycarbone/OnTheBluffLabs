@@ -969,39 +969,33 @@ export default function Puppies() {
             <div className="absolute" style={{ left: '380px', top: '110px', width: '180px' }}>
               <div className="bg-white rounded p-3 border-2" style={{borderColor: '#6d761d'}}>
                 <div className="text-center">
-                  {selectedLitter && getPedigreeData(selectedLitter?.name)?.sire?.image && (
+                  {getPedigreeData(selectedLitter).sire.image && (
                     <div className="mb-2">
                       <img 
-                        src={getPedigreeData(selectedLitter.name)!.sire.image!} 
-                        alt={getPedigreeData(selectedLitter.name)!.sire.name}
+                        src={getPedigreeData(selectedLitter).sire.image} 
+                        alt={getPedigreeData(selectedLitter).sire.name}
                         className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
                         style={{ imageRendering: 'crisp-edges', filter: 'contrast(1.1) brightness(1.05)' }}
                         onClick={() => {
-                          const pedigree = getPedigreeData(selectedLitter.name);
-                          if (pedigree?.sire?.image) {
-                            setSelectedImage({src: pedigree.sire.image, name: pedigree.sire.name});
-                            setIsImagePopupOpen(true);
-                          }
+                          setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
+                          setIsImagePopupOpen(true);
                         }}
                       />
                     </div>
                   )}
                   <h5 className="font-oswald text-sm font-normal mb-1" style={{color: '#11100f'}}>
-                    {selectedLitter && getPedigreeData(selectedLitter.name)?.sire?.image ? (
+                    {getPedigreeData(selectedLitter).sire.image ? (
                       <button 
                         onClick={() => {
-                          const pedigree = getPedigreeData(selectedLitter.name);
-                          if (pedigree?.sire?.image) {
-                            setSelectedImage({src: pedigree.sire.image, name: pedigree.sire.name});
-                            setIsImagePopupOpen(true);
-                          }
+                          setSelectedImage({src: getPedigreeData(selectedLitter).sire.image, name: getPedigreeData(selectedLitter).sire.name});
+                          setIsImagePopupOpen(true);
                         }}
                         className="underline cursor-pointer hover:opacity-80 transition-opacity"
                         style={{color: '#6d761d'}}
                       >
-                        {getPedigreeData(selectedLitter.name)?.sire?.name}
+                        {getPedigreeData(selectedLitter).sire.name}
                       </button>
-                    ) : (selectedLitter && getPedigreeData(selectedLitter.name)?.sire?.name)}
+                    ) : getPedigreeData(selectedLitter).sire.name}
                   </h5>
                 </div>
               </div>
@@ -1152,6 +1146,7 @@ export default function Puppies() {
 
   return (
     <section id="puppies" className="bg-gray-50">
+      <>
       {/* Full Width Puppy Photo Gallery */}
       <div className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
@@ -1820,6 +1815,7 @@ export default function Puppies() {
           )}
         </DialogContent>
       </Dialog>
+      </>
     </section>
   );
 }
