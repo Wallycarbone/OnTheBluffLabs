@@ -78,7 +78,7 @@ export default function Puppies() {
     {
       name: "Moon & Oso",
       birthDate: "Due July 2025",
-      image: "placeholder.jpg",
+      image: puppy1, // Using available puppy image
       status: "Expected"
     }
   ];
@@ -87,7 +87,7 @@ export default function Puppies() {
     {
       name: "Moon & Grizzly", 
       birthDate: "April 15, 2024",
-      image: "placeholder.jpg",
+      image: puppy2, // Using available puppy image
       status: "Available"
     }
   ];
@@ -170,23 +170,63 @@ export default function Puppies() {
                 return new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
               })
               .map((litter, index) => (
-                <div key={index} className="bg-white rounded-2xl shadow-xl p-4">
-                  <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
-                    {litter.name}
-                  </h3>
-                  <p className="text-sm font-source-sans mb-2" style={{color: '#4b4b4b'}}>
-                    Born: {litter.birthDate}
-                  </p>
-                  <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-                    Age: {calculateAge(litter.birthDate)}
-                  </p>
-                  <div className="text-center">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold text-white"
-                          style={{backgroundColor: '#6d761d'}}>
-                      {getLitterStatus(litter.birthDate, litter.status)}
-                    </span>
+                <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
+                  <div className="relative">
+                    <img 
+                      src={litter.image} 
+                      alt={`${litter.name} Labrador litter`} 
+                      className="w-full h-72 object-cover transition-all duration-300"
+                      style={{aspectRatio: '5/4'}}
+                    />
+                    
+                    <div className="absolute top-4 right-4">
+                      <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold shadow-lg text-white`}
+                            style={{
+                              backgroundColor: getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? '#6d761d' :
+                              getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? '#8a8f28' :
+                              '#a5aa35'
+                            }}>
+                        {getLitterStatus(litter.birthDate, litter.status)}
+                      </span>
+                    </div>
                   </div>
-                </div>
+                  
+                  <CardContent className="p-8">
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
+                        {litter.name}
+                      </h3>
+                      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mb-4"></div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div>
+                        <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Born</span>
+                        <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.birthDate}</p>
+                      </div>
+                      <div>
+                        <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Age</span>
+                        <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-center">
+                      <Button 
+                        onClick={() => {
+                          setSelectedLitter(litter);
+                          setIsPedigreePopupOpen(true);
+                        }}
+                        variant="outline"
+                        className="font-montserrat font-medium text-sm h-auto py-3 px-8 rounded-lg border-2 transition-all duration-200"
+                        style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
+                        onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
+                        onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
+                      >
+                        View Pedigree
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
           </div>
         </div>
