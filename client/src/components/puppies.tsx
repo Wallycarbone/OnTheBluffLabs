@@ -1152,7 +1152,7 @@ export default function Puppies() {
 
   return (
     <>
-    <section id="puppies" className="bg-gray-50">
+      <section id="puppies" className="bg-gray-50">
       {/* Full Width Puppy Photo Gallery */}
       <div className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
@@ -1380,10 +1380,10 @@ export default function Puppies() {
           </Card>
         </div>
       </div>
-    </section>
+      </section>
 
-    {/* Topo Gigio Popup Dialog */}
-    <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
+      {/* Topo Gigio Popup Dialog */}
+      <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
