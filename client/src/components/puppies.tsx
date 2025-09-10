@@ -327,11 +327,11 @@ export default function Puppies() {
         {/* Current Litters Section */}
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
-              Current Litters
+            <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              SELECT LITTERS
             </h2>
-            <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
-              Our available puppies from champion bloodlines, ready for loving homes.
+            <p className="text-lg font-source-sans mt-6 max-w-4xl mx-auto" style={{color: '#4b4b4b'}}>
+              Litters are listed here only after our clients on the wait list have been placed with a puppy. Therefore, joining the wait list is the best way to ensure that you have the most options.
             </p>
           </div>
 
