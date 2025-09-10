@@ -12,7 +12,7 @@ export default function Footer() {
               ON THE BLUFF LABRADORS
             </h3>
             <p className="mb-4 font-source-sans" style={{color: '#ebebeb'}}>
-              Breeding exceptional Labrador Retrievers with love, care, and dedication since 2003.
+              Labradors Bred for Beauty & temperament
             </p>
             <div className="flex space-x-4">
               <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
