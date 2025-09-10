@@ -132,11 +132,11 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
           </div>
         </div>
         
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {healthTests.map((test, index) => (
             <Card 
               key={index} 
-              className="bg-white rounded-2xl shadow-xl p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+              className="bg-white rounded-2xl shadow-xl p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer w-64 flex-shrink-0"
               onClick={() => openEssay(test)}
             >
               <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6">
