@@ -470,13 +470,13 @@ export default function Puppies() {
                       <img 
                         src={litter.image}
                         alt={`${litter.sire} - sire`}
-                        className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                        className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                         onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
                       />
                       <img 
                         src={litter.image2}
                         alt={`${litter.dam} - dam`}
-                        className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                        className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                         onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
                       />
                     </div>
