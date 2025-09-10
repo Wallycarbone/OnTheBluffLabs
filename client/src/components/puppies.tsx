@@ -21,6 +21,17 @@ import puppy13 from '@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png';
 import puppy15 from '@assets/Puppies 5x4 (4 x 4 in) (15)_1755549884489.png';
 import puppy16 from '@assets/Puppies 5x4 (4 x 4 in) (16)_1755550036481.png';
 
+// Individual puppy imports for litter information
+import grizzlyPearl from '@assets/Grizzly & Guinevere - Pearl (Turtles)_1754799003925.png';
+import grizzlyHolly from '@assets/Grizzly & Guinevere - Holly (Puppy Love)_1754799186066.png';
+import moonPeacock from '@assets/Moon & Foxxy - Mr. Peacock_1754797777651.png';
+import moonTurtles from '@assets/Moon & Foxxy - Mr. Turtles_1754797897379.png';
+import moonAloha from '@assets/Moon & Foxxy - Ms. Aloha_1754797953058.png';
+import moonSunflower from '@assets/Moon & Foxxy - Ms. Sunflower_1754798044378.png';
+import moonSuperstar from '@assets/Moon & Foxxy - Mr. Superstar_1754798114378.png';
+import moonPenguin from '@assets/Moon & Foxxy - Mr. Penguin Party_1754798197300.png';
+import moonAlpine from '@assets/Moon & Foxxy - Ms. Alpine Glow_1754798261396.png';
+
 // import topoGigioImage from '@assets/topo-gigio-westminster.jpg';
 // import matureDogsImage from '@assets/duke-atlas-outdoor.jpg';
 
@@ -74,21 +85,45 @@ export default function Puppies() {
     return 'Growing';
   };
 
-  const upcomingLitters = [
+  // Detailed litter information with individual puppies
+  const detailedLitters = [
     {
-      name: "Moon & Oso",
-      birthDate: "Due July 2025",
-      image: puppy1, // Using available puppy image
-      status: "Expected"
-    }
-  ];
-
-  const currentLitters = [
+      name: "Grizzly & Guinevere",
+      dam: "Guinevere",
+      sire: "Grizzly",
+      birthDate: "April 5, 2025",
+      status: "Available",
+      description: "Beautiful yellow Lab puppies with excellent temperaments and champion bloodlines.",
+      puppies: [
+        { name: "Pearl (Turtles)", image: grizzlyPearl, available: true, gender: "Female", color: "Yellow" },
+        { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true, gender: "Female", color: "Yellow" }
+      ]
+    },
     {
-      name: "Moon & Grizzly", 
-      birthDate: "April 15, 2024",
-      image: puppy2, // Using available puppy image
-      status: "Available"
+      name: "Moon & Foxxy",
+      dam: "Foxxy", 
+      sire: "Moon",
+      birthDate: "June 5, 2025",
+      status: "Available",
+      description: "Exceptional yellow Lab puppies from our accomplished breeding pair.",
+      puppies: [
+        { name: "Mr. Peacock", image: moonPeacock, gender: "Male", color: "Yellow" },
+        { name: "Mr. Turtles", image: moonTurtles, gender: "Male", color: "Yellow" },
+        { name: "Ms. Aloha", image: moonAloha, gender: "Female", color: "Yellow" },
+        { name: "Ms. Sunflower", image: moonSunflower, gender: "Female", color: "Yellow" },
+        { name: "Mr. Superstar", image: moonSuperstar, gender: "Male", color: "Yellow" },
+        { name: "Mr. Penguin Party", image: moonPenguin, gender: "Male", color: "Yellow" },
+        { name: "Ms. Alpine Glow", image: moonAlpine, gender: "Female", color: "Yellow" }
+      ]
+    },
+    {
+      name: "Boo Radley & Boudica",
+      dam: "Boudica",
+      sire: "Boo Radley", 
+      birthDate: "August 7, 2025",
+      status: "Expected",
+      description: "Upcoming litter from our promising young breeding pair.",
+      puppies: []
     }
   ];
 
@@ -155,75 +190,109 @@ export default function Puppies() {
               Litters are listed here only after our clients on the wait list have been placed with a puppy. Therefore, joining the wait list is the best way to ensure that you have the most options.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[...upcomingLitters, ...currentLitters]
+          <div className="space-y-12">
+            {detailedLitters
               .sort((a, b) => {
-                // If both are upcoming (due dates), sort by due date
-                if (a.birthDate.includes('Due') && b.birthDate.includes('Due')) {
-                  const aMonth = a.birthDate.includes('July') ? 7 : 8;
-                  const bMonth = b.birthDate.includes('July') ? 7 : 8;
-                  return aMonth - bMonth;
-                }
-                // If one is upcoming and one isn't, upcoming comes first
-                if (a.birthDate.includes('Due') && !b.birthDate.includes('Due')) return -1;
-                if (!a.birthDate.includes('Due') && b.birthDate.includes('Due')) return 1;
-                // If both have birth dates, sort by birth date (newest first for youngest pups)
+                // Sort by birth date (newest first)
                 return new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
               })
               .map((litter, index) => (
                 <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
-                  <div className="relative">
-                    <img 
-                      src={litter.image} 
-                      alt={`${litter.name} Labrador litter`} 
-                      className="w-full h-72 object-cover transition-all duration-300"
-                      style={{aspectRatio: '5/4'}}
-                    />
-                    
-                    <div className="absolute top-4 right-4">
-                      <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold shadow-lg text-white`}
-                            style={{
-                              backgroundColor: getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? '#6d761d' :
-                              getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? '#8a8f28' :
-                              '#a5aa35'
-                            }}>
-                        {getLitterStatus(litter.birthDate, litter.status)}
-                      </span>
-                    </div>
-                  </div>
-                  
                   <CardContent className="p-8">
-                    <div className="mb-6">
-                      <h3 className="text-2xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
-                        {litter.name}
-                      </h3>
-                      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mb-4"></div>
+                    {/* Litter Header */}
+                    <div className="mb-8">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 className="text-3xl font-oswald font-normal tracking-wide mb-2 md:mb-0" style={{color: '#11100f'}}>
+                          {litter.name}
+                        </h3>
+                        <span className={`px-4 py-2 rounded-full text-sm font-montserrat font-semibold text-white self-start`}
+                              style={{
+                                backgroundColor: getLitterStatus(litter.birthDate, litter.status) === 'Ready' ? '#6d761d' :
+                                getLitterStatus(litter.birthDate, litter.status) === 'Ready Soon' ? '#8a8f28' :
+                                '#a5aa35'
+                              }}>
+                          {getLitterStatus(litter.birthDate, litter.status)}
+                        </span>
+                      </div>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                          <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Born</span>
+                          <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.birthDate}</p>
+                        </div>
+                        <div>
+                          <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Puppies</span>
+                          <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.puppies.length} {litter.puppies.length === 1 ? 'puppy' : 'puppies'}</p>
+                        </div>
+                        <div>
+                          <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Age</span>
+                          <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
+                        </div>
+                      </div>
+                      
+                      <p className="text-sm font-source-sans text-gray-600">{litter.description}</p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div>
-                        <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Born</span>
-                        <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{litter.birthDate}</p>
+                    {/* Individual Puppies */}
+                    {litter.puppies.length > 0 && (
+                      <div className="mb-8">
+                        <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide" style={{color: '#6d761d'}}>
+                          MEET THE PUPPIES
+                        </h4>
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                          {litter.puppies.map((puppy, puppyIndex) => (
+                            <div key={puppyIndex} className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                              <img 
+                                src={puppy.image} 
+                                alt={puppy.name}
+                                className="w-full h-32 object-cover rounded mb-3 cursor-pointer hover:opacity-90 transition-opacity"
+                                onClick={() => {
+                                  setSelectedImage({src: puppy.image, name: puppy.name});
+                                  setIsImagePopupOpen(true);
+                                }}
+                              />
+                              <div className="text-center">
+                                <p className="font-montserrat text-sm font-semibold mb-1" style={{color: '#11100f'}}>
+                                  {puppy.name}
+                                </p>
+                                <div className="text-xs font-source-sans text-gray-600 space-y-1">
+                                  <p>{puppy.gender} • {puppy.color}</p>
+                                  {puppy.available !== undefined && (
+                                    <span className={`px-2 py-1 rounded text-xs ${puppy.available ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-600'}`}>
+                                      {puppy.available ? 'Available' : 'Reserved'}
+                                    </span>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <div>
-                        <span className="text-xs font-montserrat font-semibold uppercase tracking-wider" style={{color: '#6d761d'}}>Age</span>
-                        <p className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>{calculateAge(litter.birthDate)}</p>
-                      </div>
-                    </div>
+                    )}
 
-                    <div className="flex justify-center">
+                    {/* Action Buttons */}
+                    <div className="flex justify-center space-x-4">
                       <Button 
                         onClick={() => {
                           setSelectedLitter(litter);
                           setIsPedigreePopupOpen(true);
                         }}
                         variant="outline"
-                        className="font-montserrat font-medium text-sm h-auto py-3 px-8 rounded-lg border-2 transition-all duration-200"
+                        className="font-montserrat font-medium text-sm h-auto py-3 px-6 rounded-lg border-2 transition-all duration-200"
                         style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'white'}}
                         onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#6d761d'; e.currentTarget.style.color = '#fefefe'}}
                         onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#6d761d'}}
                       >
                         View Pedigree
+                      </Button>
+                      <Button 
+                        onClick={scrollToContact}
+                        className="font-montserrat font-medium text-sm h-auto py-3 px-6 rounded-lg transition-all duration-200"
+                        style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a5f18'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                      >
+                        Inquire About Litter
                       </Button>
                     </div>
                   </CardContent>
