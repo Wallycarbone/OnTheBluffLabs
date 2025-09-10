@@ -405,14 +405,15 @@ export default function Puppies() {
                         >
                           View Pedigree
                         </Button>
-                        <Button 
-                          onClick={scrollToContact}
-                          variant="outline"
-                          className="font-montserrat font-medium text-sm h-auto py-2 px-4"
-                          style={{borderColor: '#6d761d', color: '#6d761d'}}
-                        >
-                          Contact About This Litter
-                        </Button>
+                        <Link href="/puppy-application">
+                          <Button 
+                            variant="outline"
+                            className="font-montserrat font-medium text-sm h-auto py-2 px-4"
+                            style={{borderColor: '#6d761d', color: '#6d761d'}}
+                          >
+                            Contact About This Litter
+                          </Button>
+                        </Link>
                       </div>
                     </div>
 
@@ -596,15 +597,16 @@ export default function Puppies() {
               </div>
               
               <div className="pt-4 border-t">
-                <Button 
-                  onClick={scrollToContact}
-                  className="w-full font-montserrat font-medium text-sm h-auto py-3"
-                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                >
-                  Contact About This Litter
-                </Button>
+                <Link href="/puppy-application">
+                  <Button 
+                    className="w-full font-montserrat font-medium text-sm h-auto py-3"
+                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                  >
+                    Contact About This Litter
+                  </Button>
+                </Link>
               </div>
             </div>
           )}
