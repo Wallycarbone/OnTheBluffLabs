@@ -29,7 +29,7 @@ export default function Footer() {
           
           <div>
             <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide">QUICK LINKS</h4>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-2">
               <li>
                 <Link 
                   href="/about"
