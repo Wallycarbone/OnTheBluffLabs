@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import ourDogsImage from "@assets/Breeding Dogs 5x4 (33)_1757522671670.png";
 
 export default function Footer() {
 
@@ -37,8 +38,13 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/breeding-dogs"
-                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors flex items-center gap-2"
                 >
+                  <img 
+                    src={ourDogsImage} 
+                    alt="Our Dogs" 
+                    className="w-6 h-6 rounded-full object-cover"
+                  />
                   Our Dogs
                 </Link>
               </li>
