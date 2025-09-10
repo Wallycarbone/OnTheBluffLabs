@@ -1383,7 +1383,7 @@ export default function Puppies() {
     </section>
 
     {/* Topo Gigio Popup Dialog */}
-      <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
+    <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
