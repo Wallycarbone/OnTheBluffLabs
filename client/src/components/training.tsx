@@ -5,12 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 
 export default function Training() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const trainingServices = [
     {
@@ -214,14 +208,15 @@ export default function Training() {
                 Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
               </p>
               <div className="flex justify-center">
-                <Link href="/puppy-application">
-                  <Button 
-                    className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
-                    style={{color: '#6d761d'}}
-                  >
+                <Button 
+                  asChild
+                  className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
+                  style={{color: '#6d761d'}}
+                >
+                  <Link href="/puppy-application" data-testid="link-apply-from-training">
                     Begin Your Journey
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </CardContent>
           </Card>
