@@ -193,7 +193,7 @@ export default function Puppies() {
         {/* All Litters */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+            <h2 className="md:text-5xl font-oswald font-normal tracking-wide text-[36px]" style={{color: '#11100f'}}>
               SELECT LITTERS
             </h2>
             <p className="text-lg font-source-sans mt-6 max-w-4xl mx-auto" style={{color: '#4b4b4b'}}>
@@ -395,7 +395,6 @@ export default function Puppies() {
           </Card>
         </div>
       </section>
-
       {/* Image Popup Dialog */}
       <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
@@ -415,7 +414,6 @@ export default function Puppies() {
           )}
         </DialogContent>
       </Dialog>
-
       {/* Pedigree Popup Dialog */}
       <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
         <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
