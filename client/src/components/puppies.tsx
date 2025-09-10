@@ -21,16 +21,8 @@ import puppy13 from '@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png';
 import puppy15 from '@assets/Puppies 5x4 (4 x 4 in) (15)_1755549884489.png';
 import puppy16 from '@assets/Puppies 5x4 (4 x 4 in) (16)_1755550036481.png';
 
-// Individual puppy imports for litter information
-import grizzlyPearl from '@assets/Grizzly & Guinevere - Pearl (Turtles)_1754799003925.png';
-import grizzlyHolly from '@assets/Grizzly & Guinevere - Holly (Puppy Love)_1754799186066.png';
-import moonPeacock from '@assets/Moon & Foxxy - Mr. Peacock_1754797777651.png';
-import moonTurtles from '@assets/Moon & Foxxy - Mr. Turtles_1754797897379.png';
-import moonAloha from '@assets/Moon & Foxxy - Ms. Aloha_1754797953058.png';
-import moonSunflower from '@assets/Moon & Foxxy - Ms. Sunflower_1754798044378.png';
-import moonSuperstar from '@assets/Moon & Foxxy - Mr. Superstar_1754798114378.png';
-import moonPenguin from '@assets/Moon & Foxxy - Mr. Penguin Party_1754798197300.png';
-import moonAlpine from '@assets/Moon & Foxxy - Ms. Alpine Glow_1754798261396.png';
+// Using existing puppy images for individual puppies
+// Note: Using placeholder images until specific puppy photos are available
 
 // import topoGigioImage from '@assets/topo-gigio-westminster.jpg';
 // import matureDogsImage from '@assets/duke-atlas-outdoor.jpg';
@@ -95,8 +87,8 @@ export default function Puppies() {
       status: "Available",
       description: "Beautiful yellow Lab puppies with excellent temperaments and champion bloodlines.",
       puppies: [
-        { name: "Pearl (Turtles)", image: grizzlyPearl, available: true, gender: "Female", color: "Yellow" },
-        { name: "Holly (Puppy Love)", image: grizzlyHolly, available: true, gender: "Female", color: "Yellow" }
+        { name: "Pearl (Turtles)", image: puppy1, available: true, gender: "Female", color: "Yellow" },
+        { name: "Holly (Puppy Love)", image: puppy2, available: true, gender: "Female", color: "Yellow" }
       ]
     },
     {
@@ -107,13 +99,13 @@ export default function Puppies() {
       status: "Available",
       description: "Exceptional yellow Lab puppies from our accomplished breeding pair.",
       puppies: [
-        { name: "Mr. Peacock", image: moonPeacock, gender: "Male", color: "Yellow" },
-        { name: "Mr. Turtles", image: moonTurtles, gender: "Male", color: "Yellow" },
-        { name: "Ms. Aloha", image: moonAloha, gender: "Female", color: "Yellow" },
-        { name: "Ms. Sunflower", image: moonSunflower, gender: "Female", color: "Yellow" },
-        { name: "Mr. Superstar", image: moonSuperstar, gender: "Male", color: "Yellow" },
-        { name: "Mr. Penguin Party", image: moonPenguin, gender: "Male", color: "Yellow" },
-        { name: "Ms. Alpine Glow", image: moonAlpine, gender: "Female", color: "Yellow" }
+        { name: "Mr. Peacock", image: puppy3, available: true, gender: "Male", color: "Yellow" },
+        { name: "Mr. Turtles", image: puppy4, available: true, gender: "Male", color: "Yellow" },
+        { name: "Ms. Aloha", image: puppy5, available: true, gender: "Female", color: "Yellow" },
+        { name: "Ms. Sunflower", image: puppy6, available: true, gender: "Female", color: "Yellow" },
+        { name: "Mr. Superstar", image: puppy7, available: true, gender: "Male", color: "Yellow" },
+        { name: "Mr. Penguin Party", image: puppy8, available: true, gender: "Male", color: "Yellow" },
+        { name: "Ms. Alpine Glow", image: puppy9, available: true, gender: "Female", color: "Yellow" }
       ]
     },
     {
