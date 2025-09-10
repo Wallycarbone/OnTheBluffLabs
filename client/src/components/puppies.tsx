@@ -4,22 +4,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// Image imports
-import previousWhiteWithToys from '@assets/previous-puppies/white-lab-with-toys.jpg';
-import newBlackOnRocks from '@assets/previous-puppies/black-lab-on-rocks-with-toy.jpg';
-import newYellowSitting from '@assets/previous-puppies/yellow-lab-sitting-in-grass.jpg';
-import previousChocolateStanding from '@assets/previous-puppies/chocolate-lab-standing.jpg';
-import previousFoxRedPuppy from '@assets/previous-puppies/fox-red-lab-with-toy.jpg';
-import newGoldenWithToys from '@assets/previous-puppies/golden-lab-with-toys.jpg';
-import previousChocolateToys from '@assets/previous-puppies/chocolate-lab-with-toys.jpg';
-import newBlackWithBanana from '@assets/previous-puppies/black-lab-with-banana-toy.jpg';
-import newWhiteStanding from '@assets/previous-puppies/white-lab-standing.jpg';
-import newYellowWithToys from '@assets/previous-puppies/yellow-lab-with-toys.jpg';
-import previousYellowRope from '@assets/previous-puppies/yellow-lab-with-rope.jpg';
-import newSaddleMarked from '@assets/previous-puppies/saddle-marked-lab-with-toys.jpg';
-import previousChocolateRainbow from '@assets/previous-puppies/chocolate-lab-with-rainbow-toy.jpg';
-import previousBlackToy from '@assets/previous-puppies/black-lab-with-toy.jpg';
-import previousWhitePuppy from '@assets/previous-puppies/white-lab-puppy.jpg';
+// Image imports from available assets
+import puppy1 from '@assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png';
+import puppy2 from '@assets/Puppies 5x4 (4 x 4 in) (2)_1754768185491.png';
+import puppy3 from '@assets/Puppies 5x4 (4 x 4 in) (3)_1754771887076.png';
+import puppy4 from '@assets/Puppies 5x4 (4 x 4 in) (4)_1754772138020.png';
+import puppy5 from '@assets/Puppies 5x4 (4 x 4 in) (5)_1754772005588.png';
+import puppy6 from '@assets/Puppies 5x4 (4 x 4 in) (6)_1754772143268.png';
+import puppy7 from '@assets/Puppies 5x4 (4 x 4 in) (7)_1754774561852.png';
+import puppy8 from '@assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png';
+import puppy9 from '@assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png';
+import puppy10 from '@assets/Puppies 5x4 (4 x 4 in) (10)_1755528477213.png';
+import puppy11 from '@assets/Puppies 5x4 (4 x 4 in) (11)_1755546531140.png';
+import puppy12 from '@assets/Puppies 5x4 (4 x 4 in) (12)_1755546531132.png';
+import puppy13 from '@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png';
+import puppy15 from '@assets/Puppies 5x4 (4 x 4 in) (15)_1755549884489.png';
+import puppy16 from '@assets/Puppies 5x4 (4 x 4 in) (16)_1755550036481.png';
 
 // import topoGigioImage from '@assets/topo-gigio-westminster.jpg';
 // import matureDogsImage from '@assets/duke-atlas-outdoor.jpg';
@@ -93,9 +93,57 @@ export default function Puppies() {
   ];
 
   return (
-    <div>
-      <h1>Puppies Page</h1>
-      <p>Testing minimal structure - debugging JSX issues</p>
-    </div>
+    <>
+      <section id="puppies" className="bg-gray-50">
+        {/* Full Width Puppy Photo Gallery */}
+        <div className="mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
+            {[
+              { src: puppy1, alt: "Previous puppy - White Lab puppy with colorful toys", name: "White" },
+              { src: puppy2, alt: "Previous puppy - Black Lab puppy on rocks with polka dot toy", name: "Black" },
+              { src: puppy3, alt: "Previous puppy - Yellow Lab sitting in green grass", name: "Yellow" },
+              { src: puppy4, alt: "Previous puppy - Chocolate Lab puppy standing in grass", name: "Chocolate" },
+              { src: puppy5, alt: "Previous puppy - Fox red Lab puppy with pink toy", name: "Fox Red" },
+              { src: puppy6, alt: "Previous puppy - Golden Lab standing with colorful toys", name: "Golden" },
+              { src: puppy7, alt: "Previous puppy - Chocolate Lab with colorful toys", name: "Chocolate" },
+              { src: puppy8, alt: "Previous puppy - Black Lab with yellow banana toy", name: "Black" },
+              { src: puppy9, alt: "Previous puppy - White Lab standing outdoors", name: "White" },
+              { src: puppy10, alt: "Previous puppy - Yellow Lab with colorful toys", name: "Yellow" },
+              { src: puppy11, alt: "Previous puppy - Yellow Lab with colorful rope toy", name: "Yellow" },
+              { src: puppy12, alt: "Previous puppy - Lab with unique saddle markings and toys", name: "Saddled" },
+              { src: puppy13, alt: "Previous puppy - Chocolate Lab with rainbow toy", name: "Chocolate" },
+              { src: puppy15, alt: "Previous puppy - Black Lab with yellow toy", name: "Black" },
+              { src: puppy16, alt: "Previous puppy - White Lab puppy in grass", name: "White" },
+            ].map((puppy, index) => (
+              <div 
+                key={index} 
+                className="group cursor-pointer"
+                onClick={() => {
+                  setSelectedImage({src: puppy.src, name: puppy.name});
+                  setIsImagePopupOpen(true);
+                }}
+              >
+                <div className="aspect-square overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                  <img 
+                    src={puppy.src}
+                    alt={puppy.alt}
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
+              GENERATIONS OF EXCELLENCE
+            </h2>
+            <p className="text-lg font-source-sans max-w-4xl mx-auto" style={{color: '#4b4b4b'}}>
+              A showcase of our previous puppies, representing the exceptional quality and diverse colors we consistently produce through careful breeding practices.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
