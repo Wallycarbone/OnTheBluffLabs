@@ -300,15 +300,6 @@ export default function Puppies() {
                         <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
                           <strong>Age:</strong> {calculateAge(litter.birthDate)}
                         </p>
-                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
-                          <strong>Puppies:</strong> {litter.puppiesCount}
-                        </p>
-                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
-                          <strong>Available:</strong> {litter.available}
-                        </p>
-                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
-                          <strong>Ready:</strong> {litter.readyDate}
-                        </p>
                       </div>
 
                       <div className="flex flex-wrap gap-3">
