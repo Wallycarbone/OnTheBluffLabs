@@ -147,11 +147,11 @@ export default function Boarding() {
           <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <CardContent className="p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="text-center order-2 lg:order-1">
+                <div className="flex justify-center order-2 lg:order-1">
                   <img 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (82)_1756151491098.png"
                     alt="Lilly, the gentle host dog - chocolate Labrador in green field"
-                    className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+                    className="max-w-xs h-[600px] object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 30%'}}
                   />
                 </div>
