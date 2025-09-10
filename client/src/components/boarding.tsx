@@ -146,8 +146,8 @@ export default function Boarding() {
         <div className="mb-16">
           <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <CardContent className="p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="flex justify-center order-2 lg:order-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="flex justify-center">
                   <img 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (82)_1756151491098.png"
                     alt="Lilly, the gentle host dog - chocolate Labrador in green field"
@@ -155,7 +155,7 @@ export default function Boarding() {
                     style={{objectPosition: '50% 30%'}}
                   />
                 </div>
-                <div className="order-1 lg:order-2">
+                <div>
                   <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
                     Meet Lilly, Your Dog's Gentle Host
                   </h3>
