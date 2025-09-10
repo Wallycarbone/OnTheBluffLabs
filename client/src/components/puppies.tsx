@@ -92,40 +92,6 @@ export default function Puppies() {
     }
   ];
 
-  // Simple pedigree data for the litters
-  const getSimplePedigreeData = (litterName: string) => {
-    console.log('Getting pedigree data for:', litterName);
-    const pedigreeData: { [key: string]: any } = {
-      "Moon & Grizzly": {
-        dam: {
-          name: "Moon",
-          formalName: "On The Bluff's Moon Dance (\"Moon\")",
-          description: "Our accomplished dam with exceptional lineage and gentle temperament."
-        },
-        sire: {
-          name: "Grizzly", 
-          formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
-          description: "Outstanding sire with champion bloodlines and proven genetics."
-        }
-      },
-      "Moon & Oso": {
-        dam: {
-          name: "Moon",
-          formalName: "On The Bluff's Moon Dance (\"Moon\")",
-          description: "Our accomplished dam with exceptional lineage and gentle temperament."
-        },
-        sire: {
-          name: "Oso",
-          formalName: "On The Bluff's Oso Grande (\"Oso\")",
-          description: "Promising young sire with excellent conformation and temperament."
-        }
-      }
-    };
-    
-    const result = pedigreeData[litterName] || null;
-    console.log('Pedigree data result:', result);
-    return result;
-  };
 
   return (
     <>
@@ -354,10 +320,6 @@ export default function Puppies() {
           </DialogHeader>
           {selectedLitter && (
             <div className="space-y-8">
-              <div className="text-center p-4 bg-blue-100 rounded">
-                <p className="text-sm">Debug: Selected Litter = {selectedLitter.name}</p>
-              </div>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Dam */}
                 <div className="space-y-4">
