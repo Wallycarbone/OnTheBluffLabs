@@ -258,7 +258,27 @@ export default function Puppies() {
             {currentLitters.map((litter, index) => (
               <Card key={index} className="overflow-hidden">
                 <CardContent className="p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                    {/* First Photo */}
+                    <div className="flex justify-center">
+                      {litter.images ? (
+                        <img 
+                          src={litter.images[0]}
+                          alt={`${litter.name} litter photo 1`}
+                          className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                          onClick={() => openImagePopup({src: litter.images[0], name: `${litter.name} litter`})}
+                        />
+                      ) : (
+                        <img 
+                          src={litter.image}
+                          alt={`${litter.sire} - sire`}
+                          className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                          onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
+                        />
+                      )}
+                    </div>
+
+                    {/* Info in Middle */}
                     <div>
                       <div className="flex items-center gap-3 mb-4">
                         <h3 className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
@@ -314,30 +334,22 @@ export default function Puppies() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-3">
-                      {litter.images ? litter.images.slice(0, 2).map((img: string, imgIndex: number) => (
+                    {/* Second Photo */}
+                    <div className="flex justify-center">
+                      {litter.images ? (
                         <img 
-                          key={imgIndex}
-                          src={img}
-                          alt={`${litter.name} litter photo ${imgIndex + 1}`}
+                          src={litter.images[1] || litter.images[0]}
+                          alt={`${litter.name} litter photo 2`}
                           className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
-                          onClick={() => openImagePopup({src: img, name: `${litter.name} litter`})}
+                          onClick={() => openImagePopup({src: litter.images[1] || litter.images[0], name: `${litter.name} litter`})}
                         />
-                      )) : (
-                        <>
-                          <img 
-                            src={litter.image}
-                            alt={`${litter.sire} - sire`}
-                            className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
-                            onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
-                          />
-                          <img 
-                            src={litter.image2}
-                            alt={`${litter.dam} - dam`}
-                            className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
-                            onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
-                          />
-                        </>
+                      ) : (
+                        <img 
+                          src={litter.image2}
+                          alt={`${litter.dam} - dam`}
+                          className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                          onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
+                        />
                       )}
                     </div>
                   </div>
