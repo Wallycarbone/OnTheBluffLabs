@@ -1,4 +1,3 @@
-import { Facebook, Instagram, Youtube } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -14,17 +13,6 @@ export default function Footer() {
             <p className="mb-4 font-source-sans" style={{color: '#ebebeb'}}>
               Labradors Bred for Beauty & Temperament
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="transition-colors" style={{color: '#ebebeb'}} onMouseEnter={(e) => e.currentTarget.style.color = '#e3b404'} onMouseLeave={(e) => e.currentTarget.style.color = '#ebebeb'}>
-                <Youtube className="w-6 h-6" />
-              </a>
-            </div>
           </div>
           
           <div>
