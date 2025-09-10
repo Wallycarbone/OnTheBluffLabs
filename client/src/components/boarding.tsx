@@ -1,14 +1,56 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Home, Heart, Shield, Clock, Star, Users } from "lucide-react";
+import { useEffect, useRef } from "react";
+
+// Declare HubSpot types
+declare global {
+  interface Window {
+    hbspt: any;
+  }
+}
+
+function BoardingHubSpotForm() {
+  const formRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '//js.hsforms.net/forms/embed/v2.js';
+    script.charset = 'utf-8';
+    script.type = 'text/javascript';
+    script.async = true;
+    
+    const onLoad = () => {
+      if (window.hbspt && formRef.current) {
+        window.hbspt.forms.create({
+          portalId: "44843117",
+          formId: "1a9abb81-461c-47e2-a03d-2bbb38355b88",
+          region: "na1",
+          target: formRef.current
+        });
+      }
+    };
+    
+    script.onload = onLoad;
+    document.head.appendChild(script);
+    
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+  
+  return (
+    <div 
+      ref={formRef}
+      style={{
+        fontFamily: 'Source Sans Pro, sans-serif'
+      }}
+    />
+  );
+}
 
 export default function Boarding() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const boardingFeatures = [
     {
@@ -240,15 +282,7 @@ export default function Boarding() {
               <p className="text-base font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
                 Give your companion the gift of transformation with us. We welcome only a few dogs at a time, ensuring personalized attention and meaningful progress for every guest.
               </p>
-              <Button 
-                onClick={scrollToContact}
-                className="px-8 py-3 font-montserrat font-medium text-base h-auto rounded-lg"
-                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-              >
-                Request a Retreat
-              </Button>
+              <BoardingHubSpotForm />
             </CardContent>
           </Card>
         </div>
