@@ -1,12 +1,7 @@
 import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <footer className="py-12" style={{backgroundColor: '#11100f', color: '#fefefe'}}>
@@ -36,36 +31,68 @@ export default function Footer() {
             <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide">QUICK LINKS</h4>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')}
+                <Link 
+                  href="/about"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('puppies')}
+                <Link 
+                  href="/puppies"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
                   Available Puppies
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('breeding')}
+                <Link 
+                  href="/breeding-dogs"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
                   Our Dogs
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('health')}
+                <Link 
+                  href="/health-testing"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
                   Health Testing
-                </button>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/training"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Training
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/facilities"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Facilities
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/boarding"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Boarding
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/contact"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,24 +101,36 @@ export default function Footer() {
             <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide">RESOURCES</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="font-source-sans text-gray-300 hover:text-golden transition-colors">
-                  Puppy Care Guide
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-source-sans text-gray-300 hover:text-golden transition-colors">
+                <Link 
+                  href="/training"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
                   Training Tips
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="font-source-sans text-gray-300 hover:text-golden transition-colors">
+                <Link 
+                  href="/health-testing"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
                   Health Information
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="font-source-sans text-gray-300 hover:text-golden transition-colors">
-                  Breeding Ethics
-                </a>
+                <Link 
+                  href="/about"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Our Story
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/contact"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -113,7 +152,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="font-source-sans text-gray-300">
-            &copy; 2024 On The Bluff Labradors. All rights reserved.
+&copy; 2025 On The Bluff Labradors. All rights reserved.
           </p>
         </div>
       </div>
