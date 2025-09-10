@@ -14,6 +14,7 @@ import Boarding from "@/pages/boarding";
 import Facilities from "@/pages/facilities";
 import DogFood from "@/pages/dog-food";
 import Contact from "@/pages/contact";
+import PuppyApplication from "@/pages/puppy-application";
 import Admin from "@/pages/admin";
 import AdminLogin from "@/pages/admin-login";
 import SimpleAdminLogin from "@/pages/simple-admin-login";
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/" component={Home} />
 
       <Route path="/puppies" component={Puppies} />
+      <Route path="/puppy-application" component={PuppyApplication} />
       <Route path="/breeding-dogs" component={BreedingDogs} />
       <Route path="/health-testing" component={HealthTesting} />
       <Route path="/training" component={Training} />

@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertInquirySchema, insertDogFoodOrderSchema, insertUserSchema, loginSchema } from "@shared/schema";
+import { insertInquirySchema, insertDogFoodOrderSchema, insertApplicationSchema, insertUserSchema, loginSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -99,6 +99,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const orders = await storage.getDogFoodOrders();
       res.json(orders);
+    } catch (error) {
+      res.status(500).json({ 
+        message: "Internal server error" 
+      });
+    }
+  });
+
+  // Application routes
+  app.post("/api/applications", async (req, res) => {
+    try {
+      const applicationData = insertApplicationSchema.parse(req.body);
+      const createdApplication = await storage.createApplication(applicationData);
+      res.json(createdApplication);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        res.status(400).json({ 
+          message: "Validation error",
+          errors: error.errors 
+        });
+      } else {
+        res.status(500).json({ 
+          message: "Internal server error" 
+        });
+      }
+    }
+  });
+
+  // Get all applications (for admin)
+  app.get("/api/applications", async (req, res) => {
+    try {
+      const applications = await storage.getApplications();
+      res.json(applications);
     } catch (error) {
       res.status(500).json({ 
         message: "Internal server error" 

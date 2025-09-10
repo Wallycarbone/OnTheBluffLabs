@@ -1,4 +1,4 @@
-import { users, inquiries, dogFoodOrders, type User, type InsertUser, type Inquiry, type InsertInquiry, type DogFoodOrder, type InsertDogFoodOrder, type LoginData } from "@shared/schema";
+import { users, inquiries, dogFoodOrders, applications, type User, type InsertUser, type Inquiry, type InsertInquiry, type DogFoodOrder, type InsertDogFoodOrder, type Application, type InsertApplication, type LoginData } from "@shared/schema";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
@@ -14,6 +14,8 @@ export interface IStorage {
   getAllUsers(): Promise<User[]>;
   createDogFoodOrder(order: InsertDogFoodOrder): Promise<DogFoodOrder>;
   getDogFoodOrders(): Promise<DogFoodOrder[]>;
+  createApplication(application: InsertApplication): Promise<Application>;
+  getApplications(): Promise<Application[]>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -110,6 +112,22 @@ export class DatabaseStorage implements IStorage {
       ...user,
       password: '[HIDDEN]' // Don't expose passwords
     }));
+  }
+
+  async createApplication(insertApplication: InsertApplication): Promise<Application> {
+    const [application] = await db
+      .insert(applications)
+      .values(insertApplication)
+      .returning();
+    return application;
+  }
+
+  async getApplications(): Promise<Application[]> {
+    const applicationList = await db
+      .select()
+      .from(applications)
+      .orderBy(applications.createdAt);
+    return applicationList;
   }
 }
 
