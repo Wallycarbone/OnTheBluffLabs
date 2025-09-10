@@ -1057,7 +1057,8 @@ export default function Puppies() {
     };
 
     return (
-    <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
+    <>
+      <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
       <div className="relative">
         <img 
           src={images[currentIndex]} 
@@ -1146,14 +1147,16 @@ export default function Puppies() {
           </Button>
         </div>
       </CardContent>
-    </Card>
+      </Card>
+    </>
     );
   };
 
   return (
     <>
       <section id="puppies" className="bg-gray-50">
-      {/* Full Width Puppy Photo Gallery */}
+        <div>
+        {/* Full Width Puppy Photo Gallery */}
       <div className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-8">
             {[
@@ -1316,7 +1319,7 @@ export default function Puppies() {
                 // If both have birth dates, sort by birth date (newest first for youngest pups)
                 return new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
               })
-              .map((litter, index) => null)}
+              .map((litter, index) => renderLitterCard(litter, index))}
           </div>
         </div>
 
@@ -1380,6 +1383,7 @@ export default function Puppies() {
           </Card>
         </div>
       </div>
+        </div>
       </section>
 
       {/* Topo Gigio Popup Dialog */}
