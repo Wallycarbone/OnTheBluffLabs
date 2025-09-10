@@ -132,7 +132,7 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {healthTests.map((test, index) => (
             <Card 
               key={index} 
