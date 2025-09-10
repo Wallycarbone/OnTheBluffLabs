@@ -92,6 +92,38 @@ export default function Puppies() {
     }
   ];
 
+  // Simple pedigree data for the litters
+  const getSimplePedigreeData = (litterName: string) => {
+    const pedigreeData: { [key: string]: any } = {
+      "Moon & Grizzly": {
+        dam: {
+          name: "Moon",
+          formalName: "On The Bluff's Moon Dance (\"Moon\")",
+          description: "Our accomplished dam with exceptional lineage and gentle temperament."
+        },
+        sire: {
+          name: "Grizzly", 
+          formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
+          description: "Outstanding sire with champion bloodlines and proven genetics."
+        }
+      },
+      "Moon & Oso": {
+        dam: {
+          name: "Moon",
+          formalName: "On The Bluff's Moon Dance (\"Moon\")",
+          description: "Our accomplished dam with exceptional lineage and gentle temperament."
+        },
+        sire: {
+          name: "Oso",
+          formalName: "On The Bluff's Oso Grande (\"Oso\")",
+          description: "Promising young sire with excellent conformation and temperament."
+        }
+      }
+    };
+    
+    return pedigreeData[litterName] || null;
+  };
+
   return (
     <>
       <section id="puppies" className="bg-gray-50">
@@ -304,6 +336,62 @@ export default function Puppies() {
                 alt={selectedImage.name}
                 className="w-full h-auto rounded-lg"
               />
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Pedigree Popup Dialog */}
+      <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
+        <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedLitter?.name} Litter Pedigree
+            </DialogTitle>
+          </DialogHeader>
+          {selectedLitter && getSimplePedigreeData(selectedLitter.name) && (
+            <div className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Dam */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-oswald font-normal" style={{color: '#6d761d'}}>
+                    DAM: {getSimplePedigreeData(selectedLitter.name).dam.name}
+                  </h3>
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <p className="text-sm font-source-sans font-semibold mb-2">
+                      {getSimplePedigreeData(selectedLitter.name).dam.formalName}
+                    </p>
+                    <p className="text-sm font-source-sans text-gray-700">
+                      {getSimplePedigreeData(selectedLitter.name).dam.description}
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Sire */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-oswald font-normal" style={{color: '#6d761d'}}>
+                    SIRE: {getSimplePedigreeData(selectedLitter.name).sire.name}
+                  </h3>
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <p className="text-sm font-source-sans font-semibold mb-2">
+                      {getSimplePedigreeData(selectedLitter.name).sire.formalName}
+                    </p>
+                    <p className="text-sm font-source-sans text-gray-700">
+                      {getSimplePedigreeData(selectedLitter.name).sire.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center mt-8 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-400">
+                <h4 className="text-lg font-oswald font-normal mb-2" style={{color: '#6d761d'}}>
+                  Comprehensive Pedigree Available
+                </h4>
+                <p className="text-sm font-source-sans text-gray-700">
+                  Detailed lineage information including champion bloodlines, health testing results, 
+                  and complete ancestry records are available upon request for serious inquiries.
+                </p>
+              </div>
             </div>
           )}
         </DialogContent>
