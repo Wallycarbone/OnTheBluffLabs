@@ -21,8 +21,13 @@ import puppy13 from '@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png';
 import puppy15 from '@assets/Puppies 5x4 (4 x 4 in) (15)_1755549884489.png';
 import puppy16 from '@assets/Puppies 5x4 (4 x 4 in) (16)_1755550036481.png';
 
-// Using existing puppy images for individual puppies
-// Note: Using placeholder images until specific puppy photos are available
+// Parent dog images
+import newGrizzlyImage from '@assets/Breeding Dogs 5x4 (8)_1755286717960.png';
+import newMoonImage from '@assets/Breeding Dogs 5x4 (9)_1755286823265.png';
+import booRadleyImage from '@assets/Breeding Dogs 5x4 (12)_1755286977779.png';
+import foxxyImage from '@assets/Foxxy (5x4)_1753627279647.png';
+import guinevereImage from '@assets/Breeding Dogs 5x4 (19)_1755290951573.png'; // Using Arabella as placeholder for Guinevere
+import boudicaImage from '@assets/Breeding Dogs 5x4 (14)_1755287062398.png'; // Using Piper as placeholder for Boudica
 
 // import topoGigioImage from '@assets/topo-gigio-westminster.jpg';
 // import matureDogsImage from '@assets/duke-atlas-outdoor.jpg';
