@@ -28,14 +28,38 @@ import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
 import moonImage2 from "@assets/Moon 5x4_1753565341801.png";
+import moonImage3 from "@assets/Moon 5x4_1753627311757.png";
 import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756671954087.png";
+import foxxyImage from "@assets/Foxxy (5x4)_1753627279647.png";
+import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
+import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
+import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
+
+// Puppy images for Moon & Foxxy litter
+import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
+import mrTurtlesImage from "@assets/Mr. Turtles_1753621328201.png";
+import msAlohaImage from "@assets/Ms. Aloha_1753621328202.png";
+import msSunflowerImage from "@assets/Ms. Sunflower_1753621328202.png";
+import mrSuperstarImage from "@assets/Mr. Superstar_1753621328202.png";
+import mrPenguinPartyImage from "@assets/Mr. Penguin Party_1753621328202.png";
+import msAlpineGlowImage from "@assets/Ms. Alpine Glow_1753621328203.png";
+
+// Additional litter images
+import pearlTurtlesImage from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
+import hollyPuppyLoveImage from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
+import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
+  const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
+  const [selectedLitter, setSelectedLitter] = useState<any>(null);
+  const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
+  
+  const [, setLocation] = useLocation();
 
   // 15 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
@@ -60,6 +84,130 @@ export default function Puppies() {
     setSelectedImage(image);
     setIsImagePopupOpen(true);
   };
+
+  const scrollToContact = () => {
+    setLocation('/contact');
+  };
+
+  const openPedigreePopup = (litter: any) => {
+    setSelectedLitter(litter);
+    setIsPedigreePopupOpen(true);
+  };
+
+  const calculateAge = (birthDate: string) => {
+    if (birthDate.includes('Due')) {
+      return 'Expected';
+    }
+    
+    const birth = new Date(birthDate);
+    const today = new Date();
+    const diffTime = today.getTime() - birth.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    if (diffDays < 7) {
+      return `${diffDays} days old`;
+    } else {
+      const weeks = Math.floor(diffDays / 7);
+      return `${weeks} week${weeks > 1 ? 's' : ''} old`;
+    }
+  };
+
+  const getLitterStatus = (birthDate: string, originalStatus: string) => {
+    if (birthDate.includes('Due')) {
+      return 'Upcoming';
+    }
+    
+    const birth = new Date(birthDate);
+    const today = new Date();
+    const diffTime = today.getTime() - birth.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const weeks = Math.floor(diffDays / 7);
+    
+    if (weeks >= 8) {
+      return 'Ready';
+    }
+    
+    return 'Ready Soon';
+  };
+
+  const moonFoxxyPuppyImages = [
+    mrPeacockImage,
+    mrTurtlesImage,
+    msAlohaImage,
+    msSunflowerImage,
+    mrSuperstarImage,
+    mrPenguinPartyImage,
+    msAlpineGlowImage
+  ];
+
+  const currentLitters = [
+    {
+      name: "Moon & Foxxy",
+      sire: "Moon",
+      dam: "Foxxy",
+      birthDate: "June 5, 2025",
+      puppiesCount: 7,
+      available: "Yellow Males & Females (Strawberry Blonde)",
+      readyDate: "August 2025",
+      images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
+      status: "Current",
+      description: "Seven puppies born June 5, 2025"
+    },
+    {
+      name: "Moon & Nora",
+      sire: "Moon",
+      dam: "Nora",
+      birthDate: "June 21, 2025",
+      puppiesCount: 2,
+      available: "One Black Female & One Yellow Female",
+      readyDate: "August 2025",
+      image: moonImage2,
+      image2: noraImage,
+      status: "Current",
+      description: "One black female and one yellow female available"
+    },
+    {
+      name: "Grizzly & Guinevere",
+      sire: "Grizzly",
+      dam: "Guinevere",
+      birthDate: "April 5, 2025",
+      puppiesCount: 8,
+      available: "Chocolate Females",
+      readyDate: "Ready Now",
+      images: [breedingDogsImage, breedingDogs2Image, pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
+      status: "Ready",
+      description: "Chocolate female puppies available"
+    }
+  ];
+
+  const upcomingLitters = [
+    {
+      name: "Boo Radley & Queen Boudica",
+      sire: "Boo Radley",
+      dam: "Queen Boudica",
+      birthDate: "August 7, 2025",
+      puppiesCount: "TBD",
+      available: "Accepting Deposits",
+      readyDate: "October 2025",
+      image: booRadleyImage,
+      image2: queenBoudicaImage,
+      status: "Upcoming",
+      description: "Born August 7, 2025"
+    },
+    {
+      name: "Moon & Harper Lee",
+      sire: "Moon",
+      dam: "Harper Lee",
+      birthDate: "July 27, 2025",
+      puppiesCount: "TBD",
+      available: "Accepting Deposits",
+      readyDate: "September 2025",
+      image: moonImage,
+      image2: harperLeeImage,
+      status: "Upcoming",
+      description: "Bred in May, due in July 2025"
+    }
+  ];
 
   return (
     <>
@@ -95,39 +243,177 @@ export default function Puppies() {
           </div>
         </div>
 
-        {/* Coming Soon Section */}
+        {/* Current Litters Section */}
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
-              Current & Upcoming Litters
+              Current Litters
             </h2>
             <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
-              Stay tuned for announcements about our upcoming breeding plans and available puppies.
+              Our available puppies from champion bloodlines, ready for loving homes.
             </p>
           </div>
 
-          <Card className="mb-8">
-            <CardContent className="p-8">
-              <div className="text-center space-y-4">
-                <h3 className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-                  Future Litters Planned
-                </h3>
-                <p className="text-base font-source-sans max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
-                  We are carefully planning our next breeding combinations to continue our tradition 
-                  of exceptional Labrador retrievers with champion bloodlines and excellent temperaments.
-                </p>
-                <Button 
-                  className="font-montserrat font-medium text-sm h-auto py-3 px-8 mt-6"
-                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                  onClick={() => window.location.href = '/contact'}
-                >
-                  Join Our Waiting List
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
+            {currentLitters.map((litter, index) => (
+              <Card key={index} className="overflow-hidden">
+                <CardContent className="p-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div>
+                      <div className="flex items-center gap-3 mb-4">
+                        <h3 className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+                          {litter.name}
+                        </h3>
+                        <span 
+                          className="px-3 py-1 rounded-full text-xs font-medium"
+                          style={{
+                            backgroundColor: litter.status === 'Ready' ? '#6d761d' : '#f59e0b',
+                            color: '#fefefe'
+                          }}
+                        >
+                          {getLitterStatus(litter.birthDate, litter.status)}
+                        </span>
+                      </div>
+                      
+                      <div className="space-y-3 mb-6">
+                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                          <strong>Born:</strong> {litter.birthDate}
+                        </p>
+                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                          <strong>Age:</strong> {calculateAge(litter.birthDate)}
+                        </p>
+                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                          <strong>Puppies:</strong> {litter.puppiesCount}
+                        </p>
+                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                          <strong>Available:</strong> {litter.available}
+                        </p>
+                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                          <strong>Ready:</strong> {litter.readyDate}
+                        </p>
+                      </div>
+
+                      <div className="flex flex-wrap gap-3">
+                        <Button 
+                          onClick={() => openPedigreePopup(litter)}
+                          className="font-montserrat font-medium text-sm h-auto py-2 px-4"
+                          style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                        >
+                          View Pedigree
+                        </Button>
+                        <Button 
+                          onClick={scrollToContact}
+                          variant="outline"
+                          className="font-montserrat font-medium text-sm h-auto py-2 px-4"
+                          style={{borderColor: '#6d761d', color: '#6d761d'}}
+                        >
+                          Contact About This Litter
+                        </Button>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3">
+                      {litter.images ? litter.images.slice(0, 4).map((img: string, imgIndex: number) => (
+                        <img 
+                          key={imgIndex}
+                          src={img}
+                          alt={`${litter.name} litter photo ${imgIndex + 1}`}
+                          className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                          onClick={() => openImagePopup({src: img, name: `${litter.name} litter`})}
+                        />
+                      )) : (
+                        <>
+                          <img 
+                            src={litter.image}
+                            alt={`${litter.sire} - sire`}
+                            className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                            onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
+                          />
+                          <img 
+                            src={litter.image2}
+                            alt={`${litter.dam} - dam`}
+                            className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                            onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
+                          />
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Upcoming Litters */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
+              Upcoming Litters
+            </h2>
+            <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
+              Future breeding plans and expected litters - accepting deposits now.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {upcomingLitters.map((litter, index) => (
+              <Card key={index} className="overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <h3 className="text-xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+                        {litter.name}
+                      </h3>
+                      <span 
+                        className="px-2 py-1 rounded-full text-xs font-medium"
+                        style={{backgroundColor: '#9ca3af', color: '#fefefe'}}
+                      >
+                        {litter.status}
+                      </span>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <img 
+                        src={litter.image}
+                        alt={`${litter.sire} - sire`}
+                        className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                        onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
+                      />
+                      <img 
+                        src={litter.image2}
+                        alt={`${litter.dam} - dam`}
+                        className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                        onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
+                      />
+                    </div>
+
+                    <div className="space-y-2 text-sm">
+                      <p className="font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong>Expected:</strong> {litter.birthDate}
+                      </p>
+                      <p className="font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong>Ready:</strong> {litter.readyDate}
+                      </p>
+                      <p className="font-source-sans" style={{color: '#4b4b4b'}}>
+                        <strong>Status:</strong> {litter.available}
+                      </p>
+                    </div>
+
+                    <Button 
+                      onClick={scrollToContact}
+                      className="w-full font-montserrat font-medium text-sm h-auto py-2"
+                      style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                    >
+                      Reserve Your Spot
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -151,6 +437,113 @@ export default function Puppies() {
               </p>
             </div>
           )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Pedigree Popup Dialog */}
+      <Dialog open={isPedigreePopupOpen} onOpenChange={setIsPedigreePopupOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedLitter?.name} Pedigree
+            </DialogTitle>
+          </DialogHeader>
+          {selectedLitter && (
+            <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-lg font-oswald font-normal mb-3" style={{color: '#11100f'}}>
+                    Sire: {selectedLitter.sire}
+                  </h3>
+                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                    Champion bloodline with exceptional lineage and Westminster connections.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-oswald font-normal mb-3" style={{color: '#11100f'}}>
+                    Dam: {selectedLitter.dam}
+                  </h3>
+                  <p className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
+                    Proven mother with excellent temperament and conformation.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <h4 className="text-base font-oswald font-normal" style={{color: '#11100f'}}>
+                  Pedigree Highlights
+                </h4>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {selectedLitter.images ? selectedLitter.images.slice(0, 4).map((img: string, index: number) => (
+                    <img 
+                      key={index}
+                      src={img}
+                      alt={`Pedigree photo ${index + 1}`}
+                      className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                      onClick={() => openImagePopup({src: img, name: `${selectedLitter.name} lineage`})}
+                    />
+                  )) : (
+                    <>
+                      <img 
+                        src={selectedLitter.image}
+                        alt={selectedLitter.sire}
+                        className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                        onClick={() => openImagePopup({src: selectedLitter.image, name: selectedLitter.sire})}
+                      />
+                      <img 
+                        src={selectedLitter.image2}
+                        alt={selectedLitter.dam}
+                        className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                        onClick={() => openImagePopup({src: selectedLitter.image2, name: selectedLitter.dam})}
+                      />
+                    </>
+                  )}
+                </div>
+              </div>
+              
+              <div className="pt-4 border-t">
+                <Button 
+                  onClick={scrollToContact}
+                  className="w-full font-montserrat font-medium text-sm h-auto py-3"
+                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                >
+                  Contact About This Litter
+                </Button>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Topo Gigio Popup Dialog */}
+      <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              2019 Westminster Best of Breed
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <img 
+              src={topoGigioImage} 
+              alt="Farnfield Topo Gigio - 2019 Westminster Best of Breed winner"
+              className="w-full h-auto rounded-lg"
+            />
+            <div className="space-y-2">
+              <h3 className="text-xl font-oswald font-normal" style={{color: '#11100f'}}>
+                Farnfield Topo Gigio
+              </h3>
+              <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
+                Winner of the 2019 Westminster Dog Show Best of Breed in the Labrador Retriever category. 
+                Topo Gigio represents the pinnacle of Labrador conformation and bloodline excellence.
+              </p>
+              <p className="text-sm font-source-sans" style={{color: '#6d761d'}}>
+                Our Moon litters are directly descended from this exceptional champion, bringing world-class genetics to your family.
+              </p>
+            </div>
+          </div>
         </DialogContent>
       </Dialog>
     </>
