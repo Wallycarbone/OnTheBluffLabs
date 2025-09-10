@@ -4,7 +4,16 @@ import { Card, CardContent } from "@/components/ui/card";
 // Declare HubSpot global for TypeScript
 declare global {
   interface Window {
-    hbspt: any;
+    hbspt: {
+      forms: {
+        create: (options: {
+          portalId: string;
+          formId: string;
+          region: string;
+          target?: string;
+        }) => void;
+      };
+    };
   }
 }
 
@@ -47,7 +56,7 @@ export default function PuppyApplication() {
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-4">
             Puppy Application
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-source-sans">
             Begin your journey with On The Bluff Labradors. Please complete this comprehensive application 
             to help us ensure the perfect match between you and one of our exceptional puppies.
           </p>
