@@ -1,10 +1,8 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState } from "react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Star, X, ChevronLeft, ChevronRight } from "lucide-react";
-import useEmblaCarousel from 'embla-carousel-react';
 
 // Gallery images - Previous puppies for "Generations of Excellence"
 import previousCooper from "@assets/Puppies 5x4 (2)_1755530661173.png";
