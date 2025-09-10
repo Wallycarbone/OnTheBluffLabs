@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
@@ -213,13 +214,14 @@ export default function Training() {
                 Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
               </p>
               <div className="flex justify-center">
-                <Button 
-                  onClick={scrollToContact}
-                  className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
-                  style={{color: '#6d761d'}}
-                >
-                  Begin Your Journey
-                </Button>
+                <Link href="/puppy-application">
+                  <Button 
+                    className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
+                    style={{color: '#6d761d'}}
+                  >
+                    Begin Your Journey
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
