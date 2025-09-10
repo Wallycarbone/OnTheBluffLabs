@@ -242,7 +242,7 @@ export default function Puppies() {
         </div>
 
         {/* Four Steps Process Section */}
-        <div className="bg-white py-20 px-4 sm:px-6 lg:px-8 mb-20">
+        <div className="py-20 px-4 sm:px-6 lg:px-8 mb-20" style={{backgroundColor: '#f8f9f0'}}>
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-5xl md:text-6xl font-oswald font-normal tracking-wide mb-12" style={{color: '#11100f'}}>
               GENERATIONS OF DISTINCTION
