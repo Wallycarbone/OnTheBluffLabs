@@ -122,9 +122,6 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <Card className="rounded-xl shadow-lg p-8" style={{backgroundColor: '#fefefe'}}>
-            <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-              PUPPY INQUIRY FORM
-            </h3>
             <div id="hubspot-form-container" className="min-h-[500px] w-full">
               {/* HubSpot form will be embedded here */}
               <div className="flex items-center justify-center h-32 text-gray-500">
