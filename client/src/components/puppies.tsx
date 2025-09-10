@@ -255,7 +255,7 @@ export default function Puppies() {
                             <img 
                               src={getParentImage(litter.dam)} 
                               alt={`${litter.dam} - Dam`}
-                              className="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                              className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                               onClick={() => {
                                 setSelectedImage({src: getParentImage(litter.dam), name: litter.dam});
                                 setIsImagePopupOpen(true);
@@ -276,7 +276,7 @@ export default function Puppies() {
                             <img 
                               src={getParentImage(litter.sire)} 
                               alt={`${litter.sire} - Sire`}
-                              className="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                              className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                               onClick={() => {
                                 setSelectedImage({src: getParentImage(litter.sire), name: litter.sire});
                                 setIsImagePopupOpen(true);
