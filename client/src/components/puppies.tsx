@@ -143,7 +143,131 @@ export default function Puppies() {
             </p>
           </div>
         </div>
+
+        {/* All Litters */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              SELECT LITTERS
+            </h2>
+            <p className="text-lg font-source-sans mt-6 max-w-4xl mx-auto" style={{color: '#4b4b4b'}}>
+              Litters are listed here only after our clients on the wait list have been placed with a puppy. Therefore, joining the wait list is the best way to ensure that you have the most options.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...upcomingLitters, ...currentLitters]
+              .sort((a, b) => {
+                // If both are upcoming (due dates), sort by due date
+                if (a.birthDate.includes('Due') && b.birthDate.includes('Due')) {
+                  const aMonth = a.birthDate.includes('July') ? 7 : 8;
+                  const bMonth = b.birthDate.includes('July') ? 7 : 8;
+                  return aMonth - bMonth;
+                }
+                // If one is upcoming and one isn't, upcoming comes first
+                if (a.birthDate.includes('Due') && !b.birthDate.includes('Due')) return -1;
+                if (!a.birthDate.includes('Due') && b.birthDate.includes('Due')) return 1;
+                // If both have birth dates, sort by birth date (newest first for youngest pups)
+                return new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
+              })
+              .map((litter, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-xl p-4">
+                  <h3 className="text-xl font-oswald font-normal mb-2" style={{color: '#11100f'}}>
+                    {litter.name}
+                  </h3>
+                  <p className="text-sm font-source-sans mb-2" style={{color: '#4b4b4b'}}>
+                    Born: {litter.birthDate}
+                  </p>
+                  <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
+                    Age: {calculateAge(litter.birthDate)}
+                  </p>
+                  <div className="text-center">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold text-white"
+                          style={{backgroundColor: '#6d761d'}}>
+                      {getLitterStatus(litter.birthDate, litter.status)}
+                    </span>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* Start Your Journey Today Button */}
+        <div className="text-center mt-16 mb-12">
+          <Button 
+            onClick={scrollToContact}
+            className="font-montserrat font-bold text-2xl h-auto py-8 px-20 rounded-2xl shadow-2xl hover:shadow-[0_30px_60px_rgba(109,118,29,0.6)] transition-all duration-500 transform hover:scale-110 hover:-translate-y-4 ring-4 ring-opacity-40 ring-amber-300 border-2 border-amber-400"
+            style={{
+              background: 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)',
+              color: '#fefefe',
+              textShadow: '0 3px 6px rgba(0,0,0,0.4)',
+              boxShadow: '0 0 20px rgba(165, 176, 40, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, #8b9123 0%, #a5b028 30%, #c4d12a 70%, #a5b028 100%)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, #6d761d 0%, #8b9123 30%, #a5b028 70%, #8b9123 100%)';
+            }}
+          >
+            Start Your Journey Today
+          </Button>
+          <p className="text-base font-source-sans mt-4 opacity-80" style={{color: '#4b4b4b'}}>
+            Take the first step toward welcoming your perfect companion
+          </p>
+        </div>
+
+        {/* Mature Dogs Section */}
+        <div className="text-center mt-12">
+          <Card className="bg-white rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
+            <CardContent className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                <div className="md:col-span-2 text-left">
+                  <h3 className="text-lg font-oswald font-normal mb-3 tracking-wide" style={{color: '#11100f'}}>
+                    MATURE DOGS AVAILABLE
+                  </h3>
+                  <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
+                    Sometimes we have young adult dogs or mature puppies available for families seeking a slightly older companion.
+                  </p>
+                  <Button 
+                    onClick={scrollToContact}
+                    className="font-montserrat font-medium text-sm h-auto py-2 px-6"
+                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                  >
+                    Inquire About Mature Dogs
+                  </Button>
+                </div>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 bg-gray-200 rounded-md flex items-center justify-center">
+                    <span className="text-gray-500 text-sm">Photo</span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </section>
+
+      {/* Image Popup Dialog */}
+      <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              {selectedImage?.name}
+            </DialogTitle>
+          </DialogHeader>
+          {selectedImage && (
+            <div className="space-y-4">
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.name}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </>
   );
 }
