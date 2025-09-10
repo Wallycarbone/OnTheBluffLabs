@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Award } from "lucide-react";
 import { Link } from "wouter";
 import heroImage from "@assets/Breeding Dogs 5x4 (27)_1755633649595.png";
-import moonImage from "@assets/Puppies 5x4 (4 x 4 in) (22)_1756669897598.png";
+import ourDogsImage from "@assets/Breeding Dogs 5x4 (33)_1757522940993.png";
 import puppiesImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.png";
 import behaviorAcademyImage from "@assets/Puppies 5x4 (4 x 4 in) (24)_1756668372760.png";
 
@@ -132,7 +132,7 @@ export default function Hero() {
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-96 overflow-hidden">
                     <img 
-                      src={moonImage}
+                      src={ourDogsImage}
                       alt="Our exceptional breeding dogs with champion bloodlines"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
