@@ -1380,8 +1380,9 @@ export default function Puppies() {
           </Card>
         </div>
       </div>
+    </section>
 
-      {/* Topo Gigio Popup Dialog */}
+    {/* Topo Gigio Popup Dialog */}
       <Dialog open={isTopoPopupOpen} onOpenChange={setIsTopoPopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
           <DialogHeader>
@@ -1821,7 +1822,6 @@ export default function Puppies() {
           )}
         </DialogContent>
       </Dialog>
-    </section>
     </>
   );
 }
