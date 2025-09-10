@@ -82,6 +82,19 @@ export default function Puppies() {
     return 'Growing';
   };
 
+  // Helper function to get parent images
+  const getParentImage = (parentName: string) => {
+    const imageMap: { [key: string]: any } = {
+      'Grizzly': newGrizzlyImage,
+      'Moon': newMoonImage,
+      'Foxxy': foxxyImage,
+      'Guinevere': guinevereImage,
+      'Boo Radley': booRadleyImage,
+      'Boudica': boudicaImage
+    };
+    return imageMap[parentName] || null;
+  };
+
   // Detailed litter information with individual puppies
   const detailedLitters = [
     {
@@ -228,6 +241,56 @@ export default function Puppies() {
                       </div>
                       
                       <p className="text-sm font-source-sans text-gray-600">{litter.description}</p>
+                    </div>
+
+                    {/* Parent Photos */}
+                    <div className="mb-8">
+                      <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide" style={{color: '#6d761d'}}>
+                        MEET THE PARENTS
+                      </h4>
+                      <div className="grid grid-cols-2 gap-6">
+                        {/* Dam */}
+                        <div className="text-center">
+                          <div className="relative mb-3">
+                            <img 
+                              src={getParentImage(litter.dam)} 
+                              alt={`${litter.dam} - Dam`}
+                              className="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                              onClick={() => {
+                                setSelectedImage({src: getParentImage(litter.dam), name: litter.dam});
+                                setIsImagePopupOpen(true);
+                              }}
+                            />
+                          </div>
+                          <div>
+                            <p className="font-montserrat text-sm font-semibold" style={{color: '#11100f'}}>
+                              {litter.dam}
+                            </p>
+                            <p className="text-xs font-source-sans text-gray-600 uppercase tracking-wider">Dam</p>
+                          </div>
+                        </div>
+
+                        {/* Sire */}
+                        <div className="text-center">
+                          <div className="relative mb-3">
+                            <img 
+                              src={getParentImage(litter.sire)} 
+                              alt={`${litter.sire} - Sire`}
+                              className="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                              onClick={() => {
+                                setSelectedImage({src: getParentImage(litter.sire), name: litter.sire});
+                                setIsImagePopupOpen(true);
+                              }}
+                            />
+                          </div>
+                          <div>
+                            <p className="font-montserrat text-sm font-semibold" style={{color: '#11100f'}}>
+                              {litter.sire}
+                            </p>
+                            <p className="text-xs font-source-sans text-gray-600 uppercase tracking-wider">Sire</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     {/* Individual Puppies Carousel */}
