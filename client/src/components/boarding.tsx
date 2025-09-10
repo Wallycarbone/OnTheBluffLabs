@@ -3,12 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Home, Heart, Shield, Clock, Star, Users } from "lucide-react";
 
 export default function Boarding() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const boardingFeatures = [
     {
@@ -241,7 +235,7 @@ export default function Boarding() {
                 Give your companion the gift of transformation with us. We welcome only a few dogs at a time, ensuring personalized attention and meaningful progress for every guest.
               </p>
               <Button 
-                onClick={scrollToContact}
+                onClick={() => window.open('https://share.hsforms.com/1Gpq7gUYcR-KgPSu7ODVbiAqp565', '_blank')}
                 className="px-8 py-3 font-montserrat font-medium text-base h-auto rounded-lg"
                 style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
