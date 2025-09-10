@@ -59,7 +59,7 @@ export default function Footer() {
                   href="/health-testing"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  Health Testing
+                  Holistic Health
                 </Link>
               </li>
               <li>
