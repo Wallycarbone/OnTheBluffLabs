@@ -49,7 +49,7 @@ export default function PuppyApplication() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-stone-50">
+    <div className="min-h-screen" style={{ background: 'linear-gradient(to bottom right, #fefefe 0%, #ebebeb 100%)' }}>
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-10">
