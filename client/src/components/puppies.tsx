@@ -351,61 +351,62 @@ export default function Puppies() {
           </DialogHeader>
           {selectedLitter && (
             <div className="space-y-8">
-              {/* Debug info - temporarily show litter name */}
-              <div className="text-center p-4 bg-blue-100 rounded">
-                <p className="text-sm">Selected Litter: {selectedLitter.name}</p>
-                <p className="text-sm">Pedigree Data Available: {getSimplePedigreeData(selectedLitter.name) ? 'Yes' : 'No'}</p>
-              </div>
-              
-              {getSimplePedigreeData(selectedLitter.name) ? (
-                <>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Dam */}
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-oswald font-normal" style={{color: '#6d761d'}}>
-                        DAM: {getSimplePedigreeData(selectedLitter.name).dam.name}
-                      </h3>
-                      <div className="bg-gray-50 p-6 rounded-lg">
-                        <p className="text-sm font-source-sans font-semibold mb-2">
-                          {getSimplePedigreeData(selectedLitter.name).dam.formalName}
-                        </p>
-                        <p className="text-sm font-source-sans text-gray-700">
-                          {getSimplePedigreeData(selectedLitter.name).dam.description}
-                        </p>
+              {(() => {
+                const pedigreeData = getSimplePedigreeData(selectedLitter.name);
+                if (!pedigreeData) {
+                  return (
+                    <div className="text-center p-8">
+                      <p className="text-lg text-gray-600">Pedigree information not available for this litter.</p>
+                    </div>
+                  );
+                }
+                
+                return (
+                  <>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      {/* Dam */}
+                      <div className="space-y-4">
+                        <h3 className="text-xl font-oswald font-normal" style={{color: '#6d761d'}}>
+                          DAM: {pedigreeData.dam.name}
+                        </h3>
+                        <div className="bg-gray-50 p-6 rounded-lg">
+                          <p className="text-sm font-source-sans font-semibold mb-2">
+                            {pedigreeData.dam.formalName}
+                          </p>
+                          <p className="text-sm font-source-sans text-gray-700">
+                            {pedigreeData.dam.description}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {/* Sire */}
+                      <div className="space-y-4">
+                        <h3 className="text-xl font-oswald font-normal" style={{color: '#6d761d'}}>
+                          SIRE: {pedigreeData.sire.name}
+                        </h3>
+                        <div className="bg-gray-50 p-6 rounded-lg">
+                          <p className="text-sm font-source-sans font-semibold mb-2">
+                            {pedigreeData.sire.formalName}
+                          </p>
+                          <p className="text-sm font-source-sans text-gray-700">
+                            {pedigreeData.sire.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
                     
-                    {/* Sire */}
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-oswald font-normal" style={{color: '#6d761d'}}>
-                        SIRE: {getSimplePedigreeData(selectedLitter.name).sire.name}
-                      </h3>
-                      <div className="bg-gray-50 p-6 rounded-lg">
-                        <p className="text-sm font-source-sans font-semibold mb-2">
-                          {getSimplePedigreeData(selectedLitter.name).sire.formalName}
-                        </p>
-                        <p className="text-sm font-source-sans text-gray-700">
-                          {getSimplePedigreeData(selectedLitter.name).sire.description}
-                        </p>
-                      </div>
+                    <div className="text-center mt-8 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-400">
+                      <h4 className="text-lg font-oswald font-normal mb-2" style={{color: '#6d761d'}}>
+                        Comprehensive Pedigree Available
+                      </h4>
+                      <p className="text-sm font-source-sans text-gray-700">
+                        Detailed lineage information including champion bloodlines, health testing results, 
+                        and complete ancestry records are available upon request for serious inquiries.
+                      </p>
                     </div>
-                  </div>
-                  
-                  <div className="text-center mt-8 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-400">
-                    <h4 className="text-lg font-oswald font-normal mb-2" style={{color: '#6d761d'}}>
-                      Comprehensive Pedigree Available
-                    </h4>
-                    <p className="text-sm font-source-sans text-gray-700">
-                      Detailed lineage information including champion bloodlines, health testing results, 
-                      and complete ancestry records are available upon request for serious inquiries.
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <div className="text-center p-8">
-                  <p className="text-lg text-gray-600">Pedigree information not available for this litter.</p>
-                </div>
-              )}
+                  </>
+                );
+              })()}
             </div>
           )}
         </DialogContent>
