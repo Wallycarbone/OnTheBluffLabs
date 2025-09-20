@@ -32,7 +32,7 @@ function Router() {
       <Route path="/training" component={Training} />
       <Route path="/boarding" component={Boarding} />
       <Route path="/facilities" component={Facilities} />
-      <Route path="/dog-food" component={DogFood} />
+      <Route path="/raw-dog-food" component={DogFood} />
       <Route path="/contact" component={Contact} />
       <Route path="/admin/login" component={SimpleAdminLogin} />
       <Route path="/admin" component={Admin} />
