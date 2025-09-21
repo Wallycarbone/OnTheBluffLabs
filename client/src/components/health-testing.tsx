@@ -136,10 +136,10 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
           </p>
         </div>
 
-        {/* Healthy Start Essay Section */}
+        {/* Natural Living Section */}
         <div className="max-w-5xl mx-auto mb-20">
           <h3 className="text-3xl font-oswald font-normal tracking-wide mb-8 text-center" style={{color: '#11100f'}}>
-            Healthy Start
+            Natural Living
           </h3>
 
           {/* Carousel Gallery */}
@@ -204,6 +204,10 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
               ))}
             </div>
           </div>
+
+          <h3 className="text-3xl font-oswald font-normal tracking-wide mb-8 text-center" style={{color: '#11100f'}}>
+            Healthy Start
+          </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-8">
             <div className="flex justify-center md:justify-start">
