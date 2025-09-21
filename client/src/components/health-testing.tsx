@@ -18,7 +18,7 @@ export default function HealthTesting() {
     {
       src: "/attached_assets/2_1758489525284.png",
       alt: "Training facility with natural environment and specialized equipment",
-      caption: "Professional training facilities in a natural setting"
+      caption: "Breeding and birthing takes place in our nurturing home environment"
     },
     {
       src: "/attached_assets/4_1758489525285.png", 
