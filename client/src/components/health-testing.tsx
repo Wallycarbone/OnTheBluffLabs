@@ -23,7 +23,7 @@ export default function HealthTesting() {
     {
       src: "/attached_assets/4_1758489525285.png", 
       alt: "Puppies in secure outdoor environment with proper fencing",
-      caption: "Safe, spacious outdoor environments for natural development"
+      caption: "As puppies grow, they enjoy a safe start to life with fresh air and room to explore"
     },
     {
       src: "/attached_assets/3_1758489525285.png",
