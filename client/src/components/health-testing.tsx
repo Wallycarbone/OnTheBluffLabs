@@ -28,7 +28,7 @@ export default function HealthTesting() {
     {
       src: "/attached_assets/3_1758489525285.png",
       alt: "Caring breeders holding multiple puppies showing family environment",
-      caption: "Family-centered approach with hands-on care and love"
+      caption: "Our family-centered approach emphasizes hands-on care and love"
     }
   ];
 
