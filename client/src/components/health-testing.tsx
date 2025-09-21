@@ -29,6 +29,11 @@ export default function HealthTesting() {
       src: "/attached_assets/3_1758489525285.png",
       alt: "Caring breeders holding multiple puppies showing family environment",
       caption: "Our family-centered approach emphasizes hands-on care and love"
+    },
+    {
+      src: "/attached_assets/Untitled design - 2025-09-21T174321.521_1758491011517.png",
+      alt: "Puppy learning in safe fenced yard with natural challenges and obstacles",
+      caption: "Puppies learn in safe, fenced yards with age-appropriate challenges"
     }
   ];
 
