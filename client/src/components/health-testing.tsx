@@ -16,34 +16,19 @@ export default function HealthTesting() {
 
   const carouselImages = [
     {
-      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png",
-      alt: "Healthy puppy development - early socialization",
-      caption: "Early handling and socialization from birth"
+      src: "/attached_assets/2_1758489525284.png",
+      alt: "Training facility with natural environment and specialized equipment",
+      caption: "Professional training facilities in a natural setting"
     },
     {
-      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (2)_1754770576607.png", 
-      alt: "Happy healthy Labrador puppy",
-      caption: "Confident and well-adjusted temperament"
+      src: "/attached_assets/4_1758489525285.png", 
+      alt: "Puppies in secure outdoor environment with proper fencing",
+      caption: "Safe, spacious outdoor environments for natural development"
     },
     {
-      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (3)_1754771887076.png",
-      alt: "Strong healthy puppy showing proper development",
-      caption: "Proper physical development and structure"
-    },
-    {
-      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (4)_1754772138020.png",
-      alt: "Beautiful healthy puppy representing breeding excellence", 
-      caption: "Excellence in temperament and personality"
-    },
-    {
-      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (5)_1754772005588.png",
-      alt: "Healthy puppy with excellent coat and condition",
-      caption: "Fresh nutrition creating vibrant health"
-    },
-    {
-      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (6)_1754772143268.png",
-      alt: "Genetically sound puppy representing health testing",
-      caption: "Comprehensive genetic health testing"
+      src: "/attached_assets/3_1758489525285.png",
+      alt: "Caring breeders holding multiple puppies showing family environment",
+      caption: "Family-centered approach with hands-on care and love"
     }
   ];
 
