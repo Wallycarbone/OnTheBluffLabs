@@ -1,11 +1,66 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useEmblaCarousel from 'embla-carousel-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 import healthyStartImage from "@assets/Puppies 5x4 (4 x 4 in) (2)_1754768185491.png";
 
 export default function HealthTesting() {
   const [isEssayOpen, setIsEssayOpen] = useState(false);
   const [selectedTest, setSelectedTest] = useState<any>(null);
+  
+  // Carousel setup
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const carouselImages = [
+    {
+      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (1)_1754683514419.png",
+      alt: "Healthy puppy development - early socialization",
+      caption: "Early handling and socialization from birth"
+    },
+    {
+      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (2)_1754770576607.png", 
+      alt: "Happy healthy Labrador puppy",
+      caption: "Confident and well-adjusted temperament"
+    },
+    {
+      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (3)_1754771887076.png",
+      alt: "Strong healthy puppy showing proper development",
+      caption: "Proper physical development and structure"
+    },
+    {
+      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (4)_1754772138020.png",
+      alt: "Beautiful healthy puppy representing breeding excellence", 
+      caption: "Excellence in temperament and personality"
+    },
+    {
+      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (5)_1754772005588.png",
+      alt: "Healthy puppy with excellent coat and condition",
+      caption: "Fresh nutrition creating vibrant health"
+    },
+    {
+      src: "/attached_assets/Puppies 5x4 (4 x 4 in) (6)_1754772143268.png",
+      alt: "Genetically sound puppy representing health testing",
+      caption: "Comprehensive genetic health testing"
+    }
+  ];
+
+  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
+  const scrollNext = () => emblaApi && emblaApi.scrollNext();
+
+  const onSelect = () => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  };
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on('select', onSelect);
+    emblaApi.on('reInit', onSelect);
+  }, [emblaApi]);
 
   const openEssay = (test: any) => {
     setSelectedTest(test);
@@ -86,6 +141,69 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
           <h3 className="text-3xl font-oswald font-normal tracking-wide mb-8 text-center" style={{color: '#11100f'}}>
             Healthy Start
           </h3>
+
+          {/* Carousel Gallery */}
+          <div className="relative max-w-4xl mx-auto mb-12">
+            <div className="overflow-hidden rounded-2xl shadow-lg" ref={emblaRef}>
+              <div className="flex">
+                {carouselImages.map((image, index) => (
+                  <div key={index} className="flex-[0_0_100%] min-w-0">
+                    <div className="relative">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-96 object-cover"
+                        data-testid={`carousel-image-${index}`}
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                        <p className="text-white font-source-sans text-lg text-center">
+                          {image.caption}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Navigation Buttons */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full shadow-lg"
+              onClick={scrollPrev}
+              data-testid="carousel-prev-button"
+            >
+              <ChevronLeft className="h-6 w-6" style={{color: '#6d761d'}} />
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full shadow-lg"
+              onClick={scrollNext}
+              data-testid="carousel-next-button"
+            >
+              <ChevronRight className="h-6 w-6" style={{color: '#6d761d'}} />
+            </Button>
+
+            {/* Dot Indicators */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {carouselImages.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === selectedIndex
+                      ? 'bg-olive-600'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                  onClick={() => emblaApi?.scrollTo(index)}
+                  data-testid={`carousel-dot-${index}`}
+                  style={index === selectedIndex ? {backgroundColor: '#6d761d'} : {}}
+                />
+              ))}
+            </div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-8">
             <div className="flex justify-center md:justify-start">
