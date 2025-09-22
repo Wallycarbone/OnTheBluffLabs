@@ -433,42 +433,42 @@ export default function Training() {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Behavioral Training 1]:
+                    Place:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Puppies learn to go to a designated spot and remain there, even when guests arrive or the household is active.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Behavioral Training 2]:
+                    Wait:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Puppies master patience at thresholds—doors, gates, crates, or feeding times—preventing rushing or excitement from becoming dangerous.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Behavioral Training 3]:
+                    Heel / Leash Mastery:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Walking becomes a true partnership: loose leash, steady pace, attentive focus.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Behavioral Training 4]:
+                    Pick Your Trick:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Families select a fun specialty—spin, crawl, touch, or legs—that reinforces responsiveness while adding joy to training.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Behavioral Training 5]:
+                    AKC Canine Good Citizen Examination:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    The program culminates with this nationally recognized behavior milestone, proof that your puppy meets the highest standards of obedience and composure.
                   </p>
                 </div>
               </div>
