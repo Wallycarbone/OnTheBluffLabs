@@ -374,8 +374,8 @@ export default function Training() {
             </div>
             <div className="text-center">
               <img 
-                src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (78)_1755526844923.png"
-                alt="Chocolate Labrador showcasing advanced training and confident temperament in outdoor setting"
+                src="@assets/Untitled design - 2025-09-22T175026.099_1758577950997.png"
+                alt="Chocolate Labrador puppy sitting confidently on green grass, demonstrating the poised temperament achieved through doctorate-level training"
                 className="w-full h-96 object-cover rounded-xl shadow-lg"
                 style={{objectPosition: '50% 60%'}}
               />
