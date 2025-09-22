@@ -499,7 +499,7 @@ export default function Training() {
             <Card className="border-2 rounded-2xl shadow-xl overflow-hidden max-w-4xl mx-auto" style={{background: 'linear-gradient(135deg, #7a8020 0%, #6d761d 50%, #5a5f18 100%)', borderColor: '#7a8020'}}>
               <CardContent className="p-12 text-center">
                 <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
-                  Growing Into Family
+                  GROWING INTO FAMILY
                 </h2>
                 <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white">
                   From the Bachelor's first steps to the Doctorate's final polish, each program prepares your puppy not only to obey, but to belong. By the time your companion comes home, the early chapters have been written with care. The rest of the story—of joy, loyalty, and love—will unfold in your hands.
