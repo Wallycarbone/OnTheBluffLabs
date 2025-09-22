@@ -357,7 +357,137 @@ export default function Training() {
         </div>
       </section>
 
-      <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
+      {/* The PhD Program Section */}
+      <section className="py-24" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                The PhD Program — [Price to be determined]
+              </h3>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                [PhD program description to be customized - first paragraph about program goals and training hours]
+              </p>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                [PhD program description to be customized - second paragraph about advanced capabilities and expectations]
+              </p>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                [PhD program description to be customized - third paragraph about target families and outcomes]
+              </p>
+            </div>
+            <div className="text-center">
+              <img 
+                src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (78)_1755526844923.png"
+                alt="Chocolate Labrador showcasing advanced training and confident temperament in outdoor setting"
+                className="w-full h-96 object-cover rounded-xl shadow-lg"
+                style={{objectPosition: '50% 60%'}}
+              />
+            </div>
+          </div>
+          
+          {/* Training Details for PhD Program */}
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Lifestyle Training Column */}
+            <div>
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Lifestyle Training
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Lifestyle Training 1]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Lifestyle Training 2]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Lifestyle Training 3]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Lifestyle Training 4]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Behavioral Training Column */}
+            <div>
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Behavioral Training
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Behavioral Training 1]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Behavioral Training 2]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Behavioral Training 3]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Behavioral Training 4]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [PhD Behavioral Training 5]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Outcome Statement */}
+          <div className="mt-12 text-center">
+            <p className="text-lg font-source-sans font-semibold" style={{color: '#11100f'}}>
+              <span className="text-amber-600 font-bold">Outcome:</span> [PhD program outcome to be customized]
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="training" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Training Philosophy Essay - Part 2 */}
