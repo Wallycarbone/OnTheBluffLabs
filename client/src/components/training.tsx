@@ -40,8 +40,30 @@ export default function Training() {
   ];
 
   return (
-    <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div>
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative h-96 flex items-center justify-center"
+        style={{
+          backgroundImage: `url(/attached_assets/Untitled design - 2025-09-22T115939.891_1758556801975.png)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative z-10 text-center text-white">
+          <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
+            TRAINING
+          </h1>
+          <p className="text-xl md:text-2xl font-source-sans font-light">
+            Building Tomorrow's Companions
+          </p>
+        </div>
+      </section>
+
+      <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
             THE LEGACY LIVES ON
@@ -224,5 +246,6 @@ export default function Training() {
 
       </div>
     </section>
+    </div>
   );
 }
