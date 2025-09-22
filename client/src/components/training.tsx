@@ -392,34 +392,34 @@ export default function Training() {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Lifestyle Training 1]:
+                    House Training to Completion:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Puppies graduate fully house trained, holding needs for 6–8 hours when kenneled, with consistent schedules and clean habits.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Lifestyle Training 2]:
+                    Confidence in Any Setting:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Exposure expands to a wide range of environments: unusual surfaces (foil, cardboard, bubble wrap), loud tools (vacuums, drills, lawn mowers), farm animals, strollers, umbrellas, even thunderstorms and fireworks. These challenges build resilience.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Lifestyle Training 3]:
+                    Handling & Grooming:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Puppies accept brushing, bathing, blow drying, nail trims, ear checks, and scales with calm familiarity, turning routine care into routine ease.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [PhD Lifestyle Training 4]:
+                    Stairs & Surfaces:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Training includes navigating ramps, stairs, elevated and moving platforms, and enclosed walkways—ensuring comfort in any space.
                   </p>
                 </div>
               </div>
