@@ -491,43 +491,35 @@ export default function Training() {
             <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-8 tracking-wide" style={{color: '#11100f'}}>
               A Lifetime of Care
             </h2>
-            <p className="font-source-sans text-lg leading-[1.6] text-center" style={{color: '#4b4b4b'}}>
+            <p className="font-source-sans text-lg leading-[1.6] text-center mb-12" style={{color: '#4b4b4b'}}>
               With over fifty years of experience, we don't just place puppies—we partner with families for the life of each dog. From food and health questions to training refreshers, boarding, and crisis guidance, we remain a steady presence. Many families return again and again, knowing their Labrador is always welcome in the place they were born.
             </p>
+            
+            {/* Call to Action Box */}
+            <Card className="border-2 rounded-2xl shadow-xl overflow-hidden max-w-4xl mx-auto" style={{background: 'linear-gradient(135deg, #7a8020 0%, #6d761d 50%, #5a5f18 100%)', borderColor: '#7a8020'}}>
+              <CardContent className="p-12 text-center">
+                <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
+                  Growing Into Family
+                </h2>
+                <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white">
+                  From the Bachelor's first steps to the Doctorate's final polish, each program prepares your puppy not only to obey, but to belong. By the time your companion comes home, the early chapters have been written with care. The rest of the story—of joy, loyalty, and love—will unfold in your hands.
+                </p>
+                <div className="flex justify-center">
+                  <Button 
+                    asChild
+                    className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
+                    style={{color: '#6d761d'}}
+                  >
+                    <Link href="/puppy-application" data-testid="link-apply-from-training">
+                      Begin Your Journey
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
-
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Call to Action Section */}
-        <div className="mt-20">
-          <Card className="border-2 rounded-2xl shadow-xl overflow-hidden" style={{background: 'linear-gradient(135deg, #7a8020 0%, #6d761d 50%, #5a5f18 100%)', borderColor: '#7a8020'}}>
-            <CardContent className="p-12 text-center">
-              <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
-                Growing Into Family
-              </h2>
-              <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white">
-                From the Bachelor's first steps to the Doctorate's final polish, each program prepares your puppy not only to obey, but to belong. By the time your companion comes home, the early chapters have been written with care. The rest of the story—of joy, loyalty, and love—will unfold in your hands.
-              </p>
-              <div className="flex justify-center">
-                <Button 
-                  asChild
-                  className="font-montserrat font-medium text-base h-auto py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all bg-white hover:bg-gray-50"
-                  style={{color: '#6d761d'}}
-                >
-                  <Link href="/puppy-application" data-testid="link-apply-from-training">
-                    Begin Your Journey
-                  </Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-      </div>
-    </section>
     </div>
   );
 }
