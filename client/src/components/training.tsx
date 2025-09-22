@@ -108,13 +108,9 @@ export default function Training() {
               />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Training Details Section */}
-      <section className="py-24" style={{backgroundColor: '#fffbe8'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          
+          {/* Training Details for Bachelor's Degree */}
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Lifestyle Training Column */}
             <div>
               <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
