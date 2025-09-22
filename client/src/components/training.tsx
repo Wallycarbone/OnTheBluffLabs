@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
-import trainingHeroImage from '@assets/Untitled design - 2025-09-22T124952.702_1758559798426.png';
+import trainingHeroImage from '@assets/Untitled design - 2025-09-22T131744.397_1758561471617.png';
 
 export default function Training() {
 
