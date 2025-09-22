@@ -65,11 +65,10 @@ export default function Puppies() {
   
   const [, setLocation] = useLocation();
 
-  // 18 curated puppy photos showcasing full color spectrum
+  // 17 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
     { src: previousShadow, name: "Black Labrador puppy with alert stance" },
     { src: previousYellowRope, name: "Yellow Labrador puppy with rope toy" },
-    { src: previousBlackToy, name: "Black Labrador puppy with favorite toy" },
     { src: previousChocolateToys, name: "Chocolate Labrador puppy with colorful toys" },
     { src: previousChocolateRainbow, name: "Chocolate Labrador puppy with rainbow toy" },
     { src: previousWhitePuppy, name: "White Labrador puppy in portrait" },
