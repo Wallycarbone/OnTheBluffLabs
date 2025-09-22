@@ -55,10 +55,10 @@ export default function Training() {
         <div className="absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.01), rgba(0,0,0,0.45))'}}></div>
         <div className="relative z-10 text-right text-white pr-8 md:pr-16">
           <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
-            TRAINING
+            The Legacy Lives On
           </h1>
           <p className="text-xl md:text-2xl font-source-sans font-light">
-            Building Tomorrow's Companions
+            Training Tomorrow's Labradors
           </p>
         </div>
       </section>
