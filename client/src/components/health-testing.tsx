@@ -31,8 +31,8 @@ export default function HealthTesting() {
       caption: "As puppies grow, they enjoy a safe start to life with fresh air and room to explore"
     },
     {
-      src: "/attached_assets/Untitled design - 2025-09-21T174321.521_1758491011517.png",
-      alt: "Puppy learning in safe fenced yard with natural challenges and obstacles",
+      src: "/attached_assets/Untitled design - 2025-09-22T104628.609_1758552406613.png",
+      alt: "Three Labrador puppies of different colors running and playing in fenced yard",
       caption: "Puppies learn in safe, fenced yards with age-appropriate challenges"
     },
     {
