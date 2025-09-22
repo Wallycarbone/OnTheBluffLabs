@@ -34,6 +34,11 @@ export default function HealthTesting() {
       src: "/attached_assets/Untitled design - 2025-09-22T104628.609_1758552406613.png",
       alt: "Three Labrador puppies of different colors running and playing in fenced yard",
       caption: "They learn and play in safe fenced yards with age-appropriate challenges"
+    },
+    {
+      src: "/attached_assets/Untitled design - 2025-09-22T110052.211_1758553391576.png",
+      alt: "Yellow Labrador resting with blue ball in natural meadow with white flowers",
+      caption: "In our rural setting, our beloved sires and dams enjoy the freedom of meadows and woods, enriched by nature each day"
     }
   ];
 
