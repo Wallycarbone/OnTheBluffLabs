@@ -298,42 +298,50 @@ export default function Training() {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Behavioral Training 1]:
+                    Reliable Leash Walking:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    At this stage, leash skills become steady. Puppies learn to walk at your side with only light guidance.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Behavioral Training 2]:
+                    Crate & House Training:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Puppies are nearly house trained, sleeping comfortably in their crate and following consistent schedules.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Behavioral Training 3]:
+                    Cue Expansion:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Beyond sit and stay in our yards, puppies practice their cues in public places and varied environments. This makes them stronger and more versatile.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Behavioral Training 4]:
+                    Impulse Control:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Whether at the door, the food bowl, or when meeting new people, puppies learn that calm patience is rewarded.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Behavioral Training 5]:
+                    Retrieve & Release:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Fetch evolves into a structured retrieve, with puppies returning items consistently and releasing them on cue.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Calm / Settle:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Puppies practice returning to balance after bursts of excitement, reinforcing self-regulation as a habit.
                   </p>
                 </div>
               </div>
