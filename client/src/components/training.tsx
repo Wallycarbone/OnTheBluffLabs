@@ -227,6 +227,144 @@ export default function Training() {
         </div>
       </section>
 
+      {/* The Master's Degree Section */}
+      <section className="py-24" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                The Master's Degree — 6-Week Program
+              </h3>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                Next-Level Puppy Foundations: Socialization & Training for Polite, Well-Mannered Family Companions 8–14 Weeks
+              </p>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                [Master's program description to be customized]
+              </p>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                [Additional Master's program details to be customized]
+              </p>
+            </div>
+            <div className="text-center">
+              <img 
+                src="/attached_assets/Puppies 5x4 (4)_1755535459095.png"
+                alt="Young golden Labrador puppy outdoors demonstrating confident stance and public socialization readiness"
+                className="w-full h-96 object-cover rounded-xl shadow-lg"
+                style={{objectPosition: '50% 50%'}}
+              />
+            </div>
+          </div>
+          
+          {/* Training Details for Master's Degree */}
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Lifestyle Training Column */}
+            <div>
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Lifestyle Training
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Lifestyle Training 1]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Lifestyle Training 2]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Lifestyle Training 3]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Lifestyle Training 4]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Lifestyle Training 5]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Behavioral Training Column */}
+            <div>
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Behavioral Training
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Behavioral Training 1]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Behavioral Training 2]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Behavioral Training 3]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Behavioral Training 4]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    [Master's Behavioral Training 5]:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    [Content to be customized]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Outcome Statement */}
+          <div className="mt-12 text-center">
+            <p className="text-lg font-source-sans font-semibold" style={{color: '#11100f'}}>
+              <span className="text-amber-600 font-bold">Outcome:</span> [Master's program outcome to be customized]
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
