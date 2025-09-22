@@ -226,7 +226,7 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
               >
                 <p>For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.</p>
 
-                <p>We strive for excellence in temperament, personality, with a physical structure that adheres to bred standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.</p>
+                <p>We strive for excellence in temperament, personality, with a physical structure that adheres to breed standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.</p>
 
                 <p>Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive fresh food diet made on our premises. Most importantly- they are handled and loved.</p>
               </div>
