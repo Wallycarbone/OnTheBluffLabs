@@ -217,6 +217,13 @@ export default function Training() {
               </div>
             </div>
           </div>
+          
+          {/* Outcome Statement */}
+          <div className="mt-12 text-center">
+            <p className="text-lg font-source-sans font-semibold" style={{color: '#11100f'}}>
+              <span className="text-amber-600 font-bold">Outcome:</span> A puppy who understands the basics, feels at home in family settings, and is ready to keep learning at your side.
+            </p>
+          </div>
         </div>
       </section>
 
