@@ -351,7 +351,7 @@ export default function Training() {
           {/* Outcome Statement */}
           <div className="mt-12 text-center">
             <p className="text-lg font-source-sans font-semibold" style={{color: '#11100f'}}>
-              <span className="text-amber-600 font-bold">Outcome:</span> [Master's program outcome to be customized]
+              <span className="text-amber-600 font-bold">Outcome:</span> By the time your puppy graduates from the Master's Degree, you'll welcome home a companion who not only understands basic cuess, but demonstrates them with reliability. The groundwork has been laid for a calm, well-mannered family member who transitions seamlessly into household life.
             </p>
           </div>
         </div>
