@@ -88,7 +88,7 @@ export default function Training() {
                     The Bachelor's Degree — $7,500
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Puppy manners are essential, and the Bachelor's Degree is where life as a family companion begins. Training starts at 7 weeks of age and extends through nearly 200 hours of structured guidance and socialization.
+                    Puppy manners are essential, and the Bachelor's Degree is where life as a family companion begins. Training starts at 7 weeks of age and extends through nearly 200 hours of guidance and socialization.
                   </p>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
                     Graduates of this program leave with more than the basics. They recognize beginning cues through both verbal and hand cues. They are comfortable in the kitchen, at the dinner table, and in the quiet hum of family evenings. The Bachelor's Degree lays a foundation strong enough for any home to continue building upon.
