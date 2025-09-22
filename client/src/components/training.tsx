@@ -242,7 +242,7 @@ export default function Training() {
                 By this stage, puppies aren't just learning cues; they are practicing them in more complex environments—with distractions, longer time spans, and higher expectations. The result is a companion who can walk into a family gathering, a busy park, or a car ride and behave with confidence.
               </p>
               <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                We've designed this program for families who want to spend less time correcting the basics and more time simply enjoying their puppy from day one.
+                We've designed this program for families who want to spend less time teaching the basics and more time simply enjoying their puppy from day one.
               </p>
             </div>
             <div className="text-center">
