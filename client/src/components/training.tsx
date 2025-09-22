@@ -88,28 +88,14 @@ export default function Training() {
                     The Bachelor's Degree — $7,500
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Our Labradors are bred for naturally intelligent, cooperative temperaments that provide an exceptional foundation for training. Our training center builds upon these inherent qualities using gentle methods that strengthen the natural bond between dog and family.
+                    Puppy manners are essential, and the Bachelor's Degree is where life as a family companion begins. Training starts at 7 weeks of age and extends through nearly 200 hours of structured guidance and socialization.
                   </p>
-                  <div className="space-y-3">
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
-                      <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                        Individual evaluation that guides each puppy's program
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
-                      <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                        Evidence-based positive reinforcement methods that build confidence
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={{color: '#6d761d'}} />
-                      <span className="text-sm font-source-sans" style={{color: '#4b4b4b'}}>
-                        Ongoing behavior support available after puppy pickup
-                      </span>
-                    </div>
-                  </div>
+                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Graduates of this program leave with more than the basics. They recognize beginning commands through both verbal and hand cues. They are comfortable in the kitchen, at the dinner table, and in the quiet hum of family evenings. The Bachelor's Degree lays a foundation strong enough for any home to continue building upon.
+                  </p>
+                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                    We provide the curriculum and ongoing support, but the real partnership begins when your puppy comes home. Families can expect to spend about 30 minutes a day reinforcing what has already been learned. For those willing to carry the lessons forward, this program builds the bridge—from our home, where your puppy was born, to yours.
+                  </p>
                 </div>
                 <div className="text-center">
                   <img 
