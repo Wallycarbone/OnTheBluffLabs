@@ -484,6 +484,20 @@ export default function Training() {
         </div>
       </section>
 
+      {/* A Lifetime of Care Section */}
+      <section className="py-24" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-8 tracking-wide" style={{color: '#11100f'}}>
+              A Lifetime of Care
+            </h2>
+            <p className="font-source-sans text-lg leading-[1.6] text-center" style={{color: '#4b4b4b'}}>
+              With over fifty years of experience, we don't just place puppies—we partner with families for the life of each dog. From food and health questions to training refreshers, boarding, and crisis guidance, we remain a steady presence. Many families return again and again, knowing their Labrador is always welcome in the place they were born.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="training" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
