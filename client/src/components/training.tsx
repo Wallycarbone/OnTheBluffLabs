@@ -184,14 +184,6 @@ export default function Training() {
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    Yes / No:
-                  </h4>
-                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Simple words mark the difference between what pleases and what doesn't. Puppies begin to read tone and rhythm, learning the shape of communication.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
                     Sit & Stay:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
