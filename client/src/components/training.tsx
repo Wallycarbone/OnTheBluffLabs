@@ -65,15 +65,6 @@ export default function Training() {
 
       <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-            THE LEGACY LIVES ON
-          </h2>
-          <h3 className="text-2xl md:text-3xl font-source-sans font-light mb-6 tracking-wide" style={{color: '#6d761d'}}>
-            Training Tomorrow's Labradors
-          </h3>
-          <div className="w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#6d761d'}}></div>
-        </div>
 
         {/* Training Philosophy Essay - Part 1 with Image */}
         <div className="mb-20">
