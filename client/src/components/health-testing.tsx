@@ -34,6 +34,11 @@ export default function HealthTesting() {
       src: "/attached_assets/Untitled design - 2025-09-21T174321.521_1758491011517.png",
       alt: "Puppy learning in safe fenced yard with natural challenges and obstacles",
       caption: "Puppies learn in safe, fenced yards with age-appropriate challenges"
+    },
+    {
+      src: "/attached_assets/Untitled design - 2025-09-22T103633.662_1758551808470.png",
+      alt: "Three Labrador puppies of different colors looking over wooden fence",
+      caption: "Puppies live in custom-build homes with cozy interiors and doggie doors leading to outdoor relaxation areas"
     }
   ];
 
