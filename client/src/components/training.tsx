@@ -78,37 +78,41 @@ export default function Training() {
           </div>
         </div>
 
-        {/* Training Philosophy */}
-        <div className="mb-20">
-          <Card className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-            <CardContent className="p-10">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-                    The Bachelor's Degree — $7,500
-                  </h3>
-                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Puppy manners are essential, and the Bachelor's Degree is where life as a family companion begins. Training starts at 7 weeks of age and extends through nearly 200 hours of guidance and socialization.
-                  </p>
-                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Graduates of this program leave with more than the basics. They recognize beginning cues through both verbal and hand cues. They are comfortable in the kitchen, at the dinner table, and in the quiet hum of family evenings. The Bachelor's Degree lays a foundation strong enough for any home to continue building upon.
-                  </p>
-                  <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    We provide the curriculum and ongoing support, but the real partnership begins when your puppy comes home. Families can expect to spend about 30 minutes a day reinforcing what has already been learned. For those willing to carry the lessons forward, this program builds the bridge—from our home, where your puppy was born, to yours.
-                  </p>
-                </div>
-                <div className="text-center">
-                  <img 
-                    src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
-                    alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
-                    className="w-full h-96 object-cover rounded-xl shadow-lg"
-                    style={{objectPosition: '50% 35%'}}
-                  />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
+      </section>
+
+      {/* The Bachelor's Degree Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                The Bachelor's Degree — $7,500
+              </h3>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                Puppy manners are essential, and the Bachelor's Degree is where life as a family companion begins. Training starts at 7 weeks of age and extends through nearly 200 hours of guidance and socialization.
+              </p>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                Graduates of this program leave with more than the basics. They recognize beginning cues through both verbal and hand cues. They are comfortable in the kitchen, at the dinner table, and in the quiet hum of family evenings. The Bachelor's Degree lays a foundation strong enough for any home to continue building upon.
+              </p>
+              <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
+                We provide the curriculum and ongoing support, but the real partnership begins when your puppy comes home. Families can expect to spend about 30 minutes a day reinforcing what has already been learned. For those willing to carry the lessons forward, this program builds the bridge—from our home, where your puppy was born, to yours.
+              </p>
+            </div>
+            <div className="text-center">
+              <img 
+                src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
+                alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
+                className="w-full h-96 object-cover rounded-xl shadow-lg"
+                style={{objectPosition: '50% 35%'}}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Training Philosophy Essay - Part 2 */}
         <div className="mb-20">
