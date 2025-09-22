@@ -21,6 +21,7 @@ import newYellowSitting from "@assets/39_1755549645613.png";
 import newWhiteStanding from "@assets/40_1755549645619.png";
 import blackPinkDiamond from "@assets/Y30A1549black pink diamond (2)_1758549186938.jpg";
 import blackPinkDiamond2 from "@assets/Y30A1551black pink diamond (3)_1758549403882.jpg";
+import foxRedWithBalls from "@assets/Untitled design - 2025-09-22T095844.149_1758549602932.png";
 
 // Core dog images
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
@@ -60,7 +61,7 @@ export default function Puppies() {
   
   const [, setLocation] = useLocation();
 
-  // 15 curated puppy photos showcasing full color spectrum
+  // 16 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
     { src: previousShadow, name: "Black Labrador puppy with alert stance" },
     { src: previousSunny, name: "Yellow Labrador puppy in natural pose" },
@@ -76,7 +77,8 @@ export default function Puppies() {
     { src: newYellowSitting, name: "Yellow Labrador puppy in sitting pose" },
     { src: newWhiteStanding, name: "White Labrador puppy with confident stance" },
     { src: blackPinkDiamond, name: "Light yellow Labrador puppy in natural outdoor setting" },
-    { src: blackPinkDiamond2, name: "Light yellow Labrador puppy sitting in grass with sweet expression" }
+    { src: blackPinkDiamond2, name: "Light yellow Labrador puppy sitting in grass with sweet expression" },
+    { src: foxRedWithBalls, name: "Fox red Labrador puppy playing with colorful balls in grass" }
   ];
 
   const openImagePopup = (image: {src: string, name: string}) => {
