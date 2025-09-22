@@ -111,6 +111,119 @@ export default function Training() {
         </div>
       </section>
 
+      {/* Training Details Section */}
+      <section className="py-24" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Lifestyle Training Column */}
+            <div>
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Lifestyle Training
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Kitchen Time:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Puppies spend stretches in the kitchen, padding across the floor while meals are prepared, hearing the clatter of pots and catching the drift of new smells. In that busy room, they learn how to be present without being underfoot.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Family Time:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Evenings are quieter. Puppies settle nearby while conversations wander, and the computer or TV monitor flickers in the background. They come to know that belonging doesn't always mean being the center of attention.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Travel Readiness:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    The car becomes familiar in small steps—doors opening, engines starting, the rise and fall of the road. Over time, the motion itself begins to feel like the start of something worth looking forward to.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Vet Socialization:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Gentle handling of paws, ears, and teeth is woven into everyday play. By the time a stethoscope appears, it feels like more of the same—just another set of hands, another kind of care.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Older Dog Socialization:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Time with our steady adults gives the young ones models to follow. Puppies learn the subtle give-and-take of canine manners, lessons best taught by example.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Behavioral Training Column */}
+            <div>
+              <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
+                Behavioral Training
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Leash Training:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    A light lead, a few careful steps, a pause when the pulling starts—bit by bit, the rhythm of walking together emerges.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Crate Training:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    The crate is introduced as a place of calm. Short sessions, quiet rewards, the gentle habit of resting. What begins as an enclosure slowly becomes a den.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Yes / No:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Simple words mark the difference between what pleases and what doesn't. Puppies begin to read tone and rhythm, learning the shape of communication.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Sit & Stay:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    A hand motion, a single word, the stillness that follows. First for seconds, then for longer.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Fetch:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    A ball tossed, the joyful chase, the triumphant return. Again and again. The game becomes its own reward.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Calm / Settle:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    When excitement spills over, a cue, a breath, and the puppy folds back into ease.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
