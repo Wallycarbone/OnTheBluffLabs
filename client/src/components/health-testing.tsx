@@ -21,14 +21,14 @@ export default function HealthTesting() {
       caption: "Breeding and birthing takes place in our nurturing home environment"
     },
     {
-      src: "/attached_assets/4_1758489525285.png", 
-      alt: "Puppies in secure outdoor environment with proper fencing",
-      caption: "As puppies grow, they enjoy a safe start to life with fresh air and room to explore"
-    },
-    {
       src: "/attached_assets/3_1758489525285.png",
       alt: "Caring breeders holding multiple puppies showing family environment",
       caption: "Our family-centered approach emphasizes hands-on care and love"
+    },
+    {
+      src: "/attached_assets/4_1758489525285.png", 
+      alt: "Puppies in secure outdoor environment with proper fencing",
+      caption: "As puppies grow, they enjoy a safe start to life with fresh air and room to explore"
     },
     {
       src: "/attached_assets/Untitled design - 2025-09-21T174321.521_1758491011517.png",
