@@ -28,7 +28,7 @@ export default function HealthTesting() {
     {
       src: "/attached_assets/4_1758489525285.png", 
       alt: "Puppies in secure outdoor environment with proper fencing",
-      caption: "As puppies grow, they graduate to their own custom-built houses, with doggie doors leading to fresh air and room to explore"
+      caption: "Growing puppies transition to custom-built houses with doggie doors opening to fresh air and freedom."
     },
     {
       src: "/attached_assets/Untitled design - 2025-09-22T104628.609_1758552406613.png",
