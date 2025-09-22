@@ -45,7 +45,7 @@ export default function Training() {
       <section 
         className="relative h-96 flex items-center justify-center"
         style={{
-          backgroundImage: `url(/attached_assets/Untitled design - 2025-09-22T115939.891_1758556801975.png)`,
+          backgroundImage: `url(/attached_assets/Untitled design - 2025-09-22T124616.107_1758559586394.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
