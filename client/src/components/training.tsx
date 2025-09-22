@@ -233,16 +233,16 @@ export default function Training() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-                The Master's Degree — 6-Week Program
+                The Master's Degree — $12,500
               </h3>
               <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                Next-Level Puppy Foundations: Socialization & Training for Polite, Well-Mannered Family Companions 8–14 Weeks
+                For families who want their puppy to arrive not just with a foundation, but with maturity already taking root, the Master's Degree extends training to nearly 400 hours. Beginning at 12 weeks of age, it deepens every lesson from the Bachelor's Degree and layers in composure, consistency, and self-control.
               </p>
               <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                [Master's program description to be customized]
+                By this stage, puppies aren't just learning cues; they are practicing them in more complex environments—with distractions, longer time spans, and higher expectations. The result is a companion who can walk into a family gathering, a busy park, or a car ride and behave with confidence.
               </p>
               <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                [Additional Master's program details to be customized]
+                We've designed this program for families who want to spend less time correcting the basics and more time simply enjoying their puppy from day one.
               </p>
             </div>
             <div className="text-center">
