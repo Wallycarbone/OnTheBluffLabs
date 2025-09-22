@@ -34,11 +34,6 @@ export default function HealthTesting() {
       src: "/attached_assets/Untitled design - 2025-09-22T104628.609_1758552406613.png",
       alt: "Three Labrador puppies of different colors running and playing in fenced yard",
       caption: "They learn and play in safe fenced yards with age-appropriate challenges"
-    },
-    {
-      src: "/attached_assets/Untitled design - 2025-09-22T103633.662_1758551808470.png",
-      alt: "Three Labrador puppies of different colors looking over wooden fence",
-      caption: "Puppies live in custom-build homes with cozy interiors and doggie doors leading to outdoor relaxation areas"
     }
   ];
 
