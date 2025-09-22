@@ -23,6 +23,7 @@ import blackPinkDiamond from "@assets/Y30A1549black pink diamond (2)_17585491869
 import blackPinkDiamond2 from "@assets/Y30A1551black pink diamond (3)_1758549403882.jpg";
 import foxRedWithBalls from "@assets/Untitled design - 2025-09-22T095844.149_1758549602932.png";
 import foxRedSitting from "@assets/Untitled design - 2025-09-22T100714.391_1758550044367.png";
+import lightYellowWithBall from "@assets/Y30A4742awillixatticusshamrock (1)_1758550186620.jpg";
 
 // Core dog images
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
@@ -62,7 +63,7 @@ export default function Puppies() {
   
   const [, setLocation] = useLocation();
 
-  // 17 curated puppy photos showcasing full color spectrum
+  // 18 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
     { src: previousShadow, name: "Black Labrador puppy with alert stance" },
     { src: previousSunny, name: "Yellow Labrador puppy in natural pose" },
@@ -80,7 +81,8 @@ export default function Puppies() {
     { src: blackPinkDiamond, name: "Light yellow Labrador puppy in natural outdoor setting" },
     { src: blackPinkDiamond2, name: "Light yellow Labrador puppy sitting in grass with sweet expression" },
     { src: foxRedWithBalls, name: "Fox red Labrador puppy playing with colorful balls in grass" },
-    { src: foxRedSitting, name: "Fox red Labrador puppy with beautiful golden coat sitting in natural setting" }
+    { src: foxRedSitting, name: "Fox red Labrador puppy with beautiful golden coat sitting in natural setting" },
+    { src: lightYellowWithBall, name: "Light yellow Labrador puppy sitting with red spiky ball toy" }
   ];
 
   const openImagePopup = (image: {src: string, name: string}) => {
