@@ -498,81 +498,8 @@ export default function Training() {
         </div>
       </section>
 
-      <section id="training" className="py-24 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Training Philosophy Essay - Part 2 */}
-        <div className="mb-20">
-          <div className="max-w-5xl mx-auto">
-            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-left" style={{color: '#4b4b4b'}}>
-              Perhaps the most valuable aspect of our integrated program is how it allows each puppy to reach their individual potential while maintaining the behavioral foundation necessary for family life. We don't train every dog identically—we develop their unique abilities while ensuring they all possess the core skills necessary for success. <strong>This approach creates what researchers call "confident versatility"—dogs who are both reliably well-behaved and adaptable to new situations.</strong>
-            </p>
-            
-            <p className="font-source-sans text-lg leading-[1.6] mb-8 text-left" style={{color: '#4b4b4b'}}>
-              By observing patterns across genetic lines, we refine both our breeding and training programs, continuously improving temperament, trainability, and emotional intelligence.
-            </p>
-            
-            {/* Emphasized Result Statement */}
-            <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-l-4 border-amber-400 p-6 rounded-lg shadow-sm mb-12">
-              <p className="font-source-sans text-xl font-semibold leading-[1.6] text-left" style={{color: '#2d3748'}}>
-                <span className="text-amber-600 font-bold">The result:</span> puppies who enter their families as confident, emotionally stable companions, ready to form deep, lasting bonds and bring the intelligence, joy, and loyalty that make Labradors so beloved.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Training Services */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {trainingServices.map((service, index) => (
-              <Card key={index} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                {/* Image Section */}
-                <div className="h-80 overflow-hidden relative">
-                  <img 
-                    src={service.image}
-                    alt={service.imageAlt}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    style={{objectPosition: service.imagePosition || '50% 50%'}}
-                  />
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-md">
-                      {service.icon}
-                    </div>
-                  </div>
-                </div>
-                
-                <CardContent className="p-7">
-                  <div className="mb-5">
-                    <h3 className="text-xl font-oswald font-normal tracking-wide mb-2" style={{color: '#11100f'}}>
-                      {service.title}
-                    </h3>
-                    <div className="flex items-center">
-                      <Clock className="w-4 h-4 mr-2" style={{color: '#6d761d'}} />
-                      <span className="text-sm font-montserrat font-medium" style={{color: '#6d761d'}}>
-                        {service.duration}
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <p className="text-sm font-source-sans mb-6 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    {service.description}
-                  </p>
-                  
-                  <div className="space-y-3">
-                    {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-start">
-                        <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></div>
-                        <span className="text-sm font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                          {feature}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
 
         {/* Call to Action Section */}
         <div className="mt-20">
