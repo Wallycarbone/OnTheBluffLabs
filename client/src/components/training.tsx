@@ -468,7 +468,7 @@ export default function Training() {
                     AKC Canine Good Citizen Examination:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    The program culminates with this nationally recognized behavior milestone, proof that your puppy meets the highest standards of obedience and composure.
+                    The program culminates with this training milestone, providing the chance for puppies to showcase their training and composure in a nationally recognized evaluation
                   </p>
                 </div>
               </div>
