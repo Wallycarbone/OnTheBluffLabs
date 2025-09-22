@@ -68,13 +68,12 @@ export default function Training() {
 
         {/* Training Philosophy Essay */}
         <div className="mb-20">
-          <div className="max-w-4xl mx-auto">
-            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-center" style={{color: '#4b4b4b'}}>
-              In 2019, Swedish researchers found that dogs mirror their owners' stress levels with remarkable accuracy, highlighting the profound impact stress can have on both canine welfare and family life. <strong>Puppies exposed to stress during their critical developmental period can become trapped in a cycle where anxiety feeds their owner's frustration, which in turn heightens the dog's stress. Professionally trained puppies break this cycle, allowing families to start their relationship with calm, cooperative bonds.</strong>
-            </p>
-            
-            <p className="font-source-sans text-lg leading-[1.6] mb-6 text-center" style={{color: '#4b4b4b'}}>
-              The training process that unfolds at On the Bluff represents a systematic approach to canine development that addresses the full spectrum of skills necessary for modern family life. From the earliest stages, where puppies master fundamental cues like sit, down, and recall, through advanced protocols that include sustained stays, public socialization, and complex behavioral chains, each dog progresses through carefully structured phases designed to build both competence and confidence.
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-8 tracking-wide" style={{color: '#11100f'}}>
+              Early Training, Lasting Belonging
+            </h2>
+            <p className="font-source-sans text-lg leading-[1.6] text-center" style={{color: '#4b4b4b'}}>
+              From the very first weeks, our puppies are guided through experiences that shape not only how they behave, but how they feel about the world. Each step—whether it's resting quietly in the kitchen, riding in the car, or learning to sit—builds confidence and trust. The goal isn't just obedience. It's a foundation for belonging: a puppy who moves easily through family life, secure in themselves, and ready to grow into a steady lifelong companion.
             </p>
           </div>
         </div>
