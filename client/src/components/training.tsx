@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
-import trainingHeroImage from '@assets/Untitled design - 2025-09-22T124616.107_1758559586394.png';
+import trainingHeroImage from '@assets/Untitled design - 2025-09-22T124952.702_1758559798426.png';
 
 export default function Training() {
 
@@ -44,7 +44,7 @@ export default function Training() {
     <div>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative h-96 flex items-center justify-center"
+        className="relative h-96 flex items-center justify-end"
         style={{
           backgroundImage: `url(${trainingHeroImage})`,
           backgroundSize: 'cover',
@@ -53,7 +53,7 @@ export default function Training() {
         }}
       >
         <div className="absolute inset-0 bg-black/30"></div>
-        <div className="relative z-10 text-center text-white">
+        <div className="relative z-10 text-right text-white pr-8 md:pr-16">
           <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
             TRAINING
           </h1>
