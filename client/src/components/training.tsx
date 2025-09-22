@@ -287,6 +287,14 @@ export default function Training() {
                     Longer car rides and varied destinations help puppies understand that travel is part of daily life, not a disruption.
                   </p>
                 </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Calm / Settle:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    Puppies practice returning to balance after bursts of excitement, reinforcing self-regulation as a habit.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -334,14 +342,6 @@ export default function Training() {
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
                     Fetch evolves into a structured retrieve, with puppies returning items consistently and releasing them on cue.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    Calm / Settle:
-                  </h4>
-                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Puppies practice returning to balance after bursts of excitement, reinforcing self-regulation as a habit.
                   </p>
                 </div>
               </div>
