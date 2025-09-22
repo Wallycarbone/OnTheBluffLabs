@@ -91,7 +91,7 @@ export default function Training() {
                     Puppy manners are essential, and the Bachelor's Degree is where life as a family companion begins. Training starts at 7 weeks of age and extends through nearly 200 hours of structured guidance and socialization.
                   </p>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Graduates of this program leave with more than the basics. They recognize beginning commands through both verbal and hand cues. They are comfortable in the kitchen, at the dinner table, and in the quiet hum of family evenings. The Bachelor's Degree lays a foundation strong enough for any home to continue building upon.
+                    Graduates of this program leave with more than the basics. They recognize beginning cues through both verbal and hand cues. They are comfortable in the kitchen, at the dinner table, and in the quiet hum of family evenings. The Bachelor's Degree lays a foundation strong enough for any home to continue building upon.
                   </p>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
                     We provide the curriculum and ongoing support, but the real partnership begins when your puppy comes home. Families can expect to spend about 30 minutes a day reinforcing what has already been learned. For those willing to carry the lessons forward, this program builds the bridge—from our home, where your puppy was born, to yours.
