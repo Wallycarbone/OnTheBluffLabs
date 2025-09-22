@@ -366,7 +366,7 @@ export default function Training() {
                 The Doctorate Degree — $17,500
               </h3>
               <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                The Doctorate Degree is our most advanced offering, designed for families who want a puppy fully prepared for family life, public spaces, and the highest level of behavioral certification. Spanning more than 600 hours of training, it culminates in the AKC Canine Good Citizen Certification—the gold standard of canine manners, and a foundation for many service dogs.
+                The Doctorate Degree is our most advanced offering, designed for families who want a puppy fully prepared for family life, public spaces, and the highest level of behavioral certification. Spanning more than 600 hours of training, it culminates in preparation for the AKC Canine Good Citizen examination —the gold standard of canine manners, and a foundation for many service dogs.
               </p>
               <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
                 This is the program where early lessons are not just reinforced but perfected. House training is completed, obedience is reliable in distracting environments, and puppies learn to handle grooming, equipment, and household chaos with grace. The Doctorate is the point at which a puppy doesn't simply know how to behave—they know how to adapt.
