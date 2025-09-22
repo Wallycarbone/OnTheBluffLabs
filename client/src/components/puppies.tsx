@@ -76,11 +76,11 @@ export default function Puppies() {
     { src: previousWhiteWithToys, name: "White Labrador puppy with toys" },
     { src: previousFoxRedPuppy, name: "Fox red Labrador puppy with unique coloring" },
     { src: blackPinkDiamond, name: "Light yellow Labrador puppy in natural outdoor setting" },
+    { src: darkChocolateWithToy, name: "Dark chocolate Labrador puppy with polka dot plush toy" },
     { src: blackPinkDiamond2, name: "Light yellow Labrador puppy sitting in grass with sweet expression" },
     { src: foxRedWithBalls, name: "Fox red Labrador puppy playing with colorful balls in grass" },
     { src: foxRedSitting, name: "Fox red Labrador puppy with beautiful golden coat sitting in natural setting" },
     { src: lightYellowWithBall, name: "Light yellow Labrador puppy sitting with red spiky ball toy" },
-    { src: darkChocolateWithToy, name: "Dark chocolate Labrador puppy with polka dot plush toy" },
     { src: lightYellowWithToys, name: "Light yellow Labrador puppy with collection of colorful toys" },
     { src: chocolateWithRopes, name: "Chocolate Labrador puppy relaxing with colorful rope toys in grass" },
     { src: chocolateStanding, name: "Chocolate Labrador puppy standing alert with tail up in natural grass setting" }
