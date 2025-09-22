@@ -9,7 +9,6 @@ import previousCooper from "@assets/Puppies 5x4 (2)_1755530661173.png";
 import previousShadow from "@assets/Puppies 5x4 (3)_1755534520644.png";
 import previousSunny from "@assets/Puppies 5x4 (4)_1755535459095.png";
 import previousChocolate1 from "@assets/Puppies 5x4 (5)_1755546201192.png";
-import previousChocolate2 from "@assets/Puppies 5x4 (5)_1755544596778.png";
 import previousYellowRope from "@assets/Puppies 5x4 (4 x 4 in) (12)_1755546531132.png";
 import previousBlackToy from "@assets/Puppies 5x4 (4 x 4 in) (11)_1755546531140.png";
 import previousChocolateToys from "@assets/Puppies 5x4 (4 x 4 in) (13)_1755546695617.png";
@@ -61,12 +60,11 @@ export default function Puppies() {
   
   const [, setLocation] = useLocation();
 
-  // 16 curated puppy photos showcasing full color spectrum
+  // 15 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
     { src: previousShadow, name: "Black Labrador puppy with alert stance" },
     { src: previousSunny, name: "Yellow Labrador puppy in natural pose" },
     { src: previousChocolate1, name: "Chocolate Labrador puppy with toy" },
-    { src: previousChocolate2, name: "Chocolate Labrador puppy with playful demeanor" },
     { src: previousYellowRope, name: "Yellow Labrador puppy with rope toy" },
     { src: previousBlackToy, name: "Black Labrador puppy with favorite toy" },
     { src: previousChocolateToys, name: "Chocolate Labrador puppy with colorful toys" },
