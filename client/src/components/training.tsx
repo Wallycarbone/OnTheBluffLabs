@@ -85,7 +85,7 @@ export default function Training() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-3xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
-                    Our Training Philosophy
+                    The Bachelor's Degree — $7,500
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
                     Our Labradors are bred for naturally intelligent, cooperative temperaments that provide an exceptional foundation for training. Our training center builds upon these inherent qualities using gentle methods that strengthen the natural bond between dog and family.
