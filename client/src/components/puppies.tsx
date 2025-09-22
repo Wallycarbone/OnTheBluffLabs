@@ -67,7 +67,7 @@ export default function Puppies() {
   
   const [, setLocation] = useLocation();
 
-  // 17 curated puppy photos showcasing full color spectrum
+  // 16 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
     { src: previousShadow, name: "Black Labrador puppy with alert stance" },
     { src: previousYellowRope, name: "Yellow Labrador puppy with rope toy" },
@@ -76,7 +76,6 @@ export default function Puppies() {
     { src: previousWhiteWithToys, name: "White Labrador puppy with toys" },
     { src: previousChocolateStanding, name: "Chocolate Labrador puppy standing proud" },
     { src: previousFoxRedPuppy, name: "Fox red Labrador puppy with unique coloring" },
-    { src: newWhiteStanding, name: "White Labrador puppy with confident stance" },
     { src: blackPinkDiamond, name: "Light yellow Labrador puppy in natural outdoor setting" },
     { src: blackPinkDiamond2, name: "Light yellow Labrador puppy sitting in grass with sweet expression" },
     { src: foxRedWithBalls, name: "Fox red Labrador puppy playing with colorful balls in grass" },
