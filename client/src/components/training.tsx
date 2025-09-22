@@ -200,6 +200,14 @@ export default function Training() {
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
+                    Come When Called:
+                  </h4>
+                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
+                    The beginning of a cue that spells freedom in nature.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
                     Calm / Settle:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
