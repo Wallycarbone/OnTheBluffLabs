@@ -48,11 +48,11 @@ export default function Training() {
         style={{
           backgroundImage: `url(${trainingHeroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center top -80px',
+          backgroundPosition: 'center top -95px',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.6))'}}></div>
+        <div className="absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.02), rgba(0,0,0,0.6))'}}></div>
         <div className="relative z-10 text-right text-white pr-8 md:pr-16">
           <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
             TRAINING
