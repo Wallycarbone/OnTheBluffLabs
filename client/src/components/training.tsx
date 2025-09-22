@@ -265,42 +265,26 @@ export default function Training() {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Lifestyle Training 1]:
+                    Public Outings:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Puppies are carefully introduced to busier spaces—parks, sidewalks, neighborhood shops. They experience new sounds and faces and learn to stay composed.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Lifestyle Training 2]:
+                    Household Etiquette:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Mealtimes, guest arrivals, and evenings at home become practice grounds for patience and self-restraint. Puppies learn to settle quietly rather than compete for attention.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Lifestyle Training 3]:
+                    Extended Travel Readiness:
                   </h4>
                   <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Lifestyle Training 4]:
-                  </h4>
-                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-source-sans font-semibold mb-2" style={{color: '#11100f'}}>
-                    [Master's Lifestyle Training 5]:
-                  </h4>
-                  <p className="text-base font-source-sans leading-relaxed" style={{color: '#4b4b4b'}}>
-                    [Content to be customized]
+                    Longer car rides and varied destinations help puppies understand that travel is part of daily life, not a disruption.
                   </p>
                 </div>
               </div>
