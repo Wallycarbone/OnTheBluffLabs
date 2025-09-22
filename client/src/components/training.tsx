@@ -478,7 +478,7 @@ export default function Training() {
           {/* Outcome Statement */}
           <div className="mt-12 text-center">
             <p className="text-lg font-source-sans font-semibold" style={{color: '#11100f'}}>
-              <span className="text-amber-600 font-bold">Outcome:</span> [PhD program outcome to be customized]
+              <span className="text-amber-600 font-bold">Outcome:</span> A polished, confident graduate prepared not just for your home, but for the world. These puppies enter family life ready for anything—public outings, gatherings, travel, or simply quiet evenings at your side. The hundreds of hours invested here yield years of ease and joy, backed by certification that proves your companion's reliability.
             </p>
           </div>
         </div>
