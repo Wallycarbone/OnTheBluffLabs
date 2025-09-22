@@ -506,10 +506,10 @@ export default function Training() {
           <Card className="border-2 rounded-2xl shadow-xl overflow-hidden" style={{background: 'linear-gradient(135deg, #7a8020 0%, #6d761d 50%, #5a5f18 100%)', borderColor: '#7a8020'}}>
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-oswald font-normal mb-6 tracking-wide text-white">
-                Start Your Puppy's Training Journey
+                Growing Into Family
               </h2>
               <p className="font-source-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto text-white">
-                Our comprehensive training programs are designed to bring out the best in your Labrador. From foundational skills to advanced behavioral development, we'll work with you to ensure your puppy becomes the confident, well-trained companion your family deserves.
+                From the Bachelor's first steps to the Doctorate's final polish, each program prepares your puppy not only to obey, but to belong. By the time your companion comes home, the early chapters have been written with care. The rest of the story—of joy, loyalty, and love—will unfold in your hands.
               </p>
               <div className="flex justify-center">
                 <Button 
