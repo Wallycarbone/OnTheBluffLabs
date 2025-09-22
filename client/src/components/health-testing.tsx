@@ -133,7 +133,7 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
           </h3>
 
           {/* Carousel Gallery */}
-          <div className="relative max-w-4xl mx-auto mb-12">
+          <div className="relative w-full mb-12">
             <div className="overflow-hidden rounded-2xl shadow-lg" ref={emblaRef}>
               <div className="flex">
                 {carouselImages.map((image, index) => (
