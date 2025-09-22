@@ -10,13 +10,20 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { insertApplicationSchema, type InsertApplication } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
+import { apiRequest, queryClient } from "@/lib/queryClient";
+import { z } from "zod";
+
+// Enhanced schema that enforces agreements to be true
+const enhancedApplicationSchema = insertApplicationSchema.extend({
+  homeVisitAgreed: z.literal(true, { errorMap: () => ({ message: "You must agree to a home visit" }) }),
+  contractAgreed: z.literal(true, { errorMap: () => ({ message: "You must agree to the puppy contract" }) }),
+});
 
 export default function PuppyApplication() {
   const { toast } = useToast();
 
   const form = useForm<InsertApplication>({
-    resolver: zodResolver(insertApplicationSchema),
+    resolver: zodResolver(enhancedApplicationSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -64,6 +71,9 @@ export default function PuppyApplication() {
       return await apiRequest("/api/applications", "POST", data);
     },
     onSuccess: () => {
+      // Invalidate applications cache for admin views
+      queryClient.invalidateQueries({ queryKey: ["/api/applications"] });
+      
       toast({
         title: "Application Submitted Successfully!",
         description: "We've received your application and will be in touch soon.",
