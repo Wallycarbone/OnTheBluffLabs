@@ -27,6 +27,7 @@ import lightYellowWithBall from "@assets/Y30A4742awillixatticusshamrock (1)_1758
 import darkChocolateWithToy from "@assets/Y30A4863aureliagrizzlymrfishy_1758550232555.jpg";
 import lightYellowWithToys from "@assets/Y30A4990estrahuckmrxmasplaid (1)_1758550270871.jpg";
 import chocolateWithRopes from "@assets/Y30A1358AlohaHoldenmrleafmotif (1)_1758550407159.jpg";
+import chocolateStanding from "@assets/Y30A1431AlohaHoldenmrstarsandstripes (3)_1758550438488.jpg";
 
 // Core dog images
 import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
@@ -66,7 +67,7 @@ export default function Puppies() {
   
   const [, setLocation] = useLocation();
 
-  // 17 curated puppy photos showcasing full color spectrum
+  // 18 curated puppy photos showcasing full color spectrum
   const generationsGalleryImages = [
     { src: previousShadow, name: "Black Labrador puppy with alert stance" },
     { src: previousYellowRope, name: "Yellow Labrador puppy with rope toy" },
@@ -84,7 +85,8 @@ export default function Puppies() {
     { src: lightYellowWithBall, name: "Light yellow Labrador puppy sitting with red spiky ball toy" },
     { src: darkChocolateWithToy, name: "Dark chocolate Labrador puppy with polka dot plush toy" },
     { src: lightYellowWithToys, name: "Light yellow Labrador puppy with collection of colorful toys" },
-    { src: chocolateWithRopes, name: "Chocolate Labrador puppy relaxing with colorful rope toys in grass" }
+    { src: chocolateWithRopes, name: "Chocolate Labrador puppy relaxing with colorful rope toys in grass" },
+    { src: chocolateStanding, name: "Chocolate Labrador puppy standing alert with tail up in natural grass setting" }
   ];
 
   const openImagePopup = (image: {src: string, name: string}) => {
