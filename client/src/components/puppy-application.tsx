@@ -63,7 +63,7 @@ export default function PuppyApplication() {
           <p className="text-lg font-source-sans" style={{color: '#6d761d'}}>
             Questions about the application process? 
             <span className="block mt-2 text-warm-gray">
-              Contact us at <strong>info@ontheblufflabs.com</strong> or call <strong>(518) 537-6035</strong>
+              Contact us at <strong>info@ontheblufflabradors.com</strong> or call <strong>(518) 537-6035</strong>
             </span>
           </p>
         </div>
