@@ -22,9 +22,6 @@ const dogFoodOrderSchema = z.object({
   customerName: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(10, "Please enter a valid phone number"),
-  dogName: z.string().min(1, "Dog name is required"),
-  dogAge: z.string().min(1, "Dog age is required"),
-  dogWeight: z.string().min(1, "Dog weight is required"),
   foodType: z.string().min(1, "Please select a food type"),
   quantity: z.string().min(1, "Please specify quantity"),
   pickupDate: z.date({
@@ -72,9 +69,6 @@ export default function DogFoodPage() {
       customerName: "",
       email: "",
       phone: "",
-      dogName: "",
-      dogAge: "",
-      dogWeight: "",
       foodType: "",
       quantity: "1",
       pickupTime: "",
@@ -101,9 +95,6 @@ export default function DogFoodPage() {
         quantity: parseInt(data.quantity),
         totalAmount: product.price * parseInt(data.quantity),
         notes: `Pickup scheduled for ${format(data.pickupDate, "PPP")} at ${data.pickupTime}`,
-        dogName: data.dogName,
-        dogAge: data.dogAge,
-        dogWeight: data.dogWeight,
         pickupDate: format(data.pickupDate, "yyyy-MM-dd"),
         pickupTime: data.pickupTime,
       };
@@ -337,57 +328,6 @@ export default function DogFoodPage() {
                               <FormLabel>Phone Number</FormLabel>
                               <FormControl>
                                 <Input placeholder="(555) 123-4567" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                      </div>
-                    </div>
-
-                    <Separator />
-
-                    {/* Dog Information */}
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Dog Information</h3>
-                      
-                      <FormField
-                        control={form.control}
-                        name="dogName"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Dog's Name</FormLabel>
-                            <FormControl>
-                              <Input placeholder="Enter your dog's name" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <FormField
-                          control={form.control}
-                          name="dogAge"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>Age</FormLabel>
-                              <FormControl>
-                                <Input placeholder="e.g., 2 years, 8 months" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-
-                        <FormField
-                          control={form.control}
-                          name="dogWeight"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>Weight</FormLabel>
-                              <FormControl>
-                                <Input placeholder="e.g., 65 lbs" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
