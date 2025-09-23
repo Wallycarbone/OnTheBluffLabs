@@ -425,42 +425,70 @@ export default function Puppies() {
                     </div>
 
                     {/* Info in Middle */}
-                    <div>
-                      <div className="flex items-center gap-3 mb-4">
-                        <h3 className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+                    <div className="text-center md:text-left space-y-6">
+                      {/* Header Section */}
+                      <div className="space-y-3">
+                        <h3 className="text-3xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
                           {litter.name}
                         </h3>
-                        <span 
-                          className="px-3 py-1 rounded-full text-xs font-medium"
-                          style={{
-                            backgroundColor: (() => {
-                              const status = getLitterStatus(litter.birthDate, litter.status);
-                              if (status === 'Trained') return '#4a5c0a'; // Darker olive green for trained
-                              if (status === 'Ready') return '#6d761d'; // Regular olive green for ready
-                              return '#f59e0b'; // Orange for other statuses
-                            })(),
-                            color: '#fefefe'
-                          }}
-                        >
-                          {getLitterStatus(litter.birthDate, litter.status)}
-                        </span>
-                      </div>
-                      
-                      <div className="space-y-3 mb-6">
-                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
-                          <strong>Born:</strong> {litter.birthDate}
-                        </p>
-                        <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
-                          <strong>Age:</strong> {calculateAge(litter.birthDate)}
-                        </p>
+                        <div className="flex justify-center md:justify-start">
+                          <span 
+                            className="px-4 py-2 rounded-full text-sm font-medium shadow-md"
+                            style={{
+                              backgroundColor: (() => {
+                                const status = getLitterStatus(litter.birthDate, litter.status);
+                                if (status === 'Trained') return '#4a5c0a'; // Darker olive green for trained
+                                if (status === 'Ready') return '#6d761d'; // Regular olive green for ready
+                                return '#f59e0b'; // Orange for other statuses
+                              })(),
+                              color: '#fefefe'
+                            }}
+                          >
+                            {getLitterStatus(litter.birthDate, litter.status)}
+                          </span>
+                        </div>
                       </div>
 
-                      <div className="flex flex-wrap gap-3">
+                      {/* Litter Details */}
+                      <div className="bg-gray-50 rounded-xl p-4 space-y-3">
+                        <div className="grid grid-cols-1 gap-3">
+                          <div className="flex justify-between items-center">
+                            <span className="text-sm font-medium" style={{color: '#6d761d'}}>Birth Date:</span>
+                            <span className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>
+                              {litter.birthDate}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-sm font-medium" style={{color: '#6d761d'}}>Current Age:</span>
+                            <span className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>
+                              {calculateAge(litter.birthDate)}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-sm font-medium" style={{color: '#6d761d'}}>Puppies Count:</span>
+                            <span className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>
+                              {litter.puppiesCount}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Available Info */}
+                      {litter.available && (
+                        <div className="text-center md:text-left">
+                          <p className="text-lg font-source-sans font-medium" style={{color: '#6d761d'}}>
+                            Available: {litter.available}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Action Buttons */}
+                      <div className="flex flex-col sm:flex-row gap-3 pt-2">
                         <Button 
                           onClick={() => openPedigreePopup(litter)}
-                          className="font-montserrat font-medium text-sm h-auto py-2 px-4"
+                          className="font-montserrat font-medium text-sm h-auto py-3 px-6 rounded-xl flex-1 shadow-md hover:shadow-lg transition-all duration-300"
                           style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
                           onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
                         >
                           View Pedigree
@@ -468,8 +496,16 @@ export default function Puppies() {
                         <Link href="/puppy-application">
                           <Button 
                             variant="outline"
-                            className="font-montserrat font-medium text-sm h-auto py-2 px-4"
-                            style={{borderColor: '#6d761d', color: '#6d761d'}}
+                            className="font-montserrat font-medium text-sm h-auto py-3 px-6 rounded-xl flex-1 shadow-md hover:shadow-lg transition-all duration-300"
+                            style={{borderColor: '#6d761d', color: '#6d761d', borderWidth: '2px'}}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = '#6d761d';
+                              e.currentTarget.style.color = '#fefefe';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = 'transparent';
+                              e.currentTarget.style.color = '#6d761d';
+                            }}
                           >
                             Contact About This Litter
                           </Button>
