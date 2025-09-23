@@ -404,7 +404,7 @@ export default function Puppies() {
             {selectLitters.map((litter, index) => (
               <Card key={index} className="overflow-hidden">
                 <CardContent className="p-8">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                     {/* First Photo */}
                     <div className="flex justify-center">
                       {litter.images ? (
@@ -425,7 +425,7 @@ export default function Puppies() {
                     </div>
 
                     {/* Info in Middle */}
-                    <div className="text-center md:text-left space-y-6">
+                    <div className="text-center md:text-left space-y-6 px-2">
                       {/* Header Section */}
                       <div className="space-y-3">
                         <h3 className="text-3xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
@@ -483,20 +483,20 @@ export default function Puppies() {
                       )}
 
                       {/* Action Buttons */}
-                      <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                      <div className="flex flex-col gap-3 pt-2 max-w-sm mx-auto md:mx-0">
                         <Button 
                           onClick={() => openPedigreePopup(litter)}
-                          className="font-montserrat font-medium text-sm h-auto py-3 px-6 rounded-xl flex-1 shadow-md hover:shadow-lg transition-all duration-300"
+                          className="font-montserrat font-medium text-sm h-auto py-3 px-4 rounded-xl w-full shadow-md hover:shadow-lg transition-all duration-300"
                           style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                           onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
                           onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
                         >
                           View Pedigree
                         </Button>
-                        <Link href="/puppy-application">
+                        <Link href="/puppy-application" className="w-full">
                           <Button 
                             variant="outline"
-                            className="font-montserrat font-medium text-sm h-auto py-3 px-6 rounded-xl flex-1 shadow-md hover:shadow-lg transition-all duration-300"
+                            className="font-montserrat font-medium text-sm h-auto py-3 px-4 rounded-xl w-full shadow-md hover:shadow-lg transition-all duration-300"
                             style={{borderColor: '#6d761d', color: '#6d761d', borderWidth: '2px'}}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.backgroundColor = '#6d761d';
