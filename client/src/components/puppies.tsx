@@ -162,6 +162,20 @@ export default function Puppies() {
       }
     }
     
+    // Sort selectLitters from youngest to oldest (newest birth date first)
+    selectLitters.sort((a, b) => {
+      const dateA = new Date(a.birthDate);
+      const dateB = new Date(b.birthDate);
+      return dateB.getTime() - dateA.getTime(); // Newest first
+    });
+    
+    // Sort upcomingLitters from youngest to oldest (latest due date first)
+    upcomingLitters.sort((a, b) => {
+      const dateA = new Date(a.birthDate);
+      const dateB = new Date(b.birthDate);
+      return dateB.getTime() - dateA.getTime(); // Latest due date first
+    });
+    
     return { selectLitters, upcomingLitters };
   };
 
