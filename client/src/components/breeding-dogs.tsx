@@ -1271,7 +1271,7 @@ export default function BreedingDogs() {
         <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full flex justify-end">
           <div className="max-w-xl">
             <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-6 tracking-wide leading-tight text-white drop-shadow-2xl">
-              HEIRS OF <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
+              HEIRS OF <span style={{color: '#a4b548', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
             </h1>
             <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg">
               Meet Our Labradors
