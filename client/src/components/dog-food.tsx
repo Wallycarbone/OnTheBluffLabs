@@ -534,9 +534,13 @@ export default function DogFoodPage() {
                                 </FormControl>
                                 <SelectContent>
                                   <SelectItem value="12:00 PM">12:00 PM</SelectItem>
+                                  <SelectItem value="12:30 PM">12:30 PM</SelectItem>
                                   <SelectItem value="1:00 PM">1:00 PM</SelectItem>
+                                  <SelectItem value="1:30 PM">1:30 PM</SelectItem>
                                   <SelectItem value="2:00 PM">2:00 PM</SelectItem>
+                                  <SelectItem value="2:30 PM">2:30 PM</SelectItem>
                                   <SelectItem value="3:00 PM">3:00 PM</SelectItem>
+                                  <SelectItem value="3:30 PM">3:30 PM</SelectItem>
                                   <SelectItem value="4:00 PM">4:00 PM</SelectItem>
                                 </SelectContent>
                               </Select>
