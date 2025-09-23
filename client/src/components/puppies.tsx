@@ -427,15 +427,15 @@ export default function Puppies() {
                     {/* Info in Middle */}
                     <div className="text-center md:text-left px-2 h-full flex flex-col justify-between">
                       {/* Top Section - Header and Details */}
-                      <div className="space-y-4">
+                      <div className="space-y-3">
                         {/* Header Section */}
-                        <div className="space-y-3">
-                          <h3 className="text-3xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
+                        <div className="space-y-2">
+                          <h3 className="text-2xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
                             {litter.name}
                           </h3>
                           <div className="flex justify-center md:justify-start">
                             <span 
-                              className="px-4 py-2 rounded-full text-sm font-medium shadow-md"
+                              className="px-3 py-1 rounded-full text-xs font-medium shadow-sm"
                               style={{
                                 backgroundColor: (() => {
                                   const status = getLitterStatus(litter.birthDate, litter.status);
@@ -452,17 +452,17 @@ export default function Puppies() {
                         </div>
 
                         {/* Litter Details */}
-                        <div className="bg-gray-50 rounded-xl p-5 space-y-4">
-                          <div className="grid grid-cols-1 gap-4">
+                        <div className="bg-gray-50 rounded-lg p-3 space-y-2">
+                          <div className="grid grid-cols-1 gap-2">
                             <div className="flex justify-between items-center">
-                              <span className="text-base font-medium" style={{color: '#6d761d'}}>Birth Date:</span>
-                              <span className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>
+                              <span className="text-sm font-medium" style={{color: '#6d761d'}}>Birth Date:</span>
+                              <span className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>
                                 {litter.birthDate}
                               </span>
                             </div>
                             <div className="flex justify-between items-center">
-                              <span className="text-base font-medium" style={{color: '#6d761d'}}>Current Age:</span>
-                              <span className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>
+                              <span className="text-sm font-medium" style={{color: '#6d761d'}}>Current Age:</span>
+                              <span className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>
                                 {calculateAge(litter.birthDate)}
                               </span>
                             </div>
@@ -472,7 +472,7 @@ export default function Puppies() {
                         {/* Available Info */}
                         {litter.available && (
                           <div className="text-center md:text-left">
-                            <p className="text-lg font-source-sans font-medium" style={{color: '#6d761d'}}>
+                            <p className="text-sm font-source-sans font-medium" style={{color: '#6d761d'}}>
                               Available: {litter.available}
                             </p>
                           </div>
@@ -480,10 +480,10 @@ export default function Puppies() {
                       </div>
 
                       {/* Bottom Section - Action Buttons */}
-                      <div className="flex flex-col gap-3 max-w-sm mx-auto md:mx-0 mt-4">
+                      <div className="flex flex-col gap-2 max-w-sm mx-auto md:mx-0">
                         <Button 
                           onClick={() => openPedigreePopup(litter)}
-                          className="font-montserrat font-medium text-sm h-auto py-3 px-4 rounded-xl w-full shadow-md hover:shadow-lg transition-all duration-300"
+                          className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
                           style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                           onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
                           onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
@@ -493,8 +493,8 @@ export default function Puppies() {
                         <Link href="/puppy-application" className="w-full">
                           <Button 
                             variant="outline"
-                            className="font-montserrat font-medium text-sm h-auto py-3 px-4 rounded-xl w-full shadow-md hover:shadow-lg transition-all duration-300"
-                            style={{borderColor: '#6d761d', color: '#6d761d', borderWidth: '2px'}}
+                            className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
+                            style={{borderColor: '#6d761d', color: '#6d761d', borderWidth: '1px'}}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.backgroundColor = '#6d761d';
                               e.currentTarget.style.color = '#fefefe';
