@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 import trainingHeroImage from '@assets/Untitled design - 2025-09-22T163745.168_1758573553127.png';
+import doctorateImage from '@assets/Untitled design - 2025-09-23T093300.325_1758634393210.png';
 
 export default function Training() {
 
@@ -374,7 +375,7 @@ export default function Training() {
             </div>
             <div className="text-center">
               <img 
-                src="@assets/Untitled design - 2025-09-23T093300.325_1758634393210.png"
+                src={doctorateImage}
                 alt="Chocolate Labrador puppy sitting confidently on green grass, demonstrating the poised temperament achieved through doctorate-level training"
                 className="w-full h-96 object-cover rounded-xl shadow-lg"
                 style={{objectPosition: '50% 60%'}}
