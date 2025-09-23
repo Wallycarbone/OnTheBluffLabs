@@ -1256,7 +1256,7 @@ export default function BreedingDogs() {
   return (
     <>
       {/* Hero Section with Labrador Background */}
-      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <img 
           src={heroLabradorImage}
           alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
