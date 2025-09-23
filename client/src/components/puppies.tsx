@@ -479,30 +479,14 @@ export default function Puppies() {
                         )}
                       </div>
 
-                      {/* Bottom Section - Action Buttons */}
-                      <div className="flex flex-col gap-2 max-w-sm mx-auto md:mx-0">
-                        <Button 
-                          onClick={() => openPedigreePopup(litter)}
-                          className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
-                          style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
-                          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                        >
-                          View Pedigree
-                        </Button>
+                      {/* Bottom Section - Action Button */}
+                      <div className="max-w-sm mx-auto md:mx-0">
                         <Link href="/puppy-application" className="w-full">
                           <Button 
-                            variant="outline"
                             className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
-                            style={{borderColor: '#6d761d', color: '#6d761d', borderWidth: '1px'}}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = '#6d761d';
-                              e.currentTarget.style.color = '#fefefe';
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = 'transparent';
-                              e.currentTarget.style.color = '#6d761d';
-                            }}
+                            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
                           >
                             Contact About This Litter
                           </Button>
