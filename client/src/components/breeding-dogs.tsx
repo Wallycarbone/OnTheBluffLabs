@@ -1267,59 +1267,15 @@ export default function BreedingDogs() {
           }}
           onLoad={() => console.log('Our Dogs hero image loaded successfully:', heroLabradorImage)}
         />
-        {/* Gradient Overlay - Left to Right */}
-        <div 
-          className="absolute inset-0 z-10"
-          style={{
-            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)'
-          }}
-        ></div>
-        {/* Content Overlay - Left Side */}
-        <div className="relative z-20 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-            <div className="text-left max-w-xl lg:max-w-2xl">
-              {/* Trust Badge */}
-              <div className="flex items-center justify-start mb-8">
-                <div className="flex items-center rounded-full px-6 py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
-                  <Star className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
-                  <span className="font-source-sans font-semibold text-lg" style={{color: '#11100f'}}>
-                    Champion Lines • OFA Clear • Genetic Panels
-                  </span>
-                </div>
-              </div>
-
-              {/* Main Title */}
-              <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
-                MEET OUR<br />
-                <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>BREEDING DOGS</span>
-              </h1>
-
-              {/* Value Proposition */}
-              <p className="text-2xl md:text-3xl mb-8 font-source-sans font-light leading-relaxed text-white drop-shadow-lg">
-                Exceptional Pedigrees, Perfect Temperaments, Outstanding Health
-              </p>
-
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 justify-start">
-                <Button 
-                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
-                  style={{backgroundColor: 'rgba(109, 118, 29, 0.95)', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(100, 79, 6, 0.95)'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(109, 118, 29, 0.95)'}
-                >
-                  View Our Sires
-                </Button>
-                <Button 
-                  variant="outline"
-                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
-                  style={{borderColor: '#fefefe', color: '#fefefe', backgroundColor: 'rgba(255, 255, 255, 0.1)'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
-                >
-                  View Our Dames
-                </Button>
-              </div>
-            </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/60" style={{background: 'linear-gradient(to right, transparent 80%, rgba(0,0,0,0.6) 100%)'}}></div>
+        <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
+          <div className="max-w-xl">
+            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
+              HEIRS OF EXCELLENCE
+            </h1>
+            <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg" style={{color: '#fefefe'}}>
+              Meet Our Labradors
+            </h2>
           </div>
         </div>
       </section>
