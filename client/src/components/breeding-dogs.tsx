@@ -1267,13 +1267,13 @@ export default function BreedingDogs() {
           }}
           onLoad={() => console.log('Our Dogs hero image loaded successfully:', heroLabradorImage)}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/60" style={{background: 'linear-gradient(to right, transparent 80%, rgba(0,0,0,0.6) 100%)'}}></div>
+        <div className="absolute inset-0 z-10" style={{background: 'linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 45%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 100%)'}}></div>
         <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
           <div className="max-w-xl">
-            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
-              HEIRS OF EXCELLENCE
+            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-6 tracking-wide leading-tight text-white drop-shadow-2xl">
+              HEIRS OF <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
             </h1>
-            <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg" style={{color: '#fefefe'}}>
+            <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg">
               Meet Our Labradors
             </h2>
           </div>
