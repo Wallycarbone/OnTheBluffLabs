@@ -3,6 +3,7 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import ScrollToTop from "@/components/ScrollToTop";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 
@@ -22,8 +23,10 @@ import FileEditor from "@/pages/file-editor";
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} />
 
       <Route path="/puppies" component={Puppies} />
       <Route path="/puppy-application" component={PuppyApplication} />
@@ -39,6 +42,7 @@ function Router() {
       <Route path="/admin/files" component={FileEditor} />
       <Route component={NotFound} />
     </Switch>
+    </>
   );
 }
 
