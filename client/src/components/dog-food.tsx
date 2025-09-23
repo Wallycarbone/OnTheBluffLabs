@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_1758635261590.png';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -140,20 +141,39 @@ export default function DogFoodPage() {
   const selectedProductDetails = foodProducts.find(p => p.id === selectedProduct);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-50 to-stone-100 py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
+    <div className="min-h-screen">
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative h-96 flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${dogFoodHeroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)'}}></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
             Premium Fresh Dog Food
           </h1>
-          <p className="text-xl text-stone-700 max-w-3xl mx-auto font-source-sans leading-relaxed">
-            We feed our dogs fresh food made up of high-quality proteins, fresh vegetables, 
-            and essential supplements. Fresh feeding preserves natural enzymes, provides optimal nutrition, 
-            and supports the digestive health that has kept our Labradors thriving for over 50 years. 
-            Experience the difference that species-appropriate fresh nutrition can make for your Labrador.
+          <p className="text-xl md:text-2xl font-source-sans font-light max-w-3xl mx-auto">
+            Nourishing Labradors with Species-Appropriate Nutrition for Over 50 Years
           </p>
         </div>
+      </section>
+
+      <div className="bg-gradient-to-b from-stone-50 to-stone-100 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Introduction Section */}
+          <div className="text-center mb-12">
+            <p className="text-xl text-stone-700 max-w-3xl mx-auto font-source-sans leading-relaxed">
+              We feed our dogs fresh food made up of high-quality proteins, fresh vegetables, 
+              and essential supplements. Fresh feeding preserves natural enzymes, provides optimal nutrition, 
+              and supports the digestive health that has kept our Labradors thriving for over 50 years. 
+              Experience the difference that species-appropriate fresh nutrition can make for your Labrador.
+            </p>
+          </div>
 
         {/* Fresh Feeding Essay Section */}
         <div className="max-w-5xl mx-auto mb-20">
@@ -544,6 +564,7 @@ export default function DogFoodPage() {
             </Card>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
