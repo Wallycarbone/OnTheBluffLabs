@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 import trainingHeroImage from '@assets/Untitled design - 2025-09-22T163745.168_1758573553127.png';
 import doctorateImage from '@assets/Untitled design - 2025-09-23T093300.325_1758634393210.png';
@@ -101,12 +102,23 @@ export default function Training() {
               </p>
             </div>
             <div className="text-center">
-              <img 
-                src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
-                alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
-                className="w-full h-96 object-cover rounded-xl shadow-lg"
-                style={{objectPosition: '50% 35%'}}
-              />
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <AspectRatio ratio={5/4}>
+                  {/* Blurred background fill */}
+                  <img 
+                    src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
+                  />
+                  {/* Main image with preserved content */}
+                  <img 
+                    src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
+                    alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
+                    className="absolute inset-0 z-10 w-full h-full object-contain"
+                  />
+                </AspectRatio>
+              </div>
             </div>
           </div>
           
@@ -247,12 +259,23 @@ export default function Training() {
               </p>
             </div>
             <div className="text-center">
-              <img 
-                src="/attached_assets/Puppies 5x4 (4)_1755535459095.png"
-                alt="Young golden Labrador puppy outdoors demonstrating confident stance and public socialization readiness"
-                className="w-full h-96 object-cover rounded-xl shadow-lg"
-                style={{objectPosition: '50% 50%'}}
-              />
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <AspectRatio ratio={5/4}>
+                  {/* Blurred background fill */}
+                  <img 
+                    src="/attached_assets/Puppies 5x4 (4)_1755535459095.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
+                  />
+                  {/* Main image with preserved content */}
+                  <img 
+                    src="/attached_assets/Puppies 5x4 (4)_1755535459095.png"
+                    alt="Young golden Labrador puppy outdoors demonstrating confident stance and public socialization readiness"
+                    className="absolute inset-0 z-10 w-full h-full object-contain"
+                  />
+                </AspectRatio>
+              </div>
             </div>
           </div>
           
@@ -374,12 +397,23 @@ export default function Training() {
               </p>
             </div>
             <div className="text-center">
-              <img 
-                src={doctorateImage}
-                alt="Chocolate Labrador puppy sitting confidently on green grass, demonstrating the poised temperament achieved through doctorate-level training"
-                className="w-full h-96 object-cover rounded-xl shadow-lg"
-                style={{objectPosition: '50% 60%'}}
-              />
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <AspectRatio ratio={5/4}>
+                  {/* Blurred background fill */}
+                  <img 
+                    src={doctorateImage}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
+                  />
+                  {/* Main image with preserved content */}
+                  <img 
+                    src={doctorateImage}
+                    alt="Chocolate Labrador puppy sitting confidently on green grass, demonstrating the poised temperament achieved through doctorate-level training"
+                    className="absolute inset-0 z-10 w-full h-full object-contain"
+                  />
+                </AspectRatio>
+              </div>
             </div>
           </div>
           
