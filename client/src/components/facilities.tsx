@@ -64,7 +64,7 @@ export default function Team() {
       role: "Puppy Trainer",
       description: "Julie is a bachelor's candidate in SUNY Cobleskill's Canine Training and Management program, and she helps train our puppies. Her formal education in canine behavior and training methods enhances our puppy development programs.",
       highlight: "Guardian to On The Bluff's Penny",
-      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png",
+      image: "/attached_assets/Untitled design - 2025-09-23T102331.302_1758637444506.png",
     },
     {
       name: "Drew Richards",
