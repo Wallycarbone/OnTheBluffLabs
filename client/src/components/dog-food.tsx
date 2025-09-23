@@ -152,7 +152,7 @@ export default function DogFoodPage() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)'}}></div>
+        <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 100%)'}}></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
             Premium Fresh Dog Food
