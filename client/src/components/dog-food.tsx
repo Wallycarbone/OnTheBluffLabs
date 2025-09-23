@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useFieldArray } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_1758635261590.png';
@@ -15,15 +15,19 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useToast } from "@/hooks/use-toast";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, Plus, Trash2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+const orderItemSchema = z.object({
+  foodType: z.string().min(1, "Please select a food type"),
+  quantity: z.string().min(1, "Please specify quantity"),
+});
 
 const dogFoodOrderSchema = z.object({
   customerName: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(10, "Please enter a valid phone number"),
-  foodType: z.string().min(1, "Please select a food type"),
-  quantity: z.string().min(1, "Please specify quantity"),
+  items: z.array(orderItemSchema).min(1, "Please add at least one item"),
   pickupDate: z.date({
     required_error: "Please select a pickup date",
   }),
@@ -69,19 +73,36 @@ export default function DogFoodPage() {
       customerName: "",
       email: "",
       phone: "",
-      foodType: "",
-      quantity: "1",
+      items: [{ foodType: "", quantity: "1" }],
       pickupTime: "",
     },
   });
 
+  const { fields, append, remove } = useFieldArray({
+    control: form.control,
+    name: "items"
+  });
+
   const onSubmit = async (data: DogFoodOrderForm) => {
     try {
-      // Find the selected product details
-      const product = foodProducts.find(p => p.id === data.foodType);
-      if (!product) {
-        throw new Error("Product not found");
-      }
+      // Calculate total amount and prepare items
+      let totalAmount = 0;
+      const orderItems = data.items.map(item => {
+        const product = foodProducts.find(p => p.id === item.foodType);
+        if (!product) {
+          throw new Error(`Product not found: ${item.foodType}`);
+        }
+        const itemTotal = product.price * parseInt(item.quantity);
+        totalAmount += itemTotal;
+        
+        return {
+          productId: product.id,
+          productName: product.name,
+          productPrice: product.price,
+          quantity: parseInt(item.quantity),
+          itemTotal: itemTotal
+        };
+      });
 
       // Prepare the order data for the backend
       const orderData = {
@@ -89,11 +110,8 @@ export default function DogFoodPage() {
         email: data.email,
         phone: data.phone,
         address: "165 Northern Boulevard, Germantown NY (Pickup Only)",
-        productId: product.id,
-        productName: product.name,
-        productPrice: product.price,
-        quantity: parseInt(data.quantity),
-        totalAmount: product.price * parseInt(data.quantity),
+        items: orderItems,
+        totalAmount: totalAmount,
         notes: `Pickup scheduled for ${format(data.pickupDate, "PPP")} at ${data.pickupTime}`,
         pickupDate: format(data.pickupDate, "yyyy-MM-dd"),
         pickupTime: data.pickupTime,
@@ -130,6 +148,16 @@ export default function DogFoodPage() {
   };
 
   const selectedProductDetails = foodProducts.find(p => p.id === selectedProduct);
+  
+  const calculateTotal = () => {
+    return form.watch("items").reduce((total, item) => {
+      const product = foodProducts.find(p => p.id === item.foodType);
+      if (product && item.quantity) {
+        return total + (product.price * parseInt(item.quantity || "0"));
+      }
+      return total;
+    }, 0);
+  };
 
   return (
     <div className="min-h-screen">
@@ -215,7 +243,6 @@ export default function DogFoodPage() {
                   }`}
                   onClick={() => {
                     setSelectedProduct(product.id);
-                    form.setValue('foodType', product.id);
                   }}
                 >
                   <CardHeader>
@@ -340,52 +367,100 @@ export default function DogFoodPage() {
 
                     {/* Order Details */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Order Details</h3>
+                      <div className="flex justify-between items-center">
+                        <h3 className="text-lg font-oswald font-normal text-stone-800 tracking-wide">Order Items</h3>
+                        <Button
+                          type="button"
+                          variant="outline"
+                          size="sm"
+                          onClick={() => append({ foodType: "", quantity: "1" })}
+                          className="flex items-center gap-2"
+                        >
+                          <Plus className="h-4 w-4" />
+                          Add Item
+                        </Button>
+                      </div>
                       
-                      <FormField
-                        control={form.control}
-                        name="foodType"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Food Type</FormLabel>
-                            <Select 
-                              onValueChange={(value) => {
-                                field.onChange(value);
-                                setSelectedProduct(value);
-                              }} 
-                              defaultValue={field.value}
-                            >
-                              <FormControl>
-                                <SelectTrigger>
-                                  <SelectValue placeholder="Select a food type" />
-                                </SelectTrigger>
-                              </FormControl>
-                              <SelectContent>
-                                {foodProducts.map((product) => (
-                                  <SelectItem key={product.id} value={product.id}>
-                                    {product.name} - ${product.price}/{product.unit}
-                                  </SelectItem>
-                                ))}
-                              </SelectContent>
-                            </Select>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
+                      {fields.map((field, index) => (
+                        <Card key={field.id} className="p-4 bg-stone-50">
+                          <div className="space-y-4">
+                            <div className="flex justify-between items-center">
+                              <h4 className="font-medium text-stone-700">Item {index + 1}</h4>
+                              {fields.length > 1 && (
+                                <Button
+                                  type="button"
+                                  variant="ghost"
+                                  size="sm"
+                                  onClick={() => remove(index)}
+                                  className="text-red-600 hover:text-red-700"
+                                >
+                                  <Trash2 className="h-4 w-4" />
+                                </Button>
+                              )}
+                            </div>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <FormField
+                                control={form.control}
+                                name={`items.${index}.foodType`}
+                                render={({ field }) => (
+                                  <FormItem>
+                                    <FormLabel>Food Type</FormLabel>
+                                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                      <FormControl>
+                                        <SelectTrigger>
+                                          <SelectValue placeholder="Select a food type" />
+                                        </SelectTrigger>
+                                      </FormControl>
+                                      <SelectContent>
+                                        {foodProducts.map((product) => (
+                                          <SelectItem key={product.id} value={product.id}>
+                                            {product.name} - ${product.price}/{product.unit}
+                                          </SelectItem>
+                                        ))}
+                                      </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                  </FormItem>
+                                )}
+                              />
 
-                      <FormField
-                        control={form.control}
-                        name="quantity"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Quantity</FormLabel>
-                            <FormControl>
-                              <Input placeholder="e.g., 2 bags, 1 month supply" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
+                              <FormField
+                                control={form.control}
+                                name={`items.${index}.quantity`}
+                                render={({ field }) => (
+                                  <FormItem>
+                                    <FormLabel>Quantity</FormLabel>
+                                    <FormControl>
+                                      <Input placeholder="e.g., 2" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                  </FormItem>
+                                )}
+                              />
+                            </div>
+                            
+                            {form.watch(`items.${index}.foodType`) && form.watch(`items.${index}.quantity`) && (
+                              <div className="text-sm text-stone-600">
+                                {(() => {
+                                  const product = foodProducts.find(p => p.id === form.watch(`items.${index}.foodType`));
+                                  const quantity = parseInt(form.watch(`items.${index}.quantity`) || "0");
+                                  return product ? `Subtotal: $${(product.price * quantity).toFixed(2)}` : "";
+                                })()}
+                              </div>
+                            )}
+                          </div>
+                        </Card>
+                      ))}
+                      
+                      {calculateTotal() > 0 && (
+                        <Card className="p-4 bg-olive-50 border-olive-200">
+                          <div className="flex justify-between items-center">
+                            <span className="font-semibold text-olive-800">Order Total:</span>
+                            <span className="text-xl font-bold text-olive-800">${calculateTotal().toFixed(2)}</span>
+                          </div>
+                        </Card>
+                      )}
                     </div>
 
                     <Separator />
