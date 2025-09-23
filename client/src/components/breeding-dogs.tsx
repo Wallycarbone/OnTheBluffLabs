@@ -1267,7 +1267,7 @@ export default function BreedingDogs() {
           }}
           onLoad={() => console.log('Our Dogs hero image loaded successfully:', heroLabradorImage)}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/60" style={{background: 'linear-gradient(to right, transparent 70%, rgba(0,0,0,0.6) 100%)'}}></div>
         <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
           <div className="max-w-xl">
             <h1 className="text-5xl md:text-7xl font-oswald font-normal mb-6 tracking-wide text-white drop-shadow-2xl">
