@@ -161,26 +161,15 @@ export default function DogFoodPage() {
             Our Philosophy on Fresh Feeding
           </h2>
           
-          <div className="flex flex-col lg:flex-row gap-8 items-start mb-8">
-            <div className="lg:w-1/3 flex-shrink-0">
-              <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0">
-                <img 
-                  src="/attached_assets/Puppies 5x4 (4 x 4 in) (5)_1754772005588.png"
-                  alt="Fresh feeding nutrition - Healthy puppy representing optimal nutrition"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-            
-            <div className="lg:w-2/3 flex-1">
-              <div className="font-source-sans leading-relaxed text-justify space-y-6" 
-                style={{
-                  color: '#2d3748', 
-                  lineHeight: '1.8',
-                  fontSize: '16px',
-                  letterSpacing: '0.02em'
-                }}
-              >
+          <div className="mb-8">
+            <div className="font-source-sans leading-relaxed text-justify space-y-6 max-w-4xl mx-auto" 
+              style={{
+                color: '#2d3748', 
+                lineHeight: '1.8',
+                fontSize: '16px',
+                letterSpacing: '0.02em'
+              }}
+            >
                 <p>For over fifty years, we have fed our Labradors fresh, species-appropriate nutrition that mirrors what dogs would consume in their natural environment. Fresh feeding isn't just a trend—it's a return to the fundamental nutrition that has sustained healthy dogs for thousands of years.</p>
 
                 <p>We feed our dogs fresh food made up of high-quality proteins such as meat, fish, and poultry, combined with fresh vegetables—mainly nutrient-dense greens, a variety of seasonal fruits, beneficial oils, and carefully selected supplements. When you provide your dog with varied, fresh nutrition, synthetic supplements become largely unnecessary.</p>
@@ -192,7 +181,6 @@ export default function DogFoodPage() {
                 <p>We add fresh garlic for flavor and its traditional benefits in helping ward off fleas and ticks. Seasonal fruits like pears, apples, and berries provide antioxidants and natural variety. Each dog develops individual preferences, making mealtime both nutritious and enjoyable.</p>
 
                 <p>Fresh feeding preserves natural enzymes that are destroyed in commercial processing, supports optimal digestion, maintains healthy weight, promotes lustrous coats, and provides the sustained energy that keeps our Labradors thriving well into their senior years. The difference in vitality, coat quality, and overall health is unmistakable.</p>
-              </div>
             </div>
           </div>
         </div>
