@@ -1256,7 +1256,7 @@ export default function BreedingDogs() {
   return (
     <>
       {/* Hero Section with Labrador Background */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[500px] flex items-end justify-center overflow-hidden">
         <img 
           src={heroLabradorImage}
           alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
@@ -1268,7 +1268,7 @@ export default function BreedingDogs() {
           onLoad={() => console.log('Our Dogs hero image loaded successfully:', heroLabradorImage)}
         />
         <div className="absolute inset-0 z-10" style={{background: 'linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)'}}></div>
-        <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
+        <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full flex justify-end">
           <div className="max-w-xl">
             <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-6 tracking-wide leading-tight text-white drop-shadow-2xl">
               HEIRS OF <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
