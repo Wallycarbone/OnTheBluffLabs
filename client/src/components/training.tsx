@@ -6,6 +6,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 import trainingHeroImage from '@assets/Untitled design - 2025-09-22T163745.168_1758573553127.png';
 import doctorateImage from '@assets/Untitled design - 2025-09-23T093300.325_1758634393210.png';
+import bachelorsImage from '@assets/Untitled (5 x 4 in)_1758635023416.png';
 
 export default function Training() {
 
@@ -106,14 +107,14 @@ export default function Training() {
                 <AspectRatio ratio={5/4}>
                   {/* Blurred background fill */}
                   <img 
-                    src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
+                    src={bachelorsImage}
                     alt=""
                     aria-hidden="true"
                     className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
                   />
                   {/* Main image with preserved content */}
                   <img 
-                    src="/attached_assets/Y30A2897LucyOliverpeacepaw (3)_1755544617044.JPG"
+                    src={bachelorsImage}
                     alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
                     className="absolute inset-0 z-10 w-full h-full object-contain"
                   />
