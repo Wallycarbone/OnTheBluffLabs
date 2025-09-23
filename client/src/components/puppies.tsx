@@ -425,65 +425,62 @@ export default function Puppies() {
                     </div>
 
                     {/* Info in Middle */}
-                    <div className="text-center md:text-left space-y-6 px-2">
-                      {/* Header Section */}
-                      <div className="space-y-3">
-                        <h3 className="text-3xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
-                          {litter.name}
-                        </h3>
-                        <div className="flex justify-center md:justify-start">
-                          <span 
-                            className="px-4 py-2 rounded-full text-sm font-medium shadow-md"
-                            style={{
-                              backgroundColor: (() => {
-                                const status = getLitterStatus(litter.birthDate, litter.status);
-                                if (status === 'Trained') return '#4a5c0a'; // Darker olive green for trained
-                                if (status === 'Ready') return '#6d761d'; // Regular olive green for ready
-                                return '#f59e0b'; // Orange for other statuses
-                              })(),
-                              color: '#fefefe'
-                            }}
-                          >
-                            {getLitterStatus(litter.birthDate, litter.status)}
-                          </span>
+                    <div className="text-center md:text-left px-2 h-full flex flex-col justify-between">
+                      {/* Top Section - Header and Details */}
+                      <div className="space-y-4">
+                        {/* Header Section */}
+                        <div className="space-y-3">
+                          <h3 className="text-3xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
+                            {litter.name}
+                          </h3>
+                          <div className="flex justify-center md:justify-start">
+                            <span 
+                              className="px-4 py-2 rounded-full text-sm font-medium shadow-md"
+                              style={{
+                                backgroundColor: (() => {
+                                  const status = getLitterStatus(litter.birthDate, litter.status);
+                                  if (status === 'Trained') return '#4a5c0a'; // Darker olive green for trained
+                                  if (status === 'Ready') return '#6d761d'; // Regular olive green for ready
+                                  return '#f59e0b'; // Orange for other statuses
+                                })(),
+                                color: '#fefefe'
+                              }}
+                            >
+                              {getLitterStatus(litter.birthDate, litter.status)}
+                            </span>
+                          </div>
                         </div>
+
+                        {/* Litter Details */}
+                        <div className="bg-gray-50 rounded-xl p-5 space-y-4">
+                          <div className="grid grid-cols-1 gap-4">
+                            <div className="flex justify-between items-center">
+                              <span className="text-base font-medium" style={{color: '#6d761d'}}>Birth Date:</span>
+                              <span className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>
+                                {litter.birthDate}
+                              </span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                              <span className="text-base font-medium" style={{color: '#6d761d'}}>Current Age:</span>
+                              <span className="text-lg font-source-sans font-medium" style={{color: '#11100f'}}>
+                                {calculateAge(litter.birthDate)}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Available Info */}
+                        {litter.available && (
+                          <div className="text-center md:text-left">
+                            <p className="text-lg font-source-sans font-medium" style={{color: '#6d761d'}}>
+                              Available: {litter.available}
+                            </p>
+                          </div>
+                        )}
                       </div>
 
-                      {/* Litter Details */}
-                      <div className="bg-gray-50 rounded-xl p-4 space-y-3">
-                        <div className="grid grid-cols-1 gap-3">
-                          <div className="flex justify-between items-center">
-                            <span className="text-sm font-medium" style={{color: '#6d761d'}}>Birth Date:</span>
-                            <span className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>
-                              {litter.birthDate}
-                            </span>
-                          </div>
-                          <div className="flex justify-between items-center">
-                            <span className="text-sm font-medium" style={{color: '#6d761d'}}>Current Age:</span>
-                            <span className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>
-                              {calculateAge(litter.birthDate)}
-                            </span>
-                          </div>
-                          <div className="flex justify-between items-center">
-                            <span className="text-sm font-medium" style={{color: '#6d761d'}}>Puppies Count:</span>
-                            <span className="text-base font-source-sans font-medium" style={{color: '#11100f'}}>
-                              {litter.puppiesCount}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Available Info */}
-                      {litter.available && (
-                        <div className="text-center md:text-left">
-                          <p className="text-lg font-source-sans font-medium" style={{color: '#6d761d'}}>
-                            Available: {litter.available}
-                          </p>
-                        </div>
-                      )}
-
-                      {/* Action Buttons */}
-                      <div className="flex flex-col gap-3 pt-2 max-w-sm mx-auto md:mx-0">
+                      {/* Bottom Section - Action Buttons */}
+                      <div className="flex flex-col gap-3 max-w-sm mx-auto md:mx-0 mt-4">
                         <Button 
                           onClick={() => openPedigreePopup(litter)}
                           className="font-montserrat font-medium text-sm h-auto py-3 px-4 rounded-xl w-full shadow-md hover:shadow-lg transition-all duration-300"
