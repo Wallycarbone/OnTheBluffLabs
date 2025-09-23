@@ -1,11 +1,6 @@
 import { useEffect } from "react";
 
-// Declare HubSpot types for TypeScript
-declare global {
-  interface Window {
-    hbspt: any;
-  }
-}
+// TypeScript type for HubSpot
 
 export default function PuppyApplication() {
   useEffect(() => {
@@ -18,8 +13,8 @@ export default function PuppyApplication() {
 
     script.onload = () => {
       // Create HubSpot form once script is loaded
-      if (window.hbspt) {
-        window.hbspt.forms.create({
+      if ((window as any).hbspt) {
+        (window as any).hbspt.forms.create({
           portalId: "44843117",
           formId: "f5c4c18d-5722-43bd-8e6b-94fcb10c4343",
           region: "na1",
