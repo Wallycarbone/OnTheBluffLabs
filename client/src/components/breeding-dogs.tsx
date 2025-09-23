@@ -29,7 +29,7 @@ import hamburgImage from "@assets/Hamburg_1755289182545.jpg";
 import duffyImage from "@assets/duffy-04_1755289259124.jpeg";
 import stormTrooperImage from "@assets/Storm Trooper_1755290311684.avif";
 import stormChargerImage from "@assets/Charger_1755290357983.avif";
-import heroLabradorImage from "@assets/Boo_Edit_v01 (1)_1758636089305.jpg";
+import heroLabradorImage from "@assets/Boo_Edit_v01 (1)_1758636279471.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
