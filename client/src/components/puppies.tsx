@@ -38,7 +38,7 @@ import moonImage3 from "@assets/Moon 5x4_1753627311757.png";
 import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756671954087.png";
-import foxxyImage from "@assets/Foxxy (5x4)_1753627279647.png";
+import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
