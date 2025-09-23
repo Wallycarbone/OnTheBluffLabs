@@ -158,7 +158,7 @@ export default function DogFoodPage() {
             Premium Fresh Dog Food
           </h1>
           <p className="text-xl md:text-2xl font-source-sans font-light max-w-3xl mx-auto">
-            Nourishing Labradors with Species-Appropriate Nutrition for Over 50 Years
+            Nourishing Labradors with Fresh, Wholesome Nutrition for Over 50 Years
           </p>
         </div>
       </section>
