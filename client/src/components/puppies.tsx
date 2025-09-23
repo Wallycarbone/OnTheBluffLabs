@@ -140,6 +140,31 @@ export default function Puppies() {
     return 'Ready Soon';
   };
 
+  const categorizeLitters = (allLitters: any[]) => {
+    const selectLitters = [];
+    const upcomingLitters = [];
+    
+    for (const litter of allLitters) {
+      if (litter.birthDate.includes('Due')) {
+        upcomingLitters.push(litter);
+      } else {
+        const birth = new Date(litter.birthDate);
+        const today = new Date();
+        const diffTime = today.getTime() - birth.getTime();
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        const weeks = Math.floor(diffDays / 7);
+        
+        if (weeks >= 5) {
+          selectLitters.push(litter);
+        } else {
+          upcomingLitters.push(litter);
+        }
+      }
+    }
+    
+    return { selectLitters, upcomingLitters };
+  };
+
   const moonFoxxyPuppyImages = [
     mrPeacockImage,
     mrTurtlesImage,
@@ -150,7 +175,7 @@ export default function Puppies() {
     msAlpineGlowImage
   ];
 
-  const currentLitters = [
+  const allLitters = [
     {
       name: "Moon & Foxxy",
       sire: "Moon",
@@ -187,10 +212,7 @@ export default function Puppies() {
       images: [breedingDogsImage, breedingDogs2Image, pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
       status: "Ready",
       description: "Chocolate female puppies available"
-    }
-  ];
-
-  const upcomingLitters = [
+    },
     {
       name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
@@ -218,6 +240,8 @@ export default function Puppies() {
       description: "Bred in May, due in July 2025"
     }
   ];
+
+  const { selectLitters, upcomingLitters } = categorizeLitters(allLitters);
 
   return (
     <>
@@ -349,7 +373,7 @@ export default function Puppies() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
-            {currentLitters.map((litter, index) => (
+            {selectLitters.map((litter, index) => (
               <Card key={index} className="overflow-hidden">
                 <CardContent className="p-8">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
