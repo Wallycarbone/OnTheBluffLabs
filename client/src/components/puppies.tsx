@@ -253,6 +253,19 @@ export default function Puppies() {
       image2: piperImage,
       status: "Upcoming",
       description: "Born September 18, 2025"
+    },
+    {
+      name: "Vivien & Grizzly",
+      sire: "Grizzly",
+      dam: "Vivien",
+      birthDate: "Due October 2025",
+      puppiesCount: "TBD",
+      available: "Accepting Deposits",
+      readyDate: "December 2025",
+      image: grizzlyImage,
+      image2: breedingDogsImage,
+      status: "Upcoming",
+      description: "Expected litter due October 2025"
     }
   ];
 
