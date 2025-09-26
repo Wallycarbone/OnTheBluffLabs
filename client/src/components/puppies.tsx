@@ -209,7 +209,7 @@ export default function Puppies() {
       dam: "Nora",
       birthDate: "June 21, 2025",
       puppiesCount: 2,
-      available: "One Black Female & One Yellow Female",
+      available: "One Yellow Female",
       readyDate: "August 2025",
       image: moonImage2,
       image2: noraImage,
