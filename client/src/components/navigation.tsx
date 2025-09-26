@@ -12,7 +12,7 @@ import {
 // Navigation Button Component
 function NavButton({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="px-3 py-3 text-xs lg:text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
+    <Link href={href} className="px-2 md:px-3 py-3 text-xs lg:text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
       style={{color: '#4b4b4b'}}
       onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
       onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
@@ -28,7 +28,7 @@ function CareLifestyleDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="flex items-center px-3 py-3 text-xs lg:text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
+        <button className="flex items-center px-2 md:px-3 py-3 text-xs lg:text-sm font-montserrat font-medium transition-colors rounded-lg hover:bg-gray-100 whitespace-nowrap"
           style={{color: '#4b4b4b'}}
           onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
           onMouseLeave={(e) => e.currentTarget.style.color = '#4b4b4b'}
@@ -108,7 +108,7 @@ export default function Navigation() {
             <div className="flex-shrink-0">
               <Link href="/">
                 <h1 
-                  className="text-base lg:text-lg font-oswald font-normal tracking-wide cursor-pointer transition-colors"
+                  className="text-sm md:text-base lg:text-lg font-oswald font-normal tracking-wide cursor-pointer transition-colors"
                   style={{color: '#11100f'}}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
                   onMouseLeave={(e) => e.currentTarget.style.color = '#11100f'}
@@ -155,14 +155,14 @@ export default function Navigation() {
 
           {/* Tablet Navigation (hidden on mobile and desktop) */}
           <div className="hidden md:block lg:hidden">
-            <div className="flex items-center space-x-1">
-              <NavButton href="/breeding-dogs" label="Our Dogs" />
+            <div className="flex items-center space-x-0.5">
+              <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
               <CareLifestyleDropdown />
               <Link href="/contact">
                 <Button 
-                  className="px-3 py-2 font-montserrat font-medium text-xs rounded-full ml-3"
+                  className="px-2 py-2 font-montserrat font-medium text-xs rounded-full ml-1"
                   style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                 >
                   Contact
