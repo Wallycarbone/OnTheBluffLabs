@@ -46,6 +46,7 @@ import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
 import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909148622.png";
 import newGrizzlyImage from "@assets/Untitled design - 2025-09-26T135502.149_1758909308671.png";
 import beckyImage from "@assets/Untitled design - 2025-09-26T135952.231_1758909609420.png";
+import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
@@ -278,7 +279,7 @@ export default function Puppies() {
       puppiesCount: "TBD",
       available: "Accepting Deposits",
       readyDate: "January 2026",
-      image: breedingDogsImage,
+      image: holdenImage,
       image2: beckyImage,
       status: "Upcoming",
       description: "Expected litter due November 2025"
