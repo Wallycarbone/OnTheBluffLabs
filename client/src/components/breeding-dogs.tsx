@@ -1262,7 +1262,7 @@ export default function BreedingDogs() {
         <img 
           src={updatedHeroLabradorImage}
           alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
-          className="absolute inset-0 w-full h-full object-contain object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center"
           onError={(e) => {
             console.log('Our Dogs hero image failed to load:', updatedHeroLabradorImage);
             e.currentTarget.style.display = 'none';
