@@ -268,6 +268,19 @@ export default function Puppies() {
       image2: vivienImage,
       status: "Upcoming",
       description: "Expected litter due October 2025"
+    },
+    {
+      name: "Becky & Holden",
+      sire: "Holden",
+      dam: "Becky",
+      birthDate: "Due November 2025",
+      puppiesCount: "TBD",
+      available: "Accepting Deposits",
+      readyDate: "January 2026",
+      image: breedingDogsImage,
+      image2: breedingDogs2Image,
+      status: "Upcoming",
+      description: "Expected litter due November 2025"
     }
   ];
 
