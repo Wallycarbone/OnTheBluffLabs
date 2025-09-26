@@ -33,6 +33,7 @@ import heroLabradorImage from "@assets/Boo_Edit_v01 (1)_1758636279471.jpg";
 import newHeroLabradorImage from "@assets/Breeding Dogs 5x4 (42)_1758917417269.png";
 import updatedHeroLabradorImage from "@assets/Breeding Dogs 5x4 (43)_1758917718475.png";
 import latestHeroLabradorImage from "@assets/Breeding Dogs 5x4 (44)_1758918651622.png";
+import twainPedigreeImage from "@assets/Untitled design - 2025-09-26T164138.333_1758919329281.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -1351,8 +1352,8 @@ export default function BreedingDogs() {
             
             return (
               <div className="space-y-6">
-                    {/* Traditional Pedigree Layout - Clean and Organized */}
-                    <div className="overflow-x-auto p-8">
+                {/* Traditional Pedigree Layout - Clean and Organized */}
+                <div className="overflow-x-auto p-8">
                       <div className="relative" style={{ width: '1200px', height: '900px' }}>
                         {/* Current Dog - Generation 0 - Centered between parents */}
                         <div className="absolute" style={{ left: '50px', top: '290px', width: '180px' }}>
@@ -1724,12 +1725,42 @@ export default function BreedingDogs() {
                         </div>
                       </div>
                     </div>
+                
+                {/* Official Pedigree Document Section */}
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <h3 className="text-xl font-oswald font-normal mb-4 text-center" style={{color: '#11100f'}}>
+                    Official AKC Certified Pedigree
+                  </h3>
+                  <div className="text-center">
+                    {selectedDog?.name === "Twain" ? (
+                      <img 
+                        src={twainPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: twainPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : (
+                      <div className="bg-gray-100 rounded-lg p-8 text-center">
+                        <p className="text-gray-600 font-source-sans">
+                          Official pedigree document available upon request
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              );
-            })()}
-          </div>
-        </DialogContent>
-      </Dialog>
+              </div>
+            );
+          })()}
+        </div>
+      </DialogContent>
+    </Dialog>
 
       {/* Title Popup Dialog */}
       <Dialog open={isTitlePopupOpen} onOpenChange={setIsTitlePopupOpen}>
