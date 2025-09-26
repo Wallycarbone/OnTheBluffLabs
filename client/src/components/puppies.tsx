@@ -608,23 +608,13 @@ export default function Puppies() {
 
       {/* Image Popup Dialog */}
       <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto">
-          <DialogHeader>
-            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              Puppy Gallery
-            </DialogTitle>
-          </DialogHeader>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto p-0 border-none">
           {selectedImage && (
-            <div className="space-y-4">
-              <img 
-                src={selectedImage.src} 
-                alt={selectedImage.name}
-                className="w-full h-auto rounded-lg"
-              />
-              <p className="text-base font-source-sans" style={{color: '#4b4b4b'}}>
-                {selectedImage.name}
-              </p>
-            </div>
+            <img 
+              src={selectedImage.src} 
+              alt={selectedImage.name}
+              className="w-full h-auto rounded-lg"
+            />
           )}
         </DialogContent>
       </Dialog>
