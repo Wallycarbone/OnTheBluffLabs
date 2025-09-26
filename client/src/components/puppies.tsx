@@ -242,19 +242,6 @@ export default function Puppies() {
       description: "Born August 7, 2025"
     },
     {
-      name: "Moon & Harper Lee",
-      sire: "Moon",
-      dam: "Harper Lee",
-      birthDate: "July 27, 2025",
-      puppiesCount: "TBD",
-      available: "Accepting Deposits",
-      readyDate: "September 2025",
-      image: moonImage,
-      image2: harperLeeImage,
-      status: "Upcoming",
-      description: "Bred in May, due in July 2025"
-    },
-    {
       name: "Moon & Piper",
       sire: "Moon",
       dam: "Piper",
