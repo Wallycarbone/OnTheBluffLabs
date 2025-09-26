@@ -32,6 +32,7 @@ import stormChargerImage from "@assets/Charger_1755290357983.avif";
 import heroLabradorImage from "@assets/Boo_Edit_v01 (1)_1758636279471.jpg";
 import newHeroLabradorImage from "@assets/Breeding Dogs 5x4 (42)_1758917417269.png";
 import updatedHeroLabradorImage from "@assets/Breeding Dogs 5x4 (43)_1758917718475.png";
+import latestHeroLabradorImage from "@assets/Breeding Dogs 5x4 (44)_1758918651622.png";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -1260,14 +1261,14 @@ export default function BreedingDogs() {
       {/* Hero Section with Labrador Background */}
       <section className="relative min-h-[500px] md:min-h-[600px] flex items-end justify-center overflow-hidden bg-gray-100">
         <img 
-          src={updatedHeroLabradorImage}
+          src={latestHeroLabradorImage}
           alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
           className="absolute inset-0 w-full h-full object-cover object-center"
           onError={(e) => {
-            console.log('Our Dogs hero image failed to load:', updatedHeroLabradorImage);
+            console.log('Our Dogs hero image failed to load:', latestHeroLabradorImage);
             e.currentTarget.style.display = 'none';
           }}
-          onLoad={() => console.log('Our Dogs hero image loaded successfully:', updatedHeroLabradorImage)}
+          onLoad={() => console.log('Our Dogs hero image loaded successfully:', latestHeroLabradorImage)}
         />
         <div className="absolute inset-0 z-10" style={{background: 'linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)'}}></div>
         <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full flex justify-end">
