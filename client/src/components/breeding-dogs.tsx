@@ -1257,11 +1257,11 @@ export default function BreedingDogs() {
   return (
     <>
       {/* Hero Section with Labrador Background */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-end justify-center overflow-hidden">
+      <section className="relative min-h-[500px] md:min-h-[600px] flex items-end justify-center overflow-hidden bg-gray-100">
         <img 
           src={newHeroLabradorImage}
           alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
-          className="absolute inset-0 w-full h-full object-cover object-[35%_50%] sm:object-[40%_50%] md:object-[30%_50%] xl:object-[25%_50%]"
+          className="absolute inset-0 w-full h-full object-contain object-center"
           onError={(e) => {
             console.log('Our Dogs hero image failed to load:', newHeroLabradorImage);
             e.currentTarget.style.display = 'none';
