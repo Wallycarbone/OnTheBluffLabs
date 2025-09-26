@@ -9,7 +9,6 @@ packages = ["poppler_utils"]
 [deployment]
 deploymentTarget = "cloudrun"
 build = ["npm", "run", "build"]
-publicDir = "dist"
 run = ["sh", "-c", "npm run start"]
 
 [[ports]]
