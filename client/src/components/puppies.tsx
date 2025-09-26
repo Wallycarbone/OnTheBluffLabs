@@ -103,7 +103,7 @@ export default function Puppies() {
 
   const calculateAge = (birthDate: string) => {
     if (birthDate.includes('Due')) {
-      return 'Expected';
+      return 'Mid-September';
     }
     
     const birth = new Date(birthDate);
