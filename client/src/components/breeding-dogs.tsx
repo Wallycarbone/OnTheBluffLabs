@@ -41,6 +41,7 @@ import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
 import msFairIsleImage from "@assets/ms-fair-isle.jpg";
 import mrPandaImage from "@assets/mr-panda.jpg";
 import mrJesterImage from "@assets/mr-jester.jpg";
+import mrMuddyPawsImage from "@assets/mr-muddy-paws.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -154,7 +155,8 @@ export default function BreedingDogs() {
               { name: "Mr. Bling Bones", image: mrBlingBonesImage, gender: "Male", color: "Yellow" },
               { name: "Ms. Fair Isle", image: msFairIsleImage, gender: "Female", color: "Yellow" },
               { name: "Mr. Panda", image: mrPandaImage, gender: "Male", color: "Yellow" },
-              { name: "Mr. Jester", image: mrJesterImage, gender: "Male", color: "Yellow" }
+              { name: "Mr. Jester", image: mrJesterImage, gender: "Male", color: "Yellow" },
+              { name: "Mr. Muddy Paws", image: mrMuddyPawsImage, gender: "Male", color: "Yellow" }
             ]
           }
         ]
