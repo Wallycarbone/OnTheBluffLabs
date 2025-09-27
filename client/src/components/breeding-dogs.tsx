@@ -35,6 +35,7 @@ import updatedHeroLabradorImage from "@assets/Breeding Dogs 5x4 (43)_17589177184
 import latestHeroLabradorImage from "@assets/Breeding Dogs 5x4 (44)_1758918651622.png";
 import twainPedigreeImage from "@assets/Untitled design - 2025-09-26T164138.333_1758919329281.png";
 import grizzlyOfficialPedigreeImage from "@assets/grizzly-pedigree.png";
+import booRadleyOfficialPedigreeImage from "@assets/boo-radley-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1754,6 +1755,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: grizzlyOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Boo Radley" ? (
+                      <img 
+                        src={booRadleyOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: booRadleyOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
