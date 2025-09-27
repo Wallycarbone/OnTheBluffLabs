@@ -1250,23 +1250,6 @@ export default function BreedingDogs() {
               View Full Pedigree
             </Button>
             
-            {dog.hasPuppies && (
-              <Button 
-                onClick={() => openPuppyGallery(dog)}
-                className="w-full font-montserrat font-medium py-3 rounded transition-colors border-2"
-                style={{borderColor: '#6d761d', color: '#6d761d', backgroundColor: 'transparent'}}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#6d761d';
-                  e.currentTarget.style.color = '#fefefe';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#6d761d';
-                }}
-              >
-                Puppies by {dog.name}
-              </Button>
-            )}
           </div>
         </div>
       </CardContent>
