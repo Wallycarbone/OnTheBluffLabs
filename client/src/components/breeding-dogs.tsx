@@ -36,6 +36,7 @@ import latestHeroLabradorImage from "@assets/Breeding Dogs 5x4 (44)_175891865162
 import twainPedigreeImage from "@assets/Untitled design - 2025-09-26T164138.333_1758919329281.png";
 import grizzlyOfficialPedigreeImage from "@assets/grizzly-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
+import msButterflyImage from "@assets/ms-butterfly.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -144,7 +145,8 @@ export default function BreedingDogs() {
             dam: "Boudica",
             birthDate: "August 7, 2025",
             puppies: [
-              { name: "Ms. Ripple Creek", image: msRippleCreekImage, gender: "Female", color: "Yellow" }
+              { name: "Ms. Ripple Creek", image: msRippleCreekImage, gender: "Female", color: "Yellow" },
+              { name: "Ms. Butterfly", image: msButterflyImage, gender: "Female", color: "Yellow" }
             ]
           }
         ]
