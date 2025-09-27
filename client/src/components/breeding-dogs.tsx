@@ -37,6 +37,7 @@ import twainPedigreeImage from "@assets/Untitled design - 2025-09-26T164138.333_
 import grizzlyOfficialPedigreeImage from "@assets/grizzly-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
+import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -146,7 +147,8 @@ export default function BreedingDogs() {
             birthDate: "August 7, 2025",
             puppies: [
               { name: "Ms. Ripple Creek", image: msRippleCreekImage, gender: "Female", color: "Yellow" },
-              { name: "Ms. Butterfly", image: msButterflyImage, gender: "Female", color: "Yellow" }
+              { name: "Ms. Butterfly", image: msButterflyImage, gender: "Female", color: "Yellow" },
+              { name: "Mr. Bling Bones", image: mrBlingBonesImage, gender: "Male", color: "Yellow" }
             ]
           }
         ]
