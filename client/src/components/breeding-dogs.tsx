@@ -35,6 +35,7 @@ import updatedHeroLabradorImage from "@assets/Breeding Dogs 5x4 (43)_17589177184
 import latestHeroLabradorImage from "@assets/Breeding Dogs 5x4 (44)_1758918651622.png";
 import twainPedigreeImage from "@assets/Untitled design - 2025-09-26T164138.333_1758919329281.png";
 import grizzlyOfficialPedigreeImage from "@assets/grizzly-pedigree.png";
+import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -142,7 +143,9 @@ export default function BreedingDogs() {
             name: "Boo Radley & Boudica",
             dam: "Boudica",
             birthDate: "August 7, 2025",
-            puppies: []
+            puppies: [
+              { name: "Ms. Ripple Creek", image: msRippleCreekImage, gender: "Female", color: "Yellow" }
+            ]
           }
         ]
       }
