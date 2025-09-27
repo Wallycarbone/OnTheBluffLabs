@@ -39,6 +39,7 @@ import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
 import msFairIsleImage from "@assets/ms-fair-isle.jpg";
+import mrPandaImage from "@assets/mr-panda.jpg";
 // Puppy images
 import moonPeacock from "@assets/Mr. Peacock_1753621328199.png";
 import moonTurtles from "@assets/Mr. Turtles_1753621328201.png";
@@ -150,7 +151,8 @@ export default function BreedingDogs() {
               { name: "Ms. Ripple Creek", image: msRippleCreekImage, gender: "Female", color: "Yellow" },
               { name: "Ms. Butterfly", image: msButterflyImage, gender: "Female", color: "Yellow" },
               { name: "Mr. Bling Bones", image: mrBlingBonesImage, gender: "Male", color: "Yellow" },
-              { name: "Ms. Fair Isle", image: msFairIsleImage, gender: "Female", color: "Yellow" }
+              { name: "Ms. Fair Isle", image: msFairIsleImage, gender: "Female", color: "Yellow" },
+              { name: "Mr. Panda", image: mrPandaImage, gender: "Male", color: "Yellow" }
             ]
           }
         ]
