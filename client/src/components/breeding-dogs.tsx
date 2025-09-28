@@ -51,6 +51,7 @@ import guinevereImage from "@assets/guinevere-new-photo.png";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
 import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png";
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.png";
+import beckyImage from "@assets/Breeding Dogs 5x4 (45)_1759071368331.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -680,6 +681,36 @@ export default function BreedingDogs() {
           }
         }
       },
+      "Becky": {
+        name: "Becky",
+        formalName: "On The Bluff's Becky Thatcher",
+        titles: [],
+        image: beckyImage,
+        sire: {
+          name: "On The Bluff's Mark Twain",
+          titles: [],
+          sire: {
+            name: "Twain's Paternal Grandsire",
+            titles: []
+          },
+          dam: {
+            name: "Twain's Paternal Granddam",
+            titles: []
+          }
+        },
+        dam: {
+          name: "On The Bluff's Huckleberry Finn's Dame",
+          titles: [],
+          sire: {
+            name: "Becky's Maternal Grandsire",
+            titles: []
+          },
+          dam: {
+            name: "Becky's Maternal Granddam",
+            titles: []
+          }
+        }
+      },
       "Holden": {
         name: "Holden",
         formalName: "On The Bluff's Holden Morrisey Caulfield",
@@ -1139,6 +1170,15 @@ export default function BreedingDogs() {
       image: queenBoudicaImage,
       description: "Queen Boudica is a magnificent fox red dame with regal bearing and exceptional intelligence. Her noble presence and natural leadership qualities make her an outstanding mother, producing puppies with both striking appearance and confident temperaments that reflect her warrior spirit.",
     },
+    {
+      name: "Becky",
+      formalName: "On The Bluff's Becky Thatcher",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: beckyImage,
+      description: "Becky is a graceful yellow dame with gentle eyes and a sweet disposition. Her calm temperament and nurturing instincts make her an exceptional mother, consistently producing puppies with wonderful personalities that reflect her loving and patient nature.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
@@ -1375,6 +1415,12 @@ export default function BreedingDogs() {
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
                   Bred by Keepsake Labradors, a legendary kennel that produces stunning fox red labradors
+                </p>
+              </div>
+            ) : dog.name === "Becky" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Gentle spirit with exceptional maternal instincts and loving temperament
                 </p>
               </div>
             ) : (
