@@ -495,9 +495,10 @@ export default function BreedingDogs() {
         }
       },
       "Nora": {
-        name: "Nora",
+        name: "On The Bluff's Nora Helmer",
         formalName: "On The Bluff's Nora Helmer",
         titles: [],
+        image: noraImage,
         sire: {
           name: "Belquest Conclusion On The Bluff's Tristan",
           titles: [],
