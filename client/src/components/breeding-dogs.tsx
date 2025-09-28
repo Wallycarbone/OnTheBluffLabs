@@ -48,6 +48,7 @@ import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_17586398
 import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import pippiLongstockingImage from "@assets/pippi-longstocking.png";
 import guinevereImage from "@assets/guinevere-new-photo.png";
+import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -506,7 +507,7 @@ export default function BreedingDogs() {
         titles: [],
         image: guinevereImage,
         sire: {
-          name: "Guinevere's Sire",
+          name: "On The Bluff's Holden Morrisey Caulfield",
           titles: [],
           sire: {
             name: "Guinevere's Paternal Grandsire",
@@ -534,7 +535,7 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Guinevere's Dam",
+          name: "On The Bluff's Avalon of The Lake",
           titles: [],
           sire: {
             name: "Guinevere's Maternal Grandsire",
@@ -1984,6 +1985,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: foxxyOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Guinevere" ? (
+                      <img 
+                        src={guinevereOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: guinevereOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
