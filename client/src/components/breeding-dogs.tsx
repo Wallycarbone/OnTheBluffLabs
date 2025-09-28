@@ -525,6 +525,7 @@ export default function BreedingDogs() {
           dam: {
             name: "Endless Mt On The Bluff's Franny Glass (\"Franny\")",
             titles: [],
+            image: frannyGlassImage,
             sire: {
               name: "Guinevere's Paternal Dam's Great-Grandsire",
               titles: []
