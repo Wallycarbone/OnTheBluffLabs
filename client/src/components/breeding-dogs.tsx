@@ -52,6 +52,7 @@ import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
 import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png";
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.png";
 import beckyImage from "@assets/Untitled design - 2025-09-28T162502.877_1759091209687.png";
+import beckyOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf_1759091354268.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -687,26 +688,26 @@ export default function BreedingDogs() {
         titles: [],
         image: beckyImage,
         sire: {
-          name: "On The Bluff's Mark Twain",
+          name: "Scarfone's Mark Twain",
           titles: [],
           sire: {
-            name: "Twain's Paternal Grandsire",
+            name: "Valhalla's One Little Victory Jhi",
             titles: []
           },
           dam: {
-            name: "Twain's Paternal Granddam",
+            name: "Bateshaus Stop To Smell The Roses",
             titles: []
           }
         },
         dam: {
-          name: "On The Bluff's Huckleberry Finn's Dame",
+          name: "On The Bluff's Siddhartha's Kamala",
           titles: [],
           sire: {
-            name: "Becky's Maternal Grandsire",
+            name: "On The Bluff's Durangoson",
             titles: []
           },
           dam: {
-            name: "Becky's Maternal Granddam",
+            name: "Dreaming Tree Merida The Brave",
             titles: []
           }
         }
@@ -2103,6 +2104,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: foxxyOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Becky" ? (
+                      <img 
+                        src={beckyOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: beckyOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
