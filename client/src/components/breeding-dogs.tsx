@@ -517,14 +517,14 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Nora's Paternal Granddam",
-            titles: ["CH"],
+            name: "Belquest Conclusion's Seminary Old Time Rock & Roll",
+            titles: [],
             sire: {
-              name: "Nora's Paternal Dam's Great-Grandsire",
+              name: "Seminary's Sire",
               titles: ["CH"]
             },
             dam: {
-              name: "Nora's Paternal Dam's Great-Granddam",
+              name: "Seminary's Dam",
               titles: ["CH"]
             }
           }
