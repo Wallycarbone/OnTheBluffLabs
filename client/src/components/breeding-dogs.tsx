@@ -495,7 +495,7 @@ export default function BreedingDogs() {
       },
       "Nora": {
         name: "Nora",
-        formalName: "On The Bluff Nora",
+        formalName: "On The Bluff's Nora Helmer",
         titles: ["CH"],
         sire: {
           name: "Nora's Sire",
@@ -1040,7 +1040,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Nora",
-      formalName: "On The Bluff's Nora",
+      formalName: "On The Bluff's Nora Helmer",
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
