@@ -45,6 +45,7 @@ import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.png";
 import noraOfficialPedigreeImage from "@assets/nora-pedigree.png";
 import noraImage from "@assets/nora-new-photo.png";
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
+import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -440,7 +441,7 @@ export default function BreedingDogs() {
         titles: [],
         image: foxxyImage,
         sire: {
-          name: "Foxxy's Sire",
+          name: "Keepsake Thorin On The Bluff",
           titles: [],
           sire: {
             name: "Foxxy's Paternal Grandsire",
@@ -468,7 +469,7 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Foxxy's Dam",
+          name: "Keepsake's Pippi Longstocking On The Bluff",
           titles: [],
           sire: {
             name: "Foxxy's Maternal Grandsire",
@@ -1939,6 +1940,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: noraOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Foxxy" ? (
+                      <img 
+                        src={foxxyOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: foxxyOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
