@@ -42,6 +42,7 @@ import chekhovOfficialPedigreeImage from "@assets/chekhov-pedigree.png";
 import harperLeeOfficialPedigreeImage from "@assets/harper-lee-pedigree.png";
 import piperOfficialPedigreeImage from "@assets/piper-pedigree.png";
 import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.png";
+import noraOfficialPedigreeImage from "@assets/nora-pedigree.png";
 import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
@@ -1869,6 +1870,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: arabellaOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Nora" ? (
+                      <img 
+                        src={noraOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: noraOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
