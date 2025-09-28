@@ -47,6 +47,7 @@ import noraImage from "@assets/nora-new-photo.png";
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import pippiLongstockingImage from "@assets/pippi-longstocking.png";
+import guinevereImage from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754683799995.jpg";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -499,6 +500,68 @@ export default function BreedingDogs() {
           }
         }
       },
+      "Guinevere": {
+        name: "On The Bluff's Guinevere",
+        formalName: "On The Bluff's Guinevere",
+        titles: [],
+        image: guinevereImage,
+        sire: {
+          name: "Guinevere's Sire",
+          titles: [],
+          sire: {
+            name: "Guinevere's Paternal Grandsire",
+            titles: [],
+            sire: {
+              name: "Guinevere's Paternal Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Guinevere's Paternal Great-Granddam",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Guinevere's Paternal Granddam",
+            titles: [],
+            sire: {
+              name: "Guinevere's Paternal Dam's Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Guinevere's Paternal Dam's Great-Granddam",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "Guinevere's Dam",
+          titles: [],
+          sire: {
+            name: "Guinevere's Maternal Grandsire",
+            titles: [],
+            sire: {
+              name: "Guinevere's Maternal Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Guinevere's Maternal Great-Granddam",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Guinevere's Maternal Granddam",
+            titles: [],
+            sire: {
+              name: "Guinevere's Dam's Maternal Great-Grandsire",
+              titles: []
+            },
+            dam: {
+              name: "Guinevere's Dam's Maternal Great-Granddam",
+              titles: []
+            }
+          }
+        }
+      },
       "Nora": {
         name: "On The Bluff's Nora Helmer",
         formalName: "On The Bluff's Nora Helmer",
@@ -577,67 +640,6 @@ export default function BreedingDogs() {
             dam: {
               name: "Aeofe's Dam",
               titles: []
-            }
-          }
-        }
-      },
-      "Guinevere": {
-        name: "Guinevere",
-        formalName: "On The Bluff Guinevere",
-        titles: ["CH"],
-        sire: {
-          name: "Guinevere's Sire",
-          titles: ["CH"],
-          sire: {
-            name: "Guinevere's Paternal Grandsire",
-            titles: ["CH"],
-            sire: {
-              name: "Guinevere's Paternal Great-Grandsire",
-              titles: ["CH"]
-            },
-            dam: {
-              name: "Guinevere's Paternal Great-Granddam",
-              titles: ["CH"]
-            }
-          },
-          dam: {
-            name: "Guinevere's Paternal Granddam",
-            titles: ["CH"],
-            sire: {
-              name: "Guinevere's Paternal Dam's Great-Grandsire",
-              titles: ["CH"]
-            },
-            dam: {
-              name: "Guinevere's Paternal Dam's Great-Granddam",
-              titles: ["CH"]
-            }
-          }
-        },
-        dam: {
-          name: "Guinevere's Dam",
-          titles: ["CH"],
-          sire: {
-            name: "Guinevere's Maternal Grandsire",
-            titles: ["CH"],
-            sire: {
-              name: "Guinevere's Maternal Great-Grandsire",
-              titles: ["CH"]
-            },
-            dam: {
-              name: "Guinevere's Maternal Great-Granddam",
-              titles: ["CH"]
-            }
-          },
-          dam: {
-            name: "Guinevere's Maternal Granddam",
-            titles: ["CH"],
-            sire: {
-              name: "Guinevere's Dam's Maternal Great-Grandsire",
-              titles: ["CH"]
-            },
-            dam: {
-              name: "Guinevere's Dam's Maternal Great-Granddam",
-              titles: ["CH"]
             }
           }
         }
@@ -1083,6 +1085,15 @@ export default function BreedingDogs() {
       image: foxxyImage,
       description: "Foxxy is a stunning, blocky dame with the soulfull expression that we expect from our reds. Her friendly nature and strong maternal instincts make her an excellent mother, producing puppies with steady personalities that mirror her affectionate temperament.",
     },
+    {
+      name: "Guinevere",
+      formalName: "On The Bluff's Guinevere",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: guinevereImage,
+      description: "Guinevere is an elegant and devoted dame with exceptional maternal qualities. Her gentle nature and strong family bonds make her an outstanding mother, consistently producing puppies with loving temperaments that reflect her warm and nurturing spirit.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
@@ -1296,6 +1307,12 @@ export default function BreedingDogs() {
                   >
                     Pippi Longstocking
                   </button>
+                </p>
+              </div>
+            ) : dog.name === "Guinevere" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Exceptional bloodlines with gentle maternal instincts
                 </p>
               </div>
             ) : (
