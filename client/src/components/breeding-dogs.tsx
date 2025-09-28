@@ -42,6 +42,7 @@ import chekhovOfficialPedigreeImage from "@assets/chekhov-pedigree.png";
 import harperLeeOfficialPedigreeImage from "@assets/harper-lee-pedigree.png";
 import piperOfficialPedigreeImage from "@assets/piper-pedigree.png";
 import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.png";
+import noraImage from "@assets/Nora 5x4_1753565326175.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1036,6 +1037,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: arabellaImage,
       description: "Arabella is an elegant and serene yellow female with a regal presence. Her calm confidence and nurturing instincts make her an exceptional mother, producing puppies with both beauty and temperament that reflect her graceful nature.",
+    },
+    {
+      name: "Nora",
+      formalName: "On The Bluff's Nora",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: noraImage,
+      description: "Nora is a gentle and devoted yellow female with exceptional maternal instincts. Her loving nature and calm demeanor make her an ideal mother, consistently producing puppies with wonderful temperaments that reflect her nurturing spirit.",
     },
   ];
 
