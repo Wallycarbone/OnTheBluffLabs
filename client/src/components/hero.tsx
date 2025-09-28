@@ -17,16 +17,29 @@ export default function Hero() {
       >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
+        {/* Desktop Image */}
         <img 
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
-          className="w-full h-full object-cover"
+          className="hidden md:block w-full h-full object-cover"
           style={{ objectPosition: 'center 10%' }}
           onError={(e) => {
-            console.log('Image failed to load:', heroImage);
+            console.log('Desktop image failed to load:', heroImage);
             e.currentTarget.style.display = 'none';
           }}
-          onLoad={() => console.log('Image loaded successfully:', heroImage)}
+          onLoad={() => console.log('Desktop image loaded successfully:', heroImage)}
+        />
+        {/* Mobile Image - Same image but with different positioning */}
+        <img 
+          src={heroImage}
+          alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
+          className="block md:hidden w-full h-full object-cover"
+          style={{ objectPosition: '70% center' }}
+          onError={(e) => {
+            console.log('Mobile image failed to load:', heroImage);
+            e.currentTarget.style.display = 'none';
+          }}
+          onLoad={() => console.log('Mobile image loaded successfully:', heroImage)}
         />
         {/* Gradient Overlay */}
         <div 
