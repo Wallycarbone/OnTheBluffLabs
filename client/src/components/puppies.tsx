@@ -97,7 +97,7 @@ export default function Puppies() {
   };
 
   const scrollToContact = () => {
-    setLocation('/contact');
+    setLocation('/puppy-application');
   };
 
   const openPedigreePopup = (litter: any) => {
