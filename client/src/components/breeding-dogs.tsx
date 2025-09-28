@@ -53,6 +53,7 @@ import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png"
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.png";
 import beckyImage from "@assets/Untitled design - 2025-09-28T162502.877_1759091209687.png";
 import beckyOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf_1759091354268.png";
+import vivienImage from "@assets/Untitled design - 2025-09-28T163511.909_1759092025671.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1235,10 +1236,10 @@ export default function BreedingDogs() {
       name: "Vivien",
       formalName: "On The Bluff's Vivien the Enchantress",
       gender: "Female",
-      color: "Yellow",
+      color: "Chocolate",
       age: "Breeding Female",
-      image: beckyImage, // Placeholder - will need actual Vivien image
-      description: "Vivien is an elegant and graceful dame with a gentle temperament and natural maternal instincts. Her calm demeanor and loving nature make her an exceptional mother, producing puppies that inherit her serene personality and beautiful conformation.",
+      image: vivienImage,
+      description: "Vivien is a stunning chocolate dame with mesmerizing amber eyes and an enchanting presence. Her gentle temperament and natural maternal instincts make her a devoted mother, producing puppies that inherit both her striking beauty and her serene, loving personality.",
     },
   ];
 
