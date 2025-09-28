@@ -690,13 +690,64 @@ export default function BreedingDogs() {
         sire: {
           name: "Scarfone's Mark Twain",
           titles: [],
+          image: markTwainImage,
           sire: {
-            name: "Valhalla's One Little Victory Jhi",
-            titles: []
+            name: "Valhalla's One Little Victory JH",
+            titles: ["JH"],
+            sire: {
+              name: "CH Lubberline Martingale",
+              titles: ["CH"],
+              image: martingaleImage,
+              sire: {
+                name: "CH Hunt Club Clayview Funny Bear",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "CH Hennings Bill Lubberline JH",
+                titles: ["CH", "JH"]
+              }
+            },
+            dam: {
+              name: "Brimars N-Vogue JH",
+              titles: ["JH"],
+              sire: {
+                name: "CH Sandylands Star Trend",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Brinar's Gem At Poplar Forest JH",
+                titles: ["JH"]
+              }
+            }
           },
           dam: {
             name: "Bateshaus Stop To Smell The Roses",
-            titles: []
+            titles: [],
+            sire: {
+              name: "CH Stormy C's Superbad",
+              titles: ["CH"],
+              sire: {
+                name: "CH Blackwing Superfine",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Casbar's Red Hot Chili Pepper RN",
+                titles: ["RN"]
+              }
+            },
+            dam: {
+              name: "CH Batescreek Emma",
+              titles: ["CH"],
+              image: emmaImage,
+              sire: {
+                name: "CH Zinfindel Brigham",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "CH Berryhill Grand River Crystal",
+                titles: ["CH"]
+              }
+            }
           }
         },
         dam: {
