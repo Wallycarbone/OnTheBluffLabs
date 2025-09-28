@@ -373,7 +373,7 @@ export default function BreedingDogs() {
       },
       "Moon": {
         name: "Moon",
-        formalName: "Belquest Conclusion Super Moon Rising",
+        formalName: "Belquest Conclusion's Super Moon Rising",
         titles: ["CH"],
         image: moonImage,
         sire: {
