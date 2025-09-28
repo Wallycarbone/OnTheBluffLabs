@@ -510,7 +510,7 @@ export default function BreedingDogs() {
           name: "On The Bluff's Holden Morrisey Caulfield",
           titles: [],
           sire: {
-            name: "Guinevere's Paternal Grandsire",
+            name: "Belquest Conclusion On The Bluff's Tristan (\"Tristan\")",
             titles: [],
             sire: {
               name: "Guinevere's Paternal Great-Grandsire",
@@ -522,7 +522,7 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Guinevere's Paternal Granddam",
+            name: "Endless Mt On The Bluff's Franny Glass (\"Franny\")",
             titles: [],
             sire: {
               name: "Guinevere's Paternal Dam's Great-Grandsire",
