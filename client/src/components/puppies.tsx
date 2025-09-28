@@ -259,7 +259,7 @@ export default function Puppies() {
       description: "Born September 18, 2025"
     },
     {
-      name: "Vivien & Grizzly",
+      name: "Grizzly & Vivien",
       sire: "Grizzly",
       dam: "Vivien",
       birthDate: "Due October 2025",
