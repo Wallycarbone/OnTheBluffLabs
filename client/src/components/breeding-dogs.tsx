@@ -1316,7 +1316,18 @@ export default function BreedingDogs() {
             ) : dog.name === "Guinevere" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Exceptional bloodlines with gentle maternal instincts
+                  Granddaughter of our beloved late sire, <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: atticusFinchImage,
+                        name: "Atticus Finch"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Atticus Finch
+                  </button>
                 </p>
               </div>
             ) : (
