@@ -1233,7 +1233,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Vivien",
-      formalName: "On The Bluff's Vivien Leigh",
+      formalName: "On The Bluff's Vivien the Enchantress",
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
