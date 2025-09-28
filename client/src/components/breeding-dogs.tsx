@@ -49,7 +49,7 @@ import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import pippiLongstockingImage from "@assets/pippi-longstocking.png";
 import guinevereImage from "@assets/guinevere-new-photo.png";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
-import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (47)_1759089191424.png";
+import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png";
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
