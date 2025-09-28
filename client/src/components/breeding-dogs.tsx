@@ -177,7 +177,7 @@ export default function BreedingDogs() {
     const pedigrees: { [key: string]: any } = {
       "Grizzly": {
         name: "Grizzly",
-        formalName: "Endless Mountain's Grizzly Bear at On The Bluff (\"Grizzly\")",
+        formalName: "Endless Mountain Labrador's Grizzly at On The Bluff",
         titles: [],
         image: newGrizzlyImage,
         sire: {
@@ -959,7 +959,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Grizzly",
-      formalName: "Endless Mt. Labrador Grizzly at On The Bluff",
+      formalName: "Endless Mountain Labrador's Grizzly at On The Bluff",
       gender: "Male",
       color: "Chocolate",
       age: "Active Stud",
