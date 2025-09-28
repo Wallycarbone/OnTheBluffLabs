@@ -538,7 +538,7 @@ export default function BreedingDogs() {
           name: "On The Bluff's Avalon of The Lake",
           titles: [],
           sire: {
-            name: "Guinevere's Maternal Grandsire",
+            name: "On The Bluff's Atticus Finch",
             titles: [],
             sire: {
               name: "Guinevere's Maternal Great-Grandsire",
