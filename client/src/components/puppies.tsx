@@ -272,7 +272,7 @@ export default function Puppies() {
       description: "Expected litter due October 2025"
     },
     {
-      name: "Becky & Holden",
+      name: "Holden & Becky",
       sire: "Holden",
       dam: "Becky",
       birthDate: "Due November 2025",
