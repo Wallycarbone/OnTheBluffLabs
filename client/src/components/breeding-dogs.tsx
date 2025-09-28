@@ -1379,18 +1379,7 @@ export default function BreedingDogs() {
             ) : dog.name === "Queen Boudica" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of our beloved late sire, <button 
-                    className="text-golden underline hover:text-golden/80 font-medium"
-                    onClick={() => {
-                      setSelectedImage({
-                        src: atticusFinchImage,
-                        name: "Atticus Finch"
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    Atticus Finch
-                  </button>
+                  Bred by Keepsake Labradors, a legendary kennel that produces stunning fox red labradors
                 </p>
               </div>
             ) : (
