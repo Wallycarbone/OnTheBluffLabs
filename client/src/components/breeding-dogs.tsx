@@ -499,7 +499,7 @@ export default function BreedingDogs() {
         formalName: "On The Bluff's Nora Helmer",
         titles: ["CH"],
         sire: {
-          name: "Nora's Sire",
+          name: "Belquest Conclusion On The Bluff's Tristan",
           titles: ["CH"],
           sire: {
             name: "Nora's Paternal Grandsire",
@@ -527,7 +527,7 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Nora's Dam",
+          name: "Dreaming Tree Sweet Caroline",
           titles: ["CH"],
           sire: {
             name: "Nora's Maternal Grandsire",
