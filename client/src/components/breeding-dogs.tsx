@@ -497,17 +497,17 @@ export default function BreedingDogs() {
       "Nora": {
         name: "Nora",
         formalName: "On The Bluff's Nora Helmer",
-        titles: ["CH"],
+        titles: [],
         sire: {
           name: "Belquest Conclusion On The Bluff's Tristan",
-          titles: ["CH"],
+          titles: [],
           sire: {
             name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
             titles: [],
             image: stoliImage,
             sire: {
               name: "Aster Liberti Labro Hamburg",
-              titles: ["CH"],
+              titles: [],
               image: hamburgImage
             },
             dam: {
@@ -521,17 +521,17 @@ export default function BreedingDogs() {
             titles: [],
             sire: {
               name: "Seminary's Sire",
-              titles: ["CH"]
+              titles: []
             },
             dam: {
               name: "Seminary's Dam",
-              titles: ["CH"]
+              titles: []
             }
           }
         },
         dam: {
           name: "Dreaming Tree Sweet Caroline",
-          titles: ["CH"],
+          titles: [],
           sire: {
             name: "On The Bluff's Atticus Finch",
             titles: [],
@@ -563,14 +563,14 @@ export default function BreedingDogs() {
           },
           dam: {
             name: "Dreaming Tree's Aeofe Heffalump",
-            titles: ["CH"],
+            titles: [],
             sire: {
               name: "Aeofe's Sire",
-              titles: ["CH"]
+              titles: []
             },
             dam: {
               name: "Aeofe's Dam",
-              titles: ["CH"]
+              titles: []
             }
           }
         }
