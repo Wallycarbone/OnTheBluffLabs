@@ -44,6 +44,7 @@ import piperOfficialPedigreeImage from "@assets/piper-pedigree.png";
 import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.png";
 import noraOfficialPedigreeImage from "@assets/nora-pedigree.png";
 import noraImage from "@assets/nora-new-photo.png";
+import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -434,62 +435,63 @@ export default function BreedingDogs() {
         }
       },
       "Foxxy": {
-        name: "Foxxy",
+        name: "On The Bluff Foxxy",
         formalName: "On The Bluff Foxxy",
-        titles: ["CH"],
+        titles: [],
+        image: foxxyImage,
         sire: {
           name: "Foxxy's Sire",
-          titles: ["CH"],
+          titles: [],
           sire: {
             name: "Foxxy's Paternal Grandsire",
-            titles: ["CH"],
+            titles: [],
             sire: {
               name: "Foxxy's Paternal Great-Grandsire",
-              titles: ["CH"]
+              titles: []
             },
             dam: {
               name: "Foxxy's Paternal Great-Granddam",
-              titles: ["CH"]
+              titles: []
             }
           },
           dam: {
             name: "Foxxy's Paternal Granddam",
-            titles: ["CH"],
+            titles: [],
             sire: {
               name: "Foxxy's Paternal Dam's Great-Grandsire",
-              titles: ["CH"]
+              titles: []
             },
             dam: {
               name: "Foxxy's Paternal Dam's Great-Granddam",
-              titles: ["CH"]
+              titles: []
             }
           }
         },
         dam: {
           name: "Foxxy's Dam",
-          titles: ["CH"],
+          titles: [],
           sire: {
             name: "Foxxy's Maternal Grandsire",
-            titles: ["CH"],
+            titles: [],
             sire: {
               name: "Foxxy's Maternal Great-Grandsire",
-              titles: ["CH"]
+              titles: []
             },
             dam: {
               name: "Foxxy's Maternal Great-Granddam",
-              titles: ["CH"]
+              titles: []
             }
           },
           dam: {
             name: "Foxxy's Maternal Granddam",
-            titles: ["CH"],
+            titles: [],
             sire: {
               name: "Foxxy's Dam's Maternal Great-Grandsire",
-              titles: ["CH"]
+              titles: []
             },
             dam: {
               name: "Foxxy's Dam's Maternal Great-Granddam",
-              titles: ["CH"]
+              titles: []
             }
           }
         }
@@ -1069,6 +1071,15 @@ export default function BreedingDogs() {
       image: noraImage,
       description: "Nora is a gentle and devoted dame with exceptional maternal instincts. Her loving nature and calm demeanor make her an ideal mother, consistently producing puppies with wonderful temperaments that reflect her nurturing spirit.",
     },
+    {
+      name: "Foxxy",
+      formalName: "On The Bluff Foxxy",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: foxxyImage,
+      description: "Foxxy is an energetic and affectionate dame with a playful spirit. Her friendly nature and strong maternal instincts make her an excellent mother, producing puppies with vibrant personalities that mirror her joyful temperament.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
@@ -1265,6 +1276,12 @@ export default function BreedingDogs() {
                   >
                     Atticus Finch
                   </button>
+                </p>
+              </div>
+            ) : dog.name === "Foxxy" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Exceptional bloodlines with proven breeding excellence
                 </p>
               </div>
             ) : (
