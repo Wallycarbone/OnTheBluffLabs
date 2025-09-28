@@ -435,8 +435,8 @@ export default function BreedingDogs() {
         }
       },
       "Foxxy": {
-        name: "On The Bluff Foxxy",
-        formalName: "On The Bluff Foxxy",
+        name: "On The Bluff's Foxxy",
+        formalName: "On The Bluff's Foxxy",
         titles: [],
         image: foxxyImage,
         sire: {
@@ -1073,7 +1073,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Foxxy",
-      formalName: "On The Bluff Foxxy",
+      formalName: "On The Bluff's Foxxy",
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
