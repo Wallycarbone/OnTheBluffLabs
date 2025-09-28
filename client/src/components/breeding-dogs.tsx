@@ -1231,6 +1231,15 @@ export default function BreedingDogs() {
       image: beckyImage,
       description: "Becky is a strongly built black dame with gentle eyes and a loving disposition. Her biddable temperament and nurturing instincts make her an exceptional mother, consistently producing puppies with wonderful personalities that reflect her loving and patient nature.",
     },
+    {
+      name: "Vivien",
+      formalName: "On The Bluff's Vivien Leigh",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: beckyImage, // Placeholder - will need actual Vivien image
+      description: "Vivien is an elegant and graceful dame with a gentle temperament and natural maternal instincts. Her calm demeanor and loving nature make her an exceptional mother, producing puppies that inherit her serene personality and beautiful conformation.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
