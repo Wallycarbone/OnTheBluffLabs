@@ -341,7 +341,7 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "On The Bluff's Arabella Tallant",
+          name: "Arabella",
           titles: [],
           image: arabellaImage,
           sire: {
@@ -1029,7 +1029,7 @@ export default function BreedingDogs() {
       description: "Piper is an affectionate and calm female with a gentle disposition. Her loving nature and serene temperament make her both an excellent companion and devoted mother, passing on her peaceful personality to her puppies.",
     },
     {
-      name: "On The Bluff's Arabella Tallant",
+      name: "Arabella",
       formalName: "On The Bluff's Arabella Tallant",
       gender: "Female",
       color: "Yellow",
@@ -1201,7 +1201,7 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
-            ) : dog.name === "On The Bluff's Arabella Tallant" ? (
+            ) : dog.name === "Arabella" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
                   Descended from 2004 Westminster Best of Breed <button 
@@ -1850,7 +1850,7 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       />
-                    ) : selectedDog?.name === "On The Bluff's Arabella Tallant" ? (
+                    ) : selectedDog?.name === "Arabella" ? (
                       <img 
                         src={arabellaOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
