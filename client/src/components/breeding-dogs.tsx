@@ -40,6 +40,7 @@ import holdenOfficialPedigreeImage from "@assets/holden-pedigree.png";
 import moonOfficialPedigreeImage from "@assets/moon-pedigree.png";
 import chekhovOfficialPedigreeImage from "@assets/chekhov-pedigree.png";
 import harperLeeOfficialPedigreeImage from "@assets/harper-lee-pedigree.png";
+import piperOfficialPedigreeImage from "@assets/piper-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1829,6 +1830,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: harperLeeOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Piper" ? (
+                      <img 
+                        src={piperOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: piperOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
