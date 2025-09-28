@@ -502,15 +502,18 @@ export default function BreedingDogs() {
           name: "Belquest Conclusion On The Bluff's Tristan",
           titles: ["CH"],
           sire: {
-            name: "Nora's Paternal Grandsire",
-            titles: ["CH"],
+            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
+            titles: [],
+            image: stoliImage,
             sire: {
-              name: "Nora's Paternal Great-Grandsire",
-              titles: ["CH"]
+              name: "Aster Liberti Labro Hamburg",
+              titles: ["CH"],
+              image: hamburgImage
             },
             dam: {
-              name: "Nora's Paternal Great-Granddam",
-              titles: ["CH"]
+              name: "Belquest Prequel To The Sequel (\"Sequel\")",
+              titles: [],
+              image: sequelImage
             }
           },
           dam: {
