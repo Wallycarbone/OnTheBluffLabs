@@ -550,7 +550,7 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Guinevere's Maternal Granddam",
+            name: "Dreaming Tree's Aeofe Heffalump",
             titles: [],
             sire: {
               name: "Guinevere's Dam's Maternal Great-Grandsire",
