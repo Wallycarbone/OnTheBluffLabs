@@ -54,7 +54,7 @@ import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09
 import beckyImage from "@assets/Untitled design - 2025-09-28T162502.877_1759091209687.png";
 import beckyOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf_1759091354268.png";
 import vivienImage from "@assets/Untitled design - 2025-09-28T163511.909_1759092025671.png";
-import vivienOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf (1)_1759092095454.png";
+import vivienOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf (2)_1759092241674.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
