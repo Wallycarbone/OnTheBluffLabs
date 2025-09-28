@@ -1045,7 +1045,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: noraImage,
-      description: "Nora is a gentle and devoted yellow female with exceptional maternal instincts. Her loving nature and calm demeanor make her an ideal mother, consistently producing puppies with wonderful temperaments that reflect her nurturing spirit.",
+      description: "Nora is a gentle and devoted dame with exceptional maternal instincts. Her loving nature and calm demeanor make her an ideal mother, consistently producing puppies with wonderful temperaments that reflect her nurturing spirit.",
     },
   ];
 
