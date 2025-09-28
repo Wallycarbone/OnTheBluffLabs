@@ -47,7 +47,7 @@ import noraImage from "@assets/nora-new-photo.png";
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import pippiLongstockingImage from "@assets/pippi-longstocking.png";
-import guinevereImage from "@assets/Y30A1114GuinevereGrizzlymssweethearts (2)_1754683799995.jpg";
+import guinevereImage from "@assets/guinevere-new-photo.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1089,7 +1089,7 @@ export default function BreedingDogs() {
       name: "Guinevere",
       formalName: "On The Bluff's Guinevere",
       gender: "Female",
-      color: "Yellow",
+      color: "Chocolate",
       age: "Breeding Female",
       image: guinevereImage,
       description: "Guinevere is an elegant and devoted dame with exceptional maternal qualities. Her gentle nature and strong family bonds make her an outstanding mother, consistently producing puppies with loving temperaments that reflect her warm and nurturing spirit.",
