@@ -49,7 +49,7 @@ import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import pippiLongstockingImage from "@assets/pippi-longstocking.png";
 import guinevereImage from "@assets/guinevere-new-photo.png";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
-import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
+import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (47)_1759089191424.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1139,10 +1139,10 @@ export default function BreedingDogs() {
       name: "Queen Boudica",
       formalName: "On The Bluff's Queen Boudica",
       gender: "Female",
-      color: "Black",
+      color: "Fox Red",
       age: "Breeding Female", 
       image: queenBoudicaImage,
-      description: "Queen Boudica is a magnificent black dame with regal bearing and exceptional intelligence. Her noble presence and natural leadership qualities make her an outstanding mother, producing puppies with both striking appearance and confident temperaments that reflect her warrior spirit.",
+      description: "Queen Boudica is a magnificent fox red dame with regal bearing and exceptional intelligence. Her noble presence and natural leadership qualities make her an outstanding mother, producing puppies with both striking appearance and confident temperaments that reflect her warrior spirit.",
     },
   ];
 
