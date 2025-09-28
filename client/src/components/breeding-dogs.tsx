@@ -50,6 +50,7 @@ import pippiLongstockingImage from "@assets/pippi-longstocking.png";
 import guinevereImage from "@assets/guinevere-new-photo.png";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
 import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (47)_1759089191424.png";
+import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -651,37 +652,31 @@ export default function BreedingDogs() {
       },
       "Queen Boudica": {
         name: "Queen Boudica",
-        formalName: "On The Bluff's Queen Boudica",
+        formalName: "Keepsake's Queen Boudica At On The Bluff",
         titles: [],
         image: queenBoudicaImage,
         sire: {
-          name: "On The Bluff's Atticus Finch",
+          name: "Keepsake Tom Tom",
           titles: [],
-          image: atticusFinchImage,
           sire: {
-            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
-            titles: [],
-            image: stoliImage
+            name: "Keepsake Rocket Man",
+            titles: []
           },
           dam: {
-            name: "Keepsake's Pippi Longstocking",
-            titles: [],
-            image: pippiLongstockingImage
+            name: "Keepsake Liberty Run Raspberry Sorbet",
+            titles: []
           }
         },
         dam: {
-          name: "On The Bluff's Nora Helmer",
+          name: "Keepsake Randiesa", 
           titles: [],
-          image: noraImage,
           sire: {
-            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
-            titles: [],
-            image: stoliImage
+            name: "Keepsake Puttin On The Ritz",
+            titles: []
           },
           dam: {
-            name: "Belquest Conclusion Double Layer Cake (\"Lay Lay\")",
-            titles: [],
-            image: layLayImage
+            name: "Keepsake Random Red",
+            titles: []
           }
         }
       },
@@ -1137,7 +1132,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Queen Boudica",
-      formalName: "On The Bluff's Queen Boudica",
+      formalName: "Keepsake's Queen Boudica At On The Bluff",
       gender: "Female",
       color: "Fox Red",
       age: "Breeding Female", 
@@ -2051,6 +2046,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: foxxyOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Queen Boudica" ? (
+                      <img 
+                        src={queenBoudicaOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: queenBoudicaOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
