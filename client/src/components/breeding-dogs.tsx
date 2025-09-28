@@ -51,7 +51,7 @@ import guinevereImage from "@assets/guinevere-new-photo.png";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
 import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png";
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.png";
-import beckyImage from "@assets/Breeding Dogs 5x4 (45)_1759071368331.png";
+import beckyImage from "@assets/Untitled design - 2025-09-28T162502.877_1759091209687.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1174,10 +1174,10 @@ export default function BreedingDogs() {
       name: "Becky",
       formalName: "On The Bluff's Becky Thatcher",
       gender: "Female",
-      color: "Yellow",
+      color: "Black",
       age: "Breeding Female",
       image: beckyImage,
-      description: "Becky is a graceful yellow dame with gentle eyes and a sweet disposition. Her calm temperament and nurturing instincts make her an exceptional mother, consistently producing puppies with wonderful personalities that reflect her loving and patient nature.",
+      description: "Becky is a graceful black dame with gentle eyes and a sweet disposition. Her calm temperament and nurturing instincts make her an exceptional mother, consistently producing puppies with wonderful personalities that reflect her loving and patient nature.",
     },
   ];
 
