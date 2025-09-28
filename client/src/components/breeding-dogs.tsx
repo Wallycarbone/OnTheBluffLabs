@@ -530,15 +530,32 @@ export default function BreedingDogs() {
           name: "Dreaming Tree Sweet Caroline",
           titles: ["CH"],
           sire: {
-            name: "Nora's Maternal Grandsire",
-            titles: ["CH"],
+            name: "On The Bluff's Atticus Finch",
+            titles: [],
+            image: atticusFinchImage,
             sire: {
-              name: "Nora's Maternal Great-Grandsire",
-              titles: ["CH"]
+              name: "Heartlands Polar Bear Chase",
+              titles: [],
+              sire: {
+                name: "Walker's \"Chance\" Of A Lifetime",
+                titles: []
+              },
+              dam: {
+                name: "Starqueststruttontoktakafarms",
+                titles: []
+              }
             },
             dam: {
-              name: "Nora's Maternal Great-Granddam",
-              titles: ["CH"]
+              name: "Heartlands Lily Of The Valley",
+              titles: [],
+              sire: {
+                name: "Centrecourt Black Jake At Ceasarscreek",
+                titles: []
+              },
+              dam: {
+                name: "Heartlands Vanilla Frosty",
+                titles: []
+              }
             }
           },
           dam: {
