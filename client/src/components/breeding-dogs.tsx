@@ -457,7 +457,7 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Foxxy's Paternal Granddam",
+            name: "Keepsake Random Red",
             titles: [],
             sire: {
               name: "Foxxy's Paternal Dam's Great-Grandsire",
