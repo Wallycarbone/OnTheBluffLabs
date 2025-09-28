@@ -773,7 +773,7 @@ export default function BreedingDogs() {
         sire: {
           name: "On The Bluff's Holden Morrisey Caulfield",
           titles: ["CH", "LT"],
-          image: holdenImage,
+          image: newHoldenImage,
           sire: {
             name: "Belquest Conclusion's Sterling On The Bluff's Tristan",
             titles: [],
