@@ -445,7 +445,7 @@ export default function BreedingDogs() {
           name: "Keepsake Thorin On The Bluff",
           titles: [],
           sire: {
-            name: "Foxxy's Paternal Grandsire",
+            name: "Keepsake Puttin On The Ritz",
             titles: [],
             sire: {
               name: "Foxxy's Paternal Great-Grandsire",
