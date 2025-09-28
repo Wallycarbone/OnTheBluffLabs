@@ -54,6 +54,7 @@ import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09
 import beckyImage from "@assets/Untitled design - 2025-09-28T162502.877_1759091209687.png";
 import beckyOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf_1759091354268.png";
 import vivienImage from "@assets/Untitled design - 2025-09-28T163511.909_1759092025671.png";
+import vivienOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf (1)_1759092095454.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -761,6 +762,70 @@ export default function BreedingDogs() {
           dam: {
             name: "Dreaming Tree Merida The Brave",
             titles: []
+          }
+        }
+      },
+      "Vivien": {
+        name: "Vivien",
+        formalName: "On The Bluff's Vivien the Enchantress",
+        titles: [],
+        image: vivienImage,
+        sire: {
+          name: "On The Bluff's Holden Morrisey Caulfield",
+          titles: ["CH", "LT"],
+          image: holdenImage,
+          sire: {
+            name: "Belquest Conclusion's Sterling On The Bluff's Tristan",
+            titles: [],
+            sire: {
+              name: "Belquest Conclusion Exemplary Old Stone Rock & Roll",
+              titles: []
+            },
+            dam: {
+              name: "Belquest Conclusion Bernasaky Og",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Endless Mt On The Bluff's Fanny Glass",
+            titles: [],
+            sire: {
+              name: "Endless Mt Shines Like Sterling",
+              titles: []
+            },
+            dam: {
+              name: "Endless Mt 's Gertrude Raising",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "Dreaming Tree Sweet Caroline",
+          titles: [],
+          sire: {
+            name: "On The Bluff's Atticus Finch",
+            titles: [],
+            image: atticusFinchImage,
+            sire: {
+              name: "Heartlands Polar Bear Chase",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Lily Of The Valley",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Dreaming Tree Aeone Heppalump",
+            titles: [],
+            sire: {
+              name: "North River's Under The Dreaming Tree",
+              titles: []
+            },
+            dam: {
+              name: "North River Black Pearl Of The Hudson",
+              titles: []
+            }
           }
         }
       },
@@ -2179,6 +2244,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: beckyOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Vivien" ? (
+                      <img 
+                        src={vivienOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: vivienOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
