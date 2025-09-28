@@ -43,7 +43,7 @@ import harperLeeOfficialPedigreeImage from "@assets/harper-lee-pedigree.png";
 import piperOfficialPedigreeImage from "@assets/piper-pedigree.png";
 import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.png";
 import noraOfficialPedigreeImage from "@assets/nora-pedigree.png";
-import noraImage from "@assets/Nora 5x4_1753565326175.png";
+import noraImage from "@assets/nora-new-photo.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1043,7 +1043,7 @@ export default function BreedingDogs() {
       name: "Nora",
       formalName: "On The Bluff's Nora Helmer",
       gender: "Female",
-      color: "Yellow",
+      color: "Black",
       age: "Breeding Female",
       image: noraImage,
       description: "Nora is a gentle and devoted dame with exceptional maternal instincts. Her loving nature and calm demeanor make her an ideal mother, consistently producing puppies with wonderful temperaments that reflect her nurturing spirit.",
