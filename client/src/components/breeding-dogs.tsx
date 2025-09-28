@@ -41,6 +41,7 @@ import moonOfficialPedigreeImage from "@assets/moon-pedigree.png";
 import chekhovOfficialPedigreeImage from "@assets/chekhov-pedigree.png";
 import harperLeeOfficialPedigreeImage from "@assets/harper-lee-pedigree.png";
 import piperOfficialPedigreeImage from "@assets/piper-pedigree.png";
+import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1028,8 +1029,8 @@ export default function BreedingDogs() {
       description: "Piper is an affectionate and calm female with a gentle disposition. Her loving nature and serene temperament make her both an excellent companion and devoted mother, passing on her peaceful personality to her puppies.",
     },
     {
-      name: "Arabella",
-      formalName: "On The Bluff Arabella",
+      name: "On The Bluff's Arabella Tallant",
+      formalName: "On The Bluff's Arabella Tallant",
       gender: "Female",
       color: "Yellow",
       age: "Breeding Female",
@@ -1200,7 +1201,7 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
-            ) : dog.name === "Arabella" ? (
+            ) : dog.name === "On The Bluff's Arabella Tallant" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
                   Descended from 2004 Westminster Best of Breed <button 
@@ -1844,6 +1845,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: piperOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "On The Bluff's Arabella Tallant" ? (
+                      <img 
+                        src={arabellaOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: arabellaOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
