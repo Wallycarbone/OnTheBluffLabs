@@ -474,7 +474,7 @@ export default function BreedingDogs() {
           titles: [],
           image: pippiLongstockingImage,
           sire: {
-            name: "Foxxy's Maternal Grandsire",
+            name: "Keepsake It Isn't Easy Being Red",
             titles: [],
             sire: {
               name: "Foxxy's Maternal Great-Grandsire",
