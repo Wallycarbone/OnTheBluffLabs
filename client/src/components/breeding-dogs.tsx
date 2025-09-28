@@ -46,6 +46,7 @@ import noraOfficialPedigreeImage from "@assets/nora-pedigree.png";
 import noraImage from "@assets/nora-new-photo.png";
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
+import pippiLongstockingImage from "@assets/pippi-longstocking.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -1282,7 +1283,18 @@ export default function BreedingDogs() {
             ) : dog.name === "Foxxy" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Exceptional bloodlines with proven breeding excellence
+                  Daughter of our beloved dame, <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: pippiLongstockingImage,
+                        name: "Pippi Longstocking"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Pippi Longstocking
+                  </button>
                 </p>
               </div>
             ) : (
