@@ -1080,7 +1080,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: foxxyImage,
-      description: "Foxxy is an energetic and affectionate dame with a playful spirit. Her friendly nature and strong maternal instincts make her an excellent mother, producing puppies with vibrant personalities that mirror her joyful temperament.",
+      description: "Foxxy is a stunning, blocky dame with the soulfull expression that we expect from our reds. Her friendly nature and strong maternal instincts make her an excellent mother, producing puppies with steady personalities that mirror her affectionate temperament.",
     },
   ];
 
