@@ -49,6 +49,7 @@ import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.png";
 import pippiLongstockingImage from "@assets/pippi-longstocking.png";
 import guinevereImage from "@assets/guinevere-new-photo.png";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.png";
+import queenBoudicaImage from "@assets/Queen Boudica 5x4_1753565170818.png";
 import msRippleCreekImage from "@assets/ms-ripple-creek.jpg";
 import msButterflyImage from "@assets/ms-butterfly.jpg";
 import mrBlingBonesImage from "@assets/mr-bling-bones.jpg";
@@ -648,6 +649,42 @@ export default function BreedingDogs() {
           }
         }
       },
+      "Queen Boudica": {
+        name: "Queen Boudica",
+        formalName: "On The Bluff's Queen Boudica",
+        titles: [],
+        image: queenBoudicaImage,
+        sire: {
+          name: "On The Bluff's Atticus Finch",
+          titles: [],
+          image: atticusFinchImage,
+          sire: {
+            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
+            titles: [],
+            image: stoliImage
+          },
+          dam: {
+            name: "Keepsake's Pippi Longstocking",
+            titles: [],
+            image: pippiLongstockingImage
+          }
+        },
+        dam: {
+          name: "On The Bluff's Nora Helmer",
+          titles: [],
+          image: noraImage,
+          sire: {
+            name: "Belquest Conclusion Stolichnaya (\"Stoli\")",
+            titles: [],
+            image: stoliImage
+          },
+          dam: {
+            name: "Belquest Conclusion Double Layer Cake (\"Lay Lay\")",
+            titles: [],
+            image: layLayImage
+          }
+        }
+      },
       "Holden": {
         name: "Holden",
         formalName: "On The Bluff's Holden Morrisey Caulfield",
@@ -1098,6 +1135,15 @@ export default function BreedingDogs() {
       image: guinevereImage,
       description: "Guinevere is an elegant and devoted dame with exceptional maternal qualities. Her gentle nature and strong family bonds make her an outstanding mother, consistently producing puppies with loving temperaments that reflect her warm and nurturing spirit.",
     },
+    {
+      name: "Queen Boudica",
+      formalName: "On The Bluff's Queen Boudica",
+      gender: "Female",
+      color: "Black",
+      age: "Breeding Female", 
+      image: queenBoudicaImage,
+      description: "Queen Boudica is a magnificent black dame with regal bearing and exceptional intelligence. Her noble presence and natural leadership qualities make her an outstanding mother, producing puppies with both striking appearance and confident temperaments that reflect her warrior spirit.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
@@ -1317,6 +1363,23 @@ export default function BreedingDogs() {
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
                   Granddaughter of our beloved late sire, <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: atticusFinchImage,
+                        name: "Atticus Finch"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Atticus Finch
+                  </button>
+                </p>
+              </div>
+            ) : dog.name === "Queen Boudica" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of our beloved late sire, <button 
                     className="text-golden underline hover:text-golden/80 font-medium"
                     onClick={() => {
                       setSelectedImage({
