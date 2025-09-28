@@ -472,6 +472,7 @@ export default function BreedingDogs() {
         dam: {
           name: "Keepsake's Pippi Longstocking On The Bluff",
           titles: [],
+          image: pippiLongstockingImage,
           sire: {
             name: "Foxxy's Maternal Grandsire",
             titles: [],
