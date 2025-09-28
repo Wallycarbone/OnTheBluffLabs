@@ -1177,7 +1177,7 @@ export default function BreedingDogs() {
       color: "Black",
       age: "Breeding Female",
       image: beckyImage,
-      description: "Becky is a graceful black dame with gentle eyes and a sweet disposition. Her calm temperament and nurturing instincts make her an exceptional mother, consistently producing puppies with wonderful personalities that reflect her loving and patient nature.",
+      description: "Becky is a strongly built black dame with gentle eyes and a loving disposition. Her biddable temperament and nurturing instincts make her an exceptional mother, consistently producing puppies with wonderful personalities that reflect her loving and patient nature.",
     },
   ];
 
