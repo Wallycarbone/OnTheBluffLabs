@@ -559,14 +559,14 @@ export default function BreedingDogs() {
             }
           },
           dam: {
-            name: "Nora's Maternal Granddam",
+            name: "Dreaming Tree's Aeofe Heffalump",
             titles: ["CH"],
             sire: {
-              name: "Nora's Dam's Maternal Great-Grandsire",
+              name: "Aeofe's Sire",
               titles: ["CH"]
             },
             dam: {
-              name: "Nora's Dam's Maternal Great-Granddam",
+              name: "Aeofe's Dam",
               titles: ["CH"]
             }
           }
