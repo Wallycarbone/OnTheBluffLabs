@@ -20,22 +20,6 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-2">
               <li>
                 <Link 
-                  href="/about"
-                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/puppies"
-                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
-                >
-                  Available Puppies
-                </Link>
-              </li>
-              <li>
-                <Link 
                   href="/breeding-dogs"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
@@ -44,10 +28,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/health-testing"
+                  href="/puppies"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  Holistic Health
+                  Puppies
                 </Link>
               </li>
               <li>
@@ -60,10 +44,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/facilities"
+                  href="/raw-dog-food"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  Facilities
+                  Raw Dog Food
                 </Link>
               </li>
               <li>
@@ -71,7 +55,23 @@ export default function Footer() {
                   href="/boarding"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  Boarding
+                  Board & Train
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/health-testing"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Holistic Health
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/facilities"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Our Team
                 </Link>
               </li>
               <li>
