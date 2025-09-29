@@ -184,13 +184,15 @@ export default function DogFoodPage() {
             <Button 
               asChild
               size="lg"
-              className="bg-olive-600 hover:bg-olive-700 text-white font-source-sans font-bold py-6 px-12 text-xl shadow-lg"
+              className="bg-olive-600 hover:bg-olive-700 font-source-sans font-bold py-6 px-12 text-xl shadow-lg"
+              style={{ color: 'white' }}
             >
               <a 
                 href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 data-testid="button-place-order"
+                style={{ color: 'white', textDecoration: 'none' }}
               >
                 Place Your Order Here
               </a>
