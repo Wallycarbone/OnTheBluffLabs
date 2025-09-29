@@ -2,7 +2,6 @@ import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_17
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-
 const foodProducts = [
   {
     id: "raw-blend-adult",
@@ -31,7 +30,6 @@ const foodProducts = [
 ];
 
 export default function DogFoodPage() {
-
   return (
     <div className="min-h-screen">
       {/* Hero Section with Background Image */}
@@ -67,113 +65,76 @@ export default function DogFoodPage() {
             </p>
           </div>
 
-        {/* Fresh Feeding Essay Section */}
-        <div className="max-w-5xl mx-auto mb-20">
-          <h2 className="text-3xl font-oswald font-normal tracking-wide mb-8 text-center text-stone-900">
-            Our Philosophy on Fresh Feeding
-          </h2>
-          
-          <div className="mb-8">
-            <div className="font-source-sans leading-relaxed text-justify space-y-6 max-w-4xl mx-auto" 
-              style={{
-                color: '#2d3748', 
-                lineHeight: '1.8',
-                fontSize: '16px',
-                letterSpacing: '0.02em'
-              }}
-            >
-                <p>For over fifty years, we have fed our Labradors fresh, species-appropriate nutrition that mirrors what dogs would consume in their natural environment. Fresh feeding isn't just a trend—it's a return to the fundamental nutrition that has sustained healthy dogs for thousands of years.</p>
+          <div className="max-w-4xl mx-auto">
+            {/* Product Selection */}
+            <div>
+              <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-2 tracking-wide">
+                Fresh Food Products
+              </h2>
+              <p className="text-lg font-source-sans text-stone-600 mb-6 italic">Pickup Only</p>
+              
+              <div className="space-y-6">
+                {foodProducts.map((product) => (
+                  <Card 
+                    key={product.id}
+                    className="transition-all duration-200 hover:shadow-md"
+                  >
+                    <CardHeader>
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <CardTitle className="text-xl font-oswald font-normal text-stone-900 tracking-wide">
+                            {product.name}
+                          </CardTitle>
+                          <CardDescription className="text-stone-600 mt-2 font-source-sans">
+                            {product.description}
+                          </CardDescription>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-2xl font-bold text-olive-600">
+                            ${product.price}
+                          </div>
+                          <div className="text-sm text-stone-500 font-source-sans">
+                            per {product.unit}
+                          </div>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {product.benefits.map((benefit, index) => (
+                          <Badge 
+                            key={index} 
+                            variant="secondary" 
+                            className="bg-olive-100 text-olive-800 hover:bg-olive-200"
+                          >
+                            {benefit}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
 
-                <p>We feed our dogs fresh food made up of high-quality proteins such as meat, fish, and poultry, combined with fresh vegetables—mainly nutrient-dense greens, a variety of seasonal fruits, beneficial oils, and carefully selected supplements. When you provide your dog with varied, fresh nutrition, synthetic supplements become largely unnecessary.</p>
-
-                <p>Our fresh food diet includes proteins from local butchers, whole fish with bones, heads, tails, and organs (their absolute favorite!), fresh vegetables like kale, collard greens, dandelion greens, broccoli, and green beans, plus sweet potatoes. We incorporate olive oil, cod liver oil, and salmon oil for essential fatty acids.</p>
-
-                <p>Fresh bones are exceptional for dental health and provide natural nutrition—chicken backs are particularly beneficial and economical. Fresh bones remain soft enough for developing teeth while providing mental stimulation and natural teeth cleaning. Never feed cooked bones, which can splinter dangerously.</p>
-
-                <p>We add fresh garlic for flavor and its traditional benefits in helping ward off fleas and ticks. Seasonal fruits like pears, apples, and berries provide antioxidants and natural variety. Each dog develops individual preferences, making mealtime both nutritious and enjoyable.</p>
-
-                <p>Fresh feeding preserves natural enzymes that are destroyed in commercial processing, supports optimal digestion, maintains healthy weight, promotes lustrous coats, and provides the sustained energy that keeps our Labradors thriving well into their senior years. The difference in vitality, coat quality, and overall health is unmistakable.</p>
+            {/* Order Button */}
+            <div className="text-center mt-16 mb-16 py-8 bg-stone-50 rounded-lg">
+              <h3 className="text-2xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
+                Ready to Order?
+              </h3>
+              <a 
+                href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                data-testid="button-place-order"
+                className="inline-block font-source-sans font-bold py-6 px-12 text-xl shadow-lg rounded-lg transition-colors duration-200 hover:opacity-90"
+                style={{backgroundColor: '#6d761d', color: 'white', textDecoration: 'none', border: 'none'}}
+              >
+                Place Your Order Here
+              </a>
             </div>
           </div>
         </div>
-
-        <div className="max-w-4xl mx-auto">
-          {/* Product Selection */}
-          <div>
-            <h2 className="text-3xl font-oswald font-normal text-stone-900 mb-2 tracking-wide">
-              Fresh Food Products
-            </h2>
-            <p className="text-lg font-source-sans text-stone-600 mb-6 italic">Pickup Only</p>
-            
-            <div className="space-y-6">
-              {foodProducts.map((product) => (
-                <Card 
-                  key={product.id}
-                  className="transition-all duration-200 hover:shadow-md"
-                >
-                  <CardHeader>
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle className="text-xl font-oswald font-normal text-stone-900 tracking-wide">
-                          {product.name}
-                        </CardTitle>
-                        <CardDescription className="text-stone-600 mt-2 font-source-sans">
-                          {product.description}
-                        </CardDescription>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-olive-600">
-                          ${product.price}
-                        </div>
-                        <div className="text-sm text-stone-500 font-source-sans">
-                          per {product.unit}
-                        </div>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      {product.benefits.map((benefit, index) => (
-                        <Badge 
-                          key={index} 
-                          variant="secondary" 
-                          className="bg-olive-100 text-olive-800 hover:bg-olive-200"
-                        >
-                          {benefit}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-          </div>
-
-          {/* Order Button */}
-          <div className="text-center mt-16 mb-16 py-8 bg-stone-50 rounded-lg">
-            <h3 className="text-2xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
-              Ready to Order?
-            </h3>
-            <a 
-              href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              data-testid="button-place-order"
-              className="inline-block font-source-sans font-bold py-6 px-12 text-xl shadow-lg rounded-lg transition-colors duration-200 hover:opacity-90"
-              style={{ 
-                backgroundColor: '#6d761d', 
-                color: 'white',
-                textDecoration: 'none',
-                border: 'none'
-              }}
-            >
-              Place Your Order Here
-            </a>
-          </div>
-
-        </div>
-      </div>
       </div>
     </div>
   );
