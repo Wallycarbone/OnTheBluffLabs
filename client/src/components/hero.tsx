@@ -214,7 +214,7 @@ export default function Hero() {
 
 
       {/* Call to Action Section */}
-      <section className="py-12 md:py-20" style={{backgroundColor: '#fffbe8'}}>
+      <section className="pt-6 pb-12 md:pt-10 md:pb-20" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
