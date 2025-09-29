@@ -189,25 +189,26 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="md:hidden border-t shadow-lg" style={{backgroundColor: 'rgba(254, 254, 254, 0.98)'}}>
           <div className="px-4 py-4 space-y-2">
-            {/* Primary Actions */}
-            <div className="space-y-2 pb-4 border-b border-gray-200">
-              <MobileNavButton href="/puppies" label="Puppy Placement" primary onClick={closeMenu} />
-              <MobileNavButton href="/contact" label="Contact Us" primary onClick={closeMenu} />
+            {/* Primary Navigation */}
+            <div className="space-y-1 pb-4 border-b border-gray-200">
+              <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-2">Primary Navigation</div>
+              <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
+              <MobileNavButton href="/puppies" label="Puppy Placement" onClick={closeMenu} />
+              <MobileNavButton href="/training" label="Behavior Academy Options" onClick={closeMenu} />
             </div>
             
-            {/* Secondary Navigation */}
-            <div className="space-y-1 pt-2">
-              <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
-              <MobileNavButton href="/training" label="Behavior Academy Options" onClick={closeMenu} />
-              
-              {/* Care & Lifestyle Section Items */}
-              <div className="pl-4 pt-2 border-l-2 border-gray-200 ml-2">
-                <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-1">Care & Lifestyle</div>
-                <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
-                <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
-                <MobileNavButton href="/health-testing" label="Holistic Health" onClick={closeMenu} />
-                <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
-              </div>
+            {/* Secondary Navigation - Care & Lifestyle */}
+            <div className="space-y-1 pt-2 pb-4 border-b border-gray-200">
+              <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-2">Care & Lifestyle</div>
+              <MobileNavButton href="/health-testing" label="Holistic Health" onClick={closeMenu} />
+              <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
+              <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
+              <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
+            </div>
+            
+            {/* Contact Button */}
+            <div className="pt-2">
+              <MobileNavButton href="/contact" label="Contact Us" primary onClick={closeMenu} />
             </div>
           </div>
         </div>
