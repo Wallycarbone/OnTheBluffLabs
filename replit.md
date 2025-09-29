@@ -158,3 +158,8 @@ Preferred communication style: Simple, everyday language.
 - Optimized horizontal positioning at 82.5% for perfect Labrador and landscape balance
 - Enhanced mobile user experience with crystal-clear image visibility and excellent text readability
 - Achieved seamless integration between stunning photography showcase and functional navigation elements
+- Optimized mobile hero height to 90% viewport (`h-[90vh]`) for complete section visibility without scrolling
+- Enhanced mobile text sizes: badges (`text-base`), titles (`text-4xl`), subtitles (`text-base`), and buttons (`text-base`) for better readability
+- Added responsive two-line subtitle layout for mobile: "English Labradors Bred for Beauty" / "and Temperament"
+- Implemented mobile-responsive spacing with reduced section padding (`py-12`) for optimal content flow
+- Reorganized mobile navigation to match desktop structure with clean Primary Navigation and Care & Lifestyle sections
