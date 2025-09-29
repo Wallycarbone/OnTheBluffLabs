@@ -82,8 +82,8 @@ export default function Hero() {
               English Labradors Bred for Beauty<br className="md:hidden" /> and Temperament
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-6 justify-center md:justify-start">
+            {/* Action Buttons - Hidden on Mobile */}
+            <div className="hidden md:flex flex-col sm:flex-row gap-3 md:gap-6 justify-center md:justify-start">
               <Link href="/breeding-dogs">
                 <Button 
                   className="px-6 md:px-12 py-3 md:py-6 text-base md:text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
