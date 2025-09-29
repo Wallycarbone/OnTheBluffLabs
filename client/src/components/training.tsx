@@ -63,8 +63,9 @@ export default function Training() {
           style={{
             backgroundImage: `url(${trainingHeroImage})`,
             backgroundSize: 'cover',
-            backgroundPosition: '13% 0%',
-            backgroundRepeat: 'no-repeat'
+            backgroundPosition: '13% center',
+            backgroundRepeat: 'no-repeat',
+            transform: 'translateY(-30%)'
           }}
         ></div>
         {/* Desktop Gradient */}
