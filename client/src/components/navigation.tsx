@@ -230,7 +230,7 @@ export default function Navigation() {
             {/* Book Button */}
             <div className="pt-2">
               <a href="https://truth-networks-foundation-wallycarbone.replit.app/book" target="_blank" rel="noopener noreferrer"
-                 className="block w-full px-4 py-3 text-center font-montserrat font-bold text-white rounded-lg transition-all shadow-lg"
+                 className="block w-full px-4 py-3 text-left font-montserrat font-bold text-white rounded-lg transition-all shadow-lg"
                  style={{backgroundColor: '#b8860b', border: '2px solid #daa520'}}
                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#daa520'}
                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#b8860b'}
