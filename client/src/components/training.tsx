@@ -51,7 +51,7 @@ export default function Training() {
         style={{
           backgroundImage: `url(${trainingHeroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: '65% 45%',
+          backgroundPosition: '75% 45%',
           backgroundRepeat: 'no-repeat'
         }}
       >
