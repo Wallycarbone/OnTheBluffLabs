@@ -32,13 +32,6 @@ export default function Team() {
       image: "/attached_assets/24_1754773881053.png",
     },
     {
-      name: "Michaela Joyce",
-      role: "Puppy Training & Care Specialist",
-      description: "Michaela trains our puppies and provides dedicated care throughout their early development. Her nurturing approach ensures each puppy receives individual attention and develops the confident, well-adjusted temperament our families expect.",
-      highlight: "Guardian to On The Bluff's Honey",
-      image: "/attached_assets/25_1754773927239.png",
-    },
-    {
       name: "David Rifenburgh",
       role: "Puppy Trainer",
       description: "David started as a puppy parent and developed an interest in training, so he joined our team. His experience as a Labrador owner brings valuable perspective to our training and puppy development programs.",
