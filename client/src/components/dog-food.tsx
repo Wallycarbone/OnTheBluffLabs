@@ -181,22 +181,21 @@ export default function DogFoodPage() {
             <h3 className="text-2xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
               Ready to Order?
             </h3>
-            <Button 
-              asChild
-              size="lg"
-              className="bg-olive-600 hover:bg-olive-700 font-source-sans font-bold py-6 px-12 text-xl shadow-lg"
-              style={{ color: 'white' }}
+            <a 
+              href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              data-testid="button-place-order"
+              className="inline-block font-source-sans font-bold py-6 px-12 text-xl shadow-lg rounded-lg transition-colors duration-200 hover:opacity-90"
+              style={{ 
+                backgroundColor: '#6d761d', 
+                color: 'white',
+                textDecoration: 'none',
+                border: 'none'
+              }}
             >
-              <a 
-                href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                data-testid="button-place-order"
-                style={{ color: 'white', textDecoration: 'none' }}
-              >
-                Place Your Order Here
-              </a>
-            </Button>
+              Place Your Order Here
+            </a>
           </div>
 
         </div>
