@@ -139,7 +139,7 @@ export default function Navigation() {
               
               {/* Book Button */}
               <div className="ml-6">
-                <a href="https://labradorbook.live" target="_blank" rel="noopener noreferrer">
+                <a href="https://truth-networks-foundation-wallycarbone.replit.app/book" target="_blank" rel="noopener noreferrer">
                   <Button 
                     className="px-4 py-2 font-montserrat font-bold text-xs lg:text-sm rounded-full transition-all hover:scale-105 shadow-lg"
                     style={{backgroundColor: '#b8860b', color: '#fefefe', border: '2px solid #daa520'}}
@@ -174,7 +174,7 @@ export default function Navigation() {
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
               <CareLifestyleDropdown />
-              <a href="https://labradorbook.live" target="_blank" rel="noopener noreferrer">
+              <a href="https://truth-networks-foundation-wallycarbone.replit.app/book" target="_blank" rel="noopener noreferrer">
                 <Button 
                   className="px-2 py-2 font-montserrat font-bold text-xs rounded-full ml-1 shadow-lg"
                   style={{backgroundColor: '#b8860b', color: '#fefefe', border: '1px solid #daa520'}}
@@ -229,7 +229,7 @@ export default function Navigation() {
             
             {/* Book Button */}
             <div className="pt-2">
-              <a href="https://labradorbook.live" target="_blank" rel="noopener noreferrer"
+              <a href="https://truth-networks-foundation-wallycarbone.replit.app/book" target="_blank" rel="noopener noreferrer"
                  className="block w-full px-4 py-3 text-center font-montserrat font-bold text-white rounded-lg transition-all shadow-lg"
                  style={{backgroundColor: '#b8860b', border: '2px solid #daa520'}}
                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#daa520'}
