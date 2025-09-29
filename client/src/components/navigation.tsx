@@ -191,7 +191,6 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-2">
             {/* Primary Navigation */}
             <div className="space-y-1 pb-4 border-b border-gray-200">
-              <div className="text-xs font-montserrat font-semibold text-gray-500 uppercase tracking-wide mb-2">Primary Navigation</div>
               <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
               <MobileNavButton href="/puppies" label="Puppy Placement" onClick={closeMenu} />
               <MobileNavButton href="/training" label="Behavior Academy Options" onClick={closeMenu} />
