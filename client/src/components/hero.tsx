@@ -12,7 +12,7 @@ export default function Hero() {
     <>
       <section 
         id="home" 
-                className="h-[80vh] md:min-h-screen relative overflow-hidden"
+                className="h-[90vh] md:min-h-screen relative overflow-hidden"
         style={{ backgroundColor: '#f8f4e6' }}
       >
       {/* Background Image */}
@@ -58,7 +58,7 @@ export default function Hero() {
       </div>
       
       {/* Content Overlay - Responsive positioning */}
-      <div className="relative z-20 h-[80vh] md:min-h-screen flex items-end md:items-center">
+      <div className="relative z-20 h-[90vh] md:min-h-screen flex items-end md:items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 w-full">
           <div className="text-left max-w-xl lg:max-w-2xl">
             {/* Excellence Badge */}
