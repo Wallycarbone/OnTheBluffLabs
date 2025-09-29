@@ -62,6 +62,7 @@ export default function Team() {
       name: "Andrea & Sage Reuben-Carbone",
       role: "Breeding Partners",
       description: "Andrea & Sage Reuben-Carbone are valued breeding partners who provide exceptional care and nurturing for our breeding dogs and their litters. Their dedication and expertise contribute significantly to our breeding program's success and the development of well-socialized, confident puppies.",
+      highlight: "Guardians to On The Bluff's Guinevere and Morning Glory Scarlett O'Hara On The Bluff",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png",
     },
     {
