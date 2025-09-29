@@ -59,6 +59,12 @@ export default function Team() {
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (20)_1756152199562.png",
     },
     {
+      name: "Andrea & Sage Reuben-Carbone",
+      role: "Breeding Partners",
+      description: "Andrea & Sage Reuben-Carbone are valued breeding partners who provide exceptional care and nurturing for our breeding dogs and their litters. Their dedication and expertise contribute significantly to our breeding program's success and the development of well-socialized, confident puppies.",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png",
+    },
+    {
       name: "The Tampasis Family",
       role: "Breeding Partner",
       description: "The Tampasis Family is a highly trusted family who hosts some of our beloved dames in their home and helps raise their puppies. Their dedicated care and nurturing environment provides our breeding dogs and litters with the individual attention and family atmosphere that contributes to well-socialized, confident puppies.",
