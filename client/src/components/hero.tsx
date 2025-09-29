@@ -48,11 +48,11 @@ export default function Hero() {
             background: 'linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)'
           }}
         ></div>
-        {/* Mobile Gradient Overlay - Darker top gradient to ensure text readability */}
+        {/* Mobile Gradient Overlay - Light top, dark bottom for text readability */}
         <div 
           className="block md:hidden absolute inset-0 z-10"
           style={{
-            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%)'
+            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%)'
           }}
         ></div>
       </div>
