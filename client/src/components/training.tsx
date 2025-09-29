@@ -62,7 +62,7 @@ export default function Training() {
           className="block md:hidden absolute inset-0"
           style={{
             backgroundImage: `url(${trainingHeroImage})`,
-            backgroundSize: '150%',
+            backgroundSize: '300%',
             backgroundPosition: '13% center',
             backgroundRepeat: 'no-repeat',
             transform: 'translateY(-15%)'
