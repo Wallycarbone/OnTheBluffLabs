@@ -31,7 +31,7 @@ export default function Footer() {
                   href="/puppies"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  Puppies
+                  Puppy Placement
                 </Link>
               </li>
               <li>
