@@ -25,13 +25,6 @@ export default function Team() {
       image: jessImage,
     },
     {
-      name: "Andrea Reuben-Carbone",
-      role: "Administrative Team Member",
-      description: "Andrea manages all of our paperwork and ensures we maintain compliance with the AKC and Department of Agriculture regulations. Her meticulous attention to detail and regulatory expertise keeps our breeding program operating within all professional standards and legal requirements.",
-      highlight: "Guardian to On The Bluff's Guinevere and Morning Glory Scarlett O'Hara On The Bluff",
-      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (8)_1754774682894.png",
-    },
-    {
       name: "Thomas Gambino",
       role: "Puppy Training & Family Coordinator",
       description: "Thomas trains puppies, helps with puppy placement, and is a valued member of one of our co-owner families. His hands-on experience and personal connection to our breeding program brings authentic insight to puppy development and family matching.",
