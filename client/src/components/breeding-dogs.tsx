@@ -1661,7 +1661,7 @@ export default function BreedingDogs() {
         <div className="relative z-20 h-[90vh] md:min-h-[600px] flex items-end">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-20 w-full">
             <div className="text-center md:text-right md:flex md:justify-end">
-              <div className="max-w-xl md:text-right md:ml-auto md:ml-24 lg:ml-32">
+              <div className="max-w-xl md:text-right md:ml-auto md:ml-40 lg:ml-48">
                 <h1 className="text-5xl md:text-8xl font-oswald font-normal mb-4 md:mb-6 tracking-wide leading-tight text-white drop-shadow-2xl">
                   HEIRS OF<br className="md:hidden" /> <span style={{color: '#a4b548', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
                 </h1>
