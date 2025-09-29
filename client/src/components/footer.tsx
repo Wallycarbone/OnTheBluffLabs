@@ -11,7 +11,7 @@ export default function Footer() {
               ON THE BLUFF LABRADORS
             </h3>
             <p className="mb-4 font-source-sans" style={{color: '#ebebeb'}}>
-              Labradors Bred for Beauty & Temperament
+              English Labradors Bred for Beauty & Temperament
             </p>
           </div>
           
