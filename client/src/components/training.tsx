@@ -73,10 +73,10 @@ export default function Training() {
         {/* Mobile Gradient */}
         <div className="block md:hidden absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.9) 100%)'}}></div>
         <div className="relative z-10 text-center md:text-right text-white px-4 pb-8 md:pb-0 md:pr-16">
-          <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
+          <h1 className="text-7xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
             THE LEGACY<br />LIVES ON
           </h1>
-          <p className="text-xl md:text-2xl font-source-sans font-light">
+          <p className="text-3xl md:text-2xl font-source-sans font-light">
             Training Tomorrow's Labradors
           </p>
         </div>
