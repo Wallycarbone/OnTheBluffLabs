@@ -2,6 +2,7 @@ import { useState } from "react";
 import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_1758635261590.png';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 
 const foodProducts = [
@@ -173,6 +174,23 @@ export default function DogFoodPage() {
                 </CardContent>
               </Card>
             )}
+          </div>
+
+          {/* Order Button */}
+          <div className="text-center mt-12">
+            <Button 
+              asChild
+              className="bg-olive-600 hover:bg-olive-700 text-white font-source-sans font-semibold py-4 px-8 text-lg"
+            >
+              <a 
+                href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                data-testid="button-place-order"
+              >
+                Place Your Order Here
+              </a>
+            </Button>
           </div>
 
         </div>
