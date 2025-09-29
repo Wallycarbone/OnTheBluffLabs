@@ -46,15 +46,27 @@ export default function Training() {
   return (
     <div>
       {/* Hero Section with Background Image */}
-      <section 
-        className="relative h-[90vh] md:h-[80vh] flex items-end md:items-center justify-center md:justify-end"
-        style={{
-          backgroundImage: `url(${trainingHeroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: '13% 10%',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+      <section className="relative h-[90vh] md:h-[80vh] flex items-end md:items-center justify-center md:justify-end overflow-hidden">
+        {/* Desktop Background Image */}
+        <div 
+          className="hidden md:block absolute inset-0"
+          style={{
+            backgroundImage: `url(${trainingHeroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center calc(50% + 40px)',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
+        {/* Mobile Background Image */}
+        <div 
+          className="block md:hidden absolute inset-0"
+          style={{
+            backgroundImage: `url(${trainingHeroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: '13% 10%',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
         {/* Desktop Gradient */}
         <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.95) 100%)'}}></div>
         {/* Mobile Gradient */}
