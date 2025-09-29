@@ -108,7 +108,7 @@ export default function Navigation() {
             <div className="flex-shrink-0">
               <Link href="/">
                 <h1 
-                  className="text-sm md:text-base lg:text-lg font-oswald font-normal tracking-wide cursor-pointer transition-colors"
+                  className="text-xs md:text-sm lg:text-base xl:text-lg font-oswald font-normal tracking-wide cursor-pointer transition-colors whitespace-nowrap"
                   style={{color: '#11100f'}}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#6d761d'}
                   onMouseLeave={(e) => e.currentTarget.style.color = '#11100f'}
@@ -121,16 +121,16 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1 xl:space-x-2">
               {/* Primary Navigation */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2 xl:space-x-4">
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
               </div>
               
               {/* Divider */}
-              <div className="h-6 w-px bg-gray-300 mx-4"></div>
+              <div className="h-6 w-px bg-gray-300 mx-2 xl:mx-4"></div>
               
               {/* Secondary Navigation */}
               <div className="flex items-center">
@@ -138,7 +138,7 @@ export default function Navigation() {
               </div>
               
               {/* Book Button */}
-              <div className="ml-6">
+              <div className="ml-3 xl:ml-6">
                 <a href="https://truth-networks-foundation-wallycarbone.replit.app/book" target="_blank" rel="noopener noreferrer">
                   <Button 
                     className="px-4 py-2 font-montserrat font-bold text-xs lg:text-sm rounded-full transition-all hover:scale-105 shadow-lg"
@@ -152,7 +152,7 @@ export default function Navigation() {
               </div>
               
               {/* Contact Button */}
-              <div className="ml-3">
+              <div className="ml-2 xl:ml-3">
                 <Link href="/contact">
                   <Button 
                     className="px-4 py-2 font-montserrat font-medium text-xs lg:text-sm rounded-full transition-all hover:scale-105"
@@ -169,7 +169,7 @@ export default function Navigation() {
 
           {/* Tablet Navigation (hidden on mobile and desktop) */}
           <div className="hidden md:block lg:hidden">
-            <div className="flex items-center space-x-0.5">
+            <div className="flex items-center space-x-1 text-xs">
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
