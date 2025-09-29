@@ -177,10 +177,14 @@ export default function DogFoodPage() {
           </div>
 
           {/* Order Button */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-16 mb-16 py-8 bg-stone-50 rounded-lg">
+            <h3 className="text-2xl font-oswald font-normal text-stone-900 mb-6 tracking-wide">
+              Ready to Order?
+            </h3>
             <Button 
               asChild
-              className="bg-olive-600 hover:bg-olive-700 text-white font-source-sans font-semibold py-4 px-8 text-lg"
+              size="lg"
+              className="bg-olive-600 hover:bg-olive-700 text-white font-source-sans font-bold py-6 px-12 text-xl shadow-lg"
             >
               <a 
                 href="https://app.acuityscheduling.com/schedule.php?owner=13384245" 
