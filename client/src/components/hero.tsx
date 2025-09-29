@@ -72,7 +72,7 @@ export default function Hero() {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-5xl md:text-9xl font-oswald font-normal mb-4 md:mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
+            <h1 className="text-4xl md:text-8xl font-oswald font-normal mb-4 md:mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
               ON THE BLUFF<br />
               <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>LABRADORS</span>
             </h1>
@@ -82,6 +82,30 @@ export default function Hero() {
               English Labradors Bred for Beauty<br className="md:hidden" /> and Temperament
             </p>
 
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-6 justify-center md:justify-start">
+              <Link href="/breeding-dogs">
+                <Button 
+                  className="px-6 md:px-12 py-3 md:py-6 text-base md:text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                  style={{backgroundColor: 'rgba(109, 118, 29, 0.95)', color: '#fefefe'}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(100, 79, 6, 0.95)'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(109, 118, 29, 0.95)'}
+                >
+                  Meet Our Dogs
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button 
+                  variant="outline"
+                  className="border-2 px-6 md:px-12 py-3 md:py-6 text-base md:text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                  style={{borderColor: '#fefefe', color: '#fefefe', backgroundColor: 'rgba(255, 255, 255, 0.1)'}}
+                  onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'; e.currentTarget.style.color = '#6d761d'}}
+                  onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.color = '#fefefe'}}
+                >
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
