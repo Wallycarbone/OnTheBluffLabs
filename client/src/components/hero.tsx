@@ -57,38 +57,36 @@ export default function Hero() {
         ></div>
       </div>
       
-      {/* Content Overlay - Left Side */}
-      <div className="relative z-20 min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+      {/* Content Overlay - Responsive positioning */}
+      <div className="relative z-20 min-h-screen flex items-end md:items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 w-full">
           <div className="text-left max-w-xl lg:max-w-2xl">
             {/* Excellence Badge */}
-            <div className="flex items-center justify-start mb-8">
-              <div className="flex items-center rounded-full px-6 py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
-                <Award className="w-6 h-6 mr-3" style={{color: '#6d761d'}} />
-                <span className="font-source-sans font-semibold text-lg" style={{color: '#11100f'}}>
+            <div className="flex items-center justify-start mb-4 md:mb-8">
+              <div className="flex items-center rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
+                <Award className="w-4 h-4 md:w-6 md:h-6 mr-2 md:mr-3" style={{color: '#6d761d'}} />
+                <span className="font-source-sans font-semibold text-sm md:text-lg" style={{color: '#11100f'}}>
                   50+ Years of Excellence
                 </span>
               </div>
             </div>
 
             {/* Main Title */}
-            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
+            <h1 className="text-3xl md:text-8xl font-oswald font-normal mb-4 md:mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
               ON THE BLUFF<br />
               <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>LABRADORS</span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-2xl md:text-3xl mb-8 font-source-sans font-light leading-relaxed text-white drop-shadow-lg">
+            <p className="text-sm md:text-3xl mb-4 md:mb-8 font-source-sans font-light leading-relaxed text-white drop-shadow-lg">
               English Labradors Bred for Beauty and Temperament
             </p>
 
-
-
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-6 justify-start">
               <Link href="/breeding-dogs">
                 <Button 
-                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                  className="px-6 md:px-12 py-3 md:py-6 text-sm md:text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
                   style={{backgroundColor: 'rgba(109, 118, 29, 0.95)', color: '#fefefe'}}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(100, 79, 6, 0.95)'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(109, 118, 29, 0.95)'}
@@ -99,7 +97,7 @@ export default function Hero() {
               <Link href="/contact">
                 <Button 
                   variant="outline"
-                  className="border-2 px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+                  className="border-2 px-6 md:px-12 py-3 md:py-6 text-sm md:text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
                   style={{borderColor: '#fefefe', color: '#fefefe', backgroundColor: 'rgba(255, 255, 255, 0.1)'}}
                   onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'; e.currentTarget.style.color = '#6d761d'}}
                   onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.color = '#fefefe'}}
