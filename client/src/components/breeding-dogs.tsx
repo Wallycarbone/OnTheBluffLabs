@@ -1655,7 +1655,7 @@ export default function BreedingDogs() {
           {/* Desktop Gradient Overlay */}
           <div className="hidden md:block absolute inset-0 z-10" style={{background: 'linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)'}}></div>
           {/* Mobile Gradient Overlay */}
-          <div className="block md:hidden absolute inset-0 z-10" style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0.9) 100%)'}}></div>
+          <div className="block md:hidden absolute inset-0 z-10" style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9) 100%)'}}></div>
         </div>
         {/* Content Overlay - Responsive positioning */}
         <div className="relative z-20 h-[90vh] md:min-h-[600px] flex items-end">
