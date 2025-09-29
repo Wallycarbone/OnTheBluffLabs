@@ -30,17 +30,15 @@ export default function Hero() {
           onLoad={() => console.log('Desktop image loaded successfully:', heroImage)}
         />
         {/* Mobile Image - Better positioning to show dog more centrally */}
-        <img 
-          src={heroImage}
-          alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
-          className="block md:hidden w-full h-full object-cover"
-          style={{ objectPosition: '82.5% 90%', backgroundColor: 'red', filter: 'hue-rotate(180deg)' }}
-          onError={(e) => {
-            console.log('Mobile image failed to load:', heroImage);
-            e.currentTarget.style.display = 'none';
+        <div 
+          className="block md:hidden w-full h-full"
+          style={{ 
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: '82.5% bottom',
+            backgroundRepeat: 'no-repeat'
           }}
-          onLoad={() => console.log('Mobile image loaded successfully:', heroImage)}
-        />
+        ></div>
         {/* Desktop Gradient Overlay */}
         <div 
           className="hidden md:block absolute inset-0 z-10"
