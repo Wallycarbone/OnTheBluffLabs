@@ -1626,26 +1626,50 @@ export default function BreedingDogs() {
   return (
     <>
       {/* Hero Section with Labrador Background */}
-      <section className="relative min-h-[500px] md:min-h-[600px] flex items-end justify-center overflow-hidden bg-gray-100">
-        <img 
-          src={latestHeroLabradorImage}
-          alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
-          className="absolute inset-0 w-full h-full object-cover object-[50%_30%]"
-          onError={(e) => {
-            console.log('Our Dogs hero image failed to load:', latestHeroLabradorImage);
-            e.currentTarget.style.display = 'none';
-          }}
-          onLoad={() => console.log('Our Dogs hero image loaded successfully:', latestHeroLabradorImage)}
-        />
-        <div className="absolute inset-0 z-10" style={{background: 'linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)'}}></div>
-        <div className="text-right z-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full flex justify-end">
-          <div className="max-w-xl">
-            <h1 className="text-6xl md:text-8xl font-oswald font-normal mb-6 tracking-wide leading-tight text-white drop-shadow-2xl">
-              HEIRS OF <span style={{color: '#a4b548', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
-            </h1>
-            <h2 className="text-3xl md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg">
-              Meet Our Labradors
-            </h2>
+      <section className="relative h-[90vh] md:min-h-[600px] flex items-end justify-center overflow-hidden bg-gray-100">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 w-full h-full">
+          {/* Desktop Image */}
+          <img 
+            src={latestHeroLabradorImage}
+            alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
+            className="hidden md:block w-full h-full object-cover object-[50%_30%]"
+            onError={(e) => {
+              console.log('Our Dogs desktop hero image failed to load:', latestHeroLabradorImage);
+              e.currentTarget.style.display = 'none';
+            }}
+            onLoad={() => console.log('Our Dogs desktop hero image loaded successfully:', latestHeroLabradorImage)}
+          />
+          {/* Mobile Image */}
+          <img 
+            src={latestHeroLabradorImage}
+            alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
+            className="block md:hidden w-full h-full object-cover"
+            style={{ objectPosition: '60% 40%', transform: 'translateY(-5%)' }}
+            onError={(e) => {
+              console.log('Our Dogs mobile hero image failed to load:', latestHeroLabradorImage);
+              e.currentTarget.style.display = 'none';
+            }}
+            onLoad={() => console.log('Our Dogs mobile hero image loaded successfully:', latestHeroLabradorImage)}
+          />
+          {/* Desktop Gradient Overlay */}
+          <div className="hidden md:block absolute inset-0 z-10" style={{background: 'linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8) 100%)'}}></div>
+          {/* Mobile Gradient Overlay */}
+          <div className="block md:hidden absolute inset-0 z-10" style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0.9) 100%)'}}></div>
+        </div>
+        {/* Content Overlay - Responsive positioning */}
+        <div className="relative z-20 h-[90vh] md:min-h-[600px] flex items-end">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-20 w-full">
+            <div className="text-center md:text-right md:flex md:justify-end">
+              <div className="max-w-xl">
+                <h1 className="text-4xl md:text-8xl font-oswald font-normal mb-4 md:mb-6 tracking-wide leading-tight text-white drop-shadow-2xl">
+                  HEIRS OF<br className="md:hidden" /> <span style={{color: '#a4b548', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>EXCELLENCE</span>
+                </h1>
+                <h2 className="text-lg md:text-4xl font-source-sans font-light tracking-wide text-white drop-shadow-lg">
+                  Meet Our Labradors
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
       </section>
