@@ -32,12 +32,12 @@ localPort = 37993
 externalPort = 5000
 
 [[ports]]
-localPort = 39713
-externalPort = 3000
+localPort = 39519
+externalPort = 6800
 
 [[ports]]
-localPort = 41675
-externalPort = 8000
+localPort = 39713
+externalPort = 3000
 
 [[ports]]
 localPort = 42455
