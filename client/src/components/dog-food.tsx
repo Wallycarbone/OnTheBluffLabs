@@ -1,8 +1,6 @@
-import { useState } from "react";
 import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_1758635261590.png';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 
 const foodProducts = [
@@ -33,9 +31,6 @@ const foodProducts = [
 ];
 
 export default function DogFoodPage() {
-  const [selectedProduct, setSelectedProduct] = useState<string>("");
-
-  const selectedProductDetails = foodProducts.find(p => p.id === selectedProduct);
 
   return (
     <div className="min-h-screen">
@@ -114,14 +109,7 @@ export default function DogFoodPage() {
               {foodProducts.map((product) => (
                 <Card 
                   key={product.id}
-                  className={`cursor-pointer transition-all duration-200 ${
-                    selectedProduct === product.id 
-                      ? 'ring-2 ring-olive-600 shadow-lg' 
-                      : 'hover:shadow-md'
-                  }`}
-                  onClick={() => {
-                    setSelectedProduct(product.id);
-                  }}
+                  className="transition-all duration-200 hover:shadow-md"
                 >
                   <CardHeader>
                     <div className="flex justify-between items-start">
@@ -160,20 +148,6 @@ export default function DogFoodPage() {
               ))}
             </div>
 
-            {selectedProductDetails && (
-              <Card className="mt-6 bg-olive-50 border-olive-200">
-                <CardHeader>
-                  <CardTitle className="text-olive-800 font-oswald tracking-wide">Selected Product</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <h3 className="font-oswald font-normal text-olive-900 tracking-wide">{selectedProductDetails.name}</h3>
-                  <p className="text-olive-700 text-sm mt-1 font-source-sans">{selectedProductDetails.description}</p>
-                  <div className="flex justify-between items-center mt-3">
-                    <span className="text-olive-600 font-source-sans">Price: ${selectedProductDetails.price} per {selectedProductDetails.unit}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
           </div>
 
           {/* Order Button */}
