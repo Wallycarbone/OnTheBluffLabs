@@ -47,7 +47,7 @@ export default function Training() {
     <div>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative h-96 flex items-center justify-end"
+        className="relative h-[70vh] md:h-[80vh] flex items-center justify-end"
         style={{
           backgroundImage: `url(${trainingHeroImage})`,
           backgroundSize: 'cover',
