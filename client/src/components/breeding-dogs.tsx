@@ -1645,7 +1645,7 @@ export default function BreedingDogs() {
             src={latestHeroLabradorImage}
             alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
             className="block md:hidden w-full h-full object-cover"
-            style={{ objectPosition: '40% 40%', transform: 'translateY(-5%)' }}
+            style={{ objectPosition: '25% 40%', transform: 'translateY(-5%)' }}
             onError={(e) => {
               console.log('Our Dogs mobile hero image failed to load:', latestHeroLabradorImage);
               e.currentTarget.style.display = 'none';
