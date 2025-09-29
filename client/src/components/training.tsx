@@ -47,7 +47,7 @@ export default function Training() {
     <div>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative h-[70vh] md:h-[80vh] flex items-center justify-end"
+        className="relative h-[90vh] md:h-[80vh] flex items-center justify-center md:justify-end"
         style={{
           backgroundImage: `url(${trainingHeroImage})`,
           backgroundSize: 'cover',
@@ -55,8 +55,11 @@ export default function Training() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.95) 100%)'}}></div>
-        <div className="relative z-10 text-right text-white pr-8 md:pr-16">
+        {/* Desktop Gradient */}
+        <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.95) 100%)'}}></div>
+        {/* Mobile Gradient */}
+        <div className="block md:hidden absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.9) 100%)'}}></div>
+        <div className="relative z-10 text-center md:text-right text-white px-4 md:pr-16">
           <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
             THE LEGACY<br />LIVES ON
           </h1>
