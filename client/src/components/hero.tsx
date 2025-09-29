@@ -225,16 +225,18 @@ export default function Hero() {
               <p className="mb-8 text-lg font-source-sans leading-relaxed max-w-2xl mx-auto" style={{color: '#4b4b4b'}}>
                 Join the families who have trusted us for over 50 years to provide exceptional Labradors with champion bloodlines, holistic care, and a strong training foundation.
               </p>
-              <Link href="/contact">
-                <Button 
-                  className="px-12 py-6 text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                  style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                >
-                  Start Your Journey
-                </Button>
-              </Link>
+              <div className="flex justify-center">
+                <Link href="/contact">
+                  <Button 
+                    className="px-8 py-4 text-lg font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                    style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                  >
+                    Start Your Journey
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
