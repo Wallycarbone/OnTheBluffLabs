@@ -137,8 +137,22 @@ export default function Navigation() {
                 <CareLifestyleDropdown />
               </div>
               
-              {/* Contact Button */}
+              {/* Book Button */}
               <div className="ml-6">
+                <a href="https://labradorbook.live" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    className="px-4 py-2 font-montserrat font-bold text-xs lg:text-sm rounded-full transition-all hover:scale-105 shadow-lg"
+                    style={{backgroundColor: '#b8860b', color: '#fefefe', border: '2px solid #daa520'}}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#daa520'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#b8860b'}
+                  >
+                    📖 Our Book
+                  </Button>
+                </a>
+              </div>
+              
+              {/* Contact Button */}
+              <div className="ml-3">
                 <Link href="/contact">
                   <Button 
                     className="px-4 py-2 font-montserrat font-medium text-xs lg:text-sm rounded-full transition-all hover:scale-105"
@@ -160,6 +174,14 @@ export default function Navigation() {
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
               <CareLifestyleDropdown />
+              <a href="https://labradorbook.live" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  className="px-2 py-2 font-montserrat font-bold text-xs rounded-full ml-1 shadow-lg"
+                  style={{backgroundColor: '#b8860b', color: '#fefefe', border: '1px solid #daa520'}}
+                >
+                  📖 Book
+                </Button>
+              </a>
               <Link href="/contact">
                 <Button 
                   className="px-2 py-2 font-montserrat font-medium text-xs rounded-full ml-1"
@@ -203,6 +225,18 @@ export default function Navigation() {
               <MobileNavButton href="/raw-dog-food" label="Raw Dog Food" onClick={closeMenu} />
               <MobileNavButton href="/boarding" label="Board & Train" onClick={closeMenu} />
               <MobileNavButton href="/facilities" label="Our Team" onClick={closeMenu} />
+            </div>
+            
+            {/* Book Button */}
+            <div className="pt-2">
+              <a href="https://labradorbook.live" target="_blank" rel="noopener noreferrer"
+                 className="block w-full px-4 py-3 text-center font-montserrat font-bold text-white rounded-lg transition-all shadow-lg"
+                 style={{backgroundColor: '#b8860b', border: '2px solid #daa520'}}
+                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#daa520'}
+                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#b8860b'}
+              >
+                📖 Our Book
+              </a>
             </div>
             
             {/* Contact Button */}
