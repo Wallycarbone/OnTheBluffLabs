@@ -72,7 +72,7 @@ export default function Hero() {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-8xl font-oswald font-normal mb-4 md:mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
+            <h1 className="text-5xl md:text-8xl font-oswald font-normal mb-4 md:mb-8 tracking-wide leading-tight text-white drop-shadow-2xl">
               ON THE BLUFF<br />
               <span style={{color: '#6d761d', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>LABRADORS</span>
             </h1>
