@@ -60,9 +60,9 @@ export default function Hero() {
       {/* Content Overlay - Responsive positioning */}
       <div className="relative z-20 h-[90vh] md:min-h-screen flex items-end md:items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 w-full">
-          <div className="text-left max-w-xl lg:max-w-2xl">
+          <div className="text-center md:text-left max-w-xl lg:max-w-2xl">
             {/* Excellence Badge */}
-            <div className="flex items-center justify-start mb-4 md:mb-8">
+            <div className="flex items-center justify-center md:justify-start mb-4 md:mb-8">
               <div className="flex items-center rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg backdrop-blur-sm" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
                 <Award className="w-4 h-4 md:w-6 md:h-6 mr-2 md:mr-3" style={{color: '#6d761d'}} />
                 <span className="font-source-sans font-semibold text-base md:text-lg" style={{color: '#11100f'}}>
@@ -83,7 +83,7 @@ export default function Hero() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-6 justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-6 justify-center md:justify-start">
               <Link href="/breeding-dogs">
                 <Button 
                   className="px-6 md:px-12 py-3 md:py-6 text-base md:text-xl font-montserrat font-medium h-auto rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
