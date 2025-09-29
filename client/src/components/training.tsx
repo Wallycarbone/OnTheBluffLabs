@@ -47,7 +47,7 @@ export default function Training() {
   return (
     <div>
       {/* Hero Section with Background Image */}
-      <section className="relative h-[90vh] md:h-[80vh] flex items-end md:items-center justify-center md:justify-end overflow-hidden">
+      <section className="relative h-[90vh] md:h-[100vh] flex items-end md:items-center justify-center md:justify-end overflow-hidden">
         {/* Desktop Background Image */}
         <div 
           className="hidden md:block absolute inset-0"
