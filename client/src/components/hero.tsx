@@ -79,7 +79,7 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-base md:text-3xl mb-4 md:mb-8 font-source-sans font-light leading-relaxed text-white drop-shadow-lg">
-              English Labradors Bred for Beauty and Temperament
+              English Labradors Bred for Beauty<br className="md:hidden" /> and Temperament
             </p>
 
             {/* Action Buttons */}
