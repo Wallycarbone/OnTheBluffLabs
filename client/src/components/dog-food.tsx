@@ -47,7 +47,7 @@ export default function DogFoodPage() {
         <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 100%)'}}></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
-            Premium Fresh Dog Food
+            PREMIUM FRESH DOG FOOD
           </h1>
           <p className="text-xl md:text-2xl font-source-sans font-light max-w-3xl mx-auto">
             Nourishing Labradors with Fresh, Wholesome Nutrition for Over 50 Years
