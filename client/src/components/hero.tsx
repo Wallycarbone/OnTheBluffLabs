@@ -34,7 +34,7 @@ export default function Hero() {
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
           className="block md:hidden w-full h-full object-cover"
-          style={{ objectPosition: '82.5% 100%', transform: 'translateY(-15%)' }}
+          style={{ objectPosition: '82.5% 100%', transform: 'translateY(-8%)' }}
           onError={(e) => {
             console.log('Mobile image failed to load:', heroImage);
             e.currentTarget.style.display = 'none';
