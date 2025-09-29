@@ -60,7 +60,7 @@ export default function DogFoodPage() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-b from-stone-50 to-stone-100 py-16">
+      <div className="py-16" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Introduction Section */}
           <div className="text-center mb-12">
