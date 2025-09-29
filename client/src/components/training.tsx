@@ -65,7 +65,7 @@ export default function Training() {
             backgroundSize: 'cover',
             backgroundPosition: '13% center',
             backgroundRepeat: 'no-repeat',
-            transform: 'translateY(-30%)'
+            transform: 'translateY(20%)'
           }}
         ></div>
         {/* Desktop Gradient */}
