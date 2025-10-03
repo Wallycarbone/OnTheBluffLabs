@@ -3,9 +3,8 @@ services:
     name: onthebluff
     runtime: node
     plan: starter
-    rootDir: .
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: NODE_ENV=production node dist/index.js
     envVars:
       - key: NODE_ENV
         value: production
