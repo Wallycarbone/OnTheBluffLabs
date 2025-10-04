@@ -1,0 +1,76 @@
+Got it—your dist/ is a frontend build (Vite output: index.html, assets/…, index.js), while your server code is still TypeScript in /server/*.ts. Render is trying to run node dist/index.js (a browser bundle), and there’s no compiled Node server—hence the crash.
+
+Here’s the clean fix:
+
+What to change
+1) Add a dedicated TS config for the server
+
+Create tsconfig.server.json at the repo root:
+
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "build",          // <-- separate from frontend "dist"
+    "rootDir": "server",
+    "module": "commonjs",
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["server/**/*.ts", "shared/**/*.ts"],
+  "exclude": ["client", "public", "dist", "node_modules"]
+}
+
+
+This compiles server/index.ts → build/index.js and avoids colliding with your frontend dist/.
+
+2) Update package.json scripts
+{
+  "scripts": {
+    "build:server": "tsc -p tsconfig.server.json",
+    "build": "npm run build:server",             // add client build here later if needed
+    "start": "NODE_ENV=production node build/index.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only server/index.ts"
+  }
+}
+
+
+If your entry file isn’t server/index.ts, adjust rootDir or start accordingly.
+
+3) Tell Render to build then start
+
+If you use render.yaml, make it:
+
+services:
+  - type: web
+    name: rest-express
+    env: node
+    buildCommand: "npm ci && npm run build"
+    startCommand: "npm run start"
+    autoDeploy: true
+
+
+(Or set these in the Render dashboard: Build Command = npm ci && npm run build, Start Command = npm run start.)
+
+4) Confirm your server listens on Render’s port
+
+In server/index.ts:
+
+const port = Number(process.env.PORT) || 3000;
+app.listen(port, () => console.log(`Listening on ${port}`));
+
+Optional (if you also want to build the client)
+
+Keep frontend and backend builds separate:
+
+{
+  "scripts": {
+    "build:client": "cd client && npm ci && npm run build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build": "npm run build:server && npm run build:client"
+  }
+}
+
+
+Serve the client (if needed) by statically hosting client/dist (or copy it into public/)—or deploy it as a separate Render Static Site.
