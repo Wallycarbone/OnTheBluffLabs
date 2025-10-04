@@ -13,7 +13,7 @@ services:
           name: onthebluff-db
           property: connectionString
       - key: SESSION_SECRET
-        generateValue: true
+        sync: false
       - key: PORT
         value: 10000
 
