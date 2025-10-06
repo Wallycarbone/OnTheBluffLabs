@@ -208,19 +208,6 @@ export default function Puppies() {
       description: "Seven puppies born June 5, 2025"
     },
     {
-      name: "Moon & Nora",
-      sire: "Moon",
-      dam: "Nora",
-      birthDate: "June 21, 2025",
-      puppiesCount: 2,
-      available: "One Yellow Female",
-      readyDate: "August 2025",
-      image: moonImage2,
-      image2: noraImage,
-      status: "Current",
-      description: "One black female and one yellow female available"
-    },
-    {
       name: "Grizzly & Guinevere",
       sire: "Grizzly",
       dam: "Guinevere",
