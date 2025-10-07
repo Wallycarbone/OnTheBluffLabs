@@ -1,0 +1,297 @@
+Context
+
+Repo layout:
+
+client/ – React frontend (built with Vite/CRA; agent must autodetect)
+
+server/ – Express.js backend (TypeScript)
+
+shared/ – shared TS types
+
+attached_assets/ – static assets & images referenced by site
+
+Deployment: GitHub → Render auto deploys.
+
+Requirement: No paid APIs. Use only open-source libs.
+
+Critical: Do not change existing image paths or break any current URLs. If an optimization step fails, gracefully fall back to the original asset.
+
+Real assets range 6–20 MB. After processing, every delivered image must be ≤ 2 MB.
+
+Goals
+
+Build-time optimization (safe, in-place where possible) for images under client/ and attached_assets/.
+
+On-the-fly optimization via Express middleware (AVIF/WebP negotiation, optional resizing via query params, strong caching).
+
+Optional React helper to emit srcset/sizes without changing existing URLs (progressive adoption).
+
+Hard cap: All served images (original or transformed) must be ≤ 2 MB.
+
+Zero breaking changes: If anything errors, serve the original file.
+
+Non-Goals
+
+No CDN, no external image services, no paid APIs.
+
+No changes to existing <img src="…"> references required.
+
+High-Level Plan
+
+Add a build script with imagemin + sharp to compress originals losslessly/visually-losslessly, keeping the same filenames if smaller.
+
+Add an Express image optimizer middleware that:
+
+Detects client support for AVIF/WebP (Accept header).
+
+Resizes if ?w= provided, sets quality with ?q=.
+
+Always enforces ≤ 2 MB output (downscale/adjust quality iteratively until under limit).
+
+Serves optimized result from a disk cache (/tmp on Render) with Cache-Control: public, max-age=31536000, immutable and Vary: Accept.
+
+On any error, calls next() to let express.static serve the original file.
+
+Add a React <Img /> component that generates srcset/sizes using the same URLs + query params.
+
+Add a validation script that scans all images at build time and reports any file still > 2 MB (and reattempts compression/downscale until they pass or logs them with reasons).
+
+Constraints & Rules
+
+Supported image types for optimization: .jpg/.jpeg, .png, .webp, .avif (transformable).
+
+Pass-through types: .gif (animated), .svg (already optimized at build time), but do not re-encode GIF/SVG on the server (only build-time svgo/gifsicle).
+
+Preserve transparency for PNG/WebP/AVIF.
+
+Strip metadata/EXIF where safe.
+
+Do not upscale images.
+
+Default max display width for server-side resizing attempts: 2000 px (downscale if larger).
+
+Memory safety: limit sharp concurrency and use streams where appropriate.
+
+Implementation Steps
+
+Dependencies (root or appropriate package)
+Dev:
+
+ts-node, typescript, globby, imagemin, imagemin-mozjpeg, imagemin-pngquant, imagemin-gifsicle, imagemin-svgo
+Runtime (server):
+
+sharp, lru-cache, compression
+
+Create script scripts/optimize-images.ts (TypeScript) that:
+
+Scans client/**/*.{png,jpg,jpeg,gif,svg,webp,avif} and attached_assets/**/*.{png,jpg,jpeg,gif,svg,webp,avif}.
+
+For JPG: mozjpeg ~quality 75–78, progressive, strip metadata.
+
+For PNG: pngquant 0.65–0.8 quality; preserve alpha.
+
+For GIF: gifsicle optimizationLevel:2 (no color loss).
+
+For SVG: svgo default passes.
+
+For WebP/AVIF originals: attempt recompression with sharp if > 2 MB.
+
+If output is smaller, overwrite original. Never enlarge files.
+
+If still > 2 MB after recompression, downscale to max width 2000 px (keeping aspect), re-encode:
+
+Try AVIF (quality 45–60). If still > 2 MB, try WebP (quality 70–80), then JPEG (quality 70–78).
+
+Only replace if new file is strictly smaller; otherwise keep original and log a warning.
+
+Create server middleware server/middleware/imageOptimizer.ts (TypeScript) that:
+
+Targets actual files under a provided staticDir.
+
+Skips .svg & .gif (serve as-is; rely on build-time).
+
+Detects browser support: prefer AVIF, then WebP, else original format.
+
+Reads ?w (width), ?q (quality). Defaults: w=0 (no resize), q=78. Clamp q to 40–95.
+
+Algorithm:
+
+Load original with sharp; if width > 0, resize({ width, withoutEnlargement: true }).
+
+Choose output format based on negotiation; otherwise keep original format.
+
+Encode, then enforce ≤ 2 MB:
+
+If buffer > 2 MB, iteratively:
+
+reduce quality by steps (e.g. -7) to minimum 40,
+
+if still > 2 MB and original width > 1200 px, downscale width by 85% and retry at last good quality,
+
+cap minimal width at 720 px unless the original is smaller.
+
+Cache result on disk (/tmp/sharp-cache) and in LRU memory (keyed by path + width + quality + format).
+
+Set headers: Cache-Control: public, max-age=31536000, immutable, Vary: Accept.
+
+On any error, next() to let express.static serve the original.
+
+Wire middleware in server/index.ts:
+
+app.use(compression())
+
+Mount imageOptimizer before express.static for attached_assets and built client assets dir.
+
+Then express.static(..., { immutable: true, maxAge: '1y' }) for those same paths.
+
+React helper client/src/components/Img.tsx:
+
+Props: src, optional widths=[480,768,1024,1440], quality=78, and spreads the rest.
+
+Generates srcset as src?w=WIDTH&q=QUALITY WIDTHw, sets sizes="100vw", default src to the smallest width.
+
+Compatible with existing URLs; you can adopt gradually.
+
+Validation script scripts/validate-images.ts:
+
+After build-time optimization, walks the same globs.
+
+Reports any file > 2 MB. For each offender, attempt a final sharp pass similar to server loop (AVIF/WebP/JPEG, downscale to max 2000 px) and overwrite if smaller.
+
+Print a concise table: original size → new size, action taken, final format.
+
+Exit code 0 (never fail CI), but provide a summary so humans can review.
+
+package.json scripts (root):
+
+"optimize:images": "ts-node --transpile-only scripts/optimize-images.ts"
+
+"validate:images": "ts-node --transpile-only scripts/validate-images.ts"
+
+Modify existing "build" to run optimize:images first, then your current build. After build, run validate:images.
+
+Example:
+"build": "npm run optimize:images && <EXISTING_BUILD_CMD> && npm run validate:images"
+
+Sharp performance & safety:
+
+Set sharp.concurrency(2) inside middleware to limit memory spikes.
+
+Use /tmp/sharp-cache on Render for disk cache. Ensure the dir exists.
+
+Logging:
+
+Print optimization stats during build and middleware cache hits/misses at DEBUG=imgopt:*.
+
+Never log sensitive paths in production; keep logs concise.
+
+Testing checklist (agent must implement):
+
+Add 3–5 dummy large images (6–20 MB) to a temp folder, run the scripts, confirm all end up ≤ 2 MB or are skipped with reason.
+
+Start server locally, request one image with Accept: image/avif and without; confirm correct format served and ≤ 2 MB.
+
+Request ?w=800&q=70; confirm resized, smaller size, and Vary: Accept header present.
+
+Kill and restart server; confirm cached transforms rebuild on-demand with no errors.
+
+Git hygiene:
+
+Commit new files and changes in a single PR with a clear message: “feat: automated image optimization (build-time + on-the-fly) with ≤2MB cap”.
+
+Exact Files to Create/Modify (Agent: create with these contents)
+scripts/optimize-images.ts
+
+Implement as described in Step 2.
+
+Key behaviors to include:
+
+Try mozjpeg/pngquant/gifsicle/svgo first.
+
+If still >2MB: downscale to max 2000 px, then try AVIF (q 45–60), then WebP (q 70–80), then JPEG (q 70–78). Only overwrite on size win.
+
+scripts/validate-images.ts
+
+Implement post-pass scanner enforcing ≤2MB, emitting a table of (path, original size, new size, action, final fmt).
+
+server/middleware/imageOptimizer.ts
+
+Implement as described in Step 3 with:
+
+Format negotiation (AVIF > WebP > original).
+
+Query params w, q.
+
+Iterative size cap loop (quality ↓ then width ↓ until ≤ 2MB).
+
+LRU + disk cache.
+
+Headers and safe fallbacks.
+
+client/src/components/Img.tsx
+import React from 'react';
+
+type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
+  src: string;
+  widths?: number[];
+  quality?: number;
+};
+
+const clamp = (v: number, min: number, max: number) => Math.max(min, Math.min(max, v));
+
+export default function Img({ src, widths = [480, 768, 1024, 1440], quality = 78, ...rest }: Props) {
+  const q = clamp(quality, 40, 95);
+  const toUrl = (w: number) => `${src}?w=${w}&q=${q}`;
+  const srcSet = widths.map(w => `${toUrl(w)} ${w}w`).join(', ');
+  const defaultSrc = toUrl(widths[0] ?? 768);
+  return <img src={defaultSrc} srcSet={srcSet} sizes="100vw" {...rest} />;
+}
+
+server/index.ts (show the diff the agent should apply)
+
+Import and use:
+
+import compression from 'compression';
+import path from 'node:path';
+import { imageOptimizer } from './middleware/imageOptimizer';
+
+app.use(compression());
+
+const attachedAssets = path.join(process.cwd(), 'attached_assets');
+const clientAssets = path.join(process.cwd(), 'client'); // if build outputs elsewhere, detect and use that dir
+
+app.use('/attached_assets', imageOptimizer(attachedAssets));
+app.use('/assets', imageOptimizer(clientAssets)); // adjust to your built assets mount
+
+app.use('/attached_assets', express.static(attachedAssets, { immutable: true, maxAge: '1y' }));
+app.use('/assets', express.static(clientAssets, { immutable: true, maxAge: '1y' }));
+
+package.json (root)
+
+Add scripts per Step 7; add devDeps/runtime deps per Steps 1 & 8.
+
+Acceptance Criteria (the agent must verify)
+
+All existing image URLs continue to work unmodified.
+
+For any request path under /attached_assets or /assets:
+
+If client supports AVIF or WebP, the server prefers that format.
+
+If ?w present, image is resized with no upscaling; transparency preserved.
+
+Every served image (original or transformed) is ≤ 2 MB. The middleware enforces this via iterative quality/width reduction.
+
+Build-time scripts reduce repo image weight and keep filenames identical when smaller.
+
+Caching headers and Vary: Accept are correct.
+
+No paid services used.
+
+Notes for Render
+
+Use /tmp/sharp-cache for on-the-fly cache.
+
+The cache will be rebuilt after restarts; keep transformations fast and safe.
+
+Ensure the service root directory is correct (don’t point Render to the wrong dist/).
