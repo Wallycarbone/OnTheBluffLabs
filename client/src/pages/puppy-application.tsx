@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import PuppyApplication from "@/components/puppy-application";
 import Footer from "@/components/footer";
-import applicationImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.png";
+import applicationImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.jpg";
 
 export default function PuppyApplicationPage() {
   useEffect(() => {

@@ -58,25 +58,67 @@ async function optimizeImage(filePath) {
       });
     }
     
-    // Optimize based on format (keep same format to preserve imports)
+    // Optimize based on format
     if (ext === '.png') {
-      // Optimize PNG
-      await pipeline
-        .png({ quality: QUALITY, compressionLevel: 9, effort: 10 })
-        .toFile(tempPath);
-      
-      const newStats = await stat(tempPath);
-      
-      // Replace original if smaller
-      if (newStats.size < originalSize) {
-        const { rename } = await import('fs/promises');
-        await rename(tempPath, filePath);
-        console.log(`✓ Optimized ${filePath}`);
-        console.log(`  ${(originalSize / 1024 / 1024).toFixed(2)}MB → ${(newStats.size / 1024 / 1024).toFixed(2)}MB (${((1 - newStats.size / originalSize) * 100).toFixed(1)}% reduction)`);
+      // For very large PNGs (>5MB), convert to JPEG for better compression
+      if (originalSize > 5 * 1024 * 1024) {
+        const jpegPath = filePath.replace(/\.png$/i, '.jpg');
+        await pipeline
+          .jpeg({ quality: QUALITY, progressive: true, mozjpeg: true })
+          .toFile(jpegPath);
+        
+        const jpegStats = await stat(jpegPath);
+        
+        if (jpegStats.size < MAX_FILE_SIZE) {
+          console.log(`✓ Converted ${filePath} → ${jpegPath}`);
+          console.log(`  ${(originalSize / 1024 / 1024).toFixed(2)}MB → ${(jpegStats.size / 1024 / 1024).toFixed(2)}MB (${((1 - jpegStats.size / originalSize) * 100).toFixed(1)}% reduction)`);
+          
+          // Delete original PNG
+          const { unlink } = await import('fs/promises');
+          await unlink(filePath);
+        } else {
+          // If still too large after JPEG conversion, keep trying to optimize
+          console.log(`⚠️  Converted but still large: ${jpegPath} (${(jpegStats.size / 1024 / 1024).toFixed(2)}MB)`);
+        }
       } else {
-        const { unlink } = await import('fs/promises');
-        await unlink(tempPath);
-        console.log(`✓ Kept original ${filePath} (optimized version wasn't smaller)`);
+        // For smaller PNGs, try PNG optimization first
+        await pipeline
+          .png({ compressionLevel: 9, effort: 10 })
+          .toFile(tempPath);
+        
+        const newStats = await stat(tempPath);
+        
+        // If PNG optimization isn't enough, convert to JPEG
+        if (newStats.size >= originalSize || newStats.size >= MAX_FILE_SIZE) {
+          const jpegPath = filePath.replace(/\.png$/i, '.jpg');
+          await sharp(filePath)
+            .jpeg({ quality: QUALITY, progressive: true, mozjpeg: true })
+            .toFile(jpegPath);
+          
+          const jpegStats = await stat(jpegPath);
+          
+          if (jpegStats.size < originalSize) {
+            console.log(`✓ Converted ${filePath} → ${jpegPath}`);
+            console.log(`  ${(originalSize / 1024 / 1024).toFixed(2)}MB → ${(jpegStats.size / 1024 / 1024).toFixed(2)}MB (${((1 - jpegStats.size / originalSize) * 100).toFixed(1)}% reduction)`);
+            
+            const { unlink } = await import('fs/promises');
+            await unlink(filePath);
+            await unlink(tempPath);
+          } else {
+            const { unlink } = await import('fs/promises');
+            await unlink(tempPath);
+            await unlink(jpegPath);
+            console.log(`✓ Kept original ${filePath} (optimized version wasn't smaller)`);
+          }
+        } else if (newStats.size < originalSize) {
+          const { rename, unlink } = await import('fs/promises');
+          await rename(tempPath, filePath);
+          console.log(`✓ Optimized ${filePath}`);
+          console.log(`  ${(originalSize / 1024 / 1024).toFixed(2)}MB → ${(newStats.size / 1024 / 1024).toFixed(2)}MB (${((1 - newStats.size / originalSize) * 100).toFixed(1)}% reduction)`);
+        } else {
+          const { unlink } = await import('fs/promises');
+          await unlink(tempPath);
+        }
       }
       
     } else if (['.jpg', '.jpeg'].includes(ext)) {

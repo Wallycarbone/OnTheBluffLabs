@@ -1,4 +1,4 @@
-import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_1758635261590.png';
+import dogFoodHeroImage from '@assets/Untitled design - 2025-09-23T094717.321_1758635261590.jpg';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 

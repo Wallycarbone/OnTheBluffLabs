@@ -21,8 +21,8 @@ import newYellowSitting from "@assets/39_1755549645613.png";
 import newWhiteStanding from "@assets/40_1755549645619.png";
 import blackPinkDiamond from "@assets/Y30A1549black pink diamond (2)_1758549186938.jpg";
 import blackPinkDiamond2 from "@assets/Y30A1551black pink diamond (3)_1758549403882.jpg";
-import foxRedWithBalls from "@assets/Untitled design - 2025-09-22T095844.149_1758549602932.png";
-import foxRedSitting from "@assets/Untitled design - 2025-09-22T100714.391_1758550044367.png";
+import foxRedWithBalls from "@assets/Untitled design - 2025-09-22T095844.149_1758549602932.jpg";
+import foxRedSitting from "@assets/Untitled design - 2025-09-22T100714.391_1758550044367.jpg";
 import lightYellowWithBall from "@assets/Y30A4742awillixatticusshamrock (1)_1758550186620.jpg";
 import darkChocolateWithToy from "@assets/Y30A4863aureliagrizzlymrfishy_1758550232555.jpg";
 import lightYellowWithToys from "@assets/Y30A4990estrahuckmrxmasplaid (1)_1758550270871.jpg";
@@ -43,10 +43,10 @@ import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
-import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909148622.png";
+import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909148622.jpg";
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
-import beckyImage from "@assets/Untitled design - 2025-09-26T135952.231_1758909609420.png";
-import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.png";
+import beckyImage from "@assets/Untitled design - 2025-09-26T135952.231_1758909609420.jpg";
+import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
