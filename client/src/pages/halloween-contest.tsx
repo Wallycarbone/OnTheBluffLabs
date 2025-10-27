@@ -95,7 +95,7 @@ export default function HalloweenContest() {
               <div>
                 <h3 className="font-semibold text-lg mb-1">Submit Your Entry</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Share your photo with us via email or social media.
+                  Share your photo with us by emailing it to jess@ontheblufflabradors.com with the subject line "Halloween Costume Contest" or use the link below to upload it.
                 </p>
               </div>
             </div>
