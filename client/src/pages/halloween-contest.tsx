@@ -40,7 +40,7 @@ export default function HalloweenContest() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 dark:text-gray-300">
-                Prizes for our top 3 winners!
+                Voting will be open November 3rd through November 5th
               </p>
             </CardContent>
           </Card>
