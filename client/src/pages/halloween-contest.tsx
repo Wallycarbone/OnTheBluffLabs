@@ -52,7 +52,7 @@ export default function HalloweenContest() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 dark:text-gray-300">
-                Winners announced November 1st
+                Winners announced on Saturday, November 8th
               </p>
             </CardContent>
           </Card>
