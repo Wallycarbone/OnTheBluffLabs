@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Calendar, Trophy } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Award, Calendar, Trophy, Upload } from "lucide-react";
 
 export default function HalloweenContest() {
   return (
@@ -101,6 +102,26 @@ export default function HalloweenContest() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Upload Button */}
+        <div className="text-center mb-12">
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSczCcX8CSC8fLBWwVR9p9Tb2XyD-SWiECRloQSugfF8pYKa9g/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button 
+              className="px-8 py-6 text-lg font-semibold rounded-full transition-all hover:scale-105 shadow-lg"
+              style={{ backgroundColor: '#ff6b35', color: '#ffffff' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff8555'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ff6b35'}
+              data-testid="button-upload-submission"
+            >
+              <Upload className="mr-2 h-5 w-5" />
+              Upload Your Photo
+            </Button>
+          </a>
+        </div>
 
         {/* Contest Rules */}
         <Card data-testid="card-contest-rules">
