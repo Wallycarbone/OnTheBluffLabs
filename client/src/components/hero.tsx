@@ -120,7 +120,7 @@ export default function Hero() {
                 🎃 HALLOWEEN COSTUME CONTEST 🎃
               </h3>
               <p className="text-base md:text-xl font-source-sans text-white mb-2">
-                Show off your pup's costume! Submissions open Oct 31 - Nov 3
+                Show off your OTBL pup's costume! Submissions open Oct 31 - Nov 3
               </p>
               <p className="text-sm md:text-base font-source-sans text-white underline">
                 Click here to enter →
