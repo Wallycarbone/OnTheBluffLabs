@@ -111,7 +111,7 @@ export default function HalloweenContest() {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-gray-600 dark:text-gray-300" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-              <li>• Open to all On The Bluff Labrador families</li>
+              <li>• Open to all On The Bluff Labrador dogs & families</li>
               <li>• One entry per dog</li>
               <li>• Photos must be submitted by midnight on November 2nd, 2025</li>
               <li>• Costumes must be safe and comfortable for your dog</li>
