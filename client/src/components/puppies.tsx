@@ -220,19 +220,6 @@ export default function Puppies() {
       description: "Chocolate female puppies available"
     },
     {
-      name: "Moon & Harper Lee",
-      sire: "Moon",
-      dam: "Harper Lee",
-      birthDate: "July 27, 2025",
-      puppiesCount: "TBD",
-      available: "TBD",
-      readyDate: "September 2025",
-      image: moonImage,
-      image2: harperLeeImage,
-      status: "Current",
-      description: "Born July 27, 2025"
-    },
-    {
       name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
       dam: "Queen Boudica",
