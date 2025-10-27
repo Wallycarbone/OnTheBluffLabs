@@ -29,7 +29,7 @@ export default function HalloweenContest() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 dark:text-gray-300">
-                Submissions open October 1st through midnight on November 2nd
+                Submissions open October 31st through November 3rd
               </p>
             </CardContent>
           </Card>
@@ -41,7 +41,7 @@ export default function HalloweenContest() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 dark:text-gray-300">
-                Voting will be open November 3rd through November 5th
+                Voting will be open November 4th through November 6th
               </p>
             </CardContent>
           </Card>
@@ -134,7 +134,7 @@ export default function HalloweenContest() {
             <ul className="space-y-2 text-gray-600 dark:text-gray-300" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
               <li>• Open to all On The Bluff Labrador dogs & families</li>
               <li>• One entry per dog</li>
-              <li>• Photos must be submitted by midnight on November 2nd, 2025</li>
+              <li>• Photos must be submitted by November 3rd, 2025</li>
               <li>• Costumes must be safe and comfortable for your dog</li>
               <li>• By entering, you grant permission to share photos on our website and social media</li>
             </ul>
