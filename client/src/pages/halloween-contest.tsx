@@ -110,7 +110,7 @@ export default function HalloweenContest() {
         {/* Upload Button */}
         <div className="text-center mb-12">
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSczCcX8CSC8fLBWwVR9p9Tb2XyD-SWiECRloQSugfF8pYKa9g/viewform?usp=header"
+            href="https://qp565.share.hsforms.com/2Wl0ACs9PRcyQJFGjFh8mJA"
             target="_blank"
             rel="noopener noreferrer"
           >
