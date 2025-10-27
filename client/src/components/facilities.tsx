@@ -65,6 +65,13 @@ export default function Team() {
       highlight: "Family of Guardians to On The Bluff's Akadia, Alola, Amity, Aspen, Aubrey, and Aurelia",
       image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
     },
+    {
+      name: "The Rifenburgh Family",
+      role: "Breeding Partners",
+      description: "The Rifenburgh Family are valued breeding partners who provide exceptional care and nurturing for our breeding dogs. Their dedication and expertise contribute significantly to our breeding program's success and the development of well-socialized, confident puppies.",
+      highlight: "Guardian to On The Bluff's Penny",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (21)_1756152469239.png",
+    },
   ];
 
   return (
