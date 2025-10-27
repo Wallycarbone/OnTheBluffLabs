@@ -2,11 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Award, Calendar, Trophy, Upload } from "lucide-react";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 export default function HalloweenContest() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white dark:from-gray-900 dark:to-gray-800">
-      <div className="container mx-auto px-4 py-16">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white dark:from-gray-900 dark:to-gray-800">
+        <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-orange-600 hover:bg-orange-700 text-white">
@@ -140,7 +144,9 @@ export default function HalloweenContest() {
             </ul>
           </CardContent>
         </Card>
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
