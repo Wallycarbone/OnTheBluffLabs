@@ -36,11 +36,11 @@ export default function HalloweenContest() {
           <Card data-testid="card-contest-prizes">
             <CardHeader>
               <Trophy className="w-8 h-8 mb-2 text-orange-600" />
-              <CardTitle>Prizes</CardTitle>
+              <CardTitle>Celebration</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 dark:text-gray-300">
-                Amazing prizes for our top 3 winners!
+                Prizes for our top 3 winners!
               </p>
             </CardContent>
           </Card>
