@@ -251,7 +251,7 @@ export default function Puppies() {
       dam: "Piper",
       birthDate: "9/18/25",
       puppiesCount: "TBD",
-      available: "Deposits Closed",
+      available: "Yellow Males",
       readyDate: "November 2025",
       image: moonImage,
       image2: piperImage,
