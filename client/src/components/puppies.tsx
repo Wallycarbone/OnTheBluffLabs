@@ -251,11 +251,11 @@ export default function Puppies() {
       dam: "Vivien",
       birthDate: "10/19/25",
       puppiesCount: "TBD",
-      available: "Accepting Deposits",
+      available: "Chocolate Females",
       readyDate: "December 2025",
       image: newGrizzlyImage,
       image2: vivienImage,
-      status: "Upcoming",
+      status: "Ready",
       description: "Born October 19, 2025"
     },
     {
