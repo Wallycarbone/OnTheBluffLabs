@@ -110,6 +110,25 @@ export default function Hero() {
         </div>
       </div>
       </section>
+
+      {/* Halloween Contest Banner */}
+      <section className="py-6" style={{backgroundColor: '#ff6b35'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link href="/halloween-contest">
+            <div className="text-center cursor-pointer transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-2xl md:text-4xl font-oswald font-bold text-white mb-2">
+                🎃 HALLOWEEN COSTUME CONTEST 🎃
+              </h3>
+              <p className="text-base md:text-xl font-source-sans text-white mb-2">
+                Show off your pup's costume! Submissions open Oct 31 - Nov 3
+              </p>
+              <p className="text-sm md:text-base font-source-sans text-white underline">
+                Click here to enter →
+              </p>
+            </div>
+          </Link>
+        </div>
+      </section>
     
       {/* Welcome Section */}
       <section className="py-12 md:py-20" style={{backgroundColor: '#fffbe8'}}>
