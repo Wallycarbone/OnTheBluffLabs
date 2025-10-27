@@ -150,7 +150,10 @@ export default function Puppies() {
     const upcomingLitters = [];
     
     for (const litter of allLitters) {
-      if (litter.birthDate.includes('Due')) {
+      // If status is explicitly set to "Ready", place in Select Litters
+      if (litter.status === "Ready") {
+        selectLitters.push(litter);
+      } else if (litter.birthDate.includes('Due')) {
         upcomingLitters.push(litter);
       } else {
         const birth = new Date(litter.birthDate);
