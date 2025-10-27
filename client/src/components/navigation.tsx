@@ -127,7 +127,6 @@ export default function Navigation() {
                 <NavButton href="/breeding-dogs" label="Our Dogs" />
                 <NavButton href="/puppies" label="Puppy Placement" />
                 <NavButton href="/training" label="Behavior Academy Options" />
-                <NavButton href="/halloween-contest" label="🎃 Halloween Contest" />
               </div>
               
               {/* Divider */}
@@ -174,7 +173,6 @@ export default function Navigation() {
               <NavButton href="/breeding-dogs" label="Dogs" />
               <NavButton href="/puppies" label="Puppies" />
               <NavButton href="/training" label="Training" />
-              <NavButton href="/halloween-contest" label="🎃 Contest" />
               <CareLifestyleDropdown />
               <a href="https://truth-networks-foundation-wallycarbone.replit.app/book" target="_blank" rel="noopener noreferrer">
                 <Button 
@@ -218,7 +216,6 @@ export default function Navigation() {
               <MobileNavButton href="/breeding-dogs" label="Our Dogs" onClick={closeMenu} />
               <MobileNavButton href="/puppies" label="Puppy Placement" onClick={closeMenu} />
               <MobileNavButton href="/training" label="Behavior Academy Options" onClick={closeMenu} />
-              <MobileNavButton href="/halloween-contest" label="🎃 Halloween Contest" onClick={closeMenu} />
             </div>
             
             {/* Secondary Navigation - Care & Lifestyle */}
