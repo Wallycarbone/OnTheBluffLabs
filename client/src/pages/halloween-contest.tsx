@@ -4,8 +4,27 @@ import { Button } from "@/components/ui/button";
 import { Award, Calendar, Trophy, Upload } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import { useState } from "react";
+
+interface ContestEntry {
+  name: string;
+  costume: string;
+  image: string;
+}
 
 export default function HalloweenContest() {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; name: string; costume: string } | null>(null);
+
+  // Contest entries - add new entries here
+  const contestEntries: ContestEntry[] = [
+    // Example entry format:
+    // { 
+    //   name: "Dog Name", 
+    //   costume: "Costume Description",
+    //   image: "/attached_assets/your-image.jpg"
+    // },
+  ];
+
   return (
     <>
       <Navigation />
@@ -144,6 +163,79 @@ export default function HalloweenContest() {
             </ul>
           </CardContent>
         </Card>
+
+        {/* Contest Entries Gallery */}
+        {contestEntries.length > 0 && (
+          <div className="mt-12">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                Contest Entries
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+                Check out our amazing costume entries!
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {contestEntries.map((entry, index) => (
+                <div
+                  key={index}
+                  className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  onClick={() => setSelectedImage({ src: entry.image, name: entry.name, costume: entry.costume })}
+                  data-testid={`entry-${index}`}
+                >
+                  <div className="aspect-square">
+                    <img
+                      src={entry.image}
+                      alt={`${entry.name} as ${entry.costume}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                    <h3 className="text-white font-semibold text-lg" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                      {entry.name}
+                    </h3>
+                    <p className="text-white/90 text-sm" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+                      {entry.costume}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Image Popup Modal */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+            data-testid="image-popup"
+          >
+            <div className="relative max-w-4xl w-full">
+              <button
+                className="absolute -top-12 right-0 text-white text-4xl hover:text-gray-300 transition-colors"
+                onClick={() => setSelectedImage(null)}
+                data-testid="button-close-popup"
+              >
+                ×
+              </button>
+              <img
+                src={selectedImage.src}
+                alt={`${selectedImage.name} as ${selectedImage.costume}`}
+                className="w-full h-auto rounded-lg"
+              />
+              <div className="mt-4 text-center">
+                <h3 className="text-white text-2xl font-semibold mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                  {selectedImage.name}
+                </h3>
+                <p className="text-white/90 text-lg" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+                  {selectedImage.costume}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
         </div>
       </div>
       <Footer />
