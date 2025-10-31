@@ -17,12 +17,11 @@ export default function HalloweenContest() {
 
   // Contest entries - add new entries here
   const contestEntries: ContestEntry[] = [
-    // Example entry format:
-    // { 
-    //   name: "Dog Name", 
-    //   familyName: "Family Name",
-    //   image: "/attached_assets/your-image.jpg"
-    // },
+    {
+      name: "Bodie and Gunnar",
+      familyName: "McKenna",
+      image: "/attached_assets/Bodie and Gunnar from the McKennas_1761926904216.jpeg"
+    }
   ];
 
   return (
