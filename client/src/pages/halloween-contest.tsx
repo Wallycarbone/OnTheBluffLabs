@@ -8,19 +8,19 @@ import { useState } from "react";
 
 interface ContestEntry {
   name: string;
-  costume: string;
+  familyName: string;
   image: string;
 }
 
 export default function HalloweenContest() {
-  const [selectedImage, setSelectedImage] = useState<{ src: string; name: string; costume: string } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{ src: string; name: string; familyName: string } | null>(null);
 
   // Contest entries - add new entries here
   const contestEntries: ContestEntry[] = [
     // Example entry format:
     // { 
     //   name: "Dog Name", 
-    //   costume: "Costume Description",
+    //   familyName: "Family Name",
     //   image: "/attached_assets/your-image.jpg"
     // },
   ];
@@ -181,13 +181,13 @@ export default function HalloweenContest() {
                 <div
                   key={index}
                   className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                  onClick={() => setSelectedImage({ src: entry.image, name: entry.name, costume: entry.costume })}
+                  onClick={() => setSelectedImage({ src: entry.image, name: entry.name, familyName: entry.familyName })}
                   data-testid={`entry-${index}`}
                 >
                   <div className="aspect-square">
                     <img
                       src={entry.image}
-                      alt={`${entry.name} as ${entry.costume}`}
+                      alt={`${entry.name} - ${entry.familyName} Family`}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -196,7 +196,7 @@ export default function HalloweenContest() {
                       {entry.name}
                     </h3>
                     <p className="text-white/90 text-sm" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-                      {entry.costume}
+                      {entry.familyName} Family
                     </p>
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export default function HalloweenContest() {
               </button>
               <img
                 src={selectedImage.src}
-                alt={`${selectedImage.name} as ${selectedImage.costume}`}
+                alt={`${selectedImage.name} - ${selectedImage.familyName} Family`}
                 className="w-full h-auto rounded-lg"
               />
               <div className="mt-4 text-center">
@@ -230,7 +230,7 @@ export default function HalloweenContest() {
                   {selectedImage.name}
                 </h3>
                 <p className="text-white/90 text-lg" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-                  {selectedImage.costume}
+                  {selectedImage.familyName} Family
                 </p>
               </div>
             </div>
