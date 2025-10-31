@@ -21,6 +21,11 @@ export default function HalloweenContest() {
       name: "Bodie and Gunnar",
       familyName: "McKenna",
       image: "/attached_assets/Bodie and Gunnar from the McKennas_1761926904216.jpeg"
+    },
+    {
+      name: "Hank",
+      familyName: "Carr",
+      image: "/attached_assets/Hank from the Carrs_1761927976850.jpeg"
     }
   ];
 
