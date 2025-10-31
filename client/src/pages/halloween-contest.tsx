@@ -61,6 +61,11 @@ export default function HalloweenContest() {
       name: "Timber",
       familyName: "Pacifico-Smith",
       image: "/attached_assets/Timber from the Pacifico-Smith Family_1761937075060.jpeg"
+    },
+    {
+      name: "Zsa Zsa and Olga",
+      familyName: "Hyatt",
+      image: "/attached_assets/Zsa Zsa and Olga_1761937151661.jpeg"
     }
   ];
 
