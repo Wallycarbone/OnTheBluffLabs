@@ -51,6 +51,11 @@ export default function HalloweenContest() {
       name: "Murphy",
       familyName: "Skarupa",
       image: "/attached_assets/2025MurphyHalloween (1)_1761928720663.jpg"
+    },
+    {
+      name: "Maggie",
+      familyName: "Berman",
+      image: "/attached_assets/Maggie_1761928772340.jpeg"
     }
   ];
 
