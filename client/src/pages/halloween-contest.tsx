@@ -46,6 +46,11 @@ export default function HalloweenContest() {
       name: "Luna",
       familyName: "Middleton",
       image: "/attached_assets/Luna from the Middleton Family_1761928236749.jpeg"
+    },
+    {
+      name: "Murphy",
+      familyName: "Skarupa",
+      image: "/attached_assets/2025MurphyHalloween (1)_1761928720663.jpg"
     }
   ];
 
