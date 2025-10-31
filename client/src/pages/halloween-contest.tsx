@@ -56,6 +56,11 @@ export default function HalloweenContest() {
       name: "Maggie",
       familyName: "Berman",
       image: "/attached_assets/Maggie_1761928772340.jpeg"
+    },
+    {
+      name: "Timber",
+      familyName: "Pacifico-Smith",
+      image: "/attached_assets/Timber from the Pacifico-Smith Family_1761937075060.jpeg"
     }
   ];
 
