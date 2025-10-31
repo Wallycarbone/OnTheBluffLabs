@@ -36,6 +36,11 @@ export default function HalloweenContest() {
       name: "Ava",
       familyName: "Salamone",
       image: "/attached_assets/Ava_1761928101637.jpeg"
+    },
+    {
+      name: "Max",
+      familyName: "Speck",
+      image: "/attached_assets/Max from the Speck Family_1761928208826.jpg"
     }
   ];
 
