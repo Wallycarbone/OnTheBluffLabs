@@ -66,6 +66,11 @@ export default function HalloweenContest() {
       name: "Zsa Zsa and Olga",
       familyName: "Hyatt",
       image: "/attached_assets/Zsa Zsa and Olga_1761937151661.jpeg"
+    },
+    {
+      name: "Tedy",
+      familyName: "Frost",
+      image: "/attached_assets/Tedy from the Frost Family_1762016266440.jpeg"
     }
   ];
 
