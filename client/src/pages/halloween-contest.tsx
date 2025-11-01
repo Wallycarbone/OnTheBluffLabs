@@ -116,6 +116,11 @@ export default function HalloweenContest() {
       name: "Bodhi",
       familyName: "Polk",
       image: "/attached_assets/Bodhi_1762016784700.jpeg"
+    },
+    {
+      name: "Ellie",
+      familyName: "Favreau",
+      image: "/attached_assets/Screenshot 2025-11-01 at 1.07.25 PM_1762016865268.png"
     }
   ];
 
