@@ -11,7 +11,10 @@ export default function HealthTesting() {
   const [selectedTest, setSelectedTest] = useState<any>(null);
   
   // Carousel setup
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true,
+    startIndex: 0
+  });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const carouselImages = [
@@ -148,6 +151,7 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
                         src={image.src}
                         alt={image.alt}
                         className="w-full h-96 object-cover"
+                        loading={index === 0 ? "eager" : "lazy"}
                         data-testid={`carousel-image-${index}`}
                       />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
