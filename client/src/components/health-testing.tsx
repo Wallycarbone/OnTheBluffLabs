@@ -19,7 +19,7 @@ export default function HealthTesting() {
 
   const carouselImages = [
     {
-      src: "/attached_assets/Untitled design - 2025-09-22T102406.299_1758551052654.png",
+      src: "/attached_assets/Untitled design - 2025-09-22T102406.299_1758551052654.jpg",
       alt: "Outdoor facility with wooden fencing, buildings, and autumn decorations",
       caption: "Breeding and birthing takes place in our nurturing home environment"
     },
