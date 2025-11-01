@@ -151,6 +151,11 @@ export default function HalloweenContest() {
       name: "Shoals",
       familyName: "Rochlin Parker",
       image: "/attached_assets/Shoals from the Rochlin Parker Family_1762017364486.jpeg"
+    },
+    {
+      name: "Atticus",
+      familyName: "Burbank Litter",
+      image: "/attached_assets/Breeding Dogs 5x4 (4 x 4 in)_1762017729600.png"
     }
   ];
 
