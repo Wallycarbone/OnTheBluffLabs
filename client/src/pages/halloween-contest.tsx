@@ -156,6 +156,11 @@ export default function HalloweenContest() {
       name: "Atticus",
       familyName: "Burbank Litter",
       image: "/attached_assets/Breeding Dogs 5x4 (4 x 4 in)_1762017729600.png"
+    },
+    {
+      name: "Fellini",
+      familyName: "Thomas",
+      image: "/attached_assets/Fellini 2_1762017926271.png"
     }
   ];
 
