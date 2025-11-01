@@ -171,6 +171,11 @@ export default function HalloweenContest() {
       name: "Jagger",
       familyName: "Rayder",
       image: "/attached_assets/Jagger_1762027294411.jpeg"
+    },
+    {
+      name: "Porter",
+      familyName: "Nemeth",
+      image: "/attached_assets/Porter_1762030020120.jpg"
     }
   ];
 
