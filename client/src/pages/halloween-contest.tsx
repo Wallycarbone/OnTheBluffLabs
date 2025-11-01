@@ -136,6 +136,11 @@ export default function HalloweenContest() {
       name: "Jake",
       familyName: "Whitaker",
       image: "/attached_assets/Jake from the Whitaker Family_1762017123066.jpeg"
+    },
+    {
+      name: "Oliver and Charlie",
+      familyName: "Gold",
+      image: "/attached_assets/Gold_1762017217978.jpeg"
     }
   ];
 
