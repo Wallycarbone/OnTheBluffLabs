@@ -120,7 +120,7 @@ export default function HalloweenContest() {
     {
       name: "Ellie",
       familyName: "Favreau",
-      image: "/attached_assets/Screenshot 2025-11-01 at 1.07.25 PM_1762016865268.png"
+      image: "/attached_assets/Ellie_1762018055418.png"
     },
     {
       name: "Hugo",
