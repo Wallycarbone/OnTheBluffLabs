@@ -76,6 +76,11 @@ export default function HalloweenContest() {
       name: "Missy",
       familyName: "Deans",
       image: "/attached_assets/Missy from the Deans Family_1762016304402.jpeg"
+    },
+    {
+      name: "Enzo Giuseppe",
+      familyName: "Margiasso",
+      image: "/attached_assets/Enzo Giuseppe Margiasso from the Margiasso Family_1762016333897.jpeg"
     }
   ];
 
