@@ -127,7 +127,7 @@ export default function Boarding() {
                 </div>
                 <div className="flex justify-center">
                   <img 
-                    src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (81)_1756151379866.png"
+                    src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (81)_1756151379866.jpg"
                     alt="Professional dog training session - trainer working with golden Labrador in backyard setting"
                     className="max-w-xs h-[600px] object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 40%'}}
