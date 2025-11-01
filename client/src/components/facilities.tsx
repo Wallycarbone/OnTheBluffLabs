@@ -36,7 +36,7 @@ export default function Team() {
       role: "Adult Dog Specialist", 
       description: "Poppy's family has co-owned for years, so Labradors are a family affair for him. This deep, multi-generational connection to our breeding program brings invaluable insight to facility operations and puppy development.",
       highlight: "Member of the Tampasis Family, Our Breeding Partners",
-      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
+      image: "/attached_assets/Poppy Headshot_1762030980362.png",
     },
     {
       name: "Julie Rifenburgh",
