@@ -131,6 +131,7 @@ export default function Boarding() {
                     alt="Professional dog training session - trainer working with golden Labrador in backyard setting"
                     className="max-w-xs h-[600px] object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 40%'}}
+                    loading="eager"
                   />
                 </div>
           </div>
