@@ -91,6 +91,11 @@ export default function HalloweenContest() {
       name: "Oakley",
       familyName: "Fagan",
       image: "/attached_assets/Oakley from the Fagan Family_1762016505630.jpg"
+    },
+    {
+      name: "Olive",
+      familyName: "Kalin",
+      image: "/attached_assets/Olive from the Kalin Family_1762016541048.jpeg"
     }
   ];
 
