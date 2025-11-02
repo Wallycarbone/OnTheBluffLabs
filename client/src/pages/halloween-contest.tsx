@@ -191,6 +191,11 @@ export default function HalloweenContest() {
       name: "Luke",
       familyName: "Sbarro",
       image: "/attached_assets/Hotdog_1762106351091.png"
+    },
+    {
+      name: "Zeke",
+      familyName: "Santa Maria",
+      image: "/attached_assets/Zeke_1762106389224.jpeg"
     }
   ];
 
