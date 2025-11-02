@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import wallyCarlaImage from "@assets/Untitled design (92)_1753108643199.png";
 import lyricaImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (71)_1753110327800.png";
 import jessImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (72)_1753126495308.png";
+import headerImage from "@assets/IMG_9985 (1)_1762112733811.jpg";
 
 export default function Team() {
   const teamMembers = [
@@ -75,8 +76,17 @@ export default function Team() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-50">
+      {/* Header Image */}
+      <div className="w-full h-64 md:h-96 overflow-hidden">
+        <img 
+          src={headerImage}
+          alt="Beautiful mountain vista view through trees - On The Bluff Labradors location"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-6 tracking-wide" style={{color: '#11100f'}}>
             OUR TEAM
