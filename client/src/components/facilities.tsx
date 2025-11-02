@@ -84,13 +84,18 @@ export default function Team() {
           alt="Beautiful mountain vista view through trees - On The Bluff Labradors location"
           className="w-full h-full object-cover"
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/25"></div>
+        {/* Top gradient overlay for text readability */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 60%)'
+          }}
+        ></div>
         
-        {/* Text overlay */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        {/* Text overlay - positioned at top */}
+        <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12">
           <div className="text-center px-4">
-            <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-4 tracking-wide text-white drop-shadow-2xl">
+            <h2 className="text-4xl md:text-5xl font-oswald font-normal mb-3 tracking-wide text-white drop-shadow-2xl">
               OUR TEAM
             </h2>
             <p className="text-lg md:text-xl text-white max-w-3xl mx-auto drop-shadow-lg">
