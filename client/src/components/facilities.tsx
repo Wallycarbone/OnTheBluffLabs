@@ -85,7 +85,7 @@ export default function Team() {
           className="w-full h-full object-cover"
         />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/25"></div>
         
         {/* Text overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
