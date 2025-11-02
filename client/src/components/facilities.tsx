@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import wallyCarlaImage from "@assets/Untitled design (92)_1753108643199.png";
 import lyricaImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (71)_1753110327800.png";
 import jessImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (72)_1753126495308.png";
-import headerImage from "@assets/IMG_9985 (1)_1762112733811.jpg";
+import headerImage from "@assets/Our Team background image_1762114111268.png";
 
 export default function Team() {
   const teamMembers = [
