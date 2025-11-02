@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import heroImage from "@assets/Breeding Dogs 5x4 (27)_1755633649595.png";
 import ourDogsImage from "@assets/Breeding Dogs 5x4 (35)_1757524581256.png";
 import puppiesImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.jpg";
-import behaviorAcademyImage from "@assets/Training Photo 3_1762111908241.png";
+import behaviorAcademyImage from "@assets/Trainin gPhoto 4_1762111978274.png";
 
 export default function Hero() {
 
