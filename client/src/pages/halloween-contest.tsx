@@ -215,7 +215,7 @@ export default function HalloweenContest() {
     {
       name: "Leo",
       familyName: "Angelino",
-      image: "/attached_assets/Leo_1762180625184.jpeg"
+      image: "/attached_assets/Leo Angelino_1762180784355.png"
     }
   ];
 
