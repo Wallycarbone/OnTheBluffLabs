@@ -366,7 +366,7 @@ export default function HalloweenContest() {
                 rel="noopener noreferrer"
               >
                 <Button 
-                  className="px-8 py-6 text-lg font-semibold rounded-full transition-all hover:scale-105 shadow-lg"
+                  className="px-12 py-8 text-2xl font-semibold rounded-full transition-all hover:scale-105 shadow-xl"
                   style={{ backgroundColor: '#ff6b35', color: '#ffffff' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff8555'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ff6b35'}
