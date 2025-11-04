@@ -360,21 +360,33 @@ export default function HalloweenContest() {
               </p>
               
               {/* Vote Button */}
-              <a 
-                href="https://form.typeform.com/to/XCvKidoP"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button 
-                  className="px-12 py-8 text-2xl font-semibold rounded-full transition-all hover:scale-105 shadow-xl"
-                  style={{ backgroundColor: '#ff6b35', color: '#ffffff' }}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff8555'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ff6b35'}
-                  data-testid="button-vote"
+              <div className="my-8">
+                <a 
+                  href="https://form.typeform.com/to/XCvKidoP"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  🎃 Vote Now!
-                </Button>
-              </a>
+                  <Button 
+                    className="px-16 py-10 text-3xl font-bold rounded-full transition-all hover:scale-110 shadow-2xl animate-pulse hover:animate-none border-4 border-orange-300"
+                    style={{ 
+                      backgroundColor: '#ff6b35', 
+                      color: '#ffffff',
+                      boxShadow: '0 0 30px rgba(255, 107, 53, 0.6), 0 10px 40px rgba(0, 0, 0, 0.3)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ff8555';
+                      e.currentTarget.style.boxShadow = '0 0 40px rgba(255, 107, 53, 0.8), 0 10px 50px rgba(0, 0, 0, 0.4)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ff6b35';
+                      e.currentTarget.style.boxShadow = '0 0 30px rgba(255, 107, 53, 0.6), 0 10px 40px rgba(0, 0, 0, 0.3)';
+                    }}
+                    data-testid="button-vote"
+                  >
+                    🎃 VOTE NOW! 🎃
+                  </Button>
+                </a>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
