@@ -220,6 +220,11 @@ export default function HalloweenContest() {
       name: "Patrick James",
       familyName: "Lovely",
       image: "/attached_assets/39_1762266581534.png"
+    },
+    {
+      name: "Remy",
+      familyName: "Gomes",
+      image: "/attached_assets/40_1762266993183.png"
     }
   ];
 
