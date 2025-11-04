@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Award, Calendar, Trophy } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
@@ -354,9 +355,26 @@ export default function HalloweenContest() {
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>
                 Contest Entries
               </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-6" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
                 Check out our amazing costume entries!
               </p>
+              
+              {/* Vote Button */}
+              <a 
+                href="https://form.typeform.com/to/XCvKidoP"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  className="px-8 py-6 text-lg font-semibold rounded-full transition-all hover:scale-105 shadow-lg"
+                  style={{ backgroundColor: '#ff6b35', color: '#ffffff' }}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff8555'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ff6b35'}
+                  data-testid="button-vote"
+                >
+                  🎃 Vote Now!
+                </Button>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
