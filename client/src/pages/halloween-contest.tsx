@@ -367,7 +367,7 @@ export default function HalloweenContest() {
                   rel="noopener noreferrer"
                 >
                   <Button 
-                    className="px-16 py-10 text-3xl font-bold rounded-full transition-all hover:scale-110 shadow-2xl animate-pulse hover:animate-none border-4 border-orange-300"
+                    className="px-16 py-10 text-3xl font-bold rounded-full transition-all hover:scale-110 shadow-2xl border-4 border-orange-300"
                     style={{ 
                       backgroundColor: '#ff6b35', 
                       color: '#ffffff',
