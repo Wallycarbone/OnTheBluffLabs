@@ -416,23 +416,24 @@ export default function HalloweenContest() {
                 </Card>
 
                 {/* 3rd Place */}
-                <Card className="relative border-4 border-orange-400 shadow-2xl">
+                <Card className="relative border-4 border-orange-400 shadow-2xl" data-testid="card-winner-third">
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-orange-400 text-white px-6 py-2 rounded-full font-bold text-lg">
                     🥉 3rd Place
                   </div>
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder-winner-3.jpg"
-                        alt="3rd Place Winner"
+                        src="/attached_assets/Arrow_1762637206782.jpeg"
+                        alt="Arrow - 3rd Place Winner"
                         className="w-full h-full object-cover"
+                        data-testid="img-winner-third"
                       />
                     </div>
-                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
-                      Winner Name
+                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }} data-testid="text-winner-third-name">
+                      Arrow
                     </h4>
-                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-                      Family Name
+                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }} data-testid="text-winner-third-family">
+                      Tedesco Family
                     </p>
                   </CardContent>
                 </Card>
