@@ -223,6 +223,12 @@ export default function Puppies() {
     moonFoxxyPuppy2
   ];
 
+  const grizzlyVivienPreviousPuppyImages = [
+    pearlTurtlesImage,
+    hollyPuppyLoveImage,
+    hazelPeacockImage
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -274,6 +280,7 @@ export default function Puppies() {
       readyDate: "December 2025",
       image: newGrizzlyImage,
       image2: vivienImage,
+      puppyImages: grizzlyVivienPreviousPuppyImages,
       status: "Ready",
       description: "Born October 19, 2025"
     },
@@ -652,7 +659,9 @@ export default function Puppies() {
                           }}
                           data-testid="button-view-puppies-upcoming"
                         >
-                          View Puppies
+                          {litter.name === "Grizzly & Vivien" 
+                            ? "Previous Puppies by Grizzly & Vivien" 
+                            : "View Puppies"}
                         </Button>
                       )}
                       <Button 
