@@ -74,6 +74,11 @@ import booQueenPuppy3 from "@assets/3_1762638038176.png";
 import moonFoxxyPuppy1 from "@assets/4_1762638824978.png";
 import moonFoxxyPuppy2 from "@assets/5_1762638824979.png";
 
+// Grizzly & Vivien previous puppy images
+import grizzlyVivienPuppy1 from "@assets/6_1762639492682.png";
+import grizzlyVivienPuppy2 from "@assets/7_1762639492682.png";
+import grizzlyVivienPuppy3 from "@assets/8_1762639492682.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -224,9 +229,9 @@ export default function Puppies() {
   ];
 
   const grizzlyVivienPreviousPuppyImages = [
-    pearlTurtlesImage,
-    hollyPuppyLoveImage,
-    hazelPeacockImage
+    grizzlyVivienPuppy1,
+    grizzlyVivienPuppy2,
+    grizzlyVivienPuppy3
   ];
 
   const allLitters = [
@@ -809,7 +814,9 @@ export default function Puppies() {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              Puppies by {selectedPuppyLitterName}
+              {selectedPuppyLitterName === "Grizzly & Vivien" 
+                ? "Previous Puppies by Grizzly & Vivien" 
+                : `Puppies by ${selectedPuppyLitterName}`}
             </DialogTitle>
           </DialogHeader>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
