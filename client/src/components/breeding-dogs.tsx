@@ -1654,6 +1654,23 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
+            ) : dog.name === "Dodger" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2016 Westminster Best of Breed <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: cyrusImage,
+                        name: "Shalimar's The Animator"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Shalimar's The Animator
+                  </button>
+                </p>
+              </div>
             ) : (
               <div className="grid grid-cols-2 gap-4 text-xs">
                 <div>
