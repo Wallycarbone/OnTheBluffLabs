@@ -264,11 +264,11 @@ export default function HalloweenContest() {
           <Card data-testid="card-contest-prizes">
             <CardHeader>
               <Trophy className="w-8 h-8 mb-2 text-orange-600" />
-              <CardTitle>Voting</CardTitle>
+              <CardTitle>Winners</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 dark:text-gray-300">
-                Voting will be open November 4th through November 6th
+                Congratulations to our Top 3 Winners!
               </p>
             </CardContent>
           </Card>
@@ -358,35 +358,90 @@ export default function HalloweenContest() {
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-6" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
                 Check out our amazing costume entries!
               </p>
-              
-              {/* Vote Button */}
-              <div className="my-8">
-                <a 
-                  href="https://form.typeform.com/to/XCvKidoP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button 
-                    className="px-16 py-10 text-3xl font-bold rounded-full transition-all hover:scale-110 shadow-2xl border-4 border-orange-300"
-                    style={{ 
-                      backgroundColor: '#ff6b35', 
-                      color: '#ffffff',
-                      boxShadow: '0 0 30px rgba(255, 107, 53, 0.6), 0 10px 40px rgba(0, 0, 0, 0.3)'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#ff8555';
-                      e.currentTarget.style.boxShadow = '0 0 40px rgba(255, 107, 53, 0.8), 0 10px 50px rgba(0, 0, 0, 0.4)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#ff6b35';
-                      e.currentTarget.style.boxShadow = '0 0 30px rgba(255, 107, 53, 0.6), 0 10px 40px rgba(0, 0, 0, 0.3)';
-                    }}
-                    data-testid="button-vote"
-                  >
-                    🎃 VOTE NOW! 🎃
-                  </Button>
-                </a>
+            </div>
+
+            {/* Top 3 Winners Section */}
+            <div className="mb-12">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold text-orange-600 mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                  🏆 Contest Winners 🏆
+                </h3>
               </div>
+              
+              <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                {/* 1st Place */}
+                <Card className="relative border-4 border-yellow-400 shadow-2xl">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-white px-6 py-2 rounded-full font-bold text-lg">
+                    🥇 1st Place
+                  </div>
+                  <CardContent className="pt-8">
+                    <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                      <img
+                        src="/placeholder-winner-1.jpg"
+                        alt="1st Place Winner"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                      Winner Name
+                    </h4>
+                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+                      Family Name
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* 2nd Place */}
+                <Card className="relative border-4 border-gray-400 shadow-2xl">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gray-400 text-white px-6 py-2 rounded-full font-bold text-lg">
+                    🥈 2nd Place
+                  </div>
+                  <CardContent className="pt-8">
+                    <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                      <img
+                        src="/placeholder-winner-2.jpg"
+                        alt="2nd Place Winner"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                      Winner Name
+                    </h4>
+                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+                      Family Name
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* 3rd Place */}
+                <Card className="relative border-4 border-orange-400 shadow-2xl">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-orange-400 text-white px-6 py-2 rounded-full font-bold text-lg">
+                    🥉 3rd Place
+                  </div>
+                  <CardContent className="pt-8">
+                    <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                      <img
+                        src="/placeholder-winner-3.jpg"
+                        alt="3rd Place Winner"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                      Winner Name
+                    </h4>
+                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+                      Family Name
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* All Contest Entries */}
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                All Contest Entries
+              </h3>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
