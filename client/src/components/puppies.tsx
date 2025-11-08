@@ -65,6 +65,11 @@ import pearlTurtlesImage from "@assets/Pearl (Turtles 5x4)_1753626048336.png";
 import hollyPuppyLoveImage from "@assets/Holly (Puppy Love 5x4)_1753626044736.png";
 import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
+// Boo Radley & Queen Boudica puppy images
+import booQueenPuppy1 from "@assets/1_1762638038175.png";
+import booQueenPuppy2 from "@assets/2_1762638038176.png";
+import booQueenPuppy3 from "@assets/3_1762638038176.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -72,6 +77,8 @@ export default function Puppies() {
   const [isPedigreePopupOpen, setIsPedigreePopupOpen] = useState(false);
   const [selectedLitter, setSelectedLitter] = useState<any>(null);
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
+  const [isPuppyGalleryOpen, setIsPuppyGalleryOpen] = useState(false);
+  const [selectedPuppyGallery, setSelectedPuppyGallery] = useState<any[]>([]);
   
   const [, setLocation] = useLocation();
 
@@ -200,6 +207,12 @@ export default function Puppies() {
     msAlpineGlowImage
   ];
 
+  const booQueenPuppyImages = [
+    booQueenPuppy1,
+    booQueenPuppy2,
+    booQueenPuppy3
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -223,6 +236,7 @@ export default function Puppies() {
       readyDate: "October 2025",
       image: booRadleyImage,
       image2: queenBoudicaImage,
+      puppyImages: booQueenPuppyImages,
       status: "Upcoming",
       description: "Born August 7, 2025"
     },
@@ -503,14 +517,30 @@ export default function Puppies() {
                         )}
                       </div>
 
-                      {/* Bottom Section - Action Button */}
-                      <div className="max-w-sm mx-auto md:mx-0">
+                      {/* Bottom Section - Action Buttons */}
+                      <div className="max-w-sm mx-auto md:mx-0 space-y-2">
+                        {litter.puppyImages && (
+                          <Button 
+                            className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
+                            style={{backgroundColor: '#f59e0b', color: '#fefefe'}}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#fb923c'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f59e0b'}
+                            onClick={() => {
+                              setSelectedPuppyGallery(litter.puppyImages);
+                              setIsPuppyGalleryOpen(true);
+                            }}
+                            data-testid="button-view-puppies"
+                          >
+                            View Puppies
+                          </Button>
+                        )}
                         <Link href="/puppy-application" className="w-full">
                           <Button 
                             className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
                             style={{backgroundColor: '#6d761d', color: '#fefefe'}}
                             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
                             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                            data-testid="button-contact-litter"
                           >
                             Contact About This Litter
                           </Button>
@@ -596,15 +626,33 @@ export default function Puppies() {
                       </p>
                     </div>
 
-                    <Button 
-                      onClick={scrollToContact}
-                      className="w-full font-montserrat font-medium text-sm h-auto py-2"
-                      style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
-                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                    >
-                      Reserve Your Spot
-                    </Button>
+                    <div className="space-y-2">
+                      {litter.puppyImages && (
+                        <Button 
+                          className="w-full font-montserrat font-medium text-sm h-auto py-2"
+                          style={{backgroundColor: '#f59e0b', color: '#fefefe'}}
+                          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#fb923c'}
+                          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f59e0b'}
+                          onClick={() => {
+                            setSelectedPuppyGallery(litter.puppyImages);
+                            setIsPuppyGalleryOpen(true);
+                          }}
+                          data-testid="button-view-puppies-upcoming"
+                        >
+                          View Puppies
+                        </Button>
+                      )}
+                      <Button 
+                        onClick={scrollToContact}
+                        className="w-full font-montserrat font-medium text-sm h-auto py-2"
+                        style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#644f06'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                        data-testid="button-reserve-spot"
+                      >
+                        Reserve Your Spot
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -730,6 +778,33 @@ export default function Puppies() {
                 Our Moon litters are directly descended from this exceptional champion, bringing world-class genetics to your family.
               </p>
             </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Puppy Gallery Dialog */}
+      <Dialog open={isPuppyGalleryOpen} onOpenChange={setIsPuppyGalleryOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+              Litter Puppies
+            </DialogTitle>
+          </DialogHeader>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {selectedPuppyGallery.map((puppyImage, index) => (
+              <div 
+                key={index}
+                className="cursor-pointer overflow-hidden rounded-lg"
+                onClick={() => openImagePopup({src: puppyImage, name: `Puppy ${index + 1}`})}
+                data-testid={`puppy-image-${index}`}
+              >
+                <img 
+                  src={puppyImage}
+                  alt={`Puppy ${index + 1}`}
+                  className="w-full aspect-square object-cover hover:opacity-80 transition-opacity"
+                />
+              </div>
+            ))}
           </div>
         </DialogContent>
       </Dialog>
