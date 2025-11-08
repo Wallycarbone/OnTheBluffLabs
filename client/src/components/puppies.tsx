@@ -79,6 +79,11 @@ import grizzlyVivienPuppy1 from "@assets/6_1762639492682.png";
 import grizzlyVivienPuppy2 from "@assets/7_1762639492682.png";
 import grizzlyVivienPuppy3 from "@assets/8_1762639492682.png";
 
+// Holden & Becky previous puppy images
+import holdenBeckyPuppy1 from "@assets/9_1762640262937.png";
+import holdenBeckyPuppy2 from "@assets/10_1762640262938.png";
+import holdenBeckyPuppy3 from "@assets/11_1762640262937.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -234,6 +239,12 @@ export default function Puppies() {
     grizzlyVivienPuppy3
   ];
 
+  const holdenBeckyPreviousPuppyImages = [
+    holdenBeckyPuppy1,
+    holdenBeckyPuppy2,
+    holdenBeckyPuppy3
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -299,6 +310,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: holdenImage,
       image2: beckyImage,
+      puppyImages: holdenBeckyPreviousPuppyImages,
       status: "Ready",
       description: "Born November 2, 2025"
     },
@@ -557,6 +569,8 @@ export default function Puppies() {
                           >
                             {litter.name === "Grizzly & Vivien" 
                               ? "Previous Puppies by Grizzly & Vivien" 
+                              : litter.name === "Holden & Becky"
+                              ? "Previous Puppies by Holden & Becky"
                               : "View Puppies"}
                           </Button>
                         )}
@@ -668,6 +682,8 @@ export default function Puppies() {
                         >
                           {litter.name === "Grizzly & Vivien" 
                             ? "Previous Puppies by Grizzly & Vivien" 
+                            : litter.name === "Holden & Becky"
+                            ? "Previous Puppies by Holden & Becky"
                             : "View Puppies"}
                         </Button>
                       )}
@@ -818,6 +834,8 @@ export default function Puppies() {
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
               {selectedPuppyLitterName === "Grizzly & Vivien" 
                 ? "Previous Puppies by Grizzly & Vivien" 
+                : selectedPuppyLitterName === "Holden & Becky"
+                ? "Previous Puppies by Holden & Becky"
                 : `Puppies by ${selectedPuppyLitterName}`}
             </DialogTitle>
           </DialogHeader>
