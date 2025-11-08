@@ -370,23 +370,24 @@ export default function HalloweenContest() {
               
               <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 {/* 1st Place */}
-                <Card className="relative border-4 border-yellow-400 shadow-2xl">
+                <Card className="relative border-4 border-yellow-400 shadow-2xl" data-testid="card-winner-first">
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-white px-6 py-2 rounded-full font-bold text-lg">
                     🥇 1st Place
                   </div>
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder-winner-1.jpg"
-                        alt="1st Place Winner"
+                        src="/attached_assets/Patrick James_1762636844043.jpeg"
+                        alt="Patrick James - 1st Place Winner"
                         className="w-full h-full object-cover"
+                        data-testid="img-winner-first"
                       />
                     </div>
-                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
-                      Winner Name
+                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }} data-testid="text-winner-first-name">
+                      Patrick James
                     </h4>
-                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-                      Family Name
+                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }} data-testid="text-winner-first-family">
+                      Lovely Family
                     </p>
                   </CardContent>
                 </Card>
