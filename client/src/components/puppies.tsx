@@ -245,8 +245,8 @@ export default function Puppies() {
   ];
 
   const holdenBeckyPreviousPuppyImages = [
-    holdenBeckyPuppy1,
     holdenBeckyPuppy2,
+    holdenBeckyPuppy1,
     holdenBeckyPuppy3
   ];
 
