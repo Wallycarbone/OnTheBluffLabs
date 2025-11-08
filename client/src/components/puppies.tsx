@@ -211,18 +211,6 @@ export default function Puppies() {
       description: "Seven puppies born June 5, 2025"
     },
     {
-      name: "Grizzly & Guinevere",
-      sire: "Grizzly",
-      dam: "Guinevere",
-      birthDate: "April 5, 2025",
-      puppiesCount: 8,
-      available: "Chocolate Females",
-      readyDate: "Ready Now",
-      images: [breedingDogsImage, breedingDogs2Image, pearlTurtlesImage, hollyPuppyLoveImage, hazelPeacockImage],
-      status: "Ready",
-      description: "Chocolate female puppies available"
-    },
-    {
       name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
       dam: "Queen Boudica",
