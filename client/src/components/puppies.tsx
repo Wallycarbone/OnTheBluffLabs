@@ -252,8 +252,8 @@ export default function Puppies() {
 
   const dodgerGuineverePreviousPuppyImages = [
     dodgerGuineverePuppy1,
-    dodgerGuineverePuppy2,
-    dodgerGuineverePuppy3
+    dodgerGuineverePuppy3,
+    dodgerGuineverePuppy2
   ];
 
   const allLitters = [
