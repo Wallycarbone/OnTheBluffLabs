@@ -393,23 +393,24 @@ export default function HalloweenContest() {
                 </Card>
 
                 {/* 2nd Place */}
-                <Card className="relative border-4 border-gray-400 shadow-2xl">
+                <Card className="relative border-4 border-gray-400 shadow-2xl" data-testid="card-winner-second">
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gray-400 text-white px-6 py-2 rounded-full font-bold text-lg">
                     🥈 2nd Place
                   </div>
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder-winner-2.jpg"
-                        alt="2nd Place Winner"
+                        src="/attached_assets/Talley Frost_1762636923530.jpeg"
+                        alt="Talley - 2nd Place Winner"
                         className="w-full h-full object-cover"
+                        data-testid="img-winner-second"
                       />
                     </div>
-                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }}>
-                      Winner Name
+                    <h4 className="text-xl font-bold text-center mb-2" style={{ fontFamily: 'Oswald, sans-serif' }} data-testid="text-winner-second-name">
+                      Talley
                     </h4>
-                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-                      Family Name
+                    <p className="text-center text-gray-600" style={{ fontFamily: 'Source Sans Pro, sans-serif' }} data-testid="text-winner-second-family">
+                      Frost Family
                     </p>
                   </CardContent>
                 </Card>
