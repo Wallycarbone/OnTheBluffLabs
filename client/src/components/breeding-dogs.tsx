@@ -91,6 +91,7 @@ import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import dodgerOfficialPedigreeImage from "@assets/Dodger's Pedigree_1762633452989.png";
 import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
+import auntPollyOfficialPedigreeImage from "@assets/Polly Pedigree_1762635610724.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1218,6 +1219,72 @@ export default function BreedingDogs() {
             },
             dam: {
               name: "Dreaming Tree's Summer Sun",
+              titles: []
+            }
+          }
+        }
+      },
+      "Aunt Polly": {
+        name: "Aunt Polly",
+        formalName: "On The Bluff's Aunt Polly",
+        titles: [],
+        image: auntPollyImage,
+        sire: {
+          name: "Scarfone's Mark Twain",
+          titles: [],
+          image: markTwainImage,
+          sire: {
+            name: "Valhalla's One Little Victory JH",
+            titles: ["JH"],
+            sire: {
+              name: "CH Lubberline Martingale",
+              titles: ["CH"],
+              image: martingaleImage
+            },
+            dam: {
+              name: "Brimars N-Vogue JH",
+              titles: ["JH"]
+            }
+          },
+          dam: {
+            name: "Bateshaus Stop To Smell The Roses",
+            titles: [],
+            sire: {
+              name: "CH Stormy C's Superbad",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "CH Batescreek Emma",
+              titles: ["CH"],
+              image: emmaImage
+            }
+          }
+        },
+        dam: {
+          name: "Dreaming Tree Sweet Caroline",
+          titles: [],
+          sire: {
+            name: "On The Bluff's Atticus Finch",
+            titles: [],
+            image: atticusFinchImage,
+            sire: {
+              name: "Heartlands Polar Bear Chase",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Lily Of The Valley",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Dreaming Tree Aeofe Heffaelump",
+            titles: [],
+            sire: {
+              name: "North River's Under The Dreaming Tree",
+              titles: []
+            },
+            dam: {
+              name: "North River Black Pearl Of The Hudson",
               titles: []
             }
           }
