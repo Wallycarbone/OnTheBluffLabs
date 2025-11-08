@@ -47,6 +47,8 @@ import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
 import beckyImage from "@assets/Untitled design - 2025-09-26T135952.231_1758909609420.jpg";
 import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
+import guinevereImage from "@assets/guinevere-new-photo.jpg";
+import dodgerImage from "@assets/Dodger_1762633068552.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
@@ -261,6 +263,19 @@ export default function Puppies() {
       image2: beckyImage,
       status: "Ready",
       description: "Born November 2, 2025"
+    },
+    {
+      name: "Dodger & Guinevere",
+      sire: "Dodger",
+      dam: "Guinevere",
+      birthDate: "11/4/25",
+      puppiesCount: "TBD",
+      available: "Black Males and Chocolate Males & Females Available",
+      readyDate: "January 2026",
+      image: dodgerImage,
+      image2: guinevereImage,
+      status: "Ready",
+      description: "Born November 4, 2025"
     }
   ];
 
