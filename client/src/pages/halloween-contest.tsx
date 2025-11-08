@@ -243,7 +243,7 @@ export default function HalloweenContest() {
             Halloween Costume Contest
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-            Congratulations to our fabulous winners!
+            Congratulations to our winners!
           </p>
         </div>
 
