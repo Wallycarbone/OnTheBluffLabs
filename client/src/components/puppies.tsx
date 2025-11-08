@@ -602,7 +602,7 @@ export default function Puppies() {
                               : "View Puppies"}
                           </Button>
                         )}
-                        <Link href="/puppy-application" className="w-full">
+                        <Link href="/puppy-application" className="w-full block">
                           <Button 
                             className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
                             style={{backgroundColor: '#6d761d', color: '#fefefe'}}
