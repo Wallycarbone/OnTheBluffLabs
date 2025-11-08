@@ -89,6 +89,11 @@ import dodgerGuineverePuppy1 from "@assets/12_1762641064556.png";
 import dodgerGuineverePuppy2 from "@assets/13_1762641064556.png";
 import dodgerGuineverePuppy3 from "@assets/14_1762641064556.png";
 
+// Boo Radley & Aunt Polly previous puppy images
+import booAuntPollyPuppy1 from "@assets/15_1762641751797.png";
+import booAuntPollyPuppy2 from "@assets/16_1762641751798.png";
+import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -256,6 +261,12 @@ export default function Puppies() {
     dodgerGuineverePuppy2
   ];
 
+  const booAuntPollyPreviousPuppyImages = [
+    booAuntPollyPuppy1,
+    booAuntPollyPuppy2,
+    booAuntPollyPuppy3
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -349,6 +360,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: booRadleyImage,
       image2: auntPollyImage,
+      puppyImages: booAuntPollyPreviousPuppyImages,
       status: "Accepting Applications",
       description: "Expected Late November 2025"
     }
@@ -585,6 +597,8 @@ export default function Puppies() {
                               ? "Previous Puppies by Holden & Becky"
                               : litter.name === "Dodger & Guinevere"
                               ? "Previous Puppies by Guinevere"
+                              : litter.name === "Boo Radley & Aunt Polly"
+                              ? "Previous Puppies by Boo Radley & Aunt Polly"
                               : "View Puppies"}
                           </Button>
                         )}
@@ -700,6 +714,8 @@ export default function Puppies() {
                             ? "Previous Puppies by Holden & Becky"
                             : litter.name === "Dodger & Guinevere"
                             ? "Previous Puppies by Guinevere"
+                            : litter.name === "Boo Radley & Aunt Polly"
+                            ? "Previous Puppies by Boo Radley & Aunt Polly"
                             : "View Puppies"}
                         </Button>
                       )}
@@ -854,6 +870,8 @@ export default function Puppies() {
                 ? "Previous Puppies by Holden & Becky"
                 : selectedPuppyLitterName === "Dodger & Guinevere"
                 ? "Previous Puppies by Guinevere"
+                : selectedPuppyLitterName === "Boo Radley & Aunt Polly"
+                ? "Previous Puppies by Boo Radley & Aunt Polly"
                 : `Puppies by ${selectedPuppyLitterName}`}
             </DialogTitle>
           </DialogHeader>
