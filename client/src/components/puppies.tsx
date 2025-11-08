@@ -695,7 +695,13 @@ export default function Puppies() {
                     </div>
 
                     <div className="space-y-4">
-                      {litter.puppyImages && (
+                      {litter.name === "Moon & Piper" ? (
+                        <div className="text-center py-2">
+                          <p className="font-montserrat font-medium text-sm" style={{color: '#6d761d'}}>
+                            Puppy Photos Coming Soon
+                          </p>
+                        </div>
+                      ) : litter.puppyImages ? (
                         <Button 
                           className="w-full font-montserrat font-medium text-sm h-auto py-2"
                           style={{backgroundColor: '#f59e0b', color: '#fefefe'}}
@@ -718,7 +724,7 @@ export default function Puppies() {
                             ? "Previous Puppies by Boo Radley & Aunt Polly"
                             : "View Puppies"}
                         </Button>
-                      )}
+                      ) : null}
                       <Button 
                         onClick={scrollToContact}
                         className="w-full font-montserrat font-medium text-sm h-auto py-2"
