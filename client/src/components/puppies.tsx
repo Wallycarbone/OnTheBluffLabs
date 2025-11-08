@@ -555,7 +555,9 @@ export default function Puppies() {
                             }}
                             data-testid="button-view-puppies"
                           >
-                            View Puppies
+                            {litter.name === "Grizzly & Vivien" 
+                              ? "Previous Puppies by Grizzly & Vivien" 
+                              : "View Puppies"}
                           </Button>
                         )}
                         <Link href="/puppy-application" className="w-full">
