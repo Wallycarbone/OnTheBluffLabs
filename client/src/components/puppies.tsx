@@ -84,6 +84,11 @@ import holdenBeckyPuppy1 from "@assets/9_1762640262937.png";
 import holdenBeckyPuppy2 from "@assets/10_1762640262938.png";
 import holdenBeckyPuppy3 from "@assets/11_1762640262937.png";
 
+// Dodger & Guinevere previous puppy images (Guinevere's previous litter with Grizzly)
+import dodgerGuineverePuppy1 from "@assets/12_1762641064556.png";
+import dodgerGuineverePuppy2 from "@assets/13_1762641064556.png";
+import dodgerGuineverePuppy3 from "@assets/14_1762641064556.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -245,6 +250,12 @@ export default function Puppies() {
     holdenBeckyPuppy3
   ];
 
+  const dodgerGuineverePreviousPuppyImages = [
+    dodgerGuineverePuppy1,
+    dodgerGuineverePuppy2,
+    dodgerGuineverePuppy3
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -324,6 +335,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: dodgerImage,
       image2: guinevereImage,
+      puppyImages: dodgerGuineverePreviousPuppyImages,
       status: "Ready",
       description: "Born November 4, 2025"
     },
@@ -571,6 +583,8 @@ export default function Puppies() {
                               ? "Previous Puppies by Grizzly & Vivien" 
                               : litter.name === "Holden & Becky"
                               ? "Previous Puppies by Holden & Becky"
+                              : litter.name === "Dodger & Guinevere"
+                              ? "Previous Puppies by Guinevere"
                               : "View Puppies"}
                           </Button>
                         )}
@@ -684,6 +698,8 @@ export default function Puppies() {
                             ? "Previous Puppies by Grizzly & Vivien" 
                             : litter.name === "Holden & Becky"
                             ? "Previous Puppies by Holden & Becky"
+                            : litter.name === "Dodger & Guinevere"
+                            ? "Previous Puppies by Guinevere"
                             : "View Puppies"}
                         </Button>
                       )}
@@ -836,9 +852,16 @@ export default function Puppies() {
                 ? "Previous Puppies by Grizzly & Vivien" 
                 : selectedPuppyLitterName === "Holden & Becky"
                 ? "Previous Puppies by Holden & Becky"
+                : selectedPuppyLitterName === "Dodger & Guinevere"
+                ? "Previous Puppies by Guinevere"
                 : `Puppies by ${selectedPuppyLitterName}`}
             </DialogTitle>
           </DialogHeader>
+          {selectedPuppyLitterName === "Dodger & Guinevere" && (
+            <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
+              This is the first litter by Artful Dodger and Guinevere. Previously, Guinevere has welcomed pups with Grizzly, who is from Dodger's same line. Here are a few of their puppies.
+            </p>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {selectedPuppyGallery.map((puppyImage, index) => (
               <div 
