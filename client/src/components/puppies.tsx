@@ -285,7 +285,7 @@ export default function Puppies() {
       birthDate: "Late November 2025",
       puppiesCount: "TBD",
       available: "TBD",
-      readyDate: "February 2026",
+      readyDate: "January 2026",
       image: booRadleyImage,
       image2: auntPollyImage,
       status: "Upcoming",
