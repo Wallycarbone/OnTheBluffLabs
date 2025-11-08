@@ -89,6 +89,7 @@ import emmaImage from "@assets/Breeding Dogs 5x4 (23)_1755446219053.png";
 import chaseImage from "@assets/Chase_1755458617995.avif";
 import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
+import dodgerOfficialPedigreeImage from "@assets/Dodger's Pedigree_1762633452989.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1153,6 +1154,70 @@ export default function BreedingDogs() {
             dam: {
               name: "CH Berryhill Grand River Crystal",
               titles: ["CH"]
+            }
+          }
+        }
+      },
+      "Dodger": {
+        name: "Dodger",
+        formalName: "On The Bluff's Artful Dodger",
+        titles: [],
+        image: dodgerImage,
+        sire: {
+          name: "On The Bluff's Oliver Twist",
+          titles: [],
+          sire: {
+            name: "On The Bluff's Atticus Finch",
+            titles: [],
+            image: atticusFinchImage,
+            sire: {
+              name: "Heartlands Polar Bear Chase",
+              titles: []
+            },
+            dam: {
+              name: "Heartlands Lily Of The Valley",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Dreaming Tree Aeofe Heffaelump",
+            titles: [],
+            sire: {
+              name: "North River's Under The Dreaming Tree",
+              titles: []
+            },
+            dam: {
+              name: "North River Black Pearl Of The Hudson",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Light Side Of The Moon Luna",
+          titles: [],
+          sire: {
+            name: "Valhalla's Charles Dickens On The Bluff",
+            titles: [],
+            sire: {
+              name: "GCH CH Shalimar's The Animator",
+              titles: ["GCH", "CH"]
+            },
+            dam: {
+              name: "GCH CH Valhalla's Supernatural JH",
+              titles: ["GCH", "CH", "JH"]
+            }
+          },
+          dam: {
+            name: "On The Bluff's Zooey Glass",
+            titles: [],
+            sire: {
+              name: "On The Bluff's Atticus Finch",
+              titles: [],
+              image: atticusFinchImage
+            },
+            dam: {
+              name: "Dreaming Tree's Summer Sun",
+              titles: []
             }
           }
         }
@@ -2338,6 +2403,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: guinevereOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Dodger" ? (
+                      <img 
+                        src={dodgerOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: dodgerOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
