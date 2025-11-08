@@ -349,7 +349,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: booRadleyImage,
       image2: auntPollyImage,
-      status: "Upcoming",
+      status: "Accepting Applications",
       description: "Expected Late November 2025"
     }
   ];
