@@ -88,6 +88,7 @@ import martingaleImage from "@assets/martybodymarch06 (1)_1755444963570.jpg";
 import emmaImage from "@assets/Breeding Dogs 5x4 (23)_1755446219053.png";
 import chaseImage from "@assets/Chase_1755458617995.avif";
 import expressoImage from "@assets/expresso_new3_1755458950324.webp";
+import dodgerImage from "@assets/Dodger_1762633068552.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1220,6 +1221,16 @@ export default function BreedingDogs() {
       age: "Active Stud",
       image: chekhovImage,
       description: "Chekhov is a stately chocolate male with penetrating amber eyes and profound intelligence. His contemplative nature and noble bearing reflect generations of quality breeding, producing offspring with both striking appearance and thoughtful temperament.",
+      hasPuppies: false
+    },
+    {
+      name: "Dodger",
+      formalName: "On The Bluff's Dodger",
+      gender: "Male",
+      color: "Black",
+      age: "Active Stud",
+      image: dodgerImage,
+      description: "Dodger is a handsome black male with a friendly expression and warm temperament. His classic English Labrador features and gentle personality make him an excellent sire for producing well-balanced puppies with outstanding temperaments.",
       hasPuppies: false
     }
   ];
