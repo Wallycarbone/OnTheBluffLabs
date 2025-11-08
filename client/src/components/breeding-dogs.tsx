@@ -90,6 +90,7 @@ import chaseImage from "@assets/Chase_1755458617995.avif";
 import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import dodgerOfficialPedigreeImage from "@assets/Dodger's Pedigree_1762633452989.png";
+import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1381,6 +1382,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: arabellaImage,
       description: "Arabella is an elegant and serene yellow female with a regal presence. Her calm confidence and nurturing instincts make her an exceptional mother, producing puppies with both beauty and temperament that reflect her graceful nature.",
+    },
+    {
+      name: "Aunt Polly",
+      formalName: "On The Bluff's Aunt Polly",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: auntPollyImage,
+      description: "Aunt Polly is a beautiful yellow dame with a sweet expression and gentle demeanor. Her nurturing temperament and loving personality make her an exceptional mother, consistently producing puppies with wonderful dispositions that reflect her kind and patient nature.",
     },
   ];
 

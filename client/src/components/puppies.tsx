@@ -49,7 +49,7 @@ import beckyImage from "@assets/Untitled design - 2025-09-26T135952.231_17589096
 import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
-import auntPollyImage from "@assets/Y30A1406Pollyboomssunflower_1761582264842.jpg";
+import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
