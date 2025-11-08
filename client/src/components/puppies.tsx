@@ -282,14 +282,14 @@ export default function Puppies() {
       name: "Boo Radley & Aunt Polly",
       sire: "Boo Radley",
       dam: "Aunt Polly",
-      birthDate: "December 2025",
+      birthDate: "Late November 2025",
       puppiesCount: "TBD",
       available: "TBD",
       readyDate: "February 2026",
       image: booRadleyImage,
       image2: auntPollyImage,
       status: "Upcoming",
-      description: "Expected December 2025"
+      description: "Expected Late November 2025"
     }
   ];
 
