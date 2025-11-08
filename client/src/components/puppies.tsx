@@ -518,7 +518,7 @@ export default function Puppies() {
                       </div>
 
                       {/* Bottom Section - Action Buttons */}
-                      <div className="max-w-sm mx-auto md:mx-0 space-y-2">
+                      <div className="max-w-sm mx-auto md:mx-0 space-y-4">
                         {litter.puppyImages && (
                           <Button 
                             className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
@@ -626,7 +626,7 @@ export default function Puppies() {
                       </p>
                     </div>
 
-                    <div className="space-y-2">
+                    <div className="space-y-4">
                       {litter.puppyImages && (
                         <Button 
                           className="w-full font-montserrat font-medium text-sm h-auto py-2"
