@@ -265,14 +265,14 @@ export default function Puppies() {
       name: "Holden & Becky",
       sire: "Holden",
       dam: "Becky",
-      birthDate: "Due November 2025",
+      birthDate: "11/2/25",
       puppiesCount: "TBD",
-      available: "Accepting Deposits",
+      available: "Black Males & Females Available",
       readyDate: "January 2026",
       image: holdenImage,
       image2: beckyImage,
       status: "Upcoming",
-      description: "Expected litter due November 2025"
+      description: "Born November 2, 2025"
     }
   ];
 
