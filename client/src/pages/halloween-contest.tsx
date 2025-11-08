@@ -313,7 +313,7 @@ export default function HalloweenContest() {
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
                       <img
-                        src="/attached_assets/Arrow_1762637206782.jpeg"
+                        src="/attached_assets/Arrow Cropped_1762637487603.png"
                         alt="Arrow - 3rd Place Winner"
                         className="w-full h-full object-cover"
                         data-testid="img-winner-third"
