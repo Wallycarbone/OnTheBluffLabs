@@ -1457,7 +1457,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: auntPollyImage,
-      description: "Aunt Polly is a beautiful yellow dame with a sweet expression and gentle demeanor. Her nurturing temperament and loving personality make her an exceptional mother, consistently producing puppies with wonderful dispositions that reflect her kind and patient nature.",
+      description: "Aunt Polly is a beautiful yellow dame with a sweet expression and calm, welcoming presence. Her nurturing temperament, lightly playful personality, and loving nature make her an exceptional mother, consistently producing puppies with wonderful dispositions that reflect her kind and patient spirit.",
     },
   ];
 
