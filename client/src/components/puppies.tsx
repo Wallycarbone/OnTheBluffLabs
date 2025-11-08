@@ -271,7 +271,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: holdenImage,
       image2: beckyImage,
-      status: "Upcoming",
+      status: "Ready",
       description: "Born November 2, 2025"
     }
   ];
