@@ -240,8 +240,8 @@ export default function Puppies() {
 
   const grizzlyVivienPreviousPuppyImages = [
     grizzlyVivienPuppy1,
-    grizzlyVivienPuppy2,
-    grizzlyVivienPuppy3
+    grizzlyVivienPuppy3,
+    grizzlyVivienPuppy2
   ];
 
   const holdenBeckyPreviousPuppyImages = [
