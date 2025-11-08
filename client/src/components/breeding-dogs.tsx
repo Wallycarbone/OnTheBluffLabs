@@ -1363,7 +1363,7 @@ export default function BreedingDogs() {
       color: "Black",
       age: "Active Stud",
       image: dodgerImage,
-      description: "Dodger is a handsome black male with a friendly expression and warm temperament. His classic English Labrador features and gentle personality make him an excellent sire for producing well-balanced puppies with outstanding temperaments.",
+      description: "Dodger is a large, handsome black male with a friendly expression and warm temperament. His substantial, classic English Labrador build—paired with his gentle personality—makes him an exceptional sire for producing well-balanced puppies with outstanding temperaments.",
       hasPuppies: false
     }
   ];
