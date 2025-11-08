@@ -70,6 +70,10 @@ import booQueenPuppy1 from "@assets/1_1762638038175.png";
 import booQueenPuppy2 from "@assets/2_1762638038176.png";
 import booQueenPuppy3 from "@assets/3_1762638038176.png";
 
+// Moon & Foxxy additional puppy images for gallery
+import moonFoxxyPuppy1 from "@assets/4_1762638824978.png";
+import moonFoxxyPuppy2 from "@assets/5_1762638824979.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -214,6 +218,11 @@ export default function Puppies() {
     booQueenPuppy3
   ];
 
+  const moonFoxxyPuppyGalleryImages = [
+    moonFoxxyPuppy1,
+    moonFoxxyPuppy2
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -224,6 +233,7 @@ export default function Puppies() {
       available: "Yellow Females",
       readyDate: "August 2025",
       images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
+      puppyImages: moonFoxxyPuppyGalleryImages,
       status: "Current",
       description: "Seven puppies born June 5, 2025"
     },
