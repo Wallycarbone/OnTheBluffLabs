@@ -79,6 +79,7 @@ export default function Puppies() {
   const [isTopoPopupOpen, setIsTopoPopupOpen] = useState(false);
   const [isPuppyGalleryOpen, setIsPuppyGalleryOpen] = useState(false);
   const [selectedPuppyGallery, setSelectedPuppyGallery] = useState<any[]>([]);
+  const [selectedPuppyLitterName, setSelectedPuppyLitterName] = useState<string>("");
   
   const [, setLocation] = useLocation();
 
@@ -527,6 +528,7 @@ export default function Puppies() {
                             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f59e0b'}
                             onClick={() => {
                               setSelectedPuppyGallery(litter.puppyImages);
+                              setSelectedPuppyLitterName(litter.name);
                               setIsPuppyGalleryOpen(true);
                             }}
                             data-testid="button-view-puppies"
@@ -635,6 +637,7 @@ export default function Puppies() {
                           onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f59e0b'}
                           onClick={() => {
                             setSelectedPuppyGallery(litter.puppyImages);
+                            setSelectedPuppyLitterName(litter.name);
                             setIsPuppyGalleryOpen(true);
                           }}
                           data-testid="button-view-puppies-upcoming"
@@ -787,7 +790,7 @@ export default function Puppies() {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              Litter Puppies
+              Puppies by {selectedPuppyLitterName}
             </DialogTitle>
           </DialogHeader>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
