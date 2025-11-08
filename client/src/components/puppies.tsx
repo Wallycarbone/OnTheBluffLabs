@@ -570,7 +570,7 @@ export default function Puppies() {
                         {litter.available && (
                           <div className="text-center md:text-left">
                             <p className="text-sm font-source-sans font-medium" style={{color: '#6d761d'}}>
-                              Available: {litter.available}
+                              Accepting Applications for: {litter.available}
                             </p>
                           </div>
                         )}
