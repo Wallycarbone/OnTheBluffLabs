@@ -94,6 +94,9 @@ import booAuntPollyPuppy1 from "@assets/15_1762641751797.png";
 import booAuntPollyPuppy2 from "@assets/16_1762641751798.png";
 import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 
+// Moon & Piper puppy images
+import moonPiperPuppy1 from "@assets/El Paso_1762810456965.png";
+
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
@@ -267,6 +270,10 @@ export default function Puppies() {
     booAuntPollyPuppy3
   ];
 
+  const moonPiperPuppyImages = [
+    moonPiperPuppy1
+  ];
+
   const allLitters = [
     {
       name: "Moon & Foxxy",
@@ -305,6 +312,7 @@ export default function Puppies() {
       readyDate: "November 2025",
       image: moonImage,
       image2: piperImage,
+      puppyImages: moonPiperPuppyImages,
       status: "Upcoming",
       description: "Born September 18, 2025"
     },
@@ -578,13 +586,7 @@ export default function Puppies() {
 
                       {/* Bottom Section - Action Buttons */}
                       <div className="max-w-sm mx-auto md:mx-0 space-y-4">
-                        {litter.name === "Moon & Piper" ? (
-                          <div className="text-center py-2">
-                            <p className="font-montserrat font-medium text-xs" style={{color: '#6d761d'}}>
-                              Puppy Photos Coming Soon
-                            </p>
-                          </div>
-                        ) : litter.puppyImages ? (
+                        {litter.puppyImages && (
                           <Button 
                             className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
                             style={{backgroundColor: '#f59e0b', color: '#fefefe'}}
@@ -607,7 +609,7 @@ export default function Puppies() {
                               ? "Previous Puppies by Boo Radley & Aunt Polly"
                               : "View Puppies"}
                           </Button>
-                        ) : null}
+                        )}
                         <Link href="/puppy-application" className="w-full block">
                           <Button 
                             className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
@@ -701,13 +703,7 @@ export default function Puppies() {
                     </div>
 
                     <div className="space-y-4">
-                      {litter.name === "Moon & Piper" ? (
-                        <div className="text-center py-2">
-                          <p className="font-montserrat font-medium text-sm" style={{color: '#6d761d'}}>
-                            Puppy Photos Coming Soon
-                          </p>
-                        </div>
-                      ) : litter.puppyImages ? (
+                      {litter.puppyImages && (
                         <Button 
                           className="w-full font-montserrat font-medium text-sm h-auto py-2"
                           style={{backgroundColor: '#f59e0b', color: '#fefefe'}}
@@ -730,7 +726,7 @@ export default function Puppies() {
                             ? "Previous Puppies by Boo Radley & Aunt Polly"
                             : "View Puppies"}
                         </Button>
-                      ) : null}
+                      )}
                       <Button 
                         onClick={scrollToContact}
                         className="w-full font-montserrat font-medium text-sm h-auto py-2"
