@@ -5,6 +5,7 @@ import heroImage from "@assets/Breeding Dogs 5x4 (27)_1755633649595.png";
 import ourDogsImage from "@assets/Breeding Dogs 5x4 (35)_1757524581256.png";
 import puppiesImage from "@assets/Puppies 5x4 (4 x 4 in) (23)_1756660633586.jpg";
 import behaviorAcademyImage from "@assets/Trainin gPhoto 4_1762111978274.png";
+import ctaBackgroundImage from "@assets/Y30A9760pipermoonmrelpaso (1)_1762810701483.jpg";
 
 export default function Hero() {
 
@@ -233,8 +234,21 @@ export default function Hero() {
 
 
       {/* Call to Action Section */}
-      <section className="pt-6 pb-12 md:pt-10 md:pb-20" style={{backgroundColor: '#fffbe8'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="pt-6 pb-12 md:pt-10 md:pb-20 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img 
+            src={ctaBackgroundImage}
+            alt="Beautiful autumn scene with facility buildings"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center center' }}
+          />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div className="rounded-3xl p-12 max-w-3xl mx-auto shadow-2xl border border-white/20" style={{backgroundColor: 'rgba(254, 254, 254, 0.95)'}}>
               <h3 className="text-3xl md:text-4xl font-oswald font-normal mb-6 tracking-wide leading-tight" style={{color: '#11100f'}}>
