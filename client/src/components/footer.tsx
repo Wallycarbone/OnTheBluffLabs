@@ -93,7 +93,7 @@ export default function Footer() {
                   href="/halloween-contest"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  Halloween Photo Contest
+                  2025 Halloween Costume Contest
                 </Link>
               </li>
             </ul>
