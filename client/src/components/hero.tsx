@@ -113,7 +113,7 @@ export default function Hero() {
       </section>
 
       {/* Holiday Banner */}
-      <section className="py-6" style={{backgroundColor: '#6d761d'}}>
+      <section className="py-6" style={{backgroundColor: '#a40000'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/puppies">
             <div className="text-center cursor-pointer transform hover:scale-105 transition-all duration-300">
