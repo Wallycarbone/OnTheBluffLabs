@@ -118,7 +118,7 @@ export default function Hero() {
           <Link href="/puppies">
             <div className="text-center cursor-pointer transform hover:scale-105 transition-all duration-300">
               <h3 className="text-2xl md:text-4xl font-oswald font-bold text-white mb-2">
-                Christmas Availability: Select Puppies Ready for Reservation
+                Exceptional Puppies Ready for Homes this Christmas
               </h3>
               <p className="text-base md:text-xl font-source-sans text-white mb-2">
                 Welcome a new family member home for the holidays!
