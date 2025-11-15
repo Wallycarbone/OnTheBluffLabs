@@ -208,32 +208,20 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
             Healthy Start
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-8">
-            <div className="flex justify-center md:justify-start">
-              <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src="/attached_assets/Puppies 5x4 (4 x 4 in) (2)_1754770576607.png"
-                  alt="Healthy Start - Beautiful yellow Lab puppy representing our breeding excellence"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-            
-            <div>
-              <div className="font-source-sans leading-relaxed space-y-6" 
-                style={{
-                  color: '#2d3748', 
-                  lineHeight: '1.8',
-                  fontSize: '16px',
-                  letterSpacing: '0.02em'
-                }}
-              >
-                <p>For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.</p>
+          <div className="mb-8">
+            <div className="font-source-sans leading-relaxed space-y-6" 
+              style={{
+                color: '#2d3748', 
+                lineHeight: '1.8',
+                fontSize: '16px',
+                letterSpacing: '0.02em'
+              }}
+            >
+              <p>For nearly fifty years we have worked hard to create Labradors that are the best possible companion dogs for individuals and families.</p>
 
-                <p>We strive for excellence in temperament, personality, with a physical structure that adheres to breed standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.</p>
+              <p>We strive for excellence in temperament, personality, with a physical structure that adheres to breed standard. We carefully research and select specific bloodlines to produce these desired qualities. The resulting progeny, combined with our distinct methods in early handling and socialization, have given our pups the best possible outcomes.</p>
 
-                <p>Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive fresh food diet made on our premises. Most importantly- they are handled and loved.</p>
-              </div>
+              <p>Our breeding dogs live in a family environment. There are no kennel runs. Our dogs run free and are exercised throughout the day on 7 open acres and woodlands. They eat an exclusive fresh food diet made on our premises. Most importantly- they are handled and loved.</p>
             </div>
           </div>
           
