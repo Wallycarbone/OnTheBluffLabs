@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="py-12" style={{backgroundColor: '#11100f', color: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide">
               ON THE BLUFF LABRADORS
@@ -80,6 +80,20 @@ export default function Footer() {
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
                   Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-oswald font-normal mb-4 tracking-wide">PHOTO ARCHIVE</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link 
+                  href="/halloween-contest"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  Halloween Photo Contest
                 </Link>
               </li>
             </ul>
