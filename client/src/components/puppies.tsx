@@ -578,7 +578,9 @@ export default function Puppies() {
                         {litter.available && (
                           <div className="text-center md:text-left">
                             <p className="text-sm font-source-sans font-medium" style={{color: '#6d761d'}}>
-                              Accepting Applications for: {litter.available}
+                              {litter.available === "Spoken For" 
+                                ? "Litter is Spoken For" 
+                                : `Accepting Applications for: ${litter.available}`}
                             </p>
                           </div>
                         )}
@@ -698,7 +700,7 @@ export default function Puppies() {
                         <strong>Ready:</strong> {litter.readyDate}
                       </p>
                       <p className="font-source-sans" style={{color: '#4b4b4b'}}>
-                        <strong>Status:</strong> {litter.available}
+                        <strong>Status:</strong> {litter.available === "Spoken For" ? "Litter is Spoken For" : litter.available}
                       </p>
                     </div>
 
