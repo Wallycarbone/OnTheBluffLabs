@@ -80,9 +80,8 @@ import grizzlyVivienPuppy2 from "@assets/7_1762639492682.png";
 import grizzlyVivienPuppy3 from "@assets/8_1762639492682.png";
 
 // Holden & Becky previous puppy images
-import holdenBeckyPuppy1 from "@assets/9_1762640262937.png";
-import holdenBeckyPuppy2 from "@assets/10_1762640262938.png";
-import holdenBeckyPuppy3 from "@assets/11_1762640262937.png";
+import holdenBeckyPuppy1 from "@assets/1_1764085801609.png";
+import holdenBeckyPuppy2 from "@assets/2_1764085801610.png";
 
 // Dodger & Guinevere previous puppy images (Guinevere's previous litter with Grizzly)
 import dodgerGuineverePuppy1 from "@assets/12_1762641064556.png";
@@ -252,9 +251,8 @@ export default function Puppies() {
   ];
 
   const holdenBeckyPreviousPuppyImages = [
-    holdenBeckyPuppy2,
     holdenBeckyPuppy1,
-    holdenBeckyPuppy3
+    holdenBeckyPuppy2
   ];
 
   const dodgerGuineverePreviousPuppyImages = [
