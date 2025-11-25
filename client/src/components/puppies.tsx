@@ -369,7 +369,7 @@ export default function Puppies() {
       image: booRadleyImage,
       image2: auntPollyImage,
       puppyImages: booAuntPollyPreviousPuppyImages,
-      status: "Accepting Applications",
+      status: "Ready",
       description: "Born November 21, 2025"
     }
   ];
