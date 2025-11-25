@@ -586,8 +586,6 @@ export default function Puppies() {
                           >
                             {litter.name === "Grizzly & Vivien" 
                               ? "Previous Puppies by Grizzly & Vivien" 
-                              : litter.name === "Holden & Becky"
-                              ? "Puppies by Holden & Becky"
                               : litter.name === "Dodger & Guinevere"
                               ? "Previous Puppies by Guinevere"
                               : litter.name === "Boo Radley & Aunt Polly"
@@ -703,8 +701,6 @@ export default function Puppies() {
                         >
                           {litter.name === "Grizzly & Vivien" 
                             ? "Previous Puppies by Grizzly & Vivien" 
-                            : litter.name === "Holden & Becky"
-                            ? "Puppies by Holden & Becky"
                             : litter.name === "Dodger & Guinevere"
                             ? "Previous Puppies by Guinevere"
                             : litter.name === "Boo Radley & Aunt Polly"
