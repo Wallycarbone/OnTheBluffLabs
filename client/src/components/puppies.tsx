@@ -242,8 +242,7 @@ export default function Puppies() {
   ];
 
   const moonFoxxyPuppyGalleryImages = [
-    moonFoxxyPuppy1,
-    moonFoxxyPuppy2
+    moonFoxxyPuppy1
   ];
 
   const grizzlyVivienPreviousPuppyImages = [
