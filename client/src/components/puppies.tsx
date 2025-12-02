@@ -291,7 +291,7 @@ export default function Puppies() {
       dam: "Queen Boudica",
       birthDate: "August 7, 2025",
       puppiesCount: "TBD",
-      available: "Yellow Males & Females",
+      available: "Yellow Females & Yellow Male with Bachelor's Degree",
       readyDate: "October 2025",
       image: booRadleyImage,
       image2: queenBoudicaImage,
