@@ -278,7 +278,7 @@ export default function Puppies() {
       dam: "Foxxy",
       birthDate: "June 5, 2025",
       puppiesCount: 7,
-      available: "Yellow Females",
+      available: "Yellow Female with Master's Degree",
       readyDate: "August 2025",
       images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
       puppyImages: moonFoxxyPuppyGalleryImages,
