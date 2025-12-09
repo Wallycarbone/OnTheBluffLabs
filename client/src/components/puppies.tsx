@@ -314,20 +314,6 @@ export default function Puppies() {
       description: "Born September 18, 2025"
     },
     {
-      name: "Holden & Becky",
-      sire: "Holden",
-      dam: "Becky",
-      birthDate: "11/2/25",
-      puppiesCount: "TBD",
-      available: "Black Female",
-      readyDate: "January 2026",
-      image: holdenImage,
-      image2: beckyImage,
-      puppyImages: holdenBeckyPreviousPuppyImages,
-      status: "Ready",
-      description: "Born November 2, 2025"
-    },
-    {
       name: "Dodger & Guinevere",
       sire: "Dodger",
       dam: "Guinevere",
