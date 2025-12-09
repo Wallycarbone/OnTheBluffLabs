@@ -623,7 +623,7 @@ export default function Puppies() {
               Upcoming Litters
             </h2>
             <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
-              Future breeding plans and expected litters - accepting deposits now.
+              Future breeding plans and expected litters - priority placements will go to families on the wait list
             </p>
           </div>
 
