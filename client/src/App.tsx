@@ -21,6 +21,7 @@ import AdminLogin from "@/pages/admin-login";
 import SimpleAdminLogin from "@/pages/simple-admin-login";
 import FileEditor from "@/pages/file-editor";
 import HalloweenContest from "@/pages/halloween-contest";
+import Gratitude from "@/pages/gratitude";
 
 function Router() {
   return (
@@ -38,6 +39,7 @@ function Router() {
       <Route path="/facilities" component={Facilities} />
       <Route path="/raw-dog-food" component={DogFood} />
       <Route path="/halloween-contest" component={HalloweenContest} />
+      <Route path="/gratitude" component={Gratitude} />
       <Route path="/contact" component={Contact} />
       <Route path="/admin/login" component={SimpleAdminLogin} />
       <Route path="/admin" component={Admin} />
