@@ -281,7 +281,7 @@ export default function Puppies() {
       puppiesCount: 7,
       available: "Yellow Female with Master's Degree",
       readyDate: "August 2025",
-      images: [lucySnowImage, foxxyImage, ...moonFoxxyPuppyImages],
+      images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
       puppyImages: moonFoxxyPuppyGalleryImages,
       status: "Current",
       description: "Seven puppies born June 5, 2025"
