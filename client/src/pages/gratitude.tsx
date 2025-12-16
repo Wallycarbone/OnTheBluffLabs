@@ -8,15 +8,6 @@ export default function Gratitude() {
       
       <div className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-oswald font-normal tracking-wide mb-4" style={{color: '#11100f'}}>
-              OTBL Gratitude for 2025
-            </h1>
-            <p className="text-lg font-source-sans" style={{color: '#4b4b4b'}}>
-              A look back at our wonderful year
-            </p>
-          </div>
-
           <div 
             style={{
               position: 'relative', 
