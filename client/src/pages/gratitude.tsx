@@ -41,10 +41,6 @@ export default function Gratitude() {
               data-testid="iframe-gratitude-video"
             />
           </div>
-          
-          <p className="text-center text-sm font-source-sans mt-4" style={{color: '#4b4b4b'}}>
-            By Jessica Kelley
-          </p>
         </div>
       </div>
 
