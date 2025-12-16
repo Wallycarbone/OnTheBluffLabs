@@ -67,6 +67,7 @@ import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 
 // Boo Radley & Queen Boudica puppy images
 import gracieSnowImage from "@assets/Gracie_December_1765898589313.png";
+import daisySnowImage from "@assets/Y30A0471Boudicaboodaisy_1765898719028.jpg";
 
 // Moon & Foxxy additional puppy images for gallery
 import moonFoxxyPuppy1 from "@assets/4_1762638824978.png";
@@ -239,7 +240,8 @@ export default function Puppies() {
   ];
 
   const booQueenPuppyImages = [
-    { image: gracieSnowImage, name: "Gracie, Bachelor's Degree" }
+    { image: gracieSnowImage, name: "Gracie, Bachelor's Degree" },
+    { image: daisySnowImage, name: "Daisy, Bachelor's Degree" }
   ];
 
   const moonFoxxyPuppyGalleryImages = [
