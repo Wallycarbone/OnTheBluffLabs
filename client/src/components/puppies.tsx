@@ -95,7 +95,7 @@ import booAuntPollyPuppy2 from "@assets/16_1762641751798.png";
 import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 
 // Moon & Piper puppy images
-import moonPiperPuppy1 from "@assets/El Paso_1762810456965.png";
+import simbaSnowImage from "@assets/Y30A0421boudicaboosimba_1765899204247.jpg";
 
 export default function Puppies() {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
@@ -274,7 +274,7 @@ export default function Puppies() {
   ];
 
   const moonPiperPuppyImages = [
-    moonPiperPuppy1
+    { image: simbaSnowImage, name: "Simba" }
   ];
 
   const allLitters = [
