@@ -242,8 +242,7 @@ export default function Puppies() {
   ];
 
   const moonFoxxyPuppyGalleryImages = [
-    moonFoxxyPuppy1,
-    lucySnowImage
+    { image: lucySnowImage, name: "Lucy" }
   ];
 
   const grizzlyVivienPreviousPuppyImages = [
@@ -765,20 +764,29 @@ export default function Puppies() {
             </p>
           )}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {selectedPuppyGallery.map((puppyImage, index) => (
-              <div 
-                key={index}
-                className="cursor-pointer overflow-hidden rounded-lg"
-                onClick={() => openImagePopup({src: puppyImage, name: `Puppy ${index + 1}`})}
-                data-testid={`puppy-image-${index}`}
-              >
-                <img 
-                  src={puppyImage}
-                  alt={`Puppy ${index + 1}`}
-                  className="w-full aspect-square object-cover hover:opacity-80 transition-opacity"
-                />
-              </div>
-            ))}
+            {selectedPuppyGallery.map((puppyImage, index) => {
+              const imageSrc = typeof puppyImage === 'object' && puppyImage.image ? puppyImage.image : puppyImage;
+              const imageName = typeof puppyImage === 'object' && puppyImage.name ? puppyImage.name : null;
+              return (
+                <div 
+                  key={index}
+                  className="cursor-pointer overflow-hidden rounded-lg"
+                  onClick={() => openImagePopup({src: imageSrc, name: imageName || `Puppy ${index + 1}`})}
+                  data-testid={`puppy-image-${index}`}
+                >
+                  <img 
+                    src={imageSrc}
+                    alt={imageName || `Puppy ${index + 1}`}
+                    className="w-full aspect-square object-cover hover:opacity-80 transition-opacity"
+                  />
+                  {imageName && (
+                    <p className="text-center font-source-sans text-sm mt-2" style={{color: '#4b4b4b'}}>
+                      {imageName}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </DialogContent>
       </Dialog>
