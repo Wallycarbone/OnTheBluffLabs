@@ -306,20 +306,6 @@ export default function Puppies() {
       description: "Born August 7, 2025"
     },
     {
-      name: "Moon & Piper",
-      sire: "Moon",
-      dam: "Piper",
-      birthDate: "9/18/25",
-      puppiesCount: "TBD",
-      available: "Yellow Male",
-      readyDate: "November 2025",
-      image: moonImage,
-      image2: piperImage,
-      puppyImages: moonPiperPuppyImages,
-      status: "Upcoming",
-      description: "Born September 18, 2025"
-    },
-    {
       name: "Dodger & Guinevere",
       sire: "Dodger",
       dam: "Guinevere",
