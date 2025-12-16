@@ -101,7 +101,7 @@ export default function Footer() {
                   href="/gratitude"
                   className="font-source-sans text-gray-300 hover:text-golden transition-colors"
                 >
-                  2025 Gratitude
+                  Gratitude for 2025
                 </Link>
               </li>
             </ul>
