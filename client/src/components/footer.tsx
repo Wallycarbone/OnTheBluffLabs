@@ -96,6 +96,14 @@ export default function Footer() {
                   2025 Halloween Costume Contest
                 </Link>
               </li>
+              <li>
+                <Link 
+                  href="/gratitude"
+                  className="font-source-sans text-gray-300 hover:text-golden transition-colors"
+                >
+                  2025 Gratitude
+                </Link>
+              </li>
             </ul>
           </div>
           
