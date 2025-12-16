@@ -35,7 +35,7 @@ export default function Gratitude() {
                 padding: 0, 
                 margin: 0
               }}
-              src="https://www.youtube.com/embed/Afln2VZ9U9o" 
+              src="https://www.youtube.com/embed/-gEG1pnSCco" 
               allowFullScreen 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               data-testid="iframe-gratitude-video"
