@@ -44,10 +44,10 @@ export default function Gratitude() {
                 padding: 0, 
                 margin: 0
               }}
-              src="https://www.canva.com/design/DAG7gE9vbQc/xGf6aGBTFyK8cqqekHDQBw/view?embed" 
+              src="https://www.youtube.com/embed/Afln2VZ9U9o" 
               allowFullScreen 
-              allow="fullscreen"
-              data-testid="iframe-gratitude-presentation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              data-testid="iframe-gratitude-video"
             />
           </div>
           
