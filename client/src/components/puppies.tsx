@@ -72,6 +72,7 @@ import booQueenPuppy3 from "@assets/3_1762638038176.png";
 
 // Moon & Foxxy additional puppy images for gallery
 import moonFoxxyPuppy1 from "@assets/4_1762638824978.png";
+import lucySnowImage from "@assets/Lucy_12:25_2_1765897633100.png";
 import moonFoxxyPuppy2 from "@assets/5_1762638824979.png";
 
 // Grizzly & Vivien previous puppy images
@@ -280,7 +281,7 @@ export default function Puppies() {
       puppiesCount: 7,
       available: "Yellow Female with Master's Degree",
       readyDate: "August 2025",
-      images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
+      images: [lucySnowImage, foxxyImage, ...moonFoxxyPuppyImages],
       puppyImages: moonFoxxyPuppyGalleryImages,
       status: "Current",
       description: "Seven puppies born June 5, 2025"
