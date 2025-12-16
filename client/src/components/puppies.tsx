@@ -157,6 +157,11 @@ export default function Puppies() {
       return `${diffDays} days old`;
     } else {
       const weeks = Math.floor(diffDays / 7);
+      if (weeks >= 8) {
+        const months = Math.round((diffDays / 30.44) * 10) / 10;
+        const wholeMonths = Math.floor(months);
+        return `${wholeMonths} month${wholeMonths !== 1 ? 's' : ''} old`;
+      }
       return `${weeks} week${weeks > 1 ? 's' : ''} old`;
     }
   };
