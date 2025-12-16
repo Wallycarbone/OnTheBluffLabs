@@ -242,7 +242,7 @@ export default function Puppies() {
   ];
 
   const moonFoxxyPuppyGalleryImages = [
-    { image: lucySnowImage, name: "Lucy" }
+    { image: lucySnowImage, name: "Lucy, Master's Degree" }
   ];
 
   const grizzlyVivienPreviousPuppyImages = [
