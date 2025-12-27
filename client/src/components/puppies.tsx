@@ -84,10 +84,10 @@ import grizzlyVivienPuppy3 from "@assets/8_1762639492682.png";
 import holdenBeckyPuppy1 from "@assets/1_1764085801609.png";
 import holdenBeckyPuppy2 from "@assets/2_1764085801610.png";
 
-// Dodger & Guinevere previous puppy images (Guinevere's previous litter with Grizzly)
-import dodgerGuineverePuppy1 from "@assets/12_1762641064556.png";
-import dodgerGuineverePuppy2 from "@assets/13_1762641064556.png";
-import dodgerGuineverePuppy3 from "@assets/14_1762641064556.png";
+// Dodger & Guinevere puppy images
+import dodgerGuineverePuppy1 from "@assets/1_1766875864536.png";
+import dodgerGuineverePuppy2 from "@assets/2_1766875864536.png";
+import dodgerGuineverePuppy3 from "@assets/3_1766875864535.png";
 
 // Boo Radley & Aunt Polly previous puppy images
 import booAuntPollyPuppy1 from "@assets/15_1762641751797.png";
@@ -564,8 +564,6 @@ export default function Puppies() {
                           >
                             {litter.name === "Grizzly & Vivien" 
                               ? "Previous Puppies by Grizzly & Vivien" 
-                              : litter.name === "Dodger & Guinevere"
-                              ? "Previous Puppies by Guinevere"
                               : litter.name === "Boo Radley & Aunt Polly"
                               ? "Previous Puppies by Boo Radley & Aunt Polly"
                               : "View Puppies"}
@@ -742,18 +740,11 @@ export default function Puppies() {
                 ? "Previous Puppies by Grizzly & Vivien" 
                 : selectedPuppyLitterName === "Holden & Becky"
                 ? "Puppies by Holden & Becky"
-                : selectedPuppyLitterName === "Dodger & Guinevere"
-                ? "Previous Puppies by Guinevere"
                 : selectedPuppyLitterName === "Boo Radley & Aunt Polly"
                 ? "Previous Puppies by Boo Radley & Aunt Polly"
                 : `Puppies by ${selectedPuppyLitterName}`}
             </DialogTitle>
           </DialogHeader>
-          {selectedPuppyLitterName === "Dodger & Guinevere" && (
-            <p className="text-sm font-source-sans mb-4" style={{color: '#4b4b4b'}}>
-              This is the first litter by Artful Dodger and Guinevere. Previously, Guinevere has welcomed pups with Grizzly, who is from Dodger's same line. Here are a few of their puppies.
-            </p>
-          )}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {selectedPuppyGallery.map((puppyImage, index) => {
               const imageSrc = typeof puppyImage === 'object' && puppyImage.image ? puppyImage.image : puppyImage;
