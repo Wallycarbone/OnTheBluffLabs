@@ -261,10 +261,10 @@ export default function Puppies() {
     holdenBeckyPuppy2
   ];
 
-  const dodgerGuineverePreviousPuppyImages = [
-    dodgerGuineverePuppy1,
-    dodgerGuineverePuppy3,
-    dodgerGuineverePuppy2
+  const dodgerGuineverePuppyImages = [
+    { image: dodgerGuineverePuppy1, name: "Mr. Penguin" },
+    { image: dodgerGuineverePuppy3, name: "Mr. El Paso" },
+    { image: dodgerGuineverePuppy2, name: "Mr. Red" }
   ];
 
   const booAuntPollyPreviousPuppyImages = [
@@ -315,7 +315,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: dodgerImage,
       image2: guinevereImage,
-      puppyImages: dodgerGuineverePreviousPuppyImages,
+      puppyImages: dodgerGuineverePuppyImages,
       status: "Ready",
       description: "Born November 4, 2025"
     },
