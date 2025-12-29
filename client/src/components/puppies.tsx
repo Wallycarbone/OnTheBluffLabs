@@ -241,7 +241,6 @@ export default function Puppies() {
   ];
 
   const booQueenPuppyImages = [
-    { image: gracieSnowImage, name: "Gracie, Bachelor's Degree" },
     { image: daisySnowImage, name: "Daisy, Bachelor's Degree" },
     { image: mooseSnowImage, name: "Moose, Bachelor's Degree" }
   ];
