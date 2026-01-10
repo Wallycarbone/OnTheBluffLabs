@@ -261,8 +261,7 @@ export default function Puppies() {
   ];
 
   const dodgerGuineverePuppyImages = [
-    { image: dodgerGuineverePuppy3, name: "Mr. El Paso" },
-    { image: dodgerGuineverePuppy2, name: "Mr. Red" }
+    { image: dodgerGuineverePuppy3, name: "Mr. El Paso" }
   ];
 
   const booAuntPollyPreviousPuppyImages = [
