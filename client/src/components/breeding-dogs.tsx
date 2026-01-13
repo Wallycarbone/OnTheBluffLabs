@@ -93,6 +93,7 @@ import dodgerOfficialPedigreeImage from "@assets/Dodger's Pedigree_1762633452989
 import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import auntPollyOfficialPedigreeImage from "@assets/Polly Pedigree_1762635610724.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
+import alolaOfficialPedigreeImage from "@assets/Alola's_Pedigree_1768332628989.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -2538,6 +2539,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: dodgerOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Alola" ? (
+                      <img 
+                        src={alolaOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: alolaOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
