@@ -92,6 +92,7 @@ import dodgerImage from "@assets/Dodger_1762633068552.png";
 import dodgerOfficialPedigreeImage from "@assets/Dodger's Pedigree_1762633452989.png";
 import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import auntPollyOfficialPedigreeImage from "@assets/Polly Pedigree_1762635610724.png";
+import alolaImage from "@assets/Alola_1768330992939.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1458,6 +1459,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: auntPollyImage,
       description: "Aunt Polly is a beautiful yellow dame with a sweet expression and calm, welcoming presence. Her nurturing temperament, lightly playful personality, and loving nature make her an exceptional mother, consistently producing puppies with wonderful dispositions that reflect her kind and patient spirit.",
+    },
+    {
+      name: "Alola",
+      formalName: "On The Bluff's Alola",
+      gender: "Female",
+      color: "Chocolate",
+      age: "Breeding Female",
+      image: alolaImage,
+      description: "Alola is a striking chocolate dame with captivating amber eyes and a gentle, soulful expression. Her calm demeanor and affectionate nature make her a wonderful mother, producing puppies with both beautiful coloring and loving temperaments.",
     },
   ];
 
