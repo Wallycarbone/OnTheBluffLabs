@@ -463,6 +463,7 @@ export default function Puppies() {
             </p>
           </div>
 
+          {selectLitters.length > 0 && (
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
             {selectLitters.map((litter, index) => (
               <Card key={index} className="overflow-hidden">
@@ -603,6 +604,92 @@ export default function Puppies() {
               </Card>
             ))}
           </div>
+          )}
+
+          {/* Upcoming Litters Section */}
+          {upcomingLitters.length > 0 && (
+            <>
+              <div className="text-center mb-8 mt-16">
+                <h2 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+                  UPCOMING LITTERS
+                </h2>
+                <p className="text-lg font-source-sans mt-6 max-w-4xl mx-auto" style={{color: '#4b4b4b'}}>
+                  These litters are expected soon. Join our wait list to be notified when puppies become available.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
+                {upcomingLitters.map((litter, index) => (
+                  <Card key={index} className="overflow-hidden">
+                    <CardContent className="p-8">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                        {/* First Photo */}
+                        <div className="flex justify-center">
+                          <img 
+                            src={litter.image}
+                            alt={`${litter.sire} - sire`}
+                            className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                            onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
+                          />
+                        </div>
+
+                        {/* Info in Middle */}
+                        <div className="text-center md:text-left px-2 h-full flex flex-col justify-between">
+                          <div className="space-y-3">
+                            <div className="space-y-2">
+                              <h3 className="text-2xl font-oswald font-normal tracking-wide leading-tight" style={{color: '#11100f'}}>
+                                {litter.name}
+                              </h3>
+                              <div className="flex justify-center md:justify-start">
+                                <span 
+                                  className="px-3 py-1 rounded-full text-xs font-medium shadow-sm"
+                                  style={{backgroundColor: '#f0e6d3', color: '#8b6914'}}
+                                >
+                                  Expected
+                                </span>
+                              </div>
+                            </div>
+
+                            <div className="space-y-1 text-sm">
+                              <p className="font-source-sans" style={{color: '#4b4b4b'}}>
+                                <span className="font-semibold">Expected:</span> {litter.readyDate}
+                              </p>
+                              <p className="font-source-sans" style={{color: '#4b4b4b'}}>
+                                <span className="font-semibold">Colors:</span> {litter.available}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="mt-4 space-y-2">
+                            <Link href="/puppy-application" className="w-full block">
+                              <Button 
+                                className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
+                                style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                              >
+                                Join Wait List
+                              </Button>
+                            </Link>
+                          </div>
+                        </div>
+
+                        {/* Second Photo */}
+                        <div className="flex justify-center">
+                          <img 
+                            src={litter.image2}
+                            alt={`${litter.dam} - dam`}
+                            className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                            onClick={() => openImagePopup({src: litter.image2, name: litter.dam})}
+                          />
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </>
+          )}
 
         </div>
       </div>
