@@ -1291,6 +1291,69 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Alola": {
+        name: "Alola",
+        formalName: "On The Bluff's La La La Lola",
+        titles: [],
+        image: alolaImage,
+        sire: {
+          name: "Belquest Conclusion's Anton Chekhov",
+          titles: [],
+          image: chekhovImage,
+          sire: {
+            name: "Belquest Conclusion Stolichnaya",
+            titles: [],
+            sire: {
+              name: "CH Aster Liberti Labro Hamburg",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Belquest Prequel To The Sequel CGCA CGCU",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Belquest Conclusion Double Layer Cake",
+            titles: [],
+            sire: {
+              name: "CH Atlantic's Ace Of Cakes At Big Sky",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Belquest Double Shot Expresso Of",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Awillix Moon Goddess",
+          titles: [],
+          sire: {
+            name: "Belquest Conclusion On The Bluff's Tristan",
+            titles: [],
+            sire: {
+              name: "Belquest Conclusion Stolichnaya",
+              titles: []
+            },
+            dam: {
+              name: "Belquest Conclusion Seminary Old Time Rock & Roll",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Dreaming Tree Aeofe Heffalump",
+            titles: [],
+            sire: {
+              name: "North River's Under The Dreaming Tree",
+              titles: []
+            },
+            dam: {
+              name: "North River Black Pearl Of The Hudson",
+              titles: []
+            }
+          }
+        }
       }
     };
     
