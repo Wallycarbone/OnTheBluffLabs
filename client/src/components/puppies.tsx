@@ -680,7 +680,7 @@ export default function Puppies() {
 
                             <div className="space-y-1 text-sm">
                               <p className="font-source-sans" style={{color: '#4b4b4b'}}>
-                                <span className="font-semibold">Expected:</span> {litter.readyDate}
+                                <span className="font-semibold">Expected:</span> {litter.description?.replace('Expected ', '') || litter.readyDate}
                               </p>
                               <p className="font-source-sans" style={{color: '#4b4b4b'}}>
                                 <span className="font-semibold">Colors:</span> {litter.available}
