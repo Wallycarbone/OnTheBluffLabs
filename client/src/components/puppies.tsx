@@ -50,6 +50,7 @@ import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
+import alolaImage from "@assets/Alola_1768330992939.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
@@ -329,6 +330,19 @@ export default function Puppies() {
       puppyImages: booAuntPollyPreviousPuppyImages,
       status: "Ready",
       description: "Born November 21, 2025"
+    },
+    {
+      name: "Holden & Alola",
+      sire: "Holden",
+      dam: "Alola",
+      birthDate: "Due February 2026",
+      puppiesCount: "TBD",
+      available: "Chocolates",
+      readyDate: "April 2026",
+      image: holdenImage,
+      image2: alolaImage,
+      status: "Upcoming",
+      description: "Expected February 2026"
     }
   ];
 
