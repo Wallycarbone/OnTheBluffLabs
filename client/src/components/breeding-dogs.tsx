@@ -1839,6 +1839,23 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
+            ) : dog.name === "Alola" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from American & Canadian Grand Champion <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: expressoImage,
+                        name: "Highcaliber Labradale Expresso"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Highcaliber Labradale Expresso
+                  </button>
+                </p>
+              </div>
             ) : (
               <div className="grid grid-cols-2 gap-4 text-xs">
                 <div>
