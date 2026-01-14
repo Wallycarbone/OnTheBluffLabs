@@ -94,6 +94,8 @@ import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import auntPollyOfficialPedigreeImage from "@assets/Polly Pedigree_1762635610724.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
 import alolaOfficialPedigreeImage from "@assets/Alola's_Pedigree_1768332628989.png";
+import akadiaImage from "@assets/Akadia_1768358230762.png";
+import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1354,6 +1356,69 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Akadia": {
+        name: "Akadia",
+        formalName: "On The Bluff's Akadia",
+        titles: [],
+        image: akadiaImage,
+        sire: {
+          name: "Keepsake Thorin On The Bluff",
+          titles: [],
+          sire: {
+            name: "Keepsake Puttin On The Ritz",
+            titles: [],
+            sire: {
+              name: "Keepsake Little Red Rooster",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Amanda",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Keepsake Random Red",
+            titles: [],
+            sire: {
+              name: "Keepsake Ricky Ricardo",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Oakley",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "Keepsake's Pippi Longstocking On The Bluff",
+          titles: [],
+          image: pippiLongstockingImage,
+          sire: {
+            name: "Keepsake It Isn't Easy Being Red",
+            titles: [],
+            sire: {
+              name: "Keepsake Little Red Rooster",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Flamingo",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Keepsake Help Me Rhonda",
+            titles: [],
+            sire: {
+              name: "Keepsake Ricky Ricardo",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Greystroke",
+              titles: []
+            }
+          }
+        }
       }
     };
     
@@ -1532,6 +1597,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: alolaImage,
       description: "Alola is a striking chocolate dame with captivating amber eyes and a gentle, soulful expression. Her calm demeanor and affectionate nature make her a wonderful mother, producing puppies with both beautiful coloring and loving temperaments.",
+    },
+    {
+      name: "Akadia",
+      formalName: "On The Bluff's Akadia",
+      gender: "Female",
+      color: "Fox Red",
+      age: "Breeding Female",
+      image: akadiaImage,
+      description: "Akadia is a beautiful fox red dame with warm, soulful eyes and a gentle expression. As the daughter of our beloved Pippi Longstocking, she carries forward exceptional maternal instincts and produces puppies with wonderful temperaments and striking coloring.",
     },
   ];
 
@@ -1853,6 +1927,23 @@ export default function BreedingDogs() {
                     }}
                   >
                     Highcaliber Labradale Expresso
+                  </button>
+                </p>
+              </div>
+            ) : dog.name === "Akadia" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of our beloved dame, <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: pippiLongstockingImage,
+                        name: "Pippi Longstocking"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Pippi Longstocking
                   </button>
                 </p>
               </div>
@@ -2633,6 +2724,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: alolaOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Akadia" ? (
+                      <img 
+                        src={akadiaOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: akadiaOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
