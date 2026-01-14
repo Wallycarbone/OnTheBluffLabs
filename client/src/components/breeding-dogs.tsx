@@ -1591,7 +1591,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Alola",
-      formalName: "On The Bluff's Alola",
+      formalName: "On The Bluff's La La La Lola",
       gender: "Female",
       color: "Chocolate",
       age: "Breeding Female",
