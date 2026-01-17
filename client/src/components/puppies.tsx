@@ -609,9 +609,7 @@ export default function Puppies() {
                             }}
                             data-testid="button-view-puppies"
                           >
-                            {litter.name === "Grizzly & Vivien" 
-                              ? "Previous Puppies by Grizzly & Vivien" 
-                              : litter.name === "Boo Radley & Aunt Polly"
+                            {litter.name === "Boo Radley & Aunt Polly"
                               ? "Previous Puppies by Boo Radley & Aunt Polly"
                               : "View Puppies"}
                           </Button>
@@ -869,9 +867,7 @@ export default function Puppies() {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
-              {selectedPuppyLitterName === "Grizzly & Vivien" 
-                ? "Previous Puppies by Grizzly & Vivien" 
-                : selectedPuppyLitterName === "Holden & Becky"
+              {selectedPuppyLitterName === "Holden & Becky"
                 ? "Puppies by Holden & Becky"
                 : selectedPuppyLitterName === "Boo Radley & Aunt Polly"
                 ? "Previous Puppies by Boo Radley & Aunt Polly"
