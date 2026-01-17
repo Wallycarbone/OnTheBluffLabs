@@ -23,7 +23,7 @@ const foodProducts = [
     id: "senior-formula",
     name: "On The Bluff Butcher Bags",
     description: "Fresh beef with tripe blend featuring softer textures and joint-supporting ingredients, specially crafted for senior Labradors with aging nutritional needs",
-    price: 30,
+    price: 39,
     unit: "15 lb portion", 
     benefits: ["Softer fresh textures", "Anti-inflammatory ingredients", "Digestive enzyme support", "Glucosamine for joints", "Heart-healthy omega oils"]
   }
