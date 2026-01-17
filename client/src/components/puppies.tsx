@@ -305,6 +305,20 @@ export default function Puppies() {
       description: "Born August 7, 2025"
     },
     {
+      name: "Dodger & Guinevere",
+      sire: "Dodger",
+      dam: "Guinevere",
+      birthDate: "11/4/25",
+      puppiesCount: "TBD",
+      available: "Black Males",
+      readyDate: "January 2026",
+      image: dodgerImage,
+      image2: guinevereImage,
+      puppyImages: dodgerGuineverePuppyImages,
+      status: "Ready",
+      description: "Born November 4, 2025"
+    },
+    {
       name: "Boo Radley & Aunt Polly",
       sire: "Boo Radley",
       dam: "Aunt Polly",
