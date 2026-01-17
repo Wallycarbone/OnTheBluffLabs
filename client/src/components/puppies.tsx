@@ -90,6 +90,7 @@ import holdenBeckyPuppy2 from "@assets/2_1764085801610.png";
 import dodgerGuineverePuppy1 from "@assets/1_1766875864536.png";
 import dodgerGuineverePuppy2 from "@assets/2_1766875864536.png";
 import dodgerGuineverePuppy3 from "@assets/3_1766875864535.png";
+import mrPenguinImage from "@assets/Mr._Penguin_1768684249664.png";
 
 // Boo Radley & Aunt Polly previous puppy images
 import booAuntPollyPuppy1 from "@assets/15_1762641751797.png";
@@ -263,7 +264,7 @@ export default function Puppies() {
   ];
 
   const dodgerGuineverePuppyImages = [
-    { image: dodgerGuineverePuppy3, name: "Mr. El Paso" }
+    { image: mrPenguinImage, name: "Mr. Penguin" }
   ];
 
   const booAuntPollyPreviousPuppyImages = [
