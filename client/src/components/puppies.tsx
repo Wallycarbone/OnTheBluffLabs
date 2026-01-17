@@ -337,15 +337,15 @@ export default function Puppies() {
       name: "Grizzly & Vivien",
       sire: "Grizzly",
       dam: "Vivien",
-      birthDate: "December 5, 2025",
+      birthDate: "October 19, 2025",
       puppiesCount: "TBD",
       available: "Black & Yellow Puppies",
-      readyDate: "February 2026",
+      readyDate: "December 2025",
       image: grizzlyImage,
       image2: vivienImage,
       puppyImages: grizzlyVivienPreviousPuppyImages,
       status: "Ready",
-      description: "Born December 5, 2025"
+      description: "Born October 19, 2025"
     },
     {
       name: "Holden & Alola",
