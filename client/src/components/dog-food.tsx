@@ -7,7 +7,7 @@ const foodProducts = [
     id: "raw-blend-adult",
     name: "On The Bluff Breakfast Blend",
     description: "Complete fresh food blend featuring chicken, turkey, fish, and vegetables with natural supplements specifically formulated for adult Labradors",
-    price: 28,
+    price: 27,
     unit: "5 lb block",
     benefits: ["100% fresh ingredients", "Farm-fresh proteins", "No preservatives", "Supports natural digestion", "Promotes healthy coat"]
   },
@@ -15,7 +15,7 @@ const foodProducts = [
     id: "raw-blend-puppy",
     name: "On The Bluff Dinner Blend", 
     description: "Nutrient-dense fresh food blend featuring beef and vegetables with optimal protein ratios and essential fatty acids for proper development",
-    price: 28,
+    price: 30,
     unit: "5 lb block",
     benefits: ["Growth-optimized nutrition", "Fresh bone content for teeth", "Natural enzyme preservation", "Easy transition from mother's milk"]
   },
