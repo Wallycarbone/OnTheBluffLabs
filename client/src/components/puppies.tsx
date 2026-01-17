@@ -81,6 +81,7 @@ import moonFoxxyPuppy2 from "@assets/5_1762638824979.png";
 import grizzlyVivienPuppy1 from "@assets/6_1762639492682.png";
 import grizzlyVivienPuppy2 from "@assets/7_1762639492682.png";
 import grizzlyVivienPuppy3 from "@assets/8_1762639492682.png";
+import msAlohaGrizzlyImage from "@assets/Ms._Aloha_1768685598645.png";
 
 // Holden & Becky previous puppy images
 import holdenBeckyPuppy1 from "@assets/1_1764085801609.png";
@@ -258,6 +259,10 @@ export default function Puppies() {
     grizzlyVivienPuppy2
   ];
 
+  const grizzlyVivienPuppyImages = [
+    { image: msAlohaGrizzlyImage, name: "Ms. Aloha" }
+  ];
+
   const holdenBeckyPreviousPuppyImages = [
     holdenBeckyPuppy1,
     holdenBeckyPuppy2
@@ -339,11 +344,11 @@ export default function Puppies() {
       dam: "Vivien",
       birthDate: "October 19, 2025",
       puppiesCount: "TBD",
-      available: "Black & Yellow Puppies",
+      available: "Chocolate Females",
       readyDate: "December 2025",
       image: grizzlyImage,
       image2: vivienImage,
-      puppyImages: grizzlyVivienPreviousPuppyImages,
+      puppyImages: grizzlyVivienPuppyImages,
       status: "Ready",
       description: "Born October 19, 2025"
     },
