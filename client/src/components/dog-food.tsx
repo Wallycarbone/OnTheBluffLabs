@@ -17,7 +17,7 @@ const foodProducts = [
     description: "Nutrient-dense fresh food blend featuring beef and vegetables with optimal protein ratios and essential fatty acids for proper development",
     price: 28,
     unit: "5 lb block",
-    benefits: ["Growth-optimized nutrition", "Fresh bone content for teeth", "Brain development support", "Natural enzyme preservation", "Easy transition from mother's milk"]
+    benefits: ["Growth-optimized nutrition", "Fresh bone content for teeth", "Natural enzyme preservation", "Easy transition from mother's milk"]
   },
   {
     id: "senior-formula",
