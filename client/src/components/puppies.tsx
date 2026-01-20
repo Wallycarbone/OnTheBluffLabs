@@ -98,6 +98,11 @@ import booAuntPollyPuppy1 from "@assets/15_1762641751797.png";
 import booAuntPollyPuppy2 from "@assets/16_1762641751798.png";
 import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 
+// Boo Radley & Aunt Polly current puppy images
+import mrTurtlesAuntPollyImage from "@assets/Mr._Turtles_1768952925558.png";
+import mrChristmasImage from "@assets/Mr._Christmas_1768952925559.png";
+import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1768952925560.png";
+
 // Moon & Piper puppy images
 import simbaSnowImage from "@assets/Y30A0421boudicaboosimba_1765899204247.jpg";
 
@@ -279,6 +284,12 @@ export default function Puppies() {
     booAuntPollyPuppy3
   ];
 
+  const booAuntPollyPuppyImages = [
+    { image: mrTurtlesAuntPollyImage, name: "Mr. Turtles" },
+    { image: mrChristmasImage, name: "Mr. Christmas" },
+    { image: mrStarsAndStripesImage, name: "Mr. Stars & Stripes" }
+  ];
+
   const moonPiperPuppyImages = [
     { image: simbaSnowImage, name: "Simba" }
   ];
@@ -335,7 +346,7 @@ export default function Puppies() {
       readyDate: "January 2026",
       image: booRadleyImage,
       image2: auntPollyImage,
-      puppyImages: booAuntPollyPreviousPuppyImages,
+      puppyImages: booAuntPollyPuppyImages,
       status: "Ready",
       description: "Born November 21, 2025"
     },
@@ -609,9 +620,7 @@ export default function Puppies() {
                             }}
                             data-testid="button-view-puppies"
                           >
-                            {litter.name === "Boo Radley & Aunt Polly"
-                              ? "Previous Puppies by Boo Radley & Aunt Polly"
-                              : "View Puppies"}
+                            View Puppies
                           </Button>
                         )}
                         <Link href="/puppy-application" className="w-full block">
@@ -869,8 +878,6 @@ export default function Puppies() {
             <DialogTitle className="text-2xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
               {selectedPuppyLitterName === "Holden & Becky"
                 ? "Puppies by Holden & Becky"
-                : selectedPuppyLitterName === "Boo Radley & Aunt Polly"
-                ? "Previous Puppies by Boo Radley & Aunt Polly"
                 : `Puppies by ${selectedPuppyLitterName}`}
             </DialogTitle>
           </DialogHeader>
