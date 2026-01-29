@@ -52,6 +52,7 @@ import dodgerImage from "@assets/Dodger_1762633068552.png";
 import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
+import aureliaImage from "@assets/Aurelia_1769703737590.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
@@ -387,6 +388,19 @@ export default function Puppies() {
       readyDate: "March 2026",
       image: booRadleyImage,
       image2: akadiaImage,
+      status: "Upcoming",
+      description: "Expected January 2026"
+    },
+    {
+      name: "Grizzly & Aurelia",
+      sire: "Grizzly",
+      dam: "Aurelia",
+      birthDate: "Due January 2026",
+      puppiesCount: "TBD",
+      available: "Chocolates",
+      readyDate: "March 2026",
+      image: grizzlyImage,
+      image2: aureliaImage,
       status: "Upcoming",
       description: "Expected January 2026"
     }
