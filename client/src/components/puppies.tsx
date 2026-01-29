@@ -53,6 +53,7 @@ import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import aureliaImage from "@assets/Aurelia_1769703737590.png";
+import grizzlySnowImage from "@assets/Grizzly_1769703945105.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
@@ -399,7 +400,7 @@ export default function Puppies() {
       puppiesCount: "TBD",
       available: "Chocolates",
       readyDate: "March 2026",
-      image: grizzlyImage,
+      image: grizzlySnowImage,
       image2: aureliaImage,
       status: "Upcoming",
       description: "Expected January 2026"
