@@ -360,7 +360,7 @@ export default function Puppies() {
       puppiesCount: "TBD",
       available: "Chocolate Females",
       readyDate: "December 2025",
-      image: grizzlyImage,
+      image: grizzlySnowImage,
       image2: vivienImage,
       puppyImages: grizzlyVivienPuppyImages,
       status: "Ready",
