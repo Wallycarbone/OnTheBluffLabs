@@ -370,14 +370,14 @@ export default function Puppies() {
       name: "Holden & Alola",
       sire: "Holden",
       dam: "Alola",
-      birthDate: "Due January 2026",
+      birthDate: "January 16, 2026",
       puppiesCount: "TBD",
-      available: "Chocolates",
+      available: "Chocolate Male",
       readyDate: "March 2026",
       image: holdenImage,
       image2: alolaImage,
-      status: "Upcoming",
-      description: "Expected January 2026"
+      status: "Ready",
+      description: "Born January 16, 2026"
     },
     {
       name: "Boo Radley & Akadia",
