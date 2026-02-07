@@ -372,7 +372,7 @@ export default function Puppies() {
       dam: "Alola",
       birthDate: "January 16, 2026",
       puppiesCount: "TBD",
-      available: "Chocolate Male",
+      available: "Chocolate Males",
       readyDate: "March 2026",
       image: holdenImage,
       image2: alolaImage,
