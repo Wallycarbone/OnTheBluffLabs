@@ -396,14 +396,14 @@ export default function Puppies() {
       name: "Grizzly & Aurelia",
       sire: "Grizzly",
       dam: "Aurelia",
-      birthDate: "Due January 2026",
+      birthDate: "January 23, 2026",
       puppiesCount: "TBD",
-      available: "Chocolates",
+      available: "Chocolate Males & Females",
       readyDate: "March 2026",
       image: grizzlySnowImage,
       image2: aureliaImage,
-      status: "Upcoming",
-      description: "Expected January 2026"
+      status: "Ready",
+      description: "Born January 23, 2026"
     },
     {
       name: "Harper Lee & Moon",
