@@ -404,6 +404,19 @@ export default function Puppies() {
       image2: aureliaImage,
       status: "Upcoming",
       description: "Expected January 2026"
+    },
+    {
+      name: "Harper Lee & Moon",
+      sire: "Harper Lee",
+      dam: "Moon",
+      birthDate: "Due February 2026",
+      puppiesCount: "TBD",
+      available: "Yellows",
+      readyDate: "April 2026",
+      image: harperLeeImage,
+      image2: moonImage,
+      status: "Upcoming",
+      description: "Expected February 2026"
     }
   ];
 
