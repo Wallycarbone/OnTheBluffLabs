@@ -82,6 +82,25 @@ export default function Training() {
         </div>
       </section>
 
+      {/* Program Introduction Video */}
+      <section className="py-16 md:py-20" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-8 tracking-wide" style={{color: '#11100f'}}>
+            Welcome to the Behavior Academy
+          </h2>
+          <div className="relative w-full rounded-lg overflow-hidden shadow-lg" style={{paddingBottom: '56.25%'}}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src=""
+              title="Behavior Academy Introduction"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
