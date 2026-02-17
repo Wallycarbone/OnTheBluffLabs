@@ -79,7 +79,7 @@ export default function Training() {
             <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-8 tracking-wide" style={{color: '#11100f'}}>
               Meet Jess — Lead Trainer
             </h2>
-            <p className="font-source-sans text-lg leading-[1.6] text-center" style={{color: '#4b4b4b'}}>
+            <p className="font-source-sans text-lg leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
               Many of our OTBL families already know Jess from their time at the training center, and over the past three years she has become an essential part of both our daily work and the continued evolution of our program. She brings a rare blend of academic rigor, hands-on experience, and genuine connection with both dogs and the families who love them.
             </p>
           </div>
