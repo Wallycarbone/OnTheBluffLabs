@@ -83,7 +83,7 @@ import moonFoxxyPuppy2 from "@assets/5_1762638824979.png";
 import grizzlyVivienPuppy1 from "@assets/6_1762639492682.png";
 import grizzlyVivienPuppy2 from "@assets/7_1762639492682.png";
 import grizzlyVivienPuppy3 from "@assets/8_1762639492682.png";
-import msAlohaGrizzlyImage from "@assets/Ms._Aloha_1768685598645.png";
+import msAlohaGrizzlyImage from "@assets/Aloha_Photo_1771360263374.png";
 
 // Holden & Becky previous puppy images
 import holdenBeckyPuppy1 from "@assets/1_1764085801609.png";
