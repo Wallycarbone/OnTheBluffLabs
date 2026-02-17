@@ -131,6 +131,9 @@ export default function Training() {
           <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
             Together, our training team applies these principles every day in a program designed to help puppies grow into confident, steady family companions.
           </p>
+          <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify font-bold mt-4" style={{color: '#4b4b4b'}}>
+            From the very first weeks, our puppies are guided through experiences that shape not only how they behave, but how they feel about the world. Each step—whether it's resting quietly in the kitchen, riding in the car, or learning to sit—builds confidence and trust. The goal isn't just obedience. It's a foundation for belonging: a puppy who moves easily through family life, secure in themselves, and ready to grow into a steady lifelong companion.
+          </p>
         </div>
       </section>
 
