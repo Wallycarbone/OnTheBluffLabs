@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 import trainingHeroImage from '@assets/Untitled design - 2025-09-22T163745.168_1758573553127.jpg';
+import jessBambiImage from '@assets/Jess_and_Bambi_1771356622144.png';
 import trainingHeroMobileImage from '@assets/Untitled design - 2025-09-29T143948.658_1759171199763.jpg';
 import doctorateImage from '@assets/Untitled design - 2025-09-23T093300.325_1758634393210.jpg';
 import bachelorsImage from '@assets/Untitled (5 x 4 in)_1758635023416.jpg';
@@ -85,6 +86,39 @@ export default function Training() {
           </div>
         </div>
 
+        </div>
+      </section>
+
+      {/* Jess & Bambi Image with Bio */}
+      <section className="relative w-full">
+        <img
+          src={jessBambiImage}
+          alt="Jess holding a yellow Labrador puppy"
+          className="w-full h-auto object-cover"
+          style={{minHeight: '500px', objectPosition: 'center'}}
+        />
+        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full flex items-center">
+          <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.8) 100%)'}}></div>
+          <div className="hidden md:block relative z-10 p-8 lg:p-12">
+            <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify text-white mb-4">
+              Jess is a graduate of Cornell University, where she earned a Bachelor of Science in Philosophy with a focus on Applied Ethics, along with extensive coursework in animal science, husbandry, and welfare through the Cornell Vet School. She is a Certified Professional Dog Trainer — Knowledge Assessed (CPDT-KA), a Pat Miller Certified Dog Trainer Level 2 (PMCT-2), and a Family Dog Mediator. These credentials require hundreds of hours of professional experience and reflect her deep commitment to thoughtful, science-based training.
+            </p>
+            <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify text-white">
+              Her continuing education includes advanced coursework and top-student distinction through Peaceable Paws' Canine Behavior & Training Academy, Canine Behavior Modification Academy, and Canine Aggression Academy, as well as specialized study through Michael Shikashio's Aggression in Dogs Master Course and Kim Brophy's L.E.G.S. Applied Ethology program. Before joining OTBL, Jess spent years working as a full-time dog walker in New York City and has donated hundreds of hours of training and behavior modification work to local and national shelters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mobile Bio Text */}
+      <section className="md:hidden py-12 px-4" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-4xl mx-auto">
+          <p className="font-source-sans text-base leading-[1.6] text-justify mb-4" style={{color: '#4b4b4b'}}>
+            Jess is a graduate of Cornell University, where she earned a Bachelor of Science in Philosophy with a focus on Applied Ethics, along with extensive coursework in animal science, husbandry, and welfare through the Cornell Vet School. She is a Certified Professional Dog Trainer — Knowledge Assessed (CPDT-KA), a Pat Miller Certified Dog Trainer Level 2 (PMCT-2), and a Family Dog Mediator. These credentials require hundreds of hours of professional experience and reflect her deep commitment to thoughtful, science-based training.
+          </p>
+          <p className="font-source-sans text-base leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
+            Her continuing education includes advanced coursework and top-student distinction through Peaceable Paws' Canine Behavior & Training Academy, Canine Behavior Modification Academy, and Canine Aggression Academy, as well as specialized study through Michael Shikashio's Aggression in Dogs Master Course and Kim Brophy's L.E.G.S. Applied Ethology program. Before joining OTBL, Jess spent years working as a full-time dog walker in New York City and has donated hundreds of hours of training and behavior modification work to local and national shelters.
+          </p>
         </div>
       </section>
 
