@@ -46,42 +46,6 @@ export default function Training() {
 
   return (
     <div>
-      {/* Hero Section with Background Image */}
-      <section className="relative h-[90vh] md:h-[100vh] flex items-end md:items-center justify-center md:justify-end overflow-hidden">
-        {/* Desktop Background Image */}
-        <div 
-          className="hidden md:block absolute inset-0"
-          style={{
-            backgroundImage: `url(${trainingHeroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center calc(50% + 40px)',
-            backgroundRepeat: 'no-repeat'
-          }}
-        ></div>
-        {/* Mobile Background Image */}
-        <div 
-          className="block md:hidden absolute inset-0"
-          style={{
-            backgroundImage: `url(${trainingHeroMobileImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        ></div>
-        {/* Desktop Gradient */}
-        <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.95) 100%)'}}></div>
-        {/* Mobile Gradient */}
-        <div className="block md:hidden absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.9) 100%)'}}></div>
-        <div className="relative z-10 text-center md:text-right text-white px-4 pb-8 md:pb-0 md:pr-16">
-          <h1 className="text-7xl md:text-6xl font-oswald font-normal mb-4 tracking-wide">
-            THE LEGACY<br />LIVES ON
-          </h1>
-          <p className="text-3xl md:text-2xl font-source-sans font-light">
-            Training Tomorrow's Labradors
-          </p>
-        </div>
-      </section>
-
       {/* Program Introduction Video */}
       <section className="py-16 md:py-20" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
