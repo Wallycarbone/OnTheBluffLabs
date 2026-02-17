@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Award, Users, Clock, CheckCircle, Heart, Star, GraduationCap, Sprout } from "lucide-react";
 import trainingHeroImage from '@assets/Untitled design - 2025-09-22T163745.168_1758573553127.jpg';
-import jessBambiImage from '@assets/Jess_and_Bambi_1771356622144.png';
+import jessBambiImage from '@assets/Jess_and_Bambi_High_Res_1771357642384.png';
 import trainingHeroMobileImage from '@assets/Untitled design - 2025-09-29T143948.658_1759171199763.jpg';
 import doctorateImage from '@assets/Untitled design - 2025-09-23T093300.325_1758634393210.jpg';
 import bachelorsImage from '@assets/Untitled (5 x 4 in)_1758635023416.jpg';
