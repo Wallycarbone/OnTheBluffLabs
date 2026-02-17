@@ -54,7 +54,7 @@ export default function Training() {
             <br />
             <span style={{color: '#6d761d'}}>TRAINING AT ON THE BLUFF</span>
           </h1>
-          <p className="max-w-3xl mx-auto font-source-sans text-lg leading-[1.6]" style={{color: '#4b4b4b'}}>
+          <p className="max-w-3xl mx-auto font-source-sans text-lg leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
             For over a decade, our training center has helped Labrador puppies grow into calm, confident companions for families across the country. What began as a simple idea — helping dogs truly live well at home — has grown into a program shaped by experience, service work, and the trust of generations of OTBL families. In this short video, our lead trainer, Jess, shares how the training center began, how it has evolved, and what training on the Bluff looks like today.
           </p>
         </div>
