@@ -114,16 +114,14 @@ export default function Hero() {
 
       {/* 10th Anniversary Banner */}
       <Link href="/training">
-        <div className="py-8 md:py-10 px-6 text-center cursor-pointer hover:brightness-105 transition-all duration-300" style={{ backgroundColor: '#1a1a1a' }}>
-          <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-3">
-            <div className="w-16 h-[1px] mb-2" style={{ backgroundColor: '#c9a84c' }}></div>
-            <span className="text-2xl sm:text-3xl md:text-4xl font-oswald font-normal tracking-[0.2em] uppercase" style={{ color: '#c9a84c' }}>
+        <div className="py-6 md:py-8 px-6 text-center cursor-pointer hover:brightness-110 transition-all duration-300" style={{ backgroundColor: '#5a6b2f' }}>
+          <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-2">
+            <span className="text-2xl sm:text-3xl md:text-4xl font-oswald font-normal tracking-wider uppercase text-white">
               Celebrating 10 Years
             </span>
             <span className="text-sm sm:text-base md:text-lg font-source-sans font-light tracking-wide" style={{ color: '#e8e4dc' }}>
-              Our Training Center marks a decade of excellence — Visit the Behavior Academy
+              Our Training Center turns 10 this year — Visit the Behavior Academy to learn more →
             </span>
-            <div className="w-16 h-[1px] mt-2" style={{ backgroundColor: '#c9a84c' }}></div>
           </div>
         </div>
       </Link>
