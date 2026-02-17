@@ -99,11 +99,11 @@ export default function Training() {
         />
         <div className="absolute top-0 right-0 w-full md:w-[45%] h-full flex items-center">
           <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 25%, rgba(0,0,0,0.85) 100%)'}}></div>
-          <div className="hidden md:block relative z-10 p-8 lg:p-12 lg:pl-16">
-            <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify text-white mb-4">
+          <div className="hidden md:block relative z-10 p-6 lg:p-10 lg:pl-14">
+            <p className="font-source-sans text-sm lg:text-base leading-[1.6] text-justify text-white mb-3">
               Jess is a graduate of Cornell University, where she earned a Bachelor of Science in Philosophy with a focus on Applied Ethics, along with extensive coursework in animal science, husbandry, and welfare through the Cornell Vet School. She is a Certified Professional Dog Trainer — Knowledge Assessed (CPDT-KA), a Pat Miller Certified Dog Trainer Level 2 (PMCT-2), and a Family Dog Mediator. These credentials require hundreds of hours of professional experience and reflect her deep commitment to thoughtful, science-based training.
             </p>
-            <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify text-white">
+            <p className="font-source-sans text-sm lg:text-base leading-[1.6] text-justify text-white">
               Her continuing education includes advanced coursework and top-student distinction through Peaceable Paws' Canine Behavior & Training Academy, Canine Behavior Modification Academy, and Canine Aggression Academy, as well as specialized study through Michael Shikashio's Aggression in Dogs Master Course and Kim Brophy's L.E.G.S. Applied Ethology program. Before joining OTBL, Jess spent years working as a full-time dog walker in New York City and has donated hundreds of hours of training and behavior modification work to local and national shelters.
             </p>
           </div>
