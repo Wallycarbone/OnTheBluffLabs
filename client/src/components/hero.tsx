@@ -114,15 +114,16 @@ export default function Hero() {
 
       {/* 10th Anniversary Banner */}
       <Link href="/training">
-        <div className="bg-gradient-to-r from-[#5a6b2f] via-[#6b7d3a] to-[#5a6b2f] py-4 px-6 text-center cursor-pointer hover:brightness-110 transition-all duration-300">
-          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-            <span className="text-yellow-300 text-xl sm:text-2xl font-oswald font-bold tracking-wide">
-              Celebrating 10 Years!
+        <div className="py-8 md:py-10 px-6 text-center cursor-pointer hover:brightness-105 transition-all duration-300" style={{ backgroundColor: '#1a1a1a' }}>
+          <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-3">
+            <div className="w-16 h-[1px] mb-2" style={{ backgroundColor: '#c9a84c' }}></div>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-oswald font-normal tracking-[0.2em] uppercase" style={{ color: '#c9a84c' }}>
+              Celebrating 10 Years
             </span>
-            <span className="text-white text-sm sm:text-base font-source-sans">
-              Our Training Center turns 10 this year — Visit the Behavior Academy to learn more
+            <span className="text-sm sm:text-base md:text-lg font-source-sans font-light tracking-wide" style={{ color: '#e8e4dc' }}>
+              Our Training Center marks a decade of excellence — Visit the Behavior Academy
             </span>
-            <span className="text-yellow-300 text-lg">→</span>
+            <div className="w-16 h-[1px] mt-2" style={{ backgroundColor: '#c9a84c' }}></div>
           </div>
         </div>
       </Link>
