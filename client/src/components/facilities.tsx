@@ -33,6 +33,13 @@ export default function Team() {
       image: "/attached_assets/Poppy Headshot_1762030980362.png",
     },
     {
+      name: "Dave Rifenburgh",
+      role: "Puppy Trainer & Breeding Partner",
+      description: "Dave helps train our puppies and is a valued breeding partner in our program. His hands-on involvement and dedication to our dogs contribute to the development of well-socialized, confident puppies.",
+      highlight: "Guardian to On The Bluff's Penny",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
+    },
+    {
       name: "Julie Rifenburgh",
       role: "Puppy Trainer",
       description: "Julie is a bachelor's candidate in SUNY Cobleskill's Canine Training and Management program, and she helps train our puppies. Her formal education in canine behavior and training methods enhances our puppy development programs.",
