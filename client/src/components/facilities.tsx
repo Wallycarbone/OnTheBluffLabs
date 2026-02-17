@@ -50,7 +50,7 @@ export default function Team() {
       name: "Maddie Sartori",
       role: "Puppy Trainer",
       description: "Maddie brings a wealth of experience in AKC dog sports to our puppy training program. Her competitive background and understanding of canine athleticism help develop well-rounded puppies with strong foundations in obedience, socialization, and confidence.",
-      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (20)_1756152199562.png",
+      image: "/attached_assets/Maddie's_Photo_1771360163227.png",
     },
     {
       name: "Drew Richards",
