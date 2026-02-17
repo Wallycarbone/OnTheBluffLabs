@@ -453,18 +453,10 @@ export default function Training() {
             <div className="text-center">
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <AspectRatio ratio={5/4}>
-                  {/* Blurred background fill */}
                   <img 
                     src={doctorateImage}
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
-                  />
-                  {/* Main image with preserved content */}
-                  <img 
-                    src={doctorateImage}
-                    alt="Chocolate Labrador puppy sitting confidently on green grass, demonstrating the poised temperament achieved through doctorate-level training"
-                    className="absolute inset-0 z-10 w-full h-full object-contain"
+                    alt="Trainer working with a golden Labrador demonstrating the poised temperament achieved through doctorate-level training"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
