@@ -48,6 +48,11 @@ export default function Training() {
     <div>
       {/* Program Introduction Video */}
       <section style={{backgroundColor: '#fffbe8'}}>
+        <div className="text-center py-12">
+          <h1 className="text-3xl md:text-4xl font-oswald font-normal tracking-wide" style={{color: '#11100f'}}>
+            Celebrating 10 Years of Training at On The Bluff
+          </h1>
+        </div>
         <div className="relative w-full" style={{paddingBottom: '56.25%'}}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
