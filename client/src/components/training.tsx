@@ -122,6 +122,18 @@ export default function Training() {
         </div>
       </section>
 
+      {/* Closing Paragraph */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8" style={{backgroundColor: '#fffbe8'}}>
+        <div className="max-w-4xl mx-auto">
+          <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify mb-4" style={{color: '#4b4b4b'}}>
+            What matters most to us — and to the dogs — is how she applies all of this knowledge. Jess has a calm, thoughtful presence that dogs respond to immediately, and she has a gift for helping families understand how training creates confidence, trust, and true partnership at home. As we celebrate ten years of training on the Bluff, Jess represents the next chapter of our program — honoring what has always worked while helping us continue to grow.
+          </p>
+          <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
+            Together, our training team applies these principles every day in a program designed to help puppies grow into confident, steady family companions.
+          </p>
+        </div>
+      </section>
+
       {/* The Bachelor's Degree Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
