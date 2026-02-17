@@ -37,7 +37,7 @@ export default function Team() {
       role: "Puppy Trainer & Breeding Partner",
       description: "Dave helps train our puppies and is a valued breeding partner in our program. His hands-on involvement and dedication to our dogs contribute to the development of well-socialized, confident puppies.",
       highlight: "Guardian to On The Bluff's Penny",
-      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (9)_1754774819506.png",
+      image: "/attached_assets/Dave_Headshot_1771359341575.png",
     },
     {
       name: "Julie Rifenburgh",
