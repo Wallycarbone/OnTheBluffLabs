@@ -78,7 +78,7 @@ export default function Training() {
               Meet Jess — Lead Trainer
             </h2>
             <p className="font-source-sans text-lg leading-[1.6] text-center" style={{color: '#4b4b4b'}}>
-              From the very first weeks, our puppies are guided through experiences that shape not only how they behave, but how they feel about the world. Each step—whether it's resting quietly in the kitchen, riding in the car, or learning to sit—builds confidence and trust. The goal isn't just obedience. It's a foundation for belonging: a puppy who moves easily through family life, secure in themselves, and ready to grow into a steady lifelong companion.
+              Many of our OTBL families already know Jess from their time at the training center, and over the past three years she has become an essential part of both our daily work and the continued evolution of our program. She brings a rare blend of academic rigor, hands-on experience, and genuine connection with both dogs and the families who love them.
             </p>
           </div>
         </div>
