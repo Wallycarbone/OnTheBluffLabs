@@ -77,7 +77,7 @@ export default function Team() {
       role: "Breeding Partners",
       description: "As valued breeding partners, the Rifenburgh Family provide remarkable care and attention to our dogs. Their knowledge and dedication are essential to our program's success and the development of balanced, confident puppies.",
       highlight: "Guardian to On The Bluff's Penny",
-      image: "/attached_assets/Y30A1406Pollyboomssunflower_1761582264842.JPG",
+      image: "/attached_assets/Y30A1406Pollyboomssunflower_1761582264842.jpg",
     },
   ];
 
