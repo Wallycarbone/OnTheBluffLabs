@@ -60,11 +60,11 @@ export default function Training() {
         </div>
       </section>
 
-      <section id="training" className="py-24" style={{backgroundColor: '#fffbe8'}}>
+      <section id="training" className="py-16 pb-8" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Training Philosophy Essay */}
-        <div className="mb-20">
+        <div className="mb-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-oswald font-normal mb-8 tracking-wide" style={{color: '#11100f'}}>
               Early Training, Lasting Belonging
