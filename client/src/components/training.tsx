@@ -97,9 +97,9 @@ export default function Training() {
           className="w-full h-auto object-cover"
           style={{minHeight: '500px', objectPosition: 'center'}}
         />
-        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full flex items-center">
-          <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.8) 100%)'}}></div>
-          <div className="hidden md:block relative z-10 p-8 lg:p-12">
+        <div className="absolute top-0 right-0 w-full md:w-[45%] h-full flex items-center">
+          <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 25%, rgba(0,0,0,0.85) 100%)'}}></div>
+          <div className="hidden md:block relative z-10 p-8 lg:p-12 lg:pl-16">
             <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify text-white mb-4">
               Jess is a graduate of Cornell University, where she earned a Bachelor of Science in Philosophy with a focus on Applied Ethics, along with extensive coursework in animal science, husbandry, and welfare through the Cornell Vet School. She is a Certified Professional Dog Trainer — Knowledge Assessed (CPDT-KA), a Pat Miller Certified Dog Trainer Level 2 (PMCT-2), and a Family Dog Mediator. These credentials require hundreds of hours of professional experience and reflect her deep commitment to thoughtful, science-based training.
             </p>
