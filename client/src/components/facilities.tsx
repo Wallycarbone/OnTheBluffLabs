@@ -47,6 +47,12 @@ export default function Team() {
       image: "/attached_assets/Julie's Headshot_1761582060276.png",
     },
     {
+      name: "Maddie Sartori",
+      role: "Puppy Trainer",
+      description: "Maddie brings a wealth of experience in AKC dog sports to our puppy training program. Her competitive background and understanding of canine athleticism help develop well-rounded puppies with strong foundations in obedience, socialization, and confidence.",
+      image: "/attached_assets/Puppies 5x4 (4 x 4 in) (20)_1756152199562.png",
+    },
+    {
       name: "Drew Richards",
       role: "Puppy Trainer",
       description: "Drew brings extensive doggie daycare experience to our weekend puppy care team. His understanding of group dynamics and individual puppy needs ensures our young Labradors receive quality attention and socialization during their crucial early development phase.",
