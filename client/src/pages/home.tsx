@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "wouter";
 import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
@@ -69,21 +68,6 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       <Hero />
-
-      <Link href="/training">
-        <div className="bg-gradient-to-r from-[#5a6b2f] via-[#6b7d3a] to-[#5a6b2f] py-4 px-6 text-center cursor-pointer hover:brightness-110 transition-all duration-300">
-          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-            <span className="text-yellow-300 text-xl sm:text-2xl font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Celebrating 10 Years!
-            </span>
-            <span className="text-white text-sm sm:text-base" style={{ fontFamily: "'Source Sans Pro', sans-serif" }}>
-              Our Training Center turns 10 this year — Visit the Behavior Academy to learn more
-            </span>
-            <span className="text-yellow-300 text-lg">→</span>
-          </div>
-        </div>
-      </Link>
-
       <Footer />
     </div>
   );
