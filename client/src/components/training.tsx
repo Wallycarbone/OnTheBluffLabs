@@ -91,7 +91,7 @@ export default function Training() {
           <div className="relative w-full rounded-lg overflow-hidden shadow-lg" style={{paddingBottom: '56.25%'}}>
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src=""
+              src="https://www.youtube.com/embed/Tn4XE7Ww8J8"
               title="Behavior Academy Introduction"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
