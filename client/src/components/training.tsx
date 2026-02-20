@@ -126,7 +126,7 @@ export default function Training() {
       <section className="py-12 px-4 sm:px-6 lg:px-8" style={{backgroundColor: '#fffbe8'}}>
         <div className="max-w-4xl mx-auto">
           <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify mb-4" style={{color: '#4b4b4b'}}>
-            What matters most to us — and to the dogs — is how Jess applies all of this knowledge. Jess has a calm, thoughtful presence that dogs respond to immediately, and she has a gift for helping families understand how training creates confidence, trust, and true partnership at home. As we celebrate ten years of training on the Bluff, Jess represents the next chapter of our program — honoring what has always worked while helping us continue to grow.
+            What matters most — to us and to the dogs — is how Jess applies all of this knowledge. She has a calm, thoughtful presence that dogs respond to immediately, and she has a gift for helping families understand how training creates confidence, trust, and true partnership at home. As we celebrate ten years of training on the Bluff, Jess represents the next chapter of our program — honoring what has always worked while helping us continue to grow.
           </p>
           <p className="font-source-sans text-base lg:text-lg leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
             Our training team applies these principles every day, guiding puppies through experiences that shape not only how they behave, but how they feel about the world. From quiet time in the kitchen to early socialization and foundational cues, each step builds confidence, trust, and a sense of belonging that prepares them for life as steady family companions.
