@@ -144,7 +144,7 @@ export default function Training() {
             Our Training Programs
           </h2>
           <p className="font-source-sans text-lg leading-[1.6] text-center mb-16 max-w-3xl mx-auto" style={{color: '#4b4b4b'}}>
-            Each level builds on the last, allowing families to choose how much foundation they want in place before their puppy comes home.
+            Each level builds on the last, allowing families to choose how much foundation they want in place before their puppy comes home. If you're unsure which level is right for your family, we're always happy to help you choose the path that best fits your lifestyle, experience, and goals.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
