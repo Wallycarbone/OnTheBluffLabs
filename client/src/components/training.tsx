@@ -119,7 +119,7 @@ export default function Training() {
       </section>
 
       {/* Mobile Bio Text */}
-      <section className="md:hidden py-12 px-4" style={{backgroundColor: '#fffbe8'}}>
+      <section className="md:hidden py-12 px-4" style={{backgroundColor: '#c5cba8'}}>
         <div className="max-w-4xl mx-auto">
           <p className="font-source-sans text-base leading-[1.6] text-justify mb-4" style={{color: '#4b4b4b'}}>
             Jess is a graduate of Cornell University, where she earned a Bachelor of Science in Philosophy with a focus on Applied Ethics, along with extensive coursework in animal science, husbandry, and welfare through the Cornell Vet School. She is a Certified Professional Dog Trainer — Knowledge Assessed (CPDT-KA), a Pat Miller Certified Dog Trainer Level 2 (PMCT-2), and a Family Dog Mediator. These credentials require hundreds of hours of professional experience and reflect her deep commitment to thoughtful, science-based training.
