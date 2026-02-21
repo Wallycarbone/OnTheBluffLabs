@@ -1679,7 +1679,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: hannaImage,
-      description: "Hanna is a beautiful yellow dame with a refined profile and warm, expressive eyes. Her elegant bearing and gentle nature make her a wonderful mother, producing puppies with lovely temperaments and classic Labrador beauty.",
+      description: "Hanna is a striking white female with a love of training and an easy-going personality. Her willingness to learn and calm demeanor make her a wonderful mother, producing puppies with balanced temperaments and a natural eagerness to please.",
     },
   ];
 
