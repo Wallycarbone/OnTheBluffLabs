@@ -1421,6 +1421,68 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Hanna": {
+        name: "Hanna",
+        formalName: "On The Bluff's Hanna",
+        titles: [],
+        image: hannaImage,
+        sire: {
+          name: "Belquest Conclusion The Incredible Hulk",
+          titles: [],
+          sire: {
+            name: "Gateway's Nothin' But Trouble",
+            titles: ["GCHS", "CH"],
+            sire: {
+              name: "Julsby Hey Good Lookin'",
+              titles: ["GCH", "CH"]
+            },
+            dam: {
+              name: "Gateway's White Dove",
+              titles: ["CH"]
+            }
+          },
+          dam: {
+            name: "Belquest Conclusion Victorian Era",
+            titles: [],
+            sire: {
+              name: "Annual's Nostalgic At Hilldreams",
+              titles: ["GCH", "CH"]
+            },
+            dam: {
+              name: "Belquest Fergalicious",
+              titles: []
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Estraven \"Estra\"",
+          titles: [],
+          sire: {
+            name: "Scarfone's Mark Twain",
+            titles: [],
+            sire: {
+              name: "Valhalla's One Little Victory JH",
+              titles: []
+            },
+            dam: {
+              name: "Bateshaus Stop To Smell The Roses",
+              titles: []
+            }
+          },
+          dam: {
+            name: "On The Bluff's Ursula Leguin",
+            titles: [],
+            sire: {
+              name: "On The Bluff's Atticus Finch",
+              titles: []
+            },
+            dam: {
+              name: "On The Bluff's Alice B Toklas",
+              titles: []
+            }
+          }
+        }
       }
     };
     
