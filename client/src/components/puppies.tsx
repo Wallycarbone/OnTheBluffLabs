@@ -429,7 +429,7 @@ export default function Puppies() {
       image: booRadleyImage,
       image2: hannaImage,
       status: "Upcoming",
-      description: "Expected March 2026"
+      description: "Boo Radley & Hanna — Expected March 2026"
     }
   ];
 
