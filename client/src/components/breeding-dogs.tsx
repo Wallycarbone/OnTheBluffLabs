@@ -1679,7 +1679,7 @@ export default function BreedingDogs() {
       color: "Yellow",
       age: "Breeding Female",
       image: hannaImage,
-      description: "Hanna is a striking white female with a love of training and an easy-going personality. Her willingness to learn and calm demeanor make her a wonderful mother, producing puppies with balanced temperaments and a natural eagerness to please.",
+      description: "Hanna is a striking white female with a love of training and an easy-going personality. Her willingness to learn and loving demeanor make her a wonderful mother, producing puppies with balanced temperaments and a natural eagerness to please.",
     },
   ];
 
