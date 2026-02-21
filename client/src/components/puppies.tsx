@@ -422,10 +422,10 @@ export default function Puppies() {
     {
       sire: "Boo Radley",
       dam: "Hanna",
-      birthDate: "Due 2026",
+      birthDate: "Due March 2026",
       puppiesCount: "TBD",
-      available: "TBD",
-      readyDate: "TBD",
+      available: "Yellows",
+      readyDate: "May 2026",
       image: booRadleyImage,
       image2: hannaImage,
       status: "Upcoming",
