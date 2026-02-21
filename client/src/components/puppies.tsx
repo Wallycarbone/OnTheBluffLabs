@@ -414,8 +414,8 @@ export default function Puppies() {
       puppiesCount: "TBD",
       available: "Yellows",
       readyDate: "April 2026",
-      image: harperLeeImage,
-      image2: moonImage,
+      image: moonImage,
+      image2: harperLeeImage,
       status: "Upcoming",
       description: "Expected February 2026"
     },
