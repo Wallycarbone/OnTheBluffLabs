@@ -98,6 +98,7 @@ import akadiaImage from "@assets/Akadia_1768358230762.png";
 import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import hannaOfficialPedigreeImage from "@assets/Hanna's_Pedigree_1771708828447.png";
+import troubleImage from "@assets/Trouble_1771709670156.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -2017,6 +2018,23 @@ export default function BreedingDogs() {
                     }}
                   >
                     Pippi Longstocking
+                  </button>
+                </p>
+              </div>
+            ) : dog.name === "Hanna" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from Grand Champion <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: troubleImage,
+                        name: "Gateway's Nothin' But Trouble"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Gateway's Nothin' But Trouble
                   </button>
                 </p>
               </div>
