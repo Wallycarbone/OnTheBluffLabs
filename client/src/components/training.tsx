@@ -91,11 +91,19 @@ export default function Training() {
 
       {/* Jess & Bambi Image with Bio */}
       <section className="relative w-full">
+        {/* Desktop version - wider crop */}
         <img
           src={jessBambiImage}
           alt="Jess holding a yellow Labrador puppy"
-          className="w-full h-auto object-cover"
-          style={{minHeight: '500px', objectPosition: 'center'}}
+          className="hidden md:block w-full object-cover"
+          style={{height: '600px', objectPosition: 'center 20%'}}
+        />
+        {/* Mobile version - tighter crop focused on Jess and puppy */}
+        <img
+          src={jessBambiImage}
+          alt="Jess holding a yellow Labrador puppy"
+          className="block md:hidden w-full object-cover"
+          style={{height: '450px', objectPosition: 'center 15%'}}
         />
         <div className="absolute top-0 right-0 w-full md:w-[55%] h-full flex items-center justify-end">
           <div className="hidden md:block absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 20%, rgba(0,0,0,0.85) 100%)'}}></div>
