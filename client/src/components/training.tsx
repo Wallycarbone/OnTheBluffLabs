@@ -50,7 +50,7 @@ export default function Training() {
       {/* Program Introduction Video */}
       <section style={{backgroundColor: '#fffbe8'}}>
         <div className="text-center py-12 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide leading-tight mb-6">
+          <h1 className="text-2xl md:text-5xl font-oswald font-normal tracking-wide leading-tight mb-6">
             <span style={{color: '#11100f'}}>CELEBRATING 10 YEARS OF</span>
             <br />
             <span style={{color: '#6d761d'}}>TRAINING AT ON THE BLUFF</span>
