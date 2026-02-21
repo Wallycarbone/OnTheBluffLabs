@@ -40,6 +40,7 @@ import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759093036413.png"
 import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756671954087.png";
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
+import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
@@ -417,6 +418,18 @@ export default function Puppies() {
       image2: moonImage,
       status: "Upcoming",
       description: "Expected February 2026"
+    },
+    {
+      sire: "Boo Radley",
+      dam: "Hanna",
+      birthDate: "Due 2026",
+      puppiesCount: "TBD",
+      available: "TBD",
+      readyDate: "TBD",
+      image: booRadleyImage,
+      image2: hannaImage,
+      status: "Upcoming",
+      description: "Upcoming Litter"
     }
   ];
 
