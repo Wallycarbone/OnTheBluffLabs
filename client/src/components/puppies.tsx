@@ -420,6 +420,7 @@ export default function Puppies() {
       description: "Expected February 2026"
     },
     {
+      name: "Boo Radley & Hanna",
       sire: "Boo Radley",
       dam: "Hanna",
       birthDate: "Due March 2026",
