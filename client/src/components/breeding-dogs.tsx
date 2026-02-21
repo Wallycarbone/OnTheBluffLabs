@@ -96,6 +96,7 @@ import alolaImage from "@assets/Alola_1768330992939.png";
 import alolaOfficialPedigreeImage from "@assets/Alola's_Pedigree_1768332628989.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
+import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
 
 
@@ -1606,6 +1607,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: akadiaImage,
       description: "Akadia is a beautiful fox red dame with warm, soulful eyes and a gentle expression. As the daughter of our beloved Pippi Longstocking, she carries forward exceptional maternal instincts and produces puppies with wonderful temperaments and striking coloring.",
+    },
+    {
+      name: "Hanna",
+      formalName: "On The Bluff's Hanna",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: hannaImage,
+      description: "Hanna is a beautiful yellow dame with a refined profile and warm, expressive eyes. Her elegant bearing and gentle nature make her a wonderful mother, producing puppies with lovely temperaments and classic Labrador beauty.",
     },
   ];
 
