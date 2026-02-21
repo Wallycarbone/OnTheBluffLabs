@@ -407,7 +407,7 @@ export default function Puppies() {
       description: "Born January 23, 2026"
     },
     {
-      name: "Harper Lee & Moon",
+      name: "Moon & Harper Lee",
       sire: "Harper Lee",
       dam: "Moon",
       birthDate: "Due February 2026",
