@@ -51,11 +51,11 @@ export default function Training() {
       <section style={{backgroundColor: '#fffbe8'}}>
         <div className="text-center py-12 px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-oswald font-normal tracking-wide leading-snug mb-6">
-            <span style={{color: '#11100f'}}>Celebrating 10 Years</span>
+            <span style={{color: '#11100f'}}>CELEBRATING 10 YEARS</span>
             <br />
-            <span style={{color: '#6d761d'}}>of Training at</span>
+            <span style={{color: '#11100f'}}>OF TRAINING AT</span>
             <br />
-            <span style={{color: '#6d761d'}}>On The Bluff</span>
+            <span style={{color: '#6d761d'}}>ON THE BLUFF</span>
           </h1>
           <p className="max-w-3xl mx-auto font-source-sans text-lg leading-[1.6] text-justify" style={{color: '#4b4b4b'}}>
             For over fifty years, we've been raising Labradors, and for the last ten, we've been teaching them how to belong. What began as a simple idea — helping dogs truly live well at home — has grown into a program shaped by experience, service work, and the trust of generations of OTBL families. In this short video, our lead trainer, Jess, shares how the training center began, how it has evolved, and what training on the Bluff looks like today.
