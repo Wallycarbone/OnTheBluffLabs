@@ -332,7 +332,7 @@ export default function Puppies() {
       dam: "Vivien",
       birthDate: "October 19, 2025",
       puppiesCount: "TBD",
-      available: "Chocolate Females",
+      available: "Chocolate Female with Bachelor's Degree",
       readyDate: "December 2025",
       image: grizzlySnowImage,
       image2: vivienImage,
