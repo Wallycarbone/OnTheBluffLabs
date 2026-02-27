@@ -299,19 +299,6 @@ export default function Puppies() {
 
   const allLitters = [
     {
-      name: "Moon & Foxxy",
-      sire: "Moon",
-      dam: "Foxxy",
-      birthDate: "June 5, 2025",
-      puppiesCount: 7,
-      available: "Yellow Female with Master's Degree",
-      readyDate: "August 2025",
-      images: [moonImage3, foxxyImage, ...moonFoxxyPuppyImages],
-      puppyImages: moonFoxxyPuppyGalleryImages,
-      status: "Current",
-      description: "Seven puppies born June 5, 2025"
-    },
-    {
       name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
       dam: "Queen Boudica",
