@@ -2114,7 +2114,7 @@ export default function BreedingDogs() {
             ) : dog.name === "Honey" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of On The Bluff's Foxxy, carrying on the cherished Keepsake bloodline through Keepsake's Pippi Longstocking On The Bluff
+                  Descended from 2004 Westminster Best of Breed Lubberline's Martingale
                 </p>
               </div>
             ) : (
