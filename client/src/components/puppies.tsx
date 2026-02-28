@@ -55,7 +55,7 @@ import alolaImage from "@assets/Alola_1768330992939.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import aureliaImage from "@assets/Aurelia_1769703737590.png";
 import grizzlySnowImage from "@assets/Grizzly_1769703945105.png";
-import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
+import honeyImage from "@assets/Honey_Portrait_Square_1772315498967.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
