@@ -97,6 +97,7 @@ import alolaOfficialPedigreeImage from "@assets/Alola's_Pedigree_1768332628989.p
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
+import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
 import hannaOfficialPedigreeImage from "@assets/Hanna's_Pedigree_1771708828447.png";
 import troubleImage from "@assets/Trouble_1771709670156.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
@@ -1680,6 +1681,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: hannaImage,
       description: "Hanna is a striking white female with a love of training and an easy-going personality. Her willingness to learn and loving demeanor make her a wonderful mother, producing puppies with balanced temperaments and a natural eagerness to please.",
+    },
+    {
+      name: "Honey",
+      formalName: "On The Bluff's Honey",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: honeyImage,
+      description: "Honey is a beautiful yellow female with a warm, gentle presence and a heart full of affection. Her calm, loving nature makes her a natural mother, and she consistently passes on her sweet temperament and classic Labrador qualities to her puppies.",
     },
   ];
 
