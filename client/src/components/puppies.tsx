@@ -55,6 +55,7 @@ import alolaImage from "@assets/Alola_1768330992939.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import aureliaImage from "@assets/Aurelia_1769703737590.png";
 import grizzlySnowImage from "@assets/Grizzly_1769703945105.png";
+import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
 
 // Puppy images for Moon & Foxxy litter
 import mrPeacockImage from "@assets/Mr. Peacock_1753621328199.png";
@@ -390,6 +391,19 @@ export default function Puppies() {
       image2: hannaImage,
       status: "Upcoming",
       description: "Expected March 2026"
+    },
+    {
+      name: "Dodger & Honey",
+      sire: "Dodger",
+      dam: "Honey",
+      birthDate: "TBD",
+      puppiesCount: "TBD",
+      available: "TBD",
+      readyDate: "TBD",
+      image: dodgerImage,
+      image2: honeyImage,
+      status: "Upcoming",
+      description: "Coming Soon"
     }
   ];
 
