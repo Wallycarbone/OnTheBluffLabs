@@ -98,6 +98,7 @@ import akadiaImage from "@assets/Akadia_1768358230762.png";
 import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
+import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
 import hannaOfficialPedigreeImage from "@assets/Hanna's_Pedigree_1771708828447.png";
 import troubleImage from "@assets/Trouble_1771709670156.png";
 // import mrDarcyImage from "@assets/Screenshot 2025-08-08 at 4.49.59 PM_1754686444295.png";
@@ -1485,6 +1486,68 @@ export default function BreedingDogs() {
             }
           }
         }
+      },
+      "Honey": {
+        name: "Honey",
+        formalName: "On The Bluff's Honey",
+        titles: [],
+        image: honeyImage,
+        sire: {
+          name: "Scarfone's Mark Twain",
+          titles: [],
+          sire: {
+            name: "Valhalla's One Little Victory JH",
+            titles: [],
+            sire: {
+              name: "CH Lubberline Martingale",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "Brimars N-Vogue JH",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Bateshaus Stop To Smell The Roses",
+            titles: [],
+            sire: {
+              name: "CH Stormy C's Superbad",
+              titles: ["CH"]
+            },
+            dam: {
+              name: "CH Batescreek Emma",
+              titles: ["CH"]
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Foxxy",
+          titles: [],
+          sire: {
+            name: "Keepsake Thorin On The Bluff",
+            titles: [],
+            sire: {
+              name: "Keepsake Puttin On The Ritz",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Random Red",
+              titles: []
+            }
+          },
+          dam: {
+            name: "Keepsake's Pippi Longstocking On The Bluff",
+            titles: [],
+            sire: {
+              name: "Keepsake It Isn't Easy Being Red",
+              titles: []
+            },
+            dam: {
+              name: "Keepsake Help Me Rhonda",
+              titles: []
+            }
+          }
+        }
       }
     };
     
@@ -2046,6 +2109,12 @@ export default function BreedingDogs() {
                   >
                     Gateway's Nothin' But Trouble
                   </button>
+                </p>
+              </div>
+            ) : dog.name === "Honey" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of On The Bluff's Foxxy, carrying on the cherished Keepsake bloodline through Keepsake's Pippi Longstocking On The Bluff
                 </p>
               </div>
             ) : (
@@ -2853,6 +2922,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: hannaOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Honey" ? (
+                      <img 
+                        src={honeyOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: honeyOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
