@@ -380,19 +380,6 @@ export default function Puppies() {
       description: "Born January 23, 2026"
     },
     {
-      name: "Boo Radley & Hanna",
-      sire: "Boo Radley",
-      dam: "Hanna",
-      birthDate: "Due March 2026",
-      puppiesCount: "TBD",
-      available: "Yellows",
-      readyDate: "May 2026",
-      image: booRadleyImage,
-      image2: hannaImage,
-      status: "Upcoming",
-      description: "Expected March 2026"
-    },
-    {
       name: "Dodger & Honey",
       sire: "Dodger",
       dam: "Honey",
