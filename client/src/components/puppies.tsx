@@ -104,7 +104,7 @@ import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 
 // Boo Radley & Aunt Polly current puppy images
 import mrTurtlesAuntPollyImage from "@assets/Mr._Turtles_1768952925558.png";
-import mrChristmasImage from "@assets/Mr._Christmas_1768952925559.png";
+import mrChristmasImage from "@assets/Mr._Christmas_1773763890512.png";
 import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1773763824179.png";
 
 // Moon & Piper puppy images
