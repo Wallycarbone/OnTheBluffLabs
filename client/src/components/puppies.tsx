@@ -106,6 +106,7 @@ import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 import mrTurtlesAuntPollyImage from "@assets/Mr._Turtles_1773764122523.png";
 import mrChristmasImage from "@assets/Mr._Christmas_1773763890512.png";
 import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1773763824179.png";
+import mrBlingBonesImage from "@assets/Mr._Bling_Bones_1773764190787.png";
 
 // Moon & Piper puppy images
 import simbaSnowImage from "@assets/Y30A0421boudicaboosimba_1765899204247.jpg";
@@ -290,7 +291,8 @@ export default function Puppies() {
   const booAuntPollyPuppyImages = [
     { image: mrTurtlesAuntPollyImage, name: "Mr. Turtles" },
     { image: mrChristmasImage, name: "Mr. Christmas" },
-    { image: mrStarsAndStripesImage, name: "Mr. Stars & Stripes" }
+    { image: mrStarsAndStripesImage, name: "Mr. Stars & Stripes" },
+    { image: mrBlingBonesImage, name: "Mr. Bling Bones" }
   ];
 
   const moonPiperPuppyImages = [
