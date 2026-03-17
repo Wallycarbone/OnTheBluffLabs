@@ -107,6 +107,7 @@ import mrTurtlesAuntPollyImage from "@assets/Mr._Turtles_1773764122523.png";
 import mrChristmasImage from "@assets/Mr._Christmas_1773763890512.png";
 import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1773763824179.png";
 import mrBlingBonesImage from "@assets/Mr._Bling_Bones_1773764190787.png";
+import msWildflowerImage from "@assets/Ms._Wildflower_1773764427485.png";
 
 // Moon & Piper puppy images
 import simbaSnowImage from "@assets/Y30A0421boudicaboosimba_1765899204247.jpg";
@@ -299,6 +300,10 @@ export default function Puppies() {
     { image: simbaSnowImage, name: "Simba" }
   ];
 
+  const grizzlyAureliaPuppyImages = [
+    { image: msWildflowerImage, name: "Ms. Wildflower" }
+  ];
+
   const allLitters = [
     {
       name: "Boo Radley & Queen Boudica",
@@ -365,6 +370,7 @@ export default function Puppies() {
       readyDate: "March 2026",
       image: grizzlySnowImage,
       image2: aureliaImage,
+      puppyImages: grizzlyAureliaPuppyImages,
       status: "Ready",
       description: "Born January 23, 2026"
     },
