@@ -277,7 +277,7 @@ export default function Puppies() {
   ];
 
   const grizzlyVivienPuppyImages = [
-    { image: msAlohaGrizzlyImage, name: "Ms. Aloha" }
+    { image: msAlohaGrizzlyImage, name: "Georgia" }
   ];
 
   const holdenBeckyPreviousPuppyImages = [
