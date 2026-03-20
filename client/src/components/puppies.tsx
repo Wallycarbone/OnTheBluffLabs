@@ -111,6 +111,7 @@ import msWildflowerImage from "@assets/Ms._Wildflower_1773764427485.png";
 import msRainbowPawsImage from "@assets/Ms._Rainbow_Paws_1773764515385.png";
 import mrMuddyPawsImage from "@assets/Mr._Muddy_Paws_1774039181203.png";
 import msAlpineGlowNewImage from "@assets/Ms._Alpine_Glow_1774039191466.png";
+import msAlohaAkadiaImage from "@assets/Ms._Aloha_1774039204502.png";
 
 // Moon & Piper puppy images
 import simbaSnowImage from "@assets/Y30A0421boudicaboosimba_1765899204247.jpg";
@@ -310,7 +311,8 @@ export default function Puppies() {
 
   const booAkadiaPuppyImages = [
     { image: mrMuddyPawsImage, name: "Mr. Muddy Paws" },
-    { image: msAlpineGlowNewImage, name: "Ms. Alpine Glow" }
+    { image: msAlpineGlowNewImage, name: "Ms. Alpine Glow" },
+    { image: msAlohaAkadiaImage, name: "Ms. Aloha" }
   ];
 
   const allLitters = [
