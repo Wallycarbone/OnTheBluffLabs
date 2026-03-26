@@ -306,8 +306,7 @@ export default function Puppies() {
   ];
 
   const grizzlyAureliaPuppyImages = [
-    { image: msWildflowerImage, name: "Ms. Wildflower" },
-    { image: msRainbowPawsImage, name: "Ms. Rainbow Paws" }
+    { image: msWildflowerImage, name: "Ms. Wildflower" }
   ];
 
   const booAkadiaPuppyImages = [
