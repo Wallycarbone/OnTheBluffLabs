@@ -345,20 +345,6 @@ export default function Puppies() {
       description: "Born November 21, 2025"
     },
     {
-      name: "Grizzly & Vivien",
-      sire: "Grizzly",
-      dam: "Vivien",
-      birthDate: "October 19, 2025",
-      puppiesCount: "TBD",
-      available: "Chocolate Female with Bachelor's Degree",
-      readyDate: "December 2025",
-      image: grizzlySnowImage,
-      image2: vivienImage,
-      puppyImages: grizzlyVivienPuppyImages,
-      status: "Ready",
-      description: "Born October 19, 2025"
-    },
-    {
       name: "Boo Radley & Akadia",
       sire: "Boo Radley",
       dam: "Akadia",
