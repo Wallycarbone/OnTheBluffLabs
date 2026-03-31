@@ -310,11 +310,9 @@ export default function Puppies() {
   ];
 
   const booAkadiaPuppyImages = [
-    { image: mrMuddyPawsImage, name: "Mr. Muddy Paws" },
     { image: msAlpineGlowNewImage, name: "Ms. Alpine Glow" },
     { image: msAlohaAkadiaImage, name: "Ms. Aloha" },
-    { image: mrJesterImage, name: "Mr. Jester" },
-    { image: mrFishyImage, name: "Mr. Fishy" }
+    { image: mrJesterImage, name: "Mr. Jester" }
   ];
 
   const allLitters = [
