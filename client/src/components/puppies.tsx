@@ -111,7 +111,6 @@ import msWildflowerImage from "@assets/Ms._Wildflower_1773764427485.png";
 import msRainbowPawsImage from "@assets/Ms._Rainbow_Paws_1773764515385.png";
 import mrMuddyPawsImage from "@assets/Mr._Muddy_Paws_1774039181203.png";
 import msAlpineGlowNewImage from "@assets/Ms._Alpine_Glow_1774039191466.png";
-import msAlohaAkadiaImage from "@assets/Ms._Aloha_1774039204502.png";
 import mrJesterImage from "@assets/Mr._Jester_1774039215985.png";
 import mrFishyImage from "@assets/Mr._Fishy_1774039225790.png";
 
@@ -311,7 +310,6 @@ export default function Puppies() {
 
   const booAkadiaPuppyImages = [
     { image: msAlpineGlowNewImage, name: "Ms. Alpine Glow" },
-    { image: msAlohaAkadiaImage, name: "Ms. Aloha" },
     { image: mrJesterImage, name: "Mr. Jester" }
   ];
 
