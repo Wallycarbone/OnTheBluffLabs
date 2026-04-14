@@ -98,6 +98,7 @@ import akadiaImage from "@assets/Akadia_1768358230762.png";
 import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
+import aubreyImage from "@assets/Aubrey_1776197322449.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
 import hannaOfficialPedigreeImage from "@assets/Hanna's_Pedigree_1771708828447.png";
 import troubleImage from "@assets/Trouble_1771709670156.png";
@@ -1551,6 +1552,13 @@ export default function BreedingDogs() {
       }
     };
     
+    pedigrees["Aubrey"] = {
+      name: "Aubrey",
+      formalName: "On The Bluff's Aubrey",
+      titles: [],
+      image: aubreyImage
+    };
+
     return pedigrees[dogName] || null;
   };
 
@@ -1753,6 +1761,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: honeyImage,
       description: "Honey is a beautiful yellow female with a warm, gentle presence and a heart full of affection. Her calm, loving nature makes her a natural mother, and she consistently passes on her sweet temperament and classic Labrador qualities to her puppies.",
+    },
+    {
+      name: "Aubrey",
+      formalName: "On The Bluff's Aubrey",
+      gender: "Female",
+      color: "Black",
+      age: "Breeding Female",
+      image: aubreyImage,
+      description: "Aubrey is a stunning black female with soulful amber eyes and a striking, elegant presence. Her gentle and devoted nature make her a wonderful companion and mother, producing puppies with her trademark calm temperament and beautiful classic Labrador conformation.",
     },
   ];
 
