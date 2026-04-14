@@ -99,6 +99,7 @@ import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
+import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
 import hannaOfficialPedigreeImage from "@assets/Hanna's_Pedigree_1771708828447.png";
 import troubleImage from "@assets/Trouble_1771709670156.png";
@@ -1556,7 +1557,64 @@ export default function BreedingDogs() {
       name: "Aubrey",
       formalName: "On The Bluff's Aubrey",
       titles: [],
-      image: aubreyImage
+      image: aubreyImage,
+      officialPedigreeImage: aubreyOfficialPedigreeImage,
+      sire: {
+        name: "Belquest Conclusion's Anton Chekhov",
+        titles: [],
+        sire: {
+          name: "Belquest Conclusion Stolichnaya",
+          titles: [],
+          sire: {
+            name: "CH Aster Liberti Labro Hamburg",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Belquest Prequel to the Sequel CGCA CGCU",
+            titles: []
+          }
+        },
+        dam: {
+          name: "Belquest Conclusion Double Layer Cake",
+          titles: [],
+          sire: {
+            name: "CH Atlantic's Ace of Cakes at Big Sky",
+            titles: ["CH"]
+          },
+          dam: {
+            name: "Belquest Double Shot Expresso of Waterberry",
+            titles: []
+          }
+        }
+      },
+      dam: {
+        name: "On The Bluff's Amityville",
+        titles: [],
+        sire: {
+          name: "On The Bluff's Atticus Finch",
+          titles: [],
+          sire: {
+            name: "Heartlands Polar Bear Chase",
+            titles: []
+          },
+          dam: {
+            name: "Heartlands Lily of the Valley",
+            titles: []
+          }
+        },
+        dam: {
+          name: "On The Bluff's Awillix Moon Goddess",
+          titles: [],
+          sire: {
+            name: "Belquest Conclusion on the Bluff's Tristan",
+            titles: []
+          },
+          dam: {
+            name: "Dreaming Tree Aeofe Heffalump",
+            titles: []
+          }
+        }
+      }
     };
 
     return pedigrees[dogName] || null;
@@ -2143,6 +2201,12 @@ export default function BreedingDogs() {
                   >
                     Lubberline's Martingale
                   </button>
+                </p>
+              </div>
+            ) : dog.name === "Aubrey" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of our stud, Belquest Conclusion's Anton Chekhov, and On The Bluff's Amityville
                 </p>
               </div>
             ) : (
@@ -2964,6 +3028,20 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: honeyOfficialPedigreeImage, 
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      />
+                    ) : selectedDog?.name === "Aubrey" ? (
+                      <img 
+                        src={aubreyOfficialPedigreeImage}
+                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
+                        style={{ maxHeight: '800px' }}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: aubreyOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
