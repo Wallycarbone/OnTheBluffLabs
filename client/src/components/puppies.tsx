@@ -296,7 +296,6 @@ export default function Puppies() {
 
   const booAuntPollyPuppyImages = [
     { image: mrTurtlesAuntPollyImage, name: "Mr. Turtles" },
-    { image: mrStarsAndStripesImage, name: "Mr. Stars & Stripes" },
     { image: mrBlingBonesImage, name: "Mr. Bling Bones" }
   ];
 
