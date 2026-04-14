@@ -2206,7 +2206,18 @@ export default function BreedingDogs() {
             ) : dog.name === "Aubrey" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Descended from American &amp; Canadian Grand Champion Highcaliber Labradale Expresso
+                  Descended from American &amp; Canadian Grand Champion <button
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: expressoImage,
+                        name: "Highcaliber Labradale Expresso"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Highcaliber Labradale Expresso
+                  </button>
                 </p>
               </div>
             ) : (
