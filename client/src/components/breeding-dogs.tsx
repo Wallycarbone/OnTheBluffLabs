@@ -2206,7 +2206,7 @@ export default function BreedingDogs() {
             ) : dog.name === "Aubrey" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of our stud, Belquest Conclusion's Anton Chekhov, and On The Bluff's Amityville
+                  Descended from American &amp; Canadian Grand Champion Highcaliber Labradale Expresso
                 </p>
               </div>
             ) : (
