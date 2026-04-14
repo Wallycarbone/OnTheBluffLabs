@@ -41,6 +41,7 @@ import topoGigioImage from "@assets/Black and White Minimalist New Collection So
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
+import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
@@ -381,6 +382,19 @@ export default function Puppies() {
       image2: piperImage,
       status: "Ready",
       description: "Born April 3, 2026"
+    },
+    {
+      name: "Dodger & Aubrey",
+      sire: "Dodger",
+      dam: "Aubrey",
+      birthDate: "Due Summer 2026",
+      puppiesCount: "TBD",
+      available: "Yellow and Black",
+      readyDate: "Fall 2026",
+      image: dodgerImage,
+      image2: aubreyImage,
+      status: "Upcoming",
+      description: "Expected Summer 2026"
     },
     {
       name: "Dodger & Honey",
