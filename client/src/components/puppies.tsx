@@ -263,7 +263,7 @@ export default function Puppies() {
   ];
 
   const booQueenPuppyImages = [
-    { image: mooseSnowImage, name: "Moose, Bachelor's Degree" }
+    { image: mooseSnowImage, name: "Moose, Master's Degree" }
   ];
 
   const moonFoxxyPuppyGalleryImages = [
