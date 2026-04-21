@@ -396,19 +396,6 @@ export default function Puppies() {
       status: "Upcoming",
       description: "Expected May 2026"
     },
-    {
-      name: "Dodger & Honey",
-      sire: "Dodger",
-      dam: "Honey",
-      birthDate: "March 20, 2026",
-      puppiesCount: "TBD",
-      available: "Black Male",
-      readyDate: "May 2026",
-      image: dodgerImage,
-      image2: honeyImage,
-      status: "Ready",
-      description: "Born March 20, 2026"
-    }
   ];
 
   const { selectLitters, upcomingLitters } = categorizeLitters(allLitters);
