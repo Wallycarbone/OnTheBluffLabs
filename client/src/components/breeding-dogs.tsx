@@ -35,7 +35,7 @@ import updatedHeroLabradorImage from "@assets/Breeding Dogs 5x4 (43)_17589177184
 import latestHeroLabradorImage from "@assets/Breeding Dogs 5x4 (44)_1758918651622.png";
 import twainPedigreeImage from "@assets/Untitled design - 2025-09-26T164138.333_1758919329281.jpg";
 import grizzlyOfficialPedigreeImage from "@assets/grizzly-pedigree.jpg";
-import booRadleyOfficialPedigreeImage from "@assets/Boo's_Pedigree_1777404863517.png";
+import booRadleyOfficialPedigreeImage from "@assets/Boo_Radley_Pedigree_1777571279563.png";
 import holdenOfficialPedigreeImage from "@assets/holden-pedigree.jpg";
 import moonOfficialPedigreeImage from "@assets/moon-pedigree.jpg";
 import chekhovOfficialPedigreeImage from "@assets/chekhov-pedigree.jpg";
