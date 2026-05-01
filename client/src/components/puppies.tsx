@@ -357,20 +357,6 @@ export default function Puppies() {
       description: "Born January 24, 2026"
     },
     {
-      name: "Grizzly & Aurelia",
-      sire: "Grizzly",
-      dam: "Aurelia",
-      birthDate: "January 23, 2026",
-      puppiesCount: "TBD",
-      available: "Chocolate Females",
-      readyDate: "March 2026",
-      image: grizzlySnowImage,
-      image2: aureliaImage,
-      puppyImages: grizzlyAureliaPuppyImages,
-      status: "Ready",
-      description: "Born January 23, 2026"
-    },
-    {
       name: "Boo Radley & Piper",
       sire: "Boo Radley",
       dam: "Piper",
