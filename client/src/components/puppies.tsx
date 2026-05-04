@@ -334,7 +334,7 @@ export default function Puppies() {
       dam: "Aunt Polly",
       birthDate: "November 21, 2025",
       puppiesCount: "TBD",
-      available: "Yellow Males with Bachelor's Degree",
+      available: "Yellow Males with Master's Degree",
       readyDate: "January 2026",
       image: booRadleyImage,
       image2: auntPollyImage,
