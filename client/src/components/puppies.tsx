@@ -343,19 +343,6 @@ export default function Puppies() {
       description: "Born November 21, 2025"
     },
     {
-      name: "Boo Radley & Akadia",
-      sire: "Boo Radley",
-      dam: "Akadia",
-      birthDate: "January 24, 2026",
-      puppiesCount: "TBD",
-      available: "Yellow Males and Females with Bachelor's Degrees",
-      readyDate: "March 2026",
-      image: booRadleyImage,
-      image2: akadiaImage,
-      status: "Ready",
-      description: "Born January 24, 2026"
-    },
-    {
       name: "Boo Radley & Piper",
       sire: "Boo Radley",
       dam: "Piper",
