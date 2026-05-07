@@ -352,7 +352,6 @@ export default function Puppies() {
       readyDate: "March 2026",
       image: booRadleyImage,
       image2: akadiaImage,
-      puppyImages: booAkadiaPuppyImages,
       status: "Ready",
       description: "Born January 24, 2026"
     },
