@@ -108,6 +108,7 @@ import finnImage from "@assets/Finn_1778248809116.png";
 import mrChristmasImage from "@assets/Mr._Christmas_1773763890512.png";
 import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1773763824179.png";
 import romeoImage from "@assets/Romeo_1778248862551.png";
+import orionImage from "@assets/Orion_1778248876495.png";
 import msWildflowerImage from "@assets/Ms._Wildflower_1776198610717.png";
 import msRainbowPawsImage from "@assets/Ms._Rainbow_Paws_1773764515385.png";
 import mrMuddyPawsImage from "@assets/Mr._Muddy_Paws_1774039181203.png";
@@ -297,7 +298,8 @@ export default function Puppies() {
 
   const booAuntPollyPuppyImages = [
     { image: finnImage, name: "Finn, Master's Degree" },
-    { image: romeoImage, name: "Romeo, Master's Degree" }
+    { image: romeoImage, name: "Romeo, Master's Degree" },
+    { image: orionImage, name: "Orion, Master's Degree" }
   ];
 
   const moonPiperPuppyImages = [
