@@ -104,7 +104,7 @@ import booAuntPollyPuppy2 from "@assets/16_1762641751798.png";
 import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 
 // Boo Radley & Aunt Polly current puppy images
-import mrTurtlesAuntPollyImage from "@assets/Mr._Turtles_1773764122523.png";
+import finnImage from "@assets/Finn_1778248809116.png";
 import mrChristmasImage from "@assets/Mr._Christmas_1773763890512.png";
 import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1773763824179.png";
 import mrBlingBonesImage from "@assets/Mr._Bling_Bones_1773764190787.png";
@@ -296,7 +296,7 @@ export default function Puppies() {
   ];
 
   const booAuntPollyPuppyImages = [
-    { image: mrTurtlesAuntPollyImage, name: "Mr. Turtles" },
+    { image: finnImage, name: "Finn, Master's Degree" },
     { image: mrBlingBonesImage, name: "Mr. Bling Bones" }
   ];
 
