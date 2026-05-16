@@ -297,7 +297,6 @@ export default function Puppies() {
   ];
 
   const booAuntPollyPuppyImages = [
-    { image: finnImage, name: "Finn, Master's Degree" },
     { image: orionImage, name: "Orion, Master's Degree" }
   ];
 
