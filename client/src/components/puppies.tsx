@@ -344,19 +344,6 @@ export default function Puppies() {
       description: "Born November 21, 2025"
     },
     {
-      name: "Boo Radley & Piper",
-      sire: "Boo Radley",
-      dam: "Piper",
-      birthDate: "April 3, 2026",
-      puppiesCount: "TBD",
-      available: "Yellow Males",
-      readyDate: "June 2026",
-      image: booRadleyImage,
-      image2: piperImage,
-      status: "Ready",
-      description: "Born April 3, 2026"
-    },
-    {
       name: "Dodger & Aubrey",
       sire: "Dodger",
       dam: "Aubrey",
