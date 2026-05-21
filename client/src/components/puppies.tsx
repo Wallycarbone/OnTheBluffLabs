@@ -42,6 +42,7 @@ import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_17586398
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
+import arabellaImage from "@assets/Breeding Dogs 5x4 (19)_1755290951573.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
@@ -341,6 +342,19 @@ export default function Puppies() {
       puppyImages: booAuntPollyPuppyImages,
       status: "Ready",
       description: "Born November 21, 2025"
+    },
+    {
+      name: "Moon & Arabella",
+      sire: "Moon",
+      dam: "Arabella",
+      birthDate: "Due 2026",
+      puppiesCount: "TBD",
+      available: "TBD",
+      readyDate: "TBD",
+      image: moonImage,
+      image2: arabellaImage,
+      status: "Upcoming",
+      description: "Expected 2026"
     },
     {
       name: "Dodger & Aubrey",
