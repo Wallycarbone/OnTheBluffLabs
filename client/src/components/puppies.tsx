@@ -346,14 +346,14 @@ export default function Puppies() {
       name: "Dodger & Aubrey",
       sire: "Dodger",
       dam: "Aubrey",
-      birthDate: "Due May 2026",
+      birthDate: "May 2026",
       puppiesCount: "TBD",
       available: "Black & Yellow",
       readyDate: "July 2026",
       image: dodgerImage,
       image2: aubreyImage,
-      status: "Upcoming",
-      description: "Expected May 2026"
+      status: "Ready",
+      description: "Born May 2026"
     },
   ];
 
