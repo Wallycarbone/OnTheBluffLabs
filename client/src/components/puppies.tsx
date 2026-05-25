@@ -347,14 +347,14 @@ export default function Puppies() {
       name: "Moon & Arabella",
       sire: "Moon",
       dam: "Arabella",
-      birthDate: "Due May 2026",
+      birthDate: "May 22, 2026",
       puppiesCount: "TBD",
       available: "Yellow",
       readyDate: "TBD",
       image: moonImage,
       image2: arabellaImage,
-      status: "Upcoming",
-      description: "Expected May 2026"
+      status: "Ready",
+      description: "Born May 22, 2026"
     },
     {
       name: "Dodger & Aubrey",
