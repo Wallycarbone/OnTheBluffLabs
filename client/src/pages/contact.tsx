@@ -11,18 +11,18 @@ export default function ContactPage() {
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact On The Bluff Labradors for puppy inquiries. Located in Germantown, NY. 50+ years breeding exceptional English Labradors. (518) 855-6705.');
+      metaDescription.setAttribute('content', 'Contact On The Bluff Labradors for puppy inquiries. Located in Germantown, NY. 50+ years breeding exceptional English Labradors. (518) 537-7000.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Contact On The Bluff Labradors for puppy inquiries. Located in Germantown, NY. 50+ years breeding exceptional English Labradors. (518) 855-6705.';
+      meta.content = 'Contact On The Bluff Labradors for puppy inquiries. Located in Germantown, NY. 50+ years breeding exceptional English Labradors. (518) 537-7000.';
       document.head.appendChild(meta);
     }
 
     // Set Open Graph tags
     const ogTags = [
       { property: 'og:title', content: 'Contact Us - On The Bluff Labradors | Labrador Breeders Germantown, NY' },
-      { property: 'og:description', content: 'Contact On The Bluff Labradors for puppy inquiries. Located in Germantown, NY. 50+ years breeding exceptional English Labradors. (518) 855-6705.' },
+      { property: 'og:description', content: 'Contact On The Bluff Labradors for puppy inquiries. Located in Germantown, NY. 50+ years breeding exceptional English Labradors. (518) 537-7000.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: window.location.href },
       { property: 'og:site_name', content: 'On The Bluff Labradors' },

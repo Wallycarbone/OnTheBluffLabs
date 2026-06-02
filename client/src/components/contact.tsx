@@ -155,7 +155,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 mr-4 mt-1" style={{color: '#e3b404'}} />
                   <div>
                     <h4 className="font-oswald font-normal" style={{color: '#11100f'}}>Phone</h4>
-                    <p className="font-source-sans" style={{color: '#4b4b4b'}}>(518) 855-6705</p>
+                    <p className="font-source-sans" style={{color: '#4b4b4b'}}>(518) 537-7000</p>
                   </div>
                 </div>
                 <div className="flex items-start">
