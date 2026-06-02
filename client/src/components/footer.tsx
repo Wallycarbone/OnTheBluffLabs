@@ -116,7 +116,7 @@ export default function Footer() {
                 Visits to our grounds are by appointment ONLY.<br />
                 Unannounced visitors will be turned away, without exception.
               </li>
-              <li className="font-source-sans text-gray-300 mt-3">(518) 855-6705</li>
+              <li className="font-source-sans text-gray-300 mt-3">(518) 537-7000</li>
               <li className="font-source-sans text-gray-300">info@ontheblufflabradors.com</li>
             </ul>
           </div>
