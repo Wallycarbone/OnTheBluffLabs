@@ -51,7 +51,7 @@ import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.jpg";
 import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png";
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.jpg";
-import beckyImage from "@assets/Untitled design - 2025-09-28T162502.877_1759091209687.jpg";
+import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import beckyOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf_1759091354268.png";
 import vivienImage from "@assets/Untitled design - 2025-09-28T163511.909_1759092025671.jpg";
 import vivienOfficialPedigreeImage from "@assets/2024-06-03 17-32 (1).pdf (2)_1759092241674.png";
