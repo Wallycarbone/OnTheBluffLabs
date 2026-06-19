@@ -48,7 +48,7 @@ import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
 import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909148622.jpg";
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
-import beckyImage from "@assets/Untitled design - 2025-09-26T135952.231_1758909609420.jpg";
+import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
