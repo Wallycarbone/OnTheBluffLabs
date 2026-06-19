@@ -349,7 +349,7 @@ export default function Puppies() {
       dam: "Becky",
       birthDate: "Due July 2026",
       puppiesCount: "TBD",
-      available: "TBD",
+      available: "Black",
       readyDate: "September 2026",
       image: holdenImage,
       image2: beckyImage,
