@@ -344,19 +344,6 @@ export default function Puppies() {
       description: "Born November 21, 2025"
     },
     {
-      name: "Moon & Arabella",
-      sire: "Moon",
-      dam: "Arabella",
-      birthDate: "May 22, 2026",
-      puppiesCount: "TBD",
-      available: "Yellow Females & Males",
-      readyDate: "TBD",
-      image: moonImage,
-      image2: arabellaImage,
-      status: "Ready",
-      description: "Born May 22, 2026"
-    },
-    {
       name: "Dodger & Aubrey",
       sire: "Dodger",
       dam: "Aubrey",
