@@ -89,7 +89,7 @@ import emmaImage from "@assets/Breeding Dogs 5x4 (23)_1755446219053.png";
 import chaseImage from "@assets/Chase_1755458617995.avif";
 import expressoImage from "@assets/expresso_new3_1755458950324.webp";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
-import dodgerOfficialPedigreeImage from "@assets/Dodger's Pedigree_1762633452989.png";
+import dodgerOfficialPedigreeImage from "@assets/Dodger's_Extended_Pedigree_1782152378941.png";
 import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import auntPollyOfficialPedigreeImage from "@assets/Polly Pedigree_1762635610724.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
@@ -3046,19 +3046,42 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Dodger" ? (
-                      <img 
-                        src={dodgerOfficialPedigreeImage}
-                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
-                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
-                        style={{ maxHeight: '800px' }}
+                      <div
+                        className="relative overflow-hidden rounded-lg border shadow-lg mx-auto cursor-crosshair"
+                        style={{ maxHeight: '800px', maxWidth: '100%' }}
+                        onMouseMove={(e) => {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          const x = ((e.clientX - rect.left) / rect.width) * 100;
+                          const y = ((e.clientY - rect.top) / rect.height) * 100;
+                          setPedigreeZoomPos({ x, y });
+                        }}
+                        onMouseEnter={() => setIsPedigreeZoomed(true)}
+                        onMouseLeave={() => setIsPedigreeZoomed(false)}
                         onClick={() => {
                           setSelectedImage({
-                            src: dodgerOfficialPedigreeImage, 
+                            src: dodgerOfficialPedigreeImage,
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
                         }}
-                      />
+                      >
+                        <img
+                          src={dodgerOfficialPedigreeImage}
+                          alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                          className="max-w-full h-auto block"
+                          style={{
+                            maxHeight: '800px',
+                            transform: isPedigreeZoomed ? 'scale(2.5)' : 'scale(1)',
+                            transformOrigin: `${pedigreeZoomPos.x}% ${pedigreeZoomPos.y}%`,
+                            transition: isPedigreeZoomed ? 'transform-origin 0s' : 'transform 0.25s ease'
+                          }}
+                        />
+                        {!isPedigreeZoomed && (
+                          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-3 py-1 rounded-full pointer-events-none">
+                            Hover to zoom · Click to enlarge
+                          </div>
+                        )}
+                      </div>
                     ) : selectedDog?.name === "Alola" ? (
                       <img 
                         src={alolaOfficialPedigreeImage}
