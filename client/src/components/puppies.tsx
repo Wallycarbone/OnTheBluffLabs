@@ -43,6 +43,7 @@ import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import arabellaImage from "@assets/Breeding Dogs 5x4 (19)_1755290951573.png";
+import msRoseImage from "@assets/Ms._Rose_1782151706964.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
@@ -297,6 +298,10 @@ export default function Puppies() {
     booAuntPollyPuppy3
   ];
 
+  const dodgerAubreyPuppyImages = [
+    { image: msRoseImage, name: "Ms. Rose" }
+  ];
+
   const booAuntPollyPuppyImages = [
     { image: orionImage, name: "Orion, Master's Degree" }
   ];
@@ -366,6 +371,7 @@ export default function Puppies() {
       readyDate: "July 2026",
       image: dodgerImage,
       image2: aubreyImage,
+      puppyImages: dodgerAubreyPuppyImages,
       status: "Ready",
       description: "Born May 4, 2026"
     },
