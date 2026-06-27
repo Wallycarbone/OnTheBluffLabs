@@ -126,15 +126,20 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
-          <p className="font-source-sans text-gray-300">
-            &copy; 2025 On The Bluff Labradors. All rights reserved.
-          </p>
-          <button
-            onClick={() => setIsPrivacyOpen(true)}
-            className="font-source-sans text-gray-400 hover:text-golden transition-colors text-sm mt-2 underline"
-          >
-            Privacy Policy
-          </button>
+          <div className="flex flex-col items-center gap-3">
+            <a href="https://www.bbb.org/us/ny/germantown/profile/dog-training/on-the-bluff-labradors-0041-235983130/#sealclick" target="_blank" rel="nofollow">
+              <img src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
+            </a>
+            <p className="font-source-sans text-gray-300">
+              &copy; 2025 On The Bluff Labradors. All rights reserved.
+            </p>
+            <button
+              onClick={() => setIsPrivacyOpen(true)}
+              className="font-source-sans text-gray-400 hover:text-golden transition-colors text-sm underline"
+            >
+              Privacy Policy
+            </button>
+          </div>
         </div>
       </div>
 
