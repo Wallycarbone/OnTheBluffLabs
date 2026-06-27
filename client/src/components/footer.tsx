@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="py-12" style={{backgroundColor: '#11100f', color: '#fefefe'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <h3 className="text-2xl font-oswald font-normal mb-6 tracking-wide">
               ON THE BLUFF LABRADORS
@@ -16,6 +16,9 @@ export default function Footer() {
             <p className="mb-4 font-source-sans" style={{color: '#ebebeb'}}>
               English Labradors Bred for Beauty & Temperament
             </p>
+            <a href="https://www.bbb.org/us/ny/germantown/profile/dog-training/on-the-bluff-labradors-0041-235983130/#sealclick" target="_blank" rel="nofollow">
+              <img src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
+            </a>
           </div>
           
           <div>
@@ -126,20 +129,15 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
-          <div className="flex flex-col items-center gap-3">
-            <a href="https://www.bbb.org/us/ny/germantown/profile/dog-training/on-the-bluff-labradors-0041-235983130/#sealclick" target="_blank" rel="nofollow">
-              <img src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
-            </a>
-            <p className="font-source-sans text-gray-300">
-              &copy; 2025 On The Bluff Labradors. All rights reserved.
-            </p>
-            <button
-              onClick={() => setIsPrivacyOpen(true)}
-              className="font-source-sans text-gray-400 hover:text-golden transition-colors text-sm underline"
-            >
-              Privacy Policy
-            </button>
-          </div>
+          <p className="font-source-sans text-gray-300">
+            &copy; 2025 On The Bluff Labradors. All rights reserved.
+          </p>
+          <button
+            onClick={() => setIsPrivacyOpen(true)}
+            className="font-source-sans text-gray-400 hover:text-golden transition-colors text-sm mt-2 underline"
+          >
+            Privacy Policy
+          </button>
         </div>
       </div>
 
