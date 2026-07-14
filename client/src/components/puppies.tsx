@@ -351,6 +351,19 @@ export default function Puppies() {
       description: "Born November 21, 2025"
     },
     {
+      name: "Boo Radley & Akadia",
+      sire: "Boo Radley",
+      dam: "Akadia",
+      birthDate: "Due 2026",
+      puppiesCount: "TBD",
+      available: "TBD",
+      readyDate: "TBD",
+      image: booRadleyImage,
+      image2: akadiaImage,
+      status: "Upcoming",
+      description: "Expected 2026"
+    },
+    {
       name: "Grizzly & Alola",
       sire: "Grizzly",
       dam: "Alola",
