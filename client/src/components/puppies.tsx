@@ -44,7 +44,6 @@ import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import arabellaImage from "@assets/Breeding Dogs 5x4 (19)_1755290951573.png";
 import msRoseImage from "@assets/Ms._Rose_1782151706964.png";
-import msLovableGnomesImage from "@assets/Ms._Lovable_Gnomes_1782151715705.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
 import breedingDogsImage from "@assets/Breeding Dogs 5x4_1753626746448.png";
 import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
@@ -54,7 +53,6 @@ import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
-import auntPollyImage from "@assets/Aunt Polly_1762634872039.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import aureliaImage from "@assets/Aurelia_1769703737590.png";
@@ -101,17 +99,11 @@ import dodgerGuineverePuppy2 from "@assets/2_1766875864536.png";
 import dodgerGuineverePuppy3 from "@assets/3_1766875864535.png";
 import mrPenguinImage from "@assets/Mr._Penguin_1771360253476.png";
 
-// Boo Radley & Aunt Polly previous puppy images
-import booAuntPollyPuppy1 from "@assets/15_1762641751797.png";
-import booAuntPollyPuppy2 from "@assets/16_1762641751798.png";
-import booAuntPollyPuppy3 from "@assets/17_1762641751798.png";
 
-// Boo Radley & Aunt Polly current puppy images
 import finnImage from "@assets/Finn_1778248809116.png";
 import mrChristmasImage from "@assets/Mr._Christmas_1773763890512.png";
 import mrStarsAndStripesImage from "@assets/Mr._Stars_&_Stripes_1773763824179.png";
 import romeoImage from "@assets/Romeo_1778248862551.png";
-import orionImage from "@assets/Orion_Portrait_1784057633526.png";
 import msWildflowerImage from "@assets/Ms._Wildflower_1776198610717.png";
 import msRainbowPawsImage from "@assets/Ms._Rainbow_Paws_1773764515385.png";
 import mrMuddyPawsImage from "@assets/Mr._Muddy_Paws_1774039181203.png";
@@ -293,19 +285,8 @@ export default function Puppies() {
     { image: mrPenguinImage, name: "Mr. Penguin" }
   ];
 
-  const booAuntPollyPreviousPuppyImages = [
-    booAuntPollyPuppy1,
-    booAuntPollyPuppy2,
-    booAuntPollyPuppy3
-  ];
-
   const dodgerAubreyPuppyImages = [
-    { image: msRoseImage, name: "Ms. Rose" },
-    { image: msLovableGnomesImage, name: "Ms. Lovable Gnomes" }
-  ];
-
-  const booAuntPollyPuppyImages = [
-    { image: orionImage, name: "Orion, Master's Degree" }
+    { image: msRoseImage, name: "Ms. Rose" }
   ];
 
   const moonPiperPuppyImages = [
@@ -335,20 +316,6 @@ export default function Puppies() {
       puppyImages: booQueenPuppyImages,
       status: "Upcoming",
       description: "Born August 7, 2025"
-    },
-    {
-      name: "Boo Radley & Aunt Polly",
-      sire: "Boo Radley",
-      dam: "Aunt Polly",
-      birthDate: "November 21, 2025",
-      puppiesCount: "TBD",
-      available: "Yellow Males with Master's Degree",
-      readyDate: "January 2026",
-      image: booRadleyImage,
-      image2: auntPollyImage,
-      puppyImages: booAuntPollyPuppyImages,
-      status: "Ready",
-      description: "Born November 21, 2025"
     },
     {
       name: "Boo Radley & Akadia",
