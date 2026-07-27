@@ -91,6 +91,7 @@ import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
 import lilyImage from "@assets/Lily_1785180437921.png";
+import sonyaImage from "@assets/Sonya_1785182361980.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
@@ -1783,6 +1784,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: lilyImage,
       description: "Lily is our boarding host — her exceptionally dog-friendly nature makes her the perfect welcoming presence for visiting dogs. This beautiful chocolate dame has warm, expressive eyes and a gentle, loving personality that puts every dog at ease the moment they arrive.",
+    },
+    {
+      name: "Sonya",
+      formalName: "On The Bluff's Sonya",
+      gender: "Female",
+      color: "Black",
+      age: "Breeding Female",
+      image: sonyaImage,
+      description: "Sonya is a sleek and elegant black dame with a proud, confident bearing and a warm, friendly expression. Her balanced temperament and devoted nature make her a wonderful mother, producing puppies with her trademark classic Labrador look and loving personality.",
     },
   ];
 
