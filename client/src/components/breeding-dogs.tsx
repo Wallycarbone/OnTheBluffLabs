@@ -1790,7 +1790,7 @@ export default function BreedingDogs() {
     },
     {
       name: "Lily",
-      formalName: "On The Bluff's Lily",
+      formalName: "On The Bluff's Lily of the Valley",
       gender: "Female",
       color: "Chocolate",
       age: "Breeding Female",
