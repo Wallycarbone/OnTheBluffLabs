@@ -70,7 +70,7 @@ export default function Boarding() {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0" style={{backgroundColor: '#6d761d'}}></span>
-                    <span><strong style={{color: '#11100f'}}>Stress-Free Environment:</strong> With our gentle host dog, Lilly, your dog feels calm, safe, and supported throughout their stay.</span>
+                    <span><strong style={{color: '#11100f'}}>Stress-Free Environment:</strong> With our gentle host dog, Lily, your dog feels calm, safe, and supported throughout their stay.</span>
                   </li>
                 </ul>
               </div>
@@ -137,7 +137,7 @@ export default function Boarding() {
           </div>
         </div>
 
-        {/* Meet Lilly Section */}
+        {/* Meet Lily Section */}
         <div className="mb-16">
           <Card className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <CardContent className="p-8">
@@ -145,25 +145,25 @@ export default function Boarding() {
                 <div className="flex justify-center">
                   <img 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (82)_1756151491098.png"
-                    alt="Lilly, the gentle host dog - chocolate Labrador in green field"
+                    alt="Lily, the gentle host dog - chocolate Labrador in green field"
                     className="max-w-xs h-[600px] object-cover rounded-xl shadow-lg"
                     style={{objectPosition: '50% 30%'}}
                   />
                 </div>
                 <div>
                   <h3 className="text-2xl font-oswald font-normal mb-4 tracking-wide" style={{color: '#11100f'}}>
-                    Meet Lilly, Your Dog's Gentle Host
+                    Meet Lily, Your Dog's Gentle Host
                   </h3>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Every dog who stays at the Bluff is welcomed by Lilly, our calm and experienced host dog. With her gentle temperament and natural ability to put other dogs at ease, Lilly creates a stress-free environment where learning can flourish.
+                    Every dog who stays at the Bluff is welcomed by Lily, our calm and experienced host dog. With her gentle temperament and natural ability to put other dogs at ease, Lily creates a stress-free environment where learning can flourish.
                   </p>
                   <p className="text-base font-source-sans mb-4 leading-relaxed" style={{color: '#4b4b4b'}}>
-                    Lilly's presence helps visiting dogs feel at home from day one. She models calm behavior, provides companionship during downtime, and serves as a reassuring friend throughout their stay. Her steady, supportive nature is especially valuable for dogs who may feel anxious about being away from home.
+                    Lily's presence helps visiting dogs feel at home from day one. She models calm behavior, provides companionship during downtime, and serves as a reassuring friend throughout their stay. Her steady, supportive nature is especially valuable for dogs who may feel anxious about being away from home.
                   </p>
                   <div className="flex items-center">
                     <Heart className="w-5 h-5 mr-3" style={{color: '#6d761d'}} />
                     <span className="text-sm font-montserrat font-medium" style={{color: '#4b4b4b'}}>
-                      Lilly: Creating comfort and confidence for every guest
+                      Lily: Creating comfort and confidence for every guest
                     </span>
                   </div>
                 </div>
