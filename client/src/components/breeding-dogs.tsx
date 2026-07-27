@@ -1977,18 +1977,18 @@ export default function BreedingDogs() {
             ) : dog.name === "Lily" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of our sire <button
+                  Descended from 2016 Westminster Best of Breed <button
                     className="text-golden underline hover:text-golden/80 font-medium"
                     onClick={() => {
                       setSelectedImage({
-                        src: newGrizzlyImage,
-                        name: "Grizzly"
+                        src: cyrusImage,
+                        name: "Shalimar's The Animator"
                       });
                       setIsImagePopupOpen(true);
                     }}
                   >
-                    Grizzly
-                  </button> and dam Aurelia
+                    Shalimar's The Animator
+                  </button>
                 </p>
               </div>
             ) : dog.name === "Aubrey" ? (
