@@ -1569,15 +1569,31 @@ export default function BreedingDogs() {
           }
         },
         dam: {
-          name: "Aurelia's Dam",
+          name: "On The Bluff's Awillix Moon Goddess",
           titles: [],
           sire: {
-            name: "Aurelia's Maternal Great-Grandsire",
-            titles: []
+            name: "Belquest Conclusion On The Bluff's Tristan",
+            titles: [],
+            sire: {
+              name: "Belquest Conclusion Stolichnaya",
+              titles: []
+            },
+            dam: {
+              name: "Belquest Conclusion Seminary Old Time Rock & Roll",
+              titles: []
+            }
           },
           dam: {
-            name: "Aurelia's Maternal Great-Granddam",
-            titles: []
+            name: "Dreaming Tree Aeofe Heffalump",
+            titles: [],
+            sire: {
+              name: "North River's Under The Dreaming Tree",
+              titles: []
+            },
+            dam: {
+              name: "North River Black Pearl Of The Hudson",
+              titles: []
+            }
           }
         }
       }
