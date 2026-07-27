@@ -1666,7 +1666,7 @@ export default function BreedingDogs() {
       color: "Chocolate",
       age: "Breeding Female",
       image: lilyImage,
-      description: "Lily is a beautiful chocolate dame with warm, expressive eyes and a gentle, loving presence. Her calm and affectionate temperament makes her a devoted mother, producing puppies with both her striking chocolate coloring and her wonderful, even-keeled personality.",
+      description: "Lily is our boarding host — her exceptionally dog-friendly nature makes her the perfect welcoming presence for visiting dogs. This beautiful chocolate dame has warm, expressive eyes and a gentle, loving personality that puts every dog at ease the moment they arrive.",
     },
   ];
 
