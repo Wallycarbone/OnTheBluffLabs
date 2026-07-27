@@ -1974,6 +1974,23 @@ export default function BreedingDogs() {
                   </button>
                 </p>
               </div>
+            ) : dog.name === "Lily" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of our sire <button
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: newGrizzlyImage,
+                        name: "Grizzly"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Grizzly
+                  </button> and dam Aurelia
+                </p>
+              </div>
             ) : dog.name === "Aubrey" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
