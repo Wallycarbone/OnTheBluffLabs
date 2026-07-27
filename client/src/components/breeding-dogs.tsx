@@ -91,7 +91,7 @@ import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
 import lilyImage from "@assets/Lily_1785180437921.png";
-import sonyaImage from "@assets/Sonya_1785182361980.png";
+import sonyaImage from "@assets/Sonya_1785182550774.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
