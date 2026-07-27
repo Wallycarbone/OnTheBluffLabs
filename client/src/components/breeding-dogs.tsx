@@ -18,7 +18,6 @@ import newHoldenImage from "@assets/Breeding Dogs 5x4 (10)_1755286862112.png";
 import newHarperLeeImage from "@assets/Breeding Dogs 5x4 (11)_1755286940346.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
 import piperImage from "@assets/Breeding Dogs 5x4 (14)_1755287062398.png";
-import arabellaImage from "@assets/Breeding Dogs 5x4 (19)_1755290951573.png";
 import chekhovImage from "@assets/Breeding Dogs 5x4 (16)_1755287286323.png";
 import frannyGlassImage from "@assets/Breeding Dogs 5x4 (17)_1755287949069.png";
 import sterlingImage from "@assets/Sterling-name-2-515x412_1755289517437.jpg";
@@ -41,14 +40,7 @@ import moonOfficialPedigreeImage from "@assets/moon-pedigree.jpg";
 import chekhovOfficialPedigreeImage from "@assets/chekhov-pedigree.jpg";
 import harperLeeOfficialPedigreeImage from "@assets/harper-lee-pedigree.jpg";
 import piperOfficialPedigreeImage from "@assets/piper-pedigree.jpg";
-import arabellaOfficialPedigreeImage from "@assets/arabella-pedigree.jpg";
-import noraOfficialPedigreeImage from "@assets/nora-pedigree.jpg";
-import noraImage from "@assets/nora-new-photo.jpg";
-import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
-import foxxyOfficialPedigreeImage from "@assets/foxxy-pedigree.jpg";
 import pippiLongstockingImage from "@assets/pippi-longstocking.jpg";
-import guinevereImage from "@assets/guinevere-new-photo.jpg";
-import guinevereOfficialPedigreeImage from "@assets/guinevere-pedigree.jpg";
 import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759090913946.png";
 import queenBoudicaOfficialPedigreeImage from "@assets/Untitled design - 2025-09-28T161452.013_1759090496502.jpg";
 import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
@@ -1733,33 +1725,6 @@ export default function BreedingDogs() {
       description: "Queen Boudica is a magnificent fox red dame with regal bearing and exceptional intelligence. Her noble presence and natural leadership qualities make her an outstanding mother, producing puppies with both striking appearance and confident temperaments that reflect her warrior spirit.",
     },
     {
-      name: "Nora",
-      formalName: "On The Bluff's Nora Helmer",
-      gender: "Female",
-      color: "Black",
-      age: "Breeding Female",
-      image: noraImage,
-      description: "Nora is a gentle and devoted dame with exceptional maternal instincts. Her loving nature and calm demeanor make her an ideal mother, consistently producing puppies with wonderful temperaments that reflect her nurturing spirit.",
-    },
-    {
-      name: "Foxxy",
-      formalName: "On The Bluff's Foxxy",
-      gender: "Female",
-      color: "Yellow",
-      age: "Breeding Female",
-      image: foxxyImage,
-      description: "Foxxy is a stunning, blocky dame with the soulfull expression that we expect from our reds. Her friendly nature and strong maternal instincts make her an excellent mother, producing puppies with steady personalities that mirror her affectionate temperament.",
-    },
-    {
-      name: "Guinevere",
-      formalName: "On The Bluff's Guinevere",
-      gender: "Female",
-      color: "Chocolate",
-      age: "Breeding Female",
-      image: guinevereImage,
-      description: "Guinevere is an elegant and devoted dame with exceptional maternal qualities. Her gentle nature and strong family bonds make her an outstanding mother, consistently producing puppies with loving temperaments that reflect her warm and nurturing spirit.",
-    },
-    {
       name: "Harper Lee",
       formalName: "On The Bluff's Harper Lee",
       gender: "Female",
@@ -1767,15 +1732,6 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: newHarperLeeImage,
       description: "Like her father before her, Harper Lee is a stunning yellow female with an intuitive, loving temperament. Her calm, loving nature makes her an ideal mother and her puppies inherit her gentle demeanor.",
-    },
-    {
-      name: "Arabella",
-      formalName: "On The Bluff's Arabella Tallant",
-      gender: "Female",
-      color: "Yellow",
-      age: "Breeding Female",
-      image: arabellaImage,
-      description: "Arabella is an elegant and serene yellow female with a regal presence. Her calm confidence and nurturing instincts make her an exceptional mother, producing puppies with both beauty and temperament that reflect her graceful nature.",
     },
     {
       name: "Aunt Polly",
@@ -1992,74 +1948,6 @@ export default function BreedingDogs() {
                     }}
                   >
                     Highcaliber Labradale Expresso
-                  </button>
-                </p>
-              </div>
-            ) : dog.name === "Arabella" ? (
-              <div className="text-center">
-                <p className="text-sm text-warm-gray leading-relaxed">
-                  Descended from 2004 Westminster Best of Breed <button 
-                    className="text-golden underline hover:text-golden/80 font-medium"
-                    onClick={() => {
-                      setSelectedImage({
-                        src: martingaleImage,
-                        name: "Lubberline's Martingale"
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    Lubberline's Martingale
-                  </button> through her sire, Twain
-                </p>
-              </div>
-            ) : dog.name === "Nora" ? (
-              <div className="text-center">
-                <p className="text-sm text-warm-gray leading-relaxed">
-                  Granddaughter of our beloved late sire, <button 
-                    className="text-golden underline hover:text-golden/80 font-medium"
-                    onClick={() => {
-                      setSelectedImage({
-                        src: atticusFinchImage,
-                        name: "Atticus Finch"
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    Atticus Finch
-                  </button>
-                </p>
-              </div>
-            ) : dog.name === "Foxxy" ? (
-              <div className="text-center">
-                <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of our beloved dame, <button 
-                    className="text-golden underline hover:text-golden/80 font-medium"
-                    onClick={() => {
-                      setSelectedImage({
-                        src: pippiLongstockingImage,
-                        name: "Pippi Longstocking"
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    Pippi Longstocking
-                  </button>
-                </p>
-              </div>
-            ) : dog.name === "Guinevere" ? (
-              <div className="text-center">
-                <p className="text-sm text-warm-gray leading-relaxed">
-                  Granddaughter of our beloved late sire, <button 
-                    className="text-golden underline hover:text-golden/80 font-medium"
-                    onClick={() => {
-                      setSelectedImage({
-                        src: atticusFinchImage,
-                        name: "Atticus Finch"
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    Atticus Finch
                   </button>
                 </p>
               </div>
@@ -2947,48 +2835,6 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       />
-                    ) : selectedDog?.name === "Arabella" ? (
-                      <img 
-                        src={arabellaOfficialPedigreeImage}
-                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
-                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
-                        style={{ maxHeight: '800px' }}
-                        onClick={() => {
-                          setSelectedImage({
-                            src: arabellaOfficialPedigreeImage, 
-                            name: `Official AKC Pedigree - ${selectedDog?.name}`
-                          });
-                          setIsImagePopupOpen(true);
-                        }}
-                      />
-                    ) : selectedDog?.name === "Nora" ? (
-                      <img 
-                        src={noraOfficialPedigreeImage}
-                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
-                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
-                        style={{ maxHeight: '800px' }}
-                        onClick={() => {
-                          setSelectedImage({
-                            src: noraOfficialPedigreeImage, 
-                            name: `Official AKC Pedigree - ${selectedDog?.name}`
-                          });
-                          setIsImagePopupOpen(true);
-                        }}
-                      />
-                    ) : selectedDog?.name === "Foxxy" ? (
-                      <img 
-                        src={foxxyOfficialPedigreeImage}
-                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
-                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
-                        style={{ maxHeight: '800px' }}
-                        onClick={() => {
-                          setSelectedImage({
-                            src: foxxyOfficialPedigreeImage, 
-                            name: `Official AKC Pedigree - ${selectedDog?.name}`
-                          });
-                          setIsImagePopupOpen(true);
-                        }}
-                      />
                     ) : selectedDog?.name === "Becky" ? (
                       <img 
                         src={beckyOfficialPedigreeImage}
@@ -3026,20 +2872,6 @@ export default function BreedingDogs() {
                         onClick={() => {
                           setSelectedImage({
                             src: queenBoudicaOfficialPedigreeImage, 
-                            name: `Official AKC Pedigree - ${selectedDog?.name}`
-                          });
-                          setIsImagePopupOpen(true);
-                        }}
-                      />
-                    ) : selectedDog?.name === "Guinevere" ? (
-                      <img 
-                        src={guinevereOfficialPedigreeImage}
-                        alt={`Official AKC Pedigree for ${selectedDog?.name}`}
-                        className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
-                        style={{ maxHeight: '800px' }}
-                        onClick={() => {
-                          setSelectedImage({
-                            src: guinevereOfficialPedigreeImage, 
                             name: `Official AKC Pedigree - ${selectedDog?.name}`
                           });
                           setIsImagePopupOpen(true);
