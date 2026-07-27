@@ -1401,6 +1401,171 @@ export default function BreedingDogs() {
       }
     };
 
+    pedigrees["Lily"] = {
+      name: "Lily",
+      formalName: "On The Bluff's Lily of the Valley",
+      titles: [],
+      image: lilyImage,
+      sire: {
+        name: "Endless Mountain Labrador's Grizzly at On The Bluff",
+        titles: [],
+        image: newGrizzlyImage,
+        sire: {
+          name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
+          titles: ["CH", "MX"],
+          image: boscoImage,
+          sire: {
+            name: "Shalimar's The Animator (\"Cyrus\")",
+            titles: ["GCH", "CH", "MBISS"],
+            image: cyrusImage,
+            sire: {
+              name: "Cyrus's Sire",
+              titles: ["CH"],
+              sire: {
+                name: "Cyrus's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Cyrus's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Cyrus's Dam",
+              titles: ["CH"],
+              sire: {
+                name: "Cyrus's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Cyrus's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          },
+          dam: {
+            name: "Greenstone's Special Blend (\"Simmer\")",
+            titles: ["CH"],
+            image: simmerImage,
+            sire: {
+              name: "Loretta's Maternal Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Loretta's Paternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Loretta's Paternal Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Loretta's Maternal Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Loretta's Maternal Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Loretta's Maternal Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          }
+        },
+        dam: {
+          name: "Endless Mountain's Hannah",
+          titles: [],
+          image: hannahImage,
+          sire: {
+            name: "Endless Mountain's Second Son (\"Brody\")",
+            titles: [],
+            image: brodyImage,
+            sire: {
+              name: "Hannah's Paternal Great-Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Hannah's Paternal Great-Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Hannah's Paternal Great-Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Hannah's Paternal Great-Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Hannah's Paternal Maternal Great-Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Hannah's Paternal Maternal Great-Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          },
+          dam: {
+            name: "Endless Mountain's Georgia On My Mind",
+            titles: [],
+            sire: {
+              name: "Hannah's Maternal Great-Grandsire",
+              titles: ["CH"],
+              sire: {
+                name: "Hannah's Maternal Great-Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Hannah's Maternal Great-Great-Granddam",
+                titles: ["CH"]
+              }
+            },
+            dam: {
+              name: "Hannah's Maternal Great-Granddam",
+              titles: ["CH"],
+              sire: {
+                name: "Hannah's Maternal Maternal Great-Great-Grandsire",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Hannah's Maternal Maternal Great-Great-Granddam",
+                titles: ["CH"]
+              }
+            }
+          }
+        }
+      },
+      dam: {
+        name: "Aurelia",
+        titles: [],
+        sire: {
+          name: "Aurelia's Sire",
+          titles: [],
+          sire: {
+            name: "Aurelia's Paternal Great-Grandsire",
+            titles: []
+          },
+          dam: {
+            name: "Aurelia's Paternal Great-Granddam",
+            titles: []
+          }
+        },
+        dam: {
+          name: "Aurelia's Dam",
+          titles: [],
+          sire: {
+            name: "Aurelia's Maternal Great-Grandsire",
+            titles: []
+          },
+          dam: {
+            name: "Aurelia's Maternal Great-Granddam",
+            titles: []
+          }
+        }
+      }
+    };
+
     return pedigrees[dogName] || null;
   };
 
