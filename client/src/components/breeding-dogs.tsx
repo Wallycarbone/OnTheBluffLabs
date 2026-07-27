@@ -90,6 +90,7 @@ import akadiaImage from "@assets/Akadia_1768358230762.png";
 import akadiaOfficialPedigreeImage from "@assets/Akadia's_Pedigree_1768358224962.png";
 import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
+import lilyImage from "@assets/Lily_1785180437921.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
@@ -1786,6 +1787,15 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: aubreyImage,
       description: "Aubrey is a stunning black female with soulful amber eyes and a striking, elegant presence. Her gentle and devoted nature make her a wonderful companion and mother, producing puppies with her trademark calm temperament and beautiful classic Labrador conformation.",
+    },
+    {
+      name: "Lily",
+      formalName: "On The Bluff's Lily",
+      gender: "Female",
+      color: "Chocolate",
+      age: "Breeding Female",
+      image: lilyImage,
+      description: "Lily is a beautiful chocolate dame with warm, expressive eyes and a gentle, loving presence. Her calm and affectionate temperament makes her a devoted mother, producing puppies with both her striking chocolate coloring and her wonderful, even-keeled personality.",
     },
   ];
 
