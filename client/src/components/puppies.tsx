@@ -52,6 +52,8 @@ import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
 import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
 import lilyImage from "@assets/Lily_1785180437921.png";
+import judgeImage from "@assets/judge_portrait.png";
+import sonyaImage from "@assets/Sonya_1785182550774.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
@@ -343,6 +345,19 @@ export default function Puppies() {
       image2: lilyImage,
       status: "Upcoming",
       description: "Expected August 2026"
+    },
+    {
+      name: "Judge & Sonya",
+      sire: "Judge",
+      dam: "Sonya",
+      birthDate: "TBD",
+      puppiesCount: "TBD",
+      available: "TBD",
+      readyDate: "TBD",
+      image: judgeImage,
+      image2: sonyaImage,
+      status: "Upcoming",
+      description: "Expected 2026"
     },
     {
       name: "Dodger & Aubrey",
