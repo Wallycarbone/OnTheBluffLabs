@@ -92,6 +92,8 @@ import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import honeyImage from "@assets/Honey's_Portrait_1772305909430.png";
 import lilyImage from "@assets/Lily_1785180437921.png";
 import sonyaImage from "@assets/Sonya_1785182550774.png";
+import judgeImage from "@assets/judge_portrait.png";
+import judgePedigreeImage from "@assets/judge_pedigree.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
@@ -888,6 +890,141 @@ export default function BreedingDogs() {
             dam: {
               name: "Keepsake Help Me Rhonda",
               titles: []
+            }
+          }
+        }
+      },
+      "Judge": {
+        name: "Judge",
+        formalName: "On The Bluff's Judge Thatcher",
+        titles: [],
+        image: judgeImage,
+        sire: {
+          name: "Scarfone's Mark Twain",
+          titles: [],
+          image: markTwainImage,
+          sire: {
+            name: "Valhalla's One Little Victory JH",
+            titles: ["JH"],
+            sire: {
+              name: "CH Lubberline Martingale",
+              titles: ["CH"],
+              image: martingaleImage,
+              sire: {
+                name: "CH Hunt Club Clayview Funny Bear",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "CH Hennings Bill Lubberline JH",
+                titles: ["CH", "JH"]
+              }
+            },
+            dam: {
+              name: "Brimars N-Vogue JH",
+              titles: ["JH"],
+              sire: {
+                name: "CH Sandylands Star Trend",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Brimar's Gem At Poplar Forest JH",
+                titles: ["JH"]
+              }
+            }
+          },
+          dam: {
+            name: "Bateshaus Stop To Smell The Roses",
+            titles: [],
+            sire: {
+              name: "CH Stormy C's Superbad",
+              titles: ["CH"],
+              sire: {
+                name: "CH Blackwing Superfine",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "Casbar's Red Hot Chili Pepper RN",
+                titles: ["RN"]
+              }
+            },
+            dam: {
+              name: "CH Batescreek Emma",
+              titles: ["CH"],
+              image: emmaImage,
+              sire: {
+                name: "CH Zinfindel Brigham",
+                titles: ["CH"]
+              },
+              dam: {
+                name: "CH Berryhill Grand River Crystal",
+                titles: ["CH"]
+              }
+            }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Genly AI",
+          titles: [],
+          sire: {
+            name: "Belquest Conclusion Super Moon Rising",
+            titles: [],
+            image: newMoonImage,
+            sire: {
+              name: "GCH CH Farnfield Topo Gigio",
+              titles: ["GCH", "CH"],
+              image: topoGigioImage,
+              sire: {
+                name: "Charm Bluveil Mr. Darcy",
+                titles: []
+              },
+              dam: {
+                name: "Kimvalley Star Attraction Of Farnfield",
+                titles: []
+              }
+            },
+            dam: {
+              name: "Belquest Conclusion Frozen Margarita",
+              titles: [],
+              sire: {
+                name: "CH Wiscoys Rocco",
+                titles: ["CH"],
+                image: roccoImage
+              },
+              dam: {
+                name: "GCH CH Belquest Nostalgic Candy",
+                titles: ["GCH", "CH"],
+                image: candyImage
+              }
+            }
+          },
+          dam: {
+            name: "On The Bluff's Estraven \"Estra\"",
+            titles: [],
+            sire: {
+              name: "Scarfone's Mark Twain",
+              titles: [],
+              image: markTwainImage,
+              sire: {
+                name: "Valhalla's One Little Victory JH",
+                titles: ["JH"]
+              },
+              dam: {
+                name: "Bateshaus Stop To Smell The Roses",
+                titles: []
+              }
+            },
+            dam: {
+              name: "On The Bluff's Ursula Leguin",
+              titles: [],
+              sire: {
+                name: "On The Bluff's Atticus Finch",
+                titles: [],
+                image: atticusFinchImage
+              },
+              dam: {
+                name: "On The Bluff's Alice B Toklas",
+                titles: []
+              }
             }
           }
         }
@@ -1799,6 +1936,16 @@ export default function BreedingDogs() {
       image: dodgerImage,
       description: "Dodger is a large, handsome black male with a friendly expression and warm temperament. His substantial, classic English Labrador build—paired with his gentle personality—makes him an exceptional sire for producing well-balanced puppies with outstanding temperaments.",
       hasPuppies: false
+    },
+    {
+      name: "Judge",
+      formalName: "On The Bluff's Judge Thatcher",
+      gender: "Male",
+      color: "Yellow",
+      age: "Active Stud",
+      image: judgeImage,
+      description: "Judge is Twain's son, inheriting his father's exceptional structure and social nature. This handsome yellow male carries forward the distinguished Lubberline bloodline, combining classic English Labrador conformation with a warm, outgoing personality that makes him a natural sire for producing confident, well-tempered puppies.",
+      hasPuppies: false
     }
   ];
 
@@ -2138,6 +2285,23 @@ export default function BreedingDogs() {
                     }}
                   >
                     Shalimar's The Animator
+                  </button>
+                </p>
+              </div>
+            ) : dog.name === "Judge" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Son of our stud Twain — descended from 2004 Westminster Best of Breed <button 
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: martingaleImage,
+                        name: "Lubberline's Martingale"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Lubberline's Martingale
                   </button>
                 </p>
               </div>
@@ -3066,6 +3230,43 @@ export default function BreedingDogs() {
                       >
                         <img
                           src={dodgerOfficialPedigreeImage}
+                          alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                          className="max-w-full h-auto block"
+                          style={{
+                            maxHeight: '800px',
+                            transform: isPedigreeZoomed ? 'scale(2.5)' : 'scale(1)',
+                            transformOrigin: `${pedigreeZoomPos.x}% ${pedigreeZoomPos.y}%`,
+                            transition: isPedigreeZoomed ? 'transform-origin 0s' : 'transform 0.25s ease'
+                          }}
+                        />
+                        {!isPedigreeZoomed && (
+                          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-3 py-1 rounded-full pointer-events-none">
+                            Hover to zoom · Click to enlarge
+                          </div>
+                        )}
+                      </div>
+                    ) : selectedDog?.name === "Judge" ? (
+                      <div
+                        className="relative overflow-hidden rounded-lg border shadow-lg mx-auto cursor-crosshair"
+                        style={{ maxHeight: '800px', maxWidth: '100%' }}
+                        onMouseMove={(e) => {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          const x = ((e.clientX - rect.left) / rect.width) * 100;
+                          const y = ((e.clientY - rect.top) / rect.height) * 100;
+                          setPedigreeZoomPos({ x, y });
+                        }}
+                        onMouseEnter={() => setIsPedigreeZoomed(true)}
+                        onMouseLeave={() => setIsPedigreeZoomed(false)}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: judgePedigreeImage,
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      >
+                        <img
+                          src={judgePedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
                           style={{
