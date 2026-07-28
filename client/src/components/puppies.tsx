@@ -51,6 +51,7 @@ import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
 import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
+import lilyImage from "@assets/Lily_1785180437921.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
@@ -329,6 +330,19 @@ export default function Puppies() {
       image2: akadiaImage,
       status: "Upcoming",
       description: "Expected September 2026"
+    },
+    {
+      name: "Holden & Lily",
+      sire: "Holden",
+      dam: "Lily",
+      birthDate: "Due 2026",
+      puppiesCount: "TBD",
+      available: "TBD",
+      readyDate: "TBD",
+      image: holdenImage,
+      image2: lilyImage,
+      status: "Upcoming",
+      description: "Expected 2026"
     },
     {
       name: "Dodger & Aubrey",
