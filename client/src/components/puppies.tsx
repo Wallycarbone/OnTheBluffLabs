@@ -335,14 +335,14 @@ export default function Puppies() {
       name: "Holden & Lily",
       sire: "Holden",
       dam: "Lily",
-      birthDate: "Due 2026",
+      birthDate: "Due August 2026",
       puppiesCount: "TBD",
-      available: "TBD",
-      readyDate: "TBD",
+      available: "Chocolate",
+      readyDate: "October 2026",
       image: holdenImage,
       image2: lilyImage,
       status: "Upcoming",
-      description: "Expected 2026"
+      description: "Expected August 2026"
     },
     {
       name: "Dodger & Aubrey",
