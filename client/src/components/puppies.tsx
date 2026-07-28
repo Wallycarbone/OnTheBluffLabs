@@ -331,19 +331,6 @@ export default function Puppies() {
       description: "Expected September 2026"
     },
     {
-      name: "Grizzly & Alola",
-      sire: "Grizzly",
-      dam: "Alola",
-      birthDate: "Due September 2026",
-      puppiesCount: "TBD",
-      available: "Chocolate",
-      readyDate: "November 2026",
-      image: newGrizzlyImage,
-      image2: alolaImage,
-      status: "Upcoming",
-      description: "Expected September 2026"
-    },
-    {
       name: "Dodger & Aubrey",
       sire: "Dodger",
       dam: "Aubrey",
