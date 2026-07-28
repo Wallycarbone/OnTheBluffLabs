@@ -350,14 +350,14 @@ export default function Puppies() {
       name: "Judge & Sonya",
       sire: "Judge",
       dam: "Sonya",
-      birthDate: "TBD",
+      birthDate: "Due September 2026",
       puppiesCount: "TBD",
-      available: "TBD",
-      readyDate: "TBD",
+      available: "Yellow and Black",
+      readyDate: "November 2026",
       image: judgeImage,
       image2: sonyaImage,
       status: "Upcoming",
-      description: "Expected 2026"
+      description: "Expected September 2026"
     },
     {
       name: "Dodger & Aubrey",
