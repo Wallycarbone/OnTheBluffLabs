@@ -94,14 +94,14 @@ export default function Training() {
       {/* Jess & Bambi Image with Bio */}
       <section className="relative w-full">
         {/* Desktop version - wider crop */}
-        <img
+        <img loading="lazy"
           src={jessBambiImage}
           alt="Jess holding a yellow Labrador puppy"
           className="hidden md:block w-full object-cover"
           style={{height: '600px', objectPosition: 'center 20%'}}
         />
         {/* Mobile version - tighter crop focused on Jess and puppy */}
-        <img
+        <img loading="lazy"
           src={jessBambiImage}
           alt="Jess holding a yellow Labrador puppy"
           className="block md:hidden w-full object-cover"
@@ -172,14 +172,14 @@ export default function Training() {
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <AspectRatio ratio={5/4}>
                   {/* Blurred background fill */}
-                  <img 
+                  <img loading="lazy" 
                     src={bachelorsImage}
                     alt=""
                     aria-hidden="true"
                     className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
                   />
                   {/* Main image with preserved content */}
-                  <img 
+                  <img loading="lazy" 
                     src={bachelorsImage}
                     alt="Black Labrador puppy with colorful training balls, showcasing playful early socialization and developmental activities"
                     className="absolute inset-0 z-10 w-full h-full object-contain"
@@ -329,14 +329,14 @@ export default function Training() {
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <AspectRatio ratio={5/4}>
                   {/* Blurred background fill */}
-                  <img 
+                  <img loading="lazy" 
                     src="/attached_assets/Puppies 5x4 (4)_1755535459095.png"
                     alt=""
                     aria-hidden="true"
                     className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
                   />
                   {/* Main image with preserved content */}
-                  <img 
+                  <img loading="lazy" 
                     src="/attached_assets/Puppies 5x4 (4)_1755535459095.png"
                     alt="Young golden Labrador puppy outdoors demonstrating confident stance and public socialization readiness"
                     className="absolute inset-0 z-10 w-full h-full object-contain"
@@ -466,7 +466,7 @@ export default function Training() {
             <div className="text-center">
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <AspectRatio ratio={5/4}>
-                  <img 
+                  <img loading="lazy" 
                     src={doctorateImage}
                     alt="Trainer working with a golden Labrador demonstrating the poised temperament achieved through doctorate-level training"
                     className="absolute inset-0 w-full h-full object-cover"

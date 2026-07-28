@@ -31,7 +31,7 @@ export default function About() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img 
+            <img loading="lazy" 
               src={puppyImage} 
               alt="Beautiful fox red Labrador with stick in snowy winter setting from On The Bluff Labradors" 
               className="rounded-xl shadow-lg w-full h-auto"

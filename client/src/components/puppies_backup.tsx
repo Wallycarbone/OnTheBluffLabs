@@ -972,7 +972,7 @@ export default function Puppies() {
                 <div className="text-center">
                   {getPedigreeData(selectedLitter).sire.image && (
                     <div className="mb-2">
-                      <img 
+                      <img loading="lazy" 
                         src={getPedigreeData(selectedLitter).sire.image} 
                         alt={getPedigreeData(selectedLitter).sire.name}
                         className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1054,7 +1054,7 @@ export default function Puppies() {
     return (
     <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-0">
       <div className="relative">
-        <img 
+        <img loading="lazy" 
           src={images[currentIndex]} 
           alt={`${litter.name} Labrador litter - Photo ${currentIndex + 1}`} 
           className="w-full h-72 object-cover transition-all duration-300"
@@ -1178,7 +1178,7 @@ export default function Puppies() {
                 }}
               >
                 <div className="aspect-square overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                  <img 
+                  <img loading="lazy" 
                     src={puppy.src}
                     alt={puppy.alt}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -1363,7 +1363,7 @@ export default function Puppies() {
                   </Button>
                 </div>
                 <div className="flex justify-center">
-                  <img 
+                  <img loading="lazy" 
                     src={matureDogsImage}
                     alt="Mature Labrador available from On The Bluff Labradors"
                     className="w-32 h-32 object-cover rounded-md"
@@ -1385,7 +1385,7 @@ export default function Puppies() {
             </DialogTitle>
           </DialogHeader>
           <div className="space-y-4">
-            <img 
+            <img loading="lazy" 
               src={topoGigioImage} 
               alt="Farnfield Topo Gigio - 2019 Westminster Best of Breed winner"
               className="w-full h-auto rounded-lg"
@@ -1451,7 +1451,7 @@ export default function Puppies() {
                         <div className="text-center">
                           {getPedigreeData(selectedLitter).sire.image && (
                             <div className="mb-2">
-                              <img 
+                              <img loading="lazy" 
                                 src={getPedigreeData(selectedLitter).sire.image} 
                                 alt={getPedigreeData(selectedLitter).sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1502,7 +1502,7 @@ export default function Puppies() {
                         <div className="text-center">
                           {getPedigreeData(selectedLitter).dam.image && (
                             <div className="mb-2">
-                              <img 
+                              <img loading="lazy" 
                                 src={getPedigreeData(selectedLitter).dam.image} 
                                 alt={getPedigreeData(selectedLitter).dam.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1567,7 +1567,7 @@ export default function Puppies() {
                         <div className="text-center">
                           {getPedigreeData(selectedLitter).sire.sire.image && (
                             <div className="mb-2">
-                              <img 
+                              <img loading="lazy" 
                                 src={getPedigreeData(selectedLitter).sire.sire.image} 
                                 alt={getPedigreeData(selectedLitter).sire.sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1618,7 +1618,7 @@ export default function Puppies() {
                         <div className="text-center">
                           {getPedigreeData(selectedLitter).sire.dam.image && (
                             <div className="mb-2">
-                              <img 
+                              <img loading="lazy" 
                                 src={getPedigreeData(selectedLitter).sire.dam.image} 
                                 alt={getPedigreeData(selectedLitter).sire.dam.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1669,7 +1669,7 @@ export default function Puppies() {
                         <div className="text-center">
                           {getPedigreeData(selectedLitter).dam.sire.image && (
                             <div className="mb-2">
-                              <img 
+                              <img loading="lazy" 
                                 src={getPedigreeData(selectedLitter).dam.sire.image} 
                                 alt={getPedigreeData(selectedLitter).dam.sire.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1720,7 +1720,7 @@ export default function Puppies() {
                         <div className="text-center">
                           {getPedigreeData(selectedLitter).dam.dam.image && (
                             <div className="mb-2">
-                              <img 
+                              <img loading="lazy" 
                                 src={getPedigreeData(selectedLitter).dam.dam.image} 
                                 alt={getPedigreeData(selectedLitter).dam.dam.name}
                                 className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -1789,7 +1789,7 @@ export default function Puppies() {
           </DialogHeader>
           {selectedImage && (
             <div className="space-y-4">
-              <img 
+              <img loading="lazy" 
                 src={selectedImage.src} 
                 alt={selectedImage.name}
                 className="w-full h-auto rounded-lg"

@@ -2071,7 +2071,7 @@ export default function BreedingDogs() {
 
   const renderDogCard = (dog: any, index: number) => (
     <Card key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-      <img 
+      <img loading="lazy" 
         src={dog.image} 
         alt={`Champion ${dog.color} Labrador`} 
         className="w-full h-72 object-cover"
@@ -2493,7 +2493,7 @@ export default function BreedingDogs() {
         {/* Background Image Container */}
         <div className="absolute inset-0 w-full h-full">
           {/* Desktop Image */}
-          <img 
+          <img loading="eager"
             src={latestHeroLabradorImage}
             alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
             className="hidden md:block w-full h-full object-cover object-[50%_30%]"
@@ -2504,7 +2504,7 @@ export default function BreedingDogs() {
             onLoad={() => console.log('Our Dogs desktop hero image loaded successfully:', latestHeroLabradorImage)}
           />
           {/* Mobile Image */}
-          <img 
+          <img loading="eager"
             src={latestHeroLabradorImage}
             alt="Beautiful Labrador portrait - On The Bluff Breeding Dogs"
             className="block md:hidden w-full h-full object-cover"
@@ -2614,7 +2614,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.image && (
                                 <div className="mb-3">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.image}
                                     alt={pedigreeData.name}
                                     className="w-24 h-18 rounded object-cover mx-auto"
@@ -2663,7 +2663,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.sire.image && (
                                 <div className="mb-2">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.sire.image} 
                                     alt={pedigreeData.sire.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -2714,7 +2714,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.dam.image && (
                                 <div className="mb-2">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.dam.image} 
                                     alt={pedigreeData.dam.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -2779,7 +2779,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.sire.sire.image && (
                                 <div className="mb-2">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.sire.sire.image} 
                                     alt={pedigreeData.sire.sire.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -2830,7 +2830,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.sire.dam.image && (
                                 <div className="mb-2">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.sire.dam.image} 
                                     alt={pedigreeData.sire.dam.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -2881,7 +2881,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.dam.sire.image && (
                                 <div className="mb-2">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.dam.sire.image} 
                                     alt={pedigreeData.dam.sire.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -2932,7 +2932,7 @@ export default function BreedingDogs() {
                             <div className="text-center">
                               {pedigreeData.dam.dam.image && (
                                 <div className="mb-2">
-                                  <img 
+                                  <img loading="lazy" 
                                     src={pedigreeData.dam.dam.image} 
                                     alt={pedigreeData.dam.dam.name}
                                     className="w-16 h-12 rounded object-cover mx-auto cursor-pointer"
@@ -2986,7 +2986,7 @@ export default function BreedingDogs() {
                   </h3>
                   <div className="text-center">
                     {selectedDog?.name === "Twain" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={twainPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3019,7 +3019,7 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       >
-                        <img
+                        <img loading="lazy"
                           src={grizzlyOfficialPedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
@@ -3056,7 +3056,7 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       >
-                        <img
+                        <img loading="lazy"
                           src={booRadleyOfficialPedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
@@ -3093,7 +3093,7 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       >
-                        <img
+                        <img loading="lazy"
                           src={holdenOfficialPedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
@@ -3111,7 +3111,7 @@ export default function BreedingDogs() {
                         )}
                       </div>
                     ) : selectedDog?.name === "Moon" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={moonOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3125,7 +3125,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Chekhov" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={chekhovOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3139,7 +3139,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Harper Lee" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={harperLeeOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3153,7 +3153,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Piper" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={piperOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3167,7 +3167,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Becky" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={beckyOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3181,7 +3181,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Vivien" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={vivienOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3195,7 +3195,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Queen Boudica" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={queenBoudicaOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3228,7 +3228,7 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       >
-                        <img
+                        <img loading="lazy"
                           src={dodgerOfficialPedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
@@ -3265,7 +3265,7 @@ export default function BreedingDogs() {
                           setIsImagePopupOpen(true);
                         }}
                       >
-                        <img
+                        <img loading="lazy"
                           src={judgePedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
@@ -3283,7 +3283,7 @@ export default function BreedingDogs() {
                         )}
                       </div>
                     ) : selectedDog?.name === "Alola" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={alolaOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3297,7 +3297,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Akadia" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={akadiaOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3311,7 +3311,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Hanna" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={hannaOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3325,7 +3325,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Honey" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={honeyOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3339,7 +3339,7 @@ export default function BreedingDogs() {
                         }}
                       />
                     ) : selectedDog?.name === "Aubrey" ? (
-                      <img 
+                      <img loading="lazy" 
                         src={aubreyOfficialPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                         className="max-w-full h-auto rounded-lg border shadow-lg cursor-pointer hover:opacity-90 transition-opacity mx-auto"
@@ -3413,7 +3413,7 @@ export default function BreedingDogs() {
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {litter.puppies.map((puppy: any, puppyIndex: number) => (
                       <div key={puppyIndex} className="text-center">
-                        <img 
+                        <img loading="lazy" 
                           src={puppy.image} 
                           alt={puppy.name}
                           className="w-full h-48 object-cover rounded mb-2"
@@ -3444,7 +3444,7 @@ export default function BreedingDogs() {
           </DialogHeader>
           <div id="image-popup-description" className="text-center">
             {selectedImage && (
-              <img 
+              <img loading="lazy" 
                 src={selectedImage.src} 
                 alt={selectedImage.name}
                 className="max-w-full max-h-96 rounded object-contain mx-auto"

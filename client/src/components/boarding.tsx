@@ -143,7 +143,7 @@ export default function Boarding() {
             <CardContent className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div className="flex justify-center">
-                  <img 
+                  <img loading="lazy" 
                     src="/attached_assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (82)_1756151491098.png"
                     alt="Lily, the gentle host dog - chocolate Labrador in green field"
                     className="max-w-xs h-[600px] object-cover rounded-xl shadow-lg"

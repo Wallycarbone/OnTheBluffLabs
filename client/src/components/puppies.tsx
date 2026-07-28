@@ -389,7 +389,7 @@ export default function Puppies() {
                 className="aspect-square overflow-hidden cursor-pointer relative group"
                 onClick={() => openImagePopup(image)}
               >
-                <img 
+                <img loading="lazy" 
                   src={image.src}
                   alt={image.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -515,14 +515,14 @@ export default function Puppies() {
                     {/* First Photo */}
                     <div className="flex justify-center">
                       {litter.images ? (
-                        <img 
+                        <img loading="lazy" 
                           src={litter.images[0]}
                           alt={`${litter.name} litter photo 1`}
                           className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                           onClick={() => openImagePopup({src: litter.images[0], name: `${litter.name} litter`})}
                         />
                       ) : (
-                        <img 
+                        <img loading="lazy" 
                           src={litter.image}
                           alt={`${litter.sire} - sire`}
                           className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
@@ -623,14 +623,14 @@ export default function Puppies() {
                     {/* Second Photo */}
                     <div className="flex justify-center">
                       {litter.images ? (
-                        <img 
+                        <img loading="lazy" 
                           src={litter.images[1] || litter.images[0]}
                           alt={`${litter.name} litter photo 2`}
                           className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                           onClick={() => openImagePopup({src: litter.images[1] || litter.images[0], name: `${litter.name} litter`})}
                         />
                       ) : (
-                        <img 
+                        <img loading="lazy" 
                           src={litter.image2}
                           alt={`${litter.dam} - dam`}
                           className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
@@ -664,7 +664,7 @@ export default function Puppies() {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                         {/* First Photo */}
                         <div className="flex justify-center">
-                          <img 
+                          <img loading="lazy" 
                             src={litter.image}
                             alt={`${litter.sire} - sire`}
                             className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
@@ -715,7 +715,7 @@ export default function Puppies() {
 
                         {/* Second Photo */}
                         <div className="flex justify-center">
-                          <img 
+                          <img loading="lazy" 
                             src={litter.image2}
                             alt={`${litter.dam} - dam`}
                             className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
@@ -737,7 +737,7 @@ export default function Puppies() {
       <Dialog open={isImagePopupOpen} onOpenChange={setIsImagePopupOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-auto p-0 border-none">
           {selectedImage && (
-            <img 
+            <img loading="lazy" 
               src={selectedImage.src} 
               alt={selectedImage.name}
               className="w-full h-auto rounded-lg"
@@ -781,7 +781,7 @@ export default function Puppies() {
                 </h4>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {selectedLitter.images ? selectedLitter.images.slice(0, 4).map((img: string, index: number) => (
-                    <img 
+                    <img loading="lazy" 
                       key={index}
                       src={img}
                       alt={`Pedigree photo ${index + 1}`}
@@ -790,13 +790,13 @@ export default function Puppies() {
                     />
                   )) : (
                     <>
-                      <img 
+                      <img loading="lazy" 
                         src={selectedLitter.image}
                         alt={selectedLitter.sire}
                         className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                         onClick={() => openImagePopup({src: selectedLitter.image, name: selectedLitter.sire})}
                       />
-                      <img 
+                      <img loading="lazy" 
                         src={selectedLitter.image2}
                         alt={selectedLitter.dam}
                         className="w-full h-24 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
@@ -833,7 +833,7 @@ export default function Puppies() {
             </DialogTitle>
           </DialogHeader>
           <div className="space-y-4">
-            <img 
+            <img loading="lazy" 
               src={topoGigioImage} 
               alt="Farnfield Topo Gigio - 2019 Westminster Best of Breed winner"
               className="w-full h-auto rounded-lg"
@@ -875,7 +875,7 @@ export default function Puppies() {
                   onClick={() => openImagePopup({src: imageSrc, name: imageName || `Puppy ${index + 1}`})}
                   data-testid={`puppy-image-${index}`}
                 >
-                  <img 
+                  <img loading="lazy" 
                     src={imageSrc}
                     alt={imageName || `Puppy ${index + 1}`}
                     className="w-full aspect-square object-cover hover:opacity-80 transition-opacity"

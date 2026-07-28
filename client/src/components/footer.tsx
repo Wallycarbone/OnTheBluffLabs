@@ -17,7 +17,7 @@ export default function Footer() {
               English Labradors Bred for Beauty & Temperament
             </p>
             <a href="https://www.bbb.org/us/ny/germantown/profile/dog-training/on-the-bluff-labradors-0041-235983130/#sealclick" target="_blank" rel="nofollow">
-              <img src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
+              <img loading="lazy" src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
             </a>
           </div>
           

@@ -85,7 +85,7 @@ export default function Team() {
     <section className="bg-gray-50">
       {/* Header Image with Text Overlay */}
       <div className="relative w-full h-64 md:h-96 overflow-hidden">
-        <img 
+        <img loading="lazy" 
           src={headerImage}
           alt="Beautiful mountain vista view through trees - On The Bluff Labradors location"
           className="w-full h-full object-cover"
@@ -111,7 +111,7 @@ export default function Team() {
             <Card key={index} className="bg-white rounded-2xl shadow-xl text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <CardContent className="p-8">
                 <div className="mb-6">
-                  <img 
+                  <img loading="lazy" 
                     src={member.image} 
                     alt={member.name} 
                     className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"

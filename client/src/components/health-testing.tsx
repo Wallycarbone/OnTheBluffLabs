@@ -249,7 +249,7 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
               onClick={() => openEssay(test)}
             >
               <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6">
-                <img 
+                <img loading="lazy" 
                   src={test.image} 
                   alt={`${test.title} - Health and wellness pillar`}
                   className="w-full h-full object-cover"
@@ -281,7 +281,7 @@ Of course, these considerations go hand in hand with selecting dogs that uphold 
                 <div className="flex flex-col lg:flex-row gap-8 items-start">
                   <div className="lg:w-1/3 flex-shrink-0">
                     <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 sticky top-0">
-                      <img 
+                      <img loading="lazy" 
                         src={selectedTest.image} 
                         alt={`${selectedTest.title} - Detailed view`}
                         className="w-full h-auto object-cover"

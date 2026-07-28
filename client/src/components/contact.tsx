@@ -231,7 +231,7 @@ export default function Contact() {
                     </div>
                     {expandedTestimonials[index] && testimonial.image && (
                       <div className="mb-4">
-                        <img 
+                        <img loading="lazy" 
                           src={testimonial.image} 
                           alt={`${testimonial.dog} - ${testimonial.name}'s beloved companions`}
                           className="w-full rounded-lg shadow-md"

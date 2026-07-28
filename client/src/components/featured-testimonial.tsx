@@ -18,7 +18,7 @@ export default function FeaturedTestimonial() {
             <div className="flex flex-col lg:flex-row">
               {/* Image Section */}
               <div className="lg:w-1/3">
-                <img 
+                <img loading="lazy" 
                   src={testimonial.image} 
                   alt="Labrador dogs cuddling together" 
                   className="w-full h-48 lg:h-full object-cover"

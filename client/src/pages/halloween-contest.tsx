@@ -266,7 +266,7 @@ export default function HalloweenContest() {
                   </div>
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src="/attached_assets/Patrick James_1762636844043.jpeg"
                         alt="Patrick James - 1st Place Winner"
                         className="w-full h-full object-cover"
@@ -289,7 +289,7 @@ export default function HalloweenContest() {
                   </div>
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src="/attached_assets/Talley Frost_1762636923530.jpeg"
                         alt="Talley - 2nd Place Winner"
                         className="w-full h-full object-cover"
@@ -312,7 +312,7 @@ export default function HalloweenContest() {
                   </div>
                   <CardContent className="pt-8">
                     <div className="aspect-square mb-4 rounded-lg overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src="/attached_assets/Arrow Cropped_1762637487603.png"
                         alt="Arrow - 3rd Place Winner"
                         className="w-full h-full object-cover"
@@ -346,7 +346,7 @@ export default function HalloweenContest() {
                   data-testid={`entry-${index}`}
                 >
                   <div className="aspect-square">
-                    <img
+                    <img loading="lazy"
                       src={entry.image}
                       alt={`${entry.name} - ${entry.familyName} Family`}
                       className="w-full h-full object-cover"
@@ -381,7 +381,7 @@ export default function HalloweenContest() {
               >
                 ×
               </button>
-              <img
+              <img loading="lazy"
                 src={selectedImage.src}
                 alt={`${selectedImage.name} - ${selectedImage.familyName} Family`}
                 className="w-full h-auto rounded-lg"

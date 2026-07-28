@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         {/* Desktop Image */}
-        <img 
+        <img loading="eager"
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
           className="hidden md:block w-full h-full object-cover"
@@ -31,7 +31,7 @@ export default function Hero() {
           onLoad={() => console.log('Desktop image loaded successfully:', heroImage)}
         />
         {/* Mobile Image - Better positioning to show dog more centrally */}
-        <img 
+        <img loading="eager"
           src={heroImage}
           alt="Beautiful Labrador sitting on stone overlooking mountains - On The Bluff Labradors"
           className="block md:hidden w-full h-full object-cover"
@@ -164,7 +164,7 @@ export default function Hero() {
               <Link href="/breeding-dogs">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-96 overflow-hidden">
-                    <img 
+                    <img loading="lazy" 
                       src={ourDogsImage}
                       alt="Our exceptional breeding dogs with champion bloodlines"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -184,7 +184,7 @@ export default function Hero() {
               <Link href="/puppies">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-96 overflow-hidden">
-                    <img 
+                    <img loading="lazy" 
                       src={puppiesImage}
                       alt="Adorable black Labrador puppy playing outdoors with toys"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -204,7 +204,7 @@ export default function Hero() {
               <Link href="/training">
                 <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative h-96 overflow-hidden">
-                    <img 
+                    <img loading="lazy" 
                       src={behaviorAcademyImage}
                       alt="Professional dog training and behavior development programs"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -232,7 +232,7 @@ export default function Hero() {
       <section className="pt-6 pb-12 md:pt-10 md:pb-20 relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
-          <img 
+          <img loading="lazy" 
             src={ctaBackgroundImage}
             alt="Beautiful autumn scene with facility buildings"
             className="w-full h-full object-cover"
