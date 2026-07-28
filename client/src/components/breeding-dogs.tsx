@@ -1600,6 +1600,132 @@ export default function BreedingDogs() {
       }
     };
 
+    pedigrees["Sonya"] = {
+      name: "Sonya",
+      formalName: "On The Bluff's Sonya",
+      titles: [],
+      image: sonyaImage,
+      sire: {
+        name: "Endless Mountain Labrador's Grizzly at On The Bluff",
+        titles: [],
+        image: newGrizzlyImage,
+        sire: {
+          name: "Greenstone Chocoholic at Loretta (\"Bosco\")",
+          titles: ["CH", "MX"],
+          image: boscoImage,
+          sire: {
+            name: "Shalimar's The Animator (\"Cyrus\")",
+            titles: ["GCH", "CH", "MBISS"],
+            image: cyrusImage,
+            sire: {
+              name: "Cyrus's Sire",
+              titles: ["CH"],
+              sire: { name: "Cyrus's Paternal Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Cyrus's Paternal Great-Granddam", titles: ["CH"] }
+            },
+            dam: {
+              name: "Cyrus's Dam",
+              titles: ["CH"],
+              sire: { name: "Cyrus's Maternal Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Cyrus's Maternal Great-Granddam", titles: ["CH"] }
+            }
+          },
+          dam: {
+            name: "Greenstone's Special Blend (\"Simmer\")",
+            titles: ["CH"],
+            image: simmerImage,
+            sire: {
+              name: "Loretta's Maternal Grandsire",
+              titles: ["CH"],
+              sire: { name: "Loretta's Paternal Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Loretta's Paternal Great-Granddam", titles: ["CH"] }
+            },
+            dam: {
+              name: "Loretta's Maternal Granddam",
+              titles: ["CH"],
+              sire: { name: "Loretta's Maternal Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Loretta's Maternal Great-Granddam", titles: ["CH"] }
+            }
+          }
+        },
+        dam: {
+          name: "Endless Mountain's Hannah",
+          titles: [],
+          image: hannahImage,
+          sire: {
+            name: "Endless Mountain's Second Son (\"Brody\")",
+            titles: [],
+            image: brodyImage,
+            sire: {
+              name: "Hannah's Paternal Great-Grandsire",
+              titles: ["CH"],
+              sire: { name: "Hannah's Paternal Great-Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Hannah's Paternal Great-Great-Granddam", titles: ["CH"] }
+            },
+            dam: {
+              name: "Hannah's Paternal Great-Granddam",
+              titles: ["CH"],
+              sire: { name: "Hannah's Paternal Maternal Great-Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Hannah's Paternal Maternal Great-Great-Granddam", titles: ["CH"] }
+            }
+          },
+          dam: {
+            name: "Endless Mountain's Georgia On My Mind",
+            titles: [],
+            sire: {
+              name: "Hannah's Maternal Great-Grandsire",
+              titles: ["CH"],
+              sire: { name: "Hannah's Maternal Great-Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Hannah's Maternal Great-Great-Granddam", titles: ["CH"] }
+            },
+            dam: {
+              name: "Hannah's Maternal Great-Granddam",
+              titles: ["CH"],
+              sire: { name: "Hannah's Maternal Maternal Great-Great-Grandsire", titles: ["CH"] },
+              dam: { name: "Hannah's Maternal Maternal Great-Great-Granddam", titles: ["CH"] }
+            }
+          }
+        }
+      },
+      dam: {
+        name: "On The Bluff's Aubrey",
+        titles: [],
+        image: aubreyImage,
+        sire: {
+          name: "Belquest Conclusion's Anton Chekhov",
+          titles: [],
+          sire: {
+            name: "Belquest Conclusion Stolichnaya",
+            titles: [],
+            sire: { name: "CH Aster Liberti Labro Hamburg", titles: ["CH"] },
+            dam: { name: "Belquest Prequel to the Sequel CGCA CGCU", titles: [] }
+          },
+          dam: {
+            name: "Belquest Conclusion Double Layer Cake",
+            titles: [],
+            sire: { name: "CH Atlantic's Ace of Cakes at Big Sky", titles: ["CH"] },
+            dam: { name: "Belquest Double Shot Expresso of Waterberry", titles: [] }
+          }
+        },
+        dam: {
+          name: "On The Bluff's Amityville",
+          titles: [],
+          sire: {
+            name: "On The Bluff's Atticus Finch",
+            titles: [],
+            sire: { name: "Heartlands Polar Bear Chase", titles: [] },
+            dam: { name: "Heartlands Lily of the Valley", titles: [] }
+          },
+          dam: {
+            name: "On The Bluff's Awillix Moon Goddess",
+            titles: [],
+            sire: { name: "Belquest Conclusion on the Bluff's Tristan", titles: [] },
+            dam: { name: "Dreaming Tree Aeofe Heffalump", titles: [] }
+          }
+        }
+      }
+    };
+
     return pedigrees[dogName] || null;
   };
 
@@ -2098,6 +2224,23 @@ export default function BreedingDogs() {
                   >
                     Lubberline's Martingale
                   </button>
+                </p>
+              </div>
+            ) : dog.name === "Sonya" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Descended from 2016 Westminster Best of Breed <button
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: cyrusImage,
+                        name: "Shalimar's The Animator"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Shalimar's The Animator
+                  </button> through her sire, Grizzly
                 </p>
               </div>
             ) : dog.name === "Lily" ? (
