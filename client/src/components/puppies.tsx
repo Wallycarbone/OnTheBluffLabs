@@ -707,7 +707,7 @@ export default function Puppies() {
                                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
                                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
                               >
-                                Join Wait List
+                                Express Interest
                               </Button>
                             </Link>
                           </div>
