@@ -707,7 +707,7 @@ export default function Puppies() {
                                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
                                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
                               >
-                                Express Interest
+                                Request a Puppy
                               </Button>
                             </Link>
                           </div>
