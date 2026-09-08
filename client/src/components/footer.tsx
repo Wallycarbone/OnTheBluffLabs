@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import ccpdtBadge from "@assets/badge-71076_1788887601913.png";
 
 export default function Footer() {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
@@ -16,9 +17,17 @@ export default function Footer() {
             <p className="mb-4 font-source-sans" style={{color: '#ebebeb'}}>
               English Labradors Bred for Beauty & Temperament
             </p>
-            <a href="https://www.bbb.org/us/ny/germantown/profile/dog-training/on-the-bluff-labradors-0041-235983130/#sealclick" target="_blank" rel="nofollow">
-              <img loading="lazy" src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
-            </a>
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="https://www.bbb.org/us/ny/germantown/profile/dog-training/on-the-bluff-labradors-0041-235983130/#sealclick" target="_blank" rel="nofollow">
+                <img loading="lazy" src="https://seal-upstateny.bbb.org/seals/black-seal-150-110-whitetxt-bbb-235983130.png" style={{border: 0}} alt="On the Bluff Labradors BBB Business Review" />
+              </a>
+              <img
+                loading="lazy"
+                src={ccpdtBadge}
+                alt="CCPDT Certified Professional Dog Trainer — Knowledge Assessed"
+                className="h-auto w-[230px] max-w-full"
+              />
+            </div>
           </div>
           
           <div>
