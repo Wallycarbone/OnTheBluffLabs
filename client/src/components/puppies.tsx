@@ -54,6 +54,7 @@ import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909
 import lilyImage from "@assets/Lily_1785180437921.png";
 import judgeImage from "@assets/judge_portrait.png";
 import sonyaImage from "@assets/Sonya_1785182550774.png";
+import genlyImage from "@assets/genly_portrait.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import alolaImage from "@assets/Alola_1768330992939.png";
@@ -359,6 +360,19 @@ export default function Puppies() {
       image2: alolaImage,
       status: "Ready",
       description: "Birth Date: September 9, 2026"
+    },
+    {
+      name: "Boo Radley & Genly",
+      sire: "Boo Radley",
+      dam: "Genly",
+      birthDate: "July 24, 2026",
+      puppiesCount: "TBD",
+      available: "Yellow Female",
+      readyDate: "September 2026",
+      image: booRadleyImage,
+      image2: genlyImage,
+      status: "Ready",
+      description: "Birth Date: July 24, 2026"
     },
     {
       name: "Judge & Sonya",
