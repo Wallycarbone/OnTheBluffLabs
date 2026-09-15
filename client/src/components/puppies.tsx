@@ -355,6 +355,7 @@ export default function Puppies() {
       available: "Chocolate Males & Females",
       readyDate: "November 2026",
       image: grizzlyImage,
+      imagePosition: "center 25%",
       image2: alolaImage,
       status: "Ready",
       description: "Birth Date: September 9, 2026"
@@ -525,6 +526,7 @@ export default function Puppies() {
                           src={litter.image}
                           alt={`${litter.sire} - sire`}
                           className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                          style={{ objectPosition: litter.imagePosition || "center" }}
                           onClick={() => openImagePopup({src: litter.image, name: litter.sire})}
                         />
                       )}
