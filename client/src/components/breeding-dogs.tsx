@@ -94,6 +94,8 @@ import lilyImage from "@assets/Lily_1785180437921.png";
 import sonyaImage from "@assets/Sonya_1785182550774.png";
 import judgeImage from "@assets/judge_portrait.png";
 import judgePedigreeImage from "@assets/judge_pedigree.png";
+import genlyImage from "@assets/genly_portrait.png";
+import genlyPedigreeImage from "@assets/genly_pedigree.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
@@ -1539,6 +1541,13 @@ export default function BreedingDogs() {
       }
     };
 
+    pedigrees["Genly"] = {
+      ...pedigrees["Judge"].dam,
+      name: "Genly",
+      formalName: "On The Bluff's Genly AI",
+      image: genlyImage
+    };
+
     pedigrees["Lily"] = {
       name: "Lily",
       formalName: "On The Bluff's Lily of the Valley",
@@ -2067,6 +2076,15 @@ export default function BreedingDogs() {
       image: sonyaImage,
       description: "Sonya is a sleek and elegant black dame with a proud, confident bearing and a warm, friendly expression. Her balanced temperament and devoted nature make her a wonderful mother, producing puppies with her trademark classic Labrador look and loving personality.",
     },
+    {
+      name: "Genly",
+      formalName: "On The Bluff's Genly AI",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: genlyImage,
+      description: "Genly is a beautiful yellow dame with classic English Labrador structure and a warm, social nature. Her distinguished Moon and Twain lineage, balanced temperament, and devoted maternal instincts make her an exceptional mother who produces confident, affectionate puppies.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
@@ -2405,6 +2423,23 @@ export default function BreedingDogs() {
                   >
                     Shalimar's The Animator
                   </button> through her sire, Grizzly
+                </p>
+              </div>
+            ) : dog.name === "Genly" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of <button
+                    className="text-golden underline hover:text-golden/80 font-medium"
+                    onClick={() => {
+                      setSelectedImage({
+                        src: newMoonImage,
+                        name: "Belquest Conclusion Super Moon Rising"
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    Belquest Conclusion Super Moon Rising
+                  </button> with Twain lineage through her dam
                 </p>
               </div>
             ) : dog.name === "Lily" ? (
@@ -3267,6 +3302,44 @@ export default function BreedingDogs() {
                       >
                         <img loading="lazy"
                           src={judgePedigreeImage}
+                          alt={`Official AKC Pedigree for ${selectedDog?.name}`}
+                          className="max-w-full h-auto block"
+                          style={{
+                            maxHeight: '800px',
+                            transform: isPedigreeZoomed ? 'scale(2.5)' : 'scale(1)',
+                            transformOrigin: `${pedigreeZoomPos.x}% ${pedigreeZoomPos.y}%`,
+                            transition: isPedigreeZoomed ? 'transform-origin 0s' : 'transform 0.25s ease'
+                          }}
+                        />
+                        {!isPedigreeZoomed && (
+                          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-3 py-1 rounded-full pointer-events-none">
+                            Hover to zoom · Click to enlarge
+                          </div>
+                        )}
+                      </div>
+                    ) : selectedDog?.name === "Genly" ? (
+                      <div
+                        className="relative overflow-hidden rounded-lg border shadow-lg mx-auto cursor-crosshair"
+                        style={{ maxHeight: '800px', maxWidth: '100%' }}
+                        onMouseMove={(e) => {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          const x = ((e.clientX - rect.left) / rect.width) * 100;
+                          const y = ((e.clientY - rect.top) / rect.height) * 100;
+                          setPedigreeZoomPos({ x, y });
+                        }}
+                        onMouseEnter={() => setIsPedigreeZoomed(true)}
+                        onMouseLeave={() => setIsPedigreeZoomed(false)}
+                        onClick={() => {
+                          setSelectedImage({
+                            src: genlyPedigreeImage,
+                            name: `Official AKC Pedigree - ${selectedDog?.name}`
+                          });
+                          setIsImagePopupOpen(true);
+                        }}
+                      >
+                        <img
+                          loading="lazy"
+                          src={genlyPedigreeImage}
                           alt={`Official AKC Pedigree for ${selectedDog?.name}`}
                           className="max-w-full h-auto block"
                           style={{
