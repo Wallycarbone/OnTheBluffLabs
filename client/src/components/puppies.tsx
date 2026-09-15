@@ -330,8 +330,8 @@ export default function Puppies() {
       readyDate: "November 2026",
       image: booRadleyImage,
       image2: akadiaImage,
-      status: "Upcoming",
-      description: "Arrived September 13, 2026"
+      status: "Ready",
+      description: "Birth Date: September 13, 2026"
     },
     {
       name: "Holden & Lily",
