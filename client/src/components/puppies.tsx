@@ -347,6 +347,19 @@ export default function Puppies() {
       description: "Birth Date: August 28, 2026"
     },
     {
+      name: "Alola & Grizzly",
+      sire: "Grizzly",
+      dam: "Alola",
+      birthDate: "September 9, 2026",
+      puppiesCount: "TBD",
+      available: "Chocolate Males & Females",
+      readyDate: "November 2026",
+      image: grizzlyImage,
+      image2: alolaImage,
+      status: "Ready",
+      description: "Birth Date: September 9, 2026"
+    },
+    {
       name: "Judge & Sonya",
       sire: "Judge",
       dam: "Sonya",
