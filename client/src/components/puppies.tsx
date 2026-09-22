@@ -345,7 +345,7 @@ export default function Puppies() {
       dam: "Lily",
       birthDate: "August 28, 2026",
       puppiesCount: "TBD",
-      available: "Chocolate Males & Females",
+      available: "Spoken For",
       readyDate: "October 2026",
       image: holdenImage,
       image2: lilyImage,
@@ -615,7 +615,7 @@ export default function Puppies() {
                           <div className="text-center md:text-left">
                             <p className="text-sm font-source-sans font-medium" style={{color: '#6d761d'}}>
                               {litter.available === "Spoken For" 
-                                ? "Litter is Spoken For" 
+                                ? "All Puppies are Spoken For" 
                                 : `Accepting Applications for: ${litter.available}`}
                             </p>
                           </div>
