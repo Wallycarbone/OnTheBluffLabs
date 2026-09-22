@@ -615,7 +615,7 @@ export default function Puppies() {
                           <div className="text-center md:text-left">
                             <p className="text-sm font-source-sans font-medium" style={{color: '#6d761d'}}>
                               {litter.available === "Spoken For" 
-                                ? "All puppies are spoken for" 
+                                ? "All Puppies Are Spoken For" 
                                 : `Accepting Applications for: ${litter.available}`}
                             </p>
                           </div>
