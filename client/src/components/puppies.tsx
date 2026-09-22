@@ -615,7 +615,7 @@ export default function Puppies() {
                           <div className="text-center md:text-left">
                             <p className="text-sm font-source-sans font-medium" style={{color: '#6d761d'}}>
                               {litter.available === "Spoken For" 
-                                ? "All Puppies are Spoken For" 
+                                ? "All puppies are spoken for" 
                                 : `Accepting Applications for: ${litter.available}`}
                             </p>
                           </div>
@@ -640,17 +640,19 @@ export default function Puppies() {
                             View Puppies
                           </Button>
                         )}
-                        <Link href="/puppy-application" className="w-full block">
-                          <Button 
-                            className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
-                            style={{backgroundColor: '#6d761d', color: '#fefefe'}}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
-                            data-testid="button-contact-litter"
-                          >
-                            Contact About This Litter
-                          </Button>
-                        </Link>
+                        {litter.available !== "Spoken For" && (
+                          <Link href="/puppy-application" className="w-full block">
+                            <Button 
+                              className="font-montserrat font-medium text-xs h-auto py-2 px-3 rounded-lg w-full shadow-sm hover:shadow-md transition-all duration-300"
+                              style={{backgroundColor: '#6d761d', color: '#fefefe'}}
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8b9123'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6d761d'}
+                              data-testid="button-contact-litter"
+                            >
+                              Contact About This Litter
+                            </Button>
+                          </Link>
+                        )}
                       </div>
                     </div>
 
