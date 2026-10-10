@@ -303,6 +303,19 @@ export default function Puppies() {
 
   const allLitters = [
     {
+      name: "Honey & Dodger",
+      sire: "Dodger",
+      dam: "Honey",
+      birthDate: "October 3, 2026",
+      puppiesCount: "TBD",
+      available: "Yellow Males & Females",
+      readyDate: "TBD",
+      image: dodgerImage,
+      image2: honeyImage,
+      status: "Ready",
+      description: "Birth Date: October 3, 2026"
+    },
+    {
       name: "Boo Radley & Queen Boudica",
       sire: "Boo Radley",
       dam: "Queen Boudica",
