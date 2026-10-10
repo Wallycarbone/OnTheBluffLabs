@@ -30,7 +30,6 @@ import chocolateWithRopes from "@assets/Y30A1358AlohaHoldenmrleafmotif (1)_17585
 import chocolateStanding from "@assets/Y30A1431AlohaHoldenmrstarsandstripes (3)_1758550438488.jpg";
 
 // Core dog images
-import grizzlyImage from "@assets/Y30A9312grizzly_1753041221558.jpg";
 import harperLeeImage from "@assets/Harper Lee 5x4_1753563791440.png";
 import moonImage from "@assets/Moon 5x4_1753563791440.png";
 import moonImage2 from "@assets/Moon 5x4_1753565341801.png";
@@ -54,7 +53,6 @@ import judgeImage from "@assets/judge_portrait.png";
 import sonyaImage from "@assets/Sonya_1785182550774.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
-import alolaImage from "@assets/Alola_1768330992939.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
 import aureliaImage from "@assets/Aurelia_1769703737590.png";
 import grizzlySnowImage from "@assets/Grizzly_1769703945105.png";
@@ -330,20 +328,6 @@ export default function Puppies() {
       image2: akadiaImage,
       status: "Ready",
       description: "Birth Date: September 13, 2026"
-    },
-    {
-      name: "Alola & Grizzly",
-      sire: "Grizzly",
-      dam: "Alola",
-      birthDate: "September 9, 2026",
-      puppiesCount: "TBD",
-      available: "Chocolate Males & Females",
-      readyDate: "November 2026",
-      image: grizzlyImage,
-      imagePosition: "center 25%",
-      image2: alolaImage,
-      status: "Ready",
-      description: "Birth Date: September 9, 2026"
     },
     {
       name: "Judge & Sonya",
