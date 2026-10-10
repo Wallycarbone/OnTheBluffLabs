@@ -50,8 +50,6 @@ import breedingDogs2Image from "@assets/Breeding Dogs 5x4_1753626932987.png";
 import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909148622.jpg";
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
 import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
-import holdenImage from "@assets/Untitled design - 2025-09-26T140049.036_1758909658189.jpg";
-import lilyImage from "@assets/Lily_1785180437921.png";
 import judgeImage from "@assets/judge_portrait.png";
 import sonyaImage from "@assets/Sonya_1785182550774.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
@@ -332,19 +330,6 @@ export default function Puppies() {
       image2: akadiaImage,
       status: "Ready",
       description: "Birth Date: September 13, 2026"
-    },
-    {
-      name: "Holden & Lily",
-      sire: "Holden",
-      dam: "Lily",
-      birthDate: "August 28, 2026",
-      puppiesCount: "TBD",
-      available: "Spoken For",
-      readyDate: "October 2026",
-      image: holdenImage,
-      image2: lilyImage,
-      status: "Ready",
-      description: "Birth Date: August 28, 2026"
     },
     {
       name: "Alola & Grizzly",
