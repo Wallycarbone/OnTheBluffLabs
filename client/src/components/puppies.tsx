@@ -49,6 +49,7 @@ import vivienImage from "@assets/Untitled design - 2025-09-26T135220.105_1758909
 import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
 import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import judgeImage from "@assets/judge_portrait.png";
+import nancyDrewImage from "@assets/nancy-drew-portrait.webp";
 import sonyaImage from "@assets/Sonya_1785182550774.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
@@ -364,6 +365,19 @@ export default function Puppies() {
       readyDate: "TBD",
       image: booRadleyImage,
       image2: piperImage,
+      status: "Upcoming",
+      description: "Expected October 2026"
+    },
+    {
+      name: "Judge & Nancy Drew",
+      sire: "Judge",
+      dam: "Nancy Drew",
+      birthDate: "Due October 2026",
+      puppiesCount: "TBD",
+      available: "Yellow",
+      readyDate: "TBD",
+      image: judgeImage,
+      image2: nancyDrewImage,
       status: "Upcoming",
       description: "Expected October 2026"
     },
