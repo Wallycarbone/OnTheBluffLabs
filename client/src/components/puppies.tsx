@@ -184,7 +184,7 @@ export default function Puppies() {
 
   const getLitterStatus = (birthDate: string, originalStatus: string) => {
     if (birthDate.includes('Due')) {
-      return 'Upcoming';
+      return originalStatus === 'Ready' ? 'Ready Soon' : 'Upcoming';
     }
     
     const birth = new Date(birthDate);
@@ -345,14 +345,14 @@ export default function Puppies() {
       name: "Judge & Sonya",
       sire: "Judge",
       dam: "Sonya",
-      birthDate: "Due September 2026",
+      birthDate: "September 21, 2026",
       puppiesCount: "TBD",
       available: "Yellow and Black",
       readyDate: "November 2026",
       image: judgeImage,
       image2: sonyaImage,
-      status: "Upcoming",
-      description: "Expected September 2026"
+      status: "Ready",
+      description: "Birth Date: September 21, 2026"
     },
   ];
 
@@ -544,17 +544,17 @@ export default function Puppies() {
                         <div className="bg-gray-50 rounded-lg p-3 space-y-2">
                           <div className="grid grid-cols-1 gap-2">
                             <div className="flex justify-between items-center">
-                              <span className="text-sm font-medium" style={{color: '#6d761d'}}>Birth Date:</span>
+                              <span className="text-sm font-medium" style={{color: '#6d761d'}}>{litter.birthDate.includes('Due') ? 'Expected:' : 'Birth Date:'}</span>
                               <span className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>
-                                {litter.birthDate}
+                                 {litter.birthDate.replace('Due ', '')}
                               </span>
                             </div>
-                            <div className="flex justify-between items-center">
+                            {!litter.birthDate.includes('Due') && <div className="flex justify-between items-center">
                               <span className="text-sm font-medium" style={{color: '#6d761d'}}>Current Age:</span>
                               <span className="text-sm font-source-sans font-medium" style={{color: '#11100f'}}>
                                 {calculateAge(litter.birthDate)}
                               </span>
-                            </div>
+                            </div>}
                           </div>
                         </div>
 
