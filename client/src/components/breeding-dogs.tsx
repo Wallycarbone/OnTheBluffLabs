@@ -1874,6 +1874,48 @@ export default function BreedingDogs() {
       }
     };
 
+    pedigrees["Nancy Drew"] = {
+      name: "Nancy Drew",
+      formalName: "On The Bluff's Nancy Drew",
+      titles: [],
+      image: nancyDrewImage,
+      sire: {
+        name: "Belquest Conclusion Super Moon Rising",
+        titles: [],
+        image: newMoonImage,
+        sire: {
+          name: "Farnfield Topo Gigio",
+          titles: ["GCH", "CH"],
+          image: topoGigioImage,
+          sire: { name: "Charm Bluveil Mr. Darcy", titles: [] },
+          dam: { name: "Kimvalley Star Attraction Of Farnfield", titles: [] },
+        },
+        dam: {
+          name: "Belquest Conclusion Frozen Margarita",
+          titles: [],
+          sire: { name: "Wiscoys Rocco", titles: ["CH"], image: roccoImage },
+          dam: { name: "Belquest Nostalgic Candy", titles: ["GCH", "CH"], image: candyImage },
+        },
+      },
+      dam: {
+        name: "On The Bluff's Foxxy",
+        titles: [],
+        sire: {
+          name: "Keepsake Thorin On The Bluff",
+          titles: [],
+          sire: { name: "Keepsake Puttin On The Ritz", titles: [] },
+          dam: { name: "Keepsake Random Red", titles: [] },
+        },
+        dam: {
+          name: "Keepsake's Pippi Longstocking On The Bluff",
+          titles: [],
+          image: pippiLongstockingImage,
+          sire: { name: "Keepsake It Isn't Easy Being Red", titles: [] },
+          dam: { name: "Keepsake Help Me Rhonda", titles: [] },
+        },
+      },
+    };
+
     return pedigrees[dogName] || null;
   };
 
@@ -2653,34 +2695,6 @@ export default function BreedingDogs() {
           </DialogHeader>
           <div id="pedigree-popup-description">
             {selectedDog && (() => {
-            if (selectedDog.pedigreeImage) {
-              return (
-                <div className="space-y-4 text-center">
-                  <p className="text-warm-gray">{selectedDog.formalName}</p>
-                  <h3 className="text-xl font-oswald">Official AKC Certified Pedigree</h3>
-                  <button
-                    type="button"
-                    className="block w-full rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
-                    aria-label={`Enlarge ${selectedDog.name}'s pedigree`}
-                    onClick={() => {
-                      setSelectedImage({
-                        src: selectedDog.pedigreeImage,
-                        name: `Official AKC Pedigree - ${selectedDog.name}`
-                      });
-                      setIsImagePopupOpen(true);
-                    }}
-                  >
-                    <img
-                      src={selectedDog.pedigreeImage}
-                      alt={`Official AKC Pedigree for ${selectedDog.name}`}
-                      className="max-w-full h-auto rounded-lg border shadow-lg mx-auto"
-                      style={{ maxHeight: '800px' }}
-                    />
-                  </button>
-                  <p className="text-sm text-warm-gray">Click the certificate to enlarge.</p>
-                </div>
-              );
-            }
             const pedigreeData = getDogPedigreeData(selectedDog.name);
             if (!pedigreeData) return <p>Pedigree information not available</p>;
             
@@ -3066,7 +3080,31 @@ export default function BreedingDogs() {
                     Official AKC Certified Pedigree
                   </h3>
                   <div className="text-center">
-                    {selectedDog?.name === "Twain" ? (
+                    {selectedDog.pedigreeImage ? (
+                      <>
+                        <button
+                          type="button"
+                          className="block w-full rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+                          aria-label={`Enlarge ${selectedDog.name}'s pedigree`}
+                          onClick={() => {
+                            setSelectedImage({
+                              src: selectedDog.pedigreeImage,
+                              name: `Official AKC Pedigree - ${selectedDog.name}`
+                            });
+                            setIsImagePopupOpen(true);
+                          }}
+                        >
+                          <img
+                            loading="lazy"
+                            src={selectedDog.pedigreeImage}
+                            alt={`Official AKC Pedigree for ${selectedDog.name}`}
+                            className="max-w-full h-auto rounded-lg border shadow-lg mx-auto"
+                            style={{ maxHeight: '800px' }}
+                          />
+                        </button>
+                        <p className="mt-4 text-sm text-warm-gray">Click the certificate to enlarge.</p>
+                      </>
+                    ) : selectedDog?.name === "Twain" ? (
                       <img loading="lazy" 
                         src={twainPedigreeImage}
                         alt={`Official AKC Pedigree for ${selectedDog?.name}`}
