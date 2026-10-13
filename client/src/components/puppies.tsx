@@ -39,7 +39,6 @@ import queenBoudicaImage from "@assets/Breeding Dogs 5x4 (48)_1759093036413.png"
 import topoGigioImage from "@assets/Black and White Minimalist New Collection Social Media Mockup Instagram Post (83)_1756671954087.png";
 import foxxyImage from "@assets/Untitled design - 2025-09-23T110331.298_1758639819973.png";
 import booRadleyImage from "@assets/Breeding Dogs 5x4 (12)_1755286977779.png";
-import hannaImage from "@assets/Hanna_Portrait_1771708708449.png";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import arabellaImage from "@assets/Breeding Dogs 5x4 (19)_1755290951573.png";
 import msRoseImage from "@assets/Ms._Rose_1782151706964.png";
@@ -354,19 +353,6 @@ export default function Puppies() {
       image2: sonyaImage,
       status: "Upcoming",
       description: "Expected September 2026"
-    },
-    {
-      name: "Boo Radley & Hanna",
-      sire: "Boo Radley",
-      dam: "Hanna",
-      birthDate: "Due October 2026",
-      puppiesCount: "TBD",
-      available: "Yellow",
-      readyDate: "December 2026",
-      image: booRadleyImage,
-      image2: hannaImage,
-      status: "Upcoming",
-      description: "Expected October 2026"
     },
   ];
 
