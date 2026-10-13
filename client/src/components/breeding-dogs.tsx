@@ -2095,7 +2095,7 @@ export default function BreedingDogs() {
       age: "Breeding Female",
       image: nancyDrewImage,
       pedigreeImage: nancyDrewPedigreeImage,
-      description: "Nancy has an especially blocky head for a female, and a strong, athletic build. She has a stunning spirit coat.",
+      description: "Nancy Drew is a striking yellow dame with an especially blocky head for a female and a strong, athletic build. Her stunning spirit coat complements her substantial structure, giving her a distinctive beauty that brings together the strength and classic Labrador look we love in our girls.",
     },
   ];
 
