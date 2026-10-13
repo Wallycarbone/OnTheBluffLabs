@@ -2482,7 +2482,7 @@ export default function BreedingDogs() {
             ) : dog.name === "Nancy Drew" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  Daughter of Belquest Conclusion Super Moon Rising and On The Bluff's Foxxy
+                  Descended from 2019 Westminster Best of Breed Farnfield Topo Gigio
                 </p>
               </div>
             ) : dog.name === "Genly" ? (
