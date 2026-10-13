@@ -96,6 +96,8 @@ import judgeImage from "@assets/judge_portrait.png";
 import judgePedigreeImage from "@assets/judge_pedigree.png";
 import genlyImage from "@assets/genly_portrait.png";
 import genlyPedigreeImage from "@assets/genly_pedigree.png";
+import nancyDrewImage from "@assets/nancy-drew-portrait.webp";
+import nancyDrewPedigreeImage from "@assets/0_Nancy_Drew_Pedigree_1791930528916.jpg";
 import aubreyImage from "@assets/Aubrey_1776197501201.png";
 import aubreyOfficialPedigreeImage from "@assets/Aubrey's_pedigree_1776197573598.png";
 import honeyOfficialPedigreeImage from "@assets/Honey's_Pedigree_1772305988592.png";
@@ -2085,6 +2087,16 @@ export default function BreedingDogs() {
       image: genlyImage,
       description: "Genly is a beautiful yellow dame with classic English Labrador structure and a warm, social nature. Her distinguished Moon and Twain lineage, balanced temperament, and devoted maternal instincts make her an exceptional mother who produces confident, affectionate puppies.",
     },
+    {
+      name: "Nancy Drew",
+      formalName: "On The Bluff's Nancy Drew",
+      gender: "Female",
+      color: "Yellow",
+      age: "Breeding Female",
+      image: nancyDrewImage,
+      pedigreeImage: nancyDrewPedigreeImage,
+      description: "Nancy has an especially blocky head for a female, and a strong, athletic build. She has a stunning spirit coat.",
+    },
   ];
 
   const renderDogCard = (dog: any, index: number) => (
@@ -2425,6 +2437,12 @@ export default function BreedingDogs() {
                   </button> through her sire, Grizzly
                 </p>
               </div>
+            ) : dog.name === "Nancy Drew" ? (
+              <div className="text-center">
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  Daughter of Belquest Conclusion Super Moon Rising and On The Bluff's Foxxy
+                </p>
+              </div>
             ) : dog.name === "Genly" ? (
               <div className="text-center">
                 <p className="text-sm text-warm-gray leading-relaxed">
@@ -2635,6 +2653,34 @@ export default function BreedingDogs() {
           </DialogHeader>
           <div id="pedigree-popup-description">
             {selectedDog && (() => {
+            if (selectedDog.pedigreeImage) {
+              return (
+                <div className="space-y-4 text-center">
+                  <p className="text-warm-gray">{selectedDog.formalName}</p>
+                  <h3 className="text-xl font-oswald">Official AKC Certified Pedigree</h3>
+                  <button
+                    type="button"
+                    className="block w-full rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+                    aria-label={`Enlarge ${selectedDog.name}'s pedigree`}
+                    onClick={() => {
+                      setSelectedImage({
+                        src: selectedDog.pedigreeImage,
+                        name: `Official AKC Pedigree - ${selectedDog.name}`
+                      });
+                      setIsImagePopupOpen(true);
+                    }}
+                  >
+                    <img
+                      src={selectedDog.pedigreeImage}
+                      alt={`Official AKC Pedigree for ${selectedDog.name}`}
+                      className="max-w-full h-auto rounded-lg border shadow-lg mx-auto"
+                      style={{ maxHeight: '800px' }}
+                    />
+                  </button>
+                  <p className="text-sm text-warm-gray">Click the certificate to enlarge.</p>
+                </div>
+              );
+            }
             const pedigreeData = getDogPedigreeData(selectedDog.name);
             if (!pedigreeData) return <p>Pedigree information not available</p>;
             
