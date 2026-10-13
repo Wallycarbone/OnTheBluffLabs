@@ -354,6 +354,19 @@ export default function Puppies() {
       status: "Ready",
       description: "Birth Date: September 21, 2026"
     },
+    {
+      name: "Piper & Boo Radley",
+      sire: "Boo Radley",
+      dam: "Piper",
+      birthDate: "Due October 2026",
+      puppiesCount: "TBD",
+      available: "Yellow",
+      readyDate: "TBD",
+      image: booRadleyImage,
+      image2: piperImage,
+      status: "Upcoming",
+      description: "Expected October 2026"
+    },
   ];
 
   const { selectLitters, upcomingLitters } = categorizeLitters(allLitters);
