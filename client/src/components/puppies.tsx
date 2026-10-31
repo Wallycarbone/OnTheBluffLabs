@@ -364,7 +364,7 @@ export default function Puppies() {
       readyDate: "TBD",
       image: judgeImage,
       image2: nancyDrewImage,
-      status: "Upcoming",
+      status: "Ready",
       description: "Expected October 2026"
     },
   ];
