@@ -342,7 +342,7 @@ export default function Puppies() {
       description: "Birth Date: September 13, 2026"
     },
     {
-      name: "Piper & Boo Radley",
+      name: "Boo Radley & Piper",
       sire: "Boo Radley",
       dam: "Piper",
       birthDate: "October 8, 2026",
