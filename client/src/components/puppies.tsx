@@ -50,7 +50,6 @@ import newGrizzlyImage from "@assets/Breeding Dogs 5x4 (49)_1759093352711.png";
 import beckyImage from "@assets/Becky_Portrait_1781900071158.png";
 import judgeImage from "@assets/judge_portrait.png";
 import nancyDrewImage from "@assets/nancy-drew-portrait.webp";
-import sonyaImage from "@assets/Sonya_1785182550774.png";
 import guinevereImage from "@assets/guinevere-new-photo.jpg";
 import dodgerImage from "@assets/Dodger_1762633068552.png";
 import akadiaImage from "@assets/Akadia_1768358230762.png";
@@ -341,19 +340,6 @@ export default function Puppies() {
       image2: akadiaImage,
       status: "Ready",
       description: "Birth Date: September 13, 2026"
-    },
-    {
-      name: "Judge & Sonya",
-      sire: "Judge",
-      dam: "Sonya",
-      birthDate: "September 21, 2026",
-      puppiesCount: "TBD",
-      available: "Yellow Males",
-      readyDate: "November 2026",
-      image: judgeImage,
-      image2: sonyaImage,
-      status: "Ready",
-      description: "Birth Date: September 21, 2026"
     },
     {
       name: "Piper & Boo Radley",
