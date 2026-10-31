@@ -358,14 +358,14 @@ export default function Puppies() {
       name: "Judge & Nancy Drew",
       sire: "Judge",
       dam: "Nancy Drew",
-      birthDate: "Due October 2026",
+      birthDate: "October 19, 2026",
       puppiesCount: "TBD",
-      available: "Yellow",
+      available: "Yellow Females",
       readyDate: "TBD",
       image: judgeImage,
       image2: nancyDrewImage,
       status: "Ready",
-      description: "Expected October 2026"
+      description: "Birth Date: October 19, 2026"
     },
   ];
 
