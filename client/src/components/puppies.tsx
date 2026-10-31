@@ -345,14 +345,14 @@ export default function Puppies() {
       name: "Piper & Boo Radley",
       sire: "Boo Radley",
       dam: "Piper",
-      birthDate: "Due October 2026",
+      birthDate: "October 8, 2026",
       puppiesCount: "TBD",
-      available: "Yellow",
+      available: "Yellow Males & Females",
       readyDate: "TBD",
       image: booRadleyImage,
       image2: piperImage,
-      status: "Upcoming",
-      description: "Expected October 2026"
+      status: "Ready",
+      description: "Birth Date: October 8, 2026"
     },
     {
       name: "Judge & Nancy Drew",
