@@ -75,6 +75,8 @@ import hazelPeacockImage from "@assets/Hazel (Peacock 5x4)_1753626048340.png";
 import gracieSnowImage from "@assets/Gracie_December_1765898589313.png";
 import daisySnowImage from "@assets/Y30A0471Boudicaboodaisy_1765898719028.jpg";
 import mooseSnowImage from "@assets/Moose_Portrait_1784057979377.png";
+import booAkadiaButterflyImage from "@assets/boo-akadia-ms-butterfly.webp";
+import booAkadiaWildflowerImage from "@assets/boo-akadia-ms-wildflower.webp";
 
 // Moon & Foxxy additional puppy images for gallery
 import moonFoxxyPuppy1 from "@assets/4_1762638824978.png";
@@ -296,8 +298,8 @@ export default function Puppies() {
   ];
 
   const booAkadiaPuppyImages = [
-    { image: msAlpineGlowNewImage, name: "Ms. Alpine Glow" },
-    { image: mrJesterImage, name: "Mr. Jester" }
+    { image: booAkadiaButterflyImage, name: "Ms. Butterfly" },
+    { image: booAkadiaWildflowerImage, name: "Ms. Wildflower" }
   ];
 
   const allLitters = [
@@ -338,6 +340,7 @@ export default function Puppies() {
       readyDate: "November 2026",
       image: booRadleyImage,
       image2: akadiaImage,
+      puppyImages: booAkadiaPuppyImages,
       status: "Ready",
       description: "Birth Date: September 13, 2026"
     },
