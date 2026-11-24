@@ -298,7 +298,7 @@ export default function Puppies() {
   ];
 
   const booAkadiaPuppyImages = [
-    { image: booAkadiaButterflyImage, name: "Ms. Butterfly" },
+    { image: booAkadiaButterflyImage, name: "Mia" },
     { image: booAkadiaWildflowerImage, name: "Ellie" }
   ];
 
