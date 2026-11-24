@@ -77,6 +77,9 @@ import daisySnowImage from "@assets/Y30A0471Boudicaboodaisy_1765898719028.jpg";
 import mooseSnowImage from "@assets/Moose_Portrait_1784057979377.png";
 import booAkadiaButterflyImage from "@assets/boo-akadia-ms-butterfly.webp";
 import booAkadiaWildflowerImage from "@assets/boo-akadia-ms-wildflower.webp";
+import honeyDodgerBlingBonesImage from "@assets/honey-dodger-mr-bling-bones.webp";
+import honeyDodgerRippleCreekImage from "@assets/honey-dodger-ms-ripple-creek.webp";
+import honeyDodgerFlagsImage from "@assets/honey-dodger-mr-flags.webp";
 
 // Moon & Foxxy additional puppy images for gallery
 import moonFoxxyPuppy1 from "@assets/4_1762638824978.png";
@@ -302,6 +305,12 @@ export default function Puppies() {
     { image: booAkadiaWildflowerImage, name: "Ellie" }
   ];
 
+  const honeyDodgerPuppyImages = [
+    { image: honeyDodgerBlingBonesImage, name: "Mr. Bling Bones" },
+    { image: honeyDodgerRippleCreekImage, name: "Ms. Ripple Creek" },
+    { image: honeyDodgerFlagsImage, name: "Mr. Flags" }
+  ];
+
   const allLitters = [
     {
       name: "Honey & Dodger",
@@ -313,6 +322,7 @@ export default function Puppies() {
       readyDate: "TBD",
       image: dodgerImage,
       image2: honeyImage,
+      puppyImages: honeyDodgerPuppyImages,
       status: "Ready",
       description: "Birth Date: October 3, 2026"
     },
